@@ -1,16 +1,68 @@
 site_name: Hugo Nascimento
-site_url: https://hsn-labs.com
+site_url: https://hugonotnice.github.io/blog/
 site_description: 3x VC-Backed Founder, Engineer, Investor.
+
+# Integração com GitHub (Mostra ícone no topo e link de "Edit/View Source")
+repo_name: hugonotnice/blog
+repo_url: https://github.com/hugonotnice/blog
+edit_uri: edit/main/docs/
 
 theme:
   name: material
-  palette:
-    - scheme: default
-      primary: black
-      accent: black
+  font:
+    text: Inter
+    code: Fira Code
   features:
     - navigation.instant
     - search.suggest
+    - navigation.tabs # Submenus/Abas horizontais no topo
+    - navigation.tabs.sticky # Abas presas no topo ao rolar a página
+    - toc.integrate # Índice (Table of contents) integrado no menu da esquerda
+    - content.code.copy # Botão de copiar código
+    - content.action.edit # Botão de editar página (olhinho/lápis)
+  
+  # Esquema de Cores e Dark/Light mode toggle
+  palette:
+    # Modo Claro
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo # Cor azul
+      accent: blue
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    # Modo Escuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+# Extensões úteis para formatação avançada (Cards, Avisos, etc)
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+# Rodapé e Redes Sociais
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/hugonotnice
+      name: GitHub
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/hugosoaresnascimento/
+      name: LinkedIn
+    - icon: fontawesome/brands/whatsapp
+      link: https://wa.me/ # Adicione seu número depois da barra
+      name: WhatsApp 💥
 
 nav:
   - Home: index.md
