@@ -1,0 +1,26 @@
+site_name: Hugo Nascimento
+site_url: https://hsn-labs.com
+site_description: 3x VC-Backed Founder, Engineer, Investor.
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: black
+      accent: black
+  features:
+    - navigation.instant
+    - search.suggest
+
+nav:
+  - Home: index.md
+  - About:
+    - User Manual: about/user-manual.md
+    - Resume: about/resume.md
+    - Investments: about/investments.md
+  - Services: services.md
+  - Writing:
+    - "Manifesto: Deterministic AI": writing/manifesto.md
+    - "Integration Drift": writing/integration-drift.md
+    - "Chatbot vs Agent": writing/chatbot-vs-agent.md
+    - "Cost of Legacy IT": writing/cost-legacy-it.md
