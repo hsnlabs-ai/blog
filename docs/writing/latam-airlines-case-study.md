@@ -2,6 +2,8 @@
 type: blog_post
 title: "LATAM Airlines: Deterministic Agents in a 3% Margin Business"
 date: 2026-09-13
+authors:
+  - hugo
 tags:
   - blog
   - agentic-engineering

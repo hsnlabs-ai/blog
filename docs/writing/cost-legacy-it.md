@@ -1,3 +1,10 @@
+---
+date: 2026-09-10
+authors:
+  - hugo
+categories:
+  - Engineering
+---
 # The Cost of Non-Deterministic AI in Legacy IT
 
 Enterprises run on deterministic systems (SAP, Oracle, legacy mainframes). Introducing non-deterministic AI into these environments without a translation layer creates massive shadow costs.

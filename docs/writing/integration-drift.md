@@ -1,3 +1,10 @@
+---
+date: 2026-09-05
+authors:
+  - hugo
+categories:
+  - Engineering
+---
 # The Integration Drift: When Prompts Break Production
 
 LLMs are stochastic. Legacy APIs are rigid. 

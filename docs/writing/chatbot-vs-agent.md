@@ -1,3 +1,10 @@
+---
+date: 2026-09-08
+authors:
+  - hugo
+categories:
+  - Engineering
+---
 # Chatbot vs. Agent: Why replacing BPOs requires deterministic guardrails
 
 A chatbot answers questions. An agent executes workflows and changes state in core systems.

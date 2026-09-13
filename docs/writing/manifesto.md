@@ -1,3 +1,10 @@
+---
+date: 2026-09-01
+authors:
+  - hugo
+categories:
+  - Engineering
+---
 # The Solution: Deterministic Agentic Engineering
 
 At HSN Labs, we don't build wrappers. We engineer digital infrastructure.

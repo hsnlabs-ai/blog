@@ -1,3 +1,9 @@
+---
+hide:
+  - navigation
+  - toc
+---
+
 # Hugo Nascimento
 
 I am a 3x VC-backed SaaS founder, engineer, and investor. 
@@ -8,8 +14,32 @@ My focus is **Deterministic Agentic Engineering**. I build autonomous digital wo
 
 I write about enterprise software, architecture failures, and capital allocation.
 
-[Read my User Manual](about/user-manual.md) to see how I work, or check my [Services](services.md).
+---
 
-## Links
-- [LinkedIn](https://www.linkedin.com/in/hugosoaresnascimento/)
-- [Writing](writing/manifesto.md)
+<div class="grid cards" markdown>
+
+-   :material-fountain-pen-tip: **Read my Essays**
+
+    ---
+
+    Explore my core theses on why traditional chatbots fail in B2B, the true cost of legacy IT, and how Deterministic AI expands margins.
+
+    [:octicons-arrow-right-24: Go to Writing](writing/index.md)
+
+-   :material-account-cog: **User Manual**
+
+    ---
+
+    Understand my operating rhythm. How I work, what I value, and how to communicate effectively with me to maximize output.
+
+    [:octicons-arrow-right-24: Read User Manual](about/user-manual.md)
+
+-   :material-briefcase: **Consulting Services**
+
+    ---
+
+    I help Level 3 buyers (CEOs, CFOs) deploy Forward Deployed Engineering teams to replace BPO operations with digital workers.
+
+    [:octicons-arrow-right-24: View Services](services.md)
+
+</div>

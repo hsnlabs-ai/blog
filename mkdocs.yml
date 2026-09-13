@@ -42,6 +42,7 @@ theme:
 
 # Extensões úteis para formatação avançada (Cards, Avisos, etc)
 markdown_extensions:
+  - abbr
   - admonition
   - attr_list
   - md_in_html
@@ -71,9 +72,13 @@ nav:
     - Resume: about/resume.md
     - Investments: about/investments.md
   - Services: services.md
-  - Writing:
-    - "Manifesto: Deterministic AI": writing/manifesto.md
-    - "Integration Drift": writing/integration-drift.md
-    - "Chatbot vs Agent": writing/chatbot-vs-agent.md
-    - "Cost of Legacy IT": writing/cost-legacy-it.md
-    - "LATAM Case Study": writing/latam-airlines-case-study.md
+  - Writing: writing/index.md
+plugins:
+  - search
+  - blog:
+      blog_dir: writing
+  - tags
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: timeago
+  - social
