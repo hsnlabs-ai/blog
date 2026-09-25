@@ -62,8 +62,8 @@ extra:
       link: https://www.linkedin.com/in/hugosoaresnascimento/
       name: LinkedIn
     - icon: fontawesome/brands/whatsapp
-      link: https://wa.me/ # Adicione seu número depois da barra
-      name: WhatsApp 💥
+      link: https://wa.me/5511910701372
+      name: WhatsApp
 
 nav:
   - Home: index.md
