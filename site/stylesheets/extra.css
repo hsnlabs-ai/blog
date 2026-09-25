@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap');
+
+/* ==========================================================
+   HSN LABS BRAND TOKENS FOR MKDOCS MATERIAL
+   ========================================================== */
+
+/* LIGHT MODE */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: #07090E;
+  --md-primary-fg-color--light: #161924;
+  --md-primary-fg-color--dark: #000000;
+  --md-primary-bg-color: #FFFFFF;
+  --md-primary-bg-color--light: #F5F5F5;
+  --md-accent-fg-color: #0284C7;
+  --md-accent-fg-color--transparent: rgba(2, 132, 199, 0.1);
+  --md-default-bg-color: #F5F5F5;
+  --md-default-fg-color: #07090E;
+  --md-default-fg-color--light: #475569;
+  --md-default-fg-color--lighter: #64748B;
+  --md-default-fg-color--lightest: #E2E8F0;
+  --md-typeset-a-color: #0284C7;
+}
+
+/* DARK MODE */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #07090E;
+  --md-primary-fg-color--light: #161924;
+  --md-primary-fg-color--dark: #000000;
+  --md-accent-fg-color: #52B4FD;
+  --md-accent-fg-color--transparent: rgba(82, 180, 253, 0.1);
+  --md-default-bg-color: #07090E;
+  --md-default-bg-color--light: #0E1017;
+  --md-default-bg-color--lighter: #161924;
+  --md-default-fg-color: #FFFFFF;
+  --md-default-fg-color--light: #94A3B8;
+  --md-default-fg-color--lighter: #718096;
+  --md-default-fg-color--lightest: #222736;
+  --md-typeset-a-color: #52B4FD;
+}
+
+/* ==========================================================
+   TYPOGRAPHY
+   ========================================================== */
+
+/* Display Headings in Cormorant Garamond */
+.md-typeset h1 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 300;
+  letter-spacing: -0.02em;
+  font-size: 2.5rem;
+  line-height: 1.15;
+  color: var(--md-default-fg-color);
+  margin-bottom: 1.2rem;
+}
+
+.md-typeset h2 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 300;
+  letter-spacing: -0.02em;
+  font-size: 1.85rem;
+  line-height: 1.25;
+  color: var(--md-default-fg-color);
+  margin-top: 2rem;
+}
+
+.md-typeset h3 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  font-size: 1.35rem;
+  line-height: 1.35;
+  color: var(--md-default-fg-color);
+}
+
+/* Running Body Text */
+.md-typeset {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.md-typeset p {
+  color: var(--md-default-fg-color--light);
+}
+
+/* Editorial Links */
+.md-typeset a {
+  color: var(--md-typeset-a-color);
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.md-typeset a:hover {
+  border-bottom-color: var(--md-typeset-a-color);
+}
+
+/* ==========================================================
+   HEADER AND NAVIGATION
+   ========================================================== */
+
+.md-header {
+  box-shadow: none;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.md-header__title {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.md-tabs {
+  background-color: var(--md-primary-fg-color);
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+  border-radius: 0 !important;
+}
+
+/* Strict Search Bar */
+.md-search__form {
+  border-radius: 0 !important;
+  border: 1px solid var(--md-default-fg-color--lightest) !important;
+  background-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+.md-search__input {
+  border-radius: 0 !important;
+}
+
+/* ==========================================================
+   CARDS AND BOXES
+   ========================================================== */
+
+/* Strict 90-Degree Geometric Cards */
+.md-typeset .grid.cards > ul > li {
+  border-radius: 0 !important;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+[data-md-color-scheme="default"] .md-typeset .grid.cards > ul > li {
+  background-color: #FFFFFF;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > ul > li {
+  background-color: #0E1017;
+}
+
+.md-typeset .grid.cards > ul > li:hover {
+  transform: translateY(-2px);
+  border-color: var(--md-accent-fg-color);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.md-typeset .grid.cards > ul > li > hr {
+  margin: 12px 0 16px 0;
+  border-color: var(--md-default-fg-color--lightest);
+}
+
+/* Admonitions and Code Blocks */
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 0 !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+}
+
+.md-typeset pre,
+.md-typeset .highlight {
+  border-radius: 0 !important;
+}
+
+/* Footer Bottom Bar */
+.md-footer {
+  border-top: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.md-footer-meta {
+  background-color: var(--md-primary-fg-color);
+}

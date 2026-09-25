@@ -45,6 +45,9 @@ theme:
         icon: material/weather-sunny
         name: Switch to light mode
 
+extra_css:
+  - stylesheets/extra.css
+
 # Extensões úteis para formatação avançada (Cards, Avisos, etc)
 markdown_extensions:
   - abbr
