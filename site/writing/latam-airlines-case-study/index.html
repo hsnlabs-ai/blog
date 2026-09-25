@@ -10,7 +10,7 @@
       
       
       
-        <link rel="canonical" href="https://hsnlabs.ai/blog/writing/cost-legacy-it/">
+        <link rel="canonical" href="https://hsnlabs.ai/blog/writing/latam-airlines-case-study/">
       
       
       
@@ -26,7 +26,7 @@
     
     
       
-        <title>The Cost of Non-Deterministic AI in Legacy IT - Hugo Nascimento</title>
+        <title>LATAM Airlines: Deterministic Agents in a 3% Margin Business - Hugo Nascimento</title>
       
     
     
@@ -79,7 +79,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#the-cost-of-non-deterministic-ai-in-legacy-it" class="md-skip">
+        <a href="#latam-airlines-deterministic-agents-in-a-3-margin-business" class="md-skip">
           Skip to content
         </a>
       
@@ -115,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              The Cost of Non-Deterministic AI in Legacy IT
+              LATAM Airlines: Deterministic Agents in a 3% Margin Business
             
           </span>
         </div>
@@ -585,9 +585,27 @@
                 
                   
 
+  <nav class="md-tags" >
+    
+      
+      
+      
+      
+        <span class="md-tag">Agentic-Engineering</span>
+      
+    
+      
+      
+      
+      
+        <span class="md-tag">ROI</span>
+      
+    
+  </nav>
+
 
   
-    <a href="https://github.com/hsnlabs-ai/blog/edit/main/docs/writing/cost-legacy-it.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+    <a href="https://github.com/hsnlabs-ai/blog/edit/main/docs/writing/latam-airlines-case-study.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -595,24 +613,30 @@
   
 
 
-<h1 id="the-cost-of-non-deterministic-ai-in-legacy-it">The Cost of Non-Deterministic AI in Legacy IT</h1>
-<p>Enterprises run on deterministic systems: SAP, Oracle, AS400 mainframes, and core transactional databases. These platforms were built with zero tolerance for probabilistic variance.</p>
-<p>Introducing non-deterministic AI into these environments without a translation layer creates massive hidden expenses.</p>
-<h2 id="the-three-hidden-costs">The Three Hidden Costs</h2>
-<h3 id="1-endless-manual-qa">1. Endless Manual QA</h3>
-<p>Teams spend more engineering hours monitoring model outputs and verifying database writes than the original manual workflow required. The software becomes a cost center rather than a leverage point.</p>
-<h3 id="2-unquantified-regulatory-and-audit-exposure">2. Unquantified Regulatory and Audit Exposure</h3>
-<p>In regulated industries such as banking and healthcare, every record modification must be defensible to external auditors. Probabilistic models cannot explain why a specific action was chosen unless deterministic reasoning paths are recorded.</p>
-<h3 id="3-permanent-sandbox-confinement">3. Permanent Sandbox Confinement</h3>
-<p>Initiatives remain stuck in proof-of-concept sandboxes for twelve months. Corporate IT security teams rightly refuse to grant write access to core systems because the risk of database corruption exceeds any productivity gain.</p>
-<h2 id="the-solution-architectural-decoupling">The Solution: Architectural Decoupling</h2>
-<p>To unlock production value, decoupling is mandatory:
-- The reasoning engine proposes actions based on context.
-- The deterministic ontology layer validates whether the proposal complies with corporate invariants.
-- The execution layer applies verified mutations through standard enterprise APIs.</p>
-<p>Predictability is the prerequisite for enterprise production access.</p>
+<h1 id="latam-airlines-deterministic-agents-in-a-3-margin-business">LATAM Airlines: Deterministic Agents in a 3% Margin Business</h1>
+<p>Airlines run on 3% margins. 31% of their operating cost is jet fuel. There is no slack.</p>
+<p>If an AI agent does not create immediate value or cut costs, it dies.</p>
+<p>I analyzed LATAM Airlines' deployment of customer experience agents in production. They process millions of interactions. They learned three hard lessons about agentic engineering at scale.</p>
+<h2 id="1-semantic-decentralization-burns-money">1. Semantic Decentralization Burns Money</h2>
+<p>LATAM initially built specialist agents (flights, hotels, insurance). Each agent reasoned and generated final structured outputs.</p>
+<p>Result: 15% overhead in token consumption and latency.</p>
+<p>Fix: Strict Supervisor pattern. Specialist agents became blind tool executors. The Supervisor node handles all final semantic formatting.</p>
+<p><strong>Takeaway:</strong> Do not ask every node in your graph to reason about output structure. Centralize formatting. Cut costs by 15% without losing quality.</p>
+<h2 id="2-telemetry-beats-prompt-hacking">2. Telemetry Beats Prompt Hacking</h2>
+<p>In production, 13% of user interactions failed routing. The system flagged them as "out of scope."</p>
+<p>Amateurs add prompt penalties to stop hallucinations. LATAM looked at LangSmith telemetry.</p>
+<p>Data showed 95% of those failed queries were legitimate passenger needs (baggage, check-in). The model didn't fail. The architecture didn't fail. The business logic was simply incomplete.</p>
+<p>Fix: Added a dedicated Customer Care node. Routing errors dropped to 1%.</p>
+<p><strong>Takeaway:</strong> Observe production telemetry. Build deterministic nodes for reality, not for your happy path.</p>
+<h2 id="3-the-chatbot-is-not-the-product">3. The Chatbot Is Not The Product</h2>
+<p>This is my core thesis. </p>
+<p>A B2C chatbot is just a data collection interface. Conversations are cheap. Structured signals are valuable.</p>
+<p>LATAM realized this. They built Compass: an internal engine that takes unstructured chat logs, applies strict semantic ontologies, and outputs a Knowledge Graph directly into BigQuery. </p>
+<p>When a passenger asks about "Italian restaurants near the hotel," they aren't just chatting. They are feeding a deterministic pipeline with semantic preferences.</p>
+<p>Stop building free-text wrappers. Use AI as a ruthless parser to turn noise into structured production data. </p>
+<p>That is how you replace legacy IT. That is how you expand margins. That is how you prove ROI to a CFO.</p>
 <hr />
-<p><em>Article originally published on <a href="https://hsnlabs.ai/blog/writing/cost-legacy-it/">HSN Labs</a>. Author: <a href="https://hsnlabs.ai">Hugo Nascimento</a>.</em></p>
+<p><em>Article originally published on <a href="https://hsnlabs.ai/blog/writing/latam-airlines-case-study/">HSN Labs</a>. Author: <a href="https://hsnlabs.ai">Hugo Nascimento</a>.</em></p>
 
 
 
@@ -635,7 +659,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="September 25, 2026 17:22:49 UTC"><span class="timeago" datetime="2026-09-25T17:22:49+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="September 25, 2026 17:22:49 UTC">2026-09-25</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="September 13, 2026 16:47:22 UTC"><span class="timeago" datetime="2026-09-13T16:47:22+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="September 13, 2026 16:47:22 UTC">2026-09-13</span>
   </span>
 
     
@@ -645,7 +669,7 @@
     <span class="md-icon" title="Created">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="September 13, 2026 15:58:36 UTC"><span class="timeago" datetime="2026-09-13T15:58:36+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="September 13, 2026 15:58:36 UTC">2026-09-13</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="September 13, 2026 16:34:29 UTC"><span class="timeago" datetime="2026-09-13T16:34:29+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="September 13, 2026 16:34:29 UTC">2026-09-13</span>
   </span>
 
     

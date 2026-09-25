@@ -1,6 +1,6 @@
 site_name: Hugo Nascimento
 site_url: https://hsnlabs.ai/blog/
-site_description: 3x VC-Backed Founder, Engineer, Investor.
+site_description: Founder at HSN Labs, CPTO at Eva People. Essays and executive advisory on enterprise AI agent architecture, business ontologies, and production runtime failures.
 
 # Integração com GitHub (Mostra ícone no topo e link de "Edit/View Source")
 repo_name: hsnlabs-ai/blog
@@ -12,6 +12,8 @@ hooks:
 
 theme:
   name: material
+  favicon: assets/brand/favicon.png
+  logo: assets/brand/logo.png
   font:
     text: Inter
     code: Fira Code

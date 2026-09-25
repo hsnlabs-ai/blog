@@ -1,4 +1,6 @@
 ---
+title: Hugo Nascimento — Deterministic Agentic Engineering
+description: Essays and executive advisory on enterprise AI architectures, business ontologies, and avoiding runtime failures in production.
 hide:
   - navigation
   - toc
