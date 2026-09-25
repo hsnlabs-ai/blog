@@ -86,9 +86,12 @@ plugins:
       match_path: "writing/.*"
       feed_ttl: 1440
       abstract_chars_count: -1
+      json_feed_enabled: true
       feeds_filenames:
         rss_created: feed_rss_created.xml
         rss_updated: feed_rss_updated.xml
+        json_created: feed_json_created.json
+        json_updated: feed_json_updated.json
       date_from_meta:
         as_creation: date
         as_update: date

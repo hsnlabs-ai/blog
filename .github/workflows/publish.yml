@@ -23,3 +23,14 @@ jobs:
             mkdocs-material-
       - run: pip install -r requirements.txt
       - run: mkdocs gh-deploy --force
+      - name: Ping WebSub Hub and IndexNow
+        run: |
+          curl -s -X POST "https://pubsubhubbub.appspot.com/" \
+            -d "hub.mode=publish" \
+            -d "hub.url=https://hsnlabs.ai/blog/feed_rss_created.xml" || true
+          curl -s -X POST "https://pubsubhubbub.appspot.com/" \
+            -d "hub.mode=publish" \
+            -d "hub.url=https://hsnlabs.ai/blog/feed_rss_updated.xml" || true
+          curl -s -X POST "https://api.indexnow.org/indexnow" \
+            -H "Content-Type: application/json; charset=utf-8" \
+            -d '{"host":"hsnlabs.ai","key":"fb6d944d28fc4484bd669f6d9c4d3292","keyLocation":"https://hsnlabs.ai/fb6d944d28fc4484bd669f6d9c4d3292.txt","urlList":["https://hsnlabs.ai/blog/","https://hsnlabs.ai/blog/feed_rss_created.xml","https://hsnlabs.ai/blog/feed_json_created.json","https://hsnlabs.ai/blog/llms.txt"]}' || true

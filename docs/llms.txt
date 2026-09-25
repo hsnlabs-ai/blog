@@ -47,6 +47,8 @@ How natural language prompts drift over time and break production database schem
 Lessons from deploying customer experience agents in a three percent margin business.
 - RSS Feed: https://hsnlabs.ai/blog/feed_rss_created.xml
 Structured machine-readable feed of all technical publications.
+- JSON Feed: https://hsnlabs.ai/blog/feed_json_created.json
+JSON Feed for direct LLM and autonomous agent consumption.
 
 ## Open Source Ecosystem
 - HSN Labs GitHub: https://github.com/hsnlabs-ai
