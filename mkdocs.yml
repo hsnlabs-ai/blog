@@ -7,6 +7,9 @@ repo_name: hsnlabs-ai/blog
 repo_url: https://github.com/hsnlabs-ai/blog
 edit_uri: edit/main/docs/
 
+hooks:
+  - hooks/attribution.py
+
 theme:
   name: material
   font:
@@ -80,6 +83,7 @@ plugins:
   - rss:
       match_path: "writing/.*"
       feed_ttl: 1440
+      abstract_chars_count: -1
       feeds_filenames:
         rss_created: feed_rss_created.xml
         rss_updated: feed_rss_updated.xml
