@@ -1,29 +1,42 @@
 # Resume
 
-Professional timeline. 
+Professional timeline and leadership record.
 
-## Current
-**Eva People** — *CPTO* (Dec 2024 - Present)
-Leading a B2B SaaS onboarding platform. Replacing sync work with measurable ramp-up systems. Stack: GCP, Python.
+## Current Roles
 
-**HSN Labs** — *Founder & Managing Partner* (Nov 2020 - Present)
-Forward Deployed Engineering boutique. Delivering deterministic agentic workflows for enterprise operations. 
+### Eva People — CPTO
+December 2024 to Present
+Leading B2B SaaS enterprise onboarding platform. Replacing synchronous manual training with measurable digital ramp-up systems. Stack: Google Cloud Platform, Python.
 
-**SMU Investimentos** — *Startup Investor* (Aug 2021 - Present)
-Portfolio of early-stage tech startups via equity crowdfunding.
+### HSN Labs — Founder & Managing Partner
+November 2020 to Present
+Forward Deployed Engineering boutique building deterministic multi-agent architectures on executable business ontologies for mission-critical enterprise operations.
+Portfolio of delivered engagements includes Deloitte, Santander, Softplan, Unipar Carbocloro, LWSA, Turbi, Caju, Cast Group, and Insi.
 
-## Past
-**Cubo Itaú** — *Alumini* (Nov 2021 - Jun 2026)
+### SMU Investimentos — Startup Investor
+August 2021 to Present
+Early-stage technology investments through equity crowdfunding syndicates.
 
-**Oncase** — *Product Manager, Data-Intensive Apps* (Feb 2018 - Mar 2020)
-Joined post-Series A. Owned data applications end-to-end. 
-- Designed analytics-ready datasets on Snowflake, BigQuery, Redshift, S3.
-- Shipped scalable processing with Databricks and Spark.
-- Implemented streaming pipelines with Kafka.
-- Orchestrated ETL with Pentaho.
+---
 
-**WeCare Incentivos Corporativos** — *CEO & Co-Founder* (Feb 2015 - Jan 2018)
-Built a B2B SaaS platform for employee recognition (middle market). First company-building cycle. Acquired.
+## Past Experience
 
-**Philips** — *Trainee* (Jan 2014 - Feb 2015)
-Health technology business side. Supported service contracts, SLAs, and maintenance plans for enterprise relationships.
+### Cubo Itaú — Alumni
+November 2021 to June 2026
+Active member of Latin America largest technology innovation ecosystem.
+
+### Oncase — Product Manager, Data-Intensive Applications
+February 2018 to March 2020
+Owned enterprise data products post-Series A.
+- Built analytics datasets on Snowflake, BigQuery, Redshift, and Amazon S3.
+- Shipped high-volume processing pipelines with Databricks and Apache Spark.
+- Implemented streaming data architectures with Apache Kafka.
+- Orchestrated complex enterprise ETL workloads with Pentaho.
+
+### WeCare Incentivos Corporativos — CEO & Co-Founder
+February 2015 to January 2018
+Bootstrapped and scaled B2B corporate incentives SaaS platform for mid-market clients. First full venture cycle. Company acquired.
+
+### Philips — Trainee
+January 2014 to February 2015
+Health systems commercial operations. Managed service level agreements and multi-million dollar maintenance contracts for healthcare institutions.

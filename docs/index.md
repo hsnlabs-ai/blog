@@ -8,11 +8,11 @@ hide:
 
 I am a 3x VC-backed SaaS founder, engineer, and investor. 
 
-Currently CPTO at [Eva People](https://evapeople.com.br). Previously founded and sold WeCare. I spent my early career shipping data-intensive applications for enterprise financial services.
+Currently CPTO at Eva People, leading onboarding infrastructure. Founder and Managing Partner at HSN Labs, an engineering boutique building custom, deterministic multi-agent architectures on business ontologies for mission-critical enterprise operations.
 
-My focus is **Deterministic Agentic Engineering**. I build autonomous digital workforces that replace legacy BPO operations. I use GraphRAG and semantic ontologies to enforce strict compliance when AI interacts with production databases.
+My operational focus is Deterministic Agentic Engineering. I replace fragile BPO operations with autonomous digital workforces. I use executable domain ontologies, GraphRAG, and formal state machines to enforce strict compliance when AI models interact with production systems.
 
-I write about enterprise software, architecture failures, and capital allocation.
+I write about enterprise software architecture, production failures, and capital allocation.
 
 ---
 
@@ -22,24 +22,24 @@ I write about enterprise software, architecture failures, and capital allocation
 
     ---
 
-    Explore my core theses on why traditional chatbots fail in B2B, the true cost of legacy IT, and how Deterministic AI expands margins.
+    Explore core theses on why traditional chatbots fail in B2B, the true cost of legacy IT, and how Deterministic AI expands margins.
 
-    [:octicons-arrow-right-24: Go to Writing](writing/index.md)
+    <a href="writing/index.md">:octicons-arrow-right-24: Go to Writing</a>
 
 -   :material-account-cog: **User Manual**
 
     ---
 
-    Understand my operating rhythm. How I work, what I value, and how to communicate effectively with me to maximize output.
+    Understand my operating rhythm. How I work, what I value, and how to communicate effectively to maximize output.
 
-    [:octicons-arrow-right-24: Read User Manual](about/user-manual.md)
+    <a href="about/user-manual.md">:octicons-arrow-right-24: Read User Manual</a>
 
--   :material-briefcase: **Consulting Services**
+-   :material-briefcase: **Services & Advisory**
 
     ---
 
-    I help Level 3 buyers (CEOs, CFOs) deploy Forward Deployed Engineering teams to replace BPO operations with digital workers.
+    Strategic AI advisory by Hugo Nascimento for C-levels, and enterprise Forward Deployed Engineering by HSN Labs.
 
-    [:octicons-arrow-right-24: View Services](services.md)
+    <a href="services.md">:octicons-arrow-right-24: View Services</a>
 
 </div>

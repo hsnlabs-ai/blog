@@ -1,22 +1,23 @@
 # User Manual
 
-How to work with me. 
+Operating guidelines for working with Hugo Nascimento.
 
-## Communication
-- **Caveman style.** Direct, dry, no fluff.
-- I do not use corporate jargon. I speak in technical constraints and financial outcomes.
-- State the fact. Ask the question. Stop.
+## Communication Standard
+- Caveman style: Direct, concise, zero corporate fluff.
+- Zero marketing buzzwords. I speak in technical constraints, runtime failure modes, and financial return.
+- State facts once. Ask clear questions. Stop.
 
-## Business Philosophy
-- **ROI over features.** If a project does not replace headcount, cancel a BPO contract, or demonstrably expand margin within 180 days, I will not build it.
-- **Deterministic > Probabilistic.** I do not deploy raw LLMs into legacy IT. I build architectures that constrain them.
-- **Level 3 Thinking.** I work with Economic Buyers (CFOs, CEOs) who allocate capital. I partner with technical teams to execute, but the mandate must be financial.
+## Business Principles
+- ROI over novelty: If a project does not replace human headcount, terminate an expensive BPO contract, or demonstrably protect operating margins within 180 days, I will not build it.
+- Deterministic over probabilistic: Unconstrained LLMs cannot be trusted with enterprise money or customer records. We build rigid mathematical guardrails around stochastic models.
+- Economic Buyer focus: I partner with C-level executives who own P&L responsibility. Engineering teams execute the mechanics, but strategic mandates must be driven by business reality.
+- Clear delivery separation: Strategic architecture advisory is delivered personally by Hugo Nascimento. Full engineering implementations are delivered by HSN Labs Forward Deployed Engineering teams.
 
-## Red Flags (I will say no if:)
-- You want a conversational chatbot. (I build state-changing agents).
-- You want an open-ended "AI Discovery" project. (I require a paid, bounded architecture audit first).
-- You refuse to sign over IP protection for my underlying methodologies.
-- You want UI before Evals. 
+## Immediate Red Flags — I Will Decline If:
+- You want an unconstrained conversational chatbot with no state mutations.
+- You want open-ended exploratory research with no predefined success metrics.
+- You refuse to isolate agent memory and execution inside secure boundaries.
+- You prioritize frontend user interfaces before backend evaluation frameworks.
 
-## Pricing
-Value-based only. I do not sell hours. See [Services](../services.md).
+## Commercial Terms
+Value-based engagements only. I do not bill by the hour. See Services for engagement details.
