@@ -61,10 +61,10 @@ markdown_extensions:
 extra:
   social:
     - icon: fontawesome/solid/rss
-      link: feed_rss_created.xml
+      link: https://hsnlabs.ai/blog/feed_rss_created.xml
       name: RSS Feed
     - icon: fontawesome/brands/github
-      link: https://github.com/hugonotnice
+      link: https://github.com/hsnlabs-ai/blog
       name: GitHub
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/hugosoaresnascimento/
