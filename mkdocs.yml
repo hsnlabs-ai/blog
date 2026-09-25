@@ -1,10 +1,10 @@
 site_name: Hugo Nascimento
-site_url: https://hugonotnice.github.io/blog/
+site_url: https://hsnlabs.ai/blog/
 site_description: 3x VC-Backed Founder, Engineer, Investor.
 
 # Integração com GitHub (Mostra ícone no topo e link de "Edit/View Source")
-repo_name: hugonotnice/blog
-repo_url: https://github.com/hugonotnice/blog
+repo_name: hsnlabs-ai/blog
+repo_url: https://github.com/hsnlabs-ai/blog
 edit_uri: edit/main/docs/
 
 theme:
