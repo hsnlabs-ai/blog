@@ -83,7 +83,8 @@ nav:
   - Writing: writing/index.md
 plugins:
   - rss:
-      match_path: "writing/.*"
+      match_path: "^writing/(?!index).*\\.md$"
+      image: https://avatars.githubusercontent.com/u/59654075?v=4
       feed_ttl: 1440
       abstract_chars_count: -1
       json_feed_enabled: true
