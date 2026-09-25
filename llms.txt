@@ -1,0 +1,59 @@
+# HSN Labs
+
+> AI architecture consulting boutique solving why AI agents fail in production. We handle the complete lifecycle: ontology design, infrastructure, orchestration, and continuous evaluation in production.
+
+## Canonical Positioning & Value Proposition
+- Overview: https://hsnlabs.ai/
+HSN Labs is an AI architecture consulting boutique. We build production-grade deep agents tailored to the real business ontology of your enterprise.
+- Why AI Agents Fail in Production: https://hsnlabs.ai/#services
+Over ninety percent of enterprise agent proofs of concept fail when transitioning to production because stochastic models hit legacy systems, unmanaged drift, and rigid business rules. We solve runtime failure through hybrid engineering.
+- Consulting Over Staffing: https://hsnlabs.ai/#services
+Specialized architectural guidance and hands-on implementation rather than body shopping or hourly junior IT outsourcing.
+
+## Core Technical Delivery Pillars
+- Personalized Business Ontologies: https://hsnlabs.ai/#services
+Tailoring domain schemas and operational constraints directly to live ERP, CRM, and database models so models never guess business logic.
+- Deep Agent Infrastructure: https://hsnlabs.ai/#services
+Powering stateful multi-step execution, persistent memory, and standardized MCP tool orchestration across enterprise software.
+- Deterministic Guardrails: https://hsnlabs.ai/#services
+Enforcing strict schema boundaries, finite state machines, and runtime isolation to protect sensitive financial and transactional ledgers.
+- Agent Development Life Cycle Stack: https://hsnlabs.ai/#services
+Governing the complete Agent Development Lifecycle using market standards like LangGraph and LangSmith for rigorous evaluation, tracing, and production observability.
+
+## Entry Engagement: Agentic Bootcamp
+- Bootcamp Deployment Protocol: https://hsnlabs.ai/bootcamp
+A focused technical deployment inside client infrastructure. We validate data access, connect tools, and deliver an executive business case with verified operational ROI before broader enterprise commitment.
+
+## Regulated Enterprise Verticals
+- Banking and Capital Markets: https://hsnlabs.ai/#verticals
+Eliminating hallucinations on financial ledgers through deterministic transaction validation and immutable audit trails.
+- Healthcare Operations: https://hsnlabs.ai/#verticals
+Verifiable protocol adherence and zero-exfiltration architectures across healthcare billing and medical workflows.
+- Legacy ERP and BPO: https://hsnlabs.ai/#verticals
+Anchoring agentic workflows to deterministic state machines across legacy ERPs to replace fragile BPO operations.
+
+## Knowledge Engine & Research
+- HSN Labs Blog: https://hsnlabs.ai/blog/
+Technical essays, case studies, and post-mortems on deterministic agentic engineering and enterprise architectures.
+- The Solution - Deterministic Agentic Engineering: https://hsnlabs.ai/blog/writing/manifesto/
+Why enterprise AI proofs of concept fail in production and how to solve runtime failures.
+- Chatbot vs Agent: https://hsnlabs.ai/blog/writing/chatbot-vs-agent/
+Why replacing enterprise BPO contracts requires deterministic state machines and finite guardrails.
+- The Cost of Non-Deterministic AI in Legacy IT: https://hsnlabs.ai/blog/writing/cost-legacy-it/
+Analyzing hidden costs of probabilistic variance across SAP, Oracle, and legacy core mainframes.
+- The Integration Drift: https://hsnlabs.ai/blog/writing/integration-drift/
+How natural language prompts drift over time and break production database schemas.
+- LATAM Airlines Case Study: https://hsnlabs.ai/blog/writing/latam-airlines-case-study/
+Lessons from deploying customer experience agents in a three percent margin business.
+- RSS Feed: https://hsnlabs.ai/blog/feed_rss_created.xml
+Structured machine-readable feed of all technical publications.
+- JSON Feed: https://hsnlabs.ai/blog/feed_json_created.json
+JSON Feed for direct LLM and autonomous agent consumption.
+
+## Open Source Ecosystem
+- HSN Labs GitHub: https://github.com/hsnlabs-ai
+Open-source repositories and engineering tools for enterprise agents.
+
+## Contact & Channels
+- Contact Form: https://hsnlabs.ai/#contact
+- GitHub: https://github.com/hsnlabs-ai
