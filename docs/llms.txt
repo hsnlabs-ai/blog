@@ -55,6 +55,7 @@ Technical essays, case studies, and post-mortems on enterprise agent architectur
 - Legacy Core Systems Will Not Die: They Are the Engine Behind Autonomous Agents: https://hsnlabs.ai/blog/post/legacy-core-backing-engine/
 - LATAM Airlines: Production Agents in a 3% Margin Business: https://hsnlabs.ai/blog/post/latam-airlines-case-study/
 - The Architecture of Palantir AIP: Why Enterprise Agents Fail Without an Operational Ontology: https://hsnlabs.ai/blog/post/palantir-aip-bootcamp-operational-ontology/
+- Palantir vs Databricks: Why Data Lakes Fail at Agentic Operations: https://hsnlabs.ai/blog/post/palantir-vs-databricks-agent-architecture/
 
 ## Feeds & Machine Readability
 - RSS Feed: https://hsnlabs.ai/blog/feed_rss_created.xml

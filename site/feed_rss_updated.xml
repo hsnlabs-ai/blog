@@ -13,8 +13,8 @@
     <language>en</language>
 
     
-    <pubDate>Sun, 27 Sep 2026 21:58:59 -0000</pubDate>
-    <lastBuildDate>Sun, 27 Sep 2026 21:58:59 -0000</lastBuildDate>
+    <pubDate>Sun, 27 Sep 2026 22:02:29 -0000</pubDate>
+    <lastBuildDate>Sun, 27 Sep 2026 22:02:29 -0000</lastBuildDate>
     <ttl>1440</ttl>
 
     
@@ -59,6 +59,37 @@
       <source url="https://hsnlabs.ai/blog/feed_rss_updated.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
       
       <guid isPermaLink="true">https://hsnlabs.ai/blog/post/palantir-aip-bootcamp-operational-ontology/</guid>
+      
+    </item>
+    
+    <item>
+      <title>Palantir vs Databricks: Why Data Lakes Fail at Agentic Operations</title>
+      
+      
+        
+      <author>Hugo S. Nascimento</author>
+        
+      
+      
+      
+        
+      <category>Why Agents Fail</category>
+        
+      <category>ai-failures</category>
+        
+      <category>architecture</category>
+        
+      <category>data-contracts</category>
+        
+      <category>production</category>
+        
+      
+      <description>Architectural breakdown comparing analytical lakehouses against operational ontologies for mission-critical enterprise AI agents.</description>
+      <link>https://hsnlabs.ai/blog/post/palantir-vs-databricks-agent-architecture/</link>
+      <pubDate>Mon, 28 Sep 2026 00:00:00 +0000</pubDate>
+      <source url="https://hsnlabs.ai/blog/feed_rss_updated.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
+      
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/post/palantir-vs-databricks-agent-architecture/</guid>
       
     </item>
     
@@ -581,35 +612,6 @@
       <source url="https://hsnlabs.ai/blog/feed_rss_updated.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
       
       <guid isPermaLink="true">https://hsnlabs.ai/blog/post/cost-legacy-it/</guid>
-      
-    </item>
-    
-    <item>
-      <title>Why I Built HSN Labs</title>
-      
-      
-        
-      <author>Hugo S. Nascimento</author>
-        
-      
-      
-      
-        
-      <category>Case Studies</category>
-        
-      <category>case-studies</category>
-        
-      <category>hsn-labs</category>
-        
-      <category>manifesto</category>
-        
-      
-      <description>Foundational thesis of HSN Labs: building production-grade enterprise agent architectures on executable domain ontologies.</description>
-      <link>https://hsnlabs.ai/blog/post/manifesto/</link>
-      <pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
-      <source url="https://hsnlabs.ai/blog/feed_rss_updated.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
-      
-      <guid isPermaLink="true">https://hsnlabs.ai/blog/post/manifesto/</guid>
       
     </item>
     

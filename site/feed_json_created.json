@@ -34,6 +34,27 @@
             ]
         },
         {
+            "id": "https://hsnlabs.ai/blog/post/palantir-vs-databricks-agent-architecture/",
+            "url": "https://hsnlabs.ai/blog/post/palantir-vs-databricks-agent-architecture/",
+            "title": "Palantir vs Databricks: Why Data Lakes Fail at Agentic Operations",
+            "content_html": "Architectural breakdown comparing analytical lakehouses against operational ontologies for mission-critical enterprise AI agents.",
+            "image": null,
+            "date_modified": "2026-09-28T00:00:00+00:00",
+            "date_published": "2026-09-28T00:00:00+00:00",
+            "authors": [
+                {
+                    "name": "Hugo S. Nascimento"
+                }
+            ],
+            "tags": [
+                "Why Agents Fail",
+                "ai-failures",
+                "architecture",
+                "data-contracts",
+                "production"
+            ]
+        },
+        {
             "id": "https://hsnlabs.ai/blog/post/bpo-replacement-matrix/",
             "url": "https://hsnlabs.ai/blog/post/bpo-replacement-matrix/",
             "title": "The BPO Replacement Matrix: Operational and Financial Impact of Production Agents",
@@ -391,26 +412,6 @@
                 "architecture",
                 "legacy-it",
                 "reliability"
-            ]
-        },
-        {
-            "id": "https://hsnlabs.ai/blog/post/manifesto/",
-            "url": "https://hsnlabs.ai/blog/post/manifesto/",
-            "title": "Why I Built HSN Labs",
-            "content_html": "Foundational thesis of HSN Labs: building production-grade enterprise agent architectures on executable domain ontologies.",
-            "image": null,
-            "date_modified": "2026-07-08T00:00:00+00:00",
-            "date_published": "2026-07-08T00:00:00+00:00",
-            "authors": [
-                {
-                    "name": "Hugo S. Nascimento"
-                }
-            ],
-            "tags": [
-                "Case Studies",
-                "case-studies",
-                "hsn-labs",
-                "manifesto"
             ]
         }
     ]
