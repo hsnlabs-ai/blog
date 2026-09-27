@@ -1,0 +1,62 @@
+.blog-pagination {
+  margin: 3rem 0 2rem;
+  padding-top: 1.5rem;
+  border-top: 2px solid var(--primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.pagination-info {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-gray, #666);
+}
+
+.pagination-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.pagination-pages {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.pagination-btn {
+  background: var(--background, #fff);
+  color: var(--text, #000);
+  border: 1px solid var(--primary, #000);
+  border-radius: 0;
+  padding: 0.5rem 0.9rem;
+  font-family: inherit;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  min-height: 44px;
+  min-width: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination-btn:hover:not(:disabled) {
+  background: var(--primary, #000);
+  color: var(--background, #fff) !important;
+}
+
+.pagination-btn.active {
+  background: var(--primary, #000);
+  color: var(--background, #fff) !important;
+}
+
+.pagination-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  border-color: #ccc;
+}

@@ -47,12 +47,42 @@
     <link rel="stylesheet" href="../../assets/css/main.min.css">
     <link rel="stylesheet" href="../../assets/css/media.min.css">
     <link rel="stylesheet" href="../../assets/css/mkdocstrings.min.css">
+    <script src="../../assets/js/pagination.js"></script>
     <script src="../../search/main.js"></script>
 
     
     
     
-    
+    <link href="../../assets/css/pagination.css" rel="stylesheet">
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed - Hugo Nascimento" href="../../feed_rss_created.xml">
+<link rel="alternate" type="application/json" title="JSON Feed - Hugo Nascimento" href="../../feed_json_created.json">
+<meta name="robots" content="index, follow">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Tag: hsn-labs",
+  "description": "",
+  "datePublished": "",
+  "author": {
+    "@type": "Person",
+    "name": "Hugo Nascimento",
+    "url": "https://hsnlabs.ai"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "HSN Labs",
+    "url": "https://hsnlabs.ai"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://hsnlabs.ai/blog/tag/hsn-labs/"
+  }
+}
+</script>
+
 </head>
 
 <body>
@@ -265,12 +295,15 @@
 
 <!-- block blog_list_compact -->
 
-<div class="blog-list" id="component-blog-list">
+<div class="blog-list" id="component-blog-list" data-posts-per-page="10">
     
-    <article class="blog-row">
+    
+    <article class="blog-row blog-post-item" data-page="1" style="">
         
         <div class="blog-row-body">
             <div class="blog-row-byline">
+                
+                <img class="blog-row-avatar" src="https://github.com/hugonotnice.png" alt="Hugo Nascimento" loading="lazy">
                 
                 <h2 class="blog-row-title">
                     <a href="../../post/manifesto/">Why I Built HSN Labs</a>
@@ -285,6 +318,10 @@
             <a class="blog-row-cta" href="../../post/manifesto/">Ler Artigo &rarr;</a>
         </div>
     </article>
+    
+
+    
+    
     
 </div>
 
@@ -331,6 +368,7 @@
     <script src="../../assets/js/jquery-3.3.1.slim.min.js"></script>
     <script src="../../assets/js/bootstrap.bundle.min.js"></script>
     <script src="../../assets/js/main.min.js"></script>
+    <script src="../../assets/js/pagination.js" defer></script>
     <script src="../../search/main.js" defer></script>
 
 </body>

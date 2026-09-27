@@ -101,6 +101,48 @@ def test_d5_internal_links():
     assert len(missing_targets) == 0, f"Links quebrados encontrados: {missing_targets[:5]}"
     print("PASS: Gate D5 Todos os links internos sao validos")
 
+def test_d6_rss_feed():
+    rss_file = SITE_DIR / "feed_rss_created.xml"
+    json_feed = SITE_DIR / "feed_json_created.json"
+    assert rss_file.exists(), "ERRO: feed_rss_created.xml nao gerado"
+    assert json_feed.exists(), "ERRO: feed_json_created.json nao gerado"
+    
+    with open(rss_file, "r", encoding="utf-8") as f:
+        rss_content = f.read()
+    item_count = len(re.findall(r"<item>", rss_content))
+    assert item_count >= 19, f"RSS com apenas {item_count} items, esperado >= 19"
+    print("PASS: Gate D6 RSS Feed e JSON Feed gerados com 19 posts")
+
+def test_d7_robots_and_sitemap():
+    robots_file = SITE_DIR / "robots.txt"
+    assert robots_file.exists(), "ERRO: site/robots.txt nao existe"
+    with open(robots_file, "r", encoding="utf-8") as f:
+        robots_txt = f.read()
+    assert "Sitemap: https://hsnlabs.ai/blog/sitemap.xml" in robots_txt, "robots.txt sem declaracao de sitemap"
+    
+    sitemap_file = SITE_DIR / "sitemap.xml"
+    assert sitemap_file.exists(), "ERRO: site/sitemap.xml nao existe"
+    with open(sitemap_file, "r", encoding="utf-8") as f:
+        sitemap_xml = f.read()
+    assert "<loc>https://hsnlabs.ai/blog/post/why-rag-breaks-on-erp/</loc>" in sitemap_xml, "sitemap.xml incompleto"
+    print("PASS: Gate D7 robots.txt e sitemap.xml integros")
+
+def test_d8_pagination_contract():
+    index_file = SITE_DIR / "index.html"
+    with open(index_file, "r", encoding="utf-8") as f:
+        html = f.read()
+    assert 'id="blog-pagination"' in html or 'class="blog-pagination"' in html, "ERRO: Container de paginacao ausente em index.html"
+    assert 'data-page-size="10"' in html or 'data-posts-per-page="10"' in html or 'pagination-btn' in html, "ERRO: Controles de paginacao de 10 artigos ausentes"
+    print("PASS: Gate D8 Paginacao de 10 artigos por pagina configurada")
+
+def test_d9_head_seo_meta():
+    index_file = SITE_DIR / "index.html"
+    with open(index_file, "r", encoding="utf-8") as f:
+        html = f.read()
+    assert 'rel="alternate" type="application/rss+xml"' in html, "ERRO: Tag link de RSS Feed ausente no head"
+    assert 'application/ld+json' in html or 'property="og:title"' in html, "ERRO: Metatags OpenGraph ou Schema JSON-LD ausentes"
+    print("PASS: Gate D9 Metatags de Indexacao e SEO presentes no head")
+
 if __name__ == "__main__":
     print("=== INICIANDO EXECUCAO DA SUITE DE ESPECIFICACAO ===")
     try:
@@ -109,6 +151,10 @@ if __name__ == "__main__":
         test_d3_mkdocs_strict_build()
         test_d4_search_index_integrity()
         test_d5_internal_links()
+        test_d6_rss_feed()
+        test_d7_robots_and_sitemap()
+        test_d8_pagination_contract()
+        test_d9_head_seo_meta()
         print("=== TODAS AS ASSERCOES PASSARAM COM SUCESSO ===")
     except AssertionError as e:
         print(f"FALHA DETERMINISTICA NO GATE: {e}", file=sys.stderr)

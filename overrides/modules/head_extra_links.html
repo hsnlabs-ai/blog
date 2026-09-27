@@ -1,0 +1,49 @@
+<link rel="alternate" type="application/rss+xml" title="RSS Feed - Hugo Nascimento" href="{{ 'feed_rss_created.xml'|url }}">
+<link rel="alternate" type="application/json" title="JSON Feed - Hugo Nascimento" href="{{ 'feed_json_created.json'|url }}">
+<meta name="robots" content="index, follow">
+
+{% if page and page.is_homepage %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": "Hugo Nascimento — Deterministic Agentic Engineering",
+  "url": "https://hsnlabs.ai/blog/",
+  "description": "{{ config.site_description }}",
+  "author": {
+    "@type": "Person",
+    "name": "Hugo Nascimento",
+    "url": "https://hsnlabs.ai"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "HSN Labs",
+    "url": "https://hsnlabs.ai"
+  }
+}
+</script>
+{% elif page and page.meta and page.meta.title %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "{{ page.meta.title }}",
+  "description": "{{ page.meta.description }}",
+  "datePublished": "{{ page.meta.date }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ page.meta.author or 'Hugo Nascimento' }}",
+    "url": "https://hsnlabs.ai"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "HSN Labs",
+    "url": "https://hsnlabs.ai"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ page.canonical_url }}"
+  }
+}
+</script>
+{% endif %}
