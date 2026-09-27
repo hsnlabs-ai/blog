@@ -1,1 +1,586 @@
-<?xml version="1.0" encoding="UTF-8" ?> <?xml-stylesheet type="text/xsl" href="rss.xsl"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/"> <channel> <title>Hugo S. Nascimento</title><description>Enterprise Agent Architecture — Essays and field notes on enterprise AI architectures, business ontologies, and avoiding runtime failures in production.</description><link>https://hsnlabs.ai/blog/</link><atom:link href="https://hsnlabs.ai/blog/feed_rss_created.xml" rel="self" type="application/rss+xml" /> <atom:link href="https://pubsubhubbub.appspot.com/" rel="hub" type="application/rss+xml"/> <managingEditor>Hugo S. Nascimento</managingEditor><language>en</language> <pubDate>Sun, 27 Sep 2026 21:26:24 -0000</pubDate> <lastBuildDate>Sun, 27 Sep 2026 21:26:24 -0000</lastBuildDate> <ttl>1440</ttl> <generator>MkDocs RSS plugin - v1.19.0</generator> <image> <url>None</url> <title>Hugo S. Nascimento</title> <link>https://hsnlabs.ai/blog/</link> </image> <item> <title>The BPO Replacement Matrix: Operational and Financial Impact of Production Agents</title> <author>Hugo S. Nascimento</author> <description>Quantitative framework analyzing unit economics, operational metrics, and margin impact of replacing legacy BPO contracts with autonomous software agents.</description> <link>https://hsnlabs.ai/blog/post/bpo-replacement-matrix/</link> <pubDate>Sun, 27 Sep 2026 00:00:00 +0000</pubDate> <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo S. Nascimento</source><guid isPermaLink="true">https://hsnlabs.ai/blog/post/bpo-replacement-matrix/</guid> </item> <item> <title>The C-Suite Transition Playbook: Protecting Margins in the Agentic Economy</title> <author>Hugo S. Nascimento</author> <description>Executive blueprint for boardrooms and CFOs defending operational margins against legacy IT cost structures in the agentic economy.</description> <link>https://hsnlabs.ai/blog/post/c-suite-margin-protection-playbook/</link> <pubDate>Fri, 25 Sep 2026 00:00:00 +0000</pubDate> <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo S. Nascimento</source><guid isPermaLink="true">https://hsnlabs.ai/blog/post/c-suite-margin-protection-playbook/</guid> </item> <item> <title>Why Big 4 Slide Decks Fail on Agent Projects</title> <author>Hugo S. Nascimento</author> <description>Why traditional Big 4 strategy slide decks fail to deliver working agentic software in complex enterprise production environments.</description> <link>https://hsnlabs.ai/blog/post/five-day-architecture-sprint/</link> <pubDate>Tue, 22 Sep 2026 00:00:00 +0000</pubDate> <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo S. Nascimento</source><guid isPermaLink="true">https://hsnlabs.ai/blog/post/five-day-architecture-sprint/</guid> </item> <item> <title>High-Velocity Operations: Autonomous Negotiation, Collections, and Contract Execution</title> <author>Hugo S. Nascimento</author> <description>Production architecture for autonomous collections, contract negotiation, and high-velocity commercial execution.</description> <link>https://hsnlabs.ai/blog/post/autonomous-negotiations-collections-contracts/</link> <pubDate>Fri, 18 Sep 2026 00:00:00 +0000</pubDate> <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo S. Nascimento</source><guid isPermaLink="true">https://hsnlabs.ai/blog/post/autonomous-negotiations-collections-contracts/</guid> </item> <item> <title>What I Learned Building HR Tech About Dying BPO Contracts</title> <author>Hugo S. Nascimento</author> <description>Operational field lessons on the structural collapse of enterprise HR outsourcing contracts and manual workflows.</description> <link>https://hsnlabs.ai/blog/post/balance-sheet-guard-bpo-extinction/</link> <pubDate>Tue, 15 Sep 2026 00:00:00 +0000</pubDate> <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo S. Nascimento</source><guid isPermaLink="true">https://hsnlabs.ai/blog/post/balance-sheet-guard-bpo-extinction/</guid> </item> <item> <title>Protocol Arbitrage: Autonomous Multimodal Adjudication in Healthcare and Underwriting</title> <author>Hugo S. Nascimento</author> <description>Autonomous multimodal adjudication and real-time protocol arbitrage across complex insurance claims and healthcare underwriting.</description> <link>https://hsnlabs.ai/blog/post/protocol-arbitrage-claims-underwriting/</link> <pubDate>Fri, 11 Sep 2026 00:00:00 +0000</pubDate> <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo S. Nascimento</source><guid isPermaLink="true">https://hsnlabs.ai/blog/post/protocol-arbitrage-claims-underwriting/</guid> </item> <item> <title>The Death of Tier-1 Support: Why ERP Consultancies and IT Helpdesks Cannot Defend the Billable Hour</title> <author>Hugo S. Nascimento</author> <description>The structural collapse of hourly billable support models across enterprise ERP consultancies and IT helpdesks.</description> <link>https://hsnlabs.ai/blog/post/death-of-tier-1-erp-helpdesk/</link> <pubDate>Tue, 08 Sep 2026 00:00:00 +0000</pubDate> <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo S. Nascimento</source><guid isPermaLink="true">https://hsnlabs.ai/blog/post/death-of-tier-1-erp-helpdesk/</guid> </item> <item> <title>The RPA Market Is Collapsing</title> <author>Hugo S. Nascimento</author> <description>Why brittle screen-recording bots are collapsing in enterprise environments and how production agent architectures replace them.</description> <link>https://hsnlabs.ai/blog/post/collapse-of-legacy-rpa/</link> <pubDate>Fri, 04 Sep 2026 00:00:00 +0000</pubDate> <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo S. Nascimento</source><guid isPermaLink="true">https://hsnlabs.ai/blog/post/collapse-of-legacy-rpa/</guid> </item> <item> <title>Why Agents Fail: The PoC Graveyard</title> <author>Hugo S. Nascimento</author> <description>Root cause post-mortem on why ninety percent of enterprise AI proofs of concept fail before reaching live production.</description> <link>https://hsnlabs.ai/blog/post/the-poc-graveyard/</link> <pubDate>Tue, 01 Sep 2026 00:00:00 +0000</pubDate> <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo S. Nascimento</source><guid isPermaLink="true">https://hsnlabs.ai/blog/post/the-poc-graveyard/</guid> </item> <item> <title>How We Protect Enterprise Databases from AI Agents</title> <author>Hugo S. Nascimento</author> <description>Architectural patterns for perimeter isolation, context contracts, and cryptographic access boundaries shielding enterprise data from AI agents.</description> <link>https://hsnlabs.ai/blog/post/perimeter-isolation-mcp-data-contracts/</link> <pubDate>Wed, 26 Aug 2026 00:00:00 +0000</pubDate> <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo S. Nascimento</source><guid isPermaLink="true">https://hsnlabs.ai/blog/post/perimeter-isolation-mcp-data-contracts/</guid> </item> <item> <title>LATAM Airlines: Production Agents in a 3% Margin Business</title> <author>Hugo S. Nascimento</author> <description>Field post-mortem on deploying resilient enterprise agents in low-margin, high-throughput commercial aviation operations.</description> <link>https://hsnlabs.ai/blog/post/latam-airlines-case-study/</link> <pubDate>Fri, 21 Aug 2026 00:00:00 +0000</pubDate> <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo S. Nascimento</source><guid isPermaLink="true">https://hsnlabs.ai/blog/post/latam-airlines-case-study/</guid> </item> <item> <title>Why LLM-as-a-Judge Fails in Banking</title> <author>Hugo S. Nascimento</author> <description>Structural vulnerabilities and compliance liabilities of relying on stochastic LLM evaluators to audit critical financial decisions.</description> <link>https://hsnlabs.ai/blog/post/llm-as-judge-fallacy/</link> <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate> <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo S. Nascimento</source><guid isPermaLink="true">https://hsnlabs.ai/blog/post/llm-as-judge-fallacy/</guid> </item> <item> <title>Case Study: 42 Calls in a Loop at 2 AM</title> <author>Hugo S. Nascimento</author> <description>Emergency incident audit and architectural remedy for unbounded agent API loops through finite state machines.</description> <link>https://hsnlabs.ai/blog/post/unconstrained-agents-finite-state-machines/</link> <pubDate>Wed, 12 Aug 2026 00:00:00 +0000</pubDate> <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo S. Nascimento</source><guid isPermaLink="true">https://hsnlabs.ai/blog/post/unconstrained-agents-finite-state-machines/</guid> </item> <item> <title>Why I Never Use Normal RAG on Financial ERPs</title> <author>Hugo S. Nascimento</author> <description>Why vector similarity retrieval corrupts arithmetic precision and ledger integrity in enterprise financial ERPs.</description> <link>https://hsnlabs.ai/blog/post/why-rag-breaks-on-erp/</link> <pubDate>Fri, 07 Aug 2026 00:00:00 +0000</pubDate> <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo S. Nascimento</source><guid isPermaLink="true">https://hsnlabs.ai/blog/post/why-rag-breaks-on-erp/</guid> </item> <item> <title>Legacy Core Systems Will Not Die: They Are the Engine Behind Autonomous Agents</title> <author>Hugo S. Nascimento</author> <description>Why legacy core transaction systems remain the indispensable foundation powering autonomous enterprise agents.</description> <link>https://hsnlabs.ai/blog/post/legacy-core-backing-engine/</link> <pubDate>Tue, 04 Aug 2026 00:00:00 +0000</pubDate> <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo S. Nascimento</source><guid isPermaLink="true">https://hsnlabs.ai/blog/post/legacy-core-backing-engine/</guid> </item> <item> <title>The Integration Drift: When Prompts Break Production</title> <author>Hugo S. Nascimento</author> <description>How to detect and guard production agent workflows against silent runtime breaks caused by upstream schema and API drift.</description> <link>https://hsnlabs.ai/blog/post/integration-drift/</link> <pubDate>Wed, 29 Jul 2026 00:00:00 +0000</pubDate> <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo S. Nascimento</source><guid isPermaLink="true">https://hsnlabs.ai/blog/post/integration-drift/</guid> </item> <item> <title>Chatbot vs Agent: Why Replacing BPOs Requires Production Guardrails</title> <author>Hugo S. Nascimento</author> <description>Critical architectural differences between conversational chatbots and production enterprise agents mutating live ERP state.</description> <link>https://hsnlabs.ai/blog/post/chatbot-vs-agent/</link> <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate> <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo S. Nascimento</source><guid isPermaLink="true">https://hsnlabs.ai/blog/post/chatbot-vs-agent/</guid> </item> <item> <title>The Cost of Unbounded AI in Legacy IT</title> <author>Hugo S. Nascimento</author> <description>Economic and technical audit of runaway costs and execution risks caused by unbounded stochastic AI on legacy enterprise infrastructure.</description> <link>https://hsnlabs.ai/blog/post/cost-legacy-it/</link> <pubDate>Wed, 15 Jul 2026 00:00:00 +0000</pubDate> <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo S. Nascimento</source><guid isPermaLink="true">https://hsnlabs.ai/blog/post/cost-legacy-it/</guid> </item> <item> <title>Why I Built HSN Labs</title> <author>Hugo S. Nascimento</author> <description>Foundational thesis of HSN Labs: building production-grade enterprise agent architectures on executable domain ontologies.</description> <link>https://hsnlabs.ai/blog/post/manifesto/</link> <pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate> <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo S. Nascimento</source><guid isPermaLink="true">https://hsnlabs.ai/blog/post/manifesto/</guid> </item> </channel> </rss>
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="rss.xsl"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    
+    <title>Hugo Nascimento — Enterprise Agent Architecture</title>
+    <description>Essays and field notes on deterministic agent architectures, domain ontologies, and avoiding runtime failures in production.</description>
+    <link>https://hsnlabs.ai/blog/</link>
+    <atom:link href="https://hsnlabs.ai/blog/feed_rss_created.xml" rel="self" type="application/rss+xml" /> <atom:link href="https://pubsubhubbub.appspot.com/" rel="hub" type="application/rss+xml"/>
+
+    
+    <managingEditor>Hugo S. Nascimento</managingEditor>
+    
+    <language>en</language>
+
+    
+    <pubDate>Sun, 27 Sep 2026 21:28:25 -0000</pubDate>
+    <lastBuildDate>Sun, 27 Sep 2026 21:28:25 -0000</lastBuildDate>
+    <ttl>1440</ttl>
+
+    
+    <generator>MkDocs RSS plugin - v1.19.0</generator>
+
+    
+    
+    <image>
+      <url>https://hsnlabs.ai/blog/assets/brand/symbol/symbol-square-pure-cyan.png</url>
+      <title>Hugo Nascimento — Enterprise Agent Architecture</title>
+      <link>https://hsnlabs.ai/blog/</link>
+    </image>
+    
+
+    
+    
+    <item>
+      <title>The BPO Replacement Matrix: Operational and Financial Impact of Production Agents</title>
+      
+      
+        
+      <author>Hugo S. Nascimento</author>
+        
+      
+      
+      
+        
+      <category>Agentic Economy &amp; BPO Collapse</category>
+        
+      <category>bpo</category>
+        
+      <category>ebitda</category>
+        
+      <category>economics</category>
+        
+      
+      <description>Quantitative framework analyzing unit economics, operational metrics, and margin impact of replacing legacy BPO contracts with autonomous software agents.</description>
+      <link>https://hsnlabs.ai/blog/post/bpo-replacement-matrix/</link>
+      <pubDate>Sun, 27 Sep 2026 00:00:00 +0000</pubDate>
+      <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
+      
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/post/bpo-replacement-matrix/</guid>
+      
+    </item>
+    
+    <item>
+      <title>The C-Suite Transition Playbook: Protecting Margins in the Agentic Economy</title>
+      
+      
+        
+      <author>Hugo S. Nascimento</author>
+        
+      
+      
+      
+        
+      <category>Agentic Economy &amp; BPO Collapse</category>
+        
+      <category>c-suite</category>
+        
+      <category>economics</category>
+        
+      <category>margins</category>
+        
+      
+      <description>Executive blueprint for boardrooms and CFOs defending operational margins against legacy IT cost structures in the agentic economy.</description>
+      <link>https://hsnlabs.ai/blog/post/c-suite-margin-protection-playbook/</link>
+      <pubDate>Fri, 25 Sep 2026 00:00:00 +0000</pubDate>
+      <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
+      
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/post/c-suite-margin-protection-playbook/</guid>
+      
+    </item>
+    
+    <item>
+      <title>Why Big 4 Slide Decks Fail on Agent Projects</title>
+      
+      
+        
+      <author>Hugo S. Nascimento</author>
+        
+      
+      
+      
+        
+      <category>Frontline &amp; Case Studies</category>
+        
+      <category>case-studies</category>
+        
+      <category>consulting</category>
+        
+      <category>sprint</category>
+        
+      
+      <description>Why traditional Big 4 strategy slide decks fail to deliver working agentic software in complex enterprise production environments.</description>
+      <link>https://hsnlabs.ai/blog/post/five-day-architecture-sprint/</link>
+      <pubDate>Tue, 22 Sep 2026 00:00:00 +0000</pubDate>
+      <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
+      
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/post/five-day-architecture-sprint/</guid>
+      
+    </item>
+    
+    <item>
+      <title>High-Velocity Operations: Autonomous Negotiation, Collections, and Contract Execution</title>
+      
+      
+        
+      <author>Hugo S. Nascimento</author>
+        
+      
+      
+      
+        
+      <category>Agentic Economy &amp; BPO Collapse</category>
+        
+      <category>bpo</category>
+        
+      <category>collections</category>
+        
+      <category>economics</category>
+        
+      
+      <description>Production architecture for autonomous collections, contract negotiation, and high-velocity commercial execution.</description>
+      <link>https://hsnlabs.ai/blog/post/autonomous-negotiations-collections-contracts/</link>
+      <pubDate>Fri, 18 Sep 2026 00:00:00 +0000</pubDate>
+      <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
+      
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/post/autonomous-negotiations-collections-contracts/</guid>
+      
+    </item>
+    
+    <item>
+      <title>What I Learned Building HR Tech About Dying BPO Contracts</title>
+      
+      
+        
+      <author>Hugo S. Nascimento</author>
+        
+      
+      
+      
+        
+      <category>Agentic Economy &amp; BPO Collapse</category>
+        
+      <category>bpo</category>
+        
+      <category>economics</category>
+        
+      <category>hr-tech</category>
+        
+      
+      <description>Operational field lessons on the structural collapse of enterprise HR outsourcing contracts and manual workflows.</description>
+      <link>https://hsnlabs.ai/blog/post/balance-sheet-guard-bpo-extinction/</link>
+      <pubDate>Tue, 15 Sep 2026 00:00:00 +0000</pubDate>
+      <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
+      
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/post/balance-sheet-guard-bpo-extinction/</guid>
+      
+    </item>
+    
+    <item>
+      <title>Protocol Arbitrage: Autonomous Multimodal Adjudication in Healthcare and Underwriting</title>
+      
+      
+        
+      <author>Hugo S. Nascimento</author>
+        
+      
+      
+      
+        
+      <category>Frontline &amp; Case Studies</category>
+        
+      <category>arbitrage</category>
+        
+      <category>case-studies</category>
+        
+      <category>insurance</category>
+        
+      
+      <description>Autonomous multimodal adjudication and real-time protocol arbitrage across complex insurance claims and healthcare underwriting.</description>
+      <link>https://hsnlabs.ai/blog/post/protocol-arbitrage-claims-underwriting/</link>
+      <pubDate>Fri, 11 Sep 2026 00:00:00 +0000</pubDate>
+      <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
+      
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/post/protocol-arbitrage-claims-underwriting/</guid>
+      
+    </item>
+    
+    <item>
+      <title>The Death of Tier-1 Support: Why ERP Consultancies and IT Helpdesks Cannot Defend the Billable Hour</title>
+      
+      
+        
+      <author>Hugo S. Nascimento</author>
+        
+      
+      
+      
+        
+      <category>Agentic Economy &amp; BPO Collapse</category>
+        
+      <category>economics</category>
+        
+      <category>erp-support</category>
+        
+      <category>helpdesk</category>
+        
+      
+      <description>The structural collapse of hourly billable support models across enterprise ERP consultancies and IT helpdesks.</description>
+      <link>https://hsnlabs.ai/blog/post/death-of-tier-1-erp-helpdesk/</link>
+      <pubDate>Tue, 08 Sep 2026 00:00:00 +0000</pubDate>
+      <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
+      
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/post/death-of-tier-1-erp-helpdesk/</guid>
+      
+    </item>
+    
+    <item>
+      <title>The RPA Market Is Collapsing</title>
+      
+      
+        
+      <author>Hugo S. Nascimento</author>
+        
+      
+      
+      
+        
+      <category>Agentic Economy &amp; BPO Collapse</category>
+        
+      <category>automation</category>
+        
+      <category>economics</category>
+        
+      <category>rpa</category>
+        
+      
+      <description>Why brittle screen-recording bots are collapsing in enterprise environments and how production agent architectures replace them.</description>
+      <link>https://hsnlabs.ai/blog/post/collapse-of-legacy-rpa/</link>
+      <pubDate>Fri, 04 Sep 2026 00:00:00 +0000</pubDate>
+      <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
+      
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/post/collapse-of-legacy-rpa/</guid>
+      
+    </item>
+    
+    <item>
+      <title>Why Agents Fail: The PoC Graveyard</title>
+      
+      
+        
+      <author>Hugo S. Nascimento</author>
+        
+      
+      
+      
+        
+      <category>Frontline &amp; Case Studies</category>
+        
+      <category>ai-failures</category>
+        
+      <category>case-studies</category>
+        
+      <category>poc</category>
+        
+      
+      <description>Root cause post-mortem on why ninety percent of enterprise AI proofs of concept fail before reaching live production.</description>
+      <link>https://hsnlabs.ai/blog/post/the-poc-graveyard/</link>
+      <pubDate>Tue, 01 Sep 2026 00:00:00 +0000</pubDate>
+      <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
+      
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/post/the-poc-graveyard/</guid>
+      
+    </item>
+    
+    <item>
+      <title>How We Protect Enterprise Databases from AI Agents</title>
+      
+      
+        
+      <author>Hugo S. Nascimento</author>
+        
+      
+      
+      
+        
+      <category>Enterprise Agent Architecture</category>
+        
+      <category>architecture</category>
+        
+      <category>data-contracts</category>
+        
+      <category>mcp</category>
+        
+      
+      <description>Architectural patterns for perimeter isolation, context contracts, and cryptographic access boundaries shielding enterprise data from AI agents.</description>
+      <link>https://hsnlabs.ai/blog/post/perimeter-isolation-mcp-data-contracts/</link>
+      <pubDate>Wed, 26 Aug 2026 00:00:00 +0000</pubDate>
+      <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
+      
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/post/perimeter-isolation-mcp-data-contracts/</guid>
+      
+    </item>
+    
+    <item>
+      <title>LATAM Airlines: Production Agents in a 3% Margin Business</title>
+      
+      
+        
+      <author>Hugo S. Nascimento</author>
+        
+      
+      
+      
+        
+      <category>Frontline &amp; Case Studies</category>
+        
+      <category>case-studies</category>
+        
+      <category>latam-airlines</category>
+        
+      <category>production</category>
+        
+      
+      <description>Field post-mortem on deploying resilient enterprise agents in low-margin, high-throughput commercial aviation operations.</description>
+      <link>https://hsnlabs.ai/blog/post/latam-airlines-case-study/</link>
+      <pubDate>Fri, 21 Aug 2026 00:00:00 +0000</pubDate>
+      <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
+      
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/post/latam-airlines-case-study/</guid>
+      
+    </item>
+    
+    <item>
+      <title>Why LLM-as-a-Judge Fails in Banking</title>
+      
+      
+        
+      <author>Hugo S. Nascimento</author>
+        
+      
+      
+      
+        
+      <category>Enterprise Agent Architecture</category>
+        
+      <category>architecture</category>
+        
+      <category>audit</category>
+        
+      <category>llm-judge</category>
+        
+      
+      <description>Structural vulnerabilities and compliance liabilities of relying on stochastic LLM evaluators to audit critical financial decisions.</description>
+      <link>https://hsnlabs.ai/blog/post/llm-as-judge-fallacy/</link>
+      <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
+      <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
+      
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/post/llm-as-judge-fallacy/</guid>
+      
+    </item>
+    
+    <item>
+      <title>Case Study: 42 Calls in a Loop at 2 AM</title>
+      
+      
+        
+      <author>Hugo S. Nascimento</author>
+        
+      
+      
+      
+        
+      <category>Frontline &amp; Case Studies</category>
+        
+      <category>api-loops</category>
+        
+      <category>case-studies</category>
+        
+      <category>production</category>
+        
+      
+      <description>Emergency incident audit and architectural remedy for unbounded agent API loops through finite state machines.</description>
+      <link>https://hsnlabs.ai/blog/post/unconstrained-agents-finite-state-machines/</link>
+      <pubDate>Wed, 12 Aug 2026 00:00:00 +0000</pubDate>
+      <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
+      
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/post/unconstrained-agents-finite-state-machines/</guid>
+      
+    </item>
+    
+    <item>
+      <title>Why I Never Use Normal RAG on Financial ERPs</title>
+      
+      
+        
+      <author>Hugo S. Nascimento</author>
+        
+      
+      
+      
+        
+      <category>Enterprise Agent Architecture</category>
+        
+      <category>architecture</category>
+        
+      <category>erp</category>
+        
+      <category>rag</category>
+        
+      
+      <description>Why vector similarity retrieval corrupts arithmetic precision and ledger integrity in enterprise financial ERPs.</description>
+      <link>https://hsnlabs.ai/blog/post/why-rag-breaks-on-erp/</link>
+      <pubDate>Fri, 07 Aug 2026 00:00:00 +0000</pubDate>
+      <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
+      
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/post/why-rag-breaks-on-erp/</guid>
+      
+    </item>
+    
+    <item>
+      <title>Legacy Core Systems Will Not Die: They Are the Engine Behind Autonomous Agents</title>
+      
+      
+        
+      <author>Hugo S. Nascimento</author>
+        
+      
+      
+      
+        
+      <category>Enterprise Agent Architecture</category>
+        
+      <category>architecture</category>
+        
+      <category>legacy-core</category>
+        
+      <category>mainframe</category>
+        
+      
+      <description>Why legacy core transaction systems remain the indispensable foundation powering autonomous enterprise agents.</description>
+      <link>https://hsnlabs.ai/blog/post/legacy-core-backing-engine/</link>
+      <pubDate>Tue, 04 Aug 2026 00:00:00 +0000</pubDate>
+      <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
+      
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/post/legacy-core-backing-engine/</guid>
+      
+    </item>
+    
+    <item>
+      <title>The Integration Drift: When Prompts Break Production</title>
+      
+      
+        
+      <author>Hugo S. Nascimento</author>
+        
+      
+      
+      
+        
+      <category>Enterprise Agent Architecture</category>
+        
+      <category>architecture</category>
+        
+      <category>mcp</category>
+        
+      <category>schema-drift</category>
+        
+      
+      <description>How to detect and guard production agent workflows against silent runtime breaks caused by upstream schema and API drift.</description>
+      <link>https://hsnlabs.ai/blog/post/integration-drift/</link>
+      <pubDate>Wed, 29 Jul 2026 00:00:00 +0000</pubDate>
+      <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
+      
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/post/integration-drift/</guid>
+      
+    </item>
+    
+    <item>
+      <title>Chatbot vs Agent: Why Replacing BPOs Requires Production Guardrails</title>
+      
+      
+        
+      <author>Hugo S. Nascimento</author>
+        
+      
+      
+      
+        
+      <category>Enterprise Agent Architecture</category>
+        
+      <category>architecture</category>
+        
+      <category>guardrails</category>
+        
+      <category>state-machines</category>
+        
+      
+      <description>Critical architectural differences between conversational chatbots and production enterprise agents mutating live ERP state.</description>
+      <link>https://hsnlabs.ai/blog/post/chatbot-vs-agent/</link>
+      <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
+      <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
+      
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/post/chatbot-vs-agent/</guid>
+      
+    </item>
+    
+    <item>
+      <title>The Cost of Unbounded AI in Legacy IT</title>
+      
+      
+        
+      <author>Hugo S. Nascimento</author>
+        
+      
+      
+      
+        
+      <category>Enterprise Agent Architecture</category>
+        
+      <category>architecture</category>
+        
+      <category>legacy-it</category>
+        
+      <category>reliability</category>
+        
+      
+      <description>Economic and technical audit of runaway costs and execution risks caused by unbounded stochastic AI on legacy enterprise infrastructure.</description>
+      <link>https://hsnlabs.ai/blog/post/cost-legacy-it/</link>
+      <pubDate>Wed, 15 Jul 2026 00:00:00 +0000</pubDate>
+      <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
+      
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/post/cost-legacy-it/</guid>
+      
+    </item>
+    
+    <item>
+      <title>Why I Built HSN Labs</title>
+      
+      
+        
+      <author>Hugo S. Nascimento</author>
+        
+      
+      
+      
+        
+      <category>Frontline &amp; Case Studies</category>
+        
+      <category>case-studies</category>
+        
+      <category>hsn-labs</category>
+        
+      <category>manifesto</category>
+        
+      
+      <description>Foundational thesis of HSN Labs: building production-grade enterprise agent architectures on executable domain ontologies.</description>
+      <link>https://hsnlabs.ai/blog/post/manifesto/</link>
+      <pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
+      <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
+      
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/post/manifesto/</guid>
+      
+    </item>
+    
+  </channel>
+</rss>

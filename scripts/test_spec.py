@@ -107,11 +107,24 @@ def test_d6_rss_feed():
     assert rss_file.exists(), "ERRO: feed_rss_created.xml nao gerado"
     assert json_feed.exists(), "ERRO: feed_json_created.json nao gerado"
     
+    # Assert valid well-formed XML and valid image URL
+    import xml.etree.ElementTree as ET
+    tree = ET.parse(rss_file)
+    root = tree.getroot()
+    channel = root.find('channel')
+    assert channel is not None, "ERRO: channel ausente no XML do RSS"
+    image = channel.find('image')
+    assert image is not None, "ERRO: tag image ausente no canal RSS"
+    url_tag = image.find('url')
+    assert url_tag is not None, "ERRO: tag url ausente em image"
+    image_url = url_tag.text
+    assert image_url and image_url != "None" and image_url.startswith("http"), f"ERRO: URL de imagem invalida no RSS: {image_url}"
+    
     with open(rss_file, "r", encoding="utf-8") as f:
         rss_content = f.read()
     item_count = len(re.findall(r"<item>", rss_content))
     assert item_count >= 19, f"RSS com apenas {item_count} items, esperado >= 19"
-    print("PASS: Gate D6 RSS Feed e JSON Feed gerados com 19 posts")
+    print("PASS: Gate D6 RSS Feed e JSON Feed gerados, validos como XML estrito e com logo oficial")
 
 def test_d7_robots_and_sitemap():
     robots_file = SITE_DIR / "robots.txt"

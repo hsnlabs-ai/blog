@@ -69,10 +69,18 @@ def on_post_build(config):
         rss_path = site_dir / rss_name
         if rss_path.exists():
             content = rss_path.read_text(encoding="utf-8")
+            
+            # Sanitize unescaped ampersands (e.g. inside <category> or <title>)
+            # Replaces & with &amp; if not already part of a valid XML entity
+            content = re.sub(r'&(?!(?:amp|lt|gt|quot|apos|#\d+|#x[0-9a-fA-F]+);)', '&amp;', content)
+            
+            # Fix any literal None in image url
+            content = content.replace("<url>None</url>", "<url>https://hsnlabs.ai/blog/assets/brand/symbol/symbol-square-pure-cyan.png</url>")
+            
             if 'rel="hub"' not in content:
                 content = re.sub(
                     r'(<atom:link [^>]*rel="self"[^>]*/>)',
                     r'\1 ' + hub_tag,
                     content
                 )
-                rss_path.write_text(content, encoding="utf-8")
+            rss_path.write_text(content, encoding="utf-8")
