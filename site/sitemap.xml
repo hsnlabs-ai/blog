@@ -2,46 +2,74 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://hsnlabs.ai/blog/</loc>
-         <lastmod>2026-09-25</lastmod>
+         <lastmod>2026-09-27</lastmod>
     </url>
     <url>
          <loc>https://hsnlabs.ai/blog/services/</loc>
-         <lastmod>2026-09-25</lastmod>
+         <lastmod>2026-09-27</lastmod>
     </url>
     <url>
          <loc>https://hsnlabs.ai/blog/about/investments/</loc>
-         <lastmod>2026-09-25</lastmod>
+         <lastmod>2026-09-27</lastmod>
     </url>
     <url>
          <loc>https://hsnlabs.ai/blog/about/resume/</loc>
-         <lastmod>2026-09-25</lastmod>
+         <lastmod>2026-09-27</lastmod>
     </url>
     <url>
          <loc>https://hsnlabs.ai/blog/about/user-manual/</loc>
-         <lastmod>2026-09-25</lastmod>
+         <lastmod>2026-09-27</lastmod>
     </url>
     <url>
          <loc>https://hsnlabs.ai/blog/writing/</loc>
-         <lastmod>2026-09-25</lastmod>
+         <lastmod>2026-09-27</lastmod>
     </url>
     <url>
-         <loc>https://hsnlabs.ai/blog/writing/chatbot-vs-agent/</loc>
-         <lastmod>2026-09-25</lastmod>
+         <loc>https://hsnlabs.ai/blog/writing/2026/09/08/chatbot-vs-agent-why-replacing-bpos-requires-deterministic-guardrails/</loc>
+         <lastmod>2026-09-27</lastmod>
     </url>
     <url>
-         <loc>https://hsnlabs.ai/blog/writing/cost-legacy-it/</loc>
-         <lastmod>2026-09-25</lastmod>
+         <loc>https://hsnlabs.ai/blog/writing/2026/09/27/the-collapse-of-legacy-rpa-why-fragile-screen-scrapers-cannot-survive-the-agentic-shift/</loc>
+         <lastmod>2026-09-27</lastmod>
     </url>
     <url>
-         <loc>https://hsnlabs.ai/blog/writing/integration-drift/</loc>
-         <lastmod>2026-09-25</lastmod>
+         <loc>https://hsnlabs.ai/blog/writing/2026/09/10/the-cost-of-non-deterministic-ai-in-legacy-it/</loc>
+         <lastmod>2026-09-27</lastmod>
     </url>
     <url>
-         <loc>https://hsnlabs.ai/blog/writing/latam-airlines-case-study/</loc>
-         <lastmod>2026-09-25</lastmod>
+         <loc>https://hsnlabs.ai/blog/writing/2026/09/05/the-integration-drift-when-prompts-break-production/</loc>
+         <lastmod>2026-09-27</lastmod>
     </url>
     <url>
-         <loc>https://hsnlabs.ai/blog/writing/manifesto/</loc>
-         <lastmod>2026-09-25</lastmod>
+         <loc>https://hsnlabs.ai/blog/writing/2026/09/13/latam-airlines-deterministic-agents-in-a-3-margin-business/</loc>
+         <lastmod>2026-09-27</lastmod>
+    </url>
+    <url>
+         <loc>https://hsnlabs.ai/blog/writing/2026/09/01/the-solution-deterministic-agentic-engineering/</loc>
+         <lastmod>2026-09-27</lastmod>
+    </url>
+    <url>
+         <loc>https://hsnlabs.ai/blog/writing/2026/09/27/the-poc-graveyard-why-enterprise-ai-pilots-never-reach-production/</loc>
+         <lastmod>2026-09-27</lastmod>
+    </url>
+    <url>
+         <loc>https://hsnlabs.ai/blog/writing/archive/2026/</loc>
+         <lastmod>2026-09-27</lastmod>
+    </url>
+    <url>
+         <loc>https://hsnlabs.ai/blog/writing/category/strategy/</loc>
+         <lastmod>2026-09-27</lastmod>
+    </url>
+    <url>
+         <loc>https://hsnlabs.ai/blog/writing/category/bpo/</loc>
+         <lastmod>2026-09-27</lastmod>
+    </url>
+    <url>
+         <loc>https://hsnlabs.ai/blog/writing/category/engineering/</loc>
+         <lastmod>2026-09-27</lastmod>
+    </url>
+    <url>
+         <loc>https://hsnlabs.ai/blog/writing/category/case-study/</loc>
+         <lastmod>2026-09-27</lastmod>
     </url>
 </urlset>
