@@ -14,9 +14,11 @@ POSTS_DIR = DOCS_DIR / "post"
 SITE_DIR = BASE_DIR / "site"
 
 CANONICAL_CATEGORIES = {
-    "Enterprise Agent Architecture",
-    "Agentic Economy & BPO Collapse",
-    "Frontline & Case Studies"
+    "Why Agents Fail",
+    "Agent Development Life Cycle",
+    "Future of Work",
+    "Agentic Economics",
+    "Case Studies"
 }
 
 def test_d1_frontmatter_schema():
@@ -162,9 +164,11 @@ def test_d10_replicated_footer():
         html = f.read()
     assert 'class="site-footer"' in html, "ERRO: site-footer ausente no HTML"
     assert 'São Paulo' in html and 'WeWork' in html, "ERRO: Informacoes de localizacao ausentes no footer"
-    assert 'Enterprise Agent Architecture' in html, "ERRO: Pilar de Arquitetura ausente no footer"
-    assert 'Agentic Economy & BPO' in html, "ERRO: Pilar de Economia Agêntica ausente no footer"
-    assert 'Frontline & Case Studies' in html, "ERRO: Pilar de Linha de Frente ausente no footer"
+    assert 'Why Agents Fail' in html, "ERRO: Pilar Why Agents Fail ausente no footer"
+    assert 'Agent Development Life Cycle' in html, "ERRO: Pilar Agent Development Life Cycle ausente no footer"
+    assert 'Future of Work' in html, "ERRO: Pilar Future of Work ausente no footer"
+    assert 'Agentic Economics' in html, "ERRO: Pilar Agentic Economics ausente no footer"
+    assert 'Case Studies' in html, "ERRO: Pilar Case Studies ausente no footer"
     assert 'llms.txt for LLMs & Agents' in html, "ERRO: Link llms.txt ausente no footer"
     assert '2026 HSN Labs' in html, "ERRO: Copyright ausente no footer"
     print("PASS: Gate D10 Footer minimalista com pilares de indexacao e SEO validado")

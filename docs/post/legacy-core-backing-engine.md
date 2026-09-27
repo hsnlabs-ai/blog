@@ -1,12 +1,13 @@
 ---
 title: 'Legacy Core Systems Will Not Die: They Are the Engine Behind Autonomous Agents'
 date: '2026-08-04'
-category: Enterprise Agent Architecture
+category: Agent Development Life Cycle
 tags:
 - architecture
 - legacy-core
 - mainframe
-description: "Why legacy core transaction systems remain the indispensable foundation powering autonomous enterprise agents."
+description: Why legacy core transaction systems remain the indispensable foundation
+  powering autonomous enterprise agents.
 author: Hugo S. Nascimento
 ---
 

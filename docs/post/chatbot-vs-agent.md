@@ -1,12 +1,13 @@
 ---
 title: 'Chatbot vs Agent: Why Replacing BPOs Requires Production Guardrails'
 date: '2026-07-22'
-category: Enterprise Agent Architecture
+category: Agent Development Life Cycle
 tags:
 - architecture
 - guardrails
 - state-machines
-description: "Critical architectural differences between conversational chatbots and production enterprise agents mutating live ERP state."
+description: Critical architectural differences between conversational chatbots and
+  production enterprise agents mutating live ERP state.
 author: Hugo S. Nascimento
 ---
 

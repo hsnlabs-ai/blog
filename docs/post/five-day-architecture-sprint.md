@@ -1,12 +1,13 @@
 ---
 title: Why Big 4 Slide Decks Fail on Agent Projects
 date: '2026-09-22'
-category: Frontline & Case Studies
+category: Agent Development Life Cycle
 tags:
 - case-studies
 - consulting
 - sprint
-description: "Why traditional Big 4 strategy slide decks fail to deliver working agentic software in complex enterprise production environments."
+description: Why traditional Big 4 strategy slide decks fail to deliver working agentic
+  software in complex enterprise production environments.
 author: Hugo S. Nascimento
 ---
 

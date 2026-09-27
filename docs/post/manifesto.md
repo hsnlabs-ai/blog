@@ -1,12 +1,13 @@
 ---
 title: Why I Built HSN Labs
 date: '2026-07-08'
-category: Frontline & Case Studies
+category: Case Studies
 tags:
 - case-studies
 - hsn-labs
 - manifesto
-description: "Foundational thesis of HSN Labs: building production-grade enterprise agent architectures on executable domain ontologies."
+description: 'Foundational thesis of HSN Labs: building production-grade enterprise
+  agent architectures on executable domain ontologies.'
 author: Hugo S. Nascimento
 ---
 

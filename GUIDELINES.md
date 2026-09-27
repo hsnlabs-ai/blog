@@ -27,10 +27,12 @@
 - Sidebar: Displays recent posts, categories, and tags with Brand Blue `#52B4FD` widget headers.
 
 ## 4. Editorial Taxonomy & Pillars
-Every essay belongs to one of three canonical English pillars:
-1. `Enterprise Agent Architecture`: Perimeter isolation, MCP protocols, finite state machines, legacy core integration, and runtime failure prevention.
-2. `Agentic Economy & BPO Collapse`: Economic models, BPO replacement frameworks, CFO margin protection, and RPA replacement.
-3. `Frontline & Case Studies`: Real-world deployments, incident audits, PoC failure root causes, and enterprise case studies (LATAM Airlines, etc.).
+Every essay belongs to one of five canonical English pillars:
+1. `Why Agents Fail`: Root causes of PoC failures, integration drift, RAG breakdowns on structured data, and evaluator bias.
+2. `Agent Development Life Cycle`: Perimeter isolation, MCP protocols, finite state machines, legacy core integration, and architecture sprints.
+3. `Future of Work`: Extinction of manual BPO contracts, collapse of legacy RPA, and death of Tier-1 IT helpdesk.
+4. `Agentic Economics`: Unit economics, EBITDA margin protection, BPO replacement matrix, and protocol arbitrage.
+5. `Case Studies`: Empirical field deployments, incident post-mortems, autonomous debt collection, and HSN Labs founding thesis.
 
 ## 5. Machine Endpoints & SEO Infrastructure
 - AI Crawler Index: `https://hsnlabs.ai/blog/llms.txt`

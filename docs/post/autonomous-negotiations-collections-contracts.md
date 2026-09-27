@@ -2,12 +2,13 @@
 title: 'High-Velocity Operations: Autonomous Negotiation, Collections, and Contract
   Execution'
 date: '2026-09-18'
-category: Agentic Economy & BPO Collapse
+category: Case Studies
 tags:
 - economics
 - collections
 - bpo
-description: "Production architecture for autonomous collections, contract negotiation, and high-velocity commercial execution."
+description: Production architecture for autonomous collections, contract negotiation,
+  and high-velocity commercial execution.
 author: Hugo S. Nascimento
 ---
 

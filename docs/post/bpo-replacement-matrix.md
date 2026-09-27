@@ -2,12 +2,13 @@
 title: 'The BPO Replacement Matrix: Operational and Financial Impact of Production
   Agents'
 date: '2026-09-27'
-category: Agentic Economy & BPO Collapse
+category: Agentic Economics
 tags:
 - economics
 - ebitda
 - bpo
-description: "Quantitative framework analyzing unit economics, operational metrics, and margin impact of replacing legacy BPO contracts with autonomous software agents."
+description: Quantitative framework analyzing unit economics, operational metrics,
+  and margin impact of replacing legacy BPO contracts with autonomous software agents.
 author: Hugo S. Nascimento
 ---
 

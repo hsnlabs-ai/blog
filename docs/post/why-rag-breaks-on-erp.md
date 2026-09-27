@@ -1,12 +1,13 @@
 ---
 title: Why I Never Use Normal RAG on Financial ERPs
 date: '2026-08-07'
-category: Enterprise Agent Architecture
+category: Why Agents Fail
 tags:
 - architecture
 - rag
 - erp
-description: "Why vector similarity retrieval corrupts arithmetic precision and ledger integrity in enterprise financial ERPs."
+description: Why vector similarity retrieval corrupts arithmetic precision and ledger
+  integrity in enterprise financial ERPs.
 author: Hugo S. Nascimento
 ---
 

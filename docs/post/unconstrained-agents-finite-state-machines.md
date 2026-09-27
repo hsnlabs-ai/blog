@@ -1,12 +1,13 @@
 ---
 title: 'Case Study: 42 Calls in a Loop at 2 AM'
 date: '2026-08-12'
-category: Frontline & Case Studies
+category: Case Studies
 tags:
 - case-studies
 - production
 - api-loops
-description: "Emergency incident audit and architectural remedy for unbounded agent API loops through finite state machines."
+description: Emergency incident audit and architectural remedy for unbounded agent
+  API loops through finite state machines.
 author: Hugo S. Nascimento
 ---
 

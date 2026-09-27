@@ -1,12 +1,13 @@
 ---
 title: 'LATAM Airlines: Production Agents in a 3% Margin Business'
 date: '2026-08-21'
-category: Frontline & Case Studies
+category: Case Studies
 tags:
 - case-studies
 - latam-airlines
 - production
-description: "Field post-mortem on deploying resilient enterprise agents in low-margin, high-throughput commercial aviation operations."
+description: Field post-mortem on deploying resilient enterprise agents in low-margin,
+  high-throughput commercial aviation operations.
 author: Hugo S. Nascimento
 ---
 

@@ -1,12 +1,13 @@
 ---
 title: 'Why Agents Fail: The PoC Graveyard'
 date: '2026-09-01'
-category: Frontline & Case Studies
+category: Why Agents Fail
 tags:
 - case-studies
 - poc
 - ai-failures
-description: "Root cause post-mortem on why ninety percent of enterprise AI proofs of concept fail before reaching live production."
+description: Root cause post-mortem on why ninety percent of enterprise AI proofs
+  of concept fail before reaching live production.
 author: Hugo S. Nascimento
 ---
 

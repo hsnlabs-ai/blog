@@ -1,12 +1,13 @@
 ---
 title: 'Protocol Arbitrage: Autonomous Multimodal Adjudication in Healthcare and Underwriting'
 date: '2026-09-11'
-category: Frontline & Case Studies
+category: Agentic Economics
 tags:
 - case-studies
 - insurance
 - arbitrage
-description: "Autonomous multimodal adjudication and real-time protocol arbitrage across complex insurance claims and healthcare underwriting."
+description: Autonomous multimodal adjudication and real-time protocol arbitrage across
+  complex insurance claims and healthcare underwriting.
 author: Hugo S. Nascimento
 ---
 

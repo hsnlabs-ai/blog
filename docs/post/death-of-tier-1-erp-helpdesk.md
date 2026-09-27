@@ -2,12 +2,13 @@
 title: 'The Death of Tier-1 Support: Why ERP Consultancies and IT Helpdesks Cannot
   Defend the Billable Hour'
 date: '2026-09-08'
-category: Agentic Economy & BPO Collapse
+category: Future of Work
 tags:
 - economics
 - erp-support
 - helpdesk
-description: "The structural collapse of hourly billable support models across enterprise ERP consultancies and IT helpdesks."
+description: The structural collapse of hourly billable support models across enterprise
+  ERP consultancies and IT helpdesks.
 author: Hugo S. Nascimento
 ---
 

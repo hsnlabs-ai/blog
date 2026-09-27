@@ -1,12 +1,13 @@
 ---
 title: What I Learned Building HR Tech About Dying BPO Contracts
 date: '2026-09-15'
-category: Agentic Economy & BPO Collapse
+category: Future of Work
 tags:
 - economics
 - bpo
 - hr-tech
-description: "Operational field lessons on the structural collapse of enterprise HR outsourcing contracts and manual workflows."
+description: Operational field lessons on the structural collapse of enterprise HR
+  outsourcing contracts and manual workflows.
 author: Hugo S. Nascimento
 ---
 

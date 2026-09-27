@@ -1,12 +1,13 @@
 ---
 title: How We Protect Enterprise Databases from AI Agents
 date: '2026-08-26'
-category: Enterprise Agent Architecture
+category: Agent Development Life Cycle
 tags:
 - architecture
 - mcp
 - data-contracts
-description: "Architectural patterns for perimeter isolation, context contracts, and cryptographic access boundaries shielding enterprise data from AI agents."
+description: Architectural patterns for perimeter isolation, context contracts, and
+  cryptographic access boundaries shielding enterprise data from AI agents.
 author: Hugo S. Nascimento
 ---
 

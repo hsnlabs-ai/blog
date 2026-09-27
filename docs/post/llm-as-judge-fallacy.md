@@ -1,12 +1,13 @@
 ---
 title: Why LLM-as-a-Judge Fails in Banking
 date: '2026-08-18'
-category: Enterprise Agent Architecture
+category: Why Agents Fail
 tags:
 - architecture
 - llm-judge
 - audit
-description: "Structural vulnerabilities and compliance liabilities of relying on stochastic LLM evaluators to audit critical financial decisions."
+description: Structural vulnerabilities and compliance liabilities of relying on stochastic
+  LLM evaluators to audit critical financial decisions.
 author: Hugo S. Nascimento
 ---
 

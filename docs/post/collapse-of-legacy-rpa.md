@@ -1,12 +1,13 @@
 ---
 title: The RPA Market Is Collapsing
 date: '2026-09-04'
-category: Agentic Economy & BPO Collapse
+category: Future of Work
 tags:
 - economics
 - rpa
 - automation
-description: "Why brittle screen-recording bots are collapsing in enterprise environments and how production agent architectures replace them."
+description: Why brittle screen-recording bots are collapsing in enterprise environments
+  and how production agent architectures replace them.
 author: Hugo S. Nascimento
 ---
 

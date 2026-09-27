@@ -1,12 +1,13 @@
 ---
 title: The Cost of Unbounded AI in Legacy IT
 date: '2026-07-15'
-category: Enterprise Agent Architecture
+category: Agentic Economics
 tags:
 - architecture
 - legacy-it
 - reliability
-description: "Economic and technical audit of runaway costs and execution risks caused by unbounded stochastic AI on legacy enterprise infrastructure."
+description: Economic and technical audit of runaway costs and execution risks caused
+  by unbounded stochastic AI on legacy enterprise infrastructure.
 author: Hugo S. Nascimento
 ---
 

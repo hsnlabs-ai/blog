@@ -1,12 +1,13 @@
 ---
 title: 'The C-Suite Transition Playbook: Protecting Margins in the Agentic Economy'
 date: '2026-09-25'
-category: Agentic Economy & BPO Collapse
+category: Agentic Economics
 tags:
 - economics
 - c-suite
 - margins
-description: "Executive blueprint for boardrooms and CFOs defending operational margins against legacy IT cost structures in the agentic economy."
+description: Executive blueprint for boardrooms and CFOs defending operational margins
+  against legacy IT cost structures in the agentic economy.
 author: Hugo S. Nascimento
 ---
 
