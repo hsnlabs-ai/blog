@@ -653,14 +653,14 @@
 <p>If an AI agent does not create immediate value or cut costs, it dies.</p>
 <p>I analyzed LATAM Airlines' deployment of customer experience agents in production. They process millions of interactions. They learned three hard lessons about agentic engineering at scale.</p>
 <h3 id="1-semantic-decentralization-burns-money"><a class="toclink" href="../../2026/09/13/latam-airlines-deterministic-agents-in-a-3-margin-business/#1-semantic-decentralization-burns-money">1. Semantic Decentralization Burns Money</a></h3>
-<p>LATAM initially built specialist agents (flights, hotels, insurance). Each agent reasoned and generated final structured outputs.</p>
+<p>LATAM initially built specialist agents for flights, hotels, and insurance. Each agent reasoned and generated final structured outputs.</p>
 <p>Result: 15% overhead in token consumption and latency.</p>
 <p>Fix: Strict Supervisor pattern. Specialist agents became blind tool executors. The Supervisor node handles all final semantic formatting.</p>
 <p><strong>Takeaway:</strong> Do not ask every node in your graph to reason about output structure. Centralize formatting. Cut costs by 15% without losing quality.</p>
 <h3 id="2-telemetry-beats-prompt-hacking"><a class="toclink" href="../../2026/09/13/latam-airlines-deterministic-agents-in-a-3-margin-business/#2-telemetry-beats-prompt-hacking">2. Telemetry Beats Prompt Hacking</a></h3>
 <p>In production, 13% of user interactions failed routing. The system flagged them as "out of scope."</p>
 <p>Amateurs add prompt penalties to stop hallucinations. LATAM looked at LangSmith telemetry.</p>
-<p>Data showed 95% of those failed queries were legitimate passenger needs (baggage, check-in). The model didn't fail. The architecture didn't fail. The business logic was simply incomplete.</p>
+<p>Data showed 95% of those failed queries were legitimate passenger needs such as baggage and check-in. The model didn't fail. The architecture didn't fail. The business logic was simply incomplete.</p>
 <p>Fix: Added a dedicated Customer Care node. Routing errors dropped to 1%.</p>
 <p><strong>Takeaway:</strong> Observe production telemetry. Build deterministic nodes for reality, not for your happy path.</p>
 <h3 id="3-the-chatbot-is-not-the-product"><a class="toclink" href="../../2026/09/13/latam-airlines-deterministic-agents-in-a-3-margin-business/#3-the-chatbot-is-not-the-product">3. The Chatbot Is Not The Product</a></h3>

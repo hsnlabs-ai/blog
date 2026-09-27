@@ -19,7 +19,7 @@ If an AI agent does not create immediate value or cut costs, it dies.
 I analyzed LATAM Airlines' deployment of customer experience agents in production. They process millions of interactions. They learned three hard lessons about agentic engineering at scale.
 
 ## 1. Semantic Decentralization Burns Money
-LATAM initially built specialist agents (flights, hotels, insurance). Each agent reasoned and generated final structured outputs.
+LATAM initially built specialist agents for flights, hotels, and insurance. Each agent reasoned and generated final structured outputs.
 
 Result: 15% overhead in token consumption and latency.
 
@@ -32,7 +32,7 @@ In production, 13% of user interactions failed routing. The system flagged them 
 
 Amateurs add prompt penalties to stop hallucinations. LATAM looked at LangSmith telemetry.
 
-Data showed 95% of those failed queries were legitimate passenger needs (baggage, check-in). The model didn't fail. The architecture didn't fail. The business logic was simply incomplete.
+Data showed 95% of those failed queries were legitimate passenger needs such as baggage and check-in. The model didn't fail. The architecture didn't fail. The business logic was simply incomplete.
 
 Fix: Added a dedicated Customer Care node. Routing errors dropped to 1%.
 
