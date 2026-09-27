@@ -1,5 +1,5 @@
 ---
-date: 2026-09-27
+date: 2026-09-11
 authors:
   - hugo
 categories:
@@ -8,6 +8,10 @@ categories:
 ---
 
 # Protocol Arbitrage: Autonomous Multimodal Adjudication in Healthcare and Underwriting
+
+*Reading time: 4 minutes. Author: Hugo Nascimento.*
+
+*Context: I wrote this after sparring with a private hospital network CFO whose facility was losing twelve percent of revenue to clerical insurance claim denials under TISS. Adjudication is formal logic that deterministic agents resolve in seconds.*
 
 In high-stakes corporate operations, revenue leakage is rarely caused by product pricing. It is caused by operational friction in adjudication.
 

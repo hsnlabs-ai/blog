@@ -1,5 +1,5 @@
 ---
-date: 2026-09-27
+date: 2026-08-04
 authors:
   - hugo
 categories:
@@ -8,6 +8,10 @@ categories:
 ---
 
 # Legacy Core Systems Will Not Die: They Are the Engine Behind Autonomous Agents
+
+*Reading time: 4 minutes. Author: Hugo Nascimento.*
+
+*Context: I wrote this reflection after reading a Gartner analysis on enterprise modernization timelines projecting fifteen-year mainframe rewrite horizons. Ripping out legacy core systems is financial suicide; turning them into headless engines for autonomous agents is the pragmatic strategy.*
 
 The enterprise narrative claiming artificial intelligence will replace legacy core systems is completely wrong.
 

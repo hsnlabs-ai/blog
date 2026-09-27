@@ -1,5 +1,5 @@
 ---
-date: 2026-09-27
+date: 2026-09-25
 authors:
   - hugo
 categories:
@@ -8,6 +8,10 @@ categories:
 ---
 
 # The C-Suite Transition Playbook: Protecting Margins in the Agentic Economy
+
+*Reading time: 4 minutes. Author: Hugo Nascimento.*
+
+*Context: I wrote this after reviewing recent quarterly SEC filings from global business process outsourcing providers. Their operating margins are collapsing as agile competitors deploy autonomous workforces at a tenth of traditional unit costs.*
 
 Autonomous digital workforces rewrite the fundamental unit economics of enterprise operations.
 

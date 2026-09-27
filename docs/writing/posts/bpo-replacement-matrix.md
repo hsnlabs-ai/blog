@@ -10,6 +10,10 @@ categories:
 
 # The BPO Replacement Matrix: Operational and Financial Impact of Deterministic Agents
 
+*Reading time: 6 minutes. Author: Hugo Nascimento.*
+
+*Context: I compiled this operational benchmark for our HSN Labs advisory partners and economic buyers. It details the exact automation mechanics, unit cost reductions, and compliance risk mitigations across thirteen core enterprise outsourcing verticals.*
+
 To assist executive teams and Chief Financial Officers evaluating business process automation, HSN Labs maintains this operational benchmark.
 
 This matrix analyzes the thirteen core enterprise outsourcing verticals being actively transformed from manual headcount billing to deterministic agent execution.

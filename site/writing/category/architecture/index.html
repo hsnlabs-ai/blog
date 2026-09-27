@@ -626,7 +626,7 @@
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
-          <time datetime="2026-09-27 00:00:00+00:00">September 27, 2026</time></li>
+          <time datetime="2026-08-07 00:00:00+00:00">August 7, 2026</time></li>
         
           <li class="md-meta__item">
             in
@@ -648,11 +648,13 @@
     </div>
   </header>
   <div class="md-post__content md-typeset">
-    <h2 id="why-traditional-rag-breaks-on-enterprise-erp"><a class="toclink" href="../../2026/09/27/why-traditional-rag-breaks-on-enterprise-erp/">Why Traditional RAG Breaks on Enterprise ERP</a></h2>
+    <h2 id="why-traditional-rag-breaks-on-enterprise-erp"><a class="toclink" href="../../2026/08/07/why-traditional-rag-breaks-on-enterprise-erp/">Why Traditional RAG Breaks on Enterprise ERP</a></h2>
+<p><em>Reading time: 4 minutes. Author: Hugo Nascimento.</em></p>
+<p><em>Context: This essay emerged from an audit where an external consultancy attempted to calculate customer ledger balances using cosine similarity on embedded invoice chunks. The resulting hallucinations almost corrupted the balance sheet.</em></p>
 <p>Connecting naive vector search to an enterprise resource planning database is an architectural dead end.</p>
 <p>Engineering teams frequently attempt to build enterprise assistants by chunking documentation, database dumps, and invoices into vector databases. They expect cosine similarity to retrieve accurate financial context.</p>
 <p>In production, this architecture breaks on basic arithmetic.</p>
-<h3 id="the-vector-similarity-failure-on-relational-data"><a class="toclink" href="../../2026/09/27/why-traditional-rag-breaks-on-enterprise-erp/#the-vector-similarity-failure-on-relational-data">The Vector Similarity Failure on Relational Data</a></h3>
+<h3 id="the-vector-similarity-failure-on-relational-data"><a class="toclink" href="../../2026/08/07/why-traditional-rag-breaks-on-enterprise-erp/#the-vector-similarity-failure-on-relational-data">The Vector Similarity Failure on Relational Data</a></h3>
 <p>Vector embeddings measure semantic closeness in natural language. Enterprise resource planning systems operate on rigid relational integrity, primary keys, and immutable ledger rules.</p>
 <p>Cosine distance cannot resolve relational queries:</p>
 <ol>
@@ -660,23 +662,23 @@
 <li>Inability to Compute Balances: Debit and credit ledgers must balance to zero. Vector retrieval returns probabilistic fragments of ledger lines. When an agent attempts to reconcile accounts from ungrounded text fragments, it hallucinates totals and introduces balance errors.</li>
 <li>Temporal and Fiscal Boundary Failures: Enterprise data exists within strict fiscal periods, currency exchange rates, and tax jurisdictions. Vector indices do not enforce temporal filters unless manually partitioned, leading models to cite stale pricing or outdated tax rules.</li>
 </ol>
-<h3 id="the-architectural-solution-executable-ontologies"><a class="toclink" href="../../2026/09/27/why-traditional-rag-breaks-on-enterprise-erp/#the-architectural-solution-executable-ontologies">The Architectural Solution: Executable Ontologies</a></h3>
+<h3 id="the-architectural-solution-executable-ontologies"><a class="toclink" href="../../2026/08/07/why-traditional-rag-breaks-on-enterprise-erp/#the-architectural-solution-executable-ontologies">The Architectural Solution: Executable Ontologies</a></h3>
 <p>To query core enterprise systems safely, the retrieval layer must be relational and deterministic:</p>
-<h4 id="1-pre-retrieval-domain-graphs"><a class="toclink" href="../../2026/09/27/why-traditional-rag-breaks-on-enterprise-erp/#1-pre-retrieval-domain-graphs">1. Pre-Retrieval Domain Graphs</a></h4>
+<h4 id="1-pre-retrieval-domain-graphs"><a class="toclink" href="../../2026/08/07/why-traditional-rag-breaks-on-enterprise-erp/#1-pre-retrieval-domain-graphs">1. Pre-Retrieval Domain Graphs</a></h4>
 <p>Before any query reaches data stores, natural language intents must be mapped against an explicit business ontology. The graph defines valid entity relationships, permissible filters, and required database joins.</p>
-<h4 id="2-schema-enforced-sql-generation"><a class="toclink" href="../../2026/09/27/why-traditional-rag-breaks-on-enterprise-erp/#2-schema-enforced-sql-generation">2. Schema-Enforced SQL Generation</a></h4>
+<h4 id="2-schema-enforced-sql-generation"><a class="toclink" href="../../2026/08/07/why-traditional-rag-breaks-on-enterprise-erp/#2-schema-enforced-sql-generation">2. Schema-Enforced SQL Generation</a></h4>
 <p>Models must never generate arbitrary unstructured queries against production tables. The agent interacts with strictly typed query templates or read-only service endpoints. Every generated parameter is validated against hard schema assertions before execution.</p>
-<h4 id="3-verification-of-invariants"><a class="toclink" href="../../2026/09/27/why-traditional-rag-breaks-on-enterprise-erp/#3-verification-of-invariants">3. Verification of Invariants</a></h4>
+<h4 id="3-verification-of-invariants"><a class="toclink" href="../../2026/08/07/why-traditional-rag-breaks-on-enterprise-erp/#3-verification-of-invariants">3. Verification of Invariants</a></h4>
 <p>Every retrieved record must pass business invariant checks. If an accounts payable query returns mismatched currency codes or broken ledger sums, the system halts execution rather than feeding corrupted context to the model.</p>
 <p>Enterprise search requires mathematical precision. Ontologies deliver deterministic context where vectors produce noise.</p>
-<h3 id="strategic-resources-and-related-essays"><a class="toclink" href="../../2026/09/27/why-traditional-rag-breaks-on-enterprise-erp/#strategic-resources-and-related-essays">Strategic Resources and Related Essays</a></h3>
+<h3 id="strategic-resources-and-related-essays"><a class="toclink" href="../../2026/08/07/why-traditional-rag-breaks-on-enterprise-erp/#strategic-resources-and-related-essays">Strategic Resources and Related Essays</a></h3>
 <ul>
 <li><a href="../the-poc-graveyard-why-enterprise-ai-pilots-never-reach-production/">The PoC Graveyard: Why Enterprise AI Pilots Never Reach Production</a></li>
 <li><a href="../../2026/09/10/the-cost-of-non-deterministic-ai-in-legacy-it/">The Cost of Non-Deterministic AI in Legacy IT</a></li>
 <li><a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a></li>
 </ul>
 <hr />
-<p><em>Article originally published on <a href="https://hsnlabs.ai/blog/writing/2026/09/27/why-traditional-rag-breaks-on-enterprise-erp/">HSN Labs</a>. Author: <a href="https://hsnlabs.ai">Hugo Nascimento</a>.</em></p>
+<p><em>Article originally published on <a href="https://hsnlabs.ai/blog/writing/2026/08/07/why-traditional-rag-breaks-on-enterprise-erp/">HSN Labs</a>. Author: <a href="https://hsnlabs.ai">Hugo Nascimento</a>.</em></p>
     
     
   </div>

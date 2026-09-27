@@ -626,7 +626,7 @@
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
-          <time datetime="2026-09-27 00:00:00+00:00">September 27, 2026</time></li>
+          <time datetime="2026-08-18 00:00:00+00:00">August 18, 2026</time></li>
         
           <li class="md-meta__item">
             in
@@ -648,34 +648,36 @@
     </div>
   </header>
   <div class="md-post__content md-typeset">
-    <h2 id="the-fallacy-of-llm-as-a-judge-in-regulated-enterprise-workflows"><a class="toclink" href="../../2026/09/27/the-fallacy-of-llm-as-a-judge-in-regulated-enterprise-workflows/">The Fallacy of LLM as a Judge in Regulated Enterprise Workflows</a></h2>
+    <h2 id="the-fallacy-of-llm-as-a-judge-in-regulated-enterprise-workflows"><a class="toclink" href="../../2026/08/18/the-fallacy-of-llm-as-a-judge-in-regulated-enterprise-workflows/">The Fallacy of LLM as a Judge in Regulated Enterprise Workflows</a></h2>
+<p><em>Reading time: 4 minutes. Author: Hugo Nascimento.</em></p>
+<p><em>Context: I drafted this critique after an AI vendor presented a deck claiming ninety-nine percent accuracy based entirely on asking their model if its own answers were good. In regulated industries like banking and healthcare, circular evaluations fail compliance audits immediately.</em></p>
 <p>Using a stochastic model to audit another stochastic model creates circular confirmation bias.</p>
 <p>In experimental software development, teams often rely on large models to grade agent outputs. Prompts instruct an evaluation model to assign scores from one to five on helpfulness, accuracy, and tone.</p>
 <p>In regulated corporate sectors such as banking, healthcare, and insurance, this practice is a compliance trap.</p>
-<h3 id="the-flaws-of-probabilistic-evaluation"><a class="toclink" href="../../2026/09/27/the-fallacy-of-llm-as-a-judge-in-regulated-enterprise-workflows/#the-flaws-of-probabilistic-evaluation">The Flaws of Probabilistic Evaluation</a></h3>
+<h3 id="the-flaws-of-probabilistic-evaluation"><a class="toclink" href="../../2026/08/18/the-fallacy-of-llm-as-a-judge-in-regulated-enterprise-workflows/#the-flaws-of-probabilistic-evaluation">The Flaws of Probabilistic Evaluation</a></h3>
 <p>Regulators and external auditors demand deterministic, reproducible evidence. A grading pipeline powered by natural language prompts fails basic audit standards:</p>
 <ol>
 <li>Circular Reasoning: A model acting as judge shares the same statistical blind spots as the model generating the output. If the generator hallucinates a plausible legal interpretation, the evaluator frequently confirms the hallucination as correct.</li>
 <li>Prompt Sensitivity and Scoring Drift: Changing a single punctuation mark or updating provider model weights alters evaluation distributions. An engineering team cannot establish a stable quality baseline when their metric moves with provider model updates.</li>
 <li>Inability to Prove Negative Cases: Probabilistic judges cannot guarantee that an agent never committed an illegal transaction or leaked protected health information. High average scores disguise catastrophic tail-risk failures.</li>
 </ol>
-<h3 id="building-deterministic-evaluation-infrastructure"><a class="toclink" href="../../2026/09/27/the-fallacy-of-llm-as-a-judge-in-regulated-enterprise-workflows/#building-deterministic-evaluation-infrastructure">Building Deterministic Evaluation Infrastructure</a></h3>
+<h3 id="building-deterministic-evaluation-infrastructure"><a class="toclink" href="../../2026/08/18/the-fallacy-of-llm-as-a-judge-in-regulated-enterprise-workflows/#building-deterministic-evaluation-infrastructure">Building Deterministic Evaluation Infrastructure</a></h3>
 <p>Enterprise governance requires shifting from subjective prompt grading to formal assertion testing:</p>
-<h4 id="1-invariant-assertion-suites"><a class="toclink" href="../../2026/09/27/the-fallacy-of-llm-as-a-judge-in-regulated-enterprise-workflows/#1-invariant-assertion-suites">1. Invariant Assertion Suites</a></h4>
+<h4 id="1-invariant-assertion-suites"><a class="toclink" href="../../2026/08/18/the-fallacy-of-llm-as-a-judge-in-regulated-enterprise-workflows/#1-invariant-assertion-suites">1. Invariant Assertion Suites</a></h4>
 <p>Instead of asking a model whether a financial summary looks accurate, code executes hard assertions against ground truth. Was the final balance verified against the accounting ledger? Did the response omit restricted social security numbers? Assertions yield binary pass or fail outcomes.</p>
-<h4 id="2-golden-regression-benchmarks"><a class="toclink" href="../../2026/09/27/the-fallacy-of-llm-as-a-judge-in-regulated-enterprise-workflows/#2-golden-regression-benchmarks">2. Golden Regression Benchmarks</a></h4>
+<h4 id="2-golden-regression-benchmarks"><a class="toclink" href="../../2026/08/18/the-fallacy-of-llm-as-a-judge-in-regulated-enterprise-workflows/#2-golden-regression-benchmarks">2. Golden Regression Benchmarks</a></h4>
 <p>Every production incident must be converted into an immutable test fixture. Before deploying updated agent graphs or prompt templates, the system executes against thousands of historical ground-truth cases. Any deviation from expected transactional state immediately blocks deployment.</p>
-<h4 id="3-full-runtime-tracing"><a class="toclink" href="../../2026/09/27/the-fallacy-of-llm-as-a-judge-in-regulated-enterprise-workflows/#3-full-runtime-tracing">3. Full Runtime Tracing</a></h4>
+<h4 id="3-full-runtime-tracing"><a class="toclink" href="../../2026/08/18/the-fallacy-of-llm-as-a-judge-in-regulated-enterprise-workflows/#3-full-runtime-tracing">3. Full Runtime Tracing</a></h4>
 <p>Every inference call, tool parameter, and retrieved context fragment must be logged into persistent observability backends. In regulated environments, auditability requires deterministic replay capabilities for every transaction.</p>
 <p>Do not grade production agents with subjective opinion prompts. Grade them with deterministic assertions and hard mathematical constraints.</p>
-<h3 id="strategic-resources-and-related-essays"><a class="toclink" href="../../2026/09/27/the-fallacy-of-llm-as-a-judge-in-regulated-enterprise-workflows/#strategic-resources-and-related-essays">Strategic Resources and Related Essays</a></h3>
+<h3 id="strategic-resources-and-related-essays"><a class="toclink" href="../../2026/08/18/the-fallacy-of-llm-as-a-judge-in-regulated-enterprise-workflows/#strategic-resources-and-related-essays">Strategic Resources and Related Essays</a></h3>
 <ul>
 <li><a href="../the-poc-graveyard-why-enterprise-ai-pilots-never-reach-production/">The PoC Graveyard: Why Enterprise AI Pilots Never Reach Production</a></li>
 <li><a href="../../2026/09/05/the-integration-drift-when-prompts-break-production/">The Integration Drift: When Prompts Break Production</a></li>
 <li><a href="https://hsnlabs.ai/advisory">HSN Labs Strategic Advisory for C-Levels</a></li>
 </ul>
 <hr />
-<p><em>Article originally published on <a href="https://hsnlabs.ai/blog/writing/2026/09/27/the-fallacy-of-llm-as-a-judge-in-regulated-enterprise-workflows/">HSN Labs</a>. Author: <a href="https://hsnlabs.ai">Hugo Nascimento</a>.</em></p>
+<p><em>Article originally published on <a href="https://hsnlabs.ai/blog/writing/2026/08/18/the-fallacy-of-llm-as-a-judge-in-regulated-enterprise-workflows/">HSN Labs</a>. Author: <a href="https://hsnlabs.ai">Hugo Nascimento</a>.</em></p>
     
     
   </div>

@@ -1,5 +1,5 @@
 ---
-date: 2026-09-27
+date: 2026-09-15
 authors:
   - hugo
 categories:
@@ -8,6 +8,10 @@ categories:
 ---
 
 # The Balance Sheet Guard: How Deterministic Agents Eliminate the Compliance and Ledger BPO
+
+*Reading time: 5 minutes. Author: Hugo Nascimento.*
+
+*Context: This analysis reflects our findings auditing corporate back offices in Brazil and North America, where manual data entry into eSocial, tax declarations, and supplier risk registers created millions in preventable liabilities.*
 
 The traditional business process outsourcing industry built a fortress around corporate balance sheets.
 

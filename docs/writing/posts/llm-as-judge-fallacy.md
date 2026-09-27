@@ -1,5 +1,5 @@
 ---
-date: 2026-09-27
+date: 2026-08-18
 authors:
   - hugo
 categories:
@@ -8,6 +8,10 @@ categories:
 ---
 
 # The Fallacy of LLM as a Judge in Regulated Enterprise Workflows
+
+*Reading time: 4 minutes. Author: Hugo Nascimento.*
+
+*Context: I drafted this critique after an AI vendor presented a deck claiming ninety-nine percent accuracy based entirely on asking their model if its own answers were good. In regulated industries like banking and healthcare, circular evaluations fail compliance audits immediately.*
 
 Using a stochastic model to audit another stochastic model creates circular confirmation bias.
 

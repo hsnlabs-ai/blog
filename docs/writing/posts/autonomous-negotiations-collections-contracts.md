@@ -1,5 +1,5 @@
 ---
-date: 2026-09-27
+date: 2026-09-18
 authors:
   - hugo
 categories:
@@ -8,6 +8,10 @@ categories:
 ---
 
 # High-Velocity Operations: Autonomous Negotiation, Collections, and Contract Execution
+
+*Reading time: 4 minutes. Author: Hugo Nascimento.*
+
+*Context: I wrote this after visiting a traditional contact center floor where employee turnover exceeded eighty percent annually and robocallers burned consumer trust. Front-office scale requires continuous, hyper-personalized autonomous execution.*
 
 Front-office business process outsourcing operations are plagued by structural friction: high employee turnover, strict telemarketing regulatory limits, and low conversion rates.
 

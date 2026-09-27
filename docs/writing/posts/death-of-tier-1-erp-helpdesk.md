@@ -1,5 +1,5 @@
 ---
-date: 2026-09-27
+date: 2026-09-08
 authors:
   - hugo
 categories:
@@ -8,6 +8,10 @@ categories:
 ---
 
 # The Death of Tier-1 Support: Why ERP Consultancies and IT Helpdesks Cannot Defend the Billable Hour
+
+*Reading time: 4 minutes. Author: Hugo Nascimento.*
+
+*Context: I wrote this after auditing an IT helpdesk ticketing log where routine master data fixes and password resets took forty-eight hours to resolve, while external ERP consultancies billed hundred-dollar hourly rates for simple configuration changes.*
 
 Enterprise resource planning support and corporate information technology helpdesks are built on an extractive business model: selling billable hours for trivial, repetitive human interventions.
 

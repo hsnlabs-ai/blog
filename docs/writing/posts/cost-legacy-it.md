@@ -1,11 +1,15 @@
 ---
-date: 2026-09-10
+date: 2026-07-15
 authors:
   - hugo
 categories:
   - Engineering
 ---
 # The Cost of Non-Deterministic AI in Legacy IT
+
+*Reading time: 3 minutes. Author: Hugo Nascimento.*
+
+*Context: During an architecture audit for a mid-market financial firm, I found them spending forty thousand dollars monthly on human QA just to verify database writes from an experimental AI assistant. The automation was costing more than the manual process it replaced.*
 
 Enterprises run on deterministic systems: SAP, Oracle, AS400 mainframes, and core transactional databases. These platforms were built with zero tolerance for probabilistic variance.
 
@@ -29,3 +33,9 @@ To unlock production value, decoupling is mandatory:
 - The execution layer applies verified mutations through standard enterprise APIs.
 
 Predictability is the prerequisite for enterprise production access.
+
+## Strategic Resources and Related Essays
+- <a href="../legacy-core-backing-engine/">Legacy Core Systems Will Not Die: They Are the Engine Behind Autonomous Agents</a>
+- <a href="../why-rag-breaks-on-erp/">Why Traditional RAG Breaks on Enterprise ERP</a>
+- <a href="https://hsnlabs.ai/advisory">HSN Labs Strategic Advisory for C-Levels</a>
+

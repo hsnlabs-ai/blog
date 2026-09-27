@@ -1,5 +1,5 @@
 ---
-date: 2026-09-27
+date: 2026-08-07
 authors:
   - hugo
 categories:
@@ -8,6 +8,10 @@ categories:
 ---
 
 # Why Traditional RAG Breaks on Enterprise ERP
+
+*Reading time: 4 minutes. Author: Hugo Nascimento.*
+
+*Context: This essay emerged from an audit where an external consultancy attempted to calculate customer ledger balances using cosine similarity on embedded invoice chunks. The resulting hallucinations almost corrupted the balance sheet.*
 
 Connecting naive vector search to an enterprise resource planning database is an architectural dead end.
 

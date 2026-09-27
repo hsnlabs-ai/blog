@@ -1,5 +1,5 @@
 ---
-date: 2026-09-27
+date: 2026-08-12
 authors:
   - hugo
 categories:
@@ -8,6 +8,10 @@ categories:
 ---
 
 # The Structural Hazard of Unconstrained Agents: Enforcing Finite State Machines
+
+*Reading time: 4 minutes. Author: Hugo Nascimento.*
+
+*Context: I wrote this after a late-night debugging session where an open-ended reasoning loop executed forty-two recursive tool calls on a staging server before hitting rate limits. This is why enterprise autonomy requires mathematically bounded state machines.*
 
 Allowing an artificial intelligence agent to select actions from an open-ended reasoning loop in enterprise production is reckless.
 

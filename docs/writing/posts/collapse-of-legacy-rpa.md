@@ -1,5 +1,5 @@
 ---
-date: 2026-09-27
+date: 2026-09-04
 authors:
   - hugo
 categories:
@@ -8,6 +8,10 @@ categories:
 ---
 
 # The Collapse of Legacy RPA: Why Fragile Screen Scrapers Cannot Survive the Agentic Shift
+
+*Reading time: 4 minutes. Author: Hugo Nascimento.*
+
+*Context: This critique was born while reviewing maintenance invoices for an enterprise client paying an army of systems integrators fifty thousand dollars a month just to patch broken UiPath UI selectors. Pixel clickers cannot compete with protocol-level deterministic agents.*
 
 The legacy Robotic Process Automation market was built on a lucrative illusion.
 

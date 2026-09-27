@@ -1,5 +1,5 @@
 ---
-date: 2026-09-27
+date: 2026-09-22
 authors:
   - hugo
 categories:
@@ -8,6 +8,10 @@ categories:
 ---
 
 # The Five-Day Architecture Sprint: De-risking Enterprise Agentic Deployment
+
+*Reading time: 4 minutes. Author: Hugo Nascimento.*
+
+*Context: As a founder and engineer, I have zero tolerance for theoretical management consulting slide decks that ship no code. This is the exact Forward Deployed Engineering playbook we use at HSN Labs to de-risk production rollouts in one week.*
 
 Traditional management consulting sells theoretical slide decks that fail when translated into production code.
 

@@ -1,5 +1,5 @@
 ---
-date: 2026-09-27
+date: 2026-08-26
 authors:
   - hugo
 categories:
@@ -8,6 +8,10 @@ categories:
 ---
 
 # Perimeter Isolation: Safely Deploying Agents via MCP Data Contracts
+
+*Reading time: 4 minutes. Author: Hugo Nascimento.*
+
+*Context: I wrote this following an intense architecture review with a banking Chief Information Security Officer who rightfully refused to grant direct database credentials to a multi-agent framework. Enterprise security requires strict perimeter decoupling via read replicas and MCP protocols.*
 
 The primary barrier to enterprise agent adoption is not technical feasibility. It is the security perimeter.
 

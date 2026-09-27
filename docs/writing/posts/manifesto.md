@@ -1,11 +1,15 @@
 ---
-date: 2026-09-01
+date: 2026-07-08
 authors:
   - hugo
 categories:
   - Engineering
 ---
 # The Solution: Deterministic Agentic Engineering
+
+*Reading time: 4 minutes. Author: Hugo Nascimento.*
+
+*Context: I founded HSN Labs after watching dozens of enterprise teams connect raw probabilistic models directly to rigid corporate databases, burning capital on demos that collapsed in production. This is our foundational engineering thesis.*
 
 Over ninety percent of enterprise artificial intelligence proofs of concept fail when transitioning to production. 
 
@@ -36,3 +40,9 @@ We govern the entire lifecycle using market standards such as LangGraph and Lang
 Traditional enterprise software forces companies to adapt business processes to rigid third-party platforms. 
 
 We do the opposite. Our Senior Forward Deployed Engineers embed directly into client infrastructure, building bespoke agentic systems tailored to real production systems.
+
+## Strategic Resources and Related Essays
+- <a href="../the-poc-graveyard-why-enterprise-ai-pilots-never-reach-production/">The PoC Graveyard: Why Enterprise AI Pilots Never Reach Production</a>
+- <a href="../bpo-replacement-matrix/">The BPO Replacement Matrix: Operational and Financial Impact of Deterministic Agents</a>
+- <a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a>
+

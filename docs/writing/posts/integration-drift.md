@@ -1,11 +1,15 @@
 ---
-date: 2026-09-05
+date: 2026-07-29
 authors:
   - hugo
 categories:
   - Engineering
 ---
 # The Integration Drift: When Prompts Break Production
+
+*Reading time: 3 minutes. Author: Hugo Nascimento.*
+
+*Context: I documented this post-mortem after an unannounced model checkpoint update silently altered JSON field formats, crashing an accounts payable pipeline overnight. Prompts cannot serve as enterprise API contracts.*
 
 Large language models are stochastic reasoning engines. Enterprise APIs are rigid, deterministic protocols.
 
@@ -26,3 +30,9 @@ Eliminating integration drift requires removing schema responsibility from natur
 3. Centralized Semantic Routing: Route user intent to specialized deterministic executor tools rather than relying on open-ended code generation.
 
 Engineering deterministic stability means designing systems where model variation cannot corrupt core infrastructure.
+
+## Strategic Resources and Related Essays
+- <a href="../unconstrained-agents-finite-state-machines/">The Structural Hazard of Unconstrained Agents: Enforcing Finite State Machines</a>
+- <a href="../perimeter-isolation-mcp-data-contracts/">Perimeter Isolation: Safely Deploying Agents via MCP Data Contracts</a>
+- <a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a>
+

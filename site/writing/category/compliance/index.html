@@ -626,7 +626,7 @@
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
-          <time datetime="2026-09-27 00:00:00+00:00">September 27, 2026</time></li>
+          <time datetime="2026-08-26 00:00:00+00:00">August 26, 2026</time></li>
         
           <li class="md-meta__item">
             in
@@ -648,34 +648,36 @@
     </div>
   </header>
   <div class="md-post__content md-typeset">
-    <h2 id="perimeter-isolation-safely-deploying-agents-via-mcp-data-contracts"><a class="toclink" href="../../2026/09/27/perimeter-isolation-safely-deploying-agents-via-mcp-data-contracts/">Perimeter Isolation: Safely Deploying Agents via MCP Data Contracts</a></h2>
+    <h2 id="perimeter-isolation-safely-deploying-agents-via-mcp-data-contracts"><a class="toclink" href="../../2026/08/26/perimeter-isolation-safely-deploying-agents-via-mcp-data-contracts/">Perimeter Isolation: Safely Deploying Agents via MCP Data Contracts</a></h2>
+<p><em>Reading time: 4 minutes. Author: Hugo Nascimento.</em></p>
+<p><em>Context: I wrote this following an intense architecture review with a banking Chief Information Security Officer who rightfully refused to grant direct database credentials to a multi-agent framework. Enterprise security requires strict perimeter decoupling via read replicas and MCP protocols.</em></p>
 <p>The primary barrier to enterprise agent adoption is not technical feasibility. It is the security perimeter.</p>
 <p>When engineering teams request direct connection strings to production databases or broad API keys for autonomous agents, Chief Information Security Officers rightly reject the request.</p>
 <p>Direct database credentials expose the corporation to data exfiltration, unauthorized mutations, and prompt injection attacks.</p>
-<h3 id="the-flawed-approach-to-agent-integrations"><a class="toclink" href="../../2026/09/27/perimeter-isolation-safely-deploying-agents-via-mcp-data-contracts/#the-flawed-approach-to-agent-integrations">The Flawed Approach to Agent Integrations</a></h3>
+<h3 id="the-flawed-approach-to-agent-integrations"><a class="toclink" href="../../2026/08/26/perimeter-isolation-safely-deploying-agents-via-mcp-data-contracts/#the-flawed-approach-to-agent-integrations">The Flawed Approach to Agent Integrations</a></h3>
 <p>Standard software development kits encourage connecting models directly to enterprise tools. This architecture introduces severe vulnerabilities:</p>
 <ol>
 <li>Over-Privileged Access: If an agent requires read access to verify a client shipping address, granting raw database credentials also gives it access to credit card numbers and proprietary pricing formulas.</li>
 <li>Indirect Prompt Injection: Malicious actors can embed instruction overrides inside inbound emails, supplier invoices, or resume PDFs. If an agent with direct database write access ingests malicious text, it can be coerced into exfiltrating corporate records.</li>
 <li>Lack of Immutable Auditability: Direct connection strings make it impossible to determine whether an unauthorized SQL mutation was triggered by legitimate business logic or by model hallucination.</li>
 </ol>
-<h3 id="the-perimeter-isolation-pattern-enforcing-mcp-contracts"><a class="toclink" href="../../2026/09/27/perimeter-isolation-safely-deploying-agents-via-mcp-data-contracts/#the-perimeter-isolation-pattern-enforcing-mcp-contracts">The Perimeter Isolation Pattern: Enforcing MCP Contracts</a></h3>
+<h3 id="the-perimeter-isolation-pattern-enforcing-mcp-contracts"><a class="toclink" href="../../2026/08/26/perimeter-isolation-safely-deploying-agents-via-mcp-data-contracts/#the-perimeter-isolation-pattern-enforcing-mcp-contracts">The Perimeter Isolation Pattern: Enforcing MCP Contracts</a></h3>
 <p>Deploying agents into regulated enterprise environments requires strict architectural perimeter isolation:</p>
-<h4 id="1-isolated-read-replicas-and-data-masking"><a class="toclink" href="../../2026/09/27/perimeter-isolation-safely-deploying-agents-via-mcp-data-contracts/#1-isolated-read-replicas-and-data-masking">1. Isolated Read Replicas and Data Masking</a></h4>
+<h4 id="1-isolated-read-replicas-and-data-masking"><a class="toclink" href="../../2026/08/26/perimeter-isolation-safely-deploying-agents-via-mcp-data-contracts/#1-isolated-read-replicas-and-data-masking">1. Isolated Read Replicas and Data Masking</a></h4>
 <p>Models must never touch primary production databases directly. Queries execute against sanitized read replicas where personally identifiable information and restricted identifiers are dynamically masked or tokenized.</p>
-<h4 id="2-standardized-model-context-protocol-endpoints"><a class="toclink" href="../../2026/09/27/perimeter-isolation-safely-deploying-agents-via-mcp-data-contracts/#2-standardized-model-context-protocol-endpoints">2. Standardized Model Context Protocol Endpoints</a></h4>
+<h4 id="2-standardized-model-context-protocol-endpoints"><a class="toclink" href="../../2026/08/26/perimeter-isolation-safely-deploying-agents-via-mcp-data-contracts/#2-standardized-model-context-protocol-endpoints">2. Standardized Model Context Protocol Endpoints</a></h4>
 <p>Tool access must be mediated through standardized Model Context Protocol services. Instead of executing arbitrary queries, agents invoke discrete, auditable tools with strict JSON schemas. Every input parameter is validated before entering the corporate perimeter.</p>
-<h4 id="3-asymmetric-write-boundaries"><a class="toclink" href="../../2026/09/27/perimeter-isolation-safely-deploying-agents-via-mcp-data-contracts/#3-asymmetric-write-boundaries">3. Asymmetric Write Boundaries</a></h4>
+<h4 id="3-asymmetric-write-boundaries"><a class="toclink" href="../../2026/08/26/perimeter-isolation-safely-deploying-agents-via-mcp-data-contracts/#3-asymmetric-write-boundaries">3. Asymmetric Write Boundaries</a></h4>
 <p>Writes to production systems must never happen synchronously within an agent reasoning loop. Agents submit structured mutation proposals to an audited staging queue. A deterministic validation service verifies business invariants before committing records to the primary database.</p>
 <p>Security is not an afterthought in agent architecture. Perimeter isolation is the prerequisite for production deployment.</p>
-<h3 id="strategic-resources-and-related-essays"><a class="toclink" href="../../2026/09/27/perimeter-isolation-safely-deploying-agents-via-mcp-data-contracts/#strategic-resources-and-related-essays">Strategic Resources and Related Essays</a></h3>
+<h3 id="strategic-resources-and-related-essays"><a class="toclink" href="../../2026/08/26/perimeter-isolation-safely-deploying-agents-via-mcp-data-contracts/#strategic-resources-and-related-essays">Strategic Resources and Related Essays</a></h3>
 <ul>
 <li><a href="../unconstrained-agents-finite-state-machines/">The Structural Hazard of Unconstrained Agents: Enforcing Finite State Machines</a></li>
 <li><a href="../why-rag-breaks-on-erp/">Why Traditional RAG Breaks on Enterprise ERP</a></li>
 <li><a href="https://hsnlabs.ai/advisory">HSN Labs Strategic Advisory for C-Levels</a></li>
 </ul>
 <hr />
-<p><em>Article originally published on <a href="https://hsnlabs.ai/blog/writing/2026/09/27/perimeter-isolation-safely-deploying-agents-via-mcp-data-contracts/">HSN Labs</a>. Author: <a href="https://hsnlabs.ai">Hugo Nascimento</a>.</em></p>
+<p><em>Article originally published on <a href="https://hsnlabs.ai/blog/writing/2026/08/26/perimeter-isolation-safely-deploying-agents-via-mcp-data-contracts/">HSN Labs</a>. Author: <a href="https://hsnlabs.ai">Hugo Nascimento</a>.</em></p>
     
     
   </div>

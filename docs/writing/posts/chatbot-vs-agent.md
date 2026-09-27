@@ -1,11 +1,15 @@
 ---
-date: 2026-09-08
+date: 2026-07-22
 authors:
   - hugo
 categories:
   - Engineering
 ---
 # Chatbot vs Agent: Why Replacing BPOs Requires Deterministic Guardrails
+
+*Reading time: 3 minutes. Author: Hugo Nascimento.*
+
+*Context: I wrote this note after an executive briefing where a director claimed to have deployed thirty enterprise agents. When I inspected the codebase, all thirty were basic chatbots answering employee policy questions. None could execute a single transaction.*
 
 A chatbot answers text questions. An agent executes multi-step workflows and mutates state in core enterprise systems.
 
@@ -30,3 +34,9 @@ To achieve true autonomy, agents must operate inside mathematically bounded guar
 3. Automated Evaluation Gates: Decisions are tested against historical ground truth before write permissions are granted.
 
 Autonomy is not created by better prompts. Autonomy is created by deterministic architecture.
+
+## Strategic Resources and Related Essays
+- <a href="../collapse-of-legacy-rpa/">The Collapse of Legacy RPA: Why Fragile Screen Scrapers Cannot Survive the Agentic Shift</a>
+- <a href="../balance-sheet-guard-bpo-extinction/">The Balance Sheet Guard: How Deterministic Agents Eliminate the Compliance and Ledger BPO</a>
+- <a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a>
+

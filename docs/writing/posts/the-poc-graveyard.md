@@ -1,5 +1,5 @@
 ---
-date: 2026-09-27
+date: 2026-09-01
 authors:
   - hugo
 categories:
@@ -8,6 +8,10 @@ categories:
 ---
 
 # The PoC Graveyard: Why Enterprise AI Pilots Never Reach Production
+
+*Reading time: 4 minutes. Author: Hugo Nascimento.*
+
+*Context: I wrote this reflection after a closed-door meeting with an enterprise CIO who spent four hundred thousand dollars on three boardroom demos that could never pass production compliance gates. Here is how enterprise teams escape the PoC Graveyard.*
 
 Over eighty-five percent of enterprise generative AI pilots never transition to live production.
 

@@ -1,5 +1,5 @@
 ---
-date: 2026-09-13
+date: 2026-08-21
 authors:
   - hugo
 categories:
@@ -11,6 +11,10 @@ tags:
 ---
 
 # LATAM Airlines: Deterministic Agents in a 3% Margin Business
+
+*Reading time: 4 minutes. Author: Hugo Nascimento.*
+
+*Context: I analyzed LATAM Airlines public disclosures and LangSmith telemetry to understand how an enterprise operating on three percent margins deployed agents across millions of interactions without burning capital on unneeded token overhead.*
 
 Airlines run on 3% margins. 31% of their operating cost is jet fuel. There is no slack.
 
@@ -50,3 +54,9 @@ When a passenger asks about "Italian restaurants near the hotel," they aren't ju
 Stop building free-text wrappers. Use AI as a ruthless parser to turn noise into structured production data. 
 
 That is how you replace legacy IT. That is how you expand margins. That is how you prove ROI to a CFO.
+
+## Strategic Resources and Related Essays
+- <a href="../chatbot-vs-agent/">Chatbot vs Agent: Why Replacing BPOs Requires Deterministic Guardrails</a>
+- <a href="../the-poc-graveyard-why-enterprise-ai-pilots-never-reach-production/">The PoC Graveyard: Why Enterprise AI Pilots Never Reach Production</a>
+- <a href="https://hsnlabs.ai/advisory">HSN Labs Strategic Advisory for C-Levels</a>
+
