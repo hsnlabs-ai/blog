@@ -1,13 +1,12 @@
 ---
 title: 'Chatbot vs Agent: Why Replacing BPOs Requires Production Guardrails'
 date: '2026-07-22'
-category: Arquitetura e Sistemas Agênticos
+category: Deterministic Architecture & Systems
 tags:
-- arquitetura
+- architecture
 - guardrails
 - state-machines
-description: Diferencas criticas entre chatbots conversacionais e agentes orientados a regras de negócio
-  para substituicao confiavel de processos corporativos.
+description: "Critical architectural differences between conversational chatbots and deterministic enterprise agents mutating live ERP state."
 author: Hugo Nascimento
 ---
 

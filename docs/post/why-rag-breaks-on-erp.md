@@ -1,13 +1,12 @@
 ---
 title: Why I Never Use Normal RAG on Financial ERPs
 date: '2026-08-07'
-category: Arquitetura e Sistemas Agênticos
+category: Deterministic Architecture & Systems
 tags:
-- arquitetura
+- architecture
 - rag
 - erp
-description: Por que a busca vetorial por similaridade corrompe a precisao aritmetica
-  exigida por livros contabeis de ERPs.
+description: "Why vector similarity retrieval corrupts arithmetic precision and ledger integrity in enterprise financial ERPs."
 author: Hugo Nascimento
 ---
 
@@ -56,11 +55,11 @@ At HSN Labs, we do not let language models guess relational SQL or search raw em
 
 * Pre-Compiled Business Ontologies: We map the enterprise schema into an explicit knowledge graph that defines verified relationships, valid join paths, and business rules before any query runs.
 * Strictly Typed Query Generation: The agent does not generate open-ended SQL strings. It selects parameterized query templates validated against strict Pydantic schemas. Every parameter is checked before it touches the read replica.
-* Hard Invariant Assertions: When the database returns records, deterministic assertion layers verify ledger balances, currency alignment, and temporal validity before context reaches the user or downstream worker.
+* Hard Invariant Assertions: When the database returns records, code-level assertion layers verify ledger balances, currency alignment, and temporal validity before context reaches the user or downstream worker.
 
 If an architecture cannot guarantee mathematical precision on financial records, it does not belong in enterprise production.
 
 ## Strategic Resources and Related Essays
 - <a href="../the-poc-graveyard/">Why Agents Fail: The PoC Graveyard</a>
-- <a href="../cost-legacy-it/">The Cost of Non-Deterministic AI in Legacy IT</a>
+- <a href="../cost-legacy-it/">The Cost of Unbounded AI in Legacy IT</a>
 - <a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a>

@@ -1,13 +1,12 @@
 ---
-title: The Cost of Non-Deterministic AI in Legacy IT
+title: The Cost of Unbounded AI in Legacy IT
 date: '2026-07-15'
-category: Arquitetura e Sistemas Agênticos
+category: Deterministic Architecture & Systems
 tags:
-- arquitetura
+- architecture
 - legacy-it
-- confiabilidade
-description: Analise economica e tecnica dos custos de falhas de IA sem limites de execução
-  de IA integradas a infraestruturas legadas.
+- reliability
+description: "Economic and technical audit of runaway costs and execution risks caused by unbounded stochastic AI on legacy enterprise infrastructure."
 author: Hugo Nascimento
 ---
 

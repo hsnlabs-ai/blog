@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const statusEl = document.getElementById("pagination-status");
     if (statusEl) {
-      statusEl.textContent = `Mostrando artigos ${start + 1} a ${end} de ${posts.length}`;
+      statusEl.textContent = `Showing essays ${start + 1} to ${end} of ${posts.length}`;
     }
 
     const prevBtn = document.getElementById("pagination-prev");

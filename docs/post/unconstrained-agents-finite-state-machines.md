@@ -1,13 +1,12 @@
 ---
 title: 'Case Study: 42 Calls in a Loop at 2 AM'
 date: '2026-08-12'
-category: Linha de Frente e Estudos de Caso
+category: Frontline & Case Studies
 tags:
-- estudos-de-caso
-- producao
-- loop-api
-description: Auditoria de emergencia detalhando a correcao de loops infinitos de chamadas
-  em agentes de producao.
+- case-studies
+- production
+- api-loops
+description: "Emergency incident audit and architectural remedy for unbounded agent API loops through deterministic finite state machines."
 author: Hugo Nascimento
 ---
 

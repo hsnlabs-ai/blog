@@ -1,13 +1,12 @@
 ---
 title: 'Why Agents Fail: The PoC Graveyard'
 date: '2026-09-01'
-category: Linha de Frente e Estudos de Caso
+category: Frontline & Case Studies
 tags:
-- estudos-de-caso
+- case-studies
 - poc
-- falhas-de-ia
-description: As razoes estruturais pelas quais prototipos de IA corporativa morrem
-  antes de alcancar a producao real.
+- ai-failures
+description: "Root cause post-mortem on why ninety percent of enterprise AI proofs of concept fail before reaching live production."
 author: Hugo Nascimento
 ---
 
@@ -55,12 +54,12 @@ If an autonomous system cannot prove perimeter isolation, read-only boundary sep
 At HSN Labs, we do not build boardroom slide decks or unconstrained sandbox demos. When our Forward Deployed Engineers enter an enterprise client, we enforce three non-negotiable rules:
 
 * Ground Every Step in Explicit Ontologies: Models never query relational databases directly. They interact with pre-compiled domain graphs that enforce schema invariants before execution.
-* Bound Execution with Finite State Machines: Every agentic workflow must operate within mathematically provable state transitions. The model can suggest the path, but deterministic software guards enforce the bounds.
-* Run Deterministic Regression Assertions: We test agents against live transaction replays, measuring determinism and accuracy with zero tolerance for hallucinations.
+* Bound Execution with Finite State Machines: Every agentic workflow must operate within mathematically provable state transitions. The model can suggest the path, but code-level software guards enforce the bounds.
+* Run Code-Level Regression Assertions: We test agents against live transaction replays, measuring invariant adherence and accuracy with zero tolerance for hallucinations.
 
-Enterprise value is not measured by chatbots that talk. It is measured by deterministic software that writes to core databases without breaking the business.
+Enterprise value is not measured by chatbots that talk. It is measured by production software that writes to core databases without breaking the business.
 
 ## Strategic Resources and Related Essays
-- <a href="../chatbot-vs-agent/">Chatbot vs Agent: Why Replacing BPOs Requires Deterministic Guardrails</a>
+- <a href="../chatbot-vs-agent/">Chatbot vs Agent: Why Replacing BPOs Requires Production Guardrails</a>
 - <a href="../collapse-of-legacy-rpa/">The RPA Market Is Collapsing</a>
 - <a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a>

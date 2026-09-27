@@ -1,13 +1,12 @@
 ---
 title: Why Big 4 Slide Decks Fail on Agent Projects
 date: '2026-09-22'
-category: Linha de Frente e Estudos de Caso
+category: Frontline & Case Studies
 tags:
-- estudos-de-caso
-- consultoria
+- case-studies
+- consulting
 - sprint
-description: Por que apresentacoes genericas de consultorias tradicionais falham em
-  resolver problemas agenticos em producao.
+description: "Why traditional Big 4 strategy slide decks fail to deliver working agentic software in complex enterprise production environments."
 author: Hugo Nascimento
 ---
 
@@ -50,11 +49,11 @@ We establish secure environment access, connect to isolated read replicas, and c
 ### Day 2: Business Ontology and Schema Reverse-Engineering
 We extract domain business rules, database schemas, and operational invariants from legacy systems like SAP, Totvs, or Oracle. These constraints are codified into an executable graph rather than left to prompt assumptions.
 
-### Day 3: Deterministic Sandbox Prototype
+### Day 3: Bounded Sandbox Prototype
 We assemble the multi-agent graph, state machine guards, and data routing layers. By the end of day three, the system processes real enterprise payloads in an isolated staging environment.
 
 ### Day 4: Adversarial Stress Testing and Telemetry
-We subject the prototype to adversarial prompt injection, malformed payloads, and high-concurrency throughput tests. Telemetry tracks exact latency, token consumption, and deterministic accuracy.
+We subject the prototype to adversarial prompt injection, malformed payloads, and high-concurrency throughput tests. Telemetry tracks exact latency, token consumption, and invariant accuracy.
 
 ### Day 5: Production Blueprint and Audited ROI Model
 We deliver the working prototype, verified error baselines, and an audited financial model demonstrating concrete unit cost reductions and payback timelines.
@@ -72,5 +71,5 @@ Stop paying for slide decks. Demand working software in five days.
 ## Strategic Resources and Related Essays
 - <a href="../the-poc-graveyard/">Why Agents Fail: The PoC Graveyard</a>
 - <a href="../collapse-of-legacy-rpa/">The RPA Market Is Collapsing</a>
-- <a href="../bpo-replacement-matrix/">The BPO Replacement Matrix: Operational and Financial Impact of Deterministic Agents</a>
+- <a href="../bpo-replacement-matrix/">The BPO Replacement Matrix: Operational and Financial Impact of Production Agents</a>
 - <a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a>

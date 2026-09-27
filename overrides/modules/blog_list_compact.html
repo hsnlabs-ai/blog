@@ -24,7 +24,7 @@
             {% if post.description %}
             <p class="blog-row-description">{{ post.description }}</p>
             {% endif %}
-            <a class="blog-row-cta" href="{{ post.url|url }}">{{ (config.theme.blog.cta_label if config.theme.blog else None) or "Ler Artigo" }} &rarr;</a>
+            <a class="blog-row-cta" href="{{ post.url|url }}">{{ (config.theme.blog.cta_label if config.theme.blog else None) or "Read Essay" }} &rarr;</a>
         </div>
     </article>
     {% endfor %}
@@ -34,16 +34,16 @@
     {% if total_pages > 1 %}
     <div id="blog-pagination" class="blog-pagination" data-total-pages="{{ total_pages }}" data-page-size="10">
         <div class="pagination-info">
-            <span id="pagination-status">Mostrando artigos 1 a 10 de {{ total_posts }}</span>
+            <span id="pagination-status">Showing essays 1 to 10 of {{ total_posts }}</span>
         </div>
-        <nav class="pagination-controls" aria-label="Paginacao do Blog">
-            <button class="pagination-btn" id="pagination-prev" disabled aria-label="Pagina anterior">&laquo; Anterior</button>
+        <nav class="pagination-controls" aria-label="Blog Pagination">
+            <button class="pagination-btn" id="pagination-prev" disabled aria-label="Previous page">&laquo; Prev</button>
             <div class="pagination-pages" id="pagination-numbers">
                 {% for p in range(1, total_pages + 1) %}
-                <button class="pagination-btn pagination-num {% if loop.first %}active{% endif %}" data-target-page="{{ p }}" aria-label="Pagina {{ p }}">{{ p }}</button>
+                <button class="pagination-btn pagination-num {% if loop.first %}active{% endif %}" data-target-page="{{ p }}" aria-label="Page {{ p }}">{{ p }}</button>
                 {% endfor %}
             </div>
-            <button class="pagination-btn" id="pagination-next" aria-label="Proxima pagina">Proximo &raquo;</button>
+            <button class="pagination-btn" id="pagination-next" aria-label="Next page">Next &raquo;</button>
         </nav>
     </div>
     {% endif %}

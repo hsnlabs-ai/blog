@@ -1,13 +1,12 @@
 ---
 title: The RPA Market Is Collapsing
 date: '2026-09-04'
-category: Economia Agêntica e Fim do BPO
+category: Agentic Economy & BPO Collapse
 tags:
-- economia
+- economics
 - rpa
-- automacao
-description: Por que bots de gravacao de tela estao em colapso e como maquinas de
-  estado deterministas os substituem.
+- automation
+description: "Why brittle screen-recording bots are collapsing in enterprise environments and how deterministic agent architectures replace them."
 author: Hugo Nascimento
 ---
 

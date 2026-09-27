@@ -1,13 +1,12 @@
 ---
 title: Why I Built HSN Labs
 date: '2026-07-08'
-category: Linha de Frente e Estudos de Caso
+category: Frontline & Case Studies
 tags:
-- estudos-de-caso
+- case-studies
 - hsn-labs
 - manifesto
-description: A tese fundadora da boutique HSN Labs e o compromisso com arquitetura
-  agêntica enterprise para grandes empresas.
+description: "Foundational thesis of HSN Labs: building production-grade enterprise agent architectures on executable domain ontologies."
 author: Hugo Nascimento
 ---
 

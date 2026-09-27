@@ -12,7 +12,7 @@ theme:
   blog:
     layout: compact
     author: Hugo Nascimento
-    cta_label: Ler Artigo
+    cta_label: Read Essay
   components:
     blog_sidebar:
       recent_posts: true

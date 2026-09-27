@@ -1,13 +1,12 @@
 ---
 title: 'LATAM Airlines: Production Agents in a 3% Margin Business'
 date: '2026-08-21'
-category: Linha de Frente e Estudos de Caso
+category: Frontline & Case Studies
 tags:
-- estudos-de-caso
+- case-studies
 - latam-airlines
-- producao
-description: Estudo de caso pratico de implementacao de agentes em ambiente
-  de alta volumetria e margem apertada.
+- production
+description: "Field post-mortem on deploying deterministic enterprise agents in low-margin, high-throughput commercial aviation operations."
 author: Hugo Nascimento
 ---
 

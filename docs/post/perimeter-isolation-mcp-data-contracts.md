@@ -1,13 +1,12 @@
 ---
 title: How We Protect Enterprise Databases from AI Agents
 date: '2026-08-26'
-category: Arquitetura e Sistemas Agênticos
+category: Deterministic Architecture & Systems
 tags:
-- arquitetura
+- architecture
 - mcp
 - data-contracts
-description: Padroes avancados de isolamento de perimetro e contratos de contexto
-  para blindar bancos corporativos.
+description: "Architectural patterns for perimeter isolation, context contracts, and cryptographic access boundaries shielding enterprise data from AI agents."
 author: Hugo Nascimento
 ---
 

@@ -1,13 +1,12 @@
 ---
 title: Why LLM-as-a-Judge Fails in Banking
 date: '2026-08-18'
-category: Arquitetura e Sistemas Agênticos
+category: Deterministic Architecture & Systems
 tags:
-- arquitetura
+- architecture
 - llm-judge
-- auditoria
-description: As vulnerabilidades e falhas estruturais de utilizar modelos estocasticos
-  para auditar decisoes financeiras criticas.
+- audit
+description: "Structural vulnerabilities and compliance liabilities of relying on stochastic LLM evaluators to audit critical financial decisions."
 author: Hugo Nascimento
 ---
 

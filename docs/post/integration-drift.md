@@ -1,13 +1,12 @@
 ---
 title: 'The Integration Drift: When Prompts Break Production'
 date: '2026-07-29'
-category: Arquitetura e Sistemas Agênticos
+category: Deterministic Architecture & Systems
 tags:
-- arquitetura
+- architecture
 - schema-drift
 - mcp
-description: Como detectar e blindar agentes em producao contra quebras silenciosas
-  provocadas por desvios de esquemas de dados.
+description: "How to detect and guard production agent workflows against silent runtime breaks caused by upstream schema and API drift."
 author: Hugo Nascimento
 ---
 
@@ -17,7 +16,7 @@ author: Hugo Nascimento
 
 *Context: I documented this post-mortem after an unannounced upstream model update silently altered JSON field types, crashing an accounts payable pipeline overnight at an enterprise client. Prompts cannot serve as enterprise API contracts.*
 
-Large language models are stochastic reasoning engines. Enterprise APIs are rigid, deterministic protocols.
+Large language models are stochastic reasoning engines. Enterprise APIs are rigid, structured protocols.
 
 Connecting an unconstrained language model directly to an enterprise database or ERP endpoint creates a critical architectural failure point known as integration drift.
 
@@ -43,11 +42,11 @@ To a downstream PostgreSQL database, a FastAPI endpoint, or an enterprise servic
 
 At HSN Labs, we treat natural language prompts as completely untrusted input. We eliminate integration drift by removing schema responsibility from the model:
 
-* Strict Pydantic Schema Parsing: Every model output is intercepted by a deterministic schema validator before it can touch enterprise infrastructure. If a field type drifts by a single character, the payload is caught and sanitized at the perimeter.
-* Semantic Routing with Parameterized Executors: We never let models generate open-ended code or direct API query strings. The model is restricted to intent classification and parameter extraction. Deterministic software workers construct the actual API payloads using pre-compiled templates.
+* Strict Pydantic Schema Parsing: Every model output is intercepted by a strict schema validator before it can touch enterprise infrastructure. If a field type drifts by a single character, the payload is caught and sanitized at the perimeter.
+* Semantic Routing with Parameterized Executors: We never let models generate open-ended code or direct API query strings. The model is restricted to intent classification and parameter extraction. Isolated software workers construct the actual API payloads using pre-compiled templates.
 * Finite State Transition Guards: Multi-step agent operations are bounded by finite state machines. If an upstream model update causes an agent to suggest an illegal state transition, the state machine guard rejects the transition before any database write executes.
 
-Engineering deterministic stability means designing systems where upstream model drift cannot corrupt your core corporate infrastructure.
+Engineering production stability means designing systems where upstream model drift cannot corrupt your core corporate infrastructure.
 
 ## Strategic Resources and Related Essays
 - <a href="../unconstrained-agents-finite-state-machines/">Case Study: 42 Calls in a Loop at 2 AM</a>

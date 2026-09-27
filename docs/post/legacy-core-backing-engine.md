@@ -1,13 +1,12 @@
 ---
 title: 'Legacy Core Systems Will Not Die: They Are the Engine Behind Autonomous Agents'
 date: '2026-08-04'
-category: Arquitetura e Sistemas Agênticos
+category: Deterministic Architecture & Systems
 tags:
-- arquitetura
+- architecture
 - legacy-core
 - mainframe
-description: Por que sistemas transacionais legados sao a fundacao de execucao confiavel
-  para operacoes agenticas escalaveis.
+description: "Why legacy core transaction systems remain the indispensable deterministic foundation powering autonomous enterprise agents."
 author: Hugo Nascimento
 ---
 
