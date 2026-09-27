@@ -149,9 +149,12 @@ def test_d10_replicated_footer():
         html = f.read()
     assert 'class="site-footer"' in html, "ERRO: site-footer ausente no HTML"
     assert 'São Paulo' in html and 'WeWork Av. Paulista' in html, "ERRO: Informacoes de localizacao ausentes no footer"
-    assert 'Agentic Bootcamp' in html and 'Advisory' in html, "ERRO: Links de navegacao corporativa ausentes no footer"
-    assert '2026 HSN Labs. All rights reserved.' in html, "ERRO: Copyright corporativo ausente no footer"
-    print("PASS: Gate D10 Footer corporativo HSN Labs replicado integralmente")
+    assert 'Arquitetura Determinística' in html, "ERRO: Pilar de Arquitetura ausente no footer"
+    assert 'Economia Agêntica' in html, "ERRO: Pilar de Economia Agêntica ausente no footer"
+    assert 'Linha de Frente' in html, "ERRO: Pilar de Linha de Frente ausente no footer"
+    assert 'llms.txt para Agentes' in html, "ERRO: Link llms.txt ausente no footer"
+    assert '2026 HSN Labs' in html, "ERRO: Copyright ausente no footer"
+    print("PASS: Gate D10 Footer minimalista com pilares de indexacao e SEO validado")
 
 def test_d11_brand_typography_and_colors():
     css_file = SITE_DIR / "stylesheets/extra.css"
