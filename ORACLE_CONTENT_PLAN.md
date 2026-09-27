@@ -6,6 +6,11 @@ Target level 3 economic buyers: CFOs, CEOs, Heads of Architecture.
 Voice: Caveman style, direct, authoritative, zero fluff.
 Core message: Deterministic agentic engineering versus fragile probabilistic wrappers.
 
+## Status
+All 9 articles generated, verified, compiled, and deployed live to production on 2026-09-27.
+Parentheses count: Zero across all essays.
+Deployment: GitHub Pages with WebSub Hub and IndexNow real-time pings.
+
 ## 9 Target Essays
 
 ### 1. Why Traditional RAG Breaks on Enterprise ERP
