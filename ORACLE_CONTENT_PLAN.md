@@ -7,9 +7,21 @@ Voice: Caveman style, direct, authoritative, zero fluff.
 Core message: Deterministic agentic engineering versus fragile probabilistic wrappers.
 
 ## Status
-All 9 articles generated, verified, compiled, and deployed live to production on 2026-09-27.
-Parentheses count: Zero across all essays.
+All 9 core oracle strategic essays and all 5 BPO disruption cluster artifacts generated, verified, compiled, and deployed live to production on 2026-09-27.
+Parentheses count: Zero across all essays and tables.
 Deployment: GitHub Pages with WebSub Hub and IndexNow real-time pings.
+
+## BPO Disruption Series
+- The Balance Sheet Guard: Payroll, Tax, Treasury, Vendor Risk, Judicial Calculations
+  File: docs/writing/posts/balance-sheet-guard-bpo-extinction.md
+- Protocol Arbitrage: Insurance Claims, Healthcare RCM, Credit Underwriting and KYC
+  File: docs/writing/posts/protocol-arbitrage-claims-underwriting.md
+- The Death of Tier-1 Support: Enterprise ERP Totvs/SAP/Oracle and IT Service Desk
+  File: docs/writing/posts/death-of-tier-1-erp-helpdesk.md
+- High-Velocity Operations: Multichannel Care, Debt Collections, Real Estate Leases
+  File: docs/writing/posts/autonomous-negotiations-collections-contracts.md
+- The BPO Replacement Matrix: Complete 13-vertical operational benchmark table
+  File: docs/writing/posts/bpo-replacement-matrix.md
 
 ## 9 Target Essays
 
