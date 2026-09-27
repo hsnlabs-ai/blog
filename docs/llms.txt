@@ -57,6 +57,7 @@ Technical essays, case studies, and post-mortems on enterprise agent architectur
 - The Architecture of Palantir AIP: Why Enterprise Agents Fail Without an Operational Ontology: https://hsnlabs.ai/blog/post/palantir-aip-bootcamp-operational-ontology/
 - Palantir vs Databricks: Why Data Lakes Fail at Agentic Operations: https://hsnlabs.ai/blog/post/palantir-vs-databricks-agent-architecture/
 - The Real TCO of Palantir: The Dollar Barrier and Modern Open Alternatives: https://hsnlabs.ai/blog/post/palantir-pricing-tco-and-open-alternatives/
+- Case Study: How Cleveland Clinic Scaled Patient Flow Across 6,600 Hospital Beds: https://hsnlabs.ai/blog/post/cleveland-clinic-case-study-operational-agents/
 
 ## Feeds & Machine Readability
 - RSS Feed: https://hsnlabs.ai/blog/feed_rss_created.xml

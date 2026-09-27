@@ -13,8 +13,8 @@
     <language>en</language>
 
     
-    <pubDate>Sun, 27 Sep 2026 22:05:52 -0000</pubDate>
-    <lastBuildDate>Sun, 27 Sep 2026 22:05:52 -0000</lastBuildDate>
+    <pubDate>Sun, 27 Sep 2026 22:07:57 -0000</pubDate>
+    <lastBuildDate>Sun, 27 Sep 2026 22:07:57 -0000</lastBuildDate>
     <ttl>1440</ttl>
 
     
@@ -30,6 +30,37 @@
     
 
     
+    
+    <item>
+      <title>Case Study: How Cleveland Clinic Scaled Patient Flow Across 6,600 Hospital Beds</title>
+      
+      
+        
+      <author>Hugo S. Nascimento</author>
+        
+      
+      
+      
+        
+      <category>Case Studies</category>
+        
+      <category>architecture</category>
+        
+      <category>case-studies</category>
+        
+      <category>production</category>
+        
+      <category>roi</category>
+        
+      
+      <description>Detailed case study on how Cleveland Clinic eliminated spreadsheet bottlenecks and cut bed capacity calculation time by 75% using operational ontologies.</description>
+      <link>https://hsnlabs.ai/blog/post/cleveland-clinic-case-study-operational-agents/</link>
+      <pubDate>Mon, 28 Sep 2026 00:00:00 +0000</pubDate>
+      <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
+      
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/post/cleveland-clinic-case-study-operational-agents/</guid>
+      
+    </item>
     
     <item>
       <title>The Architecture of Palantir AIP: Why Enterprise Agents Fail Without an Operational Ontology</title>
@@ -585,35 +616,6 @@
       <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
       
       <guid isPermaLink="true">https://hsnlabs.ai/blog/post/integration-drift/</guid>
-      
-    </item>
-    
-    <item>
-      <title>Chatbot vs Agent: Why Replacing BPOs Requires Production Guardrails</title>
-      
-      
-        
-      <author>Hugo S. Nascimento</author>
-        
-      
-      
-      
-        
-      <category>Agent Development Life Cycle</category>
-        
-      <category>architecture</category>
-        
-      <category>guardrails</category>
-        
-      <category>state-machines</category>
-        
-      
-      <description>Critical architectural differences between conversational chatbots and production enterprise agents mutating live ERP state.</description>
-      <link>https://hsnlabs.ai/blog/post/chatbot-vs-agent/</link>
-      <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
-      <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
-      
-      <guid isPermaLink="true">https://hsnlabs.ai/blog/post/chatbot-vs-agent/</guid>
       
     </item>
     

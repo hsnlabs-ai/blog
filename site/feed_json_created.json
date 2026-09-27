@@ -13,6 +13,27 @@
     "language": "en",
     "items": [
         {
+            "id": "https://hsnlabs.ai/blog/post/cleveland-clinic-case-study-operational-agents/",
+            "url": "https://hsnlabs.ai/blog/post/cleveland-clinic-case-study-operational-agents/",
+            "title": "Case Study: How Cleveland Clinic Scaled Patient Flow Across 6,600 Hospital Beds",
+            "content_html": "Detailed case study on how Cleveland Clinic eliminated spreadsheet bottlenecks and cut bed capacity calculation time by 75% using operational ontologies.",
+            "image": null,
+            "date_modified": "2026-09-28T00:00:00+00:00",
+            "date_published": "2026-09-28T00:00:00+00:00",
+            "authors": [
+                {
+                    "name": "Hugo S. Nascimento"
+                }
+            ],
+            "tags": [
+                "Case Studies",
+                "architecture",
+                "case-studies",
+                "production",
+                "roi"
+            ]
+        },
+        {
             "id": "https://hsnlabs.ai/blog/post/palantir-aip-bootcamp-operational-ontology/",
             "url": "https://hsnlabs.ai/blog/post/palantir-aip-bootcamp-operational-ontology/",
             "title": "The Architecture of Palantir AIP: Why Enterprise Agents Fail Without an Operational Ontology",
@@ -393,26 +414,6 @@
                 "architecture",
                 "mcp",
                 "schema-drift"
-            ]
-        },
-        {
-            "id": "https://hsnlabs.ai/blog/post/chatbot-vs-agent/",
-            "url": "https://hsnlabs.ai/blog/post/chatbot-vs-agent/",
-            "title": "Chatbot vs Agent: Why Replacing BPOs Requires Production Guardrails",
-            "content_html": "Critical architectural differences between conversational chatbots and production enterprise agents mutating live ERP state.",
-            "image": null,
-            "date_modified": "2026-07-22T00:00:00+00:00",
-            "date_published": "2026-07-22T00:00:00+00:00",
-            "authors": [
-                {
-                    "name": "Hugo S. Nascimento"
-                }
-            ],
-            "tags": [
-                "Agent Development Life Cycle",
-                "architecture",
-                "guardrails",
-                "state-machines"
             ]
         }
     ]
