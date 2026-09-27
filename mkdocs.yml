@@ -1,112 +1,34 @@
 site_name: Hugo Nascimento
 site_url: https://hsnlabs.ai/blog/
-site_description: Founder at HSN Labs, CPTO at Eva People. Essays and executive advisory on enterprise AI agent architecture, business ontologies, and production runtime failures.
-
-# Integração com GitHub (Mostra ícone no topo e link de "Edit/View Source")
-repo_name: hsnlabs-ai/blog
-repo_url: https://github.com/hsnlabs-ai/blog
-edit_uri: edit/main/docs/
-
-hooks:
-  - hooks/attribution.py
+site_author: Hugo Nascimento
+site_description: Deterministic Agentic Engineering — Essays and field notes on enterprise AI architectures, business ontologies, and avoiding runtime failures in production.
 
 theme:
-  name: material
-  favicon: assets/brand/favicon.png
-  logo: assets/brand/logo.png
-  font:
-    text: Inter
-    code: Fira Code
-  features:
-    - navigation.instant
-    - search.suggest
-    - navigation.tabs # Submenus/Abas horizontais no topo
-    - navigation.tabs.sticky # Abas presas no topo ao rolar a página
-    - toc.integrate # Índice (Table of contents) integrado no menu da esquerda
-    - content.code.copy # Botão de copiar código
-    - content.action.edit # Botão de editar página (olhinho/lápis)
-  
-  # Esquema de Cores e Dark/Light mode toggle
-  palette:
-    # Modo Claro
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: indigo # Cor azul
-      accent: blue
-      toggle:
-        icon: material/weather-night
-        name: Switch to dark mode
-    # Modo Escuro
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: indigo
-      accent: blue
-      toggle:
-        icon: material/weather-sunny
-        name: Switch to light mode
+  name: simple-blog
+  blog:
+    layout: compact
+    author: Hugo Nascimento
+    cta_label: Ler Artigo
+  components:
+    blog_sidebar:
+      recent_posts: true
+      categories: true
+      tags: true
+      recent_count: 5
 
-extra_css:
-  - stylesheets/extra.css
+plugins:
+  - search
+  - simple-blog-posts:
+      posts_dir: post
 
-# Extensões úteis para formatação avançada (Cards, Avisos, etc)
 markdown_extensions:
-  - abbr
-  - admonition
-  - attr_list
-  - md_in_html
-  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
   - pymdownx.superfences
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
-
-# Rodapé e Redes Sociais
-extra:
-  social:
-    - icon: fontawesome/solid/rss
-      link: https://hsnlabs.ai/blog/feed_rss_created.xml
-      name: RSS Feed
-    - icon: fontawesome/brands/github
-      link: https://github.com/hsnlabs-ai/blog
-      name: GitHub
-    - icon: fontawesome/brands/linkedin
-      link: https://www.linkedin.com/in/hugosoaresnascimento/
-      name: LinkedIn
-    - icon: fontawesome/brands/whatsapp
-      link: https://wa.me/5511910701372
-      name: WhatsApp
+  - tables
+  - attr_list
 
 nav:
   - Home: index.md
-  - About:
-    - User Manual: about/user-manual.md
-    - Resume: about/resume.md
-    - Investments: about/investments.md
-  - Services: services.md
-  - Writing: writing/index.md
-plugins:
-  - rss:
-      match_path: "^writing/(?!index).*\\.md$"
-      image: https://avatars.githubusercontent.com/u/59654075?v=4
-      feed_ttl: 1440
-      abstract_chars_count: -1
-      json_feed_enabled: true
-      feeds_filenames:
-        rss_created: feed_rss_created.xml
-        rss_updated: feed_rss_updated.xml
-        json_created: feed_json_created.json
-        json_updated: feed_json_updated.json
-      date_from_meta:
-        as_creation: date
-        as_update: date
-      categories:
-        - categories
-        - tags
-  - search
-  - blog:
-      blog_dir: writing
-  - tags
-  - git-revision-date-localized:
-      enable_creation_date: true
-      type: timeago
-  - social
