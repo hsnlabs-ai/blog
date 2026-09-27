@@ -34,6 +34,27 @@
             ]
         },
         {
+            "id": "https://hsnlabs.ai/blog/post/how-to-build-operational-ontology-python-mcp/",
+            "url": "https://hsnlabs.ai/blog/post/how-to-build-operational-ontology-python-mcp/",
+            "title": "How to Build an Operational Business Ontology in Python with Pydantic and MCP",
+            "content_html": "Step-by-step engineering architecture to build an operational business ontology in pure Python using Pydantic schemas and Model Context Protocol actions without proprietary lock-in.",
+            "image": null,
+            "date_modified": "2026-09-28T00:00:00+00:00",
+            "date_published": "2026-09-28T00:00:00+00:00",
+            "authors": [
+                {
+                    "name": "Hugo S. Nascimento"
+                }
+            ],
+            "tags": [
+                "Agent Development Life Cycle",
+                "architecture",
+                "data-contracts",
+                "evaluation",
+                "production"
+            ]
+        },
+        {
             "id": "https://hsnlabs.ai/blog/post/palantir-aip-bootcamp-operational-ontology/",
             "url": "https://hsnlabs.ai/blog/post/palantir-aip-bootcamp-operational-ontology/",
             "title": "The Architecture of Palantir AIP: Why Enterprise Agents Fail Without an Operational Ontology",
@@ -394,26 +415,6 @@
                 "architecture",
                 "legacy-core",
                 "mainframe"
-            ]
-        },
-        {
-            "id": "https://hsnlabs.ai/blog/post/integration-drift/",
-            "url": "https://hsnlabs.ai/blog/post/integration-drift/",
-            "title": "The Integration Drift: When Prompts Break Production",
-            "content_html": "How to detect and guard production agent workflows against silent runtime breaks caused by upstream schema and API drift.",
-            "image": null,
-            "date_modified": "2026-07-29T00:00:00+00:00",
-            "date_published": "2026-07-29T00:00:00+00:00",
-            "authors": [
-                {
-                    "name": "Hugo S. Nascimento"
-                }
-            ],
-            "tags": [
-                "Why Agents Fail",
-                "architecture",
-                "mcp",
-                "schema-drift"
             ]
         }
     ]

@@ -13,8 +13,8 @@
     <language>en</language>
 
     
-    <pubDate>Sun, 27 Sep 2026 22:07:57 -0000</pubDate>
-    <lastBuildDate>Sun, 27 Sep 2026 22:07:57 -0000</lastBuildDate>
+    <pubDate>Sun, 27 Sep 2026 22:11:45 -0000</pubDate>
+    <lastBuildDate>Sun, 27 Sep 2026 22:11:45 -0000</lastBuildDate>
     <ttl>1440</ttl>
 
     
@@ -59,6 +59,37 @@
       <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
       
       <guid isPermaLink="true">https://hsnlabs.ai/blog/post/cleveland-clinic-case-study-operational-agents/</guid>
+      
+    </item>
+    
+    <item>
+      <title>How to Build an Operational Business Ontology in Python with Pydantic and MCP</title>
+      
+      
+        
+      <author>Hugo S. Nascimento</author>
+        
+      
+      
+      
+        
+      <category>Agent Development Life Cycle</category>
+        
+      <category>architecture</category>
+        
+      <category>data-contracts</category>
+        
+      <category>evaluation</category>
+        
+      <category>production</category>
+        
+      
+      <description>Step-by-step engineering architecture to build an operational business ontology in pure Python using Pydantic schemas and Model Context Protocol actions without proprietary lock-in.</description>
+      <link>https://hsnlabs.ai/blog/post/how-to-build-operational-ontology-python-mcp/</link>
+      <pubDate>Mon, 28 Sep 2026 00:00:00 +0000</pubDate>
+      <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
+      
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/post/how-to-build-operational-ontology-python-mcp/</guid>
       
     </item>
     
@@ -587,35 +618,6 @@
       <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
       
       <guid isPermaLink="true">https://hsnlabs.ai/blog/post/legacy-core-backing-engine/</guid>
-      
-    </item>
-    
-    <item>
-      <title>The Integration Drift: When Prompts Break Production</title>
-      
-      
-        
-      <author>Hugo S. Nascimento</author>
-        
-      
-      
-      
-        
-      <category>Why Agents Fail</category>
-        
-      <category>architecture</category>
-        
-      <category>mcp</category>
-        
-      <category>schema-drift</category>
-        
-      
-      <description>How to detect and guard production agent workflows against silent runtime breaks caused by upstream schema and API drift.</description>
-      <link>https://hsnlabs.ai/blog/post/integration-drift/</link>
-      <pubDate>Wed, 29 Jul 2026 00:00:00 +0000</pubDate>
-      <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
-      
-      <guid isPermaLink="true">https://hsnlabs.ai/blog/post/integration-drift/</guid>
       
     </item>
     

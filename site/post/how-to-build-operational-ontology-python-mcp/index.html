@@ -1,0 +1,721 @@
+<!doctype html>
+<html data-bs-theme="">
+
+<head>
+    <title>How to Build an Operational Business Ontology in Python with Pydantic and MCP - Hugo S. Nascimento
+    </title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    
+    <link rel="canonical" href="https://hsnlabs.ai/blog/post/how-to-build-operational-ontology-python-mcp/">
+    
+    <meta name="author" content="Hugo S. Nascimento">
+
+    
+    <link rel="icon" type="image/x-icon" href="../../assets/img/favicon.ico">
+    
+    
+    
+    <meta name="title" content="How to Build an Operational Business Ontology in Python with Pydantic and MCP">
+    <meta property="og:title" content="How to Build an Operational Business Ontology in Python with Pydantic and MCP">
+    <meta name="twitter:title" content="How to Build an Operational Business Ontology in Python with Pydantic and MCP">
+    
+    
+    <meta name="description" content="Step-by-step engineering architecture to build an operational business ontology in pure Python using Pydantic schemas and Model Context Protocol actions without proprietary lock-in.">
+    <meta property="og:description" content="Step-by-step engineering architecture to build an operational business ontology in pure Python using Pydantic schemas and Model Context Protocol actions without proprietary lock-in.">
+    <meta name="twitter:description" content="Step-by-step engineering architecture to build an operational business ontology in pure Python using Pydantic schemas and Model Context Protocol actions without proprietary lock-in.">
+    
+    
+    <meta name="author" content="Hugo S. Nascimento">
+    
+    
+    <meta name="date" content="2026-09-28">
+    <meta property="article:published_time" content="2026-09-28">
+    
+    
+    
+    <meta property="og:url" content="https://hsnlabs.ai/blog/post/how-to-build-operational-ontology-python-mcp/">
+    
+    
+    <meta property="og:site_name" content="Hugo S. Nascimento">
+    
+    <meta property="og:type" content="article">
+    <meta name="twitter:card" content="summary_large_image">
+    
+
+    <script>var base_url = '../..';</script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/css/root.min.css">
+    <link rel="stylesheet" href="../../assets/css/main.min.css">
+    <link rel="stylesheet" href="../../assets/css/media.min.css">
+    <link rel="stylesheet" href="../../assets/css/mkdocstrings.min.css">
+    <script src="../../assets/js/pagination.js"></script>
+    <script src="../../search/main.js"></script>
+
+    
+    
+    
+    <link href="../../stylesheets/extra.css" rel="stylesheet">
+    <link href="../../assets/css/pagination.css" rel="stylesheet">
+    <!-- Feeds and Crawlers -->
+<link rel="alternate" type="application/rss+xml" title="RSS Feed - Hugo S. Nascimento" href="../../feed_rss_created.xml">
+<link rel="alternate" type="application/json" title="JSON Feed - Hugo S. Nascimento" href="../../feed_json_created.json">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+<!-- Search Engine Verification -->
+<meta name="msvalidate.01" content="fb6d944d28fc4484bd669f6d9c4d3292">
+<meta name="google-site-verification" content="G-GMK24ECXMF">
+
+<!-- GEO and Local SEO -->
+<meta name="geo.region" content="BR-SP">
+<meta name="geo.placename" content="São Paulo">
+<meta name="geo.position" content="-23.561684;-46.655981">
+<meta name="ICBM" content="-23.561684, -46.655981">
+
+<!-- Typography: Cormorant Garamond & Inter -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- OpenGraph & Twitter Meta Tags -->
+<meta property="og:site_name" content="HSN Labs">
+<meta property="og:image" content="https://hsnlabs.ai/assets/brand/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@hsnlabs">
+<meta name="twitter:creator" content="@hugo_nasc">
+<meta name="twitter:image" content="https://hsnlabs.ai/assets/brand/og-image.png">
+
+<!-- Google Analytics (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GMK24ECXMF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-GMK24ECXMF');
+</script>
+
+<!-- Structured Data -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "How to Build an Operational Business Ontology in Python with Pydantic and MCP",
+  "description": "Step-by-step engineering architecture to build an operational business ontology in pure Python using Pydantic schemas and Model Context Protocol actions without proprietary lock-in.",
+  "datePublished": "2026-09-28",
+  "inLanguage": "en",
+  "author": {
+    "@type": "Person",
+    "name": "Hugo S. Nascimento",
+    "url": "https://hsnlabs.ai"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "HSN Labs",
+    "url": "https://hsnlabs.ai",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://hsnlabs.ai/assets/brand/lockups/hsnlabs-lockup-horizontal-light.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://hsnlabs.ai/blog/post/how-to-build-operational-ontology-python-mcp/"
+  }
+}
+</script>
+
+</head>
+
+<body>
+    <div class="container py-3">
+        <header>
+            <!-- block header -->
+<nav class="navbar navbar-expand-xl border-bottom">
+    <div class="container-fluid">
+        
+
+        
+            <span class=" fs-4 title-color site-name" id="component-site-name" style="text-transform: uppercase;">Hugo S. Nascimento</span>
+        
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMenu"
+            aria-controls="navbarsMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse flex-column ml-auto" id="navbarsMenu">
+            <ul class="navbar-nav">
+
+                <!-- block menu -->
+                <li class="nav-item">
+                    <!-- block menu -->
+<!-- endblock -->
+                </li>
+                <!-- endblock -->
+
+                <!-- block search -->
+                <li class="nav-item">
+                    <a class="collapsed" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        <div class="md-search-icon">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </div>
+                    </a>
+                </li>
+                <!--  endblock -->
+
+                <!-- block source -->
+                <li class="nav-item">
+                    
+                </li>
+                <!--  endblock -->
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--  endblock -->
+        </header>
+
+        <main><!-- block search -->
+<div class="collapse" id="collapseExample">
+    <div role="search" class="search-box">
+        <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+            <input type="text" name="q" class="search-query"
+            placeholder="Search docs" title="Type search term here" />
+        </form>
+    </div>
+</div>
+<!-- endblock -->
+
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 d-none d-md-block" id="component-sidebar">
+                        <!-- block sidebar -->
+<div class="navbar-expand-md" role="complementary">
+    
+    
+</div>
+
+<!-- block blog_sidebar -->
+
+
+<div class="blog-sidebar" id="component-blog-sidebar">
+
+    
+    <div class="blog-sidebar-widget">
+        <h3 class="blog-sidebar-widget-title">Recent Posts</h3>
+        <ul class="blog-sidebar-list">
+            
+            <li><a href="../cleveland-clinic-case-study-operational-agents/">Case Study: How Cleveland Clinic Scaled Patient Flow Across 6,600 Hospital Beds</a></li>
+            
+            <li><a href="./">How to Build an Operational Business Ontology in Python with Pydantic and MCP</a></li>
+            
+            <li><a href="../palantir-aip-bootcamp-operational-ontology/">The Architecture of Palantir AIP: Why Enterprise Agents Fail Without an Operational Ontology</a></li>
+            
+            <li><a href="../palantir-pricing-tco-and-open-alternatives/">The Real TCO of Palantir: The Dollar Barrier and Modern Open Alternatives</a></li>
+            
+            <li><a href="../palantir-vs-databricks-agent-architecture/">Palantir vs Databricks: Why Data Lakes Fail at Agentic Operations</a></li>
+            
+        </ul>
+    </div>
+    
+
+    
+    <div class="blog-sidebar-widget">
+        <h3 class="blog-sidebar-widget-title">Categories</h3>
+        <ul class="blog-sidebar-list">
+            
+            <li><a href="../../category/case-studies/">Case Studies</a></li>
+            
+            <li><a href="../../category/agent-development-life-cycle/">Agent Development Life Cycle</a></li>
+            
+            <li><a href="../../category/agentic-economics/">Agentic Economics</a></li>
+            
+            <li><a href="../../category/why-agents-fail/">Why Agents Fail</a></li>
+            
+            <li><a href="../../category/future-of-work/">Future of Work</a></li>
+            
+        </ul>
+    </div>
+    
+
+    
+    <div class="blog-sidebar-widget">
+        <h3 class="blog-sidebar-widget-title">Tags</h3>
+        <div class="blog-sidebar-tags">
+            
+            <a class="blog-sidebar-tag" href="../../tag/case-studies/">case-studies</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/production/">production</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/architecture/">architecture</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/roi/">roi</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/data-contracts/">data-contracts</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/evaluation/">evaluation</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/economics/">economics</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/ebitda/">ebitda</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/ai-failures/">ai-failures</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/bpo/">bpo</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/c-suite/">c-suite</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/margins/">margins</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/consulting/">consulting</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/sprint/">sprint</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/collections/">collections</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/hr-tech/">hr-tech</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/insurance/">insurance</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/arbitrage/">arbitrage</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/erp-support/">erp-support</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/helpdesk/">helpdesk</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/rpa/">rpa</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/automation/">automation</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/poc/">poc</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/mcp/">mcp</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/latam-airlines/">latam-airlines</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/llm-judge/">llm-judge</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/audit/">audit</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/api-loops/">api-loops</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/rag/">rag</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/erp/">erp</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/legacy-core/">legacy-core</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/mainframe/">mainframe</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/schema-drift/">schema-drift</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/guardrails/">guardrails</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/state-machines/">state-machines</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/legacy-it/">legacy-it</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/reliability/">reliability</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/hsn-labs/">hsn-labs</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/manifesto/">manifesto</a>
+            
+        </div>
+    </div>
+    
+
+</div>
+
+<!-- endblock -->
+
+<!-- endblock -->
+                    </div>
+                    <div class="col-md-9 col-12" id="component-content">
+                        <!-- block content -->
+<section class="container post" id="component-content">
+    <article>
+        
+        <header>
+            
+                <h1 class=" title" id="component-title">How to Build an Operational Business Ontology in Python with Pydantic and MCP</h1>
+            
+        </header>
+        
+        
+        
+        <p class="page-dates">
+            Created on 2026-09-28
+             — updated on September 27, 2026
+        </p>
+        
+        <hr class="page-dates-divider">
+        
+        
+        
+        <p><p><em>Reading time: 6 minutes. Author: Hugo S. Nascimento.</em></p>
+<p>The defining difference between a toy AI demonstration and a mission-critical enterprise agent is the execution layer.</p>
+<p>When an autonomous agent interacts with unstructured vector embeddings, it hallucinates. When it interacts with an <strong>Operational Ontology</strong>—strongly-typed business entities with strict transactional constraints—it executes reliably in production.[5]</p>
+<p>Palantir built a multi-billion dollar enterprise software business around this exact insight.[1][5] </p>
+<p>However, engineering teams do not need a seven-figure proprietary contract to deploy this architecture. Using modern open-source standards—specifically <strong>Pydantic v2</strong>, the <strong>Model Context Protocol (MCP)</strong>, and typed state machines—you can build a resilient operational ontology directly in Python.[7][8]</p>
+<p>Here is the exact architectural blueprint.</p>
+<hr />
+<h2 id="1-deconstructing-the-operational-ontology">1. Deconstructing the Operational Ontology</h2>
+<p>In enterprise operations, data cannot be treated as passive tabular rows. An operational ontology consists of three interconnected software layers:[5]</p>
+<ol>
+<li><strong>Objects:</strong> Normalized representations of real-world business entities (e.g., Invoices, Purchase Orders, Hospital Beds, Freight Shipments).[5]</li>
+<li><strong>Properties and Links:</strong> Strongly-typed attributes and deterministic relationships connecting entities together (e.g., an <code>Invoice</code> links to a <code>PurchaseOrder</code> and an approved <code>VendorAccount</code>).[5]</li>
+<li><strong>Actions:</strong> Guarded mutations and write-backs that alter system state across external transactional APIs (e.g., <code>ApprovePayment</code>, <code>ReassignBed</code>, <code>ReleaseEscrow</code>).[5]</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a> ┌────────────────────────────────────────────────────────┐
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a> │                   ENTERPRISE LLM / REASONING ENGINE     │
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a> └───────────────────────────┬────────────────────────────┘
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>                             │ (Pydantic Function Schemas)
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>                             ▼
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a> ┌────────────────────────────────────────────────────────┐
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a> │              OPERATIONAL ONTOLOGY LAYER (PYTHON)       │
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a> │                                                        │
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a> │   [Objects &amp; State]        [Links &amp; Graph Contracts]   │
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a> │   - InvoiceRecord          - Invoice -&gt; PO (1:1)       │
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a> │   - VendorContract         - PO -&gt; Supplier (N:1)      │
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a> │   - DisputeClaim           - Claim -&gt; Ticket (1:1)     │
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a> └───────────────────────────┬────────────────────────────┘
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>                             │ (Validated Invariant Payload)
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>                             ▼
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a> ┌────────────────────────────────────────────────────────┐
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a> │         MODEL CONTEXT PROTOCOL (MCP) ACTION GATEWAY    │
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a> │                                                        │
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a> │   @mcp.tool() -&gt; Invariant Verification Engine         │
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a> │   - Rule 1: Sum(LineItems) == InvoiceTotal             │
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a> │   - Rule 2: Vendor.Status == "ACTIVE"                  │
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a> │   - Rule 3: Amount &lt;= DiscretionaryAuthorizationCap    │
+<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a> └───────────────────────────┬────────────────────────────┘
+<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>                             │ (Atomic ERP / Database Write)
+<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>                             ▼
+<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>                 [ CORE SYSTEMS OF RECORD ]
+<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>              SAP S/4HANA / Salesforce / PostgreSQL
+</code></pre></div>
+<hr />
+<h2 id="2-layer-1-defining-objects-and-invariants-with-pydantic">2. Layer 1: Defining Objects and Invariants with Pydantic</h2>
+<p>Pydantic is the industry-standard data validation library for Python.[8] Instead of passing unvalidated dictionaries or raw strings to an LLM, every business entity is defined as an immutable data contract.[8]</p>
+<p>Here is an operational model for an automated enterprise dispute resolution workflow:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">datetime</span><span class="w"> </span><span class="kn">import</span> <span class="n">datetime</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">decimal</span><span class="w"> </span><span class="kn">import</span> <span class="n">Decimal</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="kn">from</span><span class="w"> </span><span class="nn">enum</span><span class="w"> </span><span class="kn">import</span> <span class="n">Enum</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="kn">from</span><span class="w"> </span><span class="nn">pydantic</span><span class="w"> </span><span class="kn">import</span> <span class="n">BaseModel</span><span class="p">,</span> <span class="n">Field</span><span class="p">,</span> <span class="n">model_validator</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="k">class</span><span class="w"> </span><span class="nc">DisputeCategory</span><span class="p">(</span><span class="nb">str</span><span class="p">,</span> <span class="n">Enum</span><span class="p">):</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>    <span class="n">PRICING_DISCREPANCY</span> <span class="o">=</span> <span class="s2">"PRICING_DISCREPANCY"</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>    <span class="n">DAMAGED_GOODS</span> <span class="o">=</span> <span class="s2">"DAMAGED_GOODS"</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>    <span class="n">SHORT_SHIPMENT</span> <span class="o">=</span> <span class="s2">"SHORT_SHIPMENT"</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="k">class</span><span class="w"> </span><span class="nc">InvoiceDispute</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>    <span class="n">dispute_id</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="n">pattern</span><span class="o">=</span><span class="sa">r</span><span class="s2">"^DISP-[0-9]</span><span class="si">{8}</span><span class="s2">$"</span><span class="p">)</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>    <span class="n">invoice_number</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="n">min_length</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>    <span class="n">vendor_id</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="n">min_length</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>    <span class="n">claimed_amount</span><span class="p">:</span> <span class="n">Decimal</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="n">gt</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>    <span class="n">contract_tolerance_pct</span><span class="p">:</span> <span class="n">Decimal</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="n">default</span><span class="o">=</span><span class="n">Decimal</span><span class="p">(</span><span class="s2">"0.02"</span><span class="p">),</span> <span class="n">ge</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">le</span><span class="o">=</span><span class="n">Decimal</span><span class="p">(</span><span class="s2">"0.10"</span><span class="p">))</span>
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>    <span class="n">category</span><span class="p">:</span> <span class="n">DisputeCategory</span>
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>    <span class="n">created_at</span><span class="p">:</span> <span class="n">datetime</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="n">default_factory</span><span class="o">=</span><span class="n">datetime</span><span class="o">.</span><span class="n">utcnow</span><span class="p">)</span>
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>
+<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>    <span class="nd">@model_validator</span><span class="p">(</span><span class="n">mode</span><span class="o">=</span><span class="s2">"after"</span><span class="p">)</span>
+<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">verify_reconciliation_threshold</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">"InvoiceDispute"</span><span class="p">:</span>
+<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a>        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">claimed_amount</span> <span class="o">&gt;</span> <span class="n">Decimal</span><span class="p">(</span><span class="s2">"50000.00"</span><span class="p">):</span>
+<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a>            <span class="c1"># Invariant: Disputed amounts over $50k require mandatory executive escalation</span>
+<a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a>            <span class="k">pass</span>
+<a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a>        <span class="k">return</span> <span class="bp">self</span>
+</code></pre></div>
+<p>By wrapping business objects in strict schemas, invalid model inputs are rejected at serialization before reaching execution code.[8]</p>
+<hr />
+<h2 id="3-layer-2-model-context-protocol-mcp-action-gateways">3. Layer 2: Model Context Protocol (MCP) Action Gateways</h2>
+<p>Autonomous agents should never possess raw direct database write access. All state mutations must pass through an action gateway.</p>
+<p>The Model Context Protocol (MCP) is an open specification that standardizes how applications provide context and tools to LLMs.[7] MCP operates like a universal port, allowing agents to execute functions across secure infrastructure without bespoke integrations.[7]</p>
+<p>Here is an MCP action server implementing atomic transaction execution with validation checks:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">mcp.server.fastmcp</span><span class="w"> </span><span class="kn">import</span> <span class="n">FastMCP</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">decimal</span><span class="w"> </span><span class="kn">import</span> <span class="n">Decimal</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="n">mcp</span> <span class="o">=</span> <span class="n">FastMCP</span><span class="p">(</span><span class="s2">"EnterpriseOntologyGateway"</span><span class="p">)</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="nd">@mcp</span><span class="o">.</span><span class="n">tool</span><span class="p">()</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">execute_dispute_settlement</span><span class="p">(</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>    <span class="n">dispute_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>    <span class="n">approved_settlement</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>    <span class="n">operator_override</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">:</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">    </span><span class="sd">"""</span>
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="sd">    Executes an atomic ERP credit memo adjustment for an active invoice dispute.</span>
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="sd">    Strictly verifies financial invariants prior to SAP write-back.</span>
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="sd">    """</span>
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a>    <span class="n">amount</span> <span class="o">=</span> <span class="n">Decimal</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">approved_settlement</span><span class="p">))</span>
+<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>
+<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a>    <span class="c1"># 1. Fetch live entity from transactional graph</span>
+<a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a>    <span class="n">dispute</span> <span class="o">=</span> <span class="k">await</span> <span class="n">fetch_dispute_object</span><span class="p">(</span><span class="n">dispute_id</span><span class="p">)</span>
+<a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a>    <span class="k">if</span> <span class="ow">not</span> <span class="n">dispute</span><span class="p">:</span>
+<a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a>        <span class="k">return</span> <span class="p">{</span><span class="s2">"status"</span><span class="p">:</span> <span class="s2">"REJECTED"</span><span class="p">,</span> <span class="s2">"reason"</span><span class="p">:</span> <span class="sa">f</span><span class="s2">"Dispute </span><span class="si">{</span><span class="n">dispute_id</span><span class="si">}</span><span class="s2"> does not exist"</span><span class="p">}</span>
+<a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a>
+<a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a>    <span class="c1"># 2. Enforce Hard Execution Invariants</span>
+<a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a>    <span class="k">if</span> <span class="n">amount</span> <span class="o">&gt;</span> <span class="n">dispute</span><span class="o">.</span><span class="n">claimed_amount</span><span class="p">:</span>
+<a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a>        <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a>            <span class="s2">"status"</span><span class="p">:</span> <span class="s2">"VIOLATION"</span><span class="p">,</span>
+<a id="__codelineno-2-27" name="__codelineno-2-27" href="#__codelineno-2-27"></a>            <span class="s2">"reason"</span><span class="p">:</span> <span class="s2">"Settlement cannot exceed original claimed dispute amount"</span>
+<a id="__codelineno-2-28" name="__codelineno-2-28" href="#__codelineno-2-28"></a>        <span class="p">}</span>
+<a id="__codelineno-2-29" name="__codelineno-2-29" href="#__codelineno-2-29"></a>
+<a id="__codelineno-2-30" name="__codelineno-2-30" href="#__codelineno-2-30"></a>    <span class="k">if</span> <span class="n">amount</span> <span class="o">&gt;</span> <span class="n">Decimal</span><span class="p">(</span><span class="s2">"5000.00"</span><span class="p">)</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">operator_override</span><span class="p">:</span>
+<a id="__codelineno-2-31" name="__codelineno-2-31" href="#__codelineno-2-31"></a>        <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-2-32" name="__codelineno-2-32" href="#__codelineno-2-32"></a>            <span class="s2">"status"</span><span class="p">:</span> <span class="s2">"PENDING_APPROVAL"</span><span class="p">,</span>
+<a id="__codelineno-2-33" name="__codelineno-2-33" href="#__codelineno-2-33"></a>            <span class="s2">"reason"</span><span class="p">:</span> <span class="s2">"Settlements exceeding $5,000 require Human-in-the-Loop dual authorization"</span>
+<a id="__codelineno-2-34" name="__codelineno-2-34" href="#__codelineno-2-34"></a>        <span class="p">}</span>
+<a id="__codelineno-2-35" name="__codelineno-2-35" href="#__codelineno-2-35"></a>
+<a id="__codelineno-2-36" name="__codelineno-2-36" href="#__codelineno-2-36"></a>    <span class="c1"># 3. Atomic ERP Transaction Write-back</span>
+<a id="__codelineno-2-37" name="__codelineno-2-37" href="#__codelineno-2-37"></a>    <span class="n">erp_reference</span> <span class="o">=</span> <span class="k">await</span> <span class="n">erp_client</span><span class="o">.</span><span class="n">post_credit_memo</span><span class="p">(</span>
+<a id="__codelineno-2-38" name="__codelineno-2-38" href="#__codelineno-2-38"></a>        <span class="n">vendor_id</span><span class="o">=</span><span class="n">dispute</span><span class="o">.</span><span class="n">vendor_id</span><span class="p">,</span>
+<a id="__codelineno-2-39" name="__codelineno-2-39" href="#__codelineno-2-39"></a>        <span class="n">invoice_number</span><span class="o">=</span><span class="n">dispute</span><span class="o">.</span><span class="n">invoice_number</span><span class="p">,</span>
+<a id="__codelineno-2-40" name="__codelineno-2-40" href="#__codelineno-2-40"></a>        <span class="n">amount</span><span class="o">=</span><span class="n">amount</span>
+<a id="__codelineno-2-41" name="__codelineno-2-41" href="#__codelineno-2-41"></a>    <span class="p">)</span>
+<a id="__codelineno-2-42" name="__codelineno-2-42" href="#__codelineno-2-42"></a>
+<a id="__codelineno-2-43" name="__codelineno-2-43" href="#__codelineno-2-43"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-2-44" name="__codelineno-2-44" href="#__codelineno-2-44"></a>        <span class="s2">"status"</span><span class="p">:</span> <span class="s2">"COMMITTED"</span><span class="p">,</span>
+<a id="__codelineno-2-45" name="__codelineno-2-45" href="#__codelineno-2-45"></a>        <span class="s2">"erp_transaction_id"</span><span class="p">:</span> <span class="n">erp_reference</span><span class="p">,</span>
+<a id="__codelineno-2-46" name="__codelineno-2-46" href="#__codelineno-2-46"></a>        <span class="s2">"dispute_id"</span><span class="p">:</span> <span class="n">dispute_id</span><span class="p">,</span>
+<a id="__codelineno-2-47" name="__codelineno-2-47" href="#__codelineno-2-47"></a>        <span class="s2">"reconciled_amount"</span><span class="p">:</span> <span class="nb">float</span><span class="p">(</span><span class="n">amount</span><span class="p">)</span>
+<a id="__codelineno-2-48" name="__codelineno-2-48" href="#__codelineno-2-48"></a>    <span class="p">}</span>
+</code></pre></div>
+<p>This pattern ensures that the language model functions exclusively as a planner. The actual state modification is guarded by deterministic code invariants.</p>
+<hr />
+<h2 id="4-layer-3-state-machines-and-invariant-auditing">4. Layer 3: State Machines and Invariant Auditing</h2>
+<p>Production agents cannot operate in open-ended ReAct loops that iterate indefinitely. They must be bounded by finite state machines.</p>
+<p>By modeling the agent's workflow as a directed acyclic graph (using <strong>LangGraph</strong> or <strong>Temporal</strong>), every transition between states is auditable:</p>
+<ol>
+<li><strong>State: Ingestion:</strong> Ingest raw payload and parse into <code>InvoiceDispute</code> model.[8]</li>
+<li><strong>State: Context Enrichment:</strong> Hydrate object with ERP purchase order history and vendor scorecards.</li>
+<li><strong>State: Evaluation:</strong> Prompt the model to evaluate liability based strictly on contract terms.</li>
+<li><strong>State: MCP Action Dispatch:</strong> Submit candidate resolution to the MCP action gateway.[7]</li>
+<li><strong>State: Final Reconciliation:</strong> Log cryptographic transaction audit trail to PostgreSQL.</li>
+</ol>
+<p>If the model encounters an anomalous edge case, the state machine halts and routes the payload to a human operator queue with zero risk of silent failure.</p>
+<hr />
+<h2 id="5-architectural-comparison-open-stack-vs-proprietary-platform">5. Architectural Comparison: Open Stack vs Proprietary Platform</h2>
+<table>
+<thead>
+<tr>
+<th>Architecture Layer</th>
+<th>Open Python + MCP Stack</th>
+<th>Palantir Foundry / AIP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Data Contracts</strong></td>
+<td>Pydantic v2 (Native Python / JSONSchema)[8]</td>
+<td>Proprietary Ontology Object Builder[5]</td>
+</tr>
+<tr>
+<td><strong>Tool Execution</strong></td>
+<td>Model Context Protocol (Open Standard)[7]</td>
+<td>AIP Actions &amp; Foundry Functions[5]</td>
+</tr>
+<tr>
+<td><strong>State Orchestration</strong></td>
+<td>LangGraph / Temporal / Celery</td>
+<td>Foundry Workshop &amp; AIP Automate</td>
+</tr>
+<tr>
+<td><strong>Storage &amp; Graph</strong></td>
+<td>PostgreSQL, pgvector, Neo4j</td>
+<td>Palantir Monolith / Titan</td>
+</tr>
+<tr>
+<td><strong>Licensing Cost</strong></td>
+<td>$0 Base Software Licensing</td>
+<td>Multi-Million USD Enterprise Contract[1]</td>
+</tr>
+<tr>
+<td><strong>Infrastructure</strong></td>
+<td>Runs inside client AWS/GCP VPC</td>
+<td>Dedicated SaaS or Palantir Managed Tenant</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="6-the-production-takeaway">6. The Production Takeaway</h2>
+<p>Enterprise AI is not a prompt engineering problem; it is a distributed systems engineering problem.</p>
+<p>By replacing opaque prompts with strongly-typed Pydantic contracts and routing agent execution through Model Context Protocol gateways, technology leaders gain the operational precision of Palantir without the seven-figure vendor lock-in.[1][5][7][8]</p>
+<hr />
+<h2 id="sources">Sources</h2>
+<p>[1] https://www.sec.gov/Archives/edgar/data/1321655/000132165524000022/pltr-20231231.htm — Palantir Technologies Inc. Form 10-K Annual Report
+[5] https://www.palantir.com/platforms/foundry/ontology — Palantir Foundry: Operational Ontology Overview
+[7] https://modelcontextprotocol.io/introduction — Model Context Protocol Specification and Architecture
+[8] https://docs.pydantic.dev/latest — Pydantic: Fast Data Validation for Python</p>
+<hr />
+<p><em>Article originally published on <a href="https://hsnlabs.ai/blog/post/how-to-build-operational-ontology-python-mcp/">HSN Labs</a>. Author: <a href="https://hsnlabs.ai">Hugo S. Nascimento</a>.</em></p>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "How to Build an Operational Business Ontology in Python with Pydantic and MCP",
+  "url": "https://hsnlabs.ai/blog/post/how-to-build-operational-ontology-python-mcp/",
+  "description": "Step-by-step engineering architecture to build an operational business ontology in pure Python using Pydantic schemas and Model Context Protocol actions without proprietary lock-in.",
+  "inLanguage": "en",
+  "author": {
+    "@type": "Person",
+    "name": "Hugo S. Nascimento",
+    "url": "https://hsnlabs.ai"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "HSN Labs",
+    "url": "https://hsnlabs.ai",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://hsnlabs.ai/assets/brand/lockups/hsnlabs-lockup-horizontal-light.png"
+    }
+  },
+  "datePublished": "2026-09-28"
+}
+</script>
+</p>
+    </article>
+
+    
+</section>
+<!-- endblock -->
+                    </div>
+                </div>
+            </div>
+            
+
+        </main>
+
+        
+        <!-- block preview -->
+<!-- endblock -->
+        
+
+        
+        <!-- block footer -->
+<footer class="site-footer" id="component-footer">
+  <div class="footer-container">
+    
+    <!-- Editorial & SEO Sitemap Grid -->
+    <div class="footer-seo-grid">
+      
+      <!-- Brand & Positioning Column -->
+      <div class="footer-seo-col brand-col">
+        <a href="https://hsnlabs.ai" class="footer-brand-title">HSN LABS</a>
+        <p class="footer-brand-tagline">
+          Enterprise Agent Architecture and executable domain ontologies for mission-critical operations.
+        </p>
+        <p class="footer-brand-meta">
+          AI Architecture Boutique<br>
+          São Paulo, Brazil · WeWork Paulista Ave 1374<br>
+          <a href="mailto:hugo@hsnlabs.ai" class="footer-link-subtle">hugo@hsnlabs.ai</a>
+        </p>
+        <div style="margin-top: 14px;">
+          <a href="../../feed_rss_created.xml" class="footer-rss-chip" target="_blank" rel="noopener">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" style="display:inline-block;vertical-align:-1px;margin-right:5px;"><path d="M6.18 15.64a2.18 2.18 0 0 1 2.18 2.18C8.36 19 7.38 20 6.18 20C5 20 4 19 4 17.82a2.18 2.18 0 0 1 2.18-2.18M4 4.44A15.56 15.56 0 0 1 19.56 20h-2.83A12.73 12.73 0 0 0 4 7.27V4.44m0 5.66a9.9 9.9 0 0 1 9.9 9.9h-2.83A7.07 7.07 0 0 0 4 12.93V10.1z"/></svg>RSS Feed 2.0
+          </a>
+        </div>
+        <div style="margin-top: 10px;">
+          <a href="../../llms.txt" class="footer-pill-link">llms.txt for LLMs & Agents</a>
+        </div>
+      </div>
+
+      <!-- Pillar 1: Why Agents Fail -->
+      <div class="footer-seo-col">
+        <div class="footer-col-header">Why Agents Fail</div>
+        <ul class="footer-link-list">
+          <li><a href="../the-poc-graveyard/">The Enterprise PoC Graveyard</a></li>
+          <li><a href="../integration-drift/">Integration Drift in Production</a></li>
+          <li><a href="../why-rag-breaks-on-erp/">Why RAG Breaks on Financial ERPs</a></li>
+          <li><a href="../llm-as-judge-fallacy/">LLM-as-a-Judge Fallacy in Banking</a></li>
+        </ul>
+      </div>
+
+      <!-- Pillar 2: Agent Development Life Cycle -->
+      <div class="footer-seo-col">
+        <div class="footer-col-header">Agent Development Life Cycle</div>
+        <ul class="footer-link-list">
+          <li><a href="../perimeter-isolation-mcp-data-contracts/">Perimeter Isolation and MCP</a></li>
+          <li><a href="../legacy-core-backing-engine/">Legacy Core as Agentic Engine</a></li>
+          <li><a href="../chatbot-vs-agent/">Chatbot vs Transactional Agent</a></li>
+          <li><a href="../five-day-architecture-sprint/">Why Big 4 Slide Decks Fail on AI</a></li>
+        </ul>
+      </div>
+
+      <!-- Pillar 3: Future of Work -->
+      <div class="footer-seo-col">
+        <div class="footer-col-header">Future of Work</div>
+        <ul class="footer-link-list">
+          <li><a href="../death-of-tier-1-erp-helpdesk/">Death of Tier-1 ERP Support</a></li>
+          <li><a href="../balance-sheet-guard-bpo-extinction/">Extinction of HR Outsourcing</a></li>
+          <li><a href="../collapse-of-legacy-rpa/">Collapse of Legacy RPA</a></li>
+        </ul>
+      </div>
+
+      <!-- Pillar 4: Agentic Economics -->
+      <div class="footer-seo-col">
+        <div class="footer-col-header">Agentic Economics</div>
+        <ul class="footer-link-list">
+          <li><a href="../bpo-replacement-matrix/">BPO Replacement Matrix</a></li>
+          <li><a href="../c-suite-margin-protection-playbook/">C-Suite Margin Playbook</a></li>
+          <li><a href="../cost-legacy-it/">Cost of Unbounded AI in Legacy IT</a></li>
+          <li><a href="../protocol-arbitrage-claims-underwriting/">Protocol Arbitrage in Claims</a></li>
+        </ul>
+      </div>
+
+      <!-- Pillar 5: Case Studies -->
+      <div class="footer-seo-col">
+        <div class="footer-col-header">Case Studies</div>
+        <ul class="footer-link-list">
+          <li><a href="../latam-airlines-case-study/">LATAM Airlines: 3% Margin Engine</a></li>
+          <li><a href="../unconstrained-agents-finite-state-machines/">State Machines vs API Loops</a></li>
+          <li><a href="../autonomous-negotiations-collections-contracts/">Autonomous Collections & Contracts</a></li>
+          <li><a href="../manifesto/">Why I Built HSN Labs</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Minimalist Bottom Line -->
+    <div class="footer-bottom-bar">
+      <div class="footer-bottom-copy">
+        2026 HSN Labs. Enterprise Agent Architecture.
+      </div>
+      <div class="footer-bottom-nav">
+        <a href="https://github.com/hsnlabs-ai" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/company/hsnlabs" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://x.com/hsnlabs" target="_blank" rel="noopener">X</a>
+        <a href="../../feed_rss_created.xml">RSS Feed</a>
+        <a href="../../feed_json_created.json">JSON Feed</a>
+        <a href="../../sitemap.xml">Sitemap</a>
+        <a href="https://hsnlabs.ai/bootcamp">Bootcamp</a>
+        <a href="https://hsnlabs.ai/advisory">Advisory</a>
+        <a href="https://hsnlabs.ai/privacy-policy">Privacy Policy</a>
+        <a href="https://hsnlabs.ai/modern-slavery-statement">Compliance</a>
+      </div>
+    </div>
+
+  </div>
+</footer>
+<!-- endblock -->
+        
+    </div>
+
+    <script src="../../assets/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/js/main.min.js"></script>
+    <script src="../../assets/js/pagination.js" defer></script>
+    <script src="../../search/main.js" defer></script>
+
+</body>
+
+</html>
