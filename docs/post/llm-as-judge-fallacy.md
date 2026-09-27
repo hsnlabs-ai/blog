@@ -1,7 +1,7 @@
 ---
 title: Why LLM-as-a-Judge Fails in Banking
 date: '2026-08-18'
-category: Arquitetura e Engenharia Determinística
+category: Arquitetura e Sistemas Agênticos
 tags:
 - arquitetura
 - llm-judge
@@ -25,7 +25,7 @@ I asked the vendor lead a simple question: How did you calculate that accuracy m
 
 The answer was breathtaking: they took the agent outputs, fed them into another prompt window, and asked GPT-4 to rate the response on a scale from one to five for accuracy and policy adherence. 
 
-They were using a probabilistic model that hallucinates to check whether another probabilistic model had hallucinated. The risk committee was seconds away from approving an architecture where no human or deterministic program had ever verified ground-truth financial math.
+They were using a probabilistic model that hallucinates to check whether another probabilistic model had hallucinated. The risk committee was seconds away from approving an architecture where no human or code-level program had ever verified ground-truth financial math.
 
 ## Why Stochastic Evaluation Fails Banking Risk Audits
 
@@ -52,11 +52,11 @@ What that average conceals is that in two out of every one hundred transactions,
 
 At HSN Labs, we reject subjective prompt grading in enterprise pipelines. We evaluate autonomous systems using the same rigorous engineering standards applied to critical financial and aerospace software:
 
-* Binary Invariant Assertions: We write deterministic assertion functions in Python. Did the output JSON strictly conform to the Pydantic schema? Did the debit and credit ledger entries balance to exactly zero? Did the response omit tax IDs and restricted account numbers? These tests return a binary pass or fail, not a subjective opinion score.
+* Binary Invariant Assertions: We write strict code assertion functions in Python. Did the output JSON strictly conform to the Pydantic schema? Did the debit and credit ledger entries balance to exactly zero? Did the response omit tax IDs and restricted account numbers? These tests return a binary pass or fail, not a subjective opinion score.
 * Immutable Golden Datasets: Every production incident, edge case, and edge failure is turned into an immutable test fixture. Before any updated agent graph or model checkpoint touches staging, it must pass hundreds of historical regression tests.
-* Full Telemetry and Replayability: We instrument every workflow with LangSmith, tracing every token, intermediate state, and tool invocation. If an agent produces an unexpected state transition, our engineers can replay the exact execution trace deterministically in local development.
+* Full Telemetry and Replayability: We instrument every workflow with LangSmith, tracing every token, intermediate state, and tool invocation. If an agent produces an unexpected state transition, our engineers can replay the exact execution trace with complete fidelity in local development.
 
-Do not grade production agents with subjective opinion prompts. Grade them with deterministic code and verifiable mathematical proofs.
+Do not grade production agents with subjective opinion prompts. Grade them with verifiable code assertions and mathematical proofs.
 
 ## Strategic Resources and Related Essays
 - <a href="../the-poc-graveyard/">Why Agents Fail: The PoC Graveyard</a>

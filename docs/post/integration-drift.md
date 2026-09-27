@@ -1,7 +1,7 @@
 ---
 title: 'The Integration Drift: When Prompts Break Production'
 date: '2026-07-29'
-category: Arquitetura e Engenharia Determinística
+category: Arquitetura e Sistemas Agênticos
 tags:
 - arquitetura
 - schema-drift

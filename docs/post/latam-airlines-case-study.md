@@ -1,12 +1,12 @@
 ---
-title: 'LATAM Airlines: Deterministic Agents in a 3% Margin Business'
+title: 'LATAM Airlines: Production Agents in a 3% Margin Business'
 date: '2026-08-21'
 category: Linha de Frente e Estudos de Caso
 tags:
 - estudos-de-caso
 - latam-airlines
 - producao
-description: Estudo de caso pratico de implementacao de agentes deterministas em ambiente
+description: Estudo de caso pratico de implementacao de agentes em ambiente
   de alta volumetria e margem apertada.
 author: Hugo Nascimento
 ---
@@ -41,7 +41,7 @@ Data showed 95% of those failed queries were legitimate passenger needs such as 
 
 Fix: Added a dedicated Customer Care node. Routing errors dropped to 1%.
 
-**Takeaway:** Observe production telemetry. Build deterministic nodes for reality, not for your happy path.
+**Takeaway:** Observe production telemetry. Build production nodes for reality, not for your happy path.
 
 ## 3. The Chatbot Is Not The Product
 This is my core thesis. 
@@ -50,13 +50,13 @@ A B2C chatbot is just a data collection interface. Conversations are cheap. Stru
 
 LATAM realized this. They built Compass: an internal engine that takes unstructured chat logs, applies strict semantic ontologies, and outputs a Knowledge Graph directly into BigQuery. 
 
-When a passenger asks about "Italian restaurants near the hotel," they aren't just chatting. They are feeding a deterministic pipeline with semantic preferences.
+When a passenger asks about "Italian restaurants near the hotel," they aren't just chatting. They are feeding a structured data pipeline with semantic preferences.
 
 Stop building free-text wrappers. Use AI as a ruthless parser to turn noise into structured production data. 
 
 That is how you replace legacy IT. That is how you expand margins. That is how you prove ROI to a CFO.
 
 ## Strategic Resources and Related Essays
-- <a href="../chatbot-vs-agent/">Chatbot vs Agent: Why Replacing BPOs Requires Deterministic Guardrails</a>
+- <a href="../chatbot-vs-agent/">Chatbot vs Agent: Why Replacing BPOs Requires Production Guardrails</a>
 - <a href="../the-poc-graveyard/">Why Agents Fail: The PoC Graveyard</a>
 - <a href="https://hsnlabs.ai/advisory">HSN Labs Strategic Advisory for C-Levels</a>

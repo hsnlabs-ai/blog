@@ -4,7 +4,7 @@
 Transform primary consulting lessons and technical post-mortems into proprietary executive essays.
 Target level 3 economic buyers: CFOs, CEOs, Heads of Architecture.
 Voice: Caveman style, direct, authoritative, zero fluff.
-Core message: Deterministic agentic engineering versus fragile probabilistic wrappers.
+Core message: Enterprise agent architecture versus fragile probabilistic wrappers.
 
 ## Status
 All 9 core oracle strategic essays and all 5 BPO disruption cluster artifacts generated, verified, compiled, and deployed live to production on 2026-09-27.
@@ -41,7 +41,7 @@ Deployment: GitHub Pages with WebSub Hub and IndexNow real-time pings.
 - Slug: llm-as-judge-fallacy
 - Target File: docs/writing/llm-as-judge-fallacy.md
 - Core Argument: Using probabilistic models to evaluate probabilistic outputs creates circular confirmation bias that fails external regulatory audits.
-- Solution: Deterministic rule-based assertion suites, deterministic state machines, golden verification datasets.
+- Solution: Code-based assertion suites, structured state machines, golden verification datasets.
 
 ### 4. Legacy Core Systems Will Not Die: They Are the Engine Behind Autonomous Agents
 - Slug: legacy-core-backing-engine
@@ -53,7 +53,7 @@ Deployment: GitHub Pages with WebSub Hub and IndexNow real-time pings.
 - Slug: unconstrained-agents-finite-state-machines
 - Target File: docs/writing/unconstrained-agents-finite-state-machines.md
 - Core Argument: Probabilistic planning loops inevitably trigger illegal operations, balance corruptions, and severe corporate liabilities.
-- Solution: Constrained execution via formal automata theory. Agents propose actions, deterministic transition guards validate preconditions, state updates atomically.
+- Solution: Constrained execution via formal automata theory. Agents propose actions, code-level transition guards validate preconditions, state updates atomically.
 
 ### 6. Perimeter Isolation: Safely Deploying Agents via MCP Data Contracts
 - Slug: perimeter-isolation-mcp-data-contracts
@@ -71,13 +71,13 @@ Deployment: GitHub Pages with WebSub Hub and IndexNow real-time pings.
 - Slug: collapse-of-legacy-rpa
 - Target File: docs/writing/collapse-of-legacy-rpa.md
 - Core Argument: Traditional RPA vendors built empires selling glorified screen recorders that break on minor DOM and UI updates, extracting millions in maintenance consulting.
-- Solution: Headless deterministic agents operating directly on semantic protocols and APIs, driving maintenance overhead to zero.
-
-### 9. The C-Suite Transition Playbook: Protecting Margins in the Agentic Economy
-- Slug: c-suite-margin-protection-playbook
-- Target File: docs/writing/c-suite-margin-protection-playbook.md
-- Core Argument: Autonomous workforces reduce unit transaction costs by ninety percent. Companies relying on legacy headcount billing or manual BPO face rapid margin erosion.
-- Solution: The operational strangler pattern: routing high-friction tasks to deterministic agents while redeploying human capital to strategic supervision.
+- Solution: Headless autonomous agents operating directly on semantic protocols and APIs, driving maintenance overhead to zero.
+ 
+ ### 9. The C-Suite Transition Playbook: Protecting Margins in the Agentic Economy
+ - Slug: c-suite-margin-protection-playbook
+ - Target File: docs/writing/c-suite-margin-protection-playbook.md
+ - Core Argument: Autonomous workforces reduce unit transaction costs by ninety percent. Companies relying on legacy headcount billing or manual BPO face rapid margin erosion.
+ - Solution: The operational strangler pattern: routing high-friction tasks to autonomous agents while redeploying human capital to strategic supervision.
 
 ## Production and Human Navigation Architecture
 

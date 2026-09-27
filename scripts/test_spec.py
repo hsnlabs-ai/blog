@@ -14,7 +14,7 @@ POSTS_DIR = DOCS_DIR / "post"
 SITE_DIR = BASE_DIR / "site"
 
 CANONICAL_CATEGORIES = {
-    "Arquitetura e Engenharia Determinística",
+    "Arquitetura e Sistemas Agênticos",
     "Economia Agêntica e Fim do BPO",
     "Linha de Frente e Estudos de Caso"
 }

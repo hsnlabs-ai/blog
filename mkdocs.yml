@@ -1,7 +1,7 @@
 site_name: Hugo Nascimento
 site_url: https://hsnlabs.ai/blog/
 site_author: Hugo Nascimento
-site_description: Deterministic Agentic Engineering — Essays and field notes on enterprise AI architectures, business ontologies, and avoiding runtime failures in production.
+site_description: Enterprise Agent Architecture — Essays and field notes on enterprise AI architectures, business ontologies, and avoiding runtime failures in production.
 
 hooks:
   - hooks/attribution.py

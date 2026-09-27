@@ -1,7 +1,7 @@
 ---
 title: Why I Never Use Normal RAG on Financial ERPs
 date: '2026-08-07'
-category: Arquitetura e Engenharia Determinística
+category: Arquitetura e Sistemas Agênticos
 tags:
 - arquitetura
 - rag

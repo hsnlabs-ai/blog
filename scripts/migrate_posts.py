@@ -11,14 +11,14 @@ NEW_POSTS_DIR = BASE_DIR / "docs" / "post"
 NEW_POSTS_DIR.mkdir(parents=True, exist_ok=True)
 
 CATEGORY_MAP = {
-    # Arquitetura e Engenharia Determinística
-    "chatbot-vs-agent.md": ("Arquitetura e Engenharia Determinística", ["arquitetura", "guardrails", "state-machines"]),
-    "cost-legacy-it.md": ("Arquitetura e Engenharia Determinística", ["arquitetura", "legacy-it", "confiabilidade"]),
-    "integration-drift.md": ("Arquitetura e Engenharia Determinística", ["arquitetura", "schema-drift", "mcp"]),
-    "legacy-core-backing-engine.md": ("Arquitetura e Engenharia Determinística", ["arquitetura", "legacy-core", "mainframe"]),
-    "llm-as-judge-fallacy.md": ("Arquitetura e Engenharia Determinística", ["arquitetura", "llm-judge", "auditoria"]),
-    "perimeter-isolation-mcp-data-contracts.md": ("Arquitetura e Engenharia Determinística", ["arquitetura", "mcp", "data-contracts"]),
-    "why-rag-breaks-on-erp.md": ("Arquitetura e Engenharia Determinística", ["arquitetura", "rag", "erp"]),
+    # Arquitetura e Sistemas Agênticos
+    "chatbot-vs-agent.md": ("Arquitetura e Sistemas Agênticos", ["arquitetura", "guardrails", "state-machines"]),
+    "cost-legacy-it.md": ("Arquitetura e Sistemas Agênticos", ["arquitetura", "legacy-it", "confiabilidade"]),
+    "integration-drift.md": ("Arquitetura e Sistemas Agênticos", ["arquitetura", "schema-drift", "mcp"]),
+    "legacy-core-backing-engine.md": ("Arquitetura e Sistemas Agênticos", ["arquitetura", "legacy-core", "mainframe"]),
+    "llm-as-judge-fallacy.md": ("Arquitetura e Sistemas Agênticos", ["arquitetura", "llm-judge", "auditoria"]),
+    "perimeter-isolation-mcp-data-contracts.md": ("Arquitetura e Sistemas Agênticos", ["arquitetura", "mcp", "data-contracts"]),
+    "why-rag-breaks-on-erp.md": ("Arquitetura e Sistemas Agênticos", ["arquitetura", "rag", "erp"]),
 
     # Economia Agêntica e Fim do BPO
     "autonomous-negotiations-collections-contracts.md": ("Economia Agêntica e Fim do BPO", ["economia", "cobranca", "bpo"]),
@@ -38,8 +38,8 @@ CATEGORY_MAP = {
 }
 
 DESCRIPTIONS = {
-    "chatbot-vs-agent.md": "Diferencas criticas entre chatbots conversacionais e agentes deterministas para substituicao confiavel de processos corporativos.",
-    "cost-legacy-it.md": "Analise economica e tecnica dos custos de falhas nao-deterministicas de IA integradas a infraestruturas legadas.",
+    "chatbot-vs-agent.md": "Diferencas criticas entre chatbots conversacionais e agentes orientados a regras de negócio para substituicao confiavel de processos corporativos.",
+    "cost-legacy-it.md": "Analise economica e tecnica dos custos de falhas de IA sem limites de execução integradas a infraestruturas legadas.",
     "integration-drift.md": "Como detectar e blindar agentes em producao contra quebras silenciosas provocadas por desvios de esquemas de dados.",
     "legacy-core-backing-engine.md": "Por que sistemas transacionais legados sao a fundacao de execucao confiavel para operacoes agenticas escalaveis.",
     "llm-as-judge-fallacy.md": "As vulnerabilidades e falhas estruturais de utilizar modelos estocasticos para auditar decisoes financeiras criticas.",
@@ -47,13 +47,13 @@ DESCRIPTIONS = {
     "why-rag-breaks-on-erp.md": "Por que a busca vetorial por similaridade corrompe a precisao aritmetica exigida por livros contabeis de ERPs.",
     "autonomous-negotiations-collections-contracts.md": "Arquitetura para cobrancas autonomas e execucao de contratos comerciais em alta velocidade operacional.",
     "balance-sheet-guard-bpo-extinction.md": "Licoes operacionais sobre o declinio inevitavel de contratos de outsourcing de processos humanos em RH.",
-    "bpo-replacement-matrix.md": "Matriz quantitativa para substituicao de servicos terceirizados por agentes de software deterministas.",
+    "bpo-replacement-matrix.md": "Matriz quantitativa para substituicao de servicos terceirizados por agentes de software autonomos.",
     "c-suite-margin-protection-playbook.md": "Guia estrategico para conselhos de administracao defenderem margens operacionais na era agentica.",
-    "collapse-of-legacy-rpa.md": "Por que bots de gravacao de tela estao em colapso e como maquinas de estado deterministas os substituem.",
+    "collapse-of-legacy-rpa.md": "Por que bots de gravacao de tela estao em colapso e como arquiteturas de agentes os substituem.",
     "death-of-tier-1-erp-helpdesk.md": "O colapso inevitavel do modelo de suporte tecnico faturado por hora em implementacoes de ERP.",
     "five-day-architecture-sprint.md": "Por que apresentacoes genericas de consultorias tradicionais falham em resolver problemas agenticos em producao.",
-    "latam-airlines-case-study.md": "Estudo de caso pratico de implementacao de agentes deterministas em ambiente de alta volumetria e margem apertada.",
-    "manifesto.md": "A tese fundadora da boutique HSN Labs e o compromisso com engenharia agêntica determinística para grandes empresas.",
+    "latam-airlines-case-study.md": "Estudo de caso pratico de implementacao de agentes em ambiente de alta volumetria e margem apertada.",
+    "manifesto.md": "A tese fundadora da boutique HSN Labs e o compromisso com arquitetura agêntica enterprise para grandes empresas.",
     "protocol-arbitrage-claims-underwriting.md": "Uso de arbitragem multimodais autonoma para liquidacao de sinistros complexos em saude e seguros.",
     "the-poc-graveyard.md": "As razoes estruturais pelas quais prototipos de IA corporativa morrem antes de alcancar a producao real.",
     "unconstrained-agents-finite-state-machines.md": "Auditoria de emergencia detalhando a correcao de loops infinitos de chamadas em agentes de producao.",
@@ -90,8 +90,8 @@ for p_path in posts:
     if not re.match(r"^\d{4}-\d{2}-\d{2}$", date):
         date = "2026-08-01"
         
-    category, tags = CATEGORY_MAP.get(filename, ("Arquitetura e Engenharia Determinística", ["agentes", "engenharia"]))
-    desc = DESCRIPTIONS.get(filename, "Artigo tecnico sobre arquitetura de sistemas agenticos deterministas.")
+    category, tags = CATEGORY_MAP.get(filename, ("Arquitetura e Sistemas Agênticos", ["agentes", "engenharia"]))
+    desc = DESCRIPTIONS.get(filename, "Artigo tecnico sobre arquitetura de sistemas agenticos em producao.")
     
     # Ensure <!-- more --> exists in body
     if "<!-- more -->" not in body:

@@ -12,7 +12,7 @@ blog_sidebar:
 
 I am CPTO at Eva People and Founder & Managing Partner at HSN Labs. 3x venture-backed founder, engineer, and investor.
 
-My operational focus is **Deterministic Agentic Engineering**. I build custom multi-agent architectures on executable domain ontologies for mission-critical enterprise operations. I replace fragile human BPO operations and legacy IT bottlenecks with autonomous digital workforces that do not hallucinate or fail in production.
+My operational focus is **Enterprise Agent Architecture**. I build custom multi-agent architectures on executable domain ontologies for mission-critical enterprise operations. I replace fragile human BPO operations and legacy IT bottlenecks with autonomous digital workforces that do not hallucinate or fail in production.
 
 Delivered client architectures include **Deloitte**, **Santander**, **Softplan**, **Unipar Carbocloro**, **LWSA**, **Turbi**, **Caju**, **Cast Group**, and **Insi**.
 

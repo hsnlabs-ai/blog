@@ -8,24 +8,27 @@
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-mono: 'Fira Code', monospace;
 
+  /* HSN Labs Brand Blue / Cyan - Identical to Site */
+  --primary: #52B4FD !important;
+  --primary-active: #42abfc !important;
+  --cyan: #52B4FD;
+  --cyan-text: #0284c7;
+  --cyan-subtle: rgba(82, 180, 253, 0.12);
+  --cyan-glow: rgba(82, 180, 253, 0.28);
+  --brand-blue: #52B4FD;
+  --brand-blue-border: #3fa5f3;
+
+  /* Surfaces and Canvas */
   --canvas: #f5f5f5;
   --canvas-soft: #fafafa;
   --surface-card: #ffffff;
   --surface-strong: #f0efed;
   --ink: #07090e;
-  --primary: #07090e;
-  --primary-active: #141722;
   --body: #475569;
   --muted: #64748b;
   --muted-soft: #94a3b8;
   --hairline: #e2e8f0;
   --hairline-strong: #cbd5e1;
-
-  /* HSN Labs Brand Colors */
-  --cyan: #52B4FD;
-  --cyan-text: #0284c7;
-  --cyan-subtle: rgba(82, 180, 253, 0.12);
-  --cyan-glow: rgba(82, 180, 253, 0.28);
 }
 
 /* ==========================================================
@@ -118,12 +121,13 @@ code, kbd, pre, samp {
   padding: 1.75rem 2rem;
   border-radius: 0 !important;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
-  transition: border-color 0.2s ease, transform 0.15s ease;
+  transition: border-color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
   margin-bottom: 0;
 }
 
 .blog-row:hover {
   border-color: var(--cyan);
+  box-shadow: 0 4px 14px rgba(82, 180, 253, 0.15);
   transform: translateY(-2px);
 }
 
@@ -159,31 +163,35 @@ code, kbd, pre, samp {
   margin-bottom: 1.25rem;
 }
 
+/* CTA Button in Brand Blue (#52B4FD) */
 .blog-row-cta {
   font-family: var(--font-sans);
   font-size: 0.78rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--ink) !important;
-  background: var(--canvas) !important;
-  border: 1px solid var(--hairline-strong);
+  color: #ffffff !important;
+  background: var(--cyan) !important;
+  border: 1px solid var(--brand-blue-border) !important;
   padding: 7px 16px;
   border-radius: 0 !important;
   display: inline-flex;
   align-items: center;
   gap: 6px;
   transition: all 0.15s ease;
+  box-shadow: 0 2px 6px rgba(82, 180, 253, 0.3);
 }
 
 .blog-row-cta:hover {
-  background: var(--ink) !important;
+  background: #42abfc !important;
+  border-color: #42abfc !important;
   color: #ffffff !important;
-  border-color: var(--ink);
+  box-shadow: 0 4px 12px rgba(82, 180, 253, 0.45);
+  transform: translateY(-1px);
 }
 
 /* ==========================================================
-   SIDEBAR
+   SIDEBAR (BRAND BLUE HEADERS)
    ========================================================== */
 .blog-sidebar-widget {
   background: var(--surface-card);
@@ -193,15 +201,18 @@ code, kbd, pre, samp {
   border-radius: 0 !important;
 }
 
+/* Sidebar Widget Header in Brand Blue (#52B4FD) */
 .blog-sidebar-widget-title {
   font-family: var(--font-sans);
   font-size: 0.76rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: var(--ink);
-  border-bottom: 2px solid var(--ink);
-  padding-bottom: 8px;
+  background-color: var(--cyan) !important;
+  color: #ffffff !important;
+  border: 1px solid var(--brand-blue-border) !important;
+  border-radius: 0 !important;
+  padding: 0.5rem 0.75rem;
   margin-bottom: 14px;
 }
 
@@ -244,9 +255,9 @@ code, kbd, pre, samp {
 }
 
 .blog-sidebar-tag:hover {
-  background: var(--ink);
+  background: var(--cyan) !important;
+  border-color: var(--brand-blue-border) !important;
   color: #ffffff !important;
-  border-color: var(--ink);
 }
 
 /* ==========================================================
@@ -286,12 +297,13 @@ code, kbd, pre, samp {
 }
 
 .container.post pre {
-  background: var(--ink);
+  background: #0f172a;
   color: #f8fafc;
   padding: 1.25rem;
   border-radius: 0 !important;
   overflow-x: auto;
   margin: 1.5rem 0;
+  border-left: 3px solid var(--cyan);
 }
 
 .container.post code {
@@ -306,6 +318,10 @@ code, kbd, pre, samp {
   background: transparent;
   padding: 0;
   border: none;
+}
+
+.page-dates-divider {
+  border-top: 2px solid var(--cyan) !important;
 }
 
 /* ==========================================================
@@ -373,13 +389,13 @@ code, kbd, pre, samp {
 }
 
 .footer-link-subtle {
-  color: var(--ink);
+  color: var(--cyan-text);
   font-weight: 600;
   text-decoration: none;
 }
 
 .footer-link-subtle:hover {
-  color: var(--cyan-text);
+  color: var(--cyan);
 }
 
 .footer-col-header {
@@ -387,8 +403,8 @@ code, kbd, pre, samp {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: var(--ink);
-  border-bottom: 1px solid var(--hairline-strong);
+  color: var(--cyan-text);
+  border-bottom: 2px solid var(--cyan);
   padding-bottom: 8px;
   margin-bottom: 14px;
 }
@@ -416,7 +432,11 @@ code, kbd, pre, samp {
 
 .footer-pill-link {
   font-weight: 600;
-  color: var(--ink) !important;
+  color: var(--cyan-text) !important;
+}
+
+.footer-pill-link:hover {
+  color: var(--cyan) !important;
 }
 
 .footer-bottom-bar {

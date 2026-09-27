@@ -10,7 +10,7 @@ Leading B2B SaaS enterprise onboarding platform. Replacing synchronous manual tr
 
 ### HSN Labs — Founder & Managing Partner
 November 2020 to Present
-Forward Deployed Engineering boutique building deterministic multi-agent architectures on executable business ontologies for mission-critical enterprise operations.
+Forward Deployed Engineering boutique building resilient multi-agent architectures on executable business ontologies for mission-critical enterprise operations.
 Portfolio of delivered engagements includes Deloitte, Santander, Softplan, Unipar Carbocloro, LWSA, Turbi, Caju, Cast Group, and Insi.
 
 ### SMU Investimentos — Startup Investor

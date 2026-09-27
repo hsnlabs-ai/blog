@@ -16,7 +16,7 @@ When working in this repository, you must adhere to the following rules:
 - **Avoid:** Adjectives like "innovative", "cutting-edge". No corporate jargon. No hedging.
 
 ## 2. Technical Positioning
-- **Focus:** Deterministic Agentic Engineering. GraphRAG. Semantic ontologies.
+- **Focus:** Enterprise Agent Architecture. Business ontologies. ADLC.
 - **Anti-Focus:** We do NOT sell chatbots. We do NOT deploy probabilistic LLMs directly into legacy IT. We do NOT sell SaaS (we sell Forward Deployed Engineering).
 
 ## 3. Target Audience

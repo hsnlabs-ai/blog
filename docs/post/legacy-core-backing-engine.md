@@ -1,7 +1,7 @@
 ---
 title: 'Legacy Core Systems Will Not Die: They Are the Engine Behind Autonomous Agents'
 date: '2026-08-04'
-category: Arquitetura e Engenharia Determinística
+category: Arquitetura e Sistemas Agênticos
 tags:
 - arquitetura
 - legacy-core
@@ -60,7 +60,7 @@ The legacy database remains the single source of truth. Transactional commits, f
 Do not burn capital rewriting systems that already work. Turn your legacy core into the headless backing engine for autonomous agents.
 
 ## Strategic Resources and Related Essays
-- <a href="../cost-legacy-it/">The Cost of Non-Deterministic AI in Legacy IT</a>
+- <a href="../cost-legacy-it/">The Cost of Unbounded AI in Legacy IT</a>
 - <a href="../why-rag-breaks-on-erp/">Why I Never Use Normal RAG on Financial ERPs</a>
 - <a href="../the-poc-graveyard/">Why Agents Fail: The PoC Graveyard</a>
 - <a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a>

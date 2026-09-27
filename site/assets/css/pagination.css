@@ -1,7 +1,7 @@
 .blog-pagination {
   margin: 3rem 0 2rem;
   padding-top: 1.5rem;
-  border-top: 2px solid var(--primary);
+  border-top: 2px solid #52B4FD;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,7 +13,7 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: var(--color-gray, #666);
+  color: var(--color-gray, #64748b);
 }
 
 .pagination-controls {
@@ -28,10 +28,10 @@
 }
 
 .pagination-btn {
-  background: var(--background, #fff);
-  color: var(--text, #000);
-  border: 1px solid var(--primary, #000);
-  border-radius: 0;
+  background: var(--surface-card, #ffffff);
+  color: var(--ink, #07090e);
+  border: 1px solid var(--hairline-strong, #cbd5e1);
+  border-radius: 0 !important;
   padding: 0.5rem 0.9rem;
   font-family: inherit;
   font-size: 0.85rem;
@@ -46,17 +46,20 @@
 }
 
 .pagination-btn:hover:not(:disabled) {
-  background: var(--primary, #000);
-  color: var(--background, #fff) !important;
+  background: #52B4FD !important;
+  border-color: #3fa5f3 !important;
+  color: #ffffff !important;
 }
 
 .pagination-btn.active {
-  background: var(--primary, #000);
-  color: var(--background, #fff) !important;
+  background: #52B4FD !important;
+  border-color: #3fa5f3 !important;
+  color: #ffffff !important;
+  box-shadow: 0 2px 8px rgba(82, 180, 253, 0.35);
 }
 
 .pagination-btn:disabled {
   opacity: 0.35;
   cursor: not-allowed;
-  border-color: #ccc;
+  border-color: #e2e8f0;
 }

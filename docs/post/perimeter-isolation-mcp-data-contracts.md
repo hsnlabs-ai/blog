@@ -1,7 +1,7 @@
 ---
 title: How We Protect Enterprise Databases from AI Agents
 date: '2026-08-26'
-category: Arquitetura e Engenharia Determinística
+category: Arquitetura e Sistemas Agênticos
 tags:
 - arquitetura
 - mcp
@@ -45,13 +45,13 @@ When an agent writes directly to a production database, auditability evaporates.
 At HSN Labs, our Forward Deployed Engineers never give models direct write access to primary databases. We treat the model as an untrusted client and enforce database protection through three architectural layers:
 
 ### 1. Isolated Read Replicas with Dynamic Masking
-Agents query isolated read replicas, never primary production databases. Before data leaves the corporate perimeter to enter the agent context window, deterministic data masking services tokenize personally identifiable information, tax IDs, and sensitive financial fields.
+Agents query isolated read replicas, never primary production databases. Before data leaves the corporate perimeter to enter the agent context window, automated data masking services tokenize personally identifiable information, tax IDs, and sensitive financial fields.
 
 ### 2. Standardized Model Context Protocol Interfaces
-We mediate all tool interactions through Model Context Protocol servers. The agent never executes arbitrary queries; it invokes discrete, auditable tools governed by strict JSON schemas. Every parameter is strictly typed, parsed, and validated by deterministic software before entering the enterprise perimeter.
+We mediate all tool interactions through Model Context Protocol servers. The agent never executes arbitrary queries; it invokes discrete, auditable tools governed by strict JSON schemas. Every parameter is strictly typed, parsed, and validated by strict schema validation software before entering the enterprise perimeter.
 
 ### 3. Asymmetric Asynchronous Write Queues
-Agents never mutate production state synchronously. When an agent decides an invoice is ready for payment, it does not call the payment API. It pushes a structured mutation proposal to an isolated transaction queue. A deterministic validation worker verifies business invariants, checks approvals, and executes the database commit.
+Agents never mutate production state synchronously. When an agent decides an invoice is ready for payment, it does not call the payment API. It pushes a structured mutation proposal to an isolated transaction queue. An isolated validation worker verifies business invariants, checks approvals, and executes the database commit.
 
 Security is not an afterthought in agentic engineering. Perimeter isolation is the non-negotiable price of admission to enterprise production.
 

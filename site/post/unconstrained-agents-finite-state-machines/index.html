@@ -214,7 +214,7 @@
         <h3 class="blog-sidebar-widget-title">Recent Posts</h3>
         <ul class="blog-sidebar-list">
             
-            <li><a href="../bpo-replacement-matrix/">The BPO Replacement Matrix: Operational and Financial Impact of Deterministic Agents</a></li>
+            <li><a href="../bpo-replacement-matrix/">The BPO Replacement Matrix: Operational and Financial Impact of Production Agents</a></li>
             
             <li><a href="../c-suite-margin-protection-playbook/">The C-Suite Transition Playbook: Protecting Margins in the Agentic Economy</a></li>
             
@@ -237,7 +237,7 @@
             
             <li><a href="../../category/linha-de-frente-e-estudos-de-caso/">Linha de Frente e Estudos de Caso</a></li>
             
-            <li><a href="../../category/arquitetura-e-engenharia-determin%C3%ADstica/">Arquitetura e Engenharia Determinística</a></li>
+            <li><a href="../../category/arquitetura-e-sistemas-ag%C3%AAnticos/">Arquitetura e Sistemas Agênticos</a></li>
             
         </ul>
     </div>
@@ -373,17 +373,17 @@
 <p>When a database returns an error or an API returns a 400 Bad Request, an open-ended agent tries to reason its way out. Instead of stopping, it invents a new query. It calls another tool to fix the error it just made, compounding hallucinations until state corruption occurs.</p>
 <h3 id="3-out-of-sequence-state-mutations">3. Out-of-Sequence State Mutations</h3>
 <p>An unconstrained model has no inherent concept of enterprise causality. In an open-ended setup, nothing prevents the model from issuing a payment refund before the return shipment is logged, or marking a contract approved before compliance validation completes.</p>
-<h2 id="the-solution-stochastic-planning-deterministic-execution">The Solution: Stochastic Planning, Deterministic Execution</h2>
+<h2 id="the-solution-stochastic-planning-bounded-code-execution">The Solution: Stochastic Planning, Bounded Code Execution</h2>
 <p>At HSN Labs, we never permit open-ended tool loops in production. We enforce a strict separation between reasoning and execution through Finite State Machines:</p>
 <ul>
 <li>Discrete Permissible States: At any given microsecond, an enterprise transaction exists in an explicit state: Draft, Validated, Approved, or Committed. The agent is only allowed to see and propose tools that belong to that specific state. It is physically impossible for an agent in Draft state to trigger a Commit action.</li>
-<li>Invariant Guard Functions: Transitions between states are not governed by the language model. They are governed by deterministic Python guard functions. Even if a model suggests an order cancellation, the software guard checks whether goods have already left the fulfillment center. If the guard evaluates to false, the transition is rejected at the architecture level.</li>
-<li>Proposals Instead of Direct Writes: The language model never holds database write credentials. The model is treated as an untrusted proposal engine. It analyzes unstructured natural language and proposes a state transition payload. Deterministic schema validators like Pydantic parse the payload, check invariants, and execute the database write.</li>
+<li>Invariant Guard Functions: Transitions between states are not governed by the language model. They are governed by code-level Python guard functions. Even if a model suggests an order cancellation, the software guard checks whether goods have already left the fulfillment center. If the guard evaluates to false, the transition is rejected at the architecture level.</li>
+<li>Proposals Instead of Direct Writes: The language model never holds database write credentials. The model is treated as an untrusted proposal engine. It analyzes unstructured natural language and proposes a state transition payload. Strict schema validators like Pydantic parse the payload, check invariants, and execute the database write.</li>
 </ul>
 <p>Autonomy is not the absence of rules. Enterprise autonomy is the ability of software to execute reliably because the boundaries are mathematically unbreakable.</p>
 <h2 id="strategic-resources-and-related-essays">Strategic Resources and Related Essays</h2>
 <ul>
-<li><a href="../chatbot-vs-agent/">Chatbot vs Agent: Why Replacing BPOs Requires Deterministic Guardrails</a></li>
+<li><a href="../chatbot-vs-agent/">Chatbot vs Agent: Why Replacing BPOs Requires Production Guardrails</a></li>
 <li><a href="../the-poc-graveyard/">Why Agents Fail: The PoC Graveyard</a></li>
 <li><a href="../perimeter-isolation-mcp-data-contracts/">How We Protect Enterprise Databases from AI Agents</a></li>
 <li><a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a></li>
@@ -445,7 +445,7 @@
       <div class="footer-seo-col brand-col">
         <a href="https://hsnlabs.ai" class="footer-brand-title">HSN LABS</a>
         <p class="footer-brand-tagline">
-          Engenharia Agêntica Determinística e ontologias corporativas para operações de missão crítica.
+          Arquitetura Agêntica Enterprise e ontologias corporativas para operações de missão crítica.
         </p>
         <p class="footer-brand-meta">
           Boutique de Arquitetura de IA<br>
@@ -476,7 +476,7 @@
           <li><a href="../collapse-of-legacy-rpa/">O Colapso do Mercado de RPA</a></li>
           <li><a href="../death-of-tier-1-erp-helpdesk/">Morte do Suporte Tier-1 em ERPs</a></li>
           <li><a href="../balance-sheet-guard-bpo-extinction/">Extinção de Terceirização em RH</a></li>
-          <li><a href="../cost-legacy-it/">Custo da IA Não-Determinística</a></li>
+          <li><a href="../cost-legacy-it/">Custo de IA Sem Limites de Execução</a></li>
         </ul>
       </div>
 
@@ -511,7 +511,7 @@
     <!-- Minimalist Bottom Line -->
     <div class="footer-bottom-bar">
       <div class="footer-bottom-copy">
-        2026 HSN Labs. Engenharia Agêntica Determinística.
+        2026 HSN Labs. Arquitetura Agêntica Enterprise.
       </div>
       <div class="footer-bottom-nav">
         <a href="https://github.com/hsnlabs-ai" target="_blank" rel="noopener">GitHub</a>
