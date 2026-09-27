@@ -34,6 +34,27 @@
             ]
         },
         {
+            "id": "https://hsnlabs.ai/blog/post/palantir-pricing-tco-and-open-alternatives/",
+            "url": "https://hsnlabs.ai/blog/post/palantir-pricing-tco-and-open-alternatives/",
+            "title": "The Real TCO of Palantir: The Dollar Barrier and Modern Open Alternatives",
+            "content_html": "Auditing the total cost of ownership behind Palantir contracts, foreign exchange exposure, and how to build open ontologies without 7-figure licensing.",
+            "image": null,
+            "date_modified": "2026-09-28T00:00:00+00:00",
+            "date_published": "2026-09-28T00:00:00+00:00",
+            "authors": [
+                {
+                    "name": "Hugo S. Nascimento"
+                }
+            ],
+            "tags": [
+                "Agentic Economics",
+                "architecture",
+                "ebitda",
+                "economics",
+                "roi"
+            ]
+        },
+        {
             "id": "https://hsnlabs.ai/blog/post/palantir-vs-databricks-agent-architecture/",
             "url": "https://hsnlabs.ai/blog/post/palantir-vs-databricks-agent-architecture/",
             "title": "Palantir vs Databricks: Why Data Lakes Fail at Agentic Operations",
@@ -392,26 +413,6 @@
                 "architecture",
                 "guardrails",
                 "state-machines"
-            ]
-        },
-        {
-            "id": "https://hsnlabs.ai/blog/post/cost-legacy-it/",
-            "url": "https://hsnlabs.ai/blog/post/cost-legacy-it/",
-            "title": "The Cost of Unbounded AI in Legacy IT",
-            "content_html": "Economic and technical audit of runaway costs and execution risks caused by unbounded stochastic AI on legacy enterprise infrastructure.",
-            "image": null,
-            "date_modified": "2026-07-15T00:00:00+00:00",
-            "date_published": "2026-07-15T00:00:00+00:00",
-            "authors": [
-                {
-                    "name": "Hugo S. Nascimento"
-                }
-            ],
-            "tags": [
-                "Agentic Economics",
-                "architecture",
-                "legacy-it",
-                "reliability"
             ]
         }
     ]

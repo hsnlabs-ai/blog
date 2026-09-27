@@ -13,8 +13,8 @@
     <language>en</language>
 
     
-    <pubDate>Sun, 27 Sep 2026 22:02:29 -0000</pubDate>
-    <lastBuildDate>Sun, 27 Sep 2026 22:02:29 -0000</lastBuildDate>
+    <pubDate>Sun, 27 Sep 2026 22:05:52 -0000</pubDate>
+    <lastBuildDate>Sun, 27 Sep 2026 22:05:52 -0000</lastBuildDate>
     <ttl>1440</ttl>
 
     
@@ -59,6 +59,37 @@
       <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
       
       <guid isPermaLink="true">https://hsnlabs.ai/blog/post/palantir-aip-bootcamp-operational-ontology/</guid>
+      
+    </item>
+    
+    <item>
+      <title>The Real TCO of Palantir: The Dollar Barrier and Modern Open Alternatives</title>
+      
+      
+        
+      <author>Hugo S. Nascimento</author>
+        
+      
+      
+      
+        
+      <category>Agentic Economics</category>
+        
+      <category>architecture</category>
+        
+      <category>ebitda</category>
+        
+      <category>economics</category>
+        
+      <category>roi</category>
+        
+      
+      <description>Auditing the total cost of ownership behind Palantir contracts, foreign exchange exposure, and how to build open ontologies without 7-figure licensing.</description>
+      <link>https://hsnlabs.ai/blog/post/palantir-pricing-tco-and-open-alternatives/</link>
+      <pubDate>Mon, 28 Sep 2026 00:00:00 +0000</pubDate>
+      <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
+      
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/post/palantir-pricing-tco-and-open-alternatives/</guid>
       
     </item>
     
@@ -583,35 +614,6 @@
       <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
       
       <guid isPermaLink="true">https://hsnlabs.ai/blog/post/chatbot-vs-agent/</guid>
-      
-    </item>
-    
-    <item>
-      <title>The Cost of Unbounded AI in Legacy IT</title>
-      
-      
-        
-      <author>Hugo S. Nascimento</author>
-        
-      
-      
-      
-        
-      <category>Agentic Economics</category>
-        
-      <category>architecture</category>
-        
-      <category>legacy-it</category>
-        
-      <category>reliability</category>
-        
-      
-      <description>Economic and technical audit of runaway costs and execution risks caused by unbounded stochastic AI on legacy enterprise infrastructure.</description>
-      <link>https://hsnlabs.ai/blog/post/cost-legacy-it/</link>
-      <pubDate>Wed, 15 Jul 2026 00:00:00 +0000</pubDate>
-      <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
-      
-      <guid isPermaLink="true">https://hsnlabs.ai/blog/post/cost-legacy-it/</guid>
       
     </item>
     
