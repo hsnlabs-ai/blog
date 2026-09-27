@@ -7,8 +7,8 @@ POSTS_DIR = Path("/Users/hugosoares/blog_hsn_labs/docs/post")
 CATEGORY_MAP = {
     "Economia Agêntica e Fim do BPO": "Agentic Economy & BPO Collapse",
     "Linha de Frente e Estudos de Caso": "Frontline & Case Studies",
-    "Arquitetura e Sistemas Agênticos": "Deterministic Architecture & Systems",
-    "Arquitetura e Engenharia Determinística": "Deterministic Architecture & Systems"
+    "Arquitetura e Sistemas Agênticos": "Enterprise Agent Architecture",
+    "Arquitetura e Engenharia Determinística": "Enterprise Agent Architecture"
 }
 
 TAG_MAP = {

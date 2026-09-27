@@ -1,5 +1,5 @@
 ---
-title: Hugo Nascimento
+title: Hugo S. Nascimento
 blog_list: true
 blog_sidebar:
   recent_posts: true
@@ -8,7 +8,7 @@ blog_sidebar:
   recent_count: 5
 ---
 
-# Hugo Nascimento
+# Hugo S. Nascimento
 
 I am CPTO at Eva People and Founder & Managing Partner at HSN Labs. 3x venture-backed founder, engineer, and investor.
 

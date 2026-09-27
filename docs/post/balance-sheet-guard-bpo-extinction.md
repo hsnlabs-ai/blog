@@ -7,10 +7,10 @@ tags:
 - bpo
 - hr-tech
 description: "Operational field lessons on the structural collapse of enterprise HR outsourcing contracts and manual workflows."
-author: Hugo Nascimento
+author: Hugo S. Nascimento
 ---
 
-*Reading time: 5 minutes. Author: Hugo Nascimento.*
+*Reading time: 5 minutes. Author: Hugo S. Nascimento.*
 
 <!-- more -->
 

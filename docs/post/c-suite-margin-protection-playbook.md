@@ -7,10 +7,10 @@ tags:
 - c-suite
 - margins
 description: "Executive blueprint for boardrooms and CFOs defending operational margins against legacy IT cost structures in the agentic economy."
-author: Hugo Nascimento
+author: Hugo S. Nascimento
 ---
 
-*Reading time: 4 minutes. Author: Hugo Nascimento.*
+*Reading time: 4 minutes. Author: Hugo S. Nascimento.*
 
 <!-- more -->
 

@@ -6,11 +6,11 @@ tags:
 - case-studies
 - production
 - api-loops
-description: "Emergency incident audit and architectural remedy for unbounded agent API loops through deterministic finite state machines."
-author: Hugo Nascimento
+description: "Emergency incident audit and architectural remedy for unbounded agent API loops through finite state machines."
+author: Hugo S. Nascimento
 ---
 
-*Reading time: 4 minutes. Author: Hugo Nascimento.*
+*Reading time: 4 minutes. Author: Hugo S. Nascimento.*
 
 <!-- more -->
 

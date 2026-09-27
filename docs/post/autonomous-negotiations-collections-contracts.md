@@ -8,10 +8,10 @@ tags:
 - collections
 - bpo
 description: "Production architecture for autonomous collections, contract negotiation, and high-velocity commercial execution."
-author: Hugo Nascimento
+author: Hugo S. Nascimento
 ---
 
-*Reading time: 4 minutes. Author: Hugo Nascimento.*
+*Reading time: 4 minutes. Author: Hugo S. Nascimento.*
 
 <!-- more -->
 

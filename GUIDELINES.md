@@ -28,7 +28,7 @@
 
 ## 4. Editorial Taxonomy & Pillars
 Every essay belongs to one of three canonical English pillars:
-1. `Deterministic Architecture & Systems`: Perimeter isolation, MCP protocols, finite state machines, legacy core integration, and runtime failure prevention.
+1. `Enterprise Agent Architecture`: Perimeter isolation, MCP protocols, finite state machines, legacy core integration, and runtime failure prevention.
 2. `Agentic Economy & BPO Collapse`: Economic models, BPO replacement frameworks, CFO margin protection, and RPA replacement.
 3. `Frontline & Case Studies`: Real-world deployments, incident audits, PoC failure root causes, and enterprise case studies (LATAM Airlines, etc.).
 

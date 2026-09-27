@@ -7,10 +7,10 @@ tags:
 - hsn-labs
 - manifesto
 description: "Foundational thesis of HSN Labs: building production-grade enterprise agent architectures on executable domain ontologies."
-author: Hugo Nascimento
+author: Hugo S. Nascimento
 ---
 
-*Reading time: 4 minutes. Author: Hugo Nascimento.*
+*Reading time: 4 minutes. Author: Hugo S. Nascimento.*
 
 <!-- more -->
 

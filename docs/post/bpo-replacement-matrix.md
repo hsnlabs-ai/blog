@@ -8,10 +8,10 @@ tags:
 - ebitda
 - bpo
 description: "Quantitative framework analyzing unit economics, operational metrics, and margin impact of replacing legacy BPO contracts with autonomous software agents."
-author: Hugo Nascimento
+author: Hugo S. Nascimento
 ---
 
-*Reading time: 6 minutes. Author: Hugo Nascimento.*
+*Reading time: 6 minutes. Author: Hugo S. Nascimento.*
 
 <!-- more -->
 

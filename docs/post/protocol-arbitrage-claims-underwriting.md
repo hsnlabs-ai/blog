@@ -7,10 +7,10 @@ tags:
 - insurance
 - arbitrage
 description: "Autonomous multimodal adjudication and real-time protocol arbitrage across complex insurance claims and healthcare underwriting."
-author: Hugo Nascimento
+author: Hugo S. Nascimento
 ---
 
-*Reading time: 4 minutes. Author: Hugo Nascimento.*
+*Reading time: 4 minutes. Author: Hugo S. Nascimento.*
 
 <!-- more -->
 

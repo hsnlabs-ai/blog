@@ -1,16 +1,16 @@
 ---
 title: 'The Integration Drift: When Prompts Break Production'
 date: '2026-07-29'
-category: Deterministic Architecture & Systems
+category: Enterprise Agent Architecture
 tags:
 - architecture
 - schema-drift
 - mcp
 description: "How to detect and guard production agent workflows against silent runtime breaks caused by upstream schema and API drift."
-author: Hugo Nascimento
+author: Hugo S. Nascimento
 ---
 
-*Reading time: 3 minutes. Author: Hugo Nascimento.*
+*Reading time: 3 minutes. Author: Hugo S. Nascimento.*
 
 <!-- more -->
 

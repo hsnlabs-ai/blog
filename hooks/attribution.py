@@ -18,7 +18,7 @@ def on_page_markdown(markdown, page, config, files):
 
 ---
 
-*Article originally published on [HSN Labs]({canonical_url}). Author: [Hugo Nascimento](https://hsnlabs.ai).*
+*Article originally published on [HSN Labs]({canonical_url}). Author: [Hugo S. Nascimento](https://hsnlabs.ai).*
 """
         return markdown + attribution
     return markdown
@@ -41,7 +41,7 @@ def on_page_content(html, page, config, files):
             "inLanguage": "en",
             "author": {
                 "@type": "Person",
-                "name": "Hugo Nascimento",
+                "name": "Hugo S. Nascimento",
                 "url": "https://hsnlabs.ai"
             },
             "publisher": {

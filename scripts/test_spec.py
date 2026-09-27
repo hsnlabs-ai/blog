@@ -14,7 +14,7 @@ POSTS_DIR = DOCS_DIR / "post"
 SITE_DIR = BASE_DIR / "site"
 
 CANONICAL_CATEGORIES = {
-    "Deterministic Architecture & Systems",
+    "Enterprise Agent Architecture",
     "Agentic Economy & BPO Collapse",
     "Frontline & Case Studies"
 }
@@ -50,7 +50,7 @@ def test_d1_frontmatter_schema():
         assert desc and isinstance(desc, str) and 30 <= len(desc) <= 200, f"Post {p} descricao fora do limite: {desc}"
         
         author = meta.get("author")
-        assert author == "Hugo Nascimento", f"Post {p} autor incorreto: {author}"
+        assert author == "Hugo S. Nascimento", f"Post {p} autor incorreto: {author}"
     print("PASS: Gate D1 Frontmatter Schema Validado nos 19 posts")
 
 def test_d2_forbidden_pages_purged():
@@ -149,7 +149,7 @@ def test_d10_replicated_footer():
         html = f.read()
     assert 'class="site-footer"' in html, "ERRO: site-footer ausente no HTML"
     assert 'São Paulo' in html and 'WeWork' in html, "ERRO: Informacoes de localizacao ausentes no footer"
-    assert 'Deterministic Architecture' in html, "ERRO: Pilar de Arquitetura ausente no footer"
+    assert 'Enterprise Agent Architecture' in html, "ERRO: Pilar de Arquitetura ausente no footer"
     assert 'Agentic Economy & BPO' in html, "ERRO: Pilar de Economia Agêntica ausente no footer"
     assert 'Frontline & Case Studies' in html, "ERRO: Pilar de Linha de Frente ausente no footer"
     assert 'llms.txt for LLMs & Agents' in html, "ERRO: Link llms.txt ausente no footer"

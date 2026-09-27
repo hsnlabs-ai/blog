@@ -8,10 +8,10 @@ tags:
 - erp-support
 - helpdesk
 description: "The structural collapse of hourly billable support models across enterprise ERP consultancies and IT helpdesks."
-author: Hugo Nascimento
+author: Hugo S. Nascimento
 ---
 
-*Reading time: 4 minutes. Author: Hugo Nascimento.*
+*Reading time: 4 minutes. Author: Hugo S. Nascimento.*
 
 <!-- more -->
 

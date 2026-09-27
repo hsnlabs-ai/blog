@@ -7,10 +7,10 @@ tags:
 - consulting
 - sprint
 description: "Why traditional Big 4 strategy slide decks fail to deliver working agentic software in complex enterprise production environments."
-author: Hugo Nascimento
+author: Hugo S. Nascimento
 ---
 
-*Reading time: 4 minutes. Author: Hugo Nascimento.*
+*Reading time: 4 minutes. Author: Hugo S. Nascimento.*
 
 <!-- more -->
 

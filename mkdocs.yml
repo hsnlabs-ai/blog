@@ -1,6 +1,6 @@
-site_name: Hugo Nascimento
+site_name: Hugo S. Nascimento
 site_url: https://hsnlabs.ai/blog/
-site_author: Hugo Nascimento
+site_author: Hugo S. Nascimento
 site_description: Enterprise Agent Architecture — Essays and field notes on enterprise AI architectures, business ontologies, and avoiding runtime failures in production.
 
 hooks:
@@ -11,7 +11,7 @@ theme:
   custom_dir: overrides
   blog:
     layout: compact
-    author: Hugo Nascimento
+    author: Hugo S. Nascimento
     cta_label: Read Essay
   components:
     blog_sidebar:
@@ -34,6 +34,13 @@ plugins:
   - rss:
       match_path: "post/.*md"
       feed_ttl: 1440
+      image: "https://hsnlabs.ai/blog/assets/brand/symbol/symbol-square-pure-cyan.png"
+      feed_title: "Hugo Nascimento — Enterprise Agent Architecture"
+      feed_description: "Essays and field notes on deterministic agent architectures, domain ontologies, and avoiding runtime failures in production."
+      categories:
+        - category
+        - tags
+      pretty_print: true
       json_feed_enabled: true
       feeds_filenames:
         rss_created: feed_rss_created.xml

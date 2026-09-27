@@ -6,11 +6,11 @@ tags:
 - economics
 - rpa
 - automation
-description: "Why brittle screen-recording bots are collapsing in enterprise environments and how deterministic agent architectures replace them."
-author: Hugo Nascimento
+description: "Why brittle screen-recording bots are collapsing in enterprise environments and how production agent architectures replace them."
+author: Hugo S. Nascimento
 ---
 
-*Reading time: 4 minutes. Author: Hugo Nascimento.*
+*Reading time: 4 minutes. Author: Hugo S. Nascimento.*
 
 <!-- more -->
 

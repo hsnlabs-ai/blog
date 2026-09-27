@@ -6,11 +6,11 @@ tags:
 - case-studies
 - latam-airlines
 - production
-description: "Field post-mortem on deploying deterministic enterprise agents in low-margin, high-throughput commercial aviation operations."
-author: Hugo Nascimento
+description: "Field post-mortem on deploying resilient enterprise agents in low-margin, high-throughput commercial aviation operations."
+author: Hugo S. Nascimento
 ---
 
-*Reading time: 4 minutes. Author: Hugo Nascimento.*
+*Reading time: 4 minutes. Author: Hugo S. Nascimento.*
 
 <!-- more -->
 

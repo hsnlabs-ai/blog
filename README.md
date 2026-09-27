@@ -1,6 +1,6 @@
 # HSN Labs Personal Hub
 
-Personal engineering and consulting hub for Hugo Nascimento, built with MkDocs and Material for MkDocs.
+Personal engineering and consulting hub for Hugo S. Nascimento, built with MkDocs and Material for MkDocs.
 
 ## Concept
 Based on the "Hub and Spoke" strategy. This site is the Hub. The 30 spokes are content pieces (writing/essays) driving inbound traffic from Level 3 Economic Buyers (CFOs, CEOs). 

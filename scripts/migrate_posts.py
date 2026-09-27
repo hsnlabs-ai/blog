@@ -120,7 +120,7 @@ for p_path in posts:
         "category": category,
         "tags": tags,
         "description": desc,
-        "author": "Hugo Nascimento"
+        "author": "Hugo S. Nascimento"
     }
     
     dest_file = NEW_POSTS_DIR / filename

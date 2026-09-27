@@ -7,10 +7,10 @@ tags:
 - poc
 - ai-failures
 description: "Root cause post-mortem on why ninety percent of enterprise AI proofs of concept fail before reaching live production."
-author: Hugo Nascimento
+author: Hugo S. Nascimento
 ---
 
-*Reading time: 4 minutes. Author: Hugo Nascimento.*
+*Reading time: 4 minutes. Author: Hugo S. Nascimento.*
 
 <!-- more -->
 
