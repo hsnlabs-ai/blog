@@ -143,6 +143,46 @@ def test_d9_head_seo_meta():
     assert 'application/ld+json' in html or 'property="og:title"' in html, "ERRO: Metatags OpenGraph ou Schema JSON-LD ausentes"
     print("PASS: Gate D9 Metatags de Indexacao e SEO presentes no head")
 
+def test_d10_replicated_footer():
+    index_file = SITE_DIR / "index.html"
+    with open(index_file, "r", encoding="utf-8") as f:
+        html = f.read()
+    assert 'class="site-footer"' in html, "ERRO: site-footer ausente no HTML"
+    assert 'São Paulo' in html and 'WeWork Av. Paulista' in html, "ERRO: Informacoes de localizacao ausentes no footer"
+    assert 'Agentic Bootcamp' in html and 'Advisory' in html, "ERRO: Links de navegacao corporativa ausentes no footer"
+    assert '2026 HSN Labs. All rights reserved.' in html, "ERRO: Copyright corporativo ausente no footer"
+    print("PASS: Gate D10 Footer corporativo HSN Labs replicado integralmente")
+
+def test_d11_brand_typography_and_colors():
+    css_file = SITE_DIR / "stylesheets/extra.css"
+    assert css_file.exists(), "ERRO: stylesheets/extra.css nao compilado no site"
+    with open(css_file, "r", encoding="utf-8") as f:
+        css = f.read()
+    assert 'Cormorant Garamond' in css, "ERRO: Tipografia Cormorant Garamond ausente no CSS"
+    assert 'Inter' in css, "ERRO: Tipografia Inter ausente no CSS"
+    assert '--cyan: #52B4FD' in css or '--cyan:' in css, "ERRO: Token de cor Brand Cyan ausente"
+    print("PASS: Gate D11 Cores e tipografia institucionais HSN Labs ativas")
+
+def test_d12_geo_indexnow_and_websub():
+    indexnow_file = SITE_DIR / "fb6d944d28fc4484bd669f6d9c4d3292.txt"
+    assert indexnow_file.exists(), "ERRO: Arquivo de chave IndexNow ausente no site build"
+    
+    llms_file = SITE_DIR / "llms.txt"
+    assert llms_file.exists(), "ERRO: llms.txt ausente no site build"
+    
+    index_file = SITE_DIR / "index.html"
+    with open(index_file, "r", encoding="utf-8") as f:
+        html = f.read()
+    assert 'name="geo.region" content="BR-SP"' in html, "ERRO: Meta tag GEO region ausente"
+    assert 'name="geo.placename" content="São Paulo"' in html, "ERRO: Meta tag GEO placename ausente"
+    assert 'name="msvalidate.01"' in html, "ERRO: Meta tag msvalidate Bing ausente"
+    
+    rss_file = SITE_DIR / "feed_rss_created.xml"
+    with open(rss_file, "r", encoding="utf-8") as f:
+        rss = f.read()
+    assert 'hub="https://pubsubhubbub.appspot.com/"' in rss or 'rel="hub"' in rss, "ERRO: WebSub hub ausente no feed RSS"
+    print("PASS: Gate D12 GEO, Bing IndexNow e WebSub Hub validados com sucesso")
+
 if __name__ == "__main__":
     print("=== INICIANDO EXECUCAO DA SUITE DE ESPECIFICACAO ===")
     try:
@@ -155,6 +195,9 @@ if __name__ == "__main__":
         test_d7_robots_and_sitemap()
         test_d8_pagination_contract()
         test_d9_head_seo_meta()
+        test_d10_replicated_footer()
+        test_d11_brand_typography_and_colors()
+        test_d12_geo_indexnow_and_websub()
         print("=== TODAS AS ASSERCOES PASSARAM COM SUCESSO ===")
     except AssertionError as e:
         print(f"FALHA DETERMINISTICA NO GATE: {e}", file=sys.stderr)

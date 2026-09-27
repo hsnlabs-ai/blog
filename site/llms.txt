@@ -32,23 +32,36 @@ Verifiable protocol adherence and zero-exfiltration architectures across healthc
 - Legacy ERP and BPO: https://hsnlabs.ai/#verticals
 Anchoring agentic workflows to deterministic state machines across legacy ERPs to replace fragile BPO operations.
 
-## Knowledge Engine & Research
+## Knowledge Engine & Research Essays
 - HSN Labs Blog: https://hsnlabs.ai/blog/
 Technical essays, case studies, and post-mortems on deterministic agentic engineering and enterprise architectures.
-- The Solution - Deterministic Agentic Engineering: https://hsnlabs.ai/blog/writing/manifesto/
-Why enterprise AI proofs of concept fail in production and how to solve runtime failures.
-- Chatbot vs Agent: https://hsnlabs.ai/blog/writing/chatbot-vs-agent/
-Why replacing enterprise BPO contracts requires deterministic state machines and finite guardrails.
-- The Cost of Non-Deterministic AI in Legacy IT: https://hsnlabs.ai/blog/writing/cost-legacy-it/
-Analyzing hidden costs of probabilistic variance across SAP, Oracle, and legacy core mainframes.
-- The Integration Drift: https://hsnlabs.ai/blog/writing/integration-drift/
-How natural language prompts drift over time and break production database schemas.
-- LATAM Airlines Case Study: https://hsnlabs.ai/blog/writing/latam-airlines-case-study/
-Lessons from deploying customer experience agents in a three percent margin business.
+- The BPO Replacement Matrix: https://hsnlabs.ai/blog/post/bpo-replacement-matrix/
+- The C-Suite Transition Playbook: https://hsnlabs.ai/blog/post/c-suite-margin-protection-playbook/
+- Why Big 4 Slide Decks Fail on Agent Projects: https://hsnlabs.ai/blog/post/five-day-architecture-sprint/
+- High-Velocity Operations: Autonomous Negotiation, Collections, and Contract Execution: https://hsnlabs.ai/blog/post/autonomous-negotiations-collections-contracts/
+- What I Learned Building HR Tech About Dying BPO Contracts: https://hsnlabs.ai/blog/post/balance-sheet-guard-bpo-extinction/
+- Protocol Arbitrage: Autonomous Multimodal Adjudication in Healthcare and Underwriting: https://hsnlabs.ai/blog/post/protocol-arbitrage-claims-underwriting/
+- The Death of Tier-1 Support: Why ERP Consultancies and IT Helpdesks Cannot Defend the Billable Hour: https://hsnlabs.ai/blog/post/death-of-tier-1-erp-helpdesk/
+- The RPA Market Is Collapsing: https://hsnlabs.ai/blog/post/collapse-of-legacy-rpa/
+- Why Agents Fail: The PoC Graveyard: https://hsnlabs.ai/blog/post/the-poc-graveyard/
+- How We Protect Enterprise Databases from AI Agents: https://hsnlabs.ai/blog/post/perimeter-isolation-mcp-data-contracts/
+- Why LLM-as-a-Judge Fails in Banking: https://hsnlabs.ai/blog/post/llm-as-judge-fallacy/
+- Case Study: 42 Calls in a Loop at 2 AM: https://hsnlabs.ai/blog/post/unconstrained-agents-finite-state-machines/
+- Why I Never Use Normal RAG on Financial ERPs: https://hsnlabs.ai/blog/post/why-rag-breaks-on-erp/
+- Why I Built HSN Labs: https://hsnlabs.ai/blog/post/manifesto/
+- The Cost of Non-Deterministic AI in Legacy IT: https://hsnlabs.ai/blog/post/cost-legacy-it/
+- The Integration Drift: When Prompts Break Production: https://hsnlabs.ai/blog/post/integration-drift/
+- Chatbot vs Agent: Why Replacing BPOs Requires Deterministic Guardrails: https://hsnlabs.ai/blog/post/chatbot-vs-agent/
+- Legacy Core Systems Will Not Die: They Are the Engine Behind Autonomous Agents: https://hsnlabs.ai/blog/post/legacy-core-backing-engine/
+- LATAM Airlines: Deterministic Agents in a 3% Margin Business: https://hsnlabs.ai/blog/post/latam-airlines-case-study/
+
+## Feeds & Machine Readability
 - RSS Feed: https://hsnlabs.ai/blog/feed_rss_created.xml
 Structured machine-readable feed of all technical publications.
 - JSON Feed: https://hsnlabs.ai/blog/feed_json_created.json
 JSON Feed for direct LLM and autonomous agent consumption.
+- Sitemap: https://hsnlabs.ai/blog/sitemap.xml
+Full XML sitemap index.
 
 ## Open Source Ecosystem
 - HSN Labs GitHub: https://github.com/hsnlabs-ai

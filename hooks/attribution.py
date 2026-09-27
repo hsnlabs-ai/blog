@@ -3,7 +3,7 @@ import re
 from pathlib import Path
 
 def on_page_markdown(markdown, page, config, files):
-    if page.file.src_uri.startswith("writing/posts/") or (page.file.src_uri.startswith("writing/") and page.file.src_uri != "writing/index.md"):
+    if page.file.src_uri.startswith("post/"):
         dest = page.file.dest_uri
         if dest.endswith("index.html"):
             dest = dest[:-10]
@@ -24,7 +24,7 @@ def on_page_markdown(markdown, page, config, files):
     return markdown
 
 def on_page_content(html, page, config, files):
-    if page.file.src_uri.startswith("writing/posts/") or (page.file.src_uri.startswith("writing/") and page.file.src_uri != "writing/index.md"):
+    if page.file.src_uri.startswith("post/"):
         dest = page.file.dest_uri
         if dest.endswith("index.html"):
             dest = dest[:-10]
@@ -50,7 +50,7 @@ def on_page_content(html, page, config, files):
                 "url": "https://hsnlabs.ai",
                 "logo": {
                     "@type": "ImageObject",
-                    "url": "https://hsnlabs.ai/assets/brand/lockups/hsn-labs-lockup-horizontal-light.png"
+                    "url": "https://hsnlabs.ai/assets/brand/lockups/hsnlabs-lockup-horizontal-light.png"
                 }
             }
         }

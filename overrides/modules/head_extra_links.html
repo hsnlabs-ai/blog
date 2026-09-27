@@ -1,7 +1,41 @@
+<!-- Feeds and Crawlers -->
 <link rel="alternate" type="application/rss+xml" title="RSS Feed - Hugo Nascimento" href="{{ 'feed_rss_created.xml'|url }}">
 <link rel="alternate" type="application/json" title="JSON Feed - Hugo Nascimento" href="{{ 'feed_json_created.json'|url }}">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
+<!-- Search Engine Verification -->
+<meta name="msvalidate.01" content="fb6d944d28fc4484bd669f6d9c4d3292">
+<meta name="google-site-verification" content="G-GMK24ECXMF">
+
+<!-- GEO and Local SEO -->
+<meta name="geo.region" content="BR-SP">
+<meta name="geo.placename" content="São Paulo">
+<meta name="geo.position" content="-23.561684;-46.655981">
+<meta name="ICBM" content="-23.561684, -46.655981">
+
+<!-- Typography: Cormorant Garamond & Inter -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- OpenGraph & Twitter Meta Tags -->
+<meta property="og:site_name" content="HSN Labs">
+<meta property="og:image" content="https://hsnlabs.ai/assets/brand/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@hsnlabs">
+<meta name="twitter:creator" content="@hugo_nasc">
+<meta name="twitter:image" content="https://hsnlabs.ai/assets/brand/og-image.png">
+
+<!-- Google Analytics (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GMK24ECXMF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-GMK24ECXMF');
+</script>
+
+<!-- Structured Data -->
 {% if page and page.is_homepage %}
 <script type="application/ld+json">
 {
@@ -10,15 +44,33 @@
   "name": "Hugo Nascimento — Deterministic Agentic Engineering",
   "url": "https://hsnlabs.ai/blog/",
   "description": "{{ config.site_description }}",
+  "inLanguage": "en",
   "author": {
     "@type": "Person",
     "name": "Hugo Nascimento",
-    "url": "https://hsnlabs.ai"
+    "url": "https://hsnlabs.ai",
+    "jobTitle": "CPTO & Founder",
+    "sameAs": [
+      "https://www.linkedin.com/in/hugosoaresnascimento/",
+      "https://github.com/hugonotnice",
+      "https://x.com/hsnlabs"
+    ]
   },
   "publisher": {
     "@type": "Organization",
     "name": "HSN Labs",
-    "url": "https://hsnlabs.ai"
+    "url": "https://hsnlabs.ai",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://hsnlabs.ai/assets/brand/lockups/hsnlabs-lockup-horizontal-light.png"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. Paulista, 1374",
+      "addressLocality": "São Paulo",
+      "addressRegion": "SP",
+      "addressCountry": "BR"
+    }
   }
 }
 </script>
@@ -30,6 +82,7 @@
   "headline": "{{ page.meta.title }}",
   "description": "{{ page.meta.description }}",
   "datePublished": "{{ page.meta.date }}",
+  "inLanguage": "en",
   "author": {
     "@type": "Person",
     "name": "{{ page.meta.author or 'Hugo Nascimento' }}",
@@ -38,7 +91,11 @@
   "publisher": {
     "@type": "Organization",
     "name": "HSN Labs",
-    "url": "https://hsnlabs.ai"
+    "url": "https://hsnlabs.ai",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://hsnlabs.ai/assets/brand/lockups/hsnlabs-lockup-horizontal-light.png"
+    }
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
