@@ -7,11 +7,15 @@ categories:
   - Safety
 ---
 
-# The Structural Hazard of Unconstrained Agents: Enforcing Finite State Machines
+# Case Study: 42 Calls in a Loop at 2 AM
 
 *Reading time: 4 minutes. Author: Hugo Nascimento.*
 
 *Context: I wrote this after a late-night debugging session where an open-ended agentic loop executed forty-two recursive tool calls on a staging server before triggering cloud rate limits. This is why enterprise autonomy requires mathematically bounded state machines.*
+
+At two o'clock in the morning on a staging cluster, an alert woke our on-call team.
+
+An open-ended autonomous agent was trapped in a runaway execution loop. For eight consecutive minutes, the model fired forty-two sequential tool calls without human oversight. It encountered a single foreign key database error, panicked, and began fabricating synthetic customer IDs in an attempt to satisfy the broken constraint. By the time provider API rate limits severed the connection, the agent had burned through thirty dollars in token costs to accomplish absolutely nothing.
 
 Letting a large language model execute tools inside an open-ended reasoning loop in production is an engineering disaster waiting to happen.
 
@@ -23,21 +27,19 @@ In an enterprise banking or ERP environment with real money and real databases, 
 
 ## The Mathematical Collapse of Unconstrained Probability
 
-Language models are stochastic next-token predictors. Every tool selection is a probabilistic bet. 
+Language models are stochastic next-token predictors. Every tool selection is a probabilistic bet.
 
 When you chain probabilistic bets inside an open-ended loop, the mathematics work aggressively against you:
 
 ### 1. Compounding Probability Collapse
-Suppose your model has a ninety percent probability of picking the correct tool and parameters on any single step. 
+Suppose your model has a ninety percent probability of picking the correct tool and parameters on any single step.
 
 If a business workflow requires five consecutive steps, the probability of the entire chain executing without error is fifty-nine percent. By step seven, you are down to forty-seven percent. You are essentially flipping a coin on whether your production system will execute or crash.
 
 ### 2. The Hallucination Repair Death Spiral
-What happens when an unconstrained agent makes a mistake? 
+What happens when an unconstrained agent makes a mistake?
 
-When a database returns a foreign key error or an API returns a 400 Bad Request, an open-ended agent tries to reason its way out. Instead of stopping, it invents a new query. It calls another tool to fix the error it just made. 
-
-At two o'clock in the morning on a staging cluster, I watched an unconstrained agent loop for eight minutes, firing forty-two sequential tool calls, creating fake customer IDs in an attempt to satisfy a broken constraint, before finally hitting provider API limits. That single runaway loop burned thirty dollars in tokens to accomplish absolutely nothing.
+When a database returns an error or an API returns a 400 Bad Request, an open-ended agent tries to reason its way out. Instead of stopping, it invents a new query. It calls another tool to fix the error it just made, compounding hallucinations until state corruption occurs.
 
 ### 3. Out-of-Sequence State Mutations
 An unconstrained model has no inherent concept of enterprise causality. In an open-ended setup, nothing prevents the model from issuing a payment refund before the return shipment is logged, or marking a contract approved before compliance validation completes.
@@ -53,7 +55,7 @@ At HSN Labs, we never permit open-ended tool loops in production. We enforce a s
 Autonomy is not the absence of rules. Enterprise autonomy is the ability of software to execute reliably because the boundaries are mathematically unbreakable.
 
 ## Strategic Resources and Related Essays
-- <a href="../../2026/07/22/chatbot-vs-agent-why-replacing-bpos-requires-deterministic-guardrails/">Chatbot vs Agent: Why Replacing BPOs Requires Deterministic Guardrails</a>
-- <a href="../../2026/09/01/the-poc-graveyard-why-enterprise-ai-pilots-never-reach-production/">The PoC Graveyard: Why Enterprise AI Pilots Never Reach Production</a>
-- <a href="../perimeter-isolation-safely-deploying-agents-via-mcp-data-contracts/">Perimeter Isolation: Safely Deploying Agents via MCP Data Contracts</a>
+- <a href="/blog/writing/2026/07/22/chatbot-vs-agent-why-replacing-bpos-requires-deterministic-guardrails/">Chatbot vs Agent: Why Replacing BPOs Requires Deterministic Guardrails</a>
+- <a href="/blog/writing/2026/09/01/why-agents-fail-the-poc-graveyard/">Why Agents Fail: The PoC Graveyard</a>
+- <a href="/blog/writing/2026/08/26/how-we-protect-enterprise-databases-from-ai-agents/">How We Protect Enterprise Databases from AI Agents</a>
 - <a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a>

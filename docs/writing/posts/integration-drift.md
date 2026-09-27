@@ -45,7 +45,7 @@ At HSN Labs, we treat natural language prompts as completely untrusted input. We
 Engineering deterministic stability means designing systems where upstream model drift cannot corrupt your core corporate infrastructure.
 
 ## Strategic Resources and Related Essays
-- <a href="../unconstrained-agents-finite-state-machines/">The Structural Hazard of Unconstrained Agents: Enforcing Finite State Machines</a>
-- <a href="../perimeter-isolation-mcp-data-contracts/">Perimeter Isolation: Safely Deploying Agents via MCP Data Contracts</a>
-- <a href="../../2026/09/01/the-poc-graveyard-why-enterprise-ai-pilots-never-reach-production/">The PoC Graveyard: Why Enterprise AI Pilots Never Reach Production</a>
+- <a href="/blog/writing/2026/08/12/case-study-42-calls-in-a-loop-at-2-am/">Case Study: 42 Calls in a Loop at 2 AM</a>
+- <a href="/blog/writing/2026/08/26/how-we-protect-enterprise-databases-from-ai-agents/">How We Protect Enterprise Databases from AI Agents</a>
+- <a href="/blog/writing/2026/09/01/why-agents-fail-the-poc-graveyard/">Why Agents Fail: The PoC Graveyard</a>
 - <a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a>

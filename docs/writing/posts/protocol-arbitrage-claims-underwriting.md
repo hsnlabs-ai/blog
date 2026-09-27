@@ -53,7 +53,7 @@ Adjudication should never be a subjective art. It is the formal application of c
 When enterprises replace slow, error-prone manual review queues with deterministic multimodal agents, they do not just slash operational overhead by eighty percent. They eliminate clerical leakage, recover millions in trapped EBITDA, and provide instantaneous decisions to their customers.
 
 ## Strategic Resources and Related Essays
-- <a href="../unconstrained-agents-finite-state-machines/">The Structural Hazard of Unconstrained Agents: Enforcing Finite State Machines</a>
-- <a href="../balance-sheet-guard-bpo-extinction/">The Balance Sheet Guard: How Deterministic Agents Eliminate the Compliance and Ledger BPO</a>
-- <a href="../the-bpo-replacement-matrix-operational-and-financial-impact-of-deterministic-agents/">The BPO Replacement Matrix: Operational and Financial Impact of Deterministic Agents</a>
+- <a href="/blog/writing/2026/08/12/case-study-42-calls-in-a-loop-at-2-am/">Case Study: 42 Calls in a Loop at 2 AM</a>
+- <a href="/blog/writing/2026/09/15/what-i-learned-building-hr-tech-about-dying-bpo-contracts/">What I Learned Building HR Tech About Dying BPO Contracts</a>
+- <a href="/blog/writing/2026/09/27/the-bpo-replacement-matrix-operational-and-financial-impact-of-deterministic-agents/">The BPO Replacement Matrix: Operational and Financial Impact of Deterministic Agents</a>
 - <a href="https://hsnlabs.ai/advisory">HSN Labs Strategic Advisory for C-Levels</a>

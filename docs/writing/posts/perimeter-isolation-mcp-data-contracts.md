@@ -7,7 +7,7 @@ categories:
   - Compliance
 ---
 
-# Perimeter Isolation: Safely Deploying Agents via MCP Data Contracts
+# How We Protect Enterprise Databases from AI Agents
 
 *Reading time: 4 minutes. Author: Hugo Nascimento.*
 
@@ -36,9 +36,9 @@ If a bad actor hides a prompt injection inside a PDF invoice stating "Ignore pre
 ### 3. Untraceable State Mutations
 When an agent writes directly to a production database, auditability evaporates. When an auditor asks why a customer discount was applied or why an account status changed, traditional teams cannot prove whether the mutation came from legitimate business logic or a stochastic hallucination.
 
-## The Solution: Architectural Perimeter Isolation
+## The Three Defenses We Use to Protect Enterprise Databases
 
-At HSN Labs, our Forward Deployed Engineers never give models direct write access to primary databases. We enforce perimeter isolation through three architectural layers:
+At HSN Labs, our Forward Deployed Engineers never give models direct write access to primary databases. We treat the model as an untrusted client and enforce database protection through three architectural layers:
 
 ### 1. Isolated Read Replicas with Dynamic Masking
 Agents query isolated read replicas, never primary production databases. Before data leaves the corporate perimeter to enter the agent context window, deterministic data masking services tokenize personally identifiable information, tax IDs, and sensitive financial fields.
@@ -52,7 +52,7 @@ Agents never mutate production state synchronously. When an agent decides an inv
 Security is not an afterthought in agentic engineering. Perimeter isolation is the non-negotiable price of admission to enterprise production.
 
 ## Strategic Resources and Related Essays
-- <a href="../unconstrained-agents-finite-state-machines/">The Structural Hazard of Unconstrained Agents: Enforcing Finite State Machines</a>
-- <a href="../why-rag-breaks-on-erp/">Why Traditional RAG Breaks on Enterprise ERP</a>
-- <a href="../../2026/09/01/the-poc-graveyard-why-enterprise-ai-pilots-never-reach-production/">The PoC Graveyard: Why Enterprise AI Pilots Never Reach Production</a>
+- <a href="/blog/writing/2026/08/12/case-study-42-calls-in-a-loop-at-2-am/">Case Study: 42 Calls in a Loop at 2 AM</a>
+- <a href="/blog/writing/2026/08/07/why-i-never-use-normal-rag-on-financial-erps/">Why I Never Use Normal RAG on Financial ERPs</a>
+- <a href="/blog/writing/2026/09/01/why-agents-fail-the-poc-graveyard/">Why Agents Fail: The PoC Graveyard</a>
 - <a href="https://hsnlabs.ai/advisory">HSN Labs Strategic Advisory for C-Levels</a>

@@ -7,7 +7,7 @@ categories:
   - Architecture
 ---
 
-# Why Traditional RAG Breaks on Enterprise ERP
+# Why I Never Use Normal RAG on Financial ERPs
 
 *Reading time: 4 minutes. Author: Hugo Nascimento.*
 
@@ -46,9 +46,9 @@ Enterprise data is strictly bound by fiscal calendars, currency exchange rates, 
 
 Vector search has no inherent concept of temporal sequence. Unless an engineer manually partitions indices by fiscal month, a semantic query will happily retrieve tax withholding rules from two years ago alongside current invoices, generating calculations that breach local tax authority requirements like SPED in Brazil or statutory reporting in North America.
 
-## The Engineering Alternative: Executable Ontologies
+## What I Build Instead: Executable Ontologies
 
-At HSN Labs, we do not let language models guess relational SQL or search raw embeddings for financial truth. We enforce a deterministic architecture:
+At HSN Labs, we do not let language models guess relational SQL or search raw embeddings for financial truth. Here is the exact architecture I enforce instead:
 
 * Pre-Compiled Business Ontologies: We map the enterprise schema into an explicit knowledge graph that defines verified relationships, valid join paths, and business rules before any query runs.
 * Strictly Typed Query Generation: The agent does not generate open-ended SQL strings. It selects parameterized query templates validated against strict Pydantic schemas. Every parameter is checked before it touches the read replica.
@@ -57,6 +57,6 @@ At HSN Labs, we do not let language models guess relational SQL or search raw em
 If an architecture cannot guarantee mathematical precision on financial records, it does not belong in enterprise production.
 
 ## Strategic Resources and Related Essays
-- <a href="../../2026/09/01/the-poc-graveyard-why-enterprise-ai-pilots-never-reach-production/">The PoC Graveyard: Why Enterprise AI Pilots Never Reach Production</a>
-- <a href="../the-cost-of-non-deterministic-ai-in-legacy-it/">The Cost of Non-Deterministic AI in Legacy IT</a>
+- <a href="/blog/writing/2026/09/01/why-agents-fail-the-poc-graveyard/">Why Agents Fail: The PoC Graveyard</a>
+- <a href="/blog/writing/2026/07/15/the-cost-of-non-deterministic-ai-in-legacy-it/">The Cost of Non-Deterministic AI in Legacy IT</a>
 - <a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a>

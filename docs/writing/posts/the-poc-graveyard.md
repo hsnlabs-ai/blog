@@ -7,7 +7,7 @@ categories:
   - Engineering
 ---
 
-# The PoC Graveyard: Why Enterprise AI Pilots Never Reach Production
+# Why Agents Fail: The PoC Graveyard
 
 *Reading time: 4 minutes. Author: Hugo Nascimento.*
 
@@ -23,7 +23,7 @@ Then comes Monday morning. The project moves to the enterprise architecture and 
 
 The demonstration was not an enterprise product. It was a parlor trick.
 
-## The Three Realities That Murder Boardroom Demos
+## The Three Structural Reasons Enterprise Agents Fail
 
 Enterprise software does not operate inside clean vector spaces. It operates in thirty years of accumulated relational debt.
 
@@ -57,6 +57,6 @@ At HSN Labs, we do not build boardroom slide decks or unconstrained sandbox demo
 Enterprise value is not measured by chatbots that talk. It is measured by deterministic software that writes to core databases without breaking the business.
 
 ## Strategic Resources and Related Essays
-- <a href="../../2026/07/22/chatbot-vs-agent-why-replacing-bpos-requires-deterministic-guardrails/">Chatbot vs Agent: Why Replacing BPOs Requires Deterministic Guardrails</a>
-- <a href="../the-collapse-of-legacy-rpa-why-fragile-screen-scrapers-cannot-survive-the-agentic-shift/">The Collapse of Legacy RPA: Why Fragile Screen Scrapers Cannot Survive the Agentic Shift</a>
+- <a href="/blog/writing/2026/07/22/chatbot-vs-agent-why-replacing-bpos-requires-deterministic-guardrails/">Chatbot vs Agent: Why Replacing BPOs Requires Deterministic Guardrails</a>
+- <a href="/blog/writing/2026/09/04/the-rpa-market-is-collapsing/">The RPA Market Is Collapsing</a>
 - <a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a>

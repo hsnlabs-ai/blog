@@ -52,7 +52,7 @@ When deterministic agents monitor system telemetry and operational exceptions in
 The billable hour consulting firm wants systems to break so they can bill hours to fix them. The enterprise needs systems that repair themselves. Autonomous agents make that economic alignment possible.
 
 ## Strategic Resources and Related Essays
-- <a href="../legacy-core-backing-engine/">Legacy Core Systems Will Not Die: They Are the Engine Behind Autonomous Agents</a>
-- <a href="../perimeter-isolation-mcp-data-contracts/">Perimeter Isolation: Safely Deploying Agents via MCP Data Contracts</a>
-- <a href="../the-bpo-replacement-matrix-operational-and-financial-impact-of-deterministic-agents/">The BPO Replacement Matrix: Operational and Financial Impact of Deterministic Agents</a>
+- <a href="/blog/writing/2026/08/04/legacy-core-systems-will-not-die-they-are-the-engine-behind-autonomous-agents/">Legacy Core Systems Will Not Die: They Are the Engine Behind Autonomous Agents</a>
+- <a href="/blog/writing/2026/08/26/how-we-protect-enterprise-databases-from-ai-agents/">How We Protect Enterprise Databases from AI Agents</a>
+- <a href="/blog/writing/2026/09/27/the-bpo-replacement-matrix-operational-and-financial-impact-of-deterministic-agents/">The BPO Replacement Matrix: Operational and Financial Impact of Deterministic Agents</a>
 - <a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a>

@@ -57,7 +57,7 @@ Establish clear financial approval thresholds where high-value transactions auto
 The agentic transition is not an optional technology experiment. It is a mandatory defense of your corporate balance sheet.
 
 ## Strategic Resources and Related Essays
-- <a href="../five-day-architecture-sprint/">The Five-Day Architecture Sprint: De-risking Enterprise Agentic Deployment</a>
-- <a href="../the-bpo-replacement-matrix-operational-and-financial-impact-of-deterministic-agents/">The BPO Replacement Matrix: Operational and Financial Impact of Deterministic Agents</a>
-- <a href="../the-collapse-of-legacy-rpa-why-fragile-screen-scrapers-cannot-survive-the-agentic-shift/">The Collapse of Legacy RPA: Why Fragile Screen Scrapers Cannot Survive the Agentic Shift</a>
+- <a href="/blog/writing/2026/09/22/why-big-4-slide-decks-fail-on-agent-projects/">Why Big 4 Slide Decks Fail on Agent Projects</a>
+- <a href="/blog/writing/2026/09/27/the-bpo-replacement-matrix-operational-and-financial-impact-of-deterministic-agents/">The BPO Replacement Matrix: Operational and Financial Impact of Deterministic Agents</a>
+- <a href="/blog/writing/2026/09/04/the-rpa-market-is-collapsing/">The RPA Market Is Collapsing</a>
 - <a href="https://hsnlabs.ai/advisory">HSN Labs Strategic Advisory for C-Levels</a>

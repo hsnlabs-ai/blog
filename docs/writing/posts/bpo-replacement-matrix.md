@@ -45,8 +45,8 @@ Replacing third-party outsourcing contracts with autonomous digital workforces r
 3. Continuous Ground Truth Testing: Every automated pipeline is evaluated continuously against historic regression test suites.
 
 ## Strategic Resources and Related Essays
-- <a href="../balance-sheet-guard-bpo-extinction/">The Balance Sheet Guard: How Deterministic Agents Eliminate the Compliance and Ledger BPO</a>
-- <a href="../protocol-arbitrage-claims-underwriting/">Protocol Arbitrage: Autonomous Multimodal Adjudication in Healthcare and Underwriting</a>
-- <a href="../death-of-tier-1-erp-helpdesk/">The Death of Tier-1 Support: Why ERP Consultancies and IT Helpdesks Cannot Defend the Billable Hour</a>
-- <a href="../autonomous-negotiations-collections-contracts/">High-Velocity Operations: Autonomous Negotiation, Collections, and Contract Execution</a>
+- <a href="/blog/writing/2026/09/15/what-i-learned-building-hr-tech-about-dying-bpo-contracts/">What I Learned Building HR Tech About Dying BPO Contracts</a>
+- <a href="/blog/writing/2026/09/11/protocol-arbitrage-autonomous-multimodal-adjudication-in-healthcare-and-underwriting/">Protocol Arbitrage: Autonomous Multimodal Adjudication in Healthcare and Underwriting</a>
+- <a href="/blog/writing/2026/09/08/the-death-of-tier-1-support-why-erp-consultancies-and-it-helpdesks-cannot-defend-the-billable-hour/">The Death of Tier-1 Support: Why ERP Consultancies and IT Helpdesks Cannot Defend the Billable Hour</a>
+- <a href="/blog/writing/2026/09/18/high-velocity-operations-autonomous-negotiation-collections-and-contract-execution/">High-Velocity Operations: Autonomous Negotiation, Collections, and Contract Execution</a>
 - <a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a>

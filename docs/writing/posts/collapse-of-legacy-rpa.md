@@ -7,7 +7,7 @@ categories:
   - BPO
 ---
 
-# The Collapse of Legacy RPA: Why Fragile Screen Scrapers Cannot Survive the Agentic Shift
+# The RPA Market Is Collapsing
 
 *Reading time: 4 minutes. Author: Hugo Nascimento.*
 
@@ -19,9 +19,9 @@ For ten years, vendors like UiPath, Automation Anywhere, and Blue Prism convince
 
 Enterprises tolerated this fragility because, until recently, there was no alternative for bridging legacy systems that lacked modern APIs.
 
-Today, that justification is dead. Deterministic agents operating on protocol layers, headless engines, and structured data contracts make legacy screen-scraping bots completely obsolete.
+Today, that justification is dead. Across boardrooms and IT committees, enterprise leaders are actively terminating multi-million-dollar RPA renewals. Deterministic agents operating on protocol layers, headless engines, and structured data contracts make legacy screen-scraping bots completely obsolete.
 
-## The Extractive Maintenance Economy of Legacy RPA
+## Why the Legacy RPA Business Model Is Collapsing
 
 Legacy RPA does not understand business logic. It understands screen coordinates, Document Object Model selectors, and optical character recognition bounding boxes.
 
@@ -51,7 +51,7 @@ At HSN Labs, we do not build systems that emulate human eyes and hands on a desk
 The era of paying millions to maintain fragile screen-scraping bots is finished. Enterprise operations belong to deterministic, protocol-level agents that never touch a mouse.
 
 ## Strategic Resources and Related Essays
-- <a href="../the-poc-graveyard-why-enterprise-ai-pilots-never-reach-production/">The PoC Graveyard: Why Enterprise AI Pilots Never Reach Production</a>
-- <a href="../../2026/07/15/the-cost-of-non-deterministic-ai-in-legacy-it/">The Cost of Non-Deterministic AI in Legacy IT</a>
-- <a href="../the-bpo-replacement-matrix-operational-and-financial-impact-of-deterministic-agents/">The BPO Replacement Matrix: Operational and Financial Impact of Deterministic Agents</a>
+- <a href="/blog/writing/2026/09/01/why-agents-fail-the-poc-graveyard/">Why Agents Fail: The PoC Graveyard</a>
+- <a href="/blog/writing/2026/07/15/the-cost-of-non-deterministic-ai-in-legacy-it/">The Cost of Non-Deterministic AI in Legacy IT</a>
+- <a href="/blog/writing/2026/09/27/the-bpo-replacement-matrix-operational-and-financial-impact-of-deterministic-agents/">The BPO Replacement Matrix: Operational and Financial Impact of Deterministic Agents</a>
 - <a href="https://hsnlabs.ai/advisory">HSN Labs Strategic Advisory for C-Levels</a>

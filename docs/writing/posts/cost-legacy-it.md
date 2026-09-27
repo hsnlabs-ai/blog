@@ -45,7 +45,7 @@ To deploy agents into legacy corporate environments safely, you must decouple pr
 Predictability is the prerequisite for enterprise production access. If your architecture cannot guarantee determinism, it will never leave the sandbox.
 
 ## Strategic Resources and Related Essays
-- <a href="../legacy-core-backing-engine/">Legacy Core Systems Will Not Die: They Are the Engine Behind Autonomous Agents</a>
-- <a href="../why-rag-breaks-on-erp/">Why Traditional RAG Breaks on Enterprise ERP</a>
-- <a href="../../2026/09/01/the-poc-graveyard-why-enterprise-ai-pilots-never-reach-production/">The PoC Graveyard: Why Enterprise AI Pilots Never Reach Production</a>
+- <a href="/blog/writing/2026/08/04/legacy-core-systems-will-not-die-they-are-the-engine-behind-autonomous-agents/">Legacy Core Systems Will Not Die: They Are the Engine Behind Autonomous Agents</a>
+- <a href="/blog/writing/2026/08/07/why-i-never-use-normal-rag-on-financial-erps/">Why I Never Use Normal RAG on Financial ERPs</a>
+- <a href="/blog/writing/2026/09/01/why-agents-fail-the-poc-graveyard/">Why Agents Fail: The PoC Graveyard</a>
 - <a href="https://hsnlabs.ai/advisory">HSN Labs Strategic Advisory for C-Levels</a>

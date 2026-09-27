@@ -56,7 +56,7 @@ Stop building free-text wrappers. Use AI as a ruthless parser to turn noise into
 That is how you replace legacy IT. That is how you expand margins. That is how you prove ROI to a CFO.
 
 ## Strategic Resources and Related Essays
-- <a href="../chatbot-vs-agent/">Chatbot vs Agent: Why Replacing BPOs Requires Deterministic Guardrails</a>
-- <a href="../the-poc-graveyard-why-enterprise-ai-pilots-never-reach-production/">The PoC Graveyard: Why Enterprise AI Pilots Never Reach Production</a>
+- <a href="/blog/writing/2026/07/22/chatbot-vs-agent-why-replacing-bpos-requires-deterministic-guardrails/">Chatbot vs Agent: Why Replacing BPOs Requires Deterministic Guardrails</a>
+- <a href="/blog/writing/2026/09/01/why-agents-fail-the-poc-graveyard/">Why Agents Fail: The PoC Graveyard</a>
 - <a href="https://hsnlabs.ai/advisory">HSN Labs Strategic Advisory for C-Levels</a>
 

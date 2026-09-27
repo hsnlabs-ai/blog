@@ -55,7 +55,7 @@ Scaling front-office operations no longer requires signing another commercial le
 By replacing manual human queues with deterministic autonomous negotiation pipelines, enterprises achieve infinite operational scale, eliminate training overhead, and deliver instant, high-converting customer experiences.
 
 ## Strategic Resources and Related Essays
-- <a href="../the-collapse-of-legacy-rpa-why-fragile-screen-scrapers-cannot-survive-the-agentic-shift/">The Collapse of Legacy RPA: Why Fragile Screen Scrapers Cannot Survive the Agentic Shift</a>
-- <a href="../c-suite-margin-protection-playbook/">The C-Suite Transition Playbook: Protecting Margins in the Agentic Economy</a>
-- <a href="../the-bpo-replacement-matrix-operational-and-financial-impact-of-deterministic-agents/">The BPO Replacement Matrix: Operational and Financial Impact of Deterministic Agents</a>
+- <a href="/blog/writing/2026/09/04/the-rpa-market-is-collapsing/">The RPA Market Is Collapsing</a>
+- <a href="/blog/writing/2026/09/25/the-c-suite-transition-playbook-protecting-margins-in-the-agentic-economy/">The C-Suite Transition Playbook: Protecting Margins in the Agentic Economy</a>
+- <a href="/blog/writing/2026/09/27/the-bpo-replacement-matrix-operational-and-financial-impact-of-deterministic-agents/">The BPO Replacement Matrix: Operational and Financial Impact of Deterministic Agents</a>
 - <a href="https://hsnlabs.ai/advisory">HSN Labs Strategic Advisory for C-Levels</a>

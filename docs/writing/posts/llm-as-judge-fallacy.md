@@ -7,7 +7,7 @@ categories:
   - Engineering
 ---
 
-# The Fallacy of LLM as a Judge in Regulated Enterprise Workflows
+# Why LLM-as-a-Judge Fails in Banking
 
 *Reading time: 4 minutes. Author: Hugo Nascimento.*
 
@@ -23,11 +23,11 @@ The answer was breathtaking: they took the agent outputs, fed them into another 
 
 They were using a probabilistic model that hallucinates to check whether another probabilistic model had hallucinated. The risk committee was seconds away from approving an architecture where no human or deterministic program had ever verified ground-truth financial math.
 
-## Why Stochastic Evaluation Fails Corporate Governance
+## Why Stochastic Evaluation Fails Banking Risk Audits
 
 In an academic paper or a consumer demo, LLM-as-a-judge is an acceptable heuristic for subjective qualities like conversational tone or stylistic flair.
 
-In regulated corporate sectors like banking, healthcare, and enterprise insurance, relying on model-based grading is an audit failure:
+In regulated banking environments, credit risk modeling, and fraud compliance oversight, relying on model-based grading is an immediate regulatory failure:
 
 ### 1. Shared Statistical Blind Spots
 Evaluator models share the same training distribution biases as generator models. 
@@ -55,7 +55,7 @@ At HSN Labs, we reject subjective prompt grading in enterprise pipelines. We eva
 Do not grade production agents with subjective opinion prompts. Grade them with deterministic code and verifiable mathematical proofs.
 
 ## Strategic Resources and Related Essays
-- <a href="../../2026/09/01/the-poc-graveyard-why-enterprise-ai-pilots-never-reach-production/">The PoC Graveyard: Why Enterprise AI Pilots Never Reach Production</a>
-- <a href="../../2026/07/29/the-integration-drift-when-prompts-break-production/">The Integration Drift: When Prompts Break Production</a>
-- <a href="../unconstrained-agents-finite-state-machines/">The Structural Hazard of Unconstrained Agents: Enforcing Finite State Machines</a>
+- <a href="/blog/writing/2026/09/01/why-agents-fail-the-poc-graveyard/">Why Agents Fail: The PoC Graveyard</a>
+- <a href="/blog/writing/2026/07/29/the-integration-drift-when-prompts-break-production/">The Integration Drift: When Prompts Break Production</a>
+- <a href="/blog/writing/2026/08/12/case-study-42-calls-in-a-loop-at-2-am/">Case Study: 42 Calls in a Loop at 2 AM</a>
 - <a href="https://hsnlabs.ai/advisory">HSN Labs Strategic Advisory for C-Levels</a>

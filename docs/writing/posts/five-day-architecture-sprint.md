@@ -7,7 +7,7 @@ categories:
   - Strategy
 ---
 
-# The Five-Day Architecture Sprint: De-risking Enterprise Agentic Deployment
+# Why Big 4 Slide Decks Fail on Agent Projects
 
 *Reading time: 4 minutes. Author: Hugo Nascimento.*
 
@@ -23,9 +23,9 @@ At HSN Labs, we reject slide-deck consulting. We believe the only way to de-risk
 
 We do it in five days through our Forward Deployed Engineering sprint.
 
-## Why Multi-Month Scoping Studies Are a Financial Trap
+## The Three Fatal Flaws of Big 4 Slide Decks on AI Projects
 
-Long discovery engagements destroy executive momentum and burn capital with zero operational return:
+Big 4 consultancies sell conceptual architectures that completely ignore low-level infrastructure reality. Long discovery studies destroy executive momentum and burn capital with zero operational return:
 
 ### 1. Slide Decks Cannot Test API Latency
 A slide deck can claim that an agent will automate customer claims. It cannot tell you that the core mainframe API takes eight seconds to respond, or that the database connection pool exhausts under concurrent load. You only discover real infrastructure friction when engineers touch real systems.
@@ -66,7 +66,7 @@ If the architecture proves viable and the business case justifies deployment, di
 Stop paying for slide decks. Demand working software in five days.
 
 ## Strategic Resources and Related Essays
-- <a href="../the-poc-graveyard-why-enterprise-ai-pilots-never-reach-production/">The PoC Graveyard: Why Enterprise AI Pilots Never Reach Production</a>
-- <a href="../the-collapse-of-legacy-rpa-why-fragile-screen-scrapers-cannot-survive-the-agentic-shift/">The Collapse of Legacy RPA: Why Fragile Screen Scrapers Cannot Survive the Agentic Shift</a>
-- <a href="../the-bpo-replacement-matrix-operational-and-financial-impact-of-deterministic-agents/">The BPO Replacement Matrix: Operational and Financial Impact of Deterministic Agents</a>
+- <a href="/blog/writing/2026/09/01/why-agents-fail-the-poc-graveyard/">Why Agents Fail: The PoC Graveyard</a>
+- <a href="/blog/writing/2026/09/04/the-rpa-market-is-collapsing/">The RPA Market Is Collapsing</a>
+- <a href="/blog/writing/2026/09/27/the-bpo-replacement-matrix-operational-and-financial-impact-of-deterministic-agents/">The BPO Replacement Matrix: Operational and Financial Impact of Deterministic Agents</a>
 - <a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a>

@@ -46,7 +46,7 @@ True autonomy does not mean letting a model run wild without supervision. True a
 Autonomy is not created by writing longer system prompts. Autonomy is created by building deterministic architectures that make operational failure impossible.
 
 ## Strategic Resources and Related Essays
-- <a href="../the-collapse-of-legacy-rpa-why-fragile-screen-scrapers-cannot-survive-the-agentic-shift/">The Collapse of Legacy RPA: Why Fragile Screen Scrapers Cannot Survive the Agentic Shift</a>
-- <a href="../../2026/09/15/the-balance-sheet-guard-how-deterministic-agents-eliminate-the-compliance-and-ledger-bpo/">The Balance Sheet Guard: How Deterministic Agents Eliminate the Compliance and Ledger BPO</a>
-- <a href="../../2026/09/01/the-poc-graveyard-why-enterprise-ai-pilots-never-reach-production/">The PoC Graveyard: Why Enterprise AI Pilots Never Reach Production</a>
+- <a href="/blog/writing/2026/09/04/the-rpa-market-is-collapsing/">The RPA Market Is Collapsing</a>
+- <a href="/blog/writing/2026/09/15/what-i-learned-building-hr-tech-about-dying-bpo-contracts/">What I Learned Building HR Tech About Dying BPO Contracts</a>
+- <a href="/blog/writing/2026/09/01/why-agents-fail-the-poc-graveyard/">Why Agents Fail: The PoC Graveyard</a>
 - <a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a>

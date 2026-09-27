@@ -648,7 +648,7 @@
     </div>
   </header>
   <div class="md-post__content md-typeset">
-    <h2 id="the-fallacy-of-llm-as-a-judge-in-regulated-enterprise-workflows"><a class="toclink" href="../../2026/08/18/the-fallacy-of-llm-as-a-judge-in-regulated-enterprise-workflows/">The Fallacy of LLM as a Judge in Regulated Enterprise Workflows</a></h2>
+    <h2 id="why-llm-as-a-judge-fails-in-banking"><a class="toclink" href="../../2026/08/18/why-llm-as-a-judge-fails-in-banking/">Why LLM-as-a-Judge Fails in Banking</a></h2>
 <p><em>Reading time: 4 minutes. Author: Hugo Nascimento.</em></p>
 <p><em>Context: I drafted this critique after an AI vendor presented a deck to a banking client claiming ninety-nine percent accuracy based entirely on asking their model if its own answers were good. In regulated industries like banking and healthcare, circular evaluations fail compliance audits immediately.</em></p>
 <p>Using a probabilistic language model to evaluate another probabilistic language model is circular reasoning disguised as science.</p>
@@ -656,19 +656,19 @@
 <p>I asked the vendor lead a simple question: How did you calculate that accuracy metric?</p>
 <p>The answer was breathtaking: they took the agent outputs, fed them into another prompt window, and asked GPT-4 to rate the response on a scale from one to five for accuracy and policy adherence. </p>
 <p>They were using a probabilistic model that hallucinates to check whether another probabilistic model had hallucinated. The risk committee was seconds away from approving an architecture where no human or deterministic program had ever verified ground-truth financial math.</p>
-<h3 id="why-stochastic-evaluation-fails-corporate-governance"><a class="toclink" href="../../2026/08/18/the-fallacy-of-llm-as-a-judge-in-regulated-enterprise-workflows/#why-stochastic-evaluation-fails-corporate-governance">Why Stochastic Evaluation Fails Corporate Governance</a></h3>
+<h3 id="why-stochastic-evaluation-fails-banking-risk-audits"><a class="toclink" href="../../2026/08/18/why-llm-as-a-judge-fails-in-banking/#why-stochastic-evaluation-fails-banking-risk-audits">Why Stochastic Evaluation Fails Banking Risk Audits</a></h3>
 <p>In an academic paper or a consumer demo, LLM-as-a-judge is an acceptable heuristic for subjective qualities like conversational tone or stylistic flair.</p>
-<p>In regulated corporate sectors like banking, healthcare, and enterprise insurance, relying on model-based grading is an audit failure:</p>
-<h4 id="1-shared-statistical-blind-spots"><a class="toclink" href="../../2026/08/18/the-fallacy-of-llm-as-a-judge-in-regulated-enterprise-workflows/#1-shared-statistical-blind-spots">1. Shared Statistical Blind Spots</a></h4>
+<p>In regulated banking environments, credit risk modeling, and fraud compliance oversight, relying on model-based grading is an immediate regulatory failure:</p>
+<h4 id="1-shared-statistical-blind-spots"><a class="toclink" href="../../2026/08/18/why-llm-as-a-judge-fails-in-banking/#1-shared-statistical-blind-spots">1. Shared Statistical Blind Spots</a></h4>
 <p>Evaluator models share the same training distribution biases as generator models. </p>
 <p>If a generator model produces a plausible-sounding legal justification that misinterprets a central bank circular or an insurance policy exclusion, an evaluator model prompted with the same context will almost always agree. The evaluator does not query the real world or run mathematical proofs; it merely checks if the prose sounds coherent.</p>
-<h4 id="2-prompt-fragility-and-metric-drift"><a class="toclink" href="../../2026/08/18/the-fallacy-of-llm-as-a-judge-in-regulated-enterprise-workflows/#2-prompt-fragility-and-metric-drift">2. Prompt Fragility and Metric Drift</a></h4>
+<h4 id="2-prompt-fragility-and-metric-drift"><a class="toclink" href="../../2026/08/18/why-llm-as-a-judge-fails-in-banking/#2-prompt-fragility-and-metric-drift">2. Prompt Fragility and Metric Drift</a></h4>
 <p>A stable enterprise engineering metric must be reproducible. </p>
 <p>When you use an LLM as your judge, changing a single comma in your evaluation prompt, or an upstream provider deploying an unannounced weights update, can swing your accuracy score by fifteen percentage points overnight. You cannot build a dependable production release gate on a ruler that stretches and shrinks at random.</p>
-<h4 id="3-the-masking-of-catastrophic-tail-risk"><a class="toclink" href="../../2026/08/18/the-fallacy-of-llm-as-a-judge-in-regulated-enterprise-workflows/#3-the-masking-of-catastrophic-tail-risk">3. The Masking of Catastrophic Tail Risk</a></h4>
+<h4 id="3-the-masking-of-catastrophic-tail-risk"><a class="toclink" href="../../2026/08/18/why-llm-as-a-judge-fails-in-banking/#3-the-masking-of-catastrophic-tail-risk">3. The Masking of Catastrophic Tail Risk</a></h4>
 <p>An evaluator model that awards an average score of four point eight out of five sounds impressive to a non-technical executive. </p>
 <p>What that average conceals is that in two out of every one hundred transactions, the model committed an illegal funds transfer or leaked personally identifiable information. In regulated industries, an average score does not protect you from regulatory fines or criminal liability. A single tail-risk failure can shut down your operation.</p>
-<h3 id="how-we-evaluate-enterprise-agents-at-hsn-labs"><a class="toclink" href="../../2026/08/18/the-fallacy-of-llm-as-a-judge-in-regulated-enterprise-workflows/#how-we-evaluate-enterprise-agents-at-hsn-labs">How We Evaluate Enterprise Agents at HSN Labs</a></h3>
+<h3 id="how-we-evaluate-enterprise-agents-at-hsn-labs"><a class="toclink" href="../../2026/08/18/why-llm-as-a-judge-fails-in-banking/#how-we-evaluate-enterprise-agents-at-hsn-labs">How We Evaluate Enterprise Agents at HSN Labs</a></h3>
 <p>At HSN Labs, we reject subjective prompt grading in enterprise pipelines. We evaluate autonomous systems using the same rigorous engineering standards applied to critical financial and aerospace software:</p>
 <ul>
 <li>Binary Invariant Assertions: We write deterministic assertion functions in Python. Did the output JSON strictly conform to the Pydantic schema? Did the debit and credit ledger entries balance to exactly zero? Did the response omit tax IDs and restricted account numbers? These tests return a binary pass or fail, not a subjective opinion score.</li>
@@ -676,15 +676,15 @@
 <li>Full Telemetry and Replayability: We instrument every workflow with LangSmith, tracing every token, intermediate state, and tool invocation. If an agent produces an unexpected state transition, our engineers can replay the exact execution trace deterministically in local development.</li>
 </ul>
 <p>Do not grade production agents with subjective opinion prompts. Grade them with deterministic code and verifiable mathematical proofs.</p>
-<h3 id="strategic-resources-and-related-essays"><a class="toclink" href="../../2026/08/18/the-fallacy-of-llm-as-a-judge-in-regulated-enterprise-workflows/#strategic-resources-and-related-essays">Strategic Resources and Related Essays</a></h3>
+<h3 id="strategic-resources-and-related-essays"><a class="toclink" href="../../2026/08/18/why-llm-as-a-judge-fails-in-banking/#strategic-resources-and-related-essays">Strategic Resources and Related Essays</a></h3>
 <ul>
-<li><a href="../../2026/09/01/the-poc-graveyard-why-enterprise-ai-pilots-never-reach-production/">The PoC Graveyard: Why Enterprise AI Pilots Never Reach Production</a></li>
-<li><a href="../../2026/07/29/the-integration-drift-when-prompts-break-production/">The Integration Drift: When Prompts Break Production</a></li>
-<li><a href="../unconstrained-agents-finite-state-machines/">The Structural Hazard of Unconstrained Agents: Enforcing Finite State Machines</a></li>
+<li><a href="/blog/writing/2026/09/01/why-agents-fail-the-poc-graveyard/">Why Agents Fail: The PoC Graveyard</a></li>
+<li><a href="/blog/writing/2026/07/29/the-integration-drift-when-prompts-break-production/">The Integration Drift: When Prompts Break Production</a></li>
+<li><a href="/blog/writing/2026/08/12/case-study-42-calls-in-a-loop-at-2-am/">Case Study: 42 Calls in a Loop at 2 AM</a></li>
 <li><a href="https://hsnlabs.ai/advisory">HSN Labs Strategic Advisory for C-Levels</a></li>
 </ul>
 <hr />
-<p><em>Article originally published on <a href="https://hsnlabs.ai/blog/writing/2026/08/18/the-fallacy-of-llm-as-a-judge-in-regulated-enterprise-workflows/">HSN Labs</a>. Author: <a href="https://hsnlabs.ai">Hugo Nascimento</a>.</em></p>
+<p><em>Article originally published on <a href="https://hsnlabs.ai/blog/writing/2026/08/18/why-llm-as-a-judge-fails-in-banking/">HSN Labs</a>. Author: <a href="https://hsnlabs.ai">Hugo Nascimento</a>.</em></p>
     
     
   </div>

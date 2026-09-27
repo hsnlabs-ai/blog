@@ -7,7 +7,7 @@ categories:
   - BPO
 ---
 
-# The Balance Sheet Guard: How Deterministic Agents Eliminate the Compliance and Ledger BPO
+# What I Learned Building HR Tech About Dying BPO Contracts
 
 *Reading time: 5 minutes. Author: Hugo Nascimento.*
 
@@ -21,9 +21,9 @@ The legacy outsourcing pitch was straightforward: labor arbitrage. Take a repeti
 
 That era is over. When business processes are governed by statutory law, tax codes, and closed arithmetic formulas, human labor is no longer a safety buffer. It is an expensive point of failure.
 
-## The Five Fragile Pillars of Back-Office Outsourcing
+## What HR Tech Revealed About Dying BPO Contracts
 
-Human data processing creates hidden financial liabilities across five core balance sheet workflows:
+Building workforce software taught me that back-office operations are governed by closed formulas, not human creativity. Human data processing creates hidden financial liabilities across five core balance sheet workflows:
 
 ### 1. Payroll and Labor Regulatory Filings
 In markets like Brazil with complex labor codes under CLT, payroll is not a suggestion. It is a strictly deterministic legal algorithm.
@@ -63,7 +63,7 @@ The financial back office is not a place for creative improvisation. It is an op
 When an enterprise replaces billable outsourced headcount with deterministic software workers, it does not just reduce operating expenses by eighty percent. It insulates its balance sheet against compliance fines, labor liabilities, and systemic human error.
 
 ## Strategic Resources and Related Essays
-- <a href="../the-poc-graveyard-why-enterprise-ai-pilots-never-reach-production/">The PoC Graveyard: Why Enterprise AI Pilots Never Reach Production</a>
-- <a href="../the-collapse-of-legacy-rpa-why-fragile-screen-scrapers-cannot-survive-the-agentic-shift/">The Collapse of Legacy RPA: Why Fragile Screen Scrapers Cannot Survive the Agentic Shift</a>
-- <a href="../the-bpo-replacement-matrix-operational-and-financial-impact-of-deterministic-agents/">The BPO Replacement Matrix: Operational and Financial Impact of Deterministic Agents</a>
+- <a href="/blog/writing/2026/09/01/why-agents-fail-the-poc-graveyard/">Why Agents Fail: The PoC Graveyard</a>
+- <a href="/blog/writing/2026/09/04/the-rpa-market-is-collapsing/">The RPA Market Is Collapsing</a>
+- <a href="/blog/writing/2026/09/27/the-bpo-replacement-matrix-operational-and-financial-impact-of-deterministic-agents/">The BPO Replacement Matrix: Operational and Financial Impact of Deterministic Agents</a>
 - <a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a>
