@@ -13,8 +13,8 @@
     <language>en</language>
 
     
-    <pubDate>Sun, 27 Sep 2026 21:41:07 -0000</pubDate>
-    <lastBuildDate>Sun, 27 Sep 2026 21:41:07 -0000</lastBuildDate>
+    <pubDate>Sun, 27 Sep 2026 21:58:59 -0000</pubDate>
+    <lastBuildDate>Sun, 27 Sep 2026 21:58:59 -0000</lastBuildDate>
     <ttl>1440</ttl>
 
     
@@ -30,6 +30,37 @@
     
 
     
+    
+    <item>
+      <title>The Architecture of Palantir AIP: Why Enterprise Agents Fail Without an Operational Ontology</title>
+      
+      
+        
+      <author>Hugo S. Nascimento</author>
+        
+      
+      
+      
+        
+      <category>Agent Development Life Cycle</category>
+        
+      <category>architecture</category>
+        
+      <category>case-studies</category>
+        
+      <category>production</category>
+        
+      <category>roi</category>
+        
+      
+      <description>How Palantir AIP bootcamps compressed 9-month sales cycles into 5-day deployments by binding LLMs to operational ontologies instead of raw prompts.</description>
+      <link>https://hsnlabs.ai/blog/post/palantir-aip-bootcamp-operational-ontology/</link>
+      <pubDate>Mon, 28 Sep 2026 00:00:00 +0000</pubDate>
+      <source url="https://hsnlabs.ai/blog/feed_rss_updated.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
+      
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/post/palantir-aip-bootcamp-operational-ontology/</guid>
+      
+    </item>
     
     <item>
       <title>The BPO Replacement Matrix: Operational and Financial Impact of Production Agents</title>

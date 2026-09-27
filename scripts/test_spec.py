@@ -23,7 +23,7 @@ CANONICAL_CATEGORIES = {
 
 def test_d1_frontmatter_schema():
     posts = sorted(glob.glob(str(POSTS_DIR / "*.md")))
-    assert len(posts) == 19, f"Esperado 19 posts em docs/post, encontrado {len(posts)}"
+    assert len(posts) >= 19, f"Esperado >= 19 posts em docs/post, encontrado {len(posts)}"
     
     for p in posts:
         with open(p, "r", encoding="utf-8") as f:
@@ -53,7 +53,7 @@ def test_d1_frontmatter_schema():
         
         author = meta.get("author")
         assert author == "Hugo S. Nascimento", f"Post {p} autor incorreto: {author}"
-    print("PASS: Gate D1 Frontmatter Schema Validado nos 19 posts")
+    print(f"PASS: Gate D1 Frontmatter Schema Validado nos {len(posts)} posts")
 
 def test_d2_forbidden_pages_purged():
     user_manual = DOCS_DIR / "about" / "user-manual.md"
