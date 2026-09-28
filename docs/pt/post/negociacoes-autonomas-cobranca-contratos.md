@@ -1,5 +1,5 @@
 ---
-title: 'Operacoes em Alta Velocidade: Negociacao Autonoma, Cobranca e Execucao Contratual'
+title: 'Operações em Alta Velocidade: Negociação Autônoma, Cobrança e Execução Contratual'
 date: '2026-09-18'
 category: Case Studies
 tags:
@@ -7,7 +7,7 @@ tags:
 - collections
 - contracts
 - fsm
-description: 'Como agentes operacionais com ontologia e maquinas de estados finitos automatizam negociacao de cobranca e aditamentos contratuais sem erro.'
+description: 'Como agentes operacionais com ontologia e máquinas de estados finitos automatizam negociação de cobrança e aditamentos contratuais sem erro.'
 author: Hugo S. Nascimento
 ---
 
@@ -15,44 +15,44 @@ author: Hugo S. Nascimento
 
 <!-- more -->
 
-*Contexto: No inicio deste ano estruturei a substituicao de uma operacao de cobranca e renegociacao contratual que custava milhoes anuais em mesas de atendimento humano terceirizado. O resultado foi uma reducao drastica de custos operacionais e recuperacao de fluxo de caixa em dias.*
+*Contexto: No início deste ano estruturei a substituição de uma operação de cobrança e renegociacao contratual que custava milhões anuais em mesas de atendimento humano terceirizado. O resultado foi uma redução drástica de custos operacionais e recuperação de fluxo de caixa em dias.*
 
-Processos corporativos de cobranca, repactuacao de dividas e revisao de contratos sempre foram dominados por operacoes massivas de BPO. Empresas contratam centenas de operadores para seguir scripts rigidos de negociacao, registrar acordos em sistemas legados e emitir boletos ou termos aditivos.
+Processos corporativos de cobrança, repactuacao de dívidas e revisão de contratos sempre foram dominados por operações massivas de BPO. Empresas contratam centenas de operadores para seguir scripts rígidos de negociação, registrar acordos em sistemas legados e emitir boletos ou termos aditivos.
 
-O modelo tradicional e ineficiente, caro e sujeito a taxas inaceitaveis de erro humano. Quando corporacoes tentam aplicar chatbots conversacionais convencionais nessa esteira, os resultados sao desastrosos. O modelo promete descontos nao autorizados pelo comite de credito ou alucina prazos incompatíveis com a legislacao vigente.
+O modelo tradicional é ineficiente, caro e sujeito a taxas inaceitáveis de erro humano. Quando corporações tentam aplicar chatbots conversacionais convencionais nessa esteira, os resultados são desastrosos. O modelo promete descontos não autorizados pelo comitê de crédito ou alucina prazos incompatíveis com a legislação vigente.
 
-## A Arquitetura de Negociacao Autonoma
+## A Arquitetura de Negociação Autônoma
 
-Para automatizar transacoes de alto risco sem colocar o balanco da empresa em perigo, a HSN Labs emprega uma combinacao estrita de tres pilares de engenharia:
+Para automatizar transações de alto risco sem colocar o balanço da empresa em perigo, a HSN Labs emprega uma combinação estrita de três pilares de engenharia:
 
 ### 1. Limites Parametricos Definidos por Ontologia
-O agente nao decide termos de negociacao de forma probabilistica. Ele opera sobre uma ontologia que codifica a politica de credito da instituicao. Parametros como valor do desconto maximo, taxa de juros permitida, prazos de parcelamento e restricoes de garantia sao consultados em tempo de execucao a partir de regras formais.
+O agente não decide termos de negociação de forma probabilística. Ele opera sobre uma ontologia que codifica a política de crédito da instituição. Parâmetros como valor do desconto máximo, taxa de juros permitida, prazos de parcelamento e restrições de garantia são consultados em tempo de execução a partir de regras formais.
 
-### 2. Maquina de Estados Finitos para Conducao do Fluxo
-A conversa e tratada como uma transicao de estados em uma Maquina de Estados Finitos. Cada intervencao do devedor ou cliente avanca o sistema entre estados definidos:
-- Identificacao e autenticacao positiva
-- Apresentacao do saldo devedor auditado
+### 2. Máquina de Estados Finitos para Condução do Fluxo
+A conversa e tratada como uma transição de estados em uma Máquina de Estados Finitos. Cada intervenção do devedor ou cliente avança o sistema entre estados definidos:
+- Identificação e autenticação positiva
+- Apresentação do saldo devedor auditado
 - Coleta de proposta inicial
-- Validacao da proposta contra a matriz de credito
-- Formalizacao do termo aditivo ou emissao do boleto
-- Baixa no sistema central de gestao financeira
+- Validação da proposta contra a matriz de crédito
+- Formalizacao do termo aditivo ou emissão do boleto
+- Baixa no sistema central de gestão financeira
 
-Se o cliente propuser condicoes fora da matriz autorizada, o agente nao cede e nao improvisa. Ele sugere a melhor alternativa viavel ou aciona a esteira de aprovacao humana especializada.
+Se o cliente propuser condições fora da matriz autorizada, o agente não cede e não improvisa. Ele sugere a melhor alternativa viável ou aciona a esteira de aprovação humana especializada.
 
-### 3. Mutacao Segura com Verificacao de Dois Fatores
-Nenhum contrato e alterado no ERP sem que o agente confirme a assinatura digital ou a concordancia formal do cliente sob trilha auditavel. Toda transacao gera logs imutaveis contendo o historico das mensagens, os dados consultados e os hashes criptograficos do aceite.
+### 3. Mutação Segura com Verificação de Dois Fatores
+Nenhum contrato e alterado no ERP sem que o agente confirme a assinatura digital ou a concordância formal do cliente sob trilha auditavel. Toda transação gera logs imutáveis contendo o histórico das mensagens, os dados consultados e os hashes criptográficos do aceite.
 
-## Metricas de Impacto em Producao
+## Métricas de Impacto em Produção
 
-A implementacao dessa esteira em uma grande instituicao financeira demonstrou resultados consistentes:
-- Tempo medio de liquidacao de acordo reduzido de quatro dias para sete minutos
+A implementação dessa esteira em uma grande instituição financeira demonstrou resultados consistentes:
+- Tempo médio de liquidação de acordo reduzido de quatro dias para sete minutos
 - Queda de oitenta e dois por cento no custo operacional por contrato renegociado
-- Zero acordos emitidos fora da politica de credito em mais de cinquenta mil operacoes
+- Zero acordos emitidos fora da política de crédito em mais de cinquenta mil operações
 
-Automatizar negociacao de contratos nao e uma questao de criar prompts persuasivos. E uma questao de cercar modelos de linguagem com garantias matematicas e integracao estrita com os sistemas centrais da organizacao.
+Automatizar negociação de contratos não é uma questão de criar prompts persuasivos. E uma questão de cercar modelos de linguagem com garantias matemáticas e integração estrita com os sistemas centrais da organização.
 
-## Recursos Estrategicos e Posts Relacionados
+## Recursos Estratégicos e Posts Relacionados
 - <a href="/blog/pt/post/manifesto/">Por Que Criei a HSN Labs</a>
-- <a href="/blog/pt/post/estudo-caso-latam-airlines/">LATAM Airlines: Agentes em Producao com Margem de 3 Por Cento</a>
-- <a href="/blog/pt/post/agentes-ilimitados-maquinas-estados-finitos/">Estudo de Caso: 42 Chamadas em Loop as 2 da Manha</a>
+- <a href="/blog/pt/post/estudo-caso-latam-airlines/">LATAM Airlines: Agentes em Produção com Margem de 3 Por Cento</a>
+- <a href="/blog/pt/post/agentes-ilimitados-maquinas-estados-finitos/">Estudo de Caso: 42 Chamadas em Loop às 2 da Manhã</a>
 - <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da HSN Labs</a>

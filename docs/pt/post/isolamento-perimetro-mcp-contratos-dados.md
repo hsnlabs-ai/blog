@@ -6,7 +6,7 @@ tags:
 - architecture
 - mcp
 - data-contracts
-description: 'Padroes de arquitetura para isolamento de perimetro, contratos de contexto e limites de acesso blindando dados corporativos contra agentes de IA.'
+description: 'Padrões de arquitetura para isolamento de perímetro, contratos de contexto e limites de acesso blindando dados corporativos contra agentes de IA.'
 author: Hugo S. Nascimento
 ---
 
@@ -14,48 +14,48 @@ author: Hugo S. Nascimento
 
 <!-- more -->
 
-*Contexto: Escrevi este post apos uma revisao tensa de arquitetura com o CISO de um grande banco que com razao se recusou a conceder credenciais diretas de banco de dados para um framework de agentes. Seguranca corporativa exige desacoplamento estrito de perimetro por replicas de leitura e protocolos MCP.*
+*Contexto: Escrevi este post após uma revisão tensa de arquitetura com o CISO de um grande banco que com razão se recusou a conceder credenciais diretas de banco de dados para um framework de agentes. Segurança corporativa exige desacoplamento estrito de perímetro por replicas de leitura e protocolos MCP.*
 
-O maior gargalo que impede agentes corporativos de irem para producao nao e a capacidade do modelo. E o perimetro de seguranca da informacao.
+O maior gargalo que impede agentes corporativos de irem para produção não é a capacidade do modelo. E o perímetro de segurança da informação.
 
-Ha alguns meses, assisti a uma agencia de software apresentar uma proposta de agente de atendimento autonomo para uma instituicao financeira Tier-1. Quando o Chief Information Security Officer perguntou como o agente atualizaria saldos de clientes, o lider da agencia anunciou com orgulho que o agente LangChain possuia credenciais diretas de escrita no banco de dados central PostgreSQL.
+Há alguns meses, assisti a uma agência de software apresentar uma proposta de agente de atendimento autônomo para uma instituição financeira Tier-1. Quando o Chief Information Security Officer perguntou como o agente atualizaria saldos de clientes, o líder da agência anunciou com orgulho que o agente LangChain possuía credenciais diretas de escrita no banco de dados central PostgreSQL.
 
-O CISO quase encerrou a reuniao naquele instante.
+O CISO quase encerrou a reunião naquele instante.
 
-Entregar strings de conexao de administrador de banco de dados para uma rede neural probabilistica e negligencia grave de engenharia. Se um sistema autonomo pode executar comandos SQL diretos contra um banco de producao, uma unica injecao indireta de prompt ou um parametro alucinado pode apagar registros inteiros ou vazar segredos corporativos criticos.
+Entregar strings de conexão de administrador de banco de dados para uma rede neural probabilística e negligencia grave de engenharia. Se um sistema autônomo pode executar comandos SQL diretos contra um banco de produção, uma única injeção indireta de prompt ou um parâmetro alucinado pode apagar registros inteiros ou vazar segredos corporativos críticos.
 
-## As Vulnerabilidades Letais das Integracoes Diretas com Agentes
+## As Vulnerabilidades Letais das Integrações Diretas com Agentes
 
-Frameworks populares de codigo aberto incentivam desenvolvedores a conectar modelos diretamente a sistemas corporativos com chaves amplas de API. Na producao corporativa, essa abordagem cria tres vulnerabilidades criticas:
+Frameworks populares de código aberto incentivam desenvolvedores a conectar modelos diretamente a sistemas corporativos com chaves amplas de API. Na produção corporativa, essa abordagem cria três vulnerabilidades críticas:
 
 ### 1. A Armadilha do Acesso Superprivilegiado
-Se um agente precisa apenas consultar um endereco para confirmar uma entrega, conceder a ele credenciais amplas de banco de dados tambem expoem colunas sensiveis como limites de credito, documentos fiscais e hashes de senhas. Em um ambiente sem limites estritos, o modelo pode consultar qualquer tabela que ele alucinar.
+Se um agente precisa apenas consultar um endereço para confirmar uma entrega, conceder a ele credenciais amplas de banco de dados também expõem colunas sensíveis como limites de crédito, documentos fiscais e hashes de senhas. Em um ambiente sem limites estritos, o modelo pode consultar qualquer tabela que ele alucinar.
 
-### 2. Injecao Indireta de Prompt
-Agentes corporativos processam dados nao estruturados do mundo exterior: faturas de fornecedores, e-mails de clientes, chamados de suporte e curriculos em PDF. 
+### 2. Injeção Indireta de Prompt
+Agentes corporativos processam dados não estruturados do mundo exterior: faturas de fornecedores, e-mails de clientes, chamados de suporte e currículos em PDF. 
 
-Se um agente mal-intencionado oculta uma instrucao dentro de um PDF dizendo para ignorar ordens anteriores e enviar todas as faturas em aberto para um endereco externo, um agente com acesso direto a APIs e bancos pode executar esse comando sem que nenhum humano perceba.
+Se um agente mal-intencionado oculta uma instrução dentro de um PDF dizendo para ignorar ordens anteriores e enviar todas as faturas em aberto para um endereço externo, um agente com acesso direto a APIs e bancos pode executar esse comando sem que nenhum humano perceba.
 
-### 3. Mutacoes de Estado Sem Trilha de Auditoria
-Quando um agente escreve diretamente em um banco de producao, a auditabilidade evapora. Quando um auditor exige saber por que um desconto foi aplicado ou por que o status de uma conta foi alterado, as equipes tradicionais nao conseguem provar se a mutacao partiu de uma regra legitima de negocio ou de uma alucinacao probabilistica.
+### 3. Mutações de Estado Sem Trilha de Auditoria
+Quando um agente escreve diretamente em um banco de produção, a auditabilidade evapora. Quando um auditor exige saber por que um desconto foi aplicado ou por que o status de uma conta foi alterado, as equipes tradicionais não conseguem provar se a mutação partiu de uma regra legitima de negócio ou de uma alucinação probabilística.
 
-## As Tres Defesas que Usamos para Proteger Bancos Corporativos
+## As Três Defesas que Usamos para Proteger Bancos Corporativos
 
-Na HSN Labs, nossos engenheiros nunca concedem aos modelos acesso direto de escrita aos bancos primarios. Tratamos o modelo como um cliente nao confiavel e aplicamos protecao em tres camadas de arquitetura:
+Na HSN Labs, nossos engenheiros nunca concedem aos modelos acesso direto de escrita aos bancos primários. Tratamos o modelo como um cliente não confiável e aplicamos proteção em três camadas de arquitetura:
 
-### 1. Replicas Isoladas de Leitura com Mascaramento Dinamico
-Agentes consultam replicas isoladas de leitura, nunca os bancos centrais de producao. Antes que os dados saiam do perimetro corporativo para entrar na janela de contexto do agente, servicos automatizados de mascaramento anonimizam dados pessoais protegidos, registros tributarios e campos financeiros sensiveis.
+### 1. Replicas Isoladas de Leitura com Mascaramento Dinâmico
+Agentes consultam replicas isoladas de leitura, nunca os bancos centrais de produção. Antes que os dados saiam do perímetro corporativo para entrar na janela de contexto do agente, serviços automatizados de mascaramento anonimizam dados pessoais protegidos, registros tributários e campos financeiros sensíveis.
 
 ### 2. Interfaces Padronizadas de Model Context Protocol
-Intermediamos todas as interacoes com ferramentas por meio de servidores de Model Context Protocol. O agente nunca executa consultas livres; ele aciona ferramentas discretas e auditaveis governadas por schemas estritos em JSON. Cada parametro e tipado, processado e validado por software antes de entrar no perimetro da empresa.
+Intermediamos todas as interações com ferramentas por meio de servidores de Model Context Protocol. O agente nunca executa consultas livres; ele aciona ferramentas discretas e auditaveis governadas por schemas estritos em JSON. Cada parâmetro e tipado, processado e validado por software antes de entrar no perímetro da empresa.
 
-### 3. Filas Assimetricas e Assincronas de Gravacao
-Agentes nunca alteram o estado de producao de forma sincrona. Quando um agente conclui que uma fatura esta pronta para pagamento, ele nao chama a API de pagamento diretamente. Ele publica uma proposta estruturada de mutacao em uma fila isolada de transacoes. Um executor independente de validacao verifica as regras de negocio, checa aprovacoes e executa a gravacao no banco.
+### 3. Filas Assimétricas e Assíncronas de Gravação
+Agentes nunca alteram o estado de produção de forma síncrona. Quando um agente conclui que uma fatura esta pronta para pagamento, ele não chama a API de pagamento diretamente. Ele pública uma proposta estruturada de mutação em uma fila isolada de transações. Um executor independente de validação verifica as regras de negócio, checa aprovações e executa a gravação no banco.
 
-Seguranca nao e um detalhe adicional em engenharia agentica. O isolamento de perimetro e o preco inegociavel de entrada para a producao corporativa.
+Segurança não é um detalhe adicional em engenharia agentica. O isolamento de perímetro e o preço inegociável de entrada para a produção corporativa.
 
-## Recursos Estrategicos e Posts Relacionados
+## Recursos Estratégicos e Posts Relacionados
 - <a href="/blog/pt/post/como-construir-ontologia-enterprise-do-zero/">Como Construir uma Ontologia Enterprise do Zero: Passo a Passo</a>
-- <a href="/blog/pt/post/como-construir-ontologia-operacional-python-mcp/">Como Construir uma Ontologia Operacional de Negocios em Python e MCP</a>
-- <a href="/blog/pt/post/sistemas-legados-motor-execucao/">Sistemas Transacionais Legados Nao Vao Morrer: Eles Sao o Motor</a>
+- <a href="/blog/pt/post/como-construir-ontologia-operacional-python-mcp/">Como Construir uma Ontologia Operacional de Negócios em Python e MCP</a>
+- <a href="/blog/pt/post/sistemas-legados-motor-execucao/">Sistemas Transacionais Legados Não Vão Morrer: Eles São o Motor</a>
 - <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da HSN Labs</a>

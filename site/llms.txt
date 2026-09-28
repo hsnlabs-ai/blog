@@ -62,10 +62,10 @@ Structured machine-readable feed of all technical publications.
 - Advisory de Arquitetura: https://hsnlabs.ai/pt/advisory/
 - Servidores MCP Enterprise: https://hsnlabs.ai/pt/mcp/
 - Blog HSN Labs em Portugues: https://hsnlabs.ai/blog/pt/
-- O Cemiterio de PoCs Enterprise: https://hsnlabs.ai/blog/pt/post/cemiterio-de-pocs/
+- O Cemitério de PoCs Enterprise: https://hsnlabs.ai/blog/pt/post/cemiterio-de-pocs/
 - Por Que RAG Falha em ERP: https://hsnlabs.ai/blog/pt/post/por-que-rag-falha-em-erp/
 - Chatbot vs Agente: https://hsnlabs.ai/blog/pt/post/chatbot-vs-agente/
-- Isolamento de Perimetro e MCP: https://hsnlabs.ai/blog/pt/post/isolamento-perimetro-mcp-contratos-dados/
+- Isolamento de Perímetro e MCP: https://hsnlabs.ai/blog/pt/post/isolamento-perimetro-mcp-contratos-dados/
 - Comprar ou Construir CRM de Vendas B2B: https://hsnlabs.ai/blog/pt/post/comprar-ou-construir-crm-vendas-b2b/
 
 ## Open Source Ecosystem

@@ -280,7 +280,7 @@ Atribua a pontuação correspondente para cada resposta afirmativa da sua empres
   * Pontuação: 2 pontos.
 
 * Critério 5: O processo de vendas demanda regras avançadas de precificação e aprovação que exigem customizações caras nos CRMs de mercado?
-  * Pontuacao: 3 pontos.
+  * Pontuação: 3 pontos.
 
 * Critério 6: A empresa possui diretrizes de conformidade que recomendam manter transcrições e propostas sob custódia exclusiva em servidores internos?
   * Pontuação: 2 pontos.
@@ -321,8 +321,8 @@ Klarna: descontinuou contratos enterprise de Salesforce e Zendesk em favor de st
 
 ---
 
-## Recursos Estrategicos e Posts Relacionados
-- <a href="/blog/pt/post/matriz-substituicao-bpo/">A Matriz de Substituicao de BPO: Metricas Operacionais e Financeiras</a>
-- <a href="/blog/pt/post/preco-palantir-tco-alternativas-abertas/">O TCO Real da Palantir: A Barreira em Dolar e Alternativas Abertas</a>
-- <a href="/blog/pt/post/playbook-c-suite-protecao-margem/">O Playbook de Transicao da Diretoria: Protegendo Margens na Era Agentica</a>
+## Recursos Estratégicos e Posts Relacionados
+- <a href="/blog/pt/post/matriz-substituicao-bpo/">A Matriz de Substituição de BPO: Métricas Operacionais e Financeiras</a>
+- <a href="/blog/pt/post/preco-palantir-tco-alternativas-abertas/">O TCO Real da Palantir: A Barreira em Dólar e Alternativas Abertas</a>
+- <a href="/blog/pt/post/playbook-c-suite-protecao-margem/">O Playbook de Transição da Diretoria: Protegendo Margens na Era Agentica</a>
 - <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da HSN Labs</a>

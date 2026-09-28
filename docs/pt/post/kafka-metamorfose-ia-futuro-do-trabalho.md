@@ -6,7 +6,7 @@ tags:
 - philosophy
 - future-of-work
 - society
-description: 'Reflexao filosofica e economica sobre a mercantilizacao do trabalho humano a luz da obra A Metamorfose e o avanco da automacao por IA.'
+description: 'Reflexão filosófica e econômica sobre a mercantilizacao do trabalho humano a luz da obra A Metamorfose e o avanço da automação por IA.'
 author: Hugo S. Nascimento
 ---
 
@@ -14,28 +14,28 @@ author: Hugo S. Nascimento
 
 <!-- more -->
 
-*Contexto: No romance A Metamorfose, de Franz Kafka, Gregor Samsa acorda transformado em um inseto monstruoso. A primeira preocupacao dele nao e com a sua saude ou condicao fisica, mas sim com o fato de ter perdido o trem para o trabalho. Este post historico e filosofico investiga a raiz do utilitarismo corporativo.*
+*Contexto: No romance A Metamorfose, de Franz Kafka, Gregor Samsa acorda transformado em um inseto monstruoso. A primeira preocupação dele não é com a sua saúde ou condição física, mas sim com o fato de ter perdido o trem para o trabalho. Este post histórico e filosófico investiga a raiz do utilitarismo corporativo.*
 
-Quando Kafka publicou seu classico ha mais de um seculo, ele capturou a essencia mais crue da Revolucao Industrial: o ser humano reduzido a sua capacidade produtiva imediata. Gregor Samsa so possuia valor para sua familia e para a sociedade enquanto conseguia carregar sua pasta e bater o ponto no escritorio.
+Quando Kafka publicou seu clássico há mais de um século, ele capturou a essência mais crue da Revolução Industrial: o ser humano reduzido a sua capacidade produtiva imediata. Gregor Samsa só possuía valor para sua família e para a sociedade enquanto conseguia carregar sua pasta e bater o ponto no escritório.
 
-Hoje, diante da aceleracao desenfreada de agentes autonomos e automacao cognitiva, a parabola de Kafka ressurge com forca assustadora nos corredores corporativos.
+Hoje, diante da aceleração desenfreada de agentes autônomos e automação cognitiva, a parábola de Kafka ressurge com força assustadora nos corredores corporativos.
 
-## A Automacao do Trabalhador do Conhecimento
+## A Automação do Trabalhador do Conhecimento
 
-Durante decadas, economistas e sociologos confortavam a sociedade com a narrativa de que a automacao so atingiria tarefas manuais e repetitivas. Dizia-se que o trabalho intelectual, criativo e analitico permaneceria como prerrogativa humana inabalavel.
+Durante décadas, economistas e sociólogos confortavam a sociedade com a narrativa de que a automação só atingiria tarefas manuais e repetitivas. Dizia-se que o trabalho intelectual, criativo e analítico permaneceria como prerrogativa humana inabalável.
 
-Essa tese provou-se incorreta. Agentes de software bem desenhados analisam contratos de duzentas paginas em segundos, conciliam faturamentos complexos e escrevem relatorios periciais sem cansaco nem oscilacoes emocionais.
+Essa tese provou-se incorreta. Agentes de software bem desenhados analisam contratos de duzentas páginas em segundos, conciliam faturamentos complexos e escrevem relatórios periciais sem cansaço nem oscilações emocionais.
 
-O choque que as carreiras corporativas estao vivenciando neste momento espelha o dilema kafkiano: o que sobra para o profissional quando o sistema descobre que a tarefa que justificava o seu salario pode ser executada por uma maquina a uma fracao do custo?
+O choque que as carreiras corporativas estão vivenciando neste momento espelha o dilema kafkiano: o que sobra para o profissional quando o sistema descobre que a tarefa que justificava o seu salário pode ser executada por uma máquina a uma fração do custo?
 
-## O Fim das Funcoes Meramente Instrumentais
+## O Fim das Funções Meramente Instrumentais
 
-Tarefas operacionais de intermediacao, burocracia de planilhas e alimentacao de sistemas estao com os dias contados. O profissional do futuro imediato precisara se distanciar da mera execucao mecanica e assumir papeis de julgamento etico, arquitetura de sistemas e compreensao profunda de contexto humano.
+Tarefas operacionais de intermediação, burocracia de planilhas e alimentação de sistemas estão com os dias contados. O profissional do futuro imediato precisara se distanciar da mera execução mecânica e assumir papeis de julgamento ético, arquitetura de sistemas e compreensão profunda de contexto humano.
 
-A tecnologia precisa libertar o trabalhador da condicao instrumental descrita por Kafka, em vez de empurra-lo para a invisibilidade. Essa e uma discussao que lideres conscientes precisam travar com coragem antes que a automacao se torne apenas uma ferramenta de exclusao em massa.
+A tecnologia precisa libertar o trabalhador da condição instrumental descrita por Kafka, em vez de empurra-lo para a invisibilidade. Essa e uma discussão que líderes conscientes precisam travar com coragem antes que a automação se torne apenas uma ferramenta de exclusão em massa.
 
 ## Notas de Campo e Artigos Relacionados
-- <a href="/blog/pt/post/colapso-rpa-legado/">O Mercado de RPA Esta em Colapso</a>
+- <a href="/blog/pt/post/colapso-rpa-legado/">O Mercado de RPA Está em Colapso</a>
 - <a href="/blog/pt/post/guarda-do-balanco-extincao-bpo/">O Que Aprendi Construindo HR Tech Sobre a Morte do BPO</a>
-- <a href="/blog/pt/post/morte-suporte-nivel-1-erp/">A Morte do Suporte Nivel 1: Por Que Consultorias de ERP Perdem Horas Faturaveis</a>
+- <a href="/blog/pt/post/morte-suporte-nivel-1-erp/">A Morte do Suporte Nível 1: Por Que Consultorias de ERP Perdem Horas Faturáveis</a>
 - <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da HSN Labs</a>

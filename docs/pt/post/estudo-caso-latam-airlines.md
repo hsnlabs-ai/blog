@@ -1,12 +1,12 @@
 ---
-title: 'LATAM Airlines: Agentes em Producao com Margem de 3 Por Cento'
+title: 'LATAM Airlines: Agentes em Produção com Margem de 3 Por Cento'
 date: '2026-08-21'
 category: Case Studies
 tags:
 - case-studies
 - latam-airlines
 - production
-description: 'Estudo de caso operacional sobre a implantacao de agentes corporativos em aviacao comercial com margens apertadas e alta volumetria.'
+description: 'Estudo de caso operacional sobre a implantação de agentes corporativos em aviação comercial com margens apertadas e alta volumetria.'
 author: Hugo S. Nascimento
 ---
 
@@ -14,49 +14,49 @@ author: Hugo S. Nascimento
 
 <!-- more -->
 
-*Contexto: Analisei divulgacoes publicas da LATAM Airlines e dados de telemetria para entender como uma empresa operando com tres por cento de margem implantou agentes em milhoes de interacoes sem queimar capital em custos desnecessarios de tokens.*
+*Contexto: Analisei divulgações públicas da LATAM Airlines e dados de telemetria para entender como uma empresa operando com três por cento de margem implantou agentes em milhões de interações sem queimar capital em custos desnecessários de tokens.*
 
-Companhias aereas operam com margens de tres por cento. Trinta e um por cento do custo operacional e combustivel de aviacao. Nao ha espaco para desperdicio.
+Companhias aéreas operam com margens de três por cento. Trinta e um por cento do custo operacional e combustível de aviação. Não há espaço para desperdício.
 
-Se um agente de IA nao gera valor imediato ou corta custos, ele e cancelado.
+Se um agente de IA não gera valor imediato ou corta custos, ele e cancelado.
 
-Analisei a implantacao de agentes de experiencia do cliente da LATAM Airlines em producao. Eles processam milhoes de interacoes. Aprenderam tres licoes duras sobre engenharia agentica em escala.
+Analisei a implantação de agentes de experiência do cliente da LATAM Airlines em produção. Eles processam milhões de interações. Aprenderam três lições duras sobre engenharia agentica em escala.
 
-## 1. Descentralizacao Semantica Queima Capital
-A LATAM inicialmente construiu agentes especialistas para voos, hoteis e seguros. Cada agente raciocinava e gerava saidas estruturadas finais de forma independente.
+## 1. Descentralização Semântica Queima Capital
+A LATAM inicialmente construiu agentes especialistas para voos, hotéis e seguros. Cada agente raciocinava e gerava saídas estruturadas finais de forma independente.
 
-Resultado: quinze por cento de sobrecusto em consumo de tokens e latencia de resposta.
+Resultado: quinze por cento de sobrecusto em consumo de tokens e latência de resposta.
 
-Correcao: Padrao estrito de Supervisor. Os agentes especialistas viraram executores cegos de ferramentas. O no Supervisor centraliza toda a formatacao semantica final.
+Correção: Padrão estrito de Supervisor. Os agentes especialistas viraram executores cegos de ferramentas. O no Supervisor centraliza toda a formatação semântica final.
 
-Licao: Nao peca para cada no do seu grafo raciocinar sobre estrutura de saida. Centralize a formatacao. Corte custos em quinze por cento sem perder qualidade.
+Lição: Não peça para cada no do seu grafo raciocinar sobre estrutura de saída. Centralize a formatação. Corte custos em quinze por cento sem perder qualidade.
 
 ## 2. Telemetria Vence Truques de Prompt
-Em producao, treze por cento das interacoes de usuarios falhavam no roteamento. O sistema marcava os chamados como fora de escopo.
+Em produção, treze por cento das interações de usuários falhavam no roteamento. O sistema marcava os chamados como fora de escopo.
 
-Amadores aumentam instrucoes de prompt para evitar desvios. A LATAM analisou a telemetria do sistema.
+Amadores aumentam instruções de prompt para evitar desvios. A LATAM analisou a telemetria do sistema.
 
-Os dados mostraram que noventa e cinco por cento das consultas com falha eram necessidades legitimas de passageiros como despacho de bagagem e check-in. O modelo nao falhou. A arquitetura nao falhou. A logica de negocio simplesmente estava incompleta.
+Os dados mostraram que noventa e cinco por cento das consultas com falha eram necessidades legitimas de passageiros como despacho de bagagem e check-in. O modelo não falhou. A arquitetura não falhou. A lógica de negócio simplesmente estava incompleta.
 
-Correcao: Adicao de um no dedicado de Atendimento ao Cliente. Os erros de roteamento cairam para um por cento.
+Correção: Adição de um no dedicado de Atendimento ao Cliente. Os erros de roteamento caíram para um por cento.
 
-Licao: Observe a telemetria em producao. Construa nos operacionais para a realidade, nao para o seu cenario ideal.
+Lição: Observe a telemetria em produção. Construa nos operacionais para a realidade, não para o seu cenário ideal.
 
-## 3. O Chatbot Nao E o Produto
+## 3. O Chatbot Não E o Produto
 Esta e a minha tese central. 
 
-Um chatbot voltado ao consumidor e apenas uma interface de coleta de dados. Conversas sao baratas. Sinais estruturados sao valiosos.
+Um chatbot voltado ao consumidor e apenas uma interface de coleta de dados. Conversas são baratas. Sinais estruturados são valiosos.
 
-A LATAM percebeu isso. Eles construiram o Compass: um motor interno que recebe registros nao estruturados de conversas, aplica ontologias semanticas estritas e alimenta um Grafo de Conhecimento diretamente no BigQuery. 
+A LATAM percebeu isso. Eles construíram o Compass: um motor interno que recebe registros não estruturados de conversas, aplica ontologias semânticas estritas e alimenta um Grafo de Conhecimento diretamente no BigQuery. 
 
-Quando um passageiro pergunta sobre restaurantes italianos perto do hotel, ele nao esta apenas conversando. Ele esta alimentando uma esteira de dados estruturados com preferencias semanticas.
+Quando um passageiro pergunta sobre restaurantes italianos perto do hotel, ele não esta apenas conversando. Ele esta alimentando uma esteira de dados estruturados com preferências semânticas.
 
-Pare de construir interfaces vazias de texto livre. Use IA como um processador implacavel para transformar ruido em dados estruturados de producao. 
+Pare de construir interfaces vazias de texto livre. Use IA como um processador implacável para transformar ruído em dados estruturados de produção. 
 
-E assim que voce substitui TI legada. E assim que voce expande margens. E assim que voce prova retorno sobre investimento para um CFO.
+E assim que você substitui TI legada. E assim que você expande margens. E assim que você prova retorno sobre investimento para um CFO.
 
-## Recursos Estrategicos e Posts Relacionados
+## Recursos Estratégicos e Posts Relacionados
 - <a href="/blog/pt/post/manifesto/">Por Que Criei a HSN Labs</a>
 - <a href="/blog/pt/post/estudo-caso-cleveland-clinic-agentes-operacionais/">Estudo de Caso: Como a Cleveland Clinic Escalou Fluxo de Pacientes</a>
-- <a href="/blog/pt/post/negociacoes-autonomas-cobranca-contratos/">Operacoes em Alta Velocidade: Negociacao Autonoma, Cobranca e Contratos</a>
+- <a href="/blog/pt/post/negociacoes-autonomas-cobranca-contratos/">Operações em Alta Velocidade: Negociação Autônoma, Cobrança e Contratos</a>
 - <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da HSN Labs</a>
