@@ -52,7 +52,7 @@ for p in posts:
     lines.append('  <article class="blog-row blog-post-item">')
     lines.append('    <div class="blog-row-body">')
     lines.append('      <div class="blog-row-byline">')
-    lines.append('        <img class="blog-row-avatar" src="/blog/assets/images/author/hugo-nascimento.jpg" alt="Hugo S. Nascimento" loading="lazy">')
+    lines.append('        <img class="blog-row-avatar" src="../assets/images/author/hugo-nascimento.jpg" alt="Hugo S. Nascimento" loading="lazy">')
     lines.append('        <h2 class="blog-row-title">')
     lines.append(f'          <a href="/blog/pt/post/{p["slug"]}/">{p["title"]}</a>')
     lines.append('        </h2>')
