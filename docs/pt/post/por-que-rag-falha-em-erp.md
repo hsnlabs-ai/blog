@@ -53,7 +53,7 @@ Busca vetorial não possui noção inerente de sequência temporal. A menos que 
 
 Na HSN Labs, não deixamos modelos de linguagem chutar comandos SQL nem buscar embeddings soltos para achar verdades financeiras. Esta é a arquitetura exata que aplicamos:
 
-* Ontologias de Negócio Pre-Compiladas: Mapeamos o schema corporativo em um grafo de conhecimento explícito que define relacionamentos verificados, caminhos válidos de junção e regras de negócio antes de qualquer consulta rodar.
+* Ontologias de Negócio Pré-Compiladas: Mapeamos o schema corporativo em um grafo de conhecimento explícito que define relacionamentos verificados, caminhos válidos de junção e regras de negócio antes de qualquer consulta rodar.
 * Geração de Consultas com Tipagem Rígida: O agente não cria strings livres de SQL. Ele seleciona templates parametrizados e validados contra schemas estritos em Pydantic. Cada parâmetro e auditado antes de tocar a replica de leitura.
 * Camadas de Invariantes em Código: Quando o banco retorna registros, camadas de asserções em nível de software verificam saldos contábeis, alinhamento de moedas e validade temporal antes que o contexto alcance o usuário ou o sistema seguinte.
 

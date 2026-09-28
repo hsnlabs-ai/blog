@@ -28,10 +28,10 @@ Com o amadurecimento de arquiteturas agênticas baseadas em ontologias de domín
 Quando um pedido de vendas trava no ERP devido a uma inconsistência de alíquota fiscal ou bloqueio de crédito, um agente dotado da ontologia contábil da empresa analisa o erro em milissegundos. Ele inspeciona a tabela de impostos, confronta os dados da transação e aponta a causa exata sem filas de espera de dias.
 
 ### 2. Autocorreção com Trilha de Auditoria
-Em cenários autorizados pelas políticas de segurança, o agente não apenas diagnóstica a falha, mas executa a transação corretiva e notifica o usuário responsável. Todas as etapas ficam registradas em relatórios de auditoria, impedindo violações de integridade.
+Em cenários autorizados pelas políticas de segurança, o agente não apenas diagnostica a falha, mas executa a transação corretiva e notifica o usuário responsável. Todas as etapas ficam registradas em relatórios de auditoria, impedindo violações de integridade.
 
 ### 3. Desbloqueio e Manutenção de Cadastros
-Processos de saneamento de cadastros de fornecedores e ítens, que consumiam semanas de esforço de equipes inteiras, são realizados em segundo plano de forma ininterrupta.
+Processos de saneamento de cadastros de fornecedores e itens, que consumiam semanas de esforço de equipes inteiras, são realizados em segundo plano de forma ininterrupta.
 
 ## A Ruptura Estrutural no Mercado de Consultoria
 

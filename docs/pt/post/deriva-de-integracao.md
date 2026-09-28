@@ -43,7 +43,7 @@ Para um banco PostgreSQL, um endpoint FastAPI ou um barramento de serviços corp
 Na HSN Labs, tratamos prompts em linguagem natural como entradas completamente não confiáveis. Eliminamos a deriva de integração retirando do modelo a responsabilidade sobre o schema:
 
 * Validação Rígida com Schemas Pydantic: Cada saída do modelo e interceptada por um validador estrito de schema antes de tocar a infraestrutura corporativa. Se o tipo de um campo sofrer deriva de um único caractere, o dado e capturado e sanitizado no perímetro.
-* Roteamento Semântico com Executores Parametrizados: Nunca permitimos que modelos gerem código livre ou comandos SQL diretos. O modelo e restrito a classificação de intenção e extração de parâmetros. Trabalhadores isolados de software constroem as cargas reais de API usando templates pre-compilados.
+* Roteamento Semântico com Executores Parametrizados: Nunca permitimos que modelos gerem código livre ou comandos SQL diretos. O modelo e restrito a classificação de intenção e extração de parâmetros. Trabalhadores isolados de software constroem as cargas reais de API usando templates pré-compilados.
 * Travas de Transição de Estados Finitos: Operações agênticas de múltiplas etapas são delimitadas por máquinas de estados finitos. Se uma atualização no modelo levar o agente a sugerir uma transição de estado ilegal, a trava da máquina de estados rejeita a solicitação antes de qualquer escrita no banco.
 
 Garantir estabilidade em produção significa projetar sistemas onde derivas nos modelos não possam corromper sua infraestrutura corporativa central.

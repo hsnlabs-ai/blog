@@ -456,7 +456,7 @@
 <h2 id="o-que-construo-no-lugar-ontologias-executaveis">O Que Construo no Lugar: Ontologias Executáveis</h2>
 <p>Na HSN Labs, não deixamos modelos de linguagem chutar comandos SQL nem buscar embeddings soltos para achar verdades financeiras. Esta é a arquitetura exata que aplicamos:</p>
 <ul>
-<li>Ontologias de Negócio Pre-Compiladas: Mapeamos o schema corporativo em um grafo de conhecimento explícito que define relacionamentos verificados, caminhos válidos de junção e regras de negócio antes de qualquer consulta rodar.</li>
+<li>Ontologias de Negócio Pré-Compiladas: Mapeamos o schema corporativo em um grafo de conhecimento explícito que define relacionamentos verificados, caminhos válidos de junção e regras de negócio antes de qualquer consulta rodar.</li>
 <li>Geração de Consultas com Tipagem Rígida: O agente não cria strings livres de SQL. Ele seleciona templates parametrizados e validados contra schemas estritos em Pydantic. Cada parâmetro e auditado antes de tocar a replica de leitura.</li>
 <li>Camadas de Invariantes em Código: Quando o banco retorna registros, camadas de asserções em nível de software verificam saldos contábeis, alinhamento de moedas e validade temporal antes que o contexto alcance o usuário ou o sistema seguinte.</li>
 </ul>

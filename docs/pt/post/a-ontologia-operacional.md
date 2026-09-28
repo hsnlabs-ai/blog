@@ -37,7 +37,7 @@ Representa os verbos da companhia. São as ferramentas e operações mutáveis q
 
 Sem essa arquitetura, o modelo de linguagem atua como um funcionário recem-contratado que recebe acesso irrestrito ao banco de dados sem nenhum manual de procedimentos. Ele inevitavelmente comete erros graves de interpretação.
 
-Ao operar sobre uma ontologia operacional, o agente recebe um contexto milimetricamente desenhado para sua missão, com todas as regras de negócio pre-compiladas em validadores determinísticos.
+Ao operar sobre uma ontologia operacional, o agente recebe um contexto milimetricamente desenhado para sua missão, com todas as regras de negócio pré-compiladas em validadores determinísticos.
 
 O resultado é software de inteligência artificial confiável, rápido e pronto para operar nos setores mais regulados da economia global.
 
