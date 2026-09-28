@@ -11,9 +11,12 @@ description: Reflexao sobre utilitarismo, desvalorizacao do trabalhador e o impa
 author: Hugo S. Nascimento
 ---
 
-<img src="../../assets/images/posts/kafka/capa-metamorfose.jpg" alt="Capa do livro A Metamorfose de Franz Kafka pela Companhia das Letras" style="width: 100%; max-width: 480px; display: block; margin: 0 auto 2.5rem auto; border: 1px solid #e2e8f0;" />
+<figure style="max-width: 460px; margin: 0 auto 2.5rem auto; text-align: center;">
+  <img src="../../assets/images/posts/kafka/capa-metamorfose.jpg" alt="Capa do livro A Metamorfose de Franz Kafka pela Companhia das Letras" style="width: 100%; display: block; border: 1px solid #e2e8f0;" />
+  <figcaption style="font-size: 0.88rem; color: #64748b; margin-top: 0.6rem; line-height: 1.4;">Capa da edicao brasileira de A Metamorfose de Franz Kafka, traduzida por Modesto Carone para a Companhia das Letras.</figcaption>
+</figure>
 
-*Reading time: 6 minutes. Author: Hugo S. Nascimento.*
+*Reading time: 7 minutes. Author: Hugo S. Nascimento.*
 
 <!-- more -->
 
@@ -21,23 +24,16 @@ author: Hugo S. Nascimento
 
 ---
 
-No dia 26 de setembro de 2026, passei oito horas com vinte profissionais e liderancas de Recursos Humanos no Hub Plural Espinheiro, em Recife. Ao lado de Thays Neri, conduzi o <a href="https://www.sympla.com.br/evento/workshop-rh-depois-da-ia/3549049" target="_blank" rel="noopener">Workshop RH depois da IA</a>, um encontro desenhado para tirar a inteligencia artificial do terreno dos discursos abstratos e coloca-la na pratica real da gestao de pessoas.
+No dia 26 de setembro de 2026, passei oito horas com vinte profissionais e liderancas de Recursos Humanos no Hub Plural Espinheiro, em Recife. Ao lado de Thays Neri, conduzi o <a href="https://www.sympla.com.br/evento/workshop-rh-depois-da-ia/3549049" target="_blank" rel="noopener">Workshop RH depois da IA</a>, um encontro desenhado para tirar a tecnologia das apresentacoes teoricas e coloca-la no centro da operacao de gestao de pessoas.
 
-<img src="../../assets/images/posts/kafka/workshop-rh-recife.jpg" alt="Hugo Nascimento conduzindo atividades no Workshop RH depois da IA em Recife" style="width: 100%; max-width: 720px; display: block; margin: 2rem auto; border: 1px solid #e2e8f0;" />
+<figure style="max-width: 680px; margin: 2rem auto; text-align: center;">
+  <img src="../../assets/images/posts/kafka/workshop-rh-recife.jpg" alt="Hugo Nascimento analisando aplicacao pratica de IA na tela com lideres de RH" style="width: 100%; display: block; border: 1px solid #e2e8f0;" />
+  <figcaption style="font-size: 0.88rem; color: #64748b; margin-top: 0.6rem; line-height: 1.4;">Aplicacao pratica na tela: analisando em conjunto como construir instrucoes com contexto real e avaliar respostas de modelos para processos de selecao e politicas internas.</figcaption>
+</figure>
 
-Passamos o dia construindo comandos estrategicos, desenhando fluxos com agentes autonomos e testando aplicacoes praticas de triagem, comunicacao interna e desenho de processos. Foi uma troca intensa, tecnica e focada no dia a dia corporativo.
+Nao ficamos presos a palestras expositivas. O foco do encontro foi a execucao real. Cada participante abriu seu computador para desenhar comandos com criterios claros, estruturar bases de dados para agentes e testar na pratica onde a inteligencia artificial resolve gargalos de rotina, como analise de perfis de candidatos, comunicacao interna e desenho de processos.
 
-<video controls width="100%" style="max-width: 720px; display: block; margin: 1.5rem auto; border: 1px solid #e2e8f0;">
-  <source src="../../assets/videos/posts/kafka/workshop-video-1.mp4" type="video/mp4">
-  Seu navegador nao suporta reproducao de video.
-</video>
-
-<video controls width="100%" style="max-width: 720px; display: block; margin: 1.5rem auto; border: 1px solid #e2e8f0;">
-  <source src="../../assets/videos/posts/kafka/workshop-video-2.mp4" type="video/mp4">
-  Seu navegador nao suporta reproducao de video.
-</video>
-
-Mas, em um dado momento da tarde, a conversa inevitavelmente ultrapassou o teclado. Quando olhamos para a velocidade com que agentes digitais realizam rotinas inteiras em segundos, surgiu a pergunta central: o que acontece com a sociedade quando parte relevante das pessoas nao for mais demandada em regime tradicional de quarenta horas semanais?
+Mas, em um dado momento da tarde, a conversa inevitavelmente ultrapassou o teclado. Quando olhamos para a velocidade com que agentes digitais realizam fluxos inteiros em questao de segundos, surgiu a pergunta central: o que acontece com a sociedade quando parte relevante das pessoas nao for mais demandada em regime tradicional de quarenta horas semanais?
 
 Falamos sobre Renda Basica Universal, sobre economia pos-trabalho e sobre a identidade de quem trabalha. Naquele instante, lembrei de um livro lancado em 1915: *A Metamorfose*, de Franz Kafka. O silencio que se instalou na sala mostrou que aquela inquietacao nao era so minha. Sai de la com a urgencia de organizar essa reflexao por escrito.
 
@@ -64,6 +60,16 @@ O problema acontece quando o ambiente economico adota o utilitarismo de forma ra
 O primeiro e o **valor instrumental**. E o valor de uso, de ferramenta. Uma caneta so tem valor enquanto tem tinta para escrever. Um trator so tem valor enquanto ara a terra. Na dinamica corporativa, o trabalhador e frequentemente medido por esse prisma: pelo relatorio concluido, pelo numero de candidatos triados, pela folha rodada ou pela receita faturada no trimestre.
 
 O segundo e o **valor intrinseco**. E a ideia de que o ser humano tem dignidade e relevancia simplesmente por existir. A vida de uma pessoa importa por si so, sem precisar justificar sua presenca no planeta atraves de um demonstrativo de resultados.
+
+<figure style="max-width: 680px; margin: 2rem auto; text-align: center;">
+  <video controls width="100%" style="display: block; border: 1px solid #e2e8f0;">
+    <source src="../../assets/videos/posts/kafka/workshop-video-1.mp4" type="video/mp4">
+    Seu navegador nao suporta reproducao de video.
+  </video>
+  <figcaption style="font-size: 0.88rem; color: #64748b; margin-top: 0.6rem; line-height: 1.4;">Mentoria individual na bancada: alinhando o olhar critico do profissional para nao terceirizar o pensamento proprio, ajustando a intencionalidade de cada interacao com o modelo.</figcaption>
+</figure>
+
+Essa distincao ficou evidente nas mentorias individuais durante o workshop. Quando mostramos aos profissionais que os agentes podem gerar respostas completas em segundos, o primeiro instinto de alguns foi pensar em reducao de esforco. Mas logo em seguida veio o estalo: sem a intervencao critica do profissional para julgar contexto, empatia e adequacao humana, a ferramenta entrega apenas uma media estatistica esteril.
 
 A tragedia kafkiana de Gregor Samsa e fruto direto do utilitarismo aplicado a carne humana. Enquanto era capaz de viajar, carregar mostruarios de tecidos e pagar o aluguel da familia, Gregor recebia cuidado e consideracao. No momento em que seu corpo perde a utilidade instrumental de gerar salario, ele e sumariamente desprovido de valor intrinseco. Vira um dejeto domiciliar.
 
@@ -92,6 +98,16 @@ Quando o trabalho remunerado deixa de ser o alicerce organizador do tempo e da i
 Quem atua no ecossistema de inteligencia artificial ja percebeu que nao estamos diante de robos industriais que apenas substituem esforco bracal. Os agentes de IA navegam interfaces, executam chamadas de sistemas, interpretam documentos, criam pareceres e coordenam tarefas de ponta a ponta com custo marginal irrisorio.
 
 Nas forcas de trabalho hibridas que ja operam no mercado, pessoas e agentes digitais dividem os mesmos canais de comunicacao corporativa. O agente resolve o caso em dez segundos sem cansaco, sem ferias e sem atrito emocional.
+
+<figure style="max-width: 680px; margin: 2rem auto; text-align: center;">
+  <video controls width="100%" style="display: block; border: 1px solid #e2e8f0;">
+    <source src="../../assets/videos/posts/kafka/workshop-video-2.mp4" type="video/mp4">
+    Seu navegador nao suporta reproducao de video.
+  </video>
+  <figcaption style="font-size: 0.88rem; color: #64748b; margin-top: 0.6rem; line-height: 1.4;">Mesa redonda: participantes em pe debatendo abertamente o impacto da automacao, o receio da substituicao nas equipes e o novo papel estrategico das liderancas de gestao de pessoas.</figcaption>
+</figure>
+
+Essa discussao coletiva aconteceu no momento mais rico do nosso treinamento: organizamos uma dinâmica em pé, em formato de mesa redonda, onde os gestores puderam desabafar e mapear as impressoes dos seus times. O relato comum foi o receio generalizado dos colaboradores em relação à velocidade das mudanças. 
 
 Aqui surge a encruzilhada para o RH e para a lideranca: se a regua da empresa continuar sendo estritamente utilitarista, quem trabalha lado a lado com agentes autonomos sera empurrado para a ansiedade permanente de se sentir superado. O colaborador passa a temer acordar transformado no Gregor Samsa da equipe: alguem cuja entrega tecnica foi barateada e desidratada pela maquina.
 

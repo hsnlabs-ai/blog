@@ -159,6 +159,116 @@
             ]
         },
         {
+            "id": "https://hsnlabs.ai/blog/post/how-to-build-an-enterprise-ontology-from-scratch/",
+            "url": "https://hsnlabs.ai/blog/post/how-to-build-an-enterprise-ontology-from-scratch/",
+            "title": "How to Build an Enterprise Ontology from Scratch: The Complete Architectural Blueprint",
+            "content_html": "The complete step-by-step engineering blueprint to build and deploy an operational business ontology for autonomous AI agents in enterprise production.",
+            "image": null,
+            "date_modified": "2026-09-27T00:00:00+00:00",
+            "date_published": "2026-09-27T00:00:00+00:00",
+            "authors": [
+                {
+                    "name": "Hugo S. Nascimento"
+                }
+            ],
+            "tags": [
+                "Agent Development Life Cycle",
+                "architecture",
+                "enterprise",
+                "mcp",
+                "ontology",
+                "python"
+            ]
+        },
+        {
+            "id": "https://hsnlabs.ai/blog/post/ontology-vs-database-schema/",
+            "url": "https://hsnlabs.ai/blog/post/ontology-vs-database-schema/",
+            "title": "Ontology vs. Database Schema: Why Relational Tables and Vector Stores Fall Short for AI",
+            "content_html": "Why raw SQL schemas and vector stores fail autonomous AI agents: the limits of text-to-SQL, semantic ambiguity, and how ontologies provide deterministic operational boundaries.",
+            "image": null,
+            "date_modified": "2026-09-27T00:00:00+00:00",
+            "date_published": "2026-09-27T00:00:00+00:00",
+            "authors": [
+                {
+                    "name": "Hugo S. Nascimento"
+                }
+            ],
+            "tags": [
+                "Why Agents Fail",
+                "ai-failures",
+                "database",
+                "ontology",
+                "sql",
+                "vector-database"
+            ]
+        },
+        {
+            "id": "https://hsnlabs.ai/blog/post/ontology-vs-knowledge-graph/",
+            "url": "https://hsnlabs.ai/blog/post/ontology-vs-knowledge-graph/",
+            "title": "Ontology vs. Knowledge Graph: Key Differences, Architecture, and Enterprise Applications",
+            "content_html": "The architectural distinction between ontologies and knowledge graphs in enterprise AI systems: schemas versus instances, preventing graph drift, and building hybrid neuro-symbolic stacks.",
+            "image": null,
+            "date_modified": "2026-09-27T00:00:00+00:00",
+            "date_published": "2026-09-27T00:00:00+00:00",
+            "authors": [
+                {
+                    "name": "Hugo S. Nascimento"
+                }
+            ],
+            "tags": [
+                "Agent Development Life Cycle",
+                "architecture",
+                "data-engineering",
+                "enterprise",
+                "knowledge-graph",
+                "ontology"
+            ]
+        },
+        {
+            "id": "https://hsnlabs.ai/blog/post/the-operational-ontology/",
+            "url": "https://hsnlabs.ai/blog/post/the-operational-ontology/",
+            "title": "The Operational Ontology: How Enterprises Connect Data, Business Rules, and Autonomous Actions",
+            "content_html": "The core architecture of executable business ontologies: moving from static documentation to kinetic action engines, Palantir AIP mechanics, and deploying production MCP harnesses.",
+            "image": null,
+            "date_modified": "2026-09-27T00:00:00+00:00",
+            "date_published": "2026-09-27T00:00:00+00:00",
+            "authors": [
+                {
+                    "name": "Hugo S. Nascimento"
+                }
+            ],
+            "tags": [
+                "Agent Development Life Cycle",
+                "ai-agents",
+                "architecture",
+                "mcp",
+                "ontology",
+                "operational-ontology"
+            ]
+        },
+        {
+            "id": "https://hsnlabs.ai/blog/post/what-is-an-ontology-for-ai-agents/",
+            "url": "https://hsnlabs.ai/blog/post/what-is-an-ontology-for-ai-agents/",
+            "title": "What Is an Ontology for AI Agents? The Definitive Guide",
+            "content_html": "The complete guide to operational ontologies for enterprise AI agents: why prompt-based systems fail, how to map business invariants into executable code, and how to govern autonomous actions.",
+            "image": null,
+            "date_modified": "2026-09-27T00:00:00+00:00",
+            "date_published": "2026-09-27T00:00:00+00:00",
+            "authors": [
+                {
+                    "name": "Hugo S. Nascimento"
+                }
+            ],
+            "tags": [
+                "Why Agents Fail",
+                "ai-agents",
+                "architecture",
+                "deterministic-ai",
+                "enterprise",
+                "ontology"
+            ]
+        },
+        {
             "id": "https://hsnlabs.ai/blog/post/c-suite-margin-protection-playbook/",
             "url": "https://hsnlabs.ai/blog/post/c-suite-margin-protection-playbook/",
             "title": "The C-Suite Transition Playbook: Protecting Margins in the Agentic Economy",
@@ -316,106 +426,6 @@
                 "ai-failures",
                 "case-studies",
                 "poc"
-            ]
-        },
-        {
-            "id": "https://hsnlabs.ai/blog/post/perimeter-isolation-mcp-data-contracts/",
-            "url": "https://hsnlabs.ai/blog/post/perimeter-isolation-mcp-data-contracts/",
-            "title": "How We Protect Enterprise Databases from AI Agents",
-            "content_html": "Architectural patterns for perimeter isolation, context contracts, and cryptographic access boundaries shielding enterprise data from AI agents.",
-            "image": null,
-            "date_modified": "2026-08-26T00:00:00+00:00",
-            "date_published": "2026-08-26T00:00:00+00:00",
-            "authors": [
-                {
-                    "name": "Hugo S. Nascimento"
-                }
-            ],
-            "tags": [
-                "Agent Development Life Cycle",
-                "architecture",
-                "data-contracts",
-                "mcp"
-            ]
-        },
-        {
-            "id": "https://hsnlabs.ai/blog/post/latam-airlines-case-study/",
-            "url": "https://hsnlabs.ai/blog/post/latam-airlines-case-study/",
-            "title": "LATAM Airlines: Production Agents in a 3% Margin Business",
-            "content_html": "Field post-mortem on deploying resilient enterprise agents in low-margin, high-throughput commercial aviation operations.",
-            "image": null,
-            "date_modified": "2026-08-21T00:00:00+00:00",
-            "date_published": "2026-08-21T00:00:00+00:00",
-            "authors": [
-                {
-                    "name": "Hugo S. Nascimento"
-                }
-            ],
-            "tags": [
-                "Case Studies",
-                "case-studies",
-                "latam-airlines",
-                "production"
-            ]
-        },
-        {
-            "id": "https://hsnlabs.ai/blog/post/llm-as-judge-fallacy/",
-            "url": "https://hsnlabs.ai/blog/post/llm-as-judge-fallacy/",
-            "title": "Why LLM-as-a-Judge Fails in Banking",
-            "content_html": "Structural vulnerabilities and compliance liabilities of relying on stochastic LLM evaluators to audit critical financial decisions.",
-            "image": null,
-            "date_modified": "2026-08-18T00:00:00+00:00",
-            "date_published": "2026-08-18T00:00:00+00:00",
-            "authors": [
-                {
-                    "name": "Hugo S. Nascimento"
-                }
-            ],
-            "tags": [
-                "Why Agents Fail",
-                "architecture",
-                "audit",
-                "llm-judge"
-            ]
-        },
-        {
-            "id": "https://hsnlabs.ai/blog/post/unconstrained-agents-finite-state-machines/",
-            "url": "https://hsnlabs.ai/blog/post/unconstrained-agents-finite-state-machines/",
-            "title": "Case Study: 42 Calls in a Loop at 2 AM",
-            "content_html": "Emergency incident audit and architectural remedy for unbounded agent API loops through finite state machines.",
-            "image": null,
-            "date_modified": "2026-08-12T00:00:00+00:00",
-            "date_published": "2026-08-12T00:00:00+00:00",
-            "authors": [
-                {
-                    "name": "Hugo S. Nascimento"
-                }
-            ],
-            "tags": [
-                "Case Studies",
-                "api-loops",
-                "case-studies",
-                "production"
-            ]
-        },
-        {
-            "id": "https://hsnlabs.ai/blog/post/why-rag-breaks-on-erp/",
-            "url": "https://hsnlabs.ai/blog/post/why-rag-breaks-on-erp/",
-            "title": "Why I Never Use Normal RAG on Financial ERPs",
-            "content_html": "Why vector similarity retrieval corrupts arithmetic precision and ledger integrity in enterprise financial ERPs.",
-            "image": null,
-            "date_modified": "2026-08-07T00:00:00+00:00",
-            "date_published": "2026-08-07T00:00:00+00:00",
-            "authors": [
-                {
-                    "name": "Hugo S. Nascimento"
-                }
-            ],
-            "tags": [
-                "Why Agents Fail",
-                "architecture",
-                "erp",
-                "rag"
             ]
         }
     ]

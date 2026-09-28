@@ -13,8 +13,8 @@
     <language>en</language>
 
     
-    <pubDate>Mon, 28 Sep 2026 11:42:11 -0000</pubDate>
-    <lastBuildDate>Mon, 28 Sep 2026 11:42:11 -0000</lastBuildDate>
+    <pubDate>Mon, 28 Sep 2026 12:16:37 -0000</pubDate>
+    <lastBuildDate>Mon, 28 Sep 2026 12:16:37 -0000</lastBuildDate>
     <ttl>1440</ttl>
 
     
@@ -247,6 +247,171 @@
     </item>
     
     <item>
+      <title>How to Build an Enterprise Ontology from Scratch: The Complete Architectural Blueprint</title>
+      
+      
+        
+      <author>Hugo S. Nascimento</author>
+        
+      
+      
+      
+        
+      <category>Agent Development Life Cycle</category>
+        
+      <category>architecture</category>
+        
+      <category>enterprise</category>
+        
+      <category>mcp</category>
+        
+      <category>ontology</category>
+        
+      <category>python</category>
+        
+      
+      <description>The complete step-by-step engineering blueprint to build and deploy an operational business ontology for autonomous AI agents in enterprise production.</description>
+      <link>https://hsnlabs.ai/blog/post/how-to-build-an-enterprise-ontology-from-scratch/</link>
+      <pubDate>Sun, 27 Sep 2026 00:00:00 +0000</pubDate>
+      <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
+      
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/post/how-to-build-an-enterprise-ontology-from-scratch/</guid>
+      
+    </item>
+    
+    <item>
+      <title>Ontology vs. Database Schema: Why Relational Tables and Vector Stores Fall Short for AI</title>
+      
+      
+        
+      <author>Hugo S. Nascimento</author>
+        
+      
+      
+      
+        
+      <category>Why Agents Fail</category>
+        
+      <category>ai-failures</category>
+        
+      <category>database</category>
+        
+      <category>ontology</category>
+        
+      <category>sql</category>
+        
+      <category>vector-database</category>
+        
+      
+      <description>Why raw SQL schemas and vector stores fail autonomous AI agents: the limits of text-to-SQL, semantic ambiguity, and how ontologies provide deterministic operational boundaries.</description>
+      <link>https://hsnlabs.ai/blog/post/ontology-vs-database-schema/</link>
+      <pubDate>Sun, 27 Sep 2026 00:00:00 +0000</pubDate>
+      <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
+      
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/post/ontology-vs-database-schema/</guid>
+      
+    </item>
+    
+    <item>
+      <title>Ontology vs. Knowledge Graph: Key Differences, Architecture, and Enterprise Applications</title>
+      
+      
+        
+      <author>Hugo S. Nascimento</author>
+        
+      
+      
+      
+        
+      <category>Agent Development Life Cycle</category>
+        
+      <category>architecture</category>
+        
+      <category>data-engineering</category>
+        
+      <category>enterprise</category>
+        
+      <category>knowledge-graph</category>
+        
+      <category>ontology</category>
+        
+      
+      <description>The architectural distinction between ontologies and knowledge graphs in enterprise AI systems: schemas versus instances, preventing graph drift, and building hybrid neuro-symbolic stacks.</description>
+      <link>https://hsnlabs.ai/blog/post/ontology-vs-knowledge-graph/</link>
+      <pubDate>Sun, 27 Sep 2026 00:00:00 +0000</pubDate>
+      <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
+      
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/post/ontology-vs-knowledge-graph/</guid>
+      
+    </item>
+    
+    <item>
+      <title>The Operational Ontology: How Enterprises Connect Data, Business Rules, and Autonomous Actions</title>
+      
+      
+        
+      <author>Hugo S. Nascimento</author>
+        
+      
+      
+      
+        
+      <category>Agent Development Life Cycle</category>
+        
+      <category>ai-agents</category>
+        
+      <category>architecture</category>
+        
+      <category>mcp</category>
+        
+      <category>ontology</category>
+        
+      <category>operational-ontology</category>
+        
+      
+      <description>The core architecture of executable business ontologies: moving from static documentation to kinetic action engines, Palantir AIP mechanics, and deploying production MCP harnesses.</description>
+      <link>https://hsnlabs.ai/blog/post/the-operational-ontology/</link>
+      <pubDate>Sun, 27 Sep 2026 00:00:00 +0000</pubDate>
+      <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
+      
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/post/the-operational-ontology/</guid>
+      
+    </item>
+    
+    <item>
+      <title>What Is an Ontology for AI Agents? The Definitive Guide</title>
+      
+      
+        
+      <author>Hugo S. Nascimento</author>
+        
+      
+      
+      
+        
+      <category>Why Agents Fail</category>
+        
+      <category>ai-agents</category>
+        
+      <category>architecture</category>
+        
+      <category>deterministic-ai</category>
+        
+      <category>enterprise</category>
+        
+      <category>ontology</category>
+        
+      
+      <description>The complete guide to operational ontologies for enterprise AI agents: why prompt-based systems fail, how to map business invariants into executable code, and how to govern autonomous actions.</description>
+      <link>https://hsnlabs.ai/blog/post/what-is-an-ontology-for-ai-agents/</link>
+      <pubDate>Sun, 27 Sep 2026 00:00:00 +0000</pubDate>
+      <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
+      
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/post/what-is-an-ontology-for-ai-agents/</guid>
+      
+    </item>
+    
+    <item>
       <title>The C-Suite Transition Playbook: Protecting Margins in the Agentic Economy</title>
       
       
@@ -475,151 +640,6 @@
       <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
       
       <guid isPermaLink="true">https://hsnlabs.ai/blog/post/the-poc-graveyard/</guid>
-      
-    </item>
-    
-    <item>
-      <title>How We Protect Enterprise Databases from AI Agents</title>
-      
-      
-        
-      <author>Hugo S. Nascimento</author>
-        
-      
-      
-      
-        
-      <category>Agent Development Life Cycle</category>
-        
-      <category>architecture</category>
-        
-      <category>data-contracts</category>
-        
-      <category>mcp</category>
-        
-      
-      <description>Architectural patterns for perimeter isolation, context contracts, and cryptographic access boundaries shielding enterprise data from AI agents.</description>
-      <link>https://hsnlabs.ai/blog/post/perimeter-isolation-mcp-data-contracts/</link>
-      <pubDate>Wed, 26 Aug 2026 00:00:00 +0000</pubDate>
-      <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
-      
-      <guid isPermaLink="true">https://hsnlabs.ai/blog/post/perimeter-isolation-mcp-data-contracts/</guid>
-      
-    </item>
-    
-    <item>
-      <title>LATAM Airlines: Production Agents in a 3% Margin Business</title>
-      
-      
-        
-      <author>Hugo S. Nascimento</author>
-        
-      
-      
-      
-        
-      <category>Case Studies</category>
-        
-      <category>case-studies</category>
-        
-      <category>latam-airlines</category>
-        
-      <category>production</category>
-        
-      
-      <description>Field post-mortem on deploying resilient enterprise agents in low-margin, high-throughput commercial aviation operations.</description>
-      <link>https://hsnlabs.ai/blog/post/latam-airlines-case-study/</link>
-      <pubDate>Fri, 21 Aug 2026 00:00:00 +0000</pubDate>
-      <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
-      
-      <guid isPermaLink="true">https://hsnlabs.ai/blog/post/latam-airlines-case-study/</guid>
-      
-    </item>
-    
-    <item>
-      <title>Why LLM-as-a-Judge Fails in Banking</title>
-      
-      
-        
-      <author>Hugo S. Nascimento</author>
-        
-      
-      
-      
-        
-      <category>Why Agents Fail</category>
-        
-      <category>architecture</category>
-        
-      <category>audit</category>
-        
-      <category>llm-judge</category>
-        
-      
-      <description>Structural vulnerabilities and compliance liabilities of relying on stochastic LLM evaluators to audit critical financial decisions.</description>
-      <link>https://hsnlabs.ai/blog/post/llm-as-judge-fallacy/</link>
-      <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
-      <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
-      
-      <guid isPermaLink="true">https://hsnlabs.ai/blog/post/llm-as-judge-fallacy/</guid>
-      
-    </item>
-    
-    <item>
-      <title>Case Study: 42 Calls in a Loop at 2 AM</title>
-      
-      
-        
-      <author>Hugo S. Nascimento</author>
-        
-      
-      
-      
-        
-      <category>Case Studies</category>
-        
-      <category>api-loops</category>
-        
-      <category>case-studies</category>
-        
-      <category>production</category>
-        
-      
-      <description>Emergency incident audit and architectural remedy for unbounded agent API loops through finite state machines.</description>
-      <link>https://hsnlabs.ai/blog/post/unconstrained-agents-finite-state-machines/</link>
-      <pubDate>Wed, 12 Aug 2026 00:00:00 +0000</pubDate>
-      <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
-      
-      <guid isPermaLink="true">https://hsnlabs.ai/blog/post/unconstrained-agents-finite-state-machines/</guid>
-      
-    </item>
-    
-    <item>
-      <title>Why I Never Use Normal RAG on Financial ERPs</title>
-      
-      
-        
-      <author>Hugo S. Nascimento</author>
-        
-      
-      
-      
-        
-      <category>Why Agents Fail</category>
-        
-      <category>architecture</category>
-        
-      <category>erp</category>
-        
-      <category>rag</category>
-        
-      
-      <description>Why vector similarity retrieval corrupts arithmetic precision and ledger integrity in enterprise financial ERPs.</description>
-      <link>https://hsnlabs.ai/blog/post/why-rag-breaks-on-erp/</link>
-      <pubDate>Fri, 07 Aug 2026 00:00:00 +0000</pubDate>
-      <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
-      
-      <guid isPermaLink="true">https://hsnlabs.ai/blog/post/why-rag-breaks-on-erp/</guid>
       
     </item>
     

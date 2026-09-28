@@ -53,6 +53,10 @@
          <lastmod>2026-09-28</lastmod>
     </url>
     <url>
+         <loc>https://hsnlabs.ai/blog/post/how-to-build-an-enterprise-ontology-from-scratch/</loc>
+         <lastmod>2026-09-28</lastmod>
+    </url>
+    <url>
          <loc>https://hsnlabs.ai/blog/post/how-to-build-operational-ontology-python-mcp/</loc>
          <lastmod>2026-09-28</lastmod>
     </url>
@@ -81,6 +85,14 @@
          <lastmod>2026-09-28</lastmod>
     </url>
     <url>
+         <loc>https://hsnlabs.ai/blog/post/ontology-vs-database-schema/</loc>
+         <lastmod>2026-09-28</lastmod>
+    </url>
+    <url>
+         <loc>https://hsnlabs.ai/blog/post/ontology-vs-knowledge-graph/</loc>
+         <lastmod>2026-09-28</lastmod>
+    </url>
+    <url>
          <loc>https://hsnlabs.ai/blog/post/palantir-aip-bootcamp-operational-ontology/</loc>
          <lastmod>2026-09-28</lastmod>
     </url>
@@ -101,11 +113,19 @@
          <lastmod>2026-09-28</lastmod>
     </url>
     <url>
+         <loc>https://hsnlabs.ai/blog/post/the-operational-ontology/</loc>
+         <lastmod>2026-09-28</lastmod>
+    </url>
+    <url>
          <loc>https://hsnlabs.ai/blog/post/the-poc-graveyard/</loc>
          <lastmod>2026-09-28</lastmod>
     </url>
     <url>
          <loc>https://hsnlabs.ai/blog/post/unconstrained-agents-finite-state-machines/</loc>
+         <lastmod>2026-09-28</lastmod>
+    </url>
+    <url>
+         <loc>https://hsnlabs.ai/blog/post/what-is-an-ontology-for-ai-agents/</loc>
          <lastmod>2026-09-28</lastmod>
     </url>
     <url>
@@ -189,6 +209,54 @@
          <lastmod>2026-09-28</lastmod>
     </url>
     <url>
+         <loc>https://hsnlabs.ai/blog/tag/ontology/</loc>
+         <lastmod>2026-09-28</lastmod>
+    </url>
+    <url>
+         <loc>https://hsnlabs.ai/blog/tag/enterprise/</loc>
+         <lastmod>2026-09-28</lastmod>
+    </url>
+    <url>
+         <loc>https://hsnlabs.ai/blog/tag/mcp/</loc>
+         <lastmod>2026-09-28</lastmod>
+    </url>
+    <url>
+         <loc>https://hsnlabs.ai/blog/tag/python/</loc>
+         <lastmod>2026-09-28</lastmod>
+    </url>
+    <url>
+         <loc>https://hsnlabs.ai/blog/tag/database/</loc>
+         <lastmod>2026-09-28</lastmod>
+    </url>
+    <url>
+         <loc>https://hsnlabs.ai/blog/tag/sql/</loc>
+         <lastmod>2026-09-28</lastmod>
+    </url>
+    <url>
+         <loc>https://hsnlabs.ai/blog/tag/vector-database/</loc>
+         <lastmod>2026-09-28</lastmod>
+    </url>
+    <url>
+         <loc>https://hsnlabs.ai/blog/tag/knowledge-graph/</loc>
+         <lastmod>2026-09-28</lastmod>
+    </url>
+    <url>
+         <loc>https://hsnlabs.ai/blog/tag/data-engineering/</loc>
+         <lastmod>2026-09-28</lastmod>
+    </url>
+    <url>
+         <loc>https://hsnlabs.ai/blog/tag/operational-ontology/</loc>
+         <lastmod>2026-09-28</lastmod>
+    </url>
+    <url>
+         <loc>https://hsnlabs.ai/blog/tag/ai-agents/</loc>
+         <lastmod>2026-09-28</lastmod>
+    </url>
+    <url>
+         <loc>https://hsnlabs.ai/blog/tag/deterministic-ai/</loc>
+         <lastmod>2026-09-28</lastmod>
+    </url>
+    <url>
          <loc>https://hsnlabs.ai/blog/tag/c-suite/</loc>
          <lastmod>2026-09-28</lastmod>
     </url>
@@ -238,10 +306,6 @@
     </url>
     <url>
          <loc>https://hsnlabs.ai/blog/tag/poc/</loc>
-         <lastmod>2026-09-28</lastmod>
-    </url>
-    <url>
-         <loc>https://hsnlabs.ai/blog/tag/mcp/</loc>
          <lastmod>2026-09-28</lastmod>
     </url>
     <url>

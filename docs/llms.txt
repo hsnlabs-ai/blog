@@ -59,6 +59,11 @@ Technical essays, case studies, and post-mortems on enterprise agent architectur
 - The Real TCO of Palantir: The Dollar Barrier and Modern Open Alternatives: https://hsnlabs.ai/blog/post/palantir-pricing-tco-and-open-alternatives/
 - Case Study: How Cleveland Clinic Scaled Patient Flow Across 6,600 Hospital Beds: https://hsnlabs.ai/blog/post/cleveland-clinic-case-study-operational-agents/
 - How to Build an Operational Business Ontology in Python with Pydantic and MCP: https://hsnlabs.ai/blog/post/how-to-build-operational-ontology-python-mcp/
+- What Is an Ontology for AI Agents? The Definitive Guide: https://hsnlabs.ai/blog/post/what-is-an-ontology-for-ai-agents/
+- Ontology vs. Knowledge Graph: Key Differences, Architecture, and Enterprise Applications: https://hsnlabs.ai/blog/post/ontology-vs-knowledge-graph/
+- The Operational Ontology: How Enterprises Connect Data, Business Rules, and Autonomous Actions: https://hsnlabs.ai/blog/post/the-operational-ontology/
+- Ontology vs. Database Schema: Why Relational Tables and Vector Stores Fall Short for AI: https://hsnlabs.ai/blog/post/ontology-vs-database-schema/
+- How to Build an Enterprise Ontology from Scratch: The Complete Architectural Blueprint: https://hsnlabs.ai/blog/post/how-to-build-an-enterprise-ontology-from-scratch/
 - De 1915 a era da IA: Kafka, utilitarismo e o valor de quem trabalha: https://hsnlabs.ai/blog/post/kafka-metamorfose-ia-futuro-do-trabalho/
 
 ## Feeds & Machine Readability
