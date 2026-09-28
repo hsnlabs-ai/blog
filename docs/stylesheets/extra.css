@@ -884,8 +884,32 @@ code, kbd, pre, samp {
   }
 }
 
-@media (max-width: 992px) {
-  .blog-header-menu {
+/* ==========================================================
+   AUTHOR PROFILE HERO PHOTO
+   ========================================================== */
+.author-photo {
+  float: right;
+  width: 200px;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border: 1px solid var(--hairline);
+  border-radius: 0 !important;
+  margin: 0.2rem 0 1.25rem 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  display: block;
+}
+
+@media (max-width: 640px) {
+  .author-photo {
+    float: none;
+    display: block;
+    width: 150px;
+    margin: 0 0 1.25rem 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .blog-header-cta {
     display: none;
   }
 }

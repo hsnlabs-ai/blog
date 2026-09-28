@@ -13,8 +13,8 @@
     <language>en</language>
 
     
-    <pubDate>Mon, 28 Sep 2026 12:50:47 -0000</pubDate>
-    <lastBuildDate>Mon, 28 Sep 2026 12:50:47 -0000</lastBuildDate>
+    <pubDate>Mon, 28 Sep 2026 13:12:32 -0000</pubDate>
+    <lastBuildDate>Mon, 28 Sep 2026 13:12:32 -0000</lastBuildDate>
     <ttl>1440</ttl>
 
     
@@ -122,6 +122,8 @@
       
       <guid isPermaLink="true">https://hsnlabs.ai/blog/post/kafka-metamorfose-ia-futuro-do-trabalho/</guid>
       
+      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/kafka/capa-metamorfose.jpg" type="image/jpeg" length="None" />
+      
     </item>
     
     <item>
@@ -152,6 +154,8 @@
       <source url="https://hsnlabs.ai/blog/feed_rss_updated.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
       
       <guid isPermaLink="true">https://hsnlabs.ai/blog/post/palantir-aip-bootcamp-operational-ontology/</guid>
+      
+      <enclosure url="https://hsnlabs.ai/blog/assets/diagrams/palantir-aip-architecture-pt.png" type="image/png" length="None" />
       
     </item>
     
@@ -375,6 +379,8 @@
       <source url="https://hsnlabs.ai/blog/feed_rss_updated.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
       
       <guid isPermaLink="true">https://hsnlabs.ai/blog/post/the-operational-ontology/</guid>
+      
+      <enclosure url="https://hsnlabs.ai/blog/assets/diagrams/hsn-agent-architecture.png" type="image/png" length="None" />
       
     </item>
     

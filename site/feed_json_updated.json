@@ -59,7 +59,7 @@
             "url": "https://hsnlabs.ai/blog/post/kafka-metamorfose-ia-futuro-do-trabalho/",
             "title": "De 1915 \u00e0 Era da IA: Kafka, utilitarismo e o valor de quem trabalha",
             "content_html": "Reflex\u00e3o sobre utilitarismo, desvaloriza\u00e7\u00e3o do trabalhador e o impacto de agentes de IA a partir de A Metamorfose de Franz Kafka.",
-            "image": null,
+            "image": "https://hsnlabs.ai/blog/assets/images/posts/kafka/capa-metamorfose.jpg",
             "date_modified": "2026-09-28T00:00:00+00:00",
             "date_published": "2026-09-28T00:00:00+00:00",
             "authors": [
@@ -80,7 +80,7 @@
             "url": "https://hsnlabs.ai/blog/post/palantir-aip-bootcamp-operational-ontology/",
             "title": "The Architecture of Palantir AIP: Why Enterprise Agents Fail Without an Operational Ontology",
             "content_html": "How Palantir AIP bootcamps compressed 9-month sales cycles into 5-day deployments by binding LLMs to operational ontologies instead of raw prompts.",
-            "image": null,
+            "image": "https://hsnlabs.ai/blog/assets/diagrams/palantir-aip-architecture-pt.png",
             "date_modified": "2026-09-28T00:00:00+00:00",
             "date_published": "2026-09-28T00:00:00+00:00",
             "authors": [
@@ -229,7 +229,7 @@
             "url": "https://hsnlabs.ai/blog/post/the-operational-ontology/",
             "title": "The Operational Ontology: How Enterprises Connect Data, Business Rules, and Autonomous Actions",
             "content_html": "The core architecture of executable business ontologies: moving from static documentation to kinetic action engines, Palantir AIP mechanics, and deploying production MCP harnesses.",
-            "image": null,
+            "image": "https://hsnlabs.ai/blog/assets/diagrams/hsn-agent-architecture.png",
             "date_modified": "2026-09-27T00:00:00+00:00",
             "date_published": "2026-09-27T00:00:00+00:00",
             "authors": [

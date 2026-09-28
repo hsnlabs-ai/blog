@@ -10,6 +10,8 @@ blog_sidebar:
 
 # Hugo S. Nascimento
 
+<img src="assets/images/author/hugo-nascimento.jpg" alt="Hugo S. Nascimento" class="author-photo" width="200" height="250" loading="eager" />
+
 I am CPTO at Eva People and Founder & Managing Partner at HSN Labs. 3x venture-backed founder, engineer, and investor.
 
 My operational focus is **Enterprise Agent Architecture**. I build custom multi-agent architectures on executable domain ontologies for mission-critical enterprise operations. I replace fragile human BPO operations and legacy IT bottlenecks with autonomous digital workforces that do not hallucinate or fail in production.

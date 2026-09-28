@@ -12,18 +12,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    {% if page and page.is_homepage %}
-    <meta name="description" content="{{ config['site_description'] }}">{% endif %}
-    {% if page and page.canonical_url %}
-    <link rel="canonical" href="{{ page.canonical_url }}">{% endif %}
-    {% if config.site_author %}
-    <meta name="author" content="{{ config.site_author }}">{% endif %}
-
-    {% if config.theme.favicon %}
-    <link rel="icon" type="image/x-icon" href="{{ config.theme.favicon|url }}">
-    {% else %}
-    <link rel="icon" type="image/x-icon" href="{{ 'assets/img/favicon.ico'|url }}">
-    {% endif %}
+    <link rel="icon" type="image/x-icon" href="{{ 'assets/brand/favicons/favicon.ico'|url }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ 'assets/brand/favicons/apple-touch-icon.png'|url }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ 'assets/brand/favicons/favicon-32x32.png'|url }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ 'assets/brand/favicons/favicon-16x16.png'|url }}">
+    <meta name="theme-color" content="#52B4FD">
 
     {%- if config.theme.highlightjs %}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
@@ -38,37 +31,68 @@
     {%- endblock %}
 
     {%- block extrahead %}
-    {% if page and page.meta %}
-    {% if page.meta.title %}
-    <meta name="title" content="{{ page.meta.title }}">
-    <meta property="og:title" content="{{ page.meta.title }}">
-    <meta name="twitter:title" content="{{ page.meta.title }}">
-    {% endif %}
-    {% if page.meta.description %}
-    <meta name="description" content="{{ page.meta.description }}">
-    <meta property="og:description" content="{{ page.meta.description }}">
-    <meta name="twitter:description" content="{{ page.meta.description }}">
-    {% endif %}
-    {% if page.meta.author %}
-    <meta name="author" content="{{ page.meta.author }}">
-    {% endif %}
-    {% if page.meta.date %}
-    <meta name="date" content="{{ page.meta.date }}">
-    <meta property="article:published_time" content="{{ page.meta.date }}">
-    {% endif %}
-    {% if page.meta.image %}
-    <meta property="og:image" content="{{ page.meta.image|url }}">
-    <meta name="twitter:image" content="{{ page.meta.image|url }}">
-    {% endif %}
-    {% if page.canonical_url %}
-    <meta property="og:url" content="{{ page.canonical_url }}">
-    {% endif %}
-    {% if config.site_name %}
-    <meta property="og:site_name" content="{{ config.site_name }}">
-    {% endif %}
-    <meta property="og:type" content="article">
+    {%- set page_meta_title = page.meta.title if (page and page.meta and page.meta.title) else (page.title if page else config.site_name) -%}
+    {%- set page_meta_desc = page.meta.description if (page and page.meta and page.meta.description) else config.site_description -%}
+    {%- if page and page.meta and page.meta.image -%}
+      {%- if page.meta.image.startswith('http') -%}
+        {%- set post_image_url = page.meta.image -%}
+      {%- elif page.meta.image.startswith('/') -%}
+        {%- set post_image_url = 'https://hsnlabs.ai' ~ page.meta.image -%}
+      {%- else -%}
+        {%- set post_image_url = 'https://hsnlabs.ai/blog/' ~ page.meta.image -%}
+      {%- endif -%}
+    {%- else -%}
+      {%- set post_image_url = 'https://hsnlabs.ai/blog/assets/brand/og-image.png' -%}
+    {%- endif -%}
+    {%- if page and page.canonical_url -%}
+      {%- set page_canonical_url = page.canonical_url -%}
+    {%- elif page and page.url -%}
+      {%- set page_canonical_url = 'https://hsnlabs.ai/blog/' ~ page.url -%}
+    {%- else -%}
+      {%- set page_canonical_url = 'https://hsnlabs.ai/blog/' -%}
+    {%- endif -%}
+
+    <link rel="canonical" href="{{ page_canonical_url }}">
+    <meta name="title" content="{{ page_meta_title }}">
+    <meta name="description" content="{{ page_meta_desc }}">
+
+    <!-- OpenGraph Metadata -->
+    <meta property="og:site_name" content="HSN Labs">
+    <meta property="og:type" content="{{ 'article' if (page and not page.is_homepage) else 'website' }}">
+    <meta property="og:title" content="{{ page_meta_title }}">
+    <meta property="og:description" content="{{ page_meta_desc }}">
+    <meta property="og:url" content="{{ page_canonical_url }}">
+    <meta property="og:image" content="{{ post_image_url }}">
+    <meta property="og:image:secure_url" content="{{ post_image_url }}">
+    <meta property="og:image:alt" content="{{ page_meta_title }}">
+    {%- if post_image_url.endswith('.jpg') or post_image_url.endswith('.jpeg') -%}
+    <meta property="og:image:type" content="image/jpeg">
+    {%- elif post_image_url.endswith('.png') -%}
+    <meta property="og:image:type" content="image/png">
+    {%- elif post_image_url.endswith('.webp') -%}
+    <meta property="og:image:type" content="image/webp">
+    {%- endif -%}
+
+    <!-- Twitter Card Metadata -->
     <meta name="twitter:card" content="summary_large_image">
-    {% endif %}
+    <meta name="twitter:site" content="@hsnlabs">
+    <meta name="twitter:creator" content="@hugo_nasc">
+    <meta name="twitter:title" content="{{ page_meta_title }}">
+    <meta name="twitter:description" content="{{ page_meta_desc }}">
+    <meta name="twitter:image" content="{{ post_image_url }}">
+
+    {%- if page and page.meta -%}
+      {%- if page.meta.author -%}
+      <meta name="author" content="{{ page.meta.author }}">
+      {%- endif -%}
+      {%- if page.meta.date -%}
+      <meta name="date" content="{{ page.meta.date }}">
+      <meta property="article:published_time" content="{{ page.meta.date }}">
+      {%- endif -%}
+      {%- if page.meta.category -%}
+      <meta property="article:section" content="{{ page.meta.category }}">
+      {%- endif -%}
+    {%- endif -%}
     {%- endblock %}
 
     <script>var base_url = '{{ base_url }}';</script>

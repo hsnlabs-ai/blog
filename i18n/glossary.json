@@ -1,0 +1,53 @@
+{
+  "strict_invariants": [
+    "Enterprise AI Agents",
+    "Model Context Protocol",
+    "MCP",
+    "Finite State Machine",
+    "FSM",
+    "Retrieval-Augmented Generation",
+    "RAG",
+    "Large Language Model",
+    "LLM",
+    "Agent Development Life Cycle",
+    "ADLC",
+    "Proof of Concept",
+    "PoC",
+    "Runtime",
+    "Tool Calling",
+    "API Drift",
+    "Schema Drift",
+    "Token",
+    "Context Window",
+    "EBITDA",
+    "OPEX",
+    "CAPEX",
+    "ERP",
+    "CRM",
+    "BPO",
+    "RPA",
+    "Totvs Protheus",
+    "SAP",
+    "Databricks",
+    "Palantir AIP",
+    "HSN Labs",
+    "Hugo S. Nascimento"
+  ],
+  "categories_map": {
+    "Why Agents Fail": "Por Que Agentes Falham",
+    "Agent Development Life Cycle": "Ciclo de Vida de Desenvolvimento de Agentes",
+    "Future of Work": "O Futuro do Trabalho",
+    "Agentic Economics": "Economia Agentica",
+    "Case Studies": "Estudos de Caso"
+  },
+  "ui_strings": {
+    "all_essays": "Todos os Ensaios",
+    "read_essay": "Ler Ensaio",
+    "back_to_essays": "Voltar para Todos os Ensaios",
+    "apply_bootcamp": "Aplicar para o Bootcamp",
+    "reading_time": "Tempo de leitura",
+    "author": "Autor",
+    "context": "Contexto",
+    "minutes": "minutos"
+  }
+}

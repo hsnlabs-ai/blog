@@ -94,7 +94,10 @@ def test_d5_internal_links():
                 continue
             if clean_target.startswith("/"):
                 # Absolute to site root
-                target_path = (SITE_DIR / clean_target.lstrip("/")).resolve()
+                rel = clean_target.lstrip("/")
+                if rel.startswith("blog/"):
+                    rel = rel[5:]
+                target_path = (SITE_DIR / rel).resolve()
             else:
                 target_path = (h.parent / clean_target).resolve()
             if not target_path.exists() and not (target_path / "index.html").exists():
@@ -169,7 +172,7 @@ def test_d10_replicated_footer():
     assert 'Future of Work' in html, "ERRO: Pilar Future of Work ausente no footer"
     assert 'Agentic Economics' in html, "ERRO: Pilar Agentic Economics ausente no footer"
     assert 'Case Studies' in html, "ERRO: Pilar Case Studies ausente no footer"
-    assert 'llms.txt for LLMs & Agents' in html, "ERRO: Link llms.txt ausente no footer"
+    assert 'llms.txt for LLMs & Agents' in html or 'llms.txt for LLMs &amp; Agents' in html, "ERRO: Link llms.txt ausente no footer"
     assert '2026 HSN Labs' in html, "ERRO: Copyright ausente no footer"
     print("PASS: Gate D10 Footer minimalista com pilares de indexacao e SEO validado")
 

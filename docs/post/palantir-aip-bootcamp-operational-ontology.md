@@ -9,6 +9,7 @@ tags:
 - roi
 description: "How Palantir AIP bootcamps compressed 9-month sales cycles into 5-day deployments by binding LLMs to operational ontologies instead of raw prompts."
 author: Hugo S. Nascimento
+image: assets/diagrams/palantir-aip-architecture-pt.png
 ---
 
 *Reading time: 5 minutes. Author: Hugo S. Nascimento.*

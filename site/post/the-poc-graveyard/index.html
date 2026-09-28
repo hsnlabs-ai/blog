@@ -9,43 +9,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    
-    
-    <link rel="canonical" href="https://hsnlabs.ai/blog/post/the-poc-graveyard/">
-    
-    <meta name="author" content="Hugo S. Nascimento">
-
-    
-    <link rel="icon" type="image/x-icon" href="../../assets/img/favicon.ico">
-    
-    
-    
+    <link rel="icon" type="image/x-icon" href="../../assets/brand/favicons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/brand/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/brand/favicons/favicon-16x16.png">
+    <meta name="theme-color" content="#52B4FD"><link rel="canonical" href="https://hsnlabs.ai/blog/post/the-poc-graveyard/">
     <meta name="title" content="Why Agents Fail: The PoC Graveyard">
-    <meta property="og:title" content="Why Agents Fail: The PoC Graveyard">
-    <meta name="twitter:title" content="Why Agents Fail: The PoC Graveyard">
-    
-    
     <meta name="description" content="Root cause post-mortem on why ninety percent of enterprise AI proofs of concept fail before reaching live production.">
-    <meta property="og:description" content="Root cause post-mortem on why ninety percent of enterprise AI proofs of concept fail before reaching live production.">
-    <meta name="twitter:description" content="Root cause post-mortem on why ninety percent of enterprise AI proofs of concept fail before reaching live production.">
-    
-    
-    <meta name="author" content="Hugo S. Nascimento">
-    
-    
-    <meta name="date" content="2026-09-01">
-    <meta property="article:published_time" content="2026-09-01">
-    
-    
-    
-    <meta property="og:url" content="https://hsnlabs.ai/blog/post/the-poc-graveyard/">
-    
-    
-    <meta property="og:site_name" content="Hugo S. Nascimento">
-    
+
+    <!-- OpenGraph Metadata -->
+    <meta property="og:site_name" content="HSN Labs">
     <meta property="og:type" content="article">
+    <meta property="og:title" content="Why Agents Fail: The PoC Graveyard">
+    <meta property="og:description" content="Root cause post-mortem on why ninety percent of enterprise AI proofs of concept fail before reaching live production.">
+    <meta property="og:url" content="https://hsnlabs.ai/blog/post/the-poc-graveyard/">
+    <meta property="og:image" content="https://hsnlabs.ai/blog/assets/brand/og-image.png">
+    <meta property="og:image:secure_url" content="https://hsnlabs.ai/blog/assets/brand/og-image.png">
+    <meta property="og:image:alt" content="Why Agents Fail: The PoC Graveyard"><meta property="og:image:type" content="image/png"><!-- Twitter Card Metadata -->
     <meta name="twitter:card" content="summary_large_image">
-    
+    <meta name="twitter:site" content="@hsnlabs">
+    <meta name="twitter:creator" content="@hugo_nasc">
+    <meta name="twitter:title" content="Why Agents Fail: The PoC Graveyard">
+    <meta name="twitter:description" content="Root cause post-mortem on why ninety percent of enterprise AI proofs of concept fail before reaching live production.">
+    <meta name="twitter:image" content="https://hsnlabs.ai/blog/assets/brand/og-image.png"><meta name="author" content="Hugo S. Nascimento"><meta name="date" content="2026-09-01">
+      <meta property="article:published_time" content="2026-09-01"><meta property="article:section" content="Why Agents Fail">
 
     <script>var base_url = '../..';</script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -78,14 +65,6 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
-
-<!-- OpenGraph & Twitter Meta Tags -->
-<meta property="og:site_name" content="HSN Labs">
-<meta property="og:image" content="https://hsnlabs.ai/assets/brand/og-image.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@hsnlabs">
-<meta name="twitter:creator" content="@hugo_nasc">
-<meta name="twitter:image" content="https://hsnlabs.ai/assets/brand/og-image.png">
 
 <!-- Google Analytics (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-GMK24ECXMF"></script>
@@ -146,10 +125,13 @@
   </div>
 
   <nav class="blog-header-menu" aria-label="Main Navigation">
+    
     <a href="../.." class="blog-nav-link ">All Essays</a>
     <a href="https://hsnlabs.ai/bootcamp" class="blog-nav-link">Bootcamp</a>
     <a href="https://hsnlabs.ai/advisory" class="blog-nav-link">Advisory</a>
     <a href="../../about/resume/" class="blog-nav-link ">About Hugo</a>
+    <a href="../../pt/" class="blog-nav-link" title="Mudar para Portugues">PT</a>
+    
   </nav>
 
   <div class="blog-header-actions">
@@ -369,6 +351,7 @@
     <article>
         
         <nav class="article-breadcrumb-nav" aria-label="Breadcrumb">
+            
             <a href="../.." class="article-breadcrumb-back">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <line x1="19" y1="12" x2="5" y2="12"></line>
@@ -376,6 +359,7 @@
                 </svg>
                 All Essays
             </a>
+            
             
             <span class="article-breadcrumb-sep">/</span>
             <span class="article-breadcrumb-category">Why Agents Fail</span>
@@ -439,6 +423,10 @@
 </ul>
 <hr />
 <p><em>Article originally published on <a href="https://hsnlabs.ai/blog/post/the-poc-graveyard/">HSN Labs</a>. Author: <a href="https://hsnlabs.ai">Hugo S. Nascimento</a>.</em></p>
+<link rel="alternate" hreflang="en" href="https://hsnlabs.ai/blog/post/the-poc-graveyard/">
+<link rel="alternate" hreflang="pt-BR" href="https://hsnlabs.ai/blog/pt/post/cemiterio-de-pocs/">
+<link rel="alternate" hreflang="x-default" href="https://hsnlabs.ai/blog/post/the-poc-graveyard/">
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -469,6 +457,7 @@
 
         
         <div class="article-footer-nav">
+            
             <a href="../.." class="btn btn-outline article-nav-return-btn">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <line x1="19" y1="12" x2="5" y2="12"></line>
@@ -479,6 +468,7 @@
             <a href="https://hsnlabs.ai/bootcamp" class="btn btn-primary article-nav-cta-btn">
                 Apply for Bootcamp →
             </a>
+            
         </div>
         
     </article>

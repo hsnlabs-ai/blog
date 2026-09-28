@@ -11,10 +11,18 @@
   </div>
 
   <nav class="blog-header-menu" aria-label="Main Navigation">
+    {% if page and page.file and page.file.src_uri.startswith('pt/') %}
+    <a href="{{ 'pt/'|url }}" class="blog-nav-link {% if page.file.src_uri == 'pt/index.md' %}active{% endif %}">Ensaios</a>
+    <a href="https://hsnlabs.ai/pt/bootcamp" class="blog-nav-link">Bootcamp</a>
+    <a href="https://hsnlabs.ai/pt/advisory" class="blog-nav-link">Advisory</a>
+    <a href="{{ ''|url }}" class="blog-nav-link" title="Switch to English">EN</a>
+    {% else %}
     <a href="{{ ''|url }}" class="blog-nav-link {% if page and page.is_homepage %}active{% endif %}">All Essays</a>
     <a href="https://hsnlabs.ai/bootcamp" class="blog-nav-link">Bootcamp</a>
     <a href="https://hsnlabs.ai/advisory" class="blog-nav-link">Advisory</a>
     <a href="{{ 'about/resume/'|url }}" class="blog-nav-link {% if page and 'about' in page.url %}active{% endif %}">About Hugo</a>
+    <a href="{{ 'pt/'|url }}" class="blog-nav-link" title="Mudar para Portugues">PT</a>
+    {% endif %}
   </nav>
 
   <div class="blog-header-actions">

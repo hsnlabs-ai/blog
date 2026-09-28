@@ -1,8 +1,17 @@
 <!-- block content -->
 <section class="container post" id="component-content">
     <article>
-        {% if not page.is_homepage and page.file.src_uri != 'index.md' %}
+        {% if not page.is_homepage and page.file.src_uri != 'index.md' and page.file.src_uri != 'pt/index.md' %}
         <nav class="article-breadcrumb-nav" aria-label="Breadcrumb">
+            {% if page.file and page.file.src_uri.startswith('pt/') %}
+            <a href="{{ 'pt/'|url }}" class="article-breadcrumb-back">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+                Todos os Ensaios
+            </a>
+            {% else %}
             <a href="{{ ''|url }}" class="article-breadcrumb-back">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <line x1="19" y1="12" x2="5" y2="12"></line>
@@ -10,6 +19,7 @@
                 </svg>
                 All Essays
             </a>
+            {% endif %}
             {% if page.meta and page.meta.category %}
             <span class="article-breadcrumb-sep">/</span>
             <span class="article-breadcrumb-category">{{ page.meta.category }}</span>
@@ -39,8 +49,20 @@
             {{ page.content }}
         </div>
 
-        {% if not page.is_homepage and page.file.src_uri != 'index.md' %}
+        {% if not page.is_homepage and page.file.src_uri != 'index.md' and page.file.src_uri != 'pt/index.md' %}
         <div class="article-footer-nav">
+            {% if page.file and page.file.src_uri.startswith('pt/') %}
+            <a href="{{ 'pt/'|url }}" class="btn btn-outline article-nav-return-btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+                Voltar para Todos os Ensaios
+            </a>
+            <a href="https://hsnlabs.ai/pt/bootcamp" class="btn btn-primary article-nav-cta-btn">
+                Aplicar para o Bootcamp →
+            </a>
+            {% else %}
             <a href="{{ ''|url }}" class="btn btn-outline article-nav-return-btn">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <line x1="19" y1="12" x2="5" y2="12"></line>
@@ -51,6 +73,7 @@
             <a href="https://hsnlabs.ai/bootcamp" class="btn btn-primary article-nav-cta-btn">
                 Apply for Bootcamp →
             </a>
+            {% endif %}
         </div>
         {% endif %}
     </article>
