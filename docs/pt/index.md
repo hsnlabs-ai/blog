@@ -98,10 +98,10 @@ Implementação prática em Python utilizando Pydantic e servidores Model Contex
 
 ---
 
-### <a href="/blog/pt/post/playbook-c-suite-protecao-margem/">Playbook C-Suite: Proteção de Margem e Redução de Custos com Software Agentico</a>
+### <a href="/blog/pt/post/playbook-c-suite-protecao-margem/">Playbook C-Suite: Proteção de Margem e Redução de Custos com Software Agêntico</a>
 *Publicado em 2026-09-25 &bull; Categoria: Agentic Economics*
 
-Guia executivo para CEOs, CFOs e CIOs sobre como proteger margens operacionais substituindo custos fixos de BPO por software agentico.
+Guia executivo para CEOs, CFOs e CIOs sobre como proteger margens operacionais substituindo custos fixos de BPO por software agêntico.
 
 <a href="/blog/pt/post/playbook-c-suite-protecao-margem/">Ler Post &rarr;</a>
 
@@ -110,7 +110,7 @@ Guia executivo para CEOs, CFOs e CIOs sobre como proteger margens operacionais s
 ### <a href="/blog/pt/post/kafka-metamorfose-ia-futuro-do-trabalho/">De 1915 a Era da IA: Kafka, Utilitarismo e o Valor de Quem Trabalha</a>
 *Publicado em 2026-09-22 &bull; Categoria: Future of Work*
 
-Reflexão filosófica e econômica sobre a mercantilizacao do trabalho humano a luz da obra A Metamorfose e o avanço da automação por IA.
+Reflexão filosófica e econômica sobre a mercantilização do trabalho humano a luz da obra A Metamorfose e o avanço da automação por IA.
 
 <a href="/blog/pt/post/kafka-metamorfose-ia-futuro-do-trabalho/">Ler Post &rarr;</a>
 
@@ -119,7 +119,7 @@ Reflexão filosófica e econômica sobre a mercantilizacao do trabalho humano a 
 ### <a href="/blog/pt/post/sprint-arquitetura-cinco-dias/">Por Que Apresentações de Big 4 Falham em Projetos de Agentes</a>
 *Publicado em 2026-09-22 &bull; Categoria: Agent Development Life Cycle*
 
-Por que decks genéricos de estratégia de consultorias tradicionais falham em entregar software agentico em ambientes corporativos complexos.
+Por que decks genéricos de estratégia de consultorias tradicionais falham em entregar software agêntico em ambientes corporativos complexos.
 
 <a href="/blog/pt/post/sprint-arquitetura-cinco-dias/">Ler Post &rarr;</a>
 
@@ -146,7 +146,7 @@ Estudo aprofundado dos princípios de arquitetura do Palantir AIP e por que sua 
 ### <a href="/blog/pt/post/guarda-do-balanco-extincao-bpo/">O Que Aprendi Construindo HR Tech Sobre a Morte do BPO</a>
 *Publicado em 2026-09-15 &bull; Categoria: Future of Work*
 
-Lições operacionais sobre o colapso estrutural de contratos de terceirizacao de RH e fluxos de trabalho manuais em grandes empresas.
+Lições operacionais sobre o colapso estrutural de contratos de terceirização de RH e fluxos de trabalho manuais em grandes empresas.
 
 <a href="/blog/pt/post/guarda-do-balanco-extincao-bpo/">Ler Post &rarr;</a>
 
@@ -173,7 +173,7 @@ Como o processamento multimodal e protocolos de validação automatizam análise
 ### <a href="/blog/pt/post/palantir-vs-databricks-arquitetura-agentes/">Palantir vs Databricks: Por Que Data Lakes Falham em Operações com Agentes Autônomos</a>
 *Publicado em 2026-09-11 &bull; Categoria: Why Agents Fail*
 
-Comparativo arquitetural entre a abordagem de lakehouse e a ontologia operacional em projetos corporativos de software agentico.
+Comparativo arquitetural entre a abordagem de lakehouse e a ontologia operacional em projetos corporativos de software agêntico.
 
 <a href="/blog/pt/post/palantir-vs-databricks-arquitetura-agentes/">Ler Post &rarr;</a>
 
@@ -227,7 +227,7 @@ Estudo de caso operacional sobre a implantação de agentes corporativos em avia
 ### <a href="/blog/pt/post/falacia-llm-como-juiz/">Por Que LLM Como Juiz Falha no Setor Bancário</a>
 *Publicado em 2026-08-18 &bull; Categoria: Why Agents Fail*
 
-Vulnerabilidades estruturais e riscos de conformidade ao confiar em avaliadores estocasticos de LLM para auditar decisões financeiras.
+Vulnerabilidades estruturais e riscos de conformidade ao confiar em avaliadores estocásticos de LLM para auditar decisões financeiras.
 
 <a href="/blog/pt/post/falacia-llm-como-juiz/">Ler Post &rarr;</a>
 
@@ -281,7 +281,7 @@ Diferenças críticas de arquitetura entre chatbots conversacionais e agentes co
 ### <a href="/blog/pt/post/custo-ia-ilimitada-ti-legada/">O Custo de IA Sem Limites na TI Legada</a>
 *Publicado em 2026-07-15 &bull; Categoria: Agentic Economics*
 
-Auditoria econômica e técnica sobre custos descontrolados e riscos operacionais causados por IA estocastica na infraestrutura legada.
+Auditoria econômica e técnica sobre custos descontrolados e riscos operacionais causados por IA estocástica na infraestrutura legada.
 
 <a href="/blog/pt/post/custo-ia-ilimitada-ti-legada/">Ler Post &rarr;</a>
 

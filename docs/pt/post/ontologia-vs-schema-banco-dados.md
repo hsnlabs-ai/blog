@@ -14,7 +14,7 @@ author: Hugo S. Nascimento
 
 <!-- more -->
 
-*Contexto: Em consultorias com equipes de engenharia de dados, frequentemente escuto a pergunta: se nos já temos tabelas relacionais no PostgreSQL e um banco vetorial no Pinecone, por que precisamos de uma ontologia? Aqui esta a resposta técnica definitiva.*
+*Contexto: Em consultorias com equipes de engenharia de dados, frequentemente escuto a pergunta: se nos já temos tabelas relacionais no PostgreSQL e um banco vetorial no Pinecone, por que precisamos de uma ontologia? Aqui está a resposta técnica definitiva.*
 
 Bancos de dados relacionais foram desenhados para persistência eficiente e garantia de propriedades ACID em transações computacionais. Bancos vetoriais foram desenvolvidos para busca por similaridade semântica em textos não estruturados.
 

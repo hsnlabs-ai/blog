@@ -28,7 +28,7 @@ Para resolver o gargalo, a instituição não tentou colocar um modelo de lingua
 O sistema mapeia digitalmente cada leito, aparelho respiratório, leito de UTI, equipe de plantão e paciente como nos conectados com atributos em tempo real. Uma mudança no prontuário eletrônico atualiza imediatamente as restrições operacionais daquele leito.
 
 ### 2. Ações de Despacho em Malha Fechada
-Quando uma alta médica e confirmada no prontuário, o agente dispara automaticamente as ordens de serviço para a equipe de higienizacao e sinaliza para a triagem da emergência a disponibilidade estimada daquele leito. 
+Quando uma alta médica e confirmada no prontuário, o agente dispara automaticamente as ordens de serviço para a equipe de higienização e sinaliza para a triagem da emergência a disponibilidade estimada daquele leito. 
 
 ### 3. Resolução Proativa de Conflitos
 Se dois pacientes de alta prioridade necessitarem do mesmo tipo de equipamento especializado, o sistema avalia as variáveis clínicas parametrizadas pelo corpo médico e propõe a redistribuição otimizada de recursos entre andares antes que uma crise se instale.

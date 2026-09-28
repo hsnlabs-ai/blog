@@ -14,7 +14,7 @@ author: Hugo S. Nascimento
 
 <!-- more -->
 
-*Contexto: Participei de imersoes e analisei detalhadamente a infraestrutura do Palantir Foundry e AIP em operações governamentais e de grandes corporações. A Palantir acertou na engenharia central onde todos os concorrentes de nuvem erraram.*
+*Contexto: Participei de imersões e analisei detalhadamente a infraestrutura do Palantir Foundry e AIP em operações governamentais e de grandes corporações. A Palantir acertou na engenharia central onde todos os concorrentes de nuvem erraram.*
 
 Enquanto o Vale do Silício passava os últimos dois anos construindo aplicações superficiais de chat sobre bancos vetoriais, a Palantir manteve o foco em sua tese histórica de produto: software só e útil em organizações complexas se for ancorado em uma ontologia operacional conectada a dados e ações.
 

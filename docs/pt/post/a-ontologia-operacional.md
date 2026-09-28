@@ -25,7 +25,7 @@ Para que um sistema autônomo tenha utilidade real dentro de uma corporação de
 Uma ontologia operacional completa e composta por três camadas indissociáveis:
 
 ### 1. O Modelo Semântico de Entidades
-Representa os substantivos da empresa. Não são meras tabelas de banco de dados, mas conceitos de domínio unificados que agregam dados de ERPs legados, CRMs e planilhas em objetos de negócios coerentes com histórico e linhagem auditavel.
+Representa os substantivos da empresa. Não são meras tabelas de banco de dados, mas conceitos de domínio unificados que agregam dados de ERPs legados, CRMs e planilhas em objetos de negócios coerentes com histórico e linhagem auditável.
 
 ### 2. O Grafo de Regras e Invariantes
 Representa os adjetivos e restrições da organização. São as políticas corporativas, regulamentos de compliance e leis fiscais que delimitam o que pode e o que não pode acontecer em cada transação.

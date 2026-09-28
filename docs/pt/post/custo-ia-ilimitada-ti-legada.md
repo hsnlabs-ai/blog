@@ -6,7 +6,7 @@ tags:
 - architecture
 - legacy-it
 - reliability
-description: 'Auditoria econômica e técnica sobre custos descontrolados e riscos operacionais causados por IA estocastica na infraestrutura legada.'
+description: 'Auditoria econômica e técnica sobre custos descontrolados e riscos operacionais causados por IA estocástica na infraestrutura legada.'
 author: Hugo S. Nascimento
 ---
 
@@ -18,7 +18,7 @@ author: Hugo S. Nascimento
 
 Grandes empresas não operam sobre probabilidades. Elas operam sobre garantias transacionais estritas.
 
-Sistemas como SAP, Oracle, mainframes AS/400 e bancos de dados PostgreSQL centrais foram construídos com tolerância zero a variações estocasticas. Em um livro contábil bancário ou em um saldo de estoque, um lançamento e matematicamente válido ou a transação e abortada.
+Sistemas como SAP, Oracle, mainframes AS/400 e bancos de dados PostgreSQL centrais foram construídos com tolerância zero a variações estocásticas. Em um livro contábil bancário ou em um saldo de estoque, um lançamento e matematicamente válido ou a transação e abortada.
 
 Quando equipes corporativas tentam forçar modelos de linguagem probabilísticos dentro desses ambientes rígidos sem uma camada arquitetural de tradução, elas não geram eficiência operacional. Elas geram um desperdício financeiro massivo e não quantificado.
 
@@ -29,10 +29,10 @@ No instante em que uma equipe de engenharia percebe que um modelo de linguagem p
 
 Para evitar registros corrompidos, a empresa contrata analistas temporários ou realoca desenvolvedores seniores para inspecionar cada saída transacional antes da confirmação. Na auditoria que conduzi no ano passado, o cliente gastava quarenta mil dólares por mês em verificação humana para sustentar uma ferramenta de IA que deveria economizar vinte mil dólares em mão de obra. A automação causava impacto líquido negativo no resultado operacional da empresa.
 
-### 2. Exposição a Auditorias e Penalidades Regulatorias
+### 2. Exposição a Auditorias e Penalidades Regulatórias
 Em setores regulados como serviços financeiros, seguros e saúde, cada alteração de registro precisa ser defensável perante inspetores externos de conformidade. 
 
-Quando um auditor exige entender por que o status de um empréstimo foi alterado ou por que um desconto de seguro foi aplicado, apresentar a janela de contexto de um prompt probabilístico e uma infração imediata de conformidade. Reguladores exigem trilhas de regras verificáveis e imutáveis. Se o seu software não consegue explicar seu caminho de decisão por meio de logs auditaveis de código, sua empresa enfrenta multas regulatorias pesadas.
+Quando um auditor exige entender por que o status de um empréstimo foi alterado ou por que um desconto de seguro foi aplicado, apresentar a janela de contexto de um prompt probabilístico é uma infração imediata de conformidade. Reguladores exigem trilhas de regras verificáveis e imutáveis. Se o seu software não consegue explicar seu caminho de decisão por meio de logs auditáveis de código, sua empresa enfrenta multas regulatórias pesadas.
 
 ### 3. Confinamento Permanente em Sandbox
 Centenas de projetos corporativos de IA permanecem presos em ambientes internos de teste por mais de um ano. O Diretor de TI e o comitê de segurança recusam conceder permissões de escrita em bancos centrais de produção porque o risco catastrófico de corromper dados supera em muito qualquer ganho de produtividade demonstrado em sandboxes. A empresa queima seu orçamento de inovação em promessas vazias.
@@ -45,7 +45,7 @@ Para implantar agentes em ambientes corporativos legados com segurança, você p
 * A Camada de Ontologia Válida: Uma ontologia de negócios executável verifica se a ação proposta obedece a regras corporativas, limites temporais e invariantes relacionais.
 * O Executor Confirma: Se e somente se todas as travas de validação passarem, um módulo isolado de software executa a transação por meio de APIs corporativas seguras ou protocolos de banco de dados existentes.
 
-Previsibilidade e o prerequisito para acesso a produção corporativa. Se a sua arquitetura não puder garantir limites de sistema, ela jamais saíra da sandbox.
+Previsibilidade e o pré-requisito para acesso a produção corporativa. Se a sua arquitetura não puder garantir limites de sistema, ela jamais sairá da sandbox.
 
 ## Recursos Estratégicos e Posts Relacionados
 - <a href="/blog/pt/post/matriz-substituicao-bpo/">A Matriz de Substituição de BPO: Métricas Operacionais e Financeiras</a>

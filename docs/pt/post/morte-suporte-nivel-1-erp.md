@@ -14,7 +14,7 @@ author: Hugo S. Nascimento
 
 <!-- more -->
 
-*Contexto: Passei anos observando empresas pagarem centenas de milhares de reais mensais para consultorias de integração apenas para responderem chamados triviais de redefinicao de senhas, conciliação de notas e desbloqueio de pedidos no ERP. Esse modelo ruiu.*
+*Contexto: Passei anos observando empresas pagarem centenas de milhares de reais mensais para consultorias de integração apenas para responderem chamados triviais de redefinição de senhas, conciliação de notas e desbloqueio de pedidos no ERP. Esse modelo ruiu.*
 
 O modelo de negócios das grandes consultorias de implantação e suporte de sistemas como SAP e Totvs Protheus sempre dependeu da venda de horas faturáveis em mesas de suporte de nível um.
 
@@ -22,20 +22,20 @@ Centenas de analistas juniores passam seus dias lendo chamados de usuários corp
 
 ## O Que Mudou com Agentes de Código Aberto
 
-Com o amadurecimento de arquiteturas agenticas baseadas em ontologias de domínio e ferramentas conectadas via Model Context Protocol, a necessidade de intervenção humana nesses fluxos caiu para níveis próximos de zero.
+Com o amadurecimento de arquiteturas agênticas baseadas em ontologias de domínio e ferramentas conectadas via Model Context Protocol, a necessidade de intervenção humana nesses fluxos caiu para níveis próximos de zero.
 
 ### 1. Diagnóstico Imediato de Erros de Transação
 Quando um pedido de vendas trava no ERP devido a uma inconsistência de alíquota fiscal ou bloqueio de crédito, um agente dotado da ontologia contábil da empresa analisa o erro em milissegundos. Ele inspeciona a tabela de impostos, confronta os dados da transação e aponta a causa exata sem filas de espera de dias.
 
-### 2. Autocorrecao com Trilha de Auditoria
-Em cenários autorizados pelas políticas de segurança, o agente não apenas diagnostica a falha, mas executa a transação corretiva e notifica o usuário responsável. Todas as etapas ficam registradas em relatórios de auditoria, impedindo violações de integridade.
+### 2. Autocorreção com Trilha de Auditoria
+Em cenários autorizados pelas políticas de segurança, o agente não apenas diagnóstica a falha, mas executa a transação corretiva e notifica o usuário responsável. Todas as etapas ficam registradas em relatórios de auditoria, impedindo violações de integridade.
 
 ### 3. Desbloqueio e Manutenção de Cadastros
 Processos de saneamento de cadastros de fornecedores e ítens, que consumiam semanas de esforço de equipes inteiras, são realizados em segundo plano de forma ininterrupta.
 
 ## A Ruptura Estrutural no Mercado de Consultoria
 
-Consultorias que baseiam sua receita no volume de profissionais alocados para tarefas básicas enfrentarão uma perda inevitável de contratos. As empresas contratantes já perceberam que pagar por homem-hora para manutenção de software e um desperdício insustentável.
+Consultorias que baseiam sua receita no volume de profissionais alocados para tarefas básicas enfrentarão uma perda inevitável de contratos. As empresas contratantes já perceberam que pagar por homem-hora para manutenção de software é um desperdício insustentável.
 
 O futuro pertence as consultorias que operam como boutiques de arquitetura, estruturando sistemas de agentes proprietários que resolvem problemas operacionais de forma autônoma.
 

@@ -38,26 +38,26 @@ Quando um agente autônomo se conecta a uma instância real de produção do SAP
 Modelos de linguagem possuem zero entendimento inerente de integridade relacional. Em um ambiente sem limites estritos, eles chutam. Eles alucinam joins de tabelas e inventam colunas inexistentes. Uma única chave estrangeira alucinada interrompe uma rotina batch de ERP e corrompe relatórios contábeis.
 
 ### 2. A Armadilha de Latência Multiagente
-Durante uma apresentação de diretoria, um executivo espera com paciência quinze segundos por uma resposta articulada. Em um barramento de serviços corporativos em produção, quinze segundos e uma eternidade que dispara timeouts em cascata.
+Durante uma apresentação de diretoria, um executivo espera com paciência quinze segundos por uma resposta articulada. Em um barramento de serviços corporativos em produção, quinze segundos é uma eternidade que dispara timeouts em cascata.
 
 Quando equipes constroem sistemas multiagente ingênuos sem limites formais, os modelos entram em loops de raciocínio desgovernados. No mês passado, auditei a base de código de um cliente corporativo onde uma simples consulta de cliente disparou quarenta e duas chamadas consecutivas de ferramentas, estourando limites de requisições da nuvem e queimando o orçamento mensal de API em apenas três dias. 
 
 Se o seu agente exige sessenta chamadas de ferramentas para encontrar o status de uma fatura, você não possui uma arquitetura. Você possui um ataque de negação de serviço distribuído contra a sua própria infraestrutura.
 
-### 3. A Barreira de Segurança Não E Negociavel
+### 3. A Barreira de Segurança Não E Negociável
 Todo Chief Information Security Officer com quem converso na Faria Lima e na Paulista tem a mesmissima reação justificada: eles jamais vão conceder permissões diretas de escrita para um prompt probabilístico.
 
-Se um sistema autônomo não puder provar isolamento de perímetro, separação estrita de limites somente leitura e validação criptográfica rígida em cada mutação, a equipe de segurança bloqueara o projeto por tempo indeterminado. A PoC morre não porque o modelo e burro, mas porque a engenharia foi irresponsavel.
+Se um sistema autônomo não puder provar isolamento de perímetro, separação estrita de limites somente leitura e validação criptográfica rígida em cada mutação, a equipe de segurança bloqueara o projeto por tempo indeterminado. A PoC morre não porque o modelo e burro, mas porque a engenharia foi irresponsável.
 
 ## Como a HSN Labs Escapa do Cemitério
 
 Na HSN Labs, não construímos apresentações de slides para conselhos nem demos frágeis de sandbox. Quando nossos engenheiros entram em um cliente corporativo, aplicamos três regras inegociáveis:
 
 * Ancorar Cada Passo em Ontologias Explícitas: Modelos nunca consultam bancos relacionais diretamente. Eles interagem com grafos de domínio pre-compilados que impõem invariantes de esquema antes de qualquer execução.
-* Delimitar a Execução com Máquinas de Estados Finitos: Cada fluxo de trabalho agentico precisa operar dentro de transições de estado matematicamente comprováveis. O modelo pode sugerir o caminho, mas travas de software em nível de código impõem os limites.
+* Delimitar a Execução com Máquinas de Estados Finitos: Cada fluxo de trabalho agêntico precisa operar dentro de transições de estado matematicamente comprováveis. O modelo pode sugerir o caminho, mas travas de software em nível de código impõem os limites.
 * Executar Testes de Regressão em Nível de Código: Testamos agentes contra dados reais de transações anteriores, medindo conformidade e precisão com tolerância zero a alucinações.
 
-O valor corporativo não é medido por chatbots conversadores. Ele e medido por software em produção que escreve em bancos de dados centrais sem quebrar a operação da empresa.
+O valor corporativo não é medido por chatbots conversadores. Ele é medido por software em produção que escreve em bancos de dados centrais sem quebrar a operação da empresa.
 
 ## Recursos Estratégicos e Posts Relacionados
 - <a href="/blog/pt/post/o-que-e-uma-ontologia-para-agentes-ia/">O Que É uma Ontologia para Agentes de IA? O Guia Definitivo</a>

@@ -16,7 +16,7 @@ author: Hugo S. Nascimento
 
 *Contexto: Este post nasceu de uma auditoria técnica de emergência onde uma agência tentou calcular contas a pagar corporativas usando similaridade de cosseno sobre fragmentos de notas fiscais. As alucinações quase corromperam o livro contabilidade do cliente.*
 
-Conectar RAG tradicional a um sistema de gestão empresarial e uma armadilha de arquitetura.
+Conectar RAG tradicional a um sistema de gestão empresarial é uma armadilha de arquitetura.
 
 Nos últimos dois anos, perdi a conta de quantas equipes corporativas me procuraram após queimarem meses tentando fazer busca vetorial ler dados financeiros. A premissa parece tentadora para um executivo não técnico: jogar ordens de compra, faturas de fornecedores, contratos e extratos de banco de dados em um banco vetorial, e deixar um LLM recuperar fragmentos para responder dúvidas operacionais.
 
@@ -35,7 +35,7 @@ Imagine um CFO perguntando: Quais pedidos de compra em aberto acima de cinquenta
 
 Para responder a isso com exatidão, um engenheiro precisa executar joins relacionais entre ao menos quatro tabelas normalizadas: pedidos de compra, ítens do pedido, comprovantes de entrega e registros fiscais do fornecedor. 
 
-Um banco vetorial busca fragmentos de texto que citam pedidos de compra e valores altos. Ele não consegue cruzar chaves estrangeiras. Ele não filtra registros cancelados. Ele puxa cinco trechos de texto que parecem relevantes, joga no prompt, e o modelo inventa uma lista plausivel que omite transações críticas.
+Um banco vetorial busca fragmentos de texto que citam pedidos de compra e valores altos. Ele não consegue cruzar chaves estrangeiras. Ele não filtra registros cancelados. Ele puxa cinco trechos de texto que parecem relevantes, joga no prompt, e o modelo inventa uma lista plausível que omite transações críticas.
 
 ### 2. Débitos e Créditos Precisam Fechar em Zero
 Na contabilidade corporativa, saldos são invariantes absolutos. Cada débito precisa fechar com um crédito de valor idêntico. 
@@ -51,7 +51,7 @@ Busca vetorial não possui noção inerente de sequência temporal. A menos que 
 
 ## O Que Construo no Lugar: Ontologias Executáveis
 
-Na HSN Labs, não deixamos modelos de linguagem chutar comandos SQL nem buscar embeddings soltos para achar verdades financeiras. Esta e a arquitetura exata que aplicamos:
+Na HSN Labs, não deixamos modelos de linguagem chutar comandos SQL nem buscar embeddings soltos para achar verdades financeiras. Esta é a arquitetura exata que aplicamos:
 
 * Ontologias de Negócio Pre-Compiladas: Mapeamos o schema corporativo em um grafo de conhecimento explícito que define relacionamentos verificados, caminhos válidos de junção e regras de negócio antes de qualquer consulta rodar.
 * Geração de Consultas com Tipagem Rígida: O agente não cria strings livres de SQL. Ele seleciona templates parametrizados e validados contra schemas estritos em Pydantic. Cada parâmetro e auditado antes de tocar a replica de leitura.

@@ -47,7 +47,7 @@ Fornecedores de RPA tradicional cobram de dez a vinte mil dólares anuais por ro
 
 Na HSN Labs, não construímos sistemas que emulam olhos e mãos humanas em uma tela de desktop. Implantamos agentes autônomos que se comunicam diretamente com os protocolos fundamentais dos sistemas:
 
-* Execução de Protocolo Headless: Um agente autônomo não procura na tela por um botão com o rótulo Enviar Pedido. Ele se comunica diretamente com serviços de backend por adaptadores de banco de dados, endpoints REST, servidores de Model Context Protocol ou interfaces de linha de comando. A reformulacao visual de uma interface frontend tem zero impacto na disponibilidade da operação.
+* Execução de Protocolo Headless: Um agente autônomo não procura na tela por um botão com o rótulo Enviar Pedido. Ele se comunica diretamente com serviços de backend por adaptadores de banco de dados, endpoints REST, servidores de Model Context Protocol ou interfaces de linha de comando. A reformulação visual de uma interface frontend tem zero impacto na disponibilidade da operação.
 * Tratamento Robusto de Variações: Quando um bot tradicional de RPA encontra um layout de fatura com uma linha adicional, ele quebra. Quando um agente autônomo encontra variação documental, ele processa a carga contra uma ontologia explícita, extrai entidades verificadas e aplica regras de negócio sem correções manuais de código.
 * Pegada Fracionária de Infraestrutura: Ao eliminar fazendas pesadas de máquinas virtuais, agentes autônomos rodam dentro de conteineres leves que escalam dinamicamente com o volume de transações. Custos operacionais caem mais de oitenta por cento enquanto a vazão transacional multiplica por dez.
 

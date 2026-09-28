@@ -16,11 +16,11 @@ author: Hugo S. Nascimento
 
 *Contexto: Analisei divulgações públicas da LATAM Airlines e dados de telemetria para entender como uma empresa operando com três por cento de margem implantou agentes em milhões de interações sem queimar capital em custos desnecessários de tokens.*
 
-Companhias aéreas operam com margens de três por cento. Trinta e um por cento do custo operacional e combustível de aviação. Não há espaço para desperdício.
+Companhias aéreas operam com margens de três por cento. Trinta e um por cento do custo operacional é combustível de aviação. Não há espaço para desperdício.
 
-Se um agente de IA não gera valor imediato ou corta custos, ele e cancelado.
+Se um agente de IA não gera valor imediato ou corta custos, ele é cancelado.
 
-Analisei a implantação de agentes de experiência do cliente da LATAM Airlines em produção. Eles processam milhões de interações. Aprenderam três lições duras sobre engenharia agentica em escala.
+Analisei a implantação de agentes de experiência do cliente da LATAM Airlines em produção. Eles processam milhões de interações. Aprenderam três lições duras sobre engenharia agêntica em escala.
 
 ## 1. Descentralização Semântica Queima Capital
 A LATAM inicialmente construiu agentes especialistas para voos, hotéis e seguros. Cada agente raciocinava e gerava saídas estruturadas finais de forma independente.
@@ -42,14 +42,14 @@ Correção: Adição de um no dedicado de Atendimento ao Cliente. Os erros de ro
 
 Lição: Observe a telemetria em produção. Construa nos operacionais para a realidade, não para o seu cenário ideal.
 
-## 3. O Chatbot Não E o Produto
-Esta e a minha tese central. 
+## 3. O Chatbot Não É o Produto
+Esta é a minha tese central. 
 
 Um chatbot voltado ao consumidor e apenas uma interface de coleta de dados. Conversas são baratas. Sinais estruturados são valiosos.
 
 A LATAM percebeu isso. Eles construíram o Compass: um motor interno que recebe registros não estruturados de conversas, aplica ontologias semânticas estritas e alimenta um Grafo de Conhecimento diretamente no BigQuery. 
 
-Quando um passageiro pergunta sobre restaurantes italianos perto do hotel, ele não esta apenas conversando. Ele esta alimentando uma esteira de dados estruturados com preferências semânticas.
+Quando um passageiro pergunta sobre restaurantes italianos perto do hotel, ele não está apenas conversando. Ele está alimentando uma esteira de dados estruturados com preferências semânticas.
 
 Pare de construir interfaces vazias de texto livre. Use IA como um processador implacável para transformar ruído em dados estruturados de produção. 
 

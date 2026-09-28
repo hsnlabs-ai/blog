@@ -6,7 +6,7 @@ tags:
 - architecture
 - llm-judge
 - audit
-description: 'Vulnerabilidades estruturais e riscos de conformidade ao confiar em avaliadores estocasticos de LLM para auditar decisões financeiras.'
+description: 'Vulnerabilidades estruturais e riscos de conformidade ao confiar em avaliadores estocásticos de LLM para auditar decisões financeiras.'
 author: Hugo S. Nascimento
 ---
 
@@ -26,19 +26,19 @@ A resposta foi inacreditável: eles pegavam as saídas do agente, jogavam em out
 
 Eles usavam um modelo probabilístico que alucina para checar se outro modelo probabilístico havia alucinado. O comitê de risco estava a segundos de aprovar uma arquitetura onde nenhum ser humano e nenhum programa em nível de código jamais havia checado a matemática financeira real.
 
-## Por Que a Avaliação Estocastica Falha em Auditorias de Risco Bancário
+## Por Que a Avaliação Estocástica Falha em Auditorias de Risco Bancário
 
-Em um artigo acadêmico ou em uma demonstração para o público, LLM como juiz e uma heurística aceitável para qualidades subjetivas como tom conversacional ou fluidez de texto.
+Em um artigo acadêmico ou em uma demonstração para o público, LLM como juiz é uma heurística aceitável para qualidades subjetivas como tom conversacional ou fluidez de texto.
 
-Em ambientes bancários regulados, modelagem de risco de crédito e prevenção a fraudes, confiar em avaliação baseada em modelos e uma falha regulatoria imediata:
+Em ambientes bancários regulados, modelagem de risco de crédito e prevenção a fraudes, confiar em avaliação baseada em modelos é uma falha regulatória imediata:
 
 ### 1. Pontos Cegos Estatísticos Compartilhados
 Modelos avaliadores compartilham os mesmos vieses de distribuição de treino dos modelos geradores. 
 
-Se um modelo gerador produz uma justificativa jurídica que soa plausivel mas interpreta errado uma circular do Banco Central ou uma cláusula de apólice de seguro, um modelo avaliador acionado com o mesmo contexto quase sempre concordara. O avaliador não consulta o mundo real nem roda demonstrações matemáticas; ele apenas checa se o texto soa coerente.
+Se um modelo gerador produz uma justificativa jurídica que soa plausível mas interpreta errado uma circular do Banco Central ou uma cláusula de apólice de seguro, um modelo avaliador acionado com o mesmo contexto quase sempre concordara. O avaliador não consulta o mundo real nem roda demonstrações matemáticas; ele apenas checa se o texto soa coerente.
 
 ### 2. Fragilidade de Prompts e Deriva de Métricas
-Uma métrica de engenharia estável precisa ser reprodutivel. 
+Uma métrica de engenharia estável precisa ser reprodutível. 
 
 Quando você usa um LLM como juiz, alterar uma única vírgula no seu prompt de avaliação, ou uma atualização de pesos do provedor sem aviso, pode alterar sua taxa de precisão em quinze pontos percentuais da noite para o dia. Não é possível construir uma esteira confiável de liberação para produção sobre uma régua que estica e encolhe aleatoriamente.
 

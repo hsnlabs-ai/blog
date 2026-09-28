@@ -6,7 +6,7 @@ tags:
 - philosophy
 - future-of-work
 - society
-description: 'Reflexão filosófica e econômica sobre a mercantilizacao do trabalho humano a luz da obra A Metamorfose e o avanço da automação por IA.'
+description: 'Reflexão filosófica e econômica sobre a mercantilização do trabalho humano a luz da obra A Metamorfose e o avanço da automação por IA.'
 author: Hugo S. Nascimento
 ---
 
@@ -32,7 +32,7 @@ O choque que as carreiras corporativas estão vivenciando neste momento espelha 
 
 Tarefas operacionais de intermediação, burocracia de planilhas e alimentação de sistemas estão com os dias contados. O profissional do futuro imediato precisara se distanciar da mera execução mecânica e assumir papeis de julgamento ético, arquitetura de sistemas e compreensão profunda de contexto humano.
 
-A tecnologia precisa libertar o trabalhador da condição instrumental descrita por Kafka, em vez de empurra-lo para a invisibilidade. Essa e uma discussão que líderes conscientes precisam travar com coragem antes que a automação se torne apenas uma ferramenta de exclusão em massa.
+A tecnologia precisa libertar o trabalhador da condição instrumental descrita por Kafka, em vez de empurrá-lo para a invisibilidade. Essa é uma discussão que líderes conscientes precisam travar com coragem antes que a automação se torne apenas uma ferramenta de exclusão em massa.
 
 ## Notas de Campo e Artigos Relacionados
 - <a href="/blog/pt/post/colapso-rpa-legado/">O Mercado de RPA Está em Colapso</a>

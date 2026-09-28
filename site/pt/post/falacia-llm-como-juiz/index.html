@@ -15,13 +15,13 @@
     <link rel="icon" type="image/png" sizes="16x16" href="../../../assets/brand/favicons/favicon-16x16.png">
     <meta name="theme-color" content="#52B4FD"><link rel="canonical" href="https://hsnlabs.ai/blog/pt/post/falacia-llm-como-juiz/">
     <meta name="title" content="Por Que LLM Como Juiz Falha no Setor Bancário">
-    <meta name="description" content="Vulnerabilidades estruturais e riscos de conformidade ao confiar em avaliadores estocasticos de LLM para auditar decisões financeiras.">
+    <meta name="description" content="Vulnerabilidades estruturais e riscos de conformidade ao confiar em avaliadores estocásticos de LLM para auditar decisões financeiras.">
 
     <!-- OpenGraph Metadata -->
     <meta property="og:site_name" content="HSN Labs">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Por Que LLM Como Juiz Falha no Setor Bancário">
-    <meta property="og:description" content="Vulnerabilidades estruturais e riscos de conformidade ao confiar em avaliadores estocasticos de LLM para auditar decisões financeiras.">
+    <meta property="og:description" content="Vulnerabilidades estruturais e riscos de conformidade ao confiar em avaliadores estocásticos de LLM para auditar decisões financeiras.">
     <meta property="og:url" content="https://hsnlabs.ai/blog/pt/post/falacia-llm-como-juiz/">
     <meta property="og:image" content="https://hsnlabs.ai/blog/assets/brand/og-image.png">
     <meta property="og:image:secure_url" content="https://hsnlabs.ai/blog/assets/brand/og-image.png">
@@ -30,7 +30,7 @@
     <meta name="twitter:site" content="@hsnlabs">
     <meta name="twitter:creator" content="@hugo_nasc">
     <meta name="twitter:title" content="Por Que LLM Como Juiz Falha no Setor Bancário">
-    <meta name="twitter:description" content="Vulnerabilidades estruturais e riscos de conformidade ao confiar em avaliadores estocasticos de LLM para auditar decisões financeiras.">
+    <meta name="twitter:description" content="Vulnerabilidades estruturais e riscos de conformidade ao confiar em avaliadores estocásticos de LLM para auditar decisões financeiras.">
     <meta name="twitter:image" content="https://hsnlabs.ai/blog/assets/brand/og-image.png"><meta name="author" content="Hugo S. Nascimento"><meta name="date" content="2026-08-18">
       <meta property="article:published_time" content="2026-08-18"><meta property="article:section" content="Why Agents Fail">
 
@@ -83,7 +83,7 @@
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "Por Que LLM Como Juiz Falha no Setor Bancário",
-  "description": "Vulnerabilidades estruturais e riscos de conformidade ao confiar em avaliadores estocasticos de LLM para auditar decisões financeiras.",
+  "description": "Vulnerabilidades estruturais e riscos de conformidade ao confiar em avaliadores estocásticos de LLM para auditar decisões financeiras.",
   "datePublished": "2026-08-18",
   "inLanguage": "en",
   "author": {
@@ -440,14 +440,14 @@
 <p>Fiz ao líder do fornecedor uma pergunta simples: Como vocês calcularam essa precisão?</p>
 <p>A resposta foi inacreditável: eles pegavam as saídas do agente, jogavam em outra janela de prompt e pediam ao GPT-4 para dar uma nota de um a cinco para precisão e conformidade com políticas de crédito. </p>
 <p>Eles usavam um modelo probabilístico que alucina para checar se outro modelo probabilístico havia alucinado. O comitê de risco estava a segundos de aprovar uma arquitetura onde nenhum ser humano e nenhum programa em nível de código jamais havia checado a matemática financeira real.</p>
-<h2 id="por-que-a-avaliacao-estocastica-falha-em-auditorias-de-risco-bancario">Por Que a Avaliação Estocastica Falha em Auditorias de Risco Bancário</h2>
-<p>Em um artigo acadêmico ou em uma demonstração para o público, LLM como juiz e uma heurística aceitável para qualidades subjetivas como tom conversacional ou fluidez de texto.</p>
-<p>Em ambientes bancários regulados, modelagem de risco de crédito e prevenção a fraudes, confiar em avaliação baseada em modelos e uma falha regulatoria imediata:</p>
+<h2 id="por-que-a-avaliacao-estocastica-falha-em-auditorias-de-risco-bancario">Por Que a Avaliação Estocástica Falha em Auditorias de Risco Bancário</h2>
+<p>Em um artigo acadêmico ou em uma demonstração para o público, LLM como juiz é uma heurística aceitável para qualidades subjetivas como tom conversacional ou fluidez de texto.</p>
+<p>Em ambientes bancários regulados, modelagem de risco de crédito e prevenção a fraudes, confiar em avaliação baseada em modelos é uma falha regulatória imediata:</p>
 <h3 id="1-pontos-cegos-estatisticos-compartilhados">1. Pontos Cegos Estatísticos Compartilhados</h3>
 <p>Modelos avaliadores compartilham os mesmos vieses de distribuição de treino dos modelos geradores. </p>
-<p>Se um modelo gerador produz uma justificativa jurídica que soa plausivel mas interpreta errado uma circular do Banco Central ou uma cláusula de apólice de seguro, um modelo avaliador acionado com o mesmo contexto quase sempre concordara. O avaliador não consulta o mundo real nem roda demonstrações matemáticas; ele apenas checa se o texto soa coerente.</p>
+<p>Se um modelo gerador produz uma justificativa jurídica que soa plausível mas interpreta errado uma circular do Banco Central ou uma cláusula de apólice de seguro, um modelo avaliador acionado com o mesmo contexto quase sempre concordara. O avaliador não consulta o mundo real nem roda demonstrações matemáticas; ele apenas checa se o texto soa coerente.</p>
 <h3 id="2-fragilidade-de-prompts-e-deriva-de-metricas">2. Fragilidade de Prompts e Deriva de Métricas</h3>
-<p>Uma métrica de engenharia estável precisa ser reprodutivel. </p>
+<p>Uma métrica de engenharia estável precisa ser reprodutível. </p>
 <p>Quando você usa um LLM como juiz, alterar uma única vírgula no seu prompt de avaliação, ou uma atualização de pesos do provedor sem aviso, pode alterar sua taxa de precisão em quinze pontos percentuais da noite para o dia. Não é possível construir uma esteira confiável de liberação para produção sobre uma régua que estica e encolhe aleatoriamente.</p>
 <h3 id="3-a-ocultacao-do-risco-de-cauda-catastrofico">3. A Ocultação do Risco de Cauda Catastrófico</h3>
 <p>Um modelo avaliador que concede uma nota media de quatro vírgula oito de cinco parece impressionante para um executivo não técnico. </p>
@@ -479,7 +479,7 @@
   "@type": "TechArticle",
   "headline": "Por Que LLM Como Juiz Falha no Setor Banc\u00e1rio",
   "url": "https://hsnlabs.ai/blog/pt/post/falacia-llm-como-juiz/",
-  "description": "Vulnerabilidades estruturais e riscos de conformidade ao confiar em avaliadores estocasticos de LLM para auditar decis\u00f5es financeiras.",
+  "description": "Vulnerabilidades estruturais e riscos de conformidade ao confiar em avaliadores estoc\u00e1sticos de LLM para auditar decis\u00f5es financeiras.",
   "inLanguage": "pt-BR",
   "author": {
     "@type": "Person",

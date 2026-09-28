@@ -434,11 +434,11 @@
             <p><em>Tempo de leitura: 6 minutos. Autor: Hugo S. Nascimento.</em></p>
 <!-- more -->
 
-<p><em>Contexto: No ecossistema de software corporativo da HSN Labs, Python e a nossa linguagem padrão de fundação. Este post ensina como transformar conceitos abstratos de ontologia em schemas estritos de Pydantic integrados a servidores MCP.</em></p>
+<p><em>Contexto: No ecossistema de software corporativo da HSN Labs, Python é a nossa linguagem padrão de fundação. Este post ensina como transformar conceitos abstratos de ontologia em schemas estritos de Pydantic integrados a servidores MCP.</em></p>
 <p>Modelos de linguagem precisam de interfaces determinísticas para interagir com o ambiente corporativo. Quando permitimos que agentes gerem chamadas de API sem validação semântica rigorosa, erros de execução e corrupção de dados tornam-se questão de tempo.</p>
 <p>Neste tutorial prático, exploramos a implementação de uma ontologia simples de faturamento corporativo utilizando Python, Pydantic para validação de invariantes e o protocolo MCP para servir as ferramentas ao modelo.</p>
 <h2 id="modelagem-com-pydantic">Modelagem com Pydantic</h2>
-<p>O primeiro componente e a definição das classes fundamentais de dados. Usamos modelos imutáveis com validadores customizados para barrar dados inválidos antes que cheguem ao agente.</p>
+<p>O primeiro componente é a definição das classes fundamentais de dados. Usamos modelos imutáveis com validadores customizados para barrar dados inválidos antes que cheguem ao agente.</p>
 <p>As classes definem entidades como Cliente, Fatura e Regra de Desconto, garantindo que nenhum valor monetário seja negativo e que identificadores fiscais sigam as normas do país.</p>
 <h2 id="integracao-com-model-context-protocol">Integração com Model Context Protocol</h2>
 <p>Com os modelos definidos, criamos um servidor MCP leve. O servidor expõe funções formais como ferramentas:
@@ -452,7 +452,7 @@
 <li>Redução substancial de tokens consumidos no prompt de instrução</li>
 <li>Isolamento total entre a inteligência probabilística do modelo e a segurança do banco legado</li>
 </ul>
-<p>A integração entre Python, Pydantic e MCP e a espinha dorsal tecnológica que permite a HSN Labs colocar agentes em produção em corporações reguladas com confiabilidade absoluta.</p>
+<p>A integração entre Python, Pydantic e MCP é a espinha dorsal tecnológica que permite a HSN Labs colocar agentes em produção em corporações reguladas com confiabilidade absoluta.</p>
 <h2 id="recursos-estrategicos-e-posts-relacionados">Recursos Estratégicos e Posts Relacionados</h2>
 <ul>
 <li><a href="/blog/pt/post/como-construir-ontologia-enterprise-do-zero/">Como Construir uma Ontologia Enterprise do Zero: Passo a Passo</a></li>

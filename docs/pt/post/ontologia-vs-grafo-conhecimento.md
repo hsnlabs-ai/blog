@@ -18,22 +18,22 @@ author: Hugo S. Nascimento
 
 Embora ambos compartilhem fundamentos de teoria de grafos e representação de informações, ontologias e grafos de conhecimento desempenham papeis profundamente distintos em uma arquitetura de software para agentes.
 
-Compreender a fronteira exata entre esses dois conceitos e o primeiro passo para desenhar sistemas escaláveis e seguros.
+Compreender a fronteira exata entre esses dois conceitos é o primeiro passo para desenhar sistemas escaláveis e seguros.
 
 ## Definições Formais
 
 ### O Que É um Grafo de Conhecimento?
-Um grafo de conhecimento e uma base de dados que representa informações como uma rede de nos e arestas. Ele armazena instâncias concretas do mundo real:
+Um grafo de conhecimento é uma base de dados que representa informações como uma rede de nos e arestas. Ele armazena instâncias concretas do mundo real:
 - O cliente Carlos Souza
 - A filial de Curitiba
 - O contrato assinado em outubro
 
-O foco principal do grafo de conhecimento e a navegabilidade, permitindo descobrir conexões indiretas entre pontos de dados distantes.
+O foco principal do grafo de conhecimento é a navegabilidade, permitindo descobrir conexões indiretas entre pontos de dados distantes.
 
 ### O Que É uma Ontologia?
-Uma ontologia e o metamodelo formal que define quais tipos de nos e arestas são permitidos de existir no sistema e quais regras operacionais governam esse universo. 
+Uma ontologia é o metamodelo formal que define quais tipos de nos e arestas são permitidos de existir no sistema e quais regras operacionais governam esse universo. 
 
-Se o grafo de conhecimento e o conjunto de casas, carros e jogadores em um tabuleiro, a ontologia e o livro de regras estritas do jogo que define como cada peça pode se mover e o que constitui uma vitória ou penalidade.
+Se o grafo de conhecimento é o conjunto de casas, carros e jogadores em um tabuleiro, a ontologia é o livro de regras estritas do jogo que define como cada peça pode se mover e o que constitui uma vitória ou penalidade.
 
 ## Como os Dois Componentes Trabalham Juntos
 

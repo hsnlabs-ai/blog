@@ -18,11 +18,11 @@ author: Hugo S. Nascimento
 
 Um chatbot responde perguntas em texto. Um agente autônomo executa fluxos de trabalho de múltiplas etapas e altera o estado em sistemas centrais da empresa.
 
-Tratar chatbots conversacionais como agentes corporativos e o motivo mais comum pelo qual iniciativas corporativas de automação falham em entregar retorno financeiro.
+Tratar chatbots conversacionais como agentes corporativos é o motivo mais comum pelo qual iniciativas corporativas de automação falham em entregar retorno financeiro.
 
 Quando uma empresa implanta uma interface interna de chat que resume documentos de políticas em PDF, ela criou uma ferramenta de consulta. Ela não eliminou um centro de custo operacional.
 
-Se o seu objetivo estratégico e cancelar um contrato milionário de terceirizacao de BPO, respostas em linguagem natural são inúteis. Você precisa de software que execute trabalho real:
+Se o seu objetivo estratégico e cancelar um contrato milionário de terceirização de BPO, respostas em linguagem natural são inúteis. Você precisa de software que execute trabalho real:
 * Conciliar milhares de faturas de fornecedores com ordens de compra em ERPs como SAP ou Totvs.
 * Validar alocações de estoque em múltiplos bancos de dados distribuídos de centros de distribuição.
 * Liquidar disputas de faturamento de clientes de acordo com termos estritos de contrato.

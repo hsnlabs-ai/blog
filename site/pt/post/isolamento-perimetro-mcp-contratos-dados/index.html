@@ -453,10 +453,10 @@
 <h3 id="1-replicas-isoladas-de-leitura-com-mascaramento-dinamico">1. Replicas Isoladas de Leitura com Mascaramento Dinâmico</h3>
 <p>Agentes consultam replicas isoladas de leitura, nunca os bancos centrais de produção. Antes que os dados saiam do perímetro corporativo para entrar na janela de contexto do agente, serviços automatizados de mascaramento anonimizam dados pessoais protegidos, registros tributários e campos financeiros sensíveis.</p>
 <h3 id="2-interfaces-padronizadas-de-model-context-protocol">2. Interfaces Padronizadas de Model Context Protocol</h3>
-<p>Intermediamos todas as interações com ferramentas por meio de servidores de Model Context Protocol. O agente nunca executa consultas livres; ele aciona ferramentas discretas e auditaveis governadas por schemas estritos em JSON. Cada parâmetro e tipado, processado e validado por software antes de entrar no perímetro da empresa.</p>
+<p>Intermediamos todas as interações com ferramentas por meio de servidores de Model Context Protocol. O agente nunca executa consultas livres; ele aciona ferramentas discretas e auditáveis governadas por schemas estritos em JSON. Cada parâmetro e tipado, processado e validado por software antes de entrar no perímetro da empresa.</p>
 <h3 id="3-filas-assimetricas-e-assincronas-de-gravacao">3. Filas Assimétricas e Assíncronas de Gravação</h3>
-<p>Agentes nunca alteram o estado de produção de forma síncrona. Quando um agente conclui que uma fatura esta pronta para pagamento, ele não chama a API de pagamento diretamente. Ele pública uma proposta estruturada de mutação em uma fila isolada de transações. Um executor independente de validação verifica as regras de negócio, checa aprovações e executa a gravação no banco.</p>
-<p>Segurança não é um detalhe adicional em engenharia agentica. O isolamento de perímetro e o preço inegociável de entrada para a produção corporativa.</p>
+<p>Agentes nunca alteram o estado de produção de forma síncrona. Quando um agente conclui que uma fatura está pronta para pagamento, ele não chama a API de pagamento diretamente. Ele pública uma proposta estruturada de mutação em uma fila isolada de transações. Um executor independente de validação verifica as regras de negócio, checa aprovações e executa a gravação no banco.</p>
+<p>Segurança não é um detalhe adicional em engenharia agêntica. O isolamento de perímetro é o preço inegociável de entrada para a produção corporativa.</p>
 <h2 id="recursos-estrategicos-e-posts-relacionados">Recursos Estratégicos e Posts Relacionados</h2>
 <ul>
 <li><a href="/blog/pt/post/como-construir-ontologia-enterprise-do-zero/">Como Construir uma Ontologia Enterprise do Zero: Passo a Passo</a></li>

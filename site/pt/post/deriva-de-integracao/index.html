@@ -435,7 +435,7 @@
 <!-- more -->
 
 <p><em>Contexto: Documentei este post-mortem após uma atualização não anunciada de pesos de modelo alterar silenciosamente tipos de campos JSON, derrubando a esteira de contas a pagar de um cliente corporativo durante a noite. Prompts não podem servir como contratos de API.</em></p>
-<p>Grandes modelos de linguagem são motores estocasticos de raciocínio. APIs corporativas são protocolos estruturados e rígidos.</p>
+<p>Grandes modelos de linguagem são motores estocásticos de raciocínio. APIs corporativas são protocolos estruturados e rígidos.</p>
 <p>Conectar um modelo de linguagem sem limites diretamente a um banco de dados corporativo ou endpoint de ERP cria um ponto de falha de arquitetura crítico conhecido como deriva de integração.</p>
 <p>No ano passado, recebi uma ligação de emergência as três da manha de um diretor de engenharia. O sistema automatizado de processamento de faturas deles vinha rodando tranquilamente em produção por três semanas. De repente, sem que uma única linha de código do cliente tivesse mudado, os microsservicos começaram a disparar centenas de erros internos 500, paralisando todo o processamento noturno.</p>
 <p>A causa raiz foi a deriva de integração. O provedor de nuvem do modelo havia aplicado uma atualização menor nos pesos do modelo sem aviso prévio.</p>
@@ -453,7 +453,7 @@
 <ul>
 <li>Validação Rígida com Schemas Pydantic: Cada saída do modelo e interceptada por um validador estrito de schema antes de tocar a infraestrutura corporativa. Se o tipo de um campo sofrer deriva de um único caractere, o dado e capturado e sanitizado no perímetro.</li>
 <li>Roteamento Semântico com Executores Parametrizados: Nunca permitimos que modelos gerem código livre ou comandos SQL diretos. O modelo e restrito a classificação de intenção e extração de parâmetros. Trabalhadores isolados de software constroem as cargas reais de API usando templates pre-compilados.</li>
-<li>Travas de Transição de Estados Finitos: Operações agenticas de múltiplas etapas são delimitadas por máquinas de estados finitos. Se uma atualização no modelo levar o agente a sugerir uma transição de estado ilegal, a trava da máquina de estados rejeita a solicitação antes de qualquer escrita no banco.</li>
+<li>Travas de Transição de Estados Finitos: Operações agênticas de múltiplas etapas são delimitadas por máquinas de estados finitos. Se uma atualização no modelo levar o agente a sugerir uma transição de estado ilegal, a trava da máquina de estados rejeita a solicitação antes de qualquer escrita no banco.</li>
 </ul>
 <p>Garantir estabilidade em produção significa projetar sistemas onde derivas nos modelos não possam corromper sua infraestrutura corporativa central.</p>
 <h2 id="recursos-estrategicos-e-posts-relacionados">Recursos Estratégicos e Posts Relacionados</h2>

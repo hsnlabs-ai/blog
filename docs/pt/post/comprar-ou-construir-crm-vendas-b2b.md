@@ -317,12 +317,12 @@ A migração de um sistema crítico de CRM não deve ser realizada com desligame
 
 ## Benchmark de Mercado Auditado
 
-Klarna: descontinuou contratos enterprise de Salesforce e Zendesk em favor de stack interna agentica integrada a grafos Neo4j, gerando economia auditada de 40 milhões de dólares anuais e absorvendo o volume de trabalho de 700 operadores terceirizados.
+Klarna: descontinuou contratos enterprise de Salesforce e Zendesk em favor de stack interna agêntica integrada a grafos Neo4j, gerando economia auditada de 40 milhões de dólares anuais e absorvendo o volume de trabalho de 700 operadores terceirizados.
 
 ---
 
 ## Recursos Estratégicos e Posts Relacionados
 - <a href="/blog/pt/post/matriz-substituicao-bpo/">A Matriz de Substituição de BPO: Métricas Operacionais e Financeiras</a>
 - <a href="/blog/pt/post/preco-palantir-tco-alternativas-abertas/">O TCO Real da Palantir: A Barreira em Dólar e Alternativas Abertas</a>
-- <a href="/blog/pt/post/playbook-c-suite-protecao-margem/">O Playbook de Transição da Diretoria: Protegendo Margens na Era Agentica</a>
+- <a href="/blog/pt/post/playbook-c-suite-protecao-margem/">O Playbook de Transição da Diretoria: Protegendo Margens na Era Agêntica</a>
 - <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da HSN Labs</a>

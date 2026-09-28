@@ -16,7 +16,7 @@ author: Hugo S. Nascimento
 
 *Contexto: Documentei este post-mortem após uma atualização não anunciada de pesos de modelo alterar silenciosamente tipos de campos JSON, derrubando a esteira de contas a pagar de um cliente corporativo durante a noite. Prompts não podem servir como contratos de API.*
 
-Grandes modelos de linguagem são motores estocasticos de raciocínio. APIs corporativas são protocolos estruturados e rígidos.
+Grandes modelos de linguagem são motores estocásticos de raciocínio. APIs corporativas são protocolos estruturados e rígidos.
 
 Conectar um modelo de linguagem sem limites diretamente a um banco de dados corporativo ou endpoint de ERP cria um ponto de falha de arquitetura crítico conhecido como deriva de integração.
 
@@ -44,7 +44,7 @@ Na HSN Labs, tratamos prompts em linguagem natural como entradas completamente n
 
 * Validação Rígida com Schemas Pydantic: Cada saída do modelo e interceptada por um validador estrito de schema antes de tocar a infraestrutura corporativa. Se o tipo de um campo sofrer deriva de um único caractere, o dado e capturado e sanitizado no perímetro.
 * Roteamento Semântico com Executores Parametrizados: Nunca permitimos que modelos gerem código livre ou comandos SQL diretos. O modelo e restrito a classificação de intenção e extração de parâmetros. Trabalhadores isolados de software constroem as cargas reais de API usando templates pre-compilados.
-* Travas de Transição de Estados Finitos: Operações agenticas de múltiplas etapas são delimitadas por máquinas de estados finitos. Se uma atualização no modelo levar o agente a sugerir uma transição de estado ilegal, a trava da máquina de estados rejeita a solicitação antes de qualquer escrita no banco.
+* Travas de Transição de Estados Finitos: Operações agênticas de múltiplas etapas são delimitadas por máquinas de estados finitos. Se uma atualização no modelo levar o agente a sugerir uma transição de estado ilegal, a trava da máquina de estados rejeita a solicitação antes de qualquer escrita no banco.
 
 Garantir estabilidade em produção significa projetar sistemas onde derivas nos modelos não possam corromper sua infraestrutura corporativa central.
 

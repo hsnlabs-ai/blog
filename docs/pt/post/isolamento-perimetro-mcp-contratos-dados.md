@@ -47,12 +47,12 @@ Na HSN Labs, nossos engenheiros nunca concedem aos modelos acesso direto de escr
 Agentes consultam replicas isoladas de leitura, nunca os bancos centrais de produção. Antes que os dados saiam do perímetro corporativo para entrar na janela de contexto do agente, serviços automatizados de mascaramento anonimizam dados pessoais protegidos, registros tributários e campos financeiros sensíveis.
 
 ### 2. Interfaces Padronizadas de Model Context Protocol
-Intermediamos todas as interações com ferramentas por meio de servidores de Model Context Protocol. O agente nunca executa consultas livres; ele aciona ferramentas discretas e auditaveis governadas por schemas estritos em JSON. Cada parâmetro e tipado, processado e validado por software antes de entrar no perímetro da empresa.
+Intermediamos todas as interações com ferramentas por meio de servidores de Model Context Protocol. O agente nunca executa consultas livres; ele aciona ferramentas discretas e auditáveis governadas por schemas estritos em JSON. Cada parâmetro e tipado, processado e validado por software antes de entrar no perímetro da empresa.
 
 ### 3. Filas Assimétricas e Assíncronas de Gravação
-Agentes nunca alteram o estado de produção de forma síncrona. Quando um agente conclui que uma fatura esta pronta para pagamento, ele não chama a API de pagamento diretamente. Ele pública uma proposta estruturada de mutação em uma fila isolada de transações. Um executor independente de validação verifica as regras de negócio, checa aprovações e executa a gravação no banco.
+Agentes nunca alteram o estado de produção de forma síncrona. Quando um agente conclui que uma fatura está pronta para pagamento, ele não chama a API de pagamento diretamente. Ele pública uma proposta estruturada de mutação em uma fila isolada de transações. Um executor independente de validação verifica as regras de negócio, checa aprovações e executa a gravação no banco.
 
-Segurança não é um detalhe adicional em engenharia agentica. O isolamento de perímetro e o preço inegociável de entrada para a produção corporativa.
+Segurança não é um detalhe adicional em engenharia agêntica. O isolamento de perímetro é o preço inegociável de entrada para a produção corporativa.
 
 ## Recursos Estratégicos e Posts Relacionados
 - <a href="/blog/pt/post/como-construir-ontologia-enterprise-do-zero/">Como Construir uma Ontologia Enterprise do Zero: Passo a Passo</a>

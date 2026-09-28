@@ -6,7 +6,7 @@ tags:
 - case-studies
 - consulting
 - sprint
-description: 'Por que decks genéricos de estratégia de consultorias tradicionais falham em entregar software agentico em ambientes corporativos complexos.'
+description: 'Por que decks genéricos de estratégia de consultorias tradicionais falham em entregar software agêntico em ambientes corporativos complexos.'
 author: Hugo S. Nascimento
 ---
 
@@ -14,7 +14,7 @@ author: Hugo S. Nascimento
 
 <!-- more -->
 
-*Contexto: Como fundador e engenheiro que construiu empresas com venture capital, tenho zero paciência para apresentações teóricas de consultoria que não entregam código funcional. Este e o playbook exato de Forward Deployed Engineering que usamos na HSN Labs para eliminar riscos de produção em uma semana.*
+*Contexto: Como fundador e engenheiro que construiu empresas com venture capital, tenho zero paciência para apresentações teóricas de consultoria que não entregam código funcional. Este é o playbook exato de Forward Deployed Engineering que usamos na HSN Labs para eliminar riscos de produção em uma semana.*
 
 Lideranças corporativas não precisam de mais um relatório estratégico prevendo o futuro da inteligência artificial.
 
@@ -22,7 +22,7 @@ Todo mês, consultorias tradicionais de gestão vendem a executivos de grandes c
 
 Quando a equipe interna de engenharia finalmente recebe o deck e tenta escrever a primeira linha de código, toda a estratégia colapsa porque ninguém auditou os schemas dos bancos legados nem testou limites de latência de rede.
 
-Na HSN Labs, rejeitamos consultoria de apresentação de slides. Acreditamos que a única forma de desriscar uma iniciativa corporativa agentica e por meio de prova de engenharia empírica sobre dados reais da empresa. 
+Na HSN Labs, rejeitamos consultoria de apresentação de slides. Acreditamos que a única forma de desriscar uma iniciativa corporativa agêntica e por meio de prova de engenharia empírica sobre dados reais da empresa. 
 
 Fazemos isso em cinco dias por meio do nosso sprint de Forward Deployed Engineering.
 

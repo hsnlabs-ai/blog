@@ -6,7 +6,7 @@ tags:
 - economics
 - bpo
 - hr-tech
-description: 'Lições operacionais sobre o colapso estrutural de contratos de terceirizacao de RH e fluxos de trabalho manuais em grandes empresas.'
+description: 'Lições operacionais sobre o colapso estrutural de contratos de terceirização de RH e fluxos de trabalho manuais em grandes empresas.'
 author: Hugo S. Nascimento
 ---
 
@@ -16,7 +16,7 @@ author: Hugo S. Nascimento
 
 *Contexto: Ao longo dos meus anos construindo a Eva People e implantando tecnologia para força de trabalho no Brasil e no exterior, passei centenas de horas analisando backoffices corporativos. Digitação manual em eSocial, declarações fiscais e cadastros de fornecedores geram milhões em passivos evitáveis. Aqui explico como agentes autônomos desmontam o modelo tradicional de BPO.*
 
-Por trinta anos, a indústria de Terceirizacao de Processos de Negócio ergueu uma fortaleza ao redor do balanço corporativo.
+Por trinta anos, a indústria de Terceirização de Processos de Negócio ergueu uma fortaleza ao redor do balanço corporativo.
 
 Todo Chief Financial Officer com quem converso compartilha a mesma dor de cabeça: pagar milhões de dólares anuais para exércitos de analistas terceirizados que passam o dia copiando dados entre planilhas, sistemas de chamados e ERPs como SAP, Oracle e Totvs Protheus.
 
@@ -28,7 +28,7 @@ Essa era acabou. Quando processos corporativos são regidos por lei estatutária
 
 Construir software para gestão de pessoas me ensinou que operações de backoffice são governadas por formulas matemáticas fechadas, não por criatividade humana. O processamento manual de dados gera passivos financeiros ocultos em cinco fluxos centrais do balanço:
 
-### 1. Folha de Pagamento e Envios Regulatorios Trabalhistas
+### 1. Folha de Pagamento e Envios Regulatórios Trabalhistas
 Em mercados com legislação trabalhista complexa sob a CLT, folha de pagamento não é sugestão. E um algoritmo jurídico exato em nível de código.
 
 Cada hora extra, adicional noturno e benefício sindical corresponde a uma formula fechada. Ainda assim, operações tradicionais de BPO continuam empregando salas cheias de analistas conciliando manualmente cartões de ponto e preparando envios governamentais como eventos do eSocial.
@@ -43,7 +43,7 @@ Por que leva duas semanas? Porque analistas humanos precisam conciliar manualmen
 Normas contábeis não demandam criatividade humana. Elas demandam conformidade implacável com a ontologia do plano de contas. Agentes de liquidação processam arquivos XML fiscais, cruzam ítens com pedidos de compra, verificam códigos de retenção e efetuam lançamentos balanceados em tempo real. O fechamento mensal cai de quinze dias para quinze minutos.
 
 ### 3. Operações de Tesouraria e Conciliação Tripla de Faturas
-A base do contas a pagar e a conciliação em três vias: o pedido de compra confere com o comprovante de entrega no armazém e com a nota fiscal do fornecedor?
+A base do contas a pagar é a conciliação em três vias: o pedido de compra confere com o comprovante de entrega no armazém e com a nota fiscal do fornecedor?
 
 Quando humanos fazem essa checagem em milhares de faturas mensais, pagamentos atrasam e geram juros. Pior: contas duplicadas passam despercebidas. Um agente autônomo executa checagens formais de invariantes entre pedidos de compra, registros de doca e extratos bancários de forma instantânea, aprovando pagamentos somente quando todos os termos contratuais batem.
 

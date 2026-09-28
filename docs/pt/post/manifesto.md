@@ -24,7 +24,7 @@ Ao longo dessa jornada, tivemos o privilégio de trabalhar com dezenas de client
 
 Não aprendi arquitetura de agentes em artigos acadêmicos ou demonstrações de YouTube. Aprendi do jeito difícil: falhando em produção.
 
-Ao longo de cinco anos entregando software real para usuários corporativos reais, acompanhei cada ponto de falha concebivel acontecer em ambientes vivos. Vi prompts sofrerem deriva silenciosa após atualizações de modelos. Vi microsservicos engasgarem com formatos inesperados de bancos de dados. Vi loops de raciocínio sem limites dispararem chamadas redundantes, e vi como interfaces conversacionais frágeis colapsam no instante em que encontram dados corporativos sujos. 
+Ao longo de cinco anos entregando software real para usuários corporativos reais, acompanhei cada ponto de falha concebível acontecer em ambientes vivos. Vi prompts sofrerem deriva silenciosa após atualizações de modelos. Vi microsservicos engasgarem com formatos inesperados de bancos de dados. Vi loops de raciocínio sem limites dispararem chamadas redundantes, e vi como interfaces conversacionais frágeis colapsam no instante em que encontram dados corporativos sujos. 
 
 Após centenas de iterações, correções de emergência e noites sem dormir, descobrimos o que realmente funciona: esquemas rígidos, ontologias de domínio, máquinas de estados finitos e rastreamento contínuo em produção.
 
@@ -58,7 +58,7 @@ O futuro não se resume a substituir trabalhadores humanos por automação fria.
 
 Essa transição não pode ser alcançada por meio de apresentações teóricas ou wrappers frágeis de chatbot. Ela exige engenharia profunda de sistemas: gestão completa do ciclo de vida cobrindo design de ontologias de negócio, infraestrutura segura, orquestração delimitada e avaliação contínua em produção.
 
-A HSN Labs e a boutique de engenharia que construí para trabalhar em parceria com líderes empresariais que já estão buscando ativamente essa transição e exigem sistemas em produção que não quebrem.
+A HSN Labs é a boutique de engenharia que construí para trabalhar em parceria com líderes empresariais que já estão buscando ativamente essa transição e exigem sistemas em produção que não quebrem.
 
 ## Notas de Campo e Artigos Relacionados
 - <a href="/blog/pt/post/estudo-caso-cleveland-clinic-agentes-operacionais/">Estudo de Caso: Como a Cleveland Clinic Escalou Fluxo de Pacientes</a>

@@ -15,9 +15,9 @@ author: Hugo S. Nascimento
 
 <!-- more -->
 
-*Contexto: No início deste ano estruturei a substituição de uma operação de cobrança e renegociacao contratual que custava milhões anuais em mesas de atendimento humano terceirizado. O resultado foi uma redução drástica de custos operacionais e recuperação de fluxo de caixa em dias.*
+*Contexto: No início deste ano estruturei a substituição de uma operação de cobrança e renegociação contratual que custava milhões anuais em mesas de atendimento humano terceirizado. O resultado foi uma redução drástica de custos operacionais e recuperação de fluxo de caixa em dias.*
 
-Processos corporativos de cobrança, repactuacao de dívidas e revisão de contratos sempre foram dominados por operações massivas de BPO. Empresas contratam centenas de operadores para seguir scripts rígidos de negociação, registrar acordos em sistemas legados e emitir boletos ou termos aditivos.
+Processos corporativos de cobrança, repactuação de dívidas e revisão de contratos sempre foram dominados por operações massivas de BPO. Empresas contratam centenas de operadores para seguir scripts rígidos de negociação, registrar acordos em sistemas legados e emitir boletos ou termos aditivos.
 
 O modelo tradicional é ineficiente, caro e sujeito a taxas inaceitáveis de erro humano. Quando corporações tentam aplicar chatbots conversacionais convencionais nessa esteira, os resultados são desastrosos. O modelo promete descontos não autorizados pelo comitê de crédito ou alucina prazos incompatíveis com a legislação vigente.
 
@@ -34,13 +34,13 @@ A conversa e tratada como uma transição de estados em uma Máquina de Estados 
 - Apresentação do saldo devedor auditado
 - Coleta de proposta inicial
 - Validação da proposta contra a matriz de crédito
-- Formalizacao do termo aditivo ou emissão do boleto
+- Formalização do termo aditivo ou emissão do boleto
 - Baixa no sistema central de gestão financeira
 
 Se o cliente propuser condições fora da matriz autorizada, o agente não cede e não improvisa. Ele sugere a melhor alternativa viável ou aciona a esteira de aprovação humana especializada.
 
 ### 3. Mutação Segura com Verificação de Dois Fatores
-Nenhum contrato e alterado no ERP sem que o agente confirme a assinatura digital ou a concordância formal do cliente sob trilha auditavel. Toda transação gera logs imutáveis contendo o histórico das mensagens, os dados consultados e os hashes criptográficos do aceite.
+Nenhum contrato é alterado no ERP sem que o agente confirme a assinatura digital ou a concordância formal do cliente sob trilha auditável. Toda transação gera logs imutáveis contendo o histórico das mensagens, os dados consultados e os hashes criptográficos do aceite.
 
 ## Métricas de Impacto em Produção
 

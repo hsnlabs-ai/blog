@@ -18,7 +18,7 @@ author: Hugo S. Nascimento
 
 O valor de entrega da Palantir em organizações complexas é inquestionável. Seus sistemas organizam desde frotas de caca militar até cadeias de suprimentos globais.
 
-No entanto, o custo financeiro para entrar e permanecer no ecossistema e uma barreira instransponivel para noventa e cinco por cento das companhias no Brasil e no mundo.
+No entanto, o custo financeiro para entrar e permanecer no ecossistema é uma barreira intransponível para noventa e cinco por cento das companhias no Brasil e no mundo.
 
 ## A Anatomia do Custo Total de Propriedade
 

@@ -16,7 +16,7 @@ author: Hugo S. Nascimento
 
 *Contexto: Todo projeto de agentes na HSN Labs começa no mesmo lugar: desenhando a ontologia operacional do cliente. Sem essa fundação de dados e regras, nenhum modelo de linguagem consegue atuar de forma segura no mundo corporativo.*
 
-A maioria das iniciativas de IA começa escolhendo qual modelo de linguagem utilizar ou configurando bancos vetoriais. Essa e a ordem inversa da boa engenharia de software.
+A maioria das iniciativas de IA começa escolhendo qual modelo de linguagem utilizar ou configurando bancos vetoriais. Essa é a ordem inversa da boa engenharia de software.
 
 Se os sistemas centrais da sua empresa não possuírem uma representação formal e clara do que é um cliente, um pedido, uma fatura e quais ações são permitidas em cada etapa, o melhor modelo disponível no mercado continuara alucinando e gerando erros operacionais graves.
 

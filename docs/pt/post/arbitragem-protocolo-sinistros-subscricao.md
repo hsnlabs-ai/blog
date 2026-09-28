@@ -16,7 +16,7 @@ author: Hugo S. Nascimento
 
 *Contexto: Operações de seguros e operadoras de saúde gastam fortunas auditando laudos médicos, comprovantes de acidentes e notas fiscais. Apresentamos aqui a arquitetura de arbitragem que automatiza a liquidação ponta a ponta.*
 
-No mercado de seguros e operadoras de saúde suplementar, o fluxo de liquidação de sinistros e o processo mais custoso e sujeito a fraudes da operação.
+No mercado de seguros e operadoras de saúde suplementar, o fluxo de liquidação de sinistros é o processo mais custoso e sujeito a fraudes da operação.
 
 Centenas de peritos humanos passam dias confrontando fotos de veículos avariados, orçamentos de oficinas, laudos de hospitais e cláusulas de apólices antes de emitirem uma autorização de pagamento.
 
@@ -34,18 +34,18 @@ O agente consulta a ontologia da seguradora para verificar as coberturas ativas,
 Se o valor orçado pela oficina divergir das medias de mercado ou se a imagem já tiver sido utilizada em sinistros anteriores, o sistema sinaliza o desvio e encaminha o caso com dossie pronto para a equipe de investigação especial.
 
 ### 4. Liquidação Automática e Pagamento Instantâneo
-Casos em conformidade total com a matriz de risco da empresa são aprovados instantaneamente e a ordem de pagamento via Pix ou transferência bancária e disparada de forma autônoma.
+Casos em conformidade total com a matriz de risco da empresa são aprovados instantaneamente e a ordem de pagamento via Pix ou transferência bancária é disparada de forma autônoma.
 
 ## Impacto na Economia do Negócio
 
 - Tempo médio de liquidação reduzido de catorze dias para menos de dez minutos
-- Queda de setenta e cinco por cento nos custos de perícia e regulacao de sinistros
-- Aumento drástico na satisfação e fidelizacao dos segurados
+- Queda de setenta e cinco por cento nos custos de perícia e regulação de sinistros
+- Aumento drástico na satisfação e fidelização dos segurados
 
-Transformar a regulacao de sinistros em um processo de software em tempo real e a vantagem competitiva definitiva para companhias que desejam liderar o setor.
+Transformar a regulação de sinistros em um processo de software em tempo real é a vantagem competitiva definitiva para companhias que desejam liderar o setor.
 
 ## Recursos Estratégicos e Posts Relacionados
 - <a href="/blog/pt/post/matriz-substituicao-bpo/">A Matriz de Substituição de BPO: Métricas Operacionais e Financeiras</a>
-- <a href="/blog/pt/post/playbook-c-suite-protecao-margem/">O Playbook de Transição da Diretoria: Protegendo Margens na Era Agentica</a>
+- <a href="/blog/pt/post/playbook-c-suite-protecao-margem/">O Playbook de Transição da Diretoria: Protegendo Margens na Era Agêntica</a>
 - <a href="/blog/pt/post/custo-ia-ilimitada-ti-legada/">O Custo de IA Sem Limites na TI Legada</a>
 - <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da HSN Labs</a>
