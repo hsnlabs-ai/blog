@@ -1,0 +1,176 @@
+<!doctype html>
+<html data-bs-theme="{{ config.theme.theme_style }}">
+
+<head>
+    {%- block site_meta %}
+    {%- block htmltitle %}
+    <title>{% if page and page.title and not page.is_homepage %}{{ page.title }} - {% endif %}{{ config.site_name }}
+    </title>
+    {%- endblock %}
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% if page and page.is_homepage %}
+    <meta name="description" content="{{ config['site_description'] }}">{% endif %}
+    {% if page and page.canonical_url %}
+    <link rel="canonical" href="{{ page.canonical_url }}">{% endif %}
+    {% if config.site_author %}
+    <meta name="author" content="{{ config.site_author }}">{% endif %}
+
+    {% if config.theme.favicon %}
+    <link rel="icon" type="image/x-icon" href="{{ config.theme.favicon|url }}">
+    {% else %}
+    <link rel="icon" type="image/x-icon" href="{{ 'assets/img/favicon.ico'|url }}">
+    {% endif %}
+
+    {%- if config.theme.highlightjs %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.4.0/styles/base16/grayscale-dark.min.css">
+
+    {%- for lang in config.hljs_languages %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/{{lang}}.min.js"></script>
+    {%- endfor %}
+    <script>hljs.highlightAll();</script>
+    {%- endif %}
+
+    {%- endblock %}
+
+    {%- block extrahead %}
+    {% if page and page.meta %}
+    {% if page.meta.title %}
+    <meta name="title" content="{{ page.meta.title }}">
+    <meta property="og:title" content="{{ page.meta.title }}">
+    <meta name="twitter:title" content="{{ page.meta.title }}">
+    {% endif %}
+    {% if page.meta.description %}
+    <meta name="description" content="{{ page.meta.description }}">
+    <meta property="og:description" content="{{ page.meta.description }}">
+    <meta name="twitter:description" content="{{ page.meta.description }}">
+    {% endif %}
+    {% if page.meta.author %}
+    <meta name="author" content="{{ page.meta.author }}">
+    {% endif %}
+    {% if page.meta.date %}
+    <meta name="date" content="{{ page.meta.date }}">
+    <meta property="article:published_time" content="{{ page.meta.date }}">
+    {% endif %}
+    {% if page.meta.image %}
+    <meta property="og:image" content="{{ page.meta.image|url }}">
+    <meta name="twitter:image" content="{{ page.meta.image|url }}">
+    {% endif %}
+    {% if page.canonical_url %}
+    <meta property="og:url" content="{{ page.canonical_url }}">
+    {% endif %}
+    {% if config.site_name %}
+    <meta property="og:site_name" content="{{ config.site_name }}">
+    {% endif %}
+    <meta property="og:type" content="article">
+    <meta name="twitter:card" content="summary_large_image">
+    {% endif %}
+    {%- endblock %}
+
+    <script>var base_url = '{{ base_url }}';</script>
+
+    {%- block styles %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="{{ 'assets/css/bootstrap.min.css'|url }}">
+    <link rel="stylesheet" href="{{ 'assets/css/root.min.css'|url }}">
+    <link rel="stylesheet" href="{{ 'assets/css/main.min.css'|url }}">
+    <link rel="stylesheet" href="{{ 'assets/css/media.min.css'|url }}">
+    <link rel="stylesheet" href="{{ 'assets/css/mkdocstrings.min.css'|url }}">
+
+    {%- for path in extra_javascript %}
+    <script src="{{ path }}"></script>
+    {%- endfor %}
+
+    {#- theme.extra_css is non-standard (MkDocs expects top-level extra_css); accept it as alias -#}
+    {%- set _all_css = extra_css | list %}
+    {%- if config.theme.extra_css is defined and config.theme.extra_css %}
+    {%- for path in config.theme.extra_css %}
+    {%- if path not in _all_css %}{% set _ = _all_css.append(path) %}{% endif %}
+    {%- endfor %}
+    {%- endif %}
+    {%- for path in _all_css %}
+    <link href="{{ path }}" rel="stylesheet">
+    {%- endfor %}
+
+    {%- endblock %}
+
+    {%- block head_extra_links %}
+    {% include "modules/head_extra_links.html" %}
+    {%- endblock %}
+</head>
+
+<body>
+    <!-- FIXED / STICKY HEADER -->
+    <header class="header-nav" id="component-header">
+        <div class="container header-container">
+            {%- block header %}
+            {% include "modules/header.html" %}
+            {%- endblock %}
+        </div>
+    </header>
+
+    <div class="blog-body-wrapper">
+        <main class="blog-main-content">
+            {%- block search_button %}
+            {%- if 'search' in config['plugins'] %}
+            <div class="container search-container-wrap">
+                {%- include "modules/searchbox.html" %}
+            </div>
+            {%- endif %}
+            {%- endblock %}
+
+            {% if config.theme.sidebar or (page and page.meta.blog_sidebar) or (config.theme.components and config.theme.components.blog_sidebar) %}
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 d-none d-md-block" id="component-sidebar">
+                        {%- block sidebar %}
+                        {% include "modules/sidebar.html" %}
+                        {%- endblock %}
+                    </div>
+                    <div class="col-md-9 col-12" id="component-content">
+                        {%- block content_with_sidebar %}
+                        {% include "modules/content.html" %}
+                        {%- endblock %}
+                    </div>
+                </div>
+            </div>
+            {% else %}
+            {%- block content %}
+            {% include "modules/content.html" %}
+            {%- endblock %}
+            {% endif %}
+        </main>
+
+        {% if config.theme.components and config.theme.components.preview == False %}
+        {% else %}
+        {%- block preview %}
+        {% include "modules/preview.html" %}
+        {%- endblock %}
+        {% endif %}
+
+        {% if config.theme.components and config.theme.components.footer == False %}
+        {% else %}
+        {%- block footer %}
+        {% include "modules/footer.html" %}
+        {%- endblock %}
+        {% endif %}
+    </div>
+
+    {%- block scripts %}
+    <script src="{{ 'assets/js/jquery-3.3.1.slim.min.js'|url }}"></script>
+    <script src="{{ 'assets/js/bootstrap.bundle.min.js'|url }}"></script>
+    <script src="{{ 'assets/js/main.min.js'|url }}"></script>
+
+    {%- for path in extra_javascript %}
+    <script src="{{ path }}" defer></script>
+    {%- endfor %}
+    {%- endblock %}
+
+</body>
+
+</html>

@@ -16,7 +16,17 @@ document.addEventListener("DOMContentLoaded", function () {
     currentPage = pageParam;
   }
 
-  function renderPage(page) {
+  function scrollToBlogTop() {
+    const header = document.querySelector(".header-nav");
+    const headerHeight = header ? header.offsetHeight : 80;
+    const targetY = container.getBoundingClientRect().top + window.pageYOffset - headerHeight - 24;
+    window.scrollTo({
+      top: Math.max(0, targetY),
+      behavior: "smooth"
+    });
+  }
+
+  function renderPage(page, shouldScroll) {
     currentPage = page;
     const start = (page - 1) * pageSize;
     const end = Math.min(start + pageSize, posts.length);
@@ -31,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const statusEl = document.getElementById("pagination-status");
     if (statusEl) {
-      statusEl.textContent = `Showing essays ${start + 1} to ${end} of ${posts.length}`;
+      statusEl.textContent = `Showing ${start + 1}–${end} of ${posts.length} essays · Page ${page} of ${totalPages}`;
     }
 
     const prevBtn = document.getElementById("pagination-prev");
@@ -44,21 +54,48 @@ document.addEventListener("DOMContentLoaded", function () {
       nextBtn.disabled = (currentPage === totalPages);
     }
 
-    const numBtns = paginationContainer.querySelectorAll(".pagination-num");
-    numBtns.forEach(btn => {
-      const target = parseInt(btn.getAttribute("data-target-page"), 10);
-      if (target === currentPage) {
-        btn.classList.add("active");
-        btn.setAttribute("aria-current", "page");
+    const numbersContainer = document.getElementById("pagination-numbers");
+    if (numbersContainer) {
+      numbersContainer.innerHTML = "";
+      
+      let pages = [];
+      if (totalPages <= 7) {
+        for (let i = 1; i <= totalPages; i++) pages.push(i);
       } else {
-        btn.classList.remove("active");
-        btn.removeAttribute("aria-current");
+        if (currentPage <= 4) {
+          pages = [1, 2, 3, 4, 5, "...", totalPages];
+        } else if (currentPage >= totalPages - 3) {
+          pages = [1, "...", totalPages - 4, totalPages - 3, totalPages - 2, totalPages - 1, totalPages];
+        } else {
+          pages = [1, "...", currentPage - 1, currentPage, currentPage + 1, "...", totalPages];
+        }
       }
-    });
+
+      pages.forEach(p => {
+        if (p === "...") {
+          const dots = document.createElement("span");
+          dots.className = "pagination-ellipsis";
+          dots.textContent = "…";
+          numbersContainer.appendChild(dots);
+        } else {
+          const btn = document.createElement("button");
+          btn.className = `pagination-btn pagination-num ${p === currentPage ? "active" : ""}`;
+          btn.setAttribute("data-target-page", p);
+          btn.setAttribute("aria-label", `Page ${p}`);
+          if (p === currentPage) btn.setAttribute("aria-current", "page");
+          btn.textContent = p;
+          numbersContainer.appendChild(btn);
+        }
+      });
+    }
 
     if (window.history.replaceState) {
       const newUrl = page === 1 ? window.location.pathname : `${window.location.pathname}?page=${page}`;
       window.history.replaceState(null, "", newUrl);
+    }
+
+    if (shouldScroll) {
+      scrollToBlogTop();
     }
   }
 
@@ -67,19 +104,24 @@ document.addEventListener("DOMContentLoaded", function () {
     if (!btn || btn.disabled) return;
 
     if (btn.id === "pagination-prev" && currentPage > 1) {
-      renderPage(currentPage - 1);
-      container.scrollIntoView({ behavior: "smooth" });
+      renderPage(currentPage - 1, true);
     } else if (btn.id === "pagination-next" && currentPage < totalPages) {
-      renderPage(currentPage + 1);
-      container.scrollIntoView({ behavior: "smooth" });
+      renderPage(currentPage + 1, true);
     } else if (btn.classList.contains("pagination-num")) {
       const target = parseInt(btn.getAttribute("data-target-page"), 10);
       if (target && target !== currentPage) {
-        renderPage(target);
-        container.scrollIntoView({ behavior: "smooth" });
+        renderPage(target, true);
       }
     }
   });
 
-  renderPage(currentPage);
+  window.addEventListener("popstate", function () {
+    const params = new URLSearchParams(window.location.search);
+    const p = parseInt(params.get("page") || "1", 10);
+    if (p >= 1 && p <= totalPages && p !== currentPage) {
+      renderPage(p, false);
+    }
+  });
+
+  renderPage(currentPage, false);
 });

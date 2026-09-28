@@ -34,16 +34,22 @@
     {% if total_pages > 1 %}
     <div id="blog-pagination" class="blog-pagination" data-total-pages="{{ total_pages }}" data-page-size="10">
         <div class="pagination-info">
-            <span id="pagination-status">Showing essays 1 to 10 of {{ total_posts }}</span>
+            <span id="pagination-status">Showing 1 to 10 of {{ total_posts }} essays</span>
         </div>
         <nav class="pagination-controls" aria-label="Blog Pagination">
-            <button class="pagination-btn" id="pagination-prev" disabled aria-label="Previous page">&laquo; Prev</button>
+            <button class="pagination-btn pagination-nav" id="pagination-prev" disabled aria-label="Previous page">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -1px; margin-right: 4px;"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                Prev
+            </button>
             <div class="pagination-pages" id="pagination-numbers">
                 {% for p in range(1, total_pages + 1) %}
                 <button class="pagination-btn pagination-num {% if loop.first %}active{% endif %}" data-target-page="{{ p }}" aria-label="Page {{ p }}">{{ p }}</button>
                 {% endfor %}
             </div>
-            <button class="pagination-btn" id="pagination-next" aria-label="Next page">Next &raquo;</button>
+            <button class="pagination-btn pagination-nav" id="pagination-next" aria-label="Next page">
+                Next
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -1px; margin-left: 4px;"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
         </nav>
     </div>
     {% endif %}

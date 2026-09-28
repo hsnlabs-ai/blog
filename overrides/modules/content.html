@@ -2,6 +2,20 @@
 <section class="container post" id="component-content">
     <article>
         {% if not page.is_homepage and page.file.src_uri != 'index.md' %}
+        <nav class="article-breadcrumb-nav" aria-label="Breadcrumb">
+            <a href="{{ ''|url }}" class="article-breadcrumb-back">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+                All Essays
+            </a>
+            {% if page.meta and page.meta.category %}
+            <span class="article-breadcrumb-sep">/</span>
+            <span class="article-breadcrumb-category">{{ page.meta.category }}</span>
+            {% endif %}
+        </nav>
+
         <header>
             {% if config.theme.components and config.theme.components.title == False %}
             {% else %}
@@ -20,7 +34,25 @@
         {% endif %}
         {% endif %}
         {% endif %}
-        <p>{{ page.content }}</p>
+
+        <div class="article-content-body">
+            {{ page.content }}
+        </div>
+
+        {% if not page.is_homepage and page.file.src_uri != 'index.md' %}
+        <div class="article-footer-nav">
+            <a href="{{ ''|url }}" class="btn btn-outline article-nav-return-btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+                Back to All Essays
+            </a>
+            <a href="https://hsnlabs.ai/bootcamp" class="btn btn-primary article-nav-cta-btn">
+                Apply for Bootcamp →
+            </a>
+        </div>
+        {% endif %}
     </article>
 
     {% if (page and page.meta.blog_list) or (config.theme.components and config.theme.components.blog_list) %}
