@@ -29,6 +29,10 @@
   --muted-soft: #94a3b8;
   --hairline: #e2e8f0;
   --hairline-strong: #cbd5e1;
+
+  /* Code Syntax Highlighting Overrides */
+  --code-bg: #0f172a !important;
+  --code-fg: #f8fafc !important;
 }
 
 /* ==========================================================
@@ -624,19 +628,36 @@ code, kbd, pre, samp {
   color: var(--ink);
 }
 
-.container.post pre {
-  background: #0f172a;
-  color: #f8fafc;
-  padding: 1.25rem;
+.container.post pre,
+.container.post .highlight,
+.container.post .highlight pre,
+pre,
+.highlight,
+.highlight pre {
+  background-color: #0f172a !important;
+  color: #f8fafc !important;
+  padding: 1.25rem !important;
   border-radius: 0 !important;
   overflow-x: auto;
   margin: 1.5rem 0;
-  border-left: 3px solid var(--cyan);
+  border-left: 3px solid var(--cyan) !important;
+}
+
+pre code,
+.highlight code,
+.highlight pre code,
+.container.post pre code,
+.container.post .highlight pre code {
+  background-color: transparent !important;
+  color: inherit !important;
+  border: none !important;
+  padding: 0 !important;
 }
 
 /* Mermaid Diagrams */
 .container.post pre.mermaid,
 .container.post div.mermaid,
+.mermaid-container,
 pre.mermaid,
 div.mermaid {
   background: transparent !important;
@@ -648,24 +669,28 @@ div.mermaid {
 }
 
 pre.mermaid svg,
-div.mermaid svg {
+div.mermaid svg,
+.mermaid-container svg {
   max-width: 100%;
   height: auto;
   border-radius: 0 !important;
 }
 
-.container.post code {
-  font-family: var(--font-mono);
-  background: var(--canvas);
-  padding: 0.2em 0.4em;
-  font-size: 0.88em;
-  border: 1px solid var(--hairline);
-}
-
-.container.post pre code {
-  background: transparent;
-  padding: 0;
-  border: none;
+/* Inline Code Chits */
+.container.post p code,
+.container.post li code,
+.container.post td code,
+.container.post th code,
+p code,
+li code,
+td code {
+  font-family: var(--font-mono) !important;
+  background-color: #f1f5f9 !important;
+  color: #0f172a !important;
+  padding: 0.15rem 0.4rem !important;
+  font-size: 0.88em !important;
+  border: 1px solid var(--hairline) !important;
+  border-radius: 0 !important;
 }
 
 .page-dates-divider {

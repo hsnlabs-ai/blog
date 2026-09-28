@@ -449,12 +449,12 @@
 </ol>
 <p>This guide provides the complete, end-to-end engineering methodology for building an enterprise ontology from scratch in seven concrete phases.</p>
 <pre class="mermaid"><code>flowchart TD
-    P1[Phase 1: Domain Scoping&lt;br&gt;Identify 3-5 Core Business Nouns] --&gt; P2[Phase 2: Invariant Extraction&lt;br&gt;Formalize Mathematical Assertions]
-    P2 --&gt; P3[Phase 3: FSM State Modeling&lt;br&gt;Define Legal Transition Graphs]
-    P3 --&gt; P4[Phase 4: FastMCP Tool Registry&lt;br&gt;Build Parameterized Action Tools]
-    P4 --&gt; P5[Phase 5: Core Synchronization&lt;br&gt;Stream Real-Time Data via CDC and Kafka]
-    P5 --&gt; P6[Phase 6: Adversarial Fuzzing&lt;br&gt;Stress Test Invariant Gatekeepers]
-    P6 --&gt; P7[Phase 7: Agent Orchestration&lt;br&gt;Deploy Autonomous Agent Fleets]</code></pre>
+    P1["Phase 1: Domain Scoping&lt;br&gt;Identify 3-5 Core Business Nouns"] --&gt; P2["Phase 2: Invariant Extraction&lt;br&gt;Formalize Mathematical Assertions"]
+    P2 --&gt; P3["Phase 3: FSM State Modeling&lt;br&gt;Define Legal Transition Graphs"]
+    P3 --&gt; P4["Phase 4: FastMCP Tool Registry&lt;br&gt;Build Parameterized Action Tools"]
+    P4 --&gt; P5["Phase 5: Core Synchronization&lt;br&gt;Stream Real-Time Data via CDC and Kafka"]
+    P5 --&gt; P6["Phase 6: Adversarial Fuzzing&lt;br&gt;Stress Test Invariant Gatekeepers"]
+    P6 --&gt; P7["Phase 7: Agent Orchestration&lt;br&gt;Deploy Autonomous Agent Fleets"]</code></pre>
 <hr />
 <h2 id="phase-1-domain-scoping-and-semantic-discovery">Phase 1: Domain Scoping and Semantic Discovery</h2>
 <p>The single most common mistake in enterprise ontology engineering is <strong>boiling the ocean</strong>.</p>
@@ -558,7 +558,7 @@
     MAT --&gt;|Action: FlagDiscrepancy| DIS[DISPUTED]
     DIS --&gt;|Action: RequestVendorCredit| CRE[CREDIT_ISSUED]
     MAT --&gt;|Action: ApprovePayment| APP[APPROVED]
-    APP --&gt;|Action: ExecuteWireTransfer| PAI[PAID / SETTLED]</code></pre>
+    APP --&gt;|Action: ExecuteWireTransfer| PAI["PAID / SETTLED"]</code></pre>
 <h3 id="implementing-state-transition-guards-in-python">Implementing State Transition Guards in Python</h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">InvoiceLifecycleState</span><span class="p">(</span><span class="nb">str</span><span class="p">,</span> <span class="n">Enum</span><span class="p">):</span>
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="n">RECEIVED</span> <span class="o">=</span> <span class="s2">"RECEIVED"</span>
@@ -657,9 +657,9 @@
 <p>An ontology that is out of sync with production databases is a liability. </p>
 <p>To keep the ontology synchronized in real time without bogging down your core transactional database, implement <strong>Change Data Capture (CDC)</strong>:</p>
 <pre class="mermaid"><code>flowchart TD
-    ERP[Enterprise ERP / Core DB&lt;br&gt;Postgres, Oracle, SAP] --&gt;|Write-Ahead Log / WAL| DEB[Debezium / Kafka Connect]
-    DEB --&gt;|Sub-second Event Stream| KAF[Apache Kafka / Redpanda Cluster]
-    KAF --&gt;|Materialized Entity Cache| ONT[Operational Ontology Cache&lt;br&gt;Redis / SQLite / In-Memory]
+    ERP["Enterprise ERP / Core DB&lt;br&gt;Postgres, Oracle, SAP"] --&gt;|Write-Ahead Log / WAL| DEB["Debezium / Kafka Connect"]
+    DEB --&gt;|Sub-second Event Stream| KAF["Apache Kafka / Redpanda Cluster"]
+    KAF --&gt;|Materialized Entity Cache| ONT["Operational Ontology Cache&lt;br&gt;Redis / SQLite / In-Memory"]
     ONT &lt;--&gt;|Microsecond Context Reads| AGT[Autonomous AI Agent Fleet]</code></pre>
 <ol>
 <li><strong>Debezium captures database mutations</strong> directly from the database write-ahead log (WAL) with zero impact on query performance.</li>
@@ -700,10 +700,10 @@
 <p>With the ontology compiled, tested, and synchronized, you deploy your agent fleets.</p>
 <p>Whether you use <strong>LangGraph</strong>, <strong>Claude Code</strong>, or custom <strong>Antigravity</strong> agent loops, the agent architecture is now decoupled and simplified:</p>
 <pre class="mermaid"><code>flowchart TD
-    EVT[Incoming Business Event / Webhook] --&gt; AGT[Autonomous AI Agent&lt;br&gt;LLM Reasoning Loop]
-    AGT --&gt;|MCP Tool Calls&lt;br&gt;query_ontology_entity / execute_action| GRD[Operational Ontology Guard&lt;br&gt;Pydantic and FSM Validation]
+    EVT["Incoming Business Event / Webhook"] --&gt; AGT["Autonomous AI Agent&lt;br&gt;LLM Reasoning Loop"]
+    AGT --&gt;|MCP Tool Calls&lt;br&gt;query_ontology_entity / execute_action| GRD["Operational Ontology Guard&lt;br&gt;Pydantic and FSM Validation"]
     GRD --&gt;|Valid Mutation| ERP[Atomic Mutation Committed to ERP]
-    GRD --&gt;|Invalid Invariant| ERR[Deterministic Error Returned to Agent&lt;br&gt;Agent self-corrects or escalates to human]</code></pre>
+    GRD --&gt;|Invalid Invariant| ERR["Deterministic Error Returned to Agent&lt;br&gt;Agent self-corrects or escalates to human"]</code></pre>
 <p>The LLM is now operating inside a <strong>deterministic sandbox</strong>. It can reason about vendor emails, parse messy unstructured PDFs, and draft correspondence. But the moment it decides to execute a business transaction, it is strictly bound by the laws of your operational ontology.</p>
 <hr />
 <h2 id="the-5-day-delivery-sprint">The 5-Day Delivery Sprint</h2>

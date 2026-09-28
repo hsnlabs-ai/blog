@@ -453,15 +453,15 @@
 <p>An <strong>Operational Business Ontology</strong> is the missing architectural tier. It wraps raw relational schemas in strongly typed business objects, compiled invariants, and executable state machines, ensuring that agents query and mutate enterprise data with 100% deterministic precision.</p>
 <pre class="mermaid"><code>flowchart TD
     subgraph DDL[Physical Storage Schema DDL]
-        D1[Storage Structure, Column Types, Primary and Foreign Keys]
-        D2[Scope: How bytes are stored on disk]
-        D3[Blind to: Workflows, Business Invariants, Legal Actions]
+        D1["Storage Structure, Column Types, Primary and Foreign Keys"]
+        D2["Scope: How bytes are stored on disk"]
+        D3["Blind to: Workflows, Business Invariants, Legal Actions"]
     end
 
     subgraph ONT[Operational Business Ontology]
-        O1[Business Entities, Lifecycle States, Execution Contracts]
-        O2[Scope: Semantic meaning and legal operations]
-        O3[Enforces: Finite State Machines, Capital Limits, Audit Trails]
+        O1["Business Entities, Lifecycle States, Execution Contracts"]
+        O2["Scope: Semantic meaning and legal operations"]
+        O3["Enforces: Finite State Machines, Capital Limits, Audit Trails"]
     end</code></pre>
 <hr />
 <h2 id="the-illusion-of-text-to-sql-why-it-fails-in-enterprise-production">The Illusion of Text-to-SQL: Why It Fails in Enterprise Production</h2>
@@ -520,11 +520,11 @@
 <p>When teams realize Text-to-SQL is fragile, they frequently swing to the other extreme: vector databases and Retrieval-Augmented Generation (RAG).</p>
 <p>Vector databases are exceptional for finding conceptually related text passages across unstructured PDF libraries. They are completely incapable of structured enterprise execution.</p>
 <pre class="mermaid"><code>flowchart TD
-    PRM[Executive Prompt: Calculate total overdue AP for Tier-1 vendors] --&gt; VEC[Vector DB Retrieval&lt;br&gt;Pulls 10 chunks mentioning overdue and Tier-1]
-    VEC --&gt; ERR1[Incompleteness: Misses 80% of invoices due to token limits]
-    VEC --&gt; ERR2[Mathematical Void: Cannot compute exact arithmetic over chunks]
-    VEC --&gt; ERR3[Temporal Blindness: Confuses 2024 invoices with 2026 invoices]
-    VEC --&gt; ERR4[No Foreign Keys: Cannot verify payment status in ERP ledger]</code></pre>
+    PRM["Executive Prompt: Calculate total overdue AP for Tier-1 vendors"] --&gt; VEC["Vector DB Retrieval&lt;br&gt;Pulls 10 chunks mentioning overdue and Tier-1"]
+    VEC --&gt; ERR1["Incompleteness: Misses 80% of invoices due to token limits"]
+    VEC --&gt; ERR2["Mathematical Void: Cannot compute exact arithmetic over chunks"]
+    VEC --&gt; ERR3["Temporal Blindness: Confuses 2024 invoices with 2026 invoices"]
+    VEC --&gt; ERR4["No Foreign Keys: Cannot verify payment status in ERP ledger"]</code></pre>
 <p>Vector databases operate on <strong>probabilistic linguistic proximity</strong>. Enterprise operations require <strong>exact relational and mathematical determinism</strong>.</p>
 <hr />
 <h2 id="technical-comparison-ddl-vs-operational-ontology">Technical Comparison: DDL vs. Operational Ontology</h2>
@@ -671,9 +671,9 @@
 <p>For enterprise CTOs and Heads of Data, you do not need to rewrite your underlying legacy databases to achieve this safety.</p>
 <p>The industry standard architecture in 2026 is the <strong>Ontology Facade Pattern</strong>:</p>
 <pre class="mermaid"><code>flowchart TD
-    AGT[Autonomous AI Agents] &lt;--&gt;|Model Context Protocol / Pydantic Contracts| FAC[Operational Ontology Facade&lt;br&gt;Invariant Engine + FSM Orchestrator + Unified Object Model]
-    FAC --&gt;|Validated SQL Queries| DB[Postgres / Oracle Databases]
-    FAC --&gt;|Validated API Calls| ERP[SAP S/4HANA ERP]
+    AGT[Autonomous AI Agents] &lt;--&gt;|Model Context Protocol / Pydantic Contracts| FAC["Operational Ontology Facade&lt;br&gt;Invariant Engine + FSM Orchestrator + Unified Object Model"]
+    FAC --&gt;|Validated SQL Queries| DB["Postgres / Oracle Databases"]
+    FAC --&gt;|Validated API Calls| ERP["SAP S/4HANA ERP"]
     FAC --&gt;|CDC Event Streaming| CRM[Salesforce CRM]</code></pre>
 <ol>
 <li><strong>Keep your existing databases intact:</strong> Do not touch your core SAP, Postgres, or Oracle tables.</li>

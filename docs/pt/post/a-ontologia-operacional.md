@@ -22,14 +22,14 @@ Para que um sistema autônomo tenha utilidade real dentro de uma corporação de
 
 ```mermaid
 flowchart TD
-    subgraph OLD[Data Warehouse Passivo: Construido para Humanos]
+    subgraph OLD["Data Warehouse Passivo: Construido para Humanos"]
         P1[Bancos Transacionais] --> P2[Data Lake]
         P2 --> P3[Modelos dbt]
         P3 --> P4[Dashboard de BI]
     end
 
-    subgraph NEW[Ontologia Operacional: Construida para Agentes Autonomos]
-        ERP[Core ERP / CRM] <-->|CDC / Kafka| ONT[Ontologia Operacional<br>Entidades + Invariantes]
+    subgraph NEW["Ontologia Operacional: Construida para Agentes Autonomos"]
+        ERP["Core ERP / CRM"] <-->|CDC / Kafka| ONT["Ontologia Operacional<br>Entidades + Invariantes"]
         ONT <-->|Chamadas Atomicas MCP| AGT[Agente Autonomo de IA]
     end
 ```
@@ -51,9 +51,9 @@ Representa os verbos da companhia. São as ferramentas e operações mutáveis q
 
 ```mermaid
 flowchart TD
-    A[1. Vinculacao Semantica de Dados<br>Eventos em tempo real via CDC e Kafka<br>Sintetiza schemas fragmentados em objetos unicos<br>Garante consistencia atomica de leitura]
-    B[2. Arcabouco de Invariantes Cineticas<br>Compila regras de negocio em assercoes tipadas<br>Governa ciclo de vida via Maquinas de Estados Finitos<br>Garante integridade contabil e matematica]
-    C[3. Catalogo de Acoes Atomicas<br>Expoe ferramentas parametrizadas via Model Context Protocol<br>Valida pre-condicoes antes de despachar mutacoes<br>Gera trilhas criptograficas imutaveis de auditoria]
+    A["1. Vinculacao Semantica de Dados<br>Eventos em tempo real via CDC e Kafka<br>Sintetiza schemas fragmentados em objetos unicos<br>Garante consistencia atomica de leitura"]
+    B["2. Arcabouco de Invariantes Cineticas<br>Compila regras de negocio em assercoes tipadas<br>Governa ciclo de vida via Maquinas de Estados Finitos<br>Garante integridade contabil e matematica"]
+    C["3. Catalogo de Acoes Atomicas<br>Expoe ferramentas parametrizadas via Model Context Protocol<br>Valida pre-condicoes antes de despachar mutacoes<br>Gera trilhas criptograficas imutaveis de auditoria"]
     A --> B --> C
 ```
 

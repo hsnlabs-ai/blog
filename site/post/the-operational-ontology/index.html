@@ -451,14 +451,14 @@
 <li><strong>The Kinetic Action Engine:</strong> A catalog of atomic, parameterized tools governed by finite state machines that agents can execute via protocols like the Model Context Protocol (MCP).</li>
 </ol>
 <pre class="mermaid"><code>flowchart TD
-    subgraph OLD[Passive Data Warehouse: Built for Humans]
+    subgraph OLD["Passive Data Warehouse: Built for Humans"]
         P1[Production DBs] --&gt; P2[Data Lake]
         P2 --&gt; P3[dbt Models]
         P3 --&gt; P4[BI Dashboard]
     end
 
-    subgraph NEW[Operational Ontology: Built for Autonomous Agents]
-        ERP[Core ERP / CRM] &lt;--&gt;|CDC / Kafka| ONT[Operational Ontology&lt;br&gt;Entities + Invariants]
+    subgraph NEW["Operational Ontology: Built for Autonomous Agents"]
+        ERP["Core ERP / CRM"] &lt;--&gt;|CDC / Kafka| ONT["Operational Ontology&lt;br&gt;Entities + Invariants"]
         ONT &lt;--&gt;|Atomic MCP Tool Calls| AGT[Autonomous AI Agent]
     end</code></pre>
 <hr />
@@ -475,9 +475,9 @@
 <h2 id="the-three-pillars-of-an-operational-ontology">The Three Pillars of an Operational Ontology</h2>
 <p>Building an operational ontology requires moving beyond passive metadata management. It consists of three tightly coupled engineering layers:</p>
 <pre class="mermaid"><code>flowchart TD
-    A[1. Semantic Data Binding&lt;br&gt;Ingests real-time events via CDC and Kafka&lt;br&gt;Synthesizes fragmented multi-system schemas&lt;br&gt;Enforces atomic read consistency]
-    B[2. Kinetic Invariant Harness&lt;br&gt;Compiles business rules into typed schema assertions&lt;br&gt;Governs lifecycle states via Finite State Machines&lt;br&gt;Enforces mathematical balance constraints]
-    C[3. Atomic Action Registry&lt;br&gt;Exposes parameterized tools via Model Context Protocol&lt;br&gt;Verifies preconditions before dispatching mutations&lt;br&gt;Generates immutable cryptographic audit trails]
+    A["1. Semantic Data Binding&lt;br&gt;Ingests real-time events via CDC and Kafka&lt;br&gt;Synthesizes fragmented multi-system schemas&lt;br&gt;Enforces atomic read consistency"]
+    B["2. Kinetic Invariant Harness&lt;br&gt;Compiles business rules into typed schema assertions&lt;br&gt;Governs lifecycle states via Finite State Machines&lt;br&gt;Enforces mathematical balance constraints"]
+    C["3. Atomic Action Registry&lt;br&gt;Exposes parameterized tools via Model Context Protocol&lt;br&gt;Verifies preconditions before dispatching mutations&lt;br&gt;Generates immutable cryptographic audit trails"]
     A --&gt; B --&gt; C</code></pre>
 <h3 id="pillar-1-semantic-data-binding-the-nouns">Pillar 1: Semantic Data Binding (The Nouns)</h3>
 <p>In a modern enterprise, an operational entity never lives in a single database.</p>
@@ -634,10 +634,10 @@
 <p>Traditional enterprises suffer from the <strong>Linear Staffing Trap</strong>: if business transactions grow by 100%, operational headcount (and OPEX) must grow by roughly 100%.</p>
 <pre class="mermaid"><code>flowchart LR
     subgraph TRAD[Traditional Enterprise]
-        T1[10k tx/mo: 20 FTE] --&gt; T2[50k tx/mo: 100 FTE] --&gt; T3[100k tx/mo: 200 FTE&lt;br&gt;Linear OPEX Explosion]
+        T1["10k tx/mo: 20 FTE"] --&gt; T2["50k tx/mo: 100 FTE"] --&gt; T3["100k tx/mo: 200 FTE&lt;br&gt;Linear OPEX Explosion"]
     end
     subgraph ONTO[Ontology-Governed Enterprise]
-        O1[10k tx/mo: 20 FTE] --&gt; O2[50k tx/mo: 25 FTE] --&gt; O3[100k tx/mo: 30 FTE&lt;br&gt;Expanding EBITDA Margins]
+        O1["10k tx/mo: 20 FTE"] --&gt; O2["50k tx/mo: 25 FTE"] --&gt; O3["100k tx/mo: 30 FTE&lt;br&gt;Expanding EBITDA Margins"]
     end</code></pre>
 <p>An operational ontology transforms software from a passive record-keeping expense into an autonomous operational asset. </p>
 <p>Because the ontology provides verifiable safety, enterprises can delegate real operational authority to agent fleets. The human team stops performing manual copy-paste validation across disparate software interfaces and transitions to managing exceptions, tuning invariant thresholds, and handling complex edge cases.</p>

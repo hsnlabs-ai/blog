@@ -455,8 +455,8 @@
 <p>Large language models are fundamentally probabilistic. They compute probability distributions over high-dimensional vector spaces. They generate the most statistically probable continuation of a prompt string.</p>
 <p>When enterprises attempt to bridge this chasm with system prompts, they build on sand.</p>
 <pre class="mermaid"><code>flowchart TD
-    A[System Prompt: Only approve invoices under $10k] --&gt;|Probabilistic Evaluation| B[Frontier LLM]
-    B --&gt;|Hallucination: Approving payment of $12,450| C[Enterprise SQL Database / ERP&lt;br&gt;Silent State Corruption]</code></pre>
+    A["System Prompt: Only approve invoices under $10k"] --&gt;|Probabilistic Evaluation| B[Frontier LLM]
+    B --&gt;|Hallucination: Approving payment of $12,450| C["Enterprise SQL Database / ERP&lt;br&gt;Silent State Corruption"]</code></pre>
 <p>Telling an LLM <em>"You are an accounts payable agent. You must never approve an invoice over ten thousand dollars without managerial sign-off"</em> in a markdown system prompt fails in production. Under context dilution, prompt injection, or novel operational edge cases, the model will eventually drift. It will misread currency symbols, confuse total line items with net line items, or approve an unauthorized payout.</p>
 <p>An enterprise cannot deploy mission-critical balance sheet operations on statistical confidence intervals. </p>
 <p>To run autonomous agents safely, you must place an immutable, compiled barrier between the stochastic brain of the model and the deterministic state of your enterprise systems. That barrier is an <strong>operational ontology</strong>.</p>
@@ -546,8 +546,8 @@
 <h2 id="the-three-components-of-an-agent-ontology">The Three Components of an Agent Ontology</h2>
 <p>An operational ontology is built from three distinct architectural layers:</p>
 <pre class="mermaid"><code>flowchart TD
-    A[1. Object Definitions&lt;br&gt;Typed data contracts and immutable business rules] --&gt; B[2. State Bindings&lt;br&gt;Real-time event streams from Postgres, SAP, Salesforce]
-    B --&gt; C[3. Executable Action Catalog&lt;br&gt;Precondition validation, state machines, postcondition ledger audits]</code></pre>
+    A["1. Object Definitions&lt;br&gt;Typed data contracts and immutable business rules"] --&gt; B["2. State Bindings&lt;br&gt;Real-time event streams from Postgres, SAP, Salesforce"]
+    B --&gt; C["3. Executable Action Catalog&lt;br&gt;Precondition validation, state machines, postcondition ledger audits"]</code></pre>
 <h3 id="1-object-definitions-the-nouns">1. Object Definitions (The Nouns)</h3>
 <p>Objects are typed definitions of enterprise concepts. They do not mirror raw database tables 1:1. Instead, they synthesize data across fragmented systems into unified business objects.</p>
 <p>For example, a <code>CommercialAccount</code> object synthesizes:</p>
@@ -675,11 +675,11 @@
 <p>In an enterprise deployment, the agent does not receive a massive SQL schema dump or thousands of lines of documentation. It receives an ontology interface exposed via structured tools.</p>
 <p>The interaction follows a five-stage deterministic loop:</p>
 <pre class="mermaid"><code>flowchart TD
-    D1[1. Discovery&lt;br&gt;Agent queries Ontology Catalog for legal operations on Invoice #8410] --&gt; D2[2. Context Injection&lt;br&gt;Ontology returns typed state MATCHED and permitted tools]
-    D2 --&gt; D3[3. Decision and Parameter Generation&lt;br&gt;LLM reasons over context and emits structured tool call]
+    D1["1. Discovery&lt;br&gt;Agent queries Ontology Catalog for legal operations on Invoice #8410"] --&gt; D2["2. Context Injection&lt;br&gt;Ontology returns typed state MATCHED and permitted tools"]
+    D2 --&gt; D3["3. Decision and Parameter Generation&lt;br&gt;LLM reasons over context and emits structured tool call"]
     D3 --&gt; D4{4. Semantic Gatekeeper&lt;br&gt;Validates preconditions, types and invariants}
-    D4 --&gt;|Valid Mutation| D5[5. Core System Mutation and Event Dispatch&lt;br&gt;Executes mutation on ERP and logs audit trail]
-    D4 --&gt;|Invalid Invariant| D6[Deterministic Error to Agent&lt;br&gt;Agent self-corrects parameter]</code></pre>
+    D4 --&gt;|Valid Mutation| D5["5. Core System Mutation and Event Dispatch&lt;br&gt;Executes mutation on ERP and logs audit trail"]
+    D4 --&gt;|Invalid Invariant| D6["Deterministic Error to Agent&lt;br&gt;Agent self-corrects parameter"]</code></pre>
 <p>By decoupling <strong>reasoning</strong> from <strong>execution boundaries</strong>, the LLM is leveraged for what it excels at (understanding unstructured vendor communications, summarizing discrepancies, identifying context) while the ontology handles what software must guarantee (arithmetic integrity, security, state validity, transactional commits).</p>
 <hr />
 <h2 id="the-four-catastrophic-failure-modes-ontologies-eliminate">The Four Catastrophic Failure Modes Ontologies Eliminate</h2>

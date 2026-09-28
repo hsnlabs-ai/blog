@@ -564,12 +564,12 @@
 </ul>
 <h3 id="arquitetura-de-referencia-sem-telas-da-hsn-labs">Arquitetura de Referência sem Telas da HSN Labs</h3>
 <pre class="mermaid"><code>flowchart TD
-    A[Canais Reais de Interação Comercial&lt;br&gt;Emails Corporativos, Chamadas e Calendário] --&gt; B[Gateway de Eventos de Venda&lt;br&gt;Captura assíncrona em tempo real]
-    B --&gt; C[Camada de Extração e Invariantes&lt;br&gt;Validação estruturada de dados com Pydantic]
-    C --&gt; D[Máquina de Estados Finitos - FSM&lt;br&gt;Controle estrito de transições de estágio]
-    D --&gt; E[Servidor MCP e Trilha Imutável de Auditoria&lt;br&gt;Métodos fechados de gravação e aprovação humana]
-    E --&gt; F[Base Transacional Local&lt;br&gt;PostgreSQL ou SQLite]
-    E --&gt; G[Sistemas Corporativos&lt;br&gt;ERP SAP, Totvs e Assinaturas]</code></pre>
+    A["Canais Reais de Interação Comercial&lt;br&gt;Emails Corporativos, Chamadas e Calendário"] --&gt; B["Gateway de Eventos de Venda&lt;br&gt;Captura assíncrona em tempo real"]
+    B --&gt; C["Camada de Extração e Invariantes&lt;br&gt;Validação estruturada de dados com Pydantic"]
+    C --&gt; D["Máquina de Estados Finitos - FSM&lt;br&gt;Controle estrito de transições de estágio"]
+    D --&gt; E["Servidor MCP e Trilha Imutável de Auditoria&lt;br&gt;Métodos fechados de gravação e aprovação humana"]
+    E --&gt; F["Base Transacional Local&lt;br&gt;PostgreSQL ou SQLite"]
+    E --&gt; G["Sistemas Corporativos&lt;br&gt;ERP SAP, Totvs e Assinaturas"]</code></pre>
 <h3 id="contrato-de-ferramenta-em-json-schema">Contrato de Ferramenta em JSON Schema</h3>
 <p>Abaixo está a definição estrita de esquema utilizada por agentes para atualizar o estágio de negociação comercial sem intervenção de formulários visuais:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">{</span>

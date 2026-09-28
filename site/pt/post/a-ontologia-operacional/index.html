@@ -440,14 +440,14 @@
 <p>A inteligência artificial generativa resolveu o problema da compreensão e geração de linguagem natural. No entanto, linguagem solta não move frotas, não líquida faturas e não renegocia contratos de crédito.</p>
 <p>Para que um sistema autônomo tenha utilidade real dentro de uma corporação de grande porte, ele precisa de uma ponte estrita que traduza probabilidade em determinismo operacional. Essa ponte é a Ontologia Operacional.</p>
 <pre class="mermaid"><code>flowchart TD
-    subgraph OLD[Data Warehouse Passivo: Construido para Humanos]
+    subgraph OLD["Data Warehouse Passivo: Construido para Humanos"]
         P1[Bancos Transacionais] --&gt; P2[Data Lake]
         P2 --&gt; P3[Modelos dbt]
         P3 --&gt; P4[Dashboard de BI]
     end
 
-    subgraph NEW[Ontologia Operacional: Construida para Agentes Autonomos]
-        ERP[Core ERP / CRM] &lt;--&gt;|CDC / Kafka| ONT[Ontologia Operacional&lt;br&gt;Entidades + Invariantes]
+    subgraph NEW["Ontologia Operacional: Construida para Agentes Autonomos"]
+        ERP["Core ERP / CRM"] &lt;--&gt;|CDC / Kafka| ONT["Ontologia Operacional&lt;br&gt;Entidades + Invariantes"]
         ONT &lt;--&gt;|Chamadas Atomicas MCP| AGT[Agente Autonomo de IA]
     end</code></pre>
 <hr />
@@ -460,9 +460,9 @@
 <h3 id="3-a-matriz-de-acoes-executaveis">3. A Matriz de Ações Executáveis</h3>
 <p>Representa os verbos da companhia. São as ferramentas e operações mutáveis que o agente tem permissão de acionar no ecossistema de produção, sempre acompanhadas de pre-condições matemáticas e validadores de segurança.</p>
 <pre class="mermaid"><code>flowchart TD
-    A[1. Vinculacao Semantica de Dados&lt;br&gt;Eventos em tempo real via CDC e Kafka&lt;br&gt;Sintetiza schemas fragmentados em objetos unicos&lt;br&gt;Garante consistencia atomica de leitura]
-    B[2. Arcabouco de Invariantes Cineticas&lt;br&gt;Compila regras de negocio em assercoes tipadas&lt;br&gt;Governa ciclo de vida via Maquinas de Estados Finitos&lt;br&gt;Garante integridade contabil e matematica]
-    C[3. Catalogo de Acoes Atomicas&lt;br&gt;Expoe ferramentas parametrizadas via Model Context Protocol&lt;br&gt;Valida pre-condicoes antes de despachar mutacoes&lt;br&gt;Gera trilhas criptograficas imutaveis de auditoria]
+    A["1. Vinculacao Semantica de Dados&lt;br&gt;Eventos em tempo real via CDC e Kafka&lt;br&gt;Sintetiza schemas fragmentados em objetos unicos&lt;br&gt;Garante consistencia atomica de leitura"]
+    B["2. Arcabouco de Invariantes Cineticas&lt;br&gt;Compila regras de negocio em assercoes tipadas&lt;br&gt;Governa ciclo de vida via Maquinas de Estados Finitos&lt;br&gt;Garante integridade contabil e matematica"]
+    C["3. Catalogo de Acoes Atomicas&lt;br&gt;Expoe ferramentas parametrizadas via Model Context Protocol&lt;br&gt;Valida pre-condicoes antes de despachar mutacoes&lt;br&gt;Gera trilhas criptograficas imutaveis de auditoria"]
     A --&gt; B --&gt; C</code></pre>
 <h2 id="por-que-essa-abordagem-vence-em-producao">Por Que Essa Abordagem Vence em Produção</h2>
 <p>Sem essa arquitetura, o modelo de linguagem atua como um funcionário recem-contratado que recebe acesso irrestrito ao banco de dados sem nenhum manual de procedimentos. Ele inevitavelmente comete erros graves de interpretação.</p>

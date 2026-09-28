@@ -39,14 +39,14 @@ An Operational Ontology is an active software layer that fuses three foundationa
 
 ```mermaid
 flowchart TD
-    subgraph OLD[Passive Data Warehouse: Built for Humans]
+    subgraph OLD["Passive Data Warehouse: Built for Humans"]
         P1[Production DBs] --> P2[Data Lake]
         P2 --> P3[dbt Models]
         P3 --> P4[BI Dashboard]
     end
 
-    subgraph NEW[Operational Ontology: Built for Autonomous Agents]
-        ERP[Core ERP / CRM] <-->|CDC / Kafka| ONT[Operational Ontology<br>Entities + Invariants]
+    subgraph NEW["Operational Ontology: Built for Autonomous Agents"]
+        ERP["Core ERP / CRM"] <-->|CDC / Kafka| ONT["Operational Ontology<br>Entities + Invariants"]
         ONT <-->|Atomic MCP Tool Calls| AGT[Autonomous AI Agent]
     end
 ```
@@ -79,9 +79,9 @@ Building an operational ontology requires moving beyond passive metadata managem
 
 ```mermaid
 flowchart TD
-    A[1. Semantic Data Binding<br>Ingests real-time events via CDC and Kafka<br>Synthesizes fragmented multi-system schemas<br>Enforces atomic read consistency]
-    B[2. Kinetic Invariant Harness<br>Compiles business rules into typed schema assertions<br>Governs lifecycle states via Finite State Machines<br>Enforces mathematical balance constraints]
-    C[3. Atomic Action Registry<br>Exposes parameterized tools via Model Context Protocol<br>Verifies preconditions before dispatching mutations<br>Generates immutable cryptographic audit trails]
+    A["1. Semantic Data Binding<br>Ingests real-time events via CDC and Kafka<br>Synthesizes fragmented multi-system schemas<br>Enforces atomic read consistency"]
+    B["2. Kinetic Invariant Harness<br>Compiles business rules into typed schema assertions<br>Governs lifecycle states via Finite State Machines<br>Enforces mathematical balance constraints"]
+    C["3. Atomic Action Registry<br>Exposes parameterized tools via Model Context Protocol<br>Verifies preconditions before dispatching mutations<br>Generates immutable cryptographic audit trails"]
     A --> B --> C
 ```
 
@@ -259,10 +259,10 @@ Traditional enterprises suffer from the **Linear Staffing Trap**: if business tr
 ```mermaid
 flowchart LR
     subgraph TRAD[Traditional Enterprise]
-        T1[10k tx/mo: 20 FTE] --> T2[50k tx/mo: 100 FTE] --> T3[100k tx/mo: 200 FTE<br>Linear OPEX Explosion]
+        T1["10k tx/mo: 20 FTE"] --> T2["50k tx/mo: 100 FTE"] --> T3["100k tx/mo: 200 FTE<br>Linear OPEX Explosion"]
     end
     subgraph ONTO[Ontology-Governed Enterprise]
-        O1[10k tx/mo: 20 FTE] --> O2[50k tx/mo: 25 FTE] --> O3[100k tx/mo: 30 FTE<br>Expanding EBITDA Margins]
+        O1["10k tx/mo: 20 FTE"] --> O2["50k tx/mo: 25 FTE"] --> O3["100k tx/mo: 30 FTE<br>Expanding EBITDA Margins"]
     end
 ```
 

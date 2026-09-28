@@ -163,12 +163,12 @@ The open source ecosystem in 2026 produced distinct frameworks designed specific
 
 ```mermaid
 flowchart TD
-    A[Real-World Sales Interaction Channels<br>Corporate Email, Meeting Audio and Calendar Feeds] --> B[Sales Event Gateway<br>Asynchronous streaming ingestion]
-    B --> C[Entity Extraction and Data Invariants<br>Pydantic structured schema validation]
-    C --> D[Finite State Machine Engine<br>Deterministic deal stage transitions]
-    D --> E[MCP Server and Immutable Audit Log<br>Guarded write methods and approval gates]
-    E --> F[Local Transactional Store<br>PostgreSQL or SQLite DB]
-    E --> G[Corporate Systems<br>SAP ERP, Totvs, Signatures]
+    A["Real-World Sales Interaction Channels<br>Corporate Email, Meeting Audio and Calendar Feeds"] --> B["Sales Event Gateway<br>Asynchronous streaming ingestion"]
+    B --> C["Extraction and Invariant Tier<br>Strict structured parsing with Pydantic"]
+    C --> D["Finite State Machine - FSM<br>Strict transition guardrails"]
+    D --> E["Model Context Protocol Server and Immutable Audit Log<br>Closed mutating methods and human-in-the-loop gates"]
+    E --> F["Local Transational Store<br>PostgreSQL or SQLite"]
+    E --> G["Enterprise Core Systems<br>SAP, Totvs ERP and Billing Systems"]
 ```
 
 ### Protocol Tool Contract in JSON Schema

@@ -31,17 +31,17 @@ Here is the exact difference:
 
 ```mermaid
 flowchart TD
-    subgraph ONT[The Ontology: Metamodel and Invariants]
-        O1[Class: CorporateAccount]
-        O2[Rule: Exactly 1 TaxIdentifier]
-        O3[Invariant: CreditLimit >= OpenExposure]
-        O4[Allowed Actions: ApproveCredit, FreezeAccount, IssueBilling]
+    subgraph ONT["The Ontology: Metamodel and Invariants"]
+        O1["Class: CorporateAccount"]
+        O2["Rule: Exactly 1 TaxIdentifier"]
+        O3["Invariant: CreditLimit >= OpenExposure"]
+        O4["Allowed Actions: ApproveCredit, FreezeAccount, IssueBilling"]
     end
 
-    subgraph KG[The Knowledge Graph: Live Instance Network]
-        A[Account: Acme Corp] -->|OWNS| I[Invoice: #4021]
-        A -->|LOCATED_IN| C[Country: Brazil]
-        I -->|SHIPPED_VIA| D[Carrier: DHL Express]
+    subgraph KG["The Knowledge Graph: Live Instance Network"]
+        A["Account: Acme Corp"] -->|OWNS| I["Invoice: #4021"]
+        A -->|LOCATED_IN| C["Country: Brazil"]
+        I -->|SHIPPED_VIA| D["Carrier: DHL Express"]
     end
 
     ONT -->|Governs and Validates Instantiation| KG
@@ -108,9 +108,9 @@ Every node creation, edge traversal, and state mutation attempted by an AI agent
 
 ```mermaid
 flowchart TD
-    A[1. Autonomous AI Agent / LLM] -->|Emits Intent: Link Invoice 940 to PO 810| B[2. Operational Ontology Layer<br>Python / Pydantic / FSM]
-    B -->|Validates PO 810 is OPEN<br>Asserts Amount <= Remaining Budget<br>Compiles Verified Cypher Mutation| C[3. Enterprise Knowledge Graph<br>Neo4j / Memgraph / Neptune]
-    C -->|Commits Graph Mutation| D[4. Event Streaming and Ledger Integration<br>Kafka / SAP / Postgres]
+    A["1. Autonomous AI Agent / LLM"] -->|Emits Intent: Link Invoice 940 to PO 810| B["2. Operational Ontology Layer<br>Python / Pydantic / FSM"]
+    B -->|Validates PO 810 is OPEN<br>Asserts Amount <= Remaining Budget<br>Compiles Verified Cypher Mutation| C["3. Enterprise Knowledge Graph<br>Neo4j / Memgraph / Neptune"]
+    C -->|Commits Graph Mutation| D["4. Event Streaming and Ledger Integration<br>Kafka / SAP / Postgres"]
 ```
 
 ---

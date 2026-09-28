@@ -46,8 +46,8 @@ When enterprises attempt to bridge this chasm with system prompts, they build on
 
 ```mermaid
 flowchart TD
-    A[System Prompt: Only approve invoices under $10k] -->|Probabilistic Evaluation| B[Frontier LLM]
-    B -->|Hallucination: Approving payment of $12,450| C[Enterprise SQL Database / ERP<br>Silent State Corruption]
+    A["System Prompt: Only approve invoices under $10k"] -->|Probabilistic Evaluation| B[Frontier LLM]
+    B -->|Hallucination: Approving payment of $12,450| C["Enterprise SQL Database / ERP<br>Silent State Corruption"]
 ```
 
 Telling an LLM *"You are an accounts payable agent. You must never approve an invoice over ten thousand dollars without managerial sign-off"* in a markdown system prompt fails in production. Under context dilution, prompt injection, or novel operational edge cases, the model will eventually drift. It will misread currency symbols, confuse total line items with net line items, or approve an unauthorized payout.
@@ -129,8 +129,8 @@ An operational ontology is built from three distinct architectural layers:
 
 ```mermaid
 flowchart TD
-    A[1. Object Definitions<br>Typed data contracts and immutable business rules] --> B[2. State Bindings<br>Real-time event streams from Postgres, SAP, Salesforce]
-    B --> C[3. Executable Action Catalog<br>Precondition validation, state machines, postcondition ledger audits]
+    A["1. Object Definitions<br>Typed data contracts and immutable business rules"] --> B["2. State Bindings<br>Real-time event streams from Postgres, SAP, Salesforce"]
+    B --> C["3. Executable Action Catalog<br>Precondition validation, state machines, postcondition ledger audits"]
 ```
 
 ### 1. Object Definitions (The Nouns)
@@ -278,11 +278,11 @@ The interaction follows a five-stage deterministic loop:
 
 ```mermaid
 flowchart TD
-    D1[1. Discovery<br>Agent queries Ontology Catalog for legal operations on Invoice #8410] --> D2[2. Context Injection<br>Ontology returns typed state MATCHED and permitted tools]
-    D2 --> D3[3. Decision and Parameter Generation<br>LLM reasons over context and emits structured tool call]
+    D1["1. Discovery<br>Agent queries Ontology Catalog for legal operations on Invoice #8410"] --> D2["2. Context Injection<br>Ontology returns typed state MATCHED and permitted tools"]
+    D2 --> D3["3. Decision and Parameter Generation<br>LLM reasons over context and emits structured tool call"]
     D3 --> D4{4. Semantic Gatekeeper<br>Validates preconditions, types and invariants}
-    D4 -->|Valid Mutation| D5[5. Core System Mutation and Event Dispatch<br>Executes mutation on ERP and logs audit trail]
-    D4 -->|Invalid Invariant| D6[Deterministic Error to Agent<br>Agent self-corrects parameter]
+    D4 -->|Valid Mutation| D5["5. Core System Mutation and Event Dispatch<br>Executes mutation on ERP and logs audit trail"]
+    D4 -->|Invalid Invariant| D6["Deterministic Error to Agent<br>Agent self-corrects parameter"]
 ```
 
 By decoupling **reasoning** from **execution boundaries**, the LLM is leveraged for what it excels at (understanding unstructured vendor communications, summarizing discrepancies, identifying context) while the ontology handles what software must guarantee (arithmetic integrity, security, state validity, transactional commits).

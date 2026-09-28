@@ -565,12 +565,12 @@
 </ul>
 <h3 id="reference-architecture-headless-agentic-crm">Reference Architecture: Headless Agentic CRM</h3>
 <pre class="mermaid"><code>flowchart TD
-    A[Real-World Sales Interaction Channels&lt;br&gt;Corporate Email, Meeting Audio and Calendar Feeds] --&gt; B[Sales Event Gateway&lt;br&gt;Asynchronous streaming ingestion]
-    B --&gt; C[Entity Extraction and Data Invariants&lt;br&gt;Pydantic structured schema validation]
-    C --&gt; D[Finite State Machine Engine&lt;br&gt;Deterministic deal stage transitions]
-    D --&gt; E[MCP Server and Immutable Audit Log&lt;br&gt;Guarded write methods and approval gates]
-    E --&gt; F[Local Transactional Store&lt;br&gt;PostgreSQL or SQLite DB]
-    E --&gt; G[Corporate Systems&lt;br&gt;SAP ERP, Totvs, Signatures]</code></pre>
+    A["Real-World Sales Interaction Channels&lt;br&gt;Corporate Email, Meeting Audio and Calendar Feeds"] --&gt; B["Sales Event Gateway&lt;br&gt;Asynchronous streaming ingestion"]
+    B --&gt; C["Extraction and Invariant Tier&lt;br&gt;Strict structured parsing with Pydantic"]
+    C --&gt; D["Finite State Machine - FSM&lt;br&gt;Strict transition guardrails"]
+    D --&gt; E["Model Context Protocol Server and Immutable Audit Log&lt;br&gt;Closed mutating methods and human-in-the-loop gates"]
+    E --&gt; F["Local Transational Store&lt;br&gt;PostgreSQL or SQLite"]
+    E --&gt; G["Enterprise Core Systems&lt;br&gt;SAP, Totvs ERP and Billing Systems"]</code></pre>
 <h3 id="protocol-tool-contract-in-json-schema">Protocol Tool Contract in JSON Schema</h3>
 <p>Below is the strict JSON Schema definition utilized by autonomous agents to progress deal stages without human form intervention:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">{</span>

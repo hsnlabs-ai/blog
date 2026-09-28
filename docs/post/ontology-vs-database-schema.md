@@ -37,15 +37,15 @@ An **Operational Business Ontology** is the missing architectural tier. It wraps
 ```mermaid
 flowchart TD
     subgraph DDL[Physical Storage Schema DDL]
-        D1[Storage Structure, Column Types, Primary and Foreign Keys]
-        D2[Scope: How bytes are stored on disk]
-        D3[Blind to: Workflows, Business Invariants, Legal Actions]
+        D1["Storage Structure, Column Types, Primary and Foreign Keys"]
+        D2["Scope: How bytes are stored on disk"]
+        D3["Blind to: Workflows, Business Invariants, Legal Actions"]
     end
 
     subgraph ONT[Operational Business Ontology]
-        O1[Business Entities, Lifecycle States, Execution Contracts]
-        O2[Scope: Semantic meaning and legal operations]
-        O3[Enforces: Finite State Machines, Capital Limits, Audit Trails]
+        O1["Business Entities, Lifecycle States, Execution Contracts"]
+        O2["Scope: Semantic meaning and legal operations"]
+        O3["Enforces: Finite State Machines, Capital Limits, Audit Trails"]
     end
 ```
 
@@ -133,11 +133,11 @@ Vector databases are exceptional for finding conceptually related text passages 
 
 ```mermaid
 flowchart TD
-    PRM[Executive Prompt: Calculate total overdue AP for Tier-1 vendors] --> VEC[Vector DB Retrieval<br>Pulls 10 chunks mentioning overdue and Tier-1]
-    VEC --> ERR1[Incompleteness: Misses 80% of invoices due to token limits]
-    VEC --> ERR2[Mathematical Void: Cannot compute exact arithmetic over chunks]
-    VEC --> ERR3[Temporal Blindness: Confuses 2024 invoices with 2026 invoices]
-    VEC --> ERR4[No Foreign Keys: Cannot verify payment status in ERP ledger]
+    PRM["Executive Prompt: Calculate total overdue AP for Tier-1 vendors"] --> VEC["Vector DB Retrieval<br>Pulls 10 chunks mentioning overdue and Tier-1"]
+    VEC --> ERR1["Incompleteness: Misses 80% of invoices due to token limits"]
+    VEC --> ERR2["Mathematical Void: Cannot compute exact arithmetic over chunks"]
+    VEC --> ERR3["Temporal Blindness: Confuses 2024 invoices with 2026 invoices"]
+    VEC --> ERR4["No Foreign Keys: Cannot verify payment status in ERP ledger"]
 ```
 
 Vector databases operate on **probabilistic linguistic proximity**. Enterprise operations require **exact relational and mathematical determinism**.
@@ -267,9 +267,9 @@ The industry standard architecture in 2026 is the **Ontology Facade Pattern**:
 
 ```mermaid
 flowchart TD
-    AGT[Autonomous AI Agents] <-->|Model Context Protocol / Pydantic Contracts| FAC[Operational Ontology Facade<br>Invariant Engine + FSM Orchestrator + Unified Object Model]
-    FAC -->|Validated SQL Queries| DB[Postgres / Oracle Databases]
-    FAC -->|Validated API Calls| ERP[SAP S/4HANA ERP]
+    AGT[Autonomous AI Agents] <-->|Model Context Protocol / Pydantic Contracts| FAC["Operational Ontology Facade<br>Invariant Engine + FSM Orchestrator + Unified Object Model"]
+    FAC -->|Validated SQL Queries| DB["Postgres / Oracle Databases"]
+    FAC -->|Validated API Calls| ERP["SAP S/4HANA ERP"]
     FAC -->|CDC Event Streaming| CRM[Salesforce CRM]
 ```
 

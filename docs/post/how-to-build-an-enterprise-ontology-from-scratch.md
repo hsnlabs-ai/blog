@@ -34,12 +34,12 @@ This guide provides the complete, end-to-end engineering methodology for buildin
 
 ```mermaid
 flowchart TD
-    P1[Phase 1: Domain Scoping<br>Identify 3-5 Core Business Nouns] --> P2[Phase 2: Invariant Extraction<br>Formalize Mathematical Assertions]
-    P2 --> P3[Phase 3: FSM State Modeling<br>Define Legal Transition Graphs]
-    P3 --> P4[Phase 4: FastMCP Tool Registry<br>Build Parameterized Action Tools]
-    P4 --> P5[Phase 5: Core Synchronization<br>Stream Real-Time Data via CDC and Kafka]
-    P5 --> P6[Phase 6: Adversarial Fuzzing<br>Stress Test Invariant Gatekeepers]
-    P6 --> P7[Phase 7: Agent Orchestration<br>Deploy Autonomous Agent Fleets]
+    P1["Phase 1: Domain Scoping<br>Identify 3-5 Core Business Nouns"] --> P2["Phase 2: Invariant Extraction<br>Formalize Mathematical Assertions"]
+    P2 --> P3["Phase 3: FSM State Modeling<br>Define Legal Transition Graphs"]
+    P3 --> P4["Phase 4: FastMCP Tool Registry<br>Build Parameterized Action Tools"]
+    P4 --> P5["Phase 5: Core Synchronization<br>Stream Real-Time Data via CDC and Kafka"]
+    P5 --> P6["Phase 6: Adversarial Fuzzing<br>Stress Test Invariant Gatekeepers"]
+    P6 --> P7["Phase 7: Agent Orchestration<br>Deploy Autonomous Agent Fleets"]
 ```
 
 ---
@@ -164,7 +164,7 @@ flowchart TD
     MAT -->|Action: FlagDiscrepancy| DIS[DISPUTED]
     DIS -->|Action: RequestVendorCredit| CRE[CREDIT_ISSUED]
     MAT -->|Action: ApprovePayment| APP[APPROVED]
-    APP -->|Action: ExecuteWireTransfer| PAI[PAID / SETTLED]
+    APP -->|Action: ExecuteWireTransfer| PAI["PAID / SETTLED"]
 ```
 
 ### Implementing State Transition Guards in Python
@@ -280,9 +280,9 @@ To keep the ontology synchronized in real time without bogging down your core tr
 
 ```mermaid
 flowchart TD
-    ERP[Enterprise ERP / Core DB<br>Postgres, Oracle, SAP] -->|Write-Ahead Log / WAL| DEB[Debezium / Kafka Connect]
-    DEB -->|Sub-second Event Stream| KAF[Apache Kafka / Redpanda Cluster]
-    KAF -->|Materialized Entity Cache| ONT[Operational Ontology Cache<br>Redis / SQLite / In-Memory]
+    ERP["Enterprise ERP / Core DB<br>Postgres, Oracle, SAP"] -->|Write-Ahead Log / WAL| DEB["Debezium / Kafka Connect"]
+    DEB -->|Sub-second Event Stream| KAF["Apache Kafka / Redpanda Cluster"]
+    KAF -->|Materialized Entity Cache| ONT["Operational Ontology Cache<br>Redis / SQLite / In-Memory"]
     ONT <-->|Microsecond Context Reads| AGT[Autonomous AI Agent Fleet]
 ```
 
@@ -336,10 +336,10 @@ Whether you use **LangGraph**, **Claude Code**, or custom **Antigravity** agent 
 
 ```mermaid
 flowchart TD
-    EVT[Incoming Business Event / Webhook] --> AGT[Autonomous AI Agent<br>LLM Reasoning Loop]
-    AGT -->|MCP Tool Calls<br>query_ontology_entity / execute_action| GRD[Operational Ontology Guard<br>Pydantic and FSM Validation]
+    EVT["Incoming Business Event / Webhook"] --> AGT["Autonomous AI Agent<br>LLM Reasoning Loop"]
+    AGT -->|MCP Tool Calls<br>query_ontology_entity / execute_action| GRD["Operational Ontology Guard<br>Pydantic and FSM Validation"]
     GRD -->|Valid Mutation| ERP[Atomic Mutation Committed to ERP]
-    GRD -->|Invalid Invariant| ERR[Deterministic Error Returned to Agent<br>Agent self-corrects or escalates to human]
+    GRD -->|Invalid Invariant| ERR["Deterministic Error Returned to Agent<br>Agent self-corrects or escalates to human"]
 ```
 
 The LLM is now operating inside a **deterministic sandbox**. It can reason about vendor emails, parse messy unstructured PDFs, and draft correspondence. But the moment it decides to execute a business transaction, it is strictly bound by the laws of your operational ontology.

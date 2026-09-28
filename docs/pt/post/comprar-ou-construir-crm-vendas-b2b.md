@@ -163,12 +163,12 @@ O ecossistema de software de código aberto em 2026 viu o nascimento de projetos
 
 ```mermaid
 flowchart TD
-    A[Canais Reais de Interação Comercial<br>Emails Corporativos, Chamadas e Calendário] --> B[Gateway de Eventos de Venda<br>Captura assíncrona em tempo real]
-    B --> C[Camada de Extração e Invariantes<br>Validação estruturada de dados com Pydantic]
-    C --> D[Máquina de Estados Finitos - FSM<br>Controle estrito de transições de estágio]
-    D --> E[Servidor MCP e Trilha Imutável de Auditoria<br>Métodos fechados de gravação e aprovação humana]
-    E --> F[Base Transacional Local<br>PostgreSQL ou SQLite]
-    E --> G[Sistemas Corporativos<br>ERP SAP, Totvs e Assinaturas]
+    A["Canais Reais de Interação Comercial<br>Emails Corporativos, Chamadas e Calendário"] --> B["Gateway de Eventos de Venda<br>Captura assíncrona em tempo real"]
+    B --> C["Camada de Extração e Invariantes<br>Validação estruturada de dados com Pydantic"]
+    C --> D["Máquina de Estados Finitos - FSM<br>Controle estrito de transições de estágio"]
+    D --> E["Servidor MCP e Trilha Imutável de Auditoria<br>Métodos fechados de gravação e aprovação humana"]
+    E --> F["Base Transacional Local<br>PostgreSQL ou SQLite"]
+    E --> G["Sistemas Corporativos<br>ERP SAP, Totvs e Assinaturas"]
 ```
 
 ### Contrato de Ferramenta em JSON Schema
