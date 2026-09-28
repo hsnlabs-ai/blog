@@ -1,6 +1,6 @@
 ---
 title: 'De 1915 à Era da IA: Kafka, utilitarismo e o valor de quem trabalha'
-date: '2026-09-28'
+date: '2026-09-22'
 category: Future of Work
 tags:
 - future-of-work
@@ -155,3 +155,9 @@ A leitura de *A Metamorfose* mais de um século depois não é um exercício de 
 A inteligência artificial está retirando de nós a desculpa de vivermos atolados em tarefas burocráticas e repetitivas. Se o trabalho operacional pode ser feito por agentes de software, temos a oportunidade inédita de redesenhar a sociedade para valorizar o pensamento crítico, a criação artística, o cuidado comunitário e a presença genuína entre as pessoas.
 
 Mas isso exige uma escolha consciente de líderes, gestores e cidadãos: rejeitar a tentação de medir seres humanos apenas pela sua utilidade produtiva. O valor intrínseco de cada trabalhador precisa estar no centro da transição para a IA. Se esquecermos disso, continuaremos repetindo em 2026 a tragédia que Kafka denunciou em 1915.
+
+## Related Field Notes and Technical Spokes
+- <a href="../collapse-of-legacy-rpa/">The RPA Market Is Collapsing</a>
+- <a href="../balance-sheet-guard-bpo-extinction/">What I Learned Building HR Tech About Dying BPO Contracts</a>
+- <a href="../death-of-tier-1-erp-helpdesk/">The Death of Tier-1 Support: Why ERP Consultancies Lose Billable Hours</a>
+- <a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a>

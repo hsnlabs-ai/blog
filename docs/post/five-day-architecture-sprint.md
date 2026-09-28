@@ -70,7 +70,7 @@ If the architecture proves viable and the business case justifies deployment, di
 Stop paying for slide decks. Demand working software in five days.
 
 ## Strategic Resources and Related Essays
-- <a href="../the-poc-graveyard/">Why Agents Fail: The PoC Graveyard</a>
-- <a href="../collapse-of-legacy-rpa/">The RPA Market Is Collapsing</a>
-- <a href="../bpo-replacement-matrix/">The BPO Replacement Matrix: Operational and Financial Impact of Production Agents</a>
+- <a href="../how-to-build-an-enterprise-ontology-from-scratch/">How to Build an Enterprise Ontology from Scratch: Step by Step</a>
+- <a href="../the-operational-ontology/">The Operational Ontology: How Enterprises Connect LLMs to Proprietary State</a>
+- <a href="../perimeter-isolation-mcp-data-contracts/">How We Protect Enterprise Databases from AI Agents</a>
 - <a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a>

@@ -55,7 +55,8 @@ Pare de construir interfaces vazias de texto livre. Use IA como um processador i
 
 E assim que voce substitui TI legada. E assim que voce expande margens. E assim que voce prova retorno sobre investimento para um CFO.
 
-## Recursos Estrategicos e Ensaios Relacionados
-- <a href="/blog/pt/post/chatbot-vs-agente/">Chatbot vs Agente: Por Que Substituir BPOs Exige Ontologias em Producao</a>
-- <a href="/blog/pt/post/cemiterio-de-pocs/">Por Que Agentes Falham: O Cemiterio de PoCs</a>
-- <a href="https://hsnlabs.ai/pt/advisory/">Advisory Estrategico da HSN Labs para Liderancas C-Level</a>
+## Recursos Estrategicos e Posts Relacionados
+- <a href="/blog/pt/post/manifesto/">Por Que Criei a HSN Labs</a>
+- <a href="/blog/pt/post/estudo-caso-cleveland-clinic-agentes-operacionais/">Estudo de Caso: Como a Cleveland Clinic Escalou Fluxo de Pacientes</a>
+- <a href="/blog/pt/post/negociacoes-autonomas-cobranca-contratos/">Operacoes em Alta Velocidade: Negociacao Autonoma, Cobranca e Contratos</a>
+- <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da HSN Labs</a>

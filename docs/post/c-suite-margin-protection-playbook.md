@@ -61,7 +61,7 @@ Establish clear financial approval thresholds where high-value transactions auto
 The agentic transition is not an optional technology experiment. It is a mandatory defense of your corporate balance sheet.
 
 ## Strategic Resources and Related Essays
-- <a href="../five-day-architecture-sprint/">Why Big 4 Slide Decks Fail on Agent Projects</a>
-- <a href="../bpo-replacement-matrix/">The BPO Replacement Matrix: Operational and Financial Impact of Production Agents</a>
-- <a href="../collapse-of-legacy-rpa/">The RPA Market Is Collapsing</a>
-- <a href="https://hsnlabs.ai/advisory">HSN Labs Strategic Advisory for C-Levels</a>
+- <a href="../bpo-replacement-matrix/">The BPO Replacement Matrix: Operational and Financial Metrics</a>
+- <a href="../buy-versus-build-b2b-enterprise-crm/">Buy versus Build: B2B Enterprise CRM, Twenty, and Agentic Stacks</a>
+- <a href="../protocol-arbitrage-claims-underwriting/">Protocol Arbitrage: Autonomous Multimodal Adjudication Across Complex Claims</a>
+- <a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a>

@@ -5,7 +5,80 @@
     <!-- Editorial & SEO Sitemap Grid -->
     <div class="footer-seo-grid">
       
-      <!-- Brand & Positioning Column -->
+      {% if page and page.file and page.file.src_uri.startswith('pt/') %}
+      <!-- Brand & Positioning Column (PT) -->
+      <div class="footer-seo-col brand-col">
+        <a href="https://hsnlabs.ai/pt/" class="footer-brand-link" title="HSN Labs">
+          <img src="{{ 'assets/brand/lockups/hsnlabs-lockup-horizontal-light.png'|url }}" alt="HSN Labs" class="footer-brand-logo">
+        </a>
+        <p class="footer-brand-tagline">
+          Arquitetura de Agentes Enterprise e ontologias executaveis de dominio para operacoes criticas.
+        </p>
+        <p class="footer-brand-meta">
+          Boutique de Arquitetura de IA<br>
+          São Paulo, Brasil · WeWork Av. Paulista 1374<br>
+          <a href="mailto:hugo@hsnlabs.ai" class="footer-link-subtle">hugo@hsnlabs.ai</a>
+        </p>
+        <div class="footer-badges-row">
+          <a href="{{ 'feed_rss_created.xml'|url }}" class="footer-rss-chip" target="_blank" rel="noopener">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" style="display:inline-block;vertical-align:-1px;margin-right:4px;"><path d="M6.18 15.64a2.18 2.18 0 0 1 2.18 2.18C8.36 19 7.38 20 6.18 20C5 20 4 19 4 17.82a2.18 2.18 0 0 1 2.18-2.18M4 4.44A15.56 15.56 0 0 1 19.56 20h-2.83A12.73 12.73 0 0 0 4 7.27V4.44m0 5.66a9.9 9.9 0 0 1 9.9 9.9h-2.83A7.07 7.07 0 0 0 4 12.93V10.1z"/></svg>RSS Feed 2.0
+          </a>
+          <a href="{{ 'llms.txt'|url }}" class="footer-llms-chip">llms.txt para LLMs e Agentes</a>
+        </div>
+      </div>
+
+      <!-- Pillar 1: Why Agents Fail (PT) -->
+      <div class="footer-seo-col">
+        <div class="footer-col-header">Por Que Agentes Falham</div>
+        <ul class="footer-link-list">
+          <li><a href="{{ 'pt/post/cemiterio-de-pocs/'|url }}">O Cemiterio de PoCs Enterprise</a></li>
+          <li><a href="{{ 'pt/post/deriva-de-integracao/'|url }}">Deriva de Integracao em Producao</a></li>
+          <li><a href="{{ 'pt/post/por-que-rag-falha-em-erp/'|url }}">Por Que RAG Falha em ERPs Financeiros</a></li>
+          <li><a href="{{ 'pt/post/falacia-llm-como-juiz/'|url }}">A Falacia do LLM como Juiz no Setor Bancario</a></li>
+        </ul>
+      </div>
+
+      <!-- Pillar 2: Agent Development Life Cycle (PT) -->
+      <div class="footer-seo-col">
+        <div class="footer-col-header">Ciclo de Vida do Agente</div>
+        <ul class="footer-link-list">
+          <li><a href="{{ 'pt/post/isolamento-perimetro-mcp-contratos-dados/'|url }}">Isolamento de Perimetro e MCP</a></li>
+          <li><a href="{{ 'pt/post/sistemas-legados-motor-execucao/'|url }}">Sistemas Legados como Motor de Execucao</a></li>
+          <li><a href="{{ 'pt/post/chatbot-vs-agente/'|url }}">Chatbot vs Agente Transacional</a></li>
+          <li><a href="{{ 'pt/post/sprint-arquitetura-cinco-dias/'|url }}">Por Que Apresentacoes da Big 4 Falham em IA</a></li>
+        </ul>
+      </div>
+
+      <!-- Pillar 3: Future of Work (PT) -->
+      <div class="footer-seo-col">
+        <div class="footer-col-header">Futuro do Trabalho</div>
+        <ul class="footer-link-list">
+          <li><a href="{{ 'pt/post/guarda-do-balanco-extincao-bpo/'|url }}">Extincao do BPO de Recursos Humanos</a></li>
+          <li><a href="{{ 'pt/post/colapso-rpa-legado/'|url }}">O Colapso do RPA Legado</a></li>
+        </ul>
+      </div>
+
+      <!-- Pillar 4: Agentic Economics (PT) -->
+      <div class="footer-seo-col">
+        <div class="footer-col-header">Economia dos Agentes</div>
+        <ul class="footer-link-list">
+          <li><a href="{{ 'pt/post/matriz-substituicao-bpo/'|url }}">Matriz de Substituicao de BPO</a></li>
+          <li><a href="{{ 'pt/post/custo-ia-ilimitada-ti-legada/'|url }}">O Custo da IA Ilimitada na TI Legada</a></li>
+        </ul>
+      </div>
+
+      <!-- Pillar 5: Case Studies (PT) -->
+      <div class="footer-seo-col">
+        <div class="footer-col-header">Estudos de Caso</div>
+        <ul class="footer-link-list">
+          <li><a href="{{ 'pt/post/estudo-caso-latam-airlines/'|url }}">LATAM Airlines: Motor de Margem a 3%</a></li>
+          <li><a href="{{ 'pt/post/agentes-ilimitados-maquinas-estados-finitos/'|url }}">Maquinas de Estados vs Loops de API</a></li>
+          <li><a href="{{ 'pt/post/manifesto/'|url }}">Por Que Construi a HSN Labs</a></li>
+        </ul>
+      </div>
+
+      {% else %}
+      <!-- Brand & Positioning Column (EN) -->
       <div class="footer-seo-col brand-col">
         <a href="https://hsnlabs.ai" class="footer-brand-link" title="HSN Labs">
           <img src="{{ 'assets/brand/lockups/hsnlabs-lockup-horizontal-light.png'|url }}" alt="HSN Labs" class="footer-brand-logo">
@@ -26,7 +99,7 @@
         </div>
       </div>
 
-      <!-- Pillar 1: Why Agents Fail -->
+      <!-- Pillar 1: Why Agents Fail (EN) -->
       <div class="footer-seo-col">
         <div class="footer-col-header">Why Agents Fail</div>
         <ul class="footer-link-list">
@@ -37,7 +110,7 @@
         </ul>
       </div>
 
-      <!-- Pillar 2: Agent Development Life Cycle -->
+      <!-- Pillar 2: Agent Development Life Cycle (EN) -->
       <div class="footer-seo-col">
         <div class="footer-col-header">Agent Development Life Cycle</div>
         <ul class="footer-link-list">
@@ -48,7 +121,7 @@
         </ul>
       </div>
 
-      <!-- Pillar 3: Future of Work -->
+      <!-- Pillar 3: Future of Work (EN) -->
       <div class="footer-seo-col">
         <div class="footer-col-header">Future of Work</div>
         <ul class="footer-link-list">
@@ -58,7 +131,7 @@
         </ul>
       </div>
 
-      <!-- Pillar 4: Agentic Economics -->
+      <!-- Pillar 4: Agentic Economics (EN) -->
       <div class="footer-seo-col">
         <div class="footer-col-header">Agentic Economics</div>
         <ul class="footer-link-list">
@@ -69,7 +142,7 @@
         </ul>
       </div>
 
-      <!-- Pillar 5: Case Studies -->
+      <!-- Pillar 5: Case Studies (EN) -->
       <div class="footer-seo-col">
         <div class="footer-col-header">Case Studies</div>
         <ul class="footer-link-list">
@@ -79,13 +152,18 @@
           <li><a href="{{ 'post/manifesto/'|url }}">Why I Built HSN Labs</a></li>
         </ul>
       </div>
+      {% endif %}
 
     </div>
 
     <!-- Minimalist Bottom Line -->
     <div class="footer-bottom-bar">
       <div class="footer-bottom-copy">
+        {% if page and page.file and page.file.src_uri.startswith('pt/') %}
+        2026 HSN Labs. Arquitetura de Agentes Enterprise.
+        {% else %}
         2026 HSN Labs. Enterprise Agent Architecture.
+        {% endif %}
       </div>
       <div class="footer-bottom-nav">
         <a href="https://github.com/hsnlabs-ai" target="_blank" rel="noopener">GitHub</a>
@@ -94,10 +172,17 @@
         <a href="{{ 'feed_rss_created.xml'|url }}">RSS Feed</a>
         <a href="{{ 'feed_json_created.json'|url }}">JSON Feed</a>
         <a href="{{ 'sitemap.xml'|url }}">Sitemap</a>
+        {% if page and page.file and page.file.src_uri.startswith('pt/') %}
+        <a href="https://hsnlabs.ai/pt/bootcamp">Bootcamp</a>
+        <a href="https://hsnlabs.ai/pt/advisory">Advisory</a>
+        <a href="https://hsnlabs.ai/pt/privacy-policy">Politica de Privacidade</a>
+        <a href="https://hsnlabs.ai/pt/modern-slavery-statement">Conformidade</a>
+        {% else %}
         <a href="https://hsnlabs.ai/bootcamp">Bootcamp</a>
         <a href="https://hsnlabs.ai/advisory">Advisory</a>
         <a href="https://hsnlabs.ai/privacy-policy">Privacy Policy</a>
         <a href="https://hsnlabs.ai/modern-slavery-statement">Compliance</a>
+        {% endif %}
       </div>
     </div>
 

@@ -14,7 +14,7 @@ author: Hugo S. Nascimento
 
 <!-- more -->
 
-*Contexto: Escrevi este ensaio apos uma sessao de depuracao na madrugada onde um agente em loop aberto executou quarenta e duas chamadas recursivas de ferramentas em um servidor de homologacao antes de estourar os limites da API. E por isso que autonomia corporativa exige maquinas de estados matematicamente delimitadas.*
+*Contexto: Escrevi este post apos uma sessao de depuracao na madrugada onde um agente em loop aberto executou quarenta e duas chamadas recursivas de ferramentas em um servidor de homologacao antes de estourar os limites da API. E por isso que autonomia corporativa exige maquinas de estados matematicamente delimitadas.*
 
 As duas horas da manha em um cluster de homologacao, um alerta acordou nossa equipe de plantao.
 
@@ -57,8 +57,8 @@ Na HSN Labs, nunca permitimos loops abertos de ferramentas em producao. Impomos 
 
 Autonomia nao significa ausencia de regras. Autonomia corporativa e a capacidade de o software rodar com confiabilidade porque seus limites sao matematicamente inquebraveis.
 
-## Recursos Estrategicos e Ensaios Relacionados
-- <a href="/blog/pt/post/chatbot-vs-agente/">Chatbot vs Agente: Por Que Substituir BPOs Exige Ontologias em Producao</a>
-- <a href="/blog/pt/post/cemiterio-de-pocs/">Por Que Agentes Falham: O Cemiterio de PoCs</a>
-- <a href="/blog/pt/post/custo-ia-ilimitada-ti-legada/">O Custo de IA Sem Limites na TI Legada</a>
+## Recursos Estrategicos e Posts Relacionados
+- <a href="/blog/pt/post/manifesto/">Por Que Criei a HSN Labs</a>
+- <a href="/blog/pt/post/estudo-caso-cleveland-clinic-agentes-operacionais/">Estudo de Caso: Como a Cleveland Clinic Escalou Fluxo de Pacientes</a>
+- <a href="/blog/pt/post/negociacoes-autonomas-cobranca-contratos/">Operacoes em Alta Velocidade: Negociacao Autonoma, Cobranca e Contratos</a>
 - <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da HSN Labs</a>

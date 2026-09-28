@@ -60,8 +60,9 @@ Essa transicao nao pode ser alcancada por meio de apresentacoes teoricas ou wrap
 
 A HSN Labs e a boutique de engenharia que construi para trabalhar em parceria com lideres empresariais que ja estao buscando ativamente essa transicao e exigem sistemas em producao que nao quebrem.
 
-## Recursos Estrategicos e Ensaios Relacionados
-- <a href="/blog/pt/post/cemiterio-de-pocs/">Por Que Agentes Falham: O Cemiterio de PoCs</a>
-- <a href="/blog/pt/post/sprint-arquitetura-cinco-dias/">Por Que Apresentacoes de Big 4 Falham em Projetos de Agentes</a>
-- <a href="/blog/pt/post/matriz-substituicao-bpo/">A Matriz de Substituicao de BPO: Metricas Operacionais e Financeiras</a>
+## Notas de Campo e Artigos Relacionados
+- <a href="/blog/pt/post/estudo-caso-cleveland-clinic-agentes-operacionais/">Estudo de Caso: Como a Cleveland Clinic Escalou Fluxo de Pacientes</a>
+- <a href="/blog/pt/post/estudo-caso-latam-airlines/">LATAM Airlines: Agentes em Producao com Margem de 3 Por Cento</a>
+- <a href="/blog/pt/post/agentes-ilimitados-maquinas-estados-finitos/">Estudo de Caso: 42 Chamadas em Loop as 2 da Manha</a>
+- <a href="/blog/pt/post/negociacoes-autonomas-cobranca-contratos/">Operacoes em Alta Velocidade: Negociacao Autonoma, Cobranca e Contratos</a>
 - <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da HSN Labs</a>

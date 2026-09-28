@@ -58,8 +58,8 @@ O banco de dados legado continua sendo a fonte unica da verdade. As gravacoes tr
 
 Nao queime capital reescrevendo sistemas que ja funcionam. Transforme seu legado no motor de execucao headless para agentes autonomos.
 
-## Recursos Estrategicos e Ensaios Relacionados
-- <a href="/blog/pt/post/custo-ia-ilimitada-ti-legada/">O Custo de IA Sem Limites na TI Legada</a>
-- <a href="/blog/pt/post/por-que-rag-falha-em-erp/">Por Que RAG Tradicional Falha em ERPs Financeiros</a>
-- <a href="/blog/pt/post/cemiterio-de-pocs/">Por Que Agentes Falham: O Cemiterio de PoCs</a>
+## Recursos Estrategicos e Posts Relacionados
+- <a href="/blog/pt/post/como-construir-ontologia-enterprise-do-zero/">Como Construir uma Ontologia Enterprise do Zero: Passo a Passo</a>
+- <a href="/blog/pt/post/isolamento-perimetro-mcp-contratos-dados/">Como Protegemos Bancos de Dados Enterprise de Agentes de IA</a>
+- <a href="/blog/pt/post/chatbot-vs-agente/">Chatbot vs Agente: Por Que Substituir BPOs Exige Ontologias em Producao</a>
 - <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da HSN Labs</a>

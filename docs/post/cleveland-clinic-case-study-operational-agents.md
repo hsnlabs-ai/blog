@@ -110,3 +110,9 @@ Whether you manage 6,600 hospital beds, international freight lines, or financia
 [3] https://www.palantir.com/impact/tampa-general-hospital — Tampa General Hospital Case Study: Infusing Data Throughout the Care Continuum
 [5] https://www.palantir.com/platforms/foundry/ontology — Palantir Foundry: Operational Ontology Overview
 [6] https://www.palantir.com/impact/cleveland-clinic — Cleveland Clinic Impact Study: Enhancing Hospital Operations with Palantir Foundry
+
+## Strategic Resources and Related Essays
+- <a href="../manifesto/">Why I Built HSN Labs</a>
+- <a href="../latam-airlines-case-study/">LATAM Airlines: Production Agents in a 3 Percent Margin Business</a>
+- <a href="../unconstrained-agents-finite-state-machines/">Case Study: 42 Calls in a Loop at 2 AM</a>
+- <a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a>

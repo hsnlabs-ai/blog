@@ -385,6 +385,17 @@
       "target_keyword_pt": "falhas de rag em erp contabil busca vetorial",
       "en_path": "/blog/post/why-rag-breaks-on-erp/",
       "pt_path": "/blog/pt/post/por-que-rag-falha-em-erp/"
+    },
+    {
+      "slug_en": "buy-versus-build-b2b-enterprise-crm",
+      "slug_pt": "comprar-ou-construir-crm-vendas-b2b",
+      "title_en": "Buy versus Build: B2B Enterprise CRM, Twenty, and Agentic Stacks",
+      "title_pt": "CRM de Vendas B2B: Comprar Salesforce, Adaptar Twenty ou Construir com Agentes",
+      "category_en": "Agentic Economics",
+      "category_pt": "Economia Agentica",
+      "target_keyword_pt": "comprar ou construir crm vendas b2b agentes",
+      "en_path": "/blog/post/buy-versus-build-b2b-enterprise-crm/",
+      "pt_path": "/blog/pt/post/comprar-ou-construir-crm-vendas-b2b/"
     }
   ]
 }

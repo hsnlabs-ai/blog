@@ -1,6 +1,6 @@
 ---
 title: "The Architecture of Palantir AIP: Why Enterprise Agents Fail Without an Operational Ontology"
-date: "2026-09-28"
+date: "2026-09-18"
 category: Agent Development Life Cycle
 tags:
 - architecture
@@ -106,3 +106,9 @@ If you bind autonomous agents to code-level software guards and typed business o
 [1] https://www.sec.gov/Archives/edgar/data/1321655/000132165524000022/pltr-20231231.htm — Palantir Technologies Inc. Form 10-K Annual Report
 [2] https://www.palantir.com/platforms/aip/bootcamp — Palantir AIP Bootcamp: From 0 to Use Case in 5 Days
 [3] https://www.palantir.com/impact/tampa-general-hospital — Tampa General Hospital Case Study: Infusing Data Throughout the Care Continuum
+
+## Strategic Resources and Related Essays
+- <a href="../how-to-build-an-enterprise-ontology-from-scratch/">How to Build an Enterprise Ontology from Scratch: Step by Step</a>
+- <a href="../ontology-vs-knowledge-graph/">Ontology vs. Knowledge Graph: Key Differences, Architecture, and Agent Reliability</a>
+- <a href="../legacy-core-backing-engine/">Legacy Core Systems Will Not Die: They Are the Execution Engine</a>
+- <a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a>

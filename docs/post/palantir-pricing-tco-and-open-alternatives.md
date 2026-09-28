@@ -1,6 +1,6 @@
 ---
 title: "The Real TCO of Palantir: The Dollar Barrier and Modern Open Alternatives"
-date: "2026-09-28"
+date: "2026-09-14"
 category: Agentic Economics
 tags:
 - economics
@@ -104,3 +104,9 @@ By decoupling the architectural discipline of operational ontologies from propri
 [1] https://www.sec.gov/Archives/edgar/data/1321655/000132165524000022/pltr-20231231.htm — Palantir Technologies Inc. Form 10-K Annual Report
 [2] https://www.palantir.com/platforms/aip/bootcamp — Palantir AIP Bootcamp: From 0 to Use Case in 5 Days
 [5] https://www.palantir.com/platforms/foundry/ontology — Palantir Foundry: Operational Ontology Overview
+
+## Strategic Resources and Related Essays
+- <a href="../bpo-replacement-matrix/">The BPO Replacement Matrix: Operational and Financial Metrics</a>
+- <a href="../buy-versus-build-b2b-enterprise-crm/">Buy versus Build: B2B Enterprise CRM, Twenty, and Agentic Stacks</a>
+- <a href="../cost-legacy-it/">The Cost of Unbounded AI in Legacy IT</a>
+- <a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a>

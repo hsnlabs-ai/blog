@@ -41,9 +41,9 @@
     "Case Studies": "Estudos de Caso"
   },
   "ui_strings": {
-    "all_essays": "Todos os Ensaios",
-    "read_essay": "Ler Ensaio",
-    "back_to_essays": "Voltar para Todos os Ensaios",
+    "all_essays": "Todos os Posts",
+    "read_essay": "Ler Post",
+    "back_to_essays": "Voltar para Todos os Posts",
     "apply_bootcamp": "Aplicar para o Bootcamp",
     "reading_time": "Tempo de leitura",
     "author": "Autor",

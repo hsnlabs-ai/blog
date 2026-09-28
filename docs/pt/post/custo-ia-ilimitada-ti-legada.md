@@ -47,8 +47,8 @@ Para implantar agentes em ambientes corporativos legados com seguranca, voce pre
 
 Previsibilidade e o prerequisito para acesso a producao corporativa. Se a sua arquitetura nao puder garantir limites de sistema, ela jamais saira da sandbox.
 
-## Recursos Estrategicos e Ensaios Relacionados
-- <a href="/blog/pt/post/por-que-rag-falha-em-erp/">Por Que RAG Tradicional Falha em ERPs Financeiros</a>
-- <a href="/blog/pt/post/cemiterio-de-pocs/">Por Que Agentes Falham: O Cemiterio de PoCs</a>
-- <a href="/blog/pt/post/sprint-arquitetura-cinco-dias/">Por Que Apresentacoes de Big 4 Falham em Projetos de Agentes</a>
-- <a href="https://hsnlabs.ai/pt/advisory/">Advisory Estrategico da HSN Labs para Liderancas C-Level</a>
+## Recursos Estrategicos e Posts Relacionados
+- <a href="/blog/pt/post/matriz-substituicao-bpo/">A Matriz de Substituicao de BPO: Metricas Operacionais e Financeiras</a>
+- <a href="/blog/pt/post/preco-palantir-tco-alternativas-abertas/">O TCO Real da Palantir: A Barreira em Dolar e Alternativas Abertas</a>
+- <a href="/blog/pt/post/arbitragem-protocolo-sinistros-subscricao/">Arbitragem de Protocolos: Liquidacao Multimodal Autonoma de Sinistros</a>
+- <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da HSN Labs</a>

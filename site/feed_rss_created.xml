@@ -3,7 +3,7 @@
   <channel>
     
     <title>Hugo Nascimento — Enterprise Agent Architecture</title>
-    <description>Essays and field notes on deterministic agent architectures, domain ontologies, and avoiding runtime failures in production.</description>
+    <description>Posts and field notes on deterministic agent architectures, domain ontologies, and avoiding runtime failures in production.</description>
     <link>https://hsnlabs.ai/blog/</link>
     <atom:link href="https://hsnlabs.ai/blog/feed_rss_created.xml" rel="self" type="application/rss+xml" /> <atom:link href="https://pubsubhubbub.appspot.com/" rel="hub" type="application/rss+xml"/>
 
@@ -13,8 +13,8 @@
     <language>en</language>
 
     
-    <pubDate>Mon, 28 Sep 2026 13:12:32 -0000</pubDate>
-    <lastBuildDate>Mon, 28 Sep 2026 13:12:32 -0000</lastBuildDate>
+    <pubDate>Mon, 28 Sep 2026 18:39:25 -0000</pubDate>
+    <lastBuildDate>Mon, 28 Sep 2026 18:39:25 -0000</lastBuildDate>
     <ttl>1440</ttl>
 
     
@@ -30,6 +30,39 @@
     
 
     
+    
+    <item>
+      <title>Buy versus Build: B2B Enterprise CRM, Twenty, and Agentic Stacks</title>
+      
+      
+        
+      <author>Hugo S. Nascimento</author>
+        
+      
+      
+      
+        
+      <category>Agentic Economics</category>
+        
+      <category>architecture</category>
+        
+      <category>bpo</category>
+        
+      <category>crm</category>
+        
+      <category>model-context-protocol</category>
+        
+      <category>saas</category>
+        
+      
+      <description>Technical and financial analysis comparing Salesforce seats, Twenty CRM, and custom agentic stacks for enterprise engineering leaders.</description>
+      <link>https://hsnlabs.ai/blog/post/buy-versus-build-b2b-enterprise-crm/</link>
+      <pubDate>Mon, 28 Sep 2026 00:00:00 +0000</pubDate>
+      <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
+      
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/post/buy-versus-build-b2b-enterprise-crm/</guid>
+      
+    </item>
     
     <item>
       <title>Case Study: How Cleveland Clinic Scaled Patient Flow Across 6,600 Hospital Beds</title>
@@ -59,165 +92,6 @@
       <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
       
       <guid isPermaLink="true">https://hsnlabs.ai/blog/post/cleveland-clinic-case-study-operational-agents/</guid>
-      
-    </item>
-    
-    <item>
-      <title>How to Build an Operational Business Ontology in Python with Pydantic and MCP</title>
-      
-      
-        
-      <author>Hugo S. Nascimento</author>
-        
-      
-      
-      
-        
-      <category>Agent Development Life Cycle</category>
-        
-      <category>architecture</category>
-        
-      <category>data-contracts</category>
-        
-      <category>evaluation</category>
-        
-      <category>production</category>
-        
-      
-      <description>Step-by-step engineering architecture to build an operational business ontology in pure Python using Pydantic schemas and Model Context Protocol actions without proprietary lock-in.</description>
-      <link>https://hsnlabs.ai/blog/post/how-to-build-operational-ontology-python-mcp/</link>
-      <pubDate>Mon, 28 Sep 2026 00:00:00 +0000</pubDate>
-      <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
-      
-      <guid isPermaLink="true">https://hsnlabs.ai/blog/post/how-to-build-operational-ontology-python-mcp/</guid>
-      
-    </item>
-    
-    <item>
-      <title>De 1915 à Era da IA: Kafka, utilitarismo e o valor de quem trabalha</title>
-      
-      
-        
-      <author>Hugo S. Nascimento</author>
-        
-      
-      
-      
-        
-      <category>Future of Work</category>
-        
-      <category>artificial-intelligence</category>
-        
-      <category>future-of-work</category>
-        
-      <category>hr</category>
-        
-      <category>philosophy</category>
-        
-      
-      <description>Reflexão sobre utilitarismo, desvalorização do trabalhador e o impacto de agentes de IA a partir de A Metamorfose de Franz Kafka.</description>
-      <link>https://hsnlabs.ai/blog/post/kafka-metamorfose-ia-futuro-do-trabalho/</link>
-      <pubDate>Mon, 28 Sep 2026 00:00:00 +0000</pubDate>
-      <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
-      
-      <guid isPermaLink="true">https://hsnlabs.ai/blog/post/kafka-metamorfose-ia-futuro-do-trabalho/</guid>
-      
-      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/kafka/capa-metamorfose.jpg" type="image/jpeg" length="None" />
-      
-    </item>
-    
-    <item>
-      <title>The Architecture of Palantir AIP: Why Enterprise Agents Fail Without an Operational Ontology</title>
-      
-      
-        
-      <author>Hugo S. Nascimento</author>
-        
-      
-      
-      
-        
-      <category>Agent Development Life Cycle</category>
-        
-      <category>architecture</category>
-        
-      <category>case-studies</category>
-        
-      <category>production</category>
-        
-      <category>roi</category>
-        
-      
-      <description>How Palantir AIP bootcamps compressed 9-month sales cycles into 5-day deployments by binding LLMs to operational ontologies instead of raw prompts.</description>
-      <link>https://hsnlabs.ai/blog/post/palantir-aip-bootcamp-operational-ontology/</link>
-      <pubDate>Mon, 28 Sep 2026 00:00:00 +0000</pubDate>
-      <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
-      
-      <guid isPermaLink="true">https://hsnlabs.ai/blog/post/palantir-aip-bootcamp-operational-ontology/</guid>
-      
-      <enclosure url="https://hsnlabs.ai/blog/assets/diagrams/palantir-aip-architecture-pt.png" type="image/png" length="None" />
-      
-    </item>
-    
-    <item>
-      <title>The Real TCO of Palantir: The Dollar Barrier and Modern Open Alternatives</title>
-      
-      
-        
-      <author>Hugo S. Nascimento</author>
-        
-      
-      
-      
-        
-      <category>Agentic Economics</category>
-        
-      <category>architecture</category>
-        
-      <category>ebitda</category>
-        
-      <category>economics</category>
-        
-      <category>roi</category>
-        
-      
-      <description>Auditing the total cost of ownership behind Palantir contracts, foreign exchange exposure, and how to build open ontologies without 7-figure licensing.</description>
-      <link>https://hsnlabs.ai/blog/post/palantir-pricing-tco-and-open-alternatives/</link>
-      <pubDate>Mon, 28 Sep 2026 00:00:00 +0000</pubDate>
-      <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
-      
-      <guid isPermaLink="true">https://hsnlabs.ai/blog/post/palantir-pricing-tco-and-open-alternatives/</guid>
-      
-    </item>
-    
-    <item>
-      <title>Palantir vs Databricks: Why Data Lakes Fail at Agentic Operations</title>
-      
-      
-        
-      <author>Hugo S. Nascimento</author>
-        
-      
-      
-      
-        
-      <category>Why Agents Fail</category>
-        
-      <category>ai-failures</category>
-        
-      <category>architecture</category>
-        
-      <category>data-contracts</category>
-        
-      <category>production</category>
-        
-      
-      <description>Architectural breakdown comparing analytical lakehouses against operational ontologies for mission-critical enterprise AI agents.</description>
-      <link>https://hsnlabs.ai/blog/post/palantir-vs-databricks-agent-architecture/</link>
-      <pubDate>Mon, 28 Sep 2026 00:00:00 +0000</pubDate>
-      <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
-      
-      <guid isPermaLink="true">https://hsnlabs.ai/blog/post/palantir-vs-databricks-agent-architecture/</guid>
       
     </item>
     
@@ -447,6 +321,37 @@
     </item>
     
     <item>
+      <title>How to Build an Operational Business Ontology in Python with Pydantic and MCP</title>
+      
+      
+        
+      <author>Hugo S. Nascimento</author>
+        
+      
+      
+      
+        
+      <category>Agent Development Life Cycle</category>
+        
+      <category>architecture</category>
+        
+      <category>data-contracts</category>
+        
+      <category>evaluation</category>
+        
+      <category>production</category>
+        
+      
+      <description>Step-by-step engineering architecture to build an operational business ontology in pure Python using Pydantic schemas and Model Context Protocol actions without proprietary lock-in.</description>
+      <link>https://hsnlabs.ai/blog/post/how-to-build-operational-ontology-python-mcp/</link>
+      <pubDate>Fri, 25 Sep 2026 00:00:00 +0000</pubDate>
+      <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
+      
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/post/how-to-build-operational-ontology-python-mcp/</guid>
+      
+    </item>
+    
+    <item>
       <title>Why Big 4 Slide Decks Fail on Agent Projects</title>
       
       
@@ -472,6 +377,39 @@
       <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
       
       <guid isPermaLink="true">https://hsnlabs.ai/blog/post/five-day-architecture-sprint/</guid>
+      
+    </item>
+    
+    <item>
+      <title>De 1915 à Era da IA: Kafka, utilitarismo e o valor de quem trabalha</title>
+      
+      
+        
+      <author>Hugo S. Nascimento</author>
+        
+      
+      
+      
+        
+      <category>Future of Work</category>
+        
+      <category>artificial-intelligence</category>
+        
+      <category>future-of-work</category>
+        
+      <category>hr</category>
+        
+      <category>philosophy</category>
+        
+      
+      <description>Reflexão sobre utilitarismo, desvalorização do trabalhador e o impacto de agentes de IA a partir de A Metamorfose de Franz Kafka.</description>
+      <link>https://hsnlabs.ai/blog/post/kafka-metamorfose-ia-futuro-do-trabalho/</link>
+      <pubDate>Tue, 22 Sep 2026 00:00:00 +0000</pubDate>
+      <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
+      
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/post/kafka-metamorfose-ia-futuro-do-trabalho/</guid>
+      
+      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/kafka/capa-metamorfose.jpg" type="image/jpeg" length="None" />
       
     </item>
     
@@ -505,6 +443,39 @@
     </item>
     
     <item>
+      <title>The Architecture of Palantir AIP: Why Enterprise Agents Fail Without an Operational Ontology</title>
+      
+      
+        
+      <author>Hugo S. Nascimento</author>
+        
+      
+      
+      
+        
+      <category>Agent Development Life Cycle</category>
+        
+      <category>architecture</category>
+        
+      <category>case-studies</category>
+        
+      <category>production</category>
+        
+      <category>roi</category>
+        
+      
+      <description>How Palantir AIP bootcamps compressed 9-month sales cycles into 5-day deployments by binding LLMs to operational ontologies instead of raw prompts.</description>
+      <link>https://hsnlabs.ai/blog/post/palantir-aip-bootcamp-operational-ontology/</link>
+      <pubDate>Fri, 18 Sep 2026 00:00:00 +0000</pubDate>
+      <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
+      
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/post/palantir-aip-bootcamp-operational-ontology/</guid>
+      
+      <enclosure url="https://hsnlabs.ai/blog/assets/diagrams/palantir-aip-architecture-pt.png" type="image/png" length="None" />
+      
+    </item>
+    
+    <item>
       <title>What I Learned Building HR Tech About Dying BPO Contracts</title>
       
       
@@ -530,6 +501,68 @@
       <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
       
       <guid isPermaLink="true">https://hsnlabs.ai/blog/post/balance-sheet-guard-bpo-extinction/</guid>
+      
+    </item>
+    
+    <item>
+      <title>The Real TCO of Palantir: The Dollar Barrier and Modern Open Alternatives</title>
+      
+      
+        
+      <author>Hugo S. Nascimento</author>
+        
+      
+      
+      
+        
+      <category>Agentic Economics</category>
+        
+      <category>architecture</category>
+        
+      <category>ebitda</category>
+        
+      <category>economics</category>
+        
+      <category>roi</category>
+        
+      
+      <description>Auditing the total cost of ownership behind Palantir contracts, foreign exchange exposure, and how to build open ontologies without 7-figure licensing.</description>
+      <link>https://hsnlabs.ai/blog/post/palantir-pricing-tco-and-open-alternatives/</link>
+      <pubDate>Mon, 14 Sep 2026 00:00:00 +0000</pubDate>
+      <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
+      
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/post/palantir-pricing-tco-and-open-alternatives/</guid>
+      
+    </item>
+    
+    <item>
+      <title>Palantir vs Databricks: Why Data Lakes Fail at Agentic Operations</title>
+      
+      
+        
+      <author>Hugo S. Nascimento</author>
+        
+      
+      
+      
+        
+      <category>Why Agents Fail</category>
+        
+      <category>ai-failures</category>
+        
+      <category>architecture</category>
+        
+      <category>data-contracts</category>
+        
+      <category>production</category>
+        
+      
+      <description>Architectural breakdown comparing analytical lakehouses against operational ontologies for mission-critical enterprise AI agents.</description>
+      <link>https://hsnlabs.ai/blog/post/palantir-vs-databricks-agent-architecture/</link>
+      <pubDate>Fri, 11 Sep 2026 00:00:00 +0000</pubDate>
+      <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
+      
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/post/palantir-vs-databricks-agent-architecture/</guid>
       
     </item>
     
@@ -617,35 +650,6 @@
       <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
       
       <guid isPermaLink="true">https://hsnlabs.ai/blog/post/collapse-of-legacy-rpa/</guid>
-      
-    </item>
-    
-    <item>
-      <title>Why Agents Fail: The PoC Graveyard</title>
-      
-      
-        
-      <author>Hugo S. Nascimento</author>
-        
-      
-      
-      
-        
-      <category>Why Agents Fail</category>
-        
-      <category>ai-failures</category>
-        
-      <category>case-studies</category>
-        
-      <category>poc</category>
-        
-      
-      <description>Root cause post-mortem on why ninety percent of enterprise AI proofs of concept fail before reaching live production.</description>
-      <link>https://hsnlabs.ai/blog/post/the-poc-graveyard/</link>
-      <pubDate>Tue, 01 Sep 2026 00:00:00 +0000</pubDate>
-      <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
-      
-      <guid isPermaLink="true">https://hsnlabs.ai/blog/post/the-poc-graveyard/</guid>
       
     </item>
     

@@ -53,8 +53,8 @@ Na HSN Labs, nao construimos sistemas que emulam olhos e maos humanas em uma tel
 
 A era de pagar milhoes para manter bots frageis de raspagem de tela acabou. Operacoes corporativas pertencem a agentes autonomos em nivel de protocolo que nunca tocam em um mouse.
 
-## Recursos Estrategicos e Ensaios Relacionados
-- <a href="/blog/pt/post/cemiterio-de-pocs/">Por Que Agentes Falham: O Cemiterio de PoCs</a>
-- <a href="/blog/pt/post/custo-ia-ilimitada-ti-legada/">O Custo de IA Sem Limites na TI Legada</a>
-- <a href="/blog/pt/post/matriz-substituicao-bpo/">A Matriz de Substituicao de BPO: Metricas Operacionais e Financeiras</a>
-- <a href="https://hsnlabs.ai/pt/advisory/">Advisory Estrategico da HSN Labs para Liderancas C-Level</a>
+## Recursos Estrategicos e Posts Relacionados
+- <a href="/blog/pt/post/kafka-metamorfose-ia-futuro-do-trabalho/">De 1915 a Era da IA: Kafka, utilitarismo e o valor do trabalho</a>
+- <a href="/blog/pt/post/guarda-do-balanco-extincao-bpo/">O Que Aprendi Construindo HR Tech Sobre a Morte do BPO</a>
+- <a href="/blog/pt/post/morte-suporte-nivel-1-erp/">A Morte do Suporte Nivel 1: Por Que Consultorias de ERP Perdem Horas Faturaveis</a>
+- <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da HSN Labs</a>

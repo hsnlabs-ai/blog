@@ -1,5 +1,6 @@
 import json
 import re
+from datetime import datetime
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -131,6 +132,34 @@ def on_page_content(html, page, config, files):
         return html + injected_meta + json_ld
 
     return html + injected_meta
+
+def on_env(env, config, files):
+    def days_ago(date_val, is_pt=False):
+        if not date_val:
+            return ""
+        try:
+            d_str = str(date_val)[:10]
+            d = datetime.strptime(d_str, "%Y-%m-%d").date()
+            today = datetime.now().date()
+            delta = (today - d).days
+            if is_pt:
+                if delta <= 0:
+                    return "postado hoje"
+                elif delta == 1:
+                    return "há 1 dia"
+                else:
+                    return f"há {delta} dias"
+            else:
+                if delta <= 0:
+                    return "posted today"
+                elif delta == 1:
+                    return "1 day ago"
+                else:
+                    return f"{delta} days ago"
+        except Exception:
+            return ""
+    env.filters["days_ago"] = days_ago
+    return env
 
 def on_post_build(config):
     site_dir = Path(config.site_dir)

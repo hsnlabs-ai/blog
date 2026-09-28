@@ -25,6 +25,10 @@
          <lastmod>2026-09-28</lastmod>
     </url>
     <url>
+         <loc>https://hsnlabs.ai/blog/post/buy-versus-build-b2b-enterprise-crm/</loc>
+         <lastmod>2026-09-28</lastmod>
+    </url>
+    <url>
          <loc>https://hsnlabs.ai/blog/post/c-suite-margin-protection-playbook/</loc>
          <lastmod>2026-09-28</lastmod>
     </url>
@@ -137,7 +141,15 @@
          <lastmod>2026-09-28</lastmod>
     </url>
     <url>
+         <loc>https://hsnlabs.ai/blog/pt/post/a-ontologia-operacional/</loc>
+         <lastmod>2026-09-28</lastmod>
+    </url>
+    <url>
          <loc>https://hsnlabs.ai/blog/pt/post/agentes-ilimitados-maquinas-estados-finitos/</loc>
+         <lastmod>2026-09-28</lastmod>
+    </url>
+    <url>
+         <loc>https://hsnlabs.ai/blog/pt/post/arbitragem-protocolo-sinistros-subscricao/</loc>
          <lastmod>2026-09-28</lastmod>
     </url>
     <url>
@@ -153,11 +165,27 @@
          <lastmod>2026-09-28</lastmod>
     </url>
     <url>
+         <loc>https://hsnlabs.ai/blog/pt/post/como-construir-ontologia-enterprise-do-zero/</loc>
+         <lastmod>2026-09-28</lastmod>
+    </url>
+    <url>
+         <loc>https://hsnlabs.ai/blog/pt/post/como-construir-ontologia-operacional-python-mcp/</loc>
+         <lastmod>2026-09-28</lastmod>
+    </url>
+    <url>
+         <loc>https://hsnlabs.ai/blog/pt/post/comprar-ou-construir-crm-vendas-b2b/</loc>
+         <lastmod>2026-09-28</lastmod>
+    </url>
+    <url>
          <loc>https://hsnlabs.ai/blog/pt/post/custo-ia-ilimitada-ti-legada/</loc>
          <lastmod>2026-09-28</lastmod>
     </url>
     <url>
          <loc>https://hsnlabs.ai/blog/pt/post/deriva-de-integracao/</loc>
+         <lastmod>2026-09-28</lastmod>
+    </url>
+    <url>
+         <loc>https://hsnlabs.ai/blog/pt/post/estudo-caso-cleveland-clinic-agentes-operacionais/</loc>
          <lastmod>2026-09-28</lastmod>
     </url>
     <url>
@@ -177,6 +205,10 @@
          <lastmod>2026-09-28</lastmod>
     </url>
     <url>
+         <loc>https://hsnlabs.ai/blog/pt/post/kafka-metamorfose-ia-futuro-do-trabalho/</loc>
+         <lastmod>2026-09-28</lastmod>
+    </url>
+    <url>
          <loc>https://hsnlabs.ai/blog/pt/post/manifesto/</loc>
          <lastmod>2026-09-28</lastmod>
     </url>
@@ -185,7 +217,43 @@
          <lastmod>2026-09-28</lastmod>
     </url>
     <url>
+         <loc>https://hsnlabs.ai/blog/pt/post/morte-suporte-nivel-1-erp/</loc>
+         <lastmod>2026-09-28</lastmod>
+    </url>
+    <url>
+         <loc>https://hsnlabs.ai/blog/pt/post/negociacoes-autonomas-cobranca-contratos/</loc>
+         <lastmod>2026-09-28</lastmod>
+    </url>
+    <url>
+         <loc>https://hsnlabs.ai/blog/pt/post/o-que-e-uma-ontologia-para-agentes-ia/</loc>
+         <lastmod>2026-09-28</lastmod>
+    </url>
+    <url>
+         <loc>https://hsnlabs.ai/blog/pt/post/ontologia-vs-grafo-conhecimento/</loc>
+         <lastmod>2026-09-28</lastmod>
+    </url>
+    <url>
+         <loc>https://hsnlabs.ai/blog/pt/post/ontologia-vs-schema-banco-dados/</loc>
+         <lastmod>2026-09-28</lastmod>
+    </url>
+    <url>
+         <loc>https://hsnlabs.ai/blog/pt/post/palantir-aip-bootcamp-ontologia-operacional/</loc>
+         <lastmod>2026-09-28</lastmod>
+    </url>
+    <url>
+         <loc>https://hsnlabs.ai/blog/pt/post/palantir-vs-databricks-arquitetura-agentes/</loc>
+         <lastmod>2026-09-28</lastmod>
+    </url>
+    <url>
+         <loc>https://hsnlabs.ai/blog/pt/post/playbook-c-suite-protecao-margem/</loc>
+         <lastmod>2026-09-28</lastmod>
+    </url>
+    <url>
          <loc>https://hsnlabs.ai/blog/pt/post/por-que-rag-falha-em-erp/</loc>
+         <lastmod>2026-09-28</lastmod>
+    </url>
+    <url>
+         <loc>https://hsnlabs.ai/blog/pt/post/preco-palantir-tco-alternativas-abertas/</loc>
          <lastmod>2026-09-28</lastmod>
     </url>
     <url>
@@ -197,6 +265,10 @@
          <lastmod>2026-09-28</lastmod>
     </url>
     <url>
+         <loc>https://hsnlabs.ai/blog/category/agentic-economics/</loc>
+         <lastmod>2026-09-28</lastmod>
+    </url>
+    <url>
          <loc>https://hsnlabs.ai/blog/category/case-studies/</loc>
          <lastmod>2026-09-28</lastmod>
     </url>
@@ -205,15 +277,31 @@
          <lastmod>2026-09-28</lastmod>
     </url>
     <url>
+         <loc>https://hsnlabs.ai/blog/category/why-agents-fail/</loc>
+         <lastmod>2026-09-28</lastmod>
+    </url>
+    <url>
          <loc>https://hsnlabs.ai/blog/category/future-of-work/</loc>
          <lastmod>2026-09-28</lastmod>
     </url>
     <url>
-         <loc>https://hsnlabs.ai/blog/category/agentic-economics/</loc>
+         <loc>https://hsnlabs.ai/blog/tag/crm/</loc>
          <lastmod>2026-09-28</lastmod>
     </url>
     <url>
-         <loc>https://hsnlabs.ai/blog/category/why-agents-fail/</loc>
+         <loc>https://hsnlabs.ai/blog/tag/model-context-protocol/</loc>
+         <lastmod>2026-09-28</lastmod>
+    </url>
+    <url>
+         <loc>https://hsnlabs.ai/blog/tag/saas/</loc>
+         <lastmod>2026-09-28</lastmod>
+    </url>
+    <url>
+         <loc>https://hsnlabs.ai/blog/tag/bpo/</loc>
+         <lastmod>2026-09-28</lastmod>
+    </url>
+    <url>
+         <loc>https://hsnlabs.ai/blog/tag/architecture/</loc>
          <lastmod>2026-09-28</lastmod>
     </url>
     <url>
@@ -225,35 +313,7 @@
          <lastmod>2026-09-28</lastmod>
     </url>
     <url>
-         <loc>https://hsnlabs.ai/blog/tag/architecture/</loc>
-         <lastmod>2026-09-28</lastmod>
-    </url>
-    <url>
          <loc>https://hsnlabs.ai/blog/tag/roi/</loc>
-         <lastmod>2026-09-28</lastmod>
-    </url>
-    <url>
-         <loc>https://hsnlabs.ai/blog/tag/data-contracts/</loc>
-         <lastmod>2026-09-28</lastmod>
-    </url>
-    <url>
-         <loc>https://hsnlabs.ai/blog/tag/evaluation/</loc>
-         <lastmod>2026-09-28</lastmod>
-    </url>
-    <url>
-         <loc>https://hsnlabs.ai/blog/tag/future-of-work/</loc>
-         <lastmod>2026-09-28</lastmod>
-    </url>
-    <url>
-         <loc>https://hsnlabs.ai/blog/tag/artificial-intelligence/</loc>
-         <lastmod>2026-09-28</lastmod>
-    </url>
-    <url>
-         <loc>https://hsnlabs.ai/blog/tag/philosophy/</loc>
-         <lastmod>2026-09-28</lastmod>
-    </url>
-    <url>
-         <loc>https://hsnlabs.ai/blog/tag/hr/</loc>
          <lastmod>2026-09-28</lastmod>
     </url>
     <url>
@@ -262,14 +322,6 @@
     </url>
     <url>
          <loc>https://hsnlabs.ai/blog/tag/ebitda/</loc>
-         <lastmod>2026-09-28</lastmod>
-    </url>
-    <url>
-         <loc>https://hsnlabs.ai/blog/tag/ai-failures/</loc>
-         <lastmod>2026-09-28</lastmod>
-    </url>
-    <url>
-         <loc>https://hsnlabs.ai/blog/tag/bpo/</loc>
          <lastmod>2026-09-28</lastmod>
     </url>
     <url>
@@ -301,6 +353,10 @@
          <lastmod>2026-09-28</lastmod>
     </url>
     <url>
+         <loc>https://hsnlabs.ai/blog/tag/ai-failures/</loc>
+         <lastmod>2026-09-28</lastmod>
+    </url>
+    <url>
          <loc>https://hsnlabs.ai/blog/tag/knowledge-graph/</loc>
          <lastmod>2026-09-28</lastmod>
     </url>
@@ -329,11 +385,35 @@
          <lastmod>2026-09-28</lastmod>
     </url>
     <url>
+         <loc>https://hsnlabs.ai/blog/tag/data-contracts/</loc>
+         <lastmod>2026-09-28</lastmod>
+    </url>
+    <url>
+         <loc>https://hsnlabs.ai/blog/tag/evaluation/</loc>
+         <lastmod>2026-09-28</lastmod>
+    </url>
+    <url>
          <loc>https://hsnlabs.ai/blog/tag/consulting/</loc>
          <lastmod>2026-09-28</lastmod>
     </url>
     <url>
          <loc>https://hsnlabs.ai/blog/tag/sprint/</loc>
+         <lastmod>2026-09-28</lastmod>
+    </url>
+    <url>
+         <loc>https://hsnlabs.ai/blog/tag/future-of-work/</loc>
+         <lastmod>2026-09-28</lastmod>
+    </url>
+    <url>
+         <loc>https://hsnlabs.ai/blog/tag/artificial-intelligence/</loc>
+         <lastmod>2026-09-28</lastmod>
+    </url>
+    <url>
+         <loc>https://hsnlabs.ai/blog/tag/philosophy/</loc>
+         <lastmod>2026-09-28</lastmod>
+    </url>
+    <url>
+         <loc>https://hsnlabs.ai/blog/tag/hr/</loc>
          <lastmod>2026-09-28</lastmod>
     </url>
     <url>

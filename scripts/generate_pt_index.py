@@ -27,7 +27,7 @@ posts.sort(key=lambda x: x["date"], reverse=True)
 lines = []
 lines.append("---")
 lines.append("title: Hugo S. Nascimento")
-lines.append("description: Ensaios e notas de campo sobre arquitetura de agentes enterprise, ontologias de dominio e execucao em producao.")
+lines.append("description: Posts e notas de campo sobre arquitetura de agentes enterprise, ontologias de dominio e execucao em producao.")
 lines.append("---")
 lines.append("")
 lines.append("# Hugo S. Nascimento")
@@ -42,7 +42,7 @@ lines.append('<a href="https://hsnlabs.ai/pt/">HSN Labs Boutique</a> &nbsp;&bull
 lines.append("")
 lines.append("---")
 lines.append("")
-lines.append("## Ensaios de Engenharia e Notas de Campo")
+lines.append("## Posts de Engenharia e Notas de Campo")
 lines.append("")
 
 for p in posts:
@@ -51,7 +51,7 @@ for p in posts:
     lines.append("")
     lines.append(f"{p['description']}")
     lines.append("")
-    lines.append(f"<a href=\"/blog/pt/post/{p['slug']}/\">Ler Ensaio &rarr;</a>")
+    lines.append(f"<a href=\"/blog/pt/post/{p['slug']}/\">Ler Post &rarr;</a>")
     lines.append("")
     lines.append("---")
     lines.append("")

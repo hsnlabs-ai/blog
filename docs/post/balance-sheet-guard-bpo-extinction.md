@@ -67,7 +67,7 @@ The financial back office is not a place for creative improvisation. It is an op
 When an enterprise replaces billable outsourced headcount with autonomous software workers, it does not just reduce operating expenses by eighty percent. It insulates its balance sheet against compliance fines, labor liabilities, and systemic human error.
 
 ## Strategic Resources and Related Essays
-- <a href="../the-poc-graveyard/">Why Agents Fail: The PoC Graveyard</a>
+- <a href="../kafka-metamorfose-ia-futuro-do-trabalho/">De 1915 a Era da IA: Kafka, utilitarismo e o valor do trabalho</a>
 - <a href="../collapse-of-legacy-rpa/">The RPA Market Is Collapsing</a>
-- <a href="../bpo-replacement-matrix/">The BPO Replacement Matrix: Operational and Financial Impact of Production Agents</a>
+- <a href="../death-of-tier-1-erp-helpdesk/">The Death of Tier-1 Support: Why ERP Consultancies Lose Billable Hours</a>
 - <a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a>

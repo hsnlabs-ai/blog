@@ -312,3 +312,9 @@ To build autonomous agents that can be trusted with corporate balance sheets:
 ---
 
 *At HSN Labs, we build production-grade operational ontologies that wrap enterprise legacy databases and power autonomous agent architectures. To assess your current data architecture and deploy an executable ontology in five days, book our on-site [Agentic Architecture Bootcamp](https://hsnlabs.ai/bootcamp).*
+
+## Strategic Resources and Related Essays
+- <a href="../what-is-an-ontology-for-ai-agents/">What Is an Ontology for AI Agents? The Definitive Guide</a>
+- <a href="../why-rag-breaks-on-erp/">Why I Never Use Normal RAG on Financial ERPs</a>
+- <a href="../palantir-vs-databricks-agent-architecture/">Palantir vs Databricks: Why Data Lakes Fail at Agent Orchestration</a>
+- <a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a>

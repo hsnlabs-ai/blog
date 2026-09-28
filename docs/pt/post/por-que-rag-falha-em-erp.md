@@ -14,7 +14,7 @@ author: Hugo S. Nascimento
 
 <!-- more -->
 
-*Contexto: Este ensaio nasceu de uma auditoria tecnica de emergencia onde uma agencia tentou calcular contas a pagar corporativas usando similaridade de cosseno sobre fragmentos de notas fiscais. As alucinacoes quase corromperam o livro contabilidade do cliente.*
+*Contexto: Este post nasceu de uma auditoria tecnica de emergencia onde uma agencia tentou calcular contas a pagar corporativas usando similaridade de cosseno sobre fragmentos de notas fiscais. As alucinacoes quase corromperam o livro contabilidade do cliente.*
 
 Conectar RAG tradicional a um sistema de gestao empresarial e uma armadilha de arquitetura.
 
@@ -59,7 +59,8 @@ Na HSN Labs, nao deixamos modelos de linguagem chutar comandos SQL nem buscar em
 
 Se uma arquitetura nao pode garantir precisao matematica em registros financeiros, ela nao tem lugar na producao corporativa.
 
-## Recursos Estrategicos e Ensaios Relacionados
+## Recursos Estrategicos e Posts Relacionados
+- <a href="/blog/pt/post/o-que-e-uma-ontologia-para-agentes-ia/">O Que E uma Ontologia para Agentes de IA? O Guia Definitivo</a>
+- <a href="/blog/pt/post/ontologia-vs-schema-banco-dados/">Ontologia vs Schema de Banco de Dados: Por Que Tabelas Relacionais Quebram Agentes</a>
 - <a href="/blog/pt/post/cemiterio-de-pocs/">Por Que Agentes Falham: O Cemiterio de PoCs</a>
-- <a href="/blog/pt/post/custo-ia-ilimitada-ti-legada/">O Custo de IA Sem Limites na TI Legada</a>
 - <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da HSN Labs</a>

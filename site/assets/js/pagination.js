@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const statusEl = document.getElementById("pagination-status");
     if (statusEl) {
-      statusEl.textContent = `Showing ${start + 1}–${end} of ${posts.length} essays · Page ${page} of ${totalPages}`;
+      statusEl.textContent = `Showing ${start + 1}–${end} of ${posts.length} posts · Page ${page} of ${totalPages}`;
     }
 
     const prevBtn = document.getElementById("pagination-prev");

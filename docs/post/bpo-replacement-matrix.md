@@ -48,9 +48,10 @@ Replacing third-party outsourcing contracts with autonomous digital workforces r
 2. Perimeter Isolation: Models operate strictly against isolated read replicas and sanitized Model Context Protocol interfaces.
 3. Continuous Ground Truth Testing: Every automated pipeline is evaluated continuously against historic regression test suites.
 
-## Strategic Resources and Related Essays
-- <a href="../balance-sheet-guard-bpo-extinction/">What I Learned Building HR Tech About Dying BPO Contracts</a>
-- <a href="../protocol-arbitrage-claims-underwriting/">Protocol Arbitrage: Autonomous Multimodal Adjudication in Healthcare and Underwriting</a>
-- <a href="../death-of-tier-1-erp-helpdesk/">The Death of Tier-1 Support: Why ERP Consultancies and IT Helpdesks Cannot Defend the Billable Hour</a>
-- <a href="../autonomous-negotiations-collections-contracts/">High-Velocity Operations: Autonomous Negotiation, Collections, and Contract Execution</a>
+## Related Field Notes and Technical Spokes
+- <a href="../buy-versus-build-b2b-enterprise-crm/">Buy versus Build: B2B Enterprise CRM, Twenty, and Agentic Stacks</a>
+- <a href="../palantir-pricing-tco-and-open-alternatives/">The Real TCO of Palantir: The Dollar Barrier and Modern Open Alternatives</a>
+- <a href="../c-suite-margin-protection-playbook/">The C-Suite Transition Playbook: Protecting Margins in the Agentic Economy</a>
+- <a href="../protocol-arbitrage-claims-underwriting/">Protocol Arbitrage: Autonomous Multimodal Adjudication Across Complex Claims</a>
+- <a href="../cost-legacy-it/">The Cost of Unbounded AI in Legacy IT</a>
 - <a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a>

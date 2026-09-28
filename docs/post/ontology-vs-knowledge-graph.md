@@ -268,3 +268,9 @@ This neuro-symbolic separation is what separates brittle toy chatbots from enter
 ---
 
 *At HSN Labs, we engineer custom operational ontologies and resilient graph architectures for enterprise operations. To audit your AI agent infrastructure or deploy production-grade systems in five days, review our on-site [Agentic Architecture Bootcamp](https://hsnlabs.ai/bootcamp).*
+
+## Strategic Resources and Related Essays
+- <a href="../how-to-build-an-enterprise-ontology-from-scratch/">How to Build an Enterprise Ontology from Scratch: Step by Step</a>
+- <a href="../the-operational-ontology/">The Operational Ontology: How Enterprises Connect LLMs to Proprietary State</a>
+- <a href="../palantir-aip-bootcamp-operational-ontology/">The Architecture of Palantir AIP: Why Enterprise Agents Require an Operational Ontology</a>
+- <a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a>

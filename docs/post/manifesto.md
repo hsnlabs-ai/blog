@@ -61,8 +61,9 @@ That transition cannot be achieved through theoretical presentations or fragile 
 
 HSN Labs is the engineering boutique I built to partner with enterprise leaders who are already actively pursuing this transition and demand production systems that do not break.
 
-## Strategic Resources and Related Essays
-- <a href="../the-poc-graveyard/">Why Agents Fail: The PoC Graveyard</a>
-- <a href="../five-day-architecture-sprint/">Why Big 4 Slide Decks Fail on Agent Projects</a>
-- <a href="../bpo-replacement-matrix/">The BPO Replacement Matrix: Operational and Financial Impact of Production Agents</a>
+## Related Field Notes and Technical Spokes
+- <a href="../cleveland-clinic-case-study-operational-agents/">Case Study: How Cleveland Clinic Scaled Patient Flow with Operational Agents</a>
+- <a href="../latam-airlines-case-study/">LATAM Airlines: Production Agents in a 3 Percent Margin Business</a>
+- <a href="../unconstrained-agents-finite-state-machines/">Case Study: 42 Calls in a Loop at 2 AM</a>
+- <a href="../autonomous-negotiations-collections-contracts/">High-Velocity Operations: Autonomous Negotiation, Collections, and Contract Execution</a>
 - <a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a>

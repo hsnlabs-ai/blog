@@ -1,6 +1,6 @@
 ---
 title: "Palantir vs Databricks: Why Data Lakes Fail at Agentic Operations"
-date: "2026-09-28"
+date: "2026-09-11"
 category: Why Agents Fail
 tags:
 - architecture
@@ -116,3 +116,9 @@ When you decouple analytical storage from operational execution, autonomous agen
 [3] https://www.palantir.com/impact/tampa-general-hospital — Tampa General Hospital Case Study: Infusing Data Throughout the Care Continuum
 [4] https://docs.databricks.com/en/data-governance/unity-catalog/index.html — Databricks Unity Catalog Governance Layer Documentation
 [5] https://www.palantir.com/platforms/foundry/ontology — Palantir Foundry: Operational Ontology Overview
+
+## Strategic Resources and Related Essays
+- <a href="../what-is-an-ontology-for-ai-agents/">What Is an Ontology for AI Agents? The Definitive Guide</a>
+- <a href="../ontology-vs-database-schema/">Ontology vs. Database Schema: Why Relational Tables Break Agents</a>
+- <a href="../llm-as-judge-fallacy/">Why LLM-as-a-Judge Fails in Banking</a>
+- <a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a>

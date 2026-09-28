@@ -57,7 +57,7 @@ When autonomous agents monitor system telemetry and operational exceptions in re
 The billable hour consulting firm wants systems to break so they can bill hours to fix them. The enterprise needs systems that repair themselves. Autonomous agents make that economic alignment possible.
 
 ## Strategic Resources and Related Essays
-- <a href="../legacy-core-backing-engine/">Legacy Core Systems Will Not Die: They Are the Engine Behind Autonomous Agents</a>
-- <a href="../perimeter-isolation-mcp-data-contracts/">How We Protect Enterprise Databases from AI Agents</a>
-- <a href="../bpo-replacement-matrix/">The BPO Replacement Matrix: Operational and Financial Impact of Production Agents</a>
+- <a href="../kafka-metamorfose-ia-futuro-do-trabalho/">De 1915 a Era da IA: Kafka, utilitarismo e o valor do trabalho</a>
+- <a href="../collapse-of-legacy-rpa/">The RPA Market Is Collapsing</a>
+- <a href="../balance-sheet-guard-bpo-extinction/">What I Learned Building HR Tech About Dying BPO Contracts</a>
 - <a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a>

@@ -49,7 +49,7 @@ To deploy agents into legacy corporate environments safely, you must decouple pr
 Predictability is the prerequisite for enterprise production access. If your architecture cannot guarantee system boundaries, it will never leave the sandbox.
 
 ## Strategic Resources and Related Essays
-- <a href="../legacy-core-backing-engine/">Legacy Core Systems Will Not Die: They Are the Engine Behind Autonomous Agents</a>
-- <a href="../why-rag-breaks-on-erp/">Why I Never Use Normal RAG on Financial ERPs</a>
-- <a href="../the-poc-graveyard/">Why Agents Fail: The PoC Graveyard</a>
-- <a href="https://hsnlabs.ai/advisory">HSN Labs Strategic Advisory for C-Levels</a>
+- <a href="../bpo-replacement-matrix/">The BPO Replacement Matrix: Operational and Financial Metrics</a>
+- <a href="../palantir-pricing-tco-and-open-alternatives/">The Real TCO of Palantir: The Dollar Barrier and Modern Open Alternatives</a>
+- <a href="../protocol-arbitrage-claims-underwriting/">Protocol Arbitrage: Autonomous Multimodal Adjudication Across Complex Claims</a>
+- <a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a>

@@ -1,6 +1,15 @@
 <!-- block header -->
 <div class="blog-header-inner">
   <div class="blog-header-brand-group">
+    {% if page and page.file and page.file.src_uri.startswith('pt/') %}
+    <a href="https://hsnlabs.ai/pt/" class="blog-brand-link" title="HSN Labs">
+      <img src="{{ 'assets/brand/lockups/hsnlabs-lockup-horizontal-light.png'|url }}" alt="HSN Labs" class="blog-brand-logo">
+    </a>
+    <span class="blog-brand-sep" aria-hidden="true">/</span>
+    <a href="{{ 'pt/'|url }}" class="blog-badge-link" title="HSN Labs Blog">
+      <span class="blog-badge-text">Blog</span>
+    </a>
+    {% else %}
     <a href="https://hsnlabs.ai" class="blog-brand-link" title="HSN Labs Main Site">
       <img src="{{ 'assets/brand/lockups/hsnlabs-lockup-horizontal-light.png'|url }}" alt="HSN Labs" class="blog-brand-logo">
     </a>
@@ -8,16 +17,17 @@
     <a href="{{ ''|url }}" class="blog-badge-link" title="HSN Labs Blog">
       <span class="blog-badge-text">Blog</span>
     </a>
+    {% endif %}
   </div>
 
   <nav class="blog-header-menu" aria-label="Main Navigation">
     {% if page and page.file and page.file.src_uri.startswith('pt/') %}
-    <a href="{{ 'pt/'|url }}" class="blog-nav-link {% if page.file.src_uri == 'pt/index.md' %}active{% endif %}">Ensaios</a>
+    <a href="{{ 'pt/'|url }}" class="blog-nav-link {% if page.file.src_uri == 'pt/index.md' %}active{% endif %}">Posts</a>
     <a href="https://hsnlabs.ai/pt/bootcamp" class="blog-nav-link">Bootcamp</a>
     <a href="https://hsnlabs.ai/pt/advisory" class="blog-nav-link">Advisory</a>
     <a href="{{ ''|url }}" class="blog-nav-link" title="Switch to English">EN</a>
     {% else %}
-    <a href="{{ ''|url }}" class="blog-nav-link {% if page and page.is_homepage %}active{% endif %}">All Essays</a>
+    <a href="{{ ''|url }}" class="blog-nav-link {% if page and page.is_homepage %}active{% endif %}">All Posts</a>
     <a href="https://hsnlabs.ai/bootcamp" class="blog-nav-link">Bootcamp</a>
     <a href="https://hsnlabs.ai/advisory" class="blog-nav-link">Advisory</a>
     <a href="{{ 'about/resume/'|url }}" class="blog-nav-link {% if page and 'about' in page.url %}active{% endif %}">About Hugo</a>
@@ -26,7 +36,7 @@
   </nav>
 
   <div class="blog-header-actions">
-    <button class="blog-action-icon blog-search-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" title="Search essays" aria-label="Search essays">
+    <button class="blog-action-icon blog-search-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" title="{% if page and page.file and page.file.src_uri.startswith('pt/') %}Buscar posts{% else %}Search posts{% endif %}" aria-label="{% if page and page.file and page.file.src_uri.startswith('pt/') %}Buscar posts{% else %}Search posts{% endif %}">
       <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <circle cx="11" cy="11" r="8"></circle>
         <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
@@ -39,7 +49,11 @@
       </svg>
     </a>
 
+    {% if page and page.file and page.file.src_uri.startswith('pt/') %}
+    <a href="https://hsnlabs.ai/pt/bootcamp" class="btn btn-primary blog-header-cta">Inscrever no Bootcamp</a>
+    {% else %}
     <a href="https://hsnlabs.ai/bootcamp" class="btn btn-primary blog-header-cta">Apply for Bootcamp</a>
+    {% endif %}
   </div>
 </div>
 <!-- endblock -->

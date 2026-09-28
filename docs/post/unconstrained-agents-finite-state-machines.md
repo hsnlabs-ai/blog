@@ -59,7 +59,7 @@ At HSN Labs, we never permit open-ended tool loops in production. We enforce a s
 Autonomy is not the absence of rules. Enterprise autonomy is the ability of software to execute reliably because the boundaries are mathematically unbreakable.
 
 ## Strategic Resources and Related Essays
-- <a href="../chatbot-vs-agent/">Chatbot vs Agent: Why Replacing BPOs Requires Production Guardrails</a>
-- <a href="../the-poc-graveyard/">Why Agents Fail: The PoC Graveyard</a>
-- <a href="../perimeter-isolation-mcp-data-contracts/">How We Protect Enterprise Databases from AI Agents</a>
+- <a href="../manifesto/">Why I Built HSN Labs</a>
+- <a href="../cleveland-clinic-case-study-operational-agents/">Case Study: How Cleveland Clinic Scaled Patient Flow with Operational Agents</a>
+- <a href="../autonomous-negotiations-collections-contracts/">High-Velocity Operations: Autonomous Negotiation, Collections, and Contract Execution</a>
 - <a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a>

@@ -14,7 +14,7 @@ author: Hugo S. Nascimento
 
 <!-- more -->
 
-*Contexto: Escrevi este ensaio apos uma revisao tensa de arquitetura com o CISO de um grande banco que com razao se recusou a conceder credenciais diretas de banco de dados para um framework de agentes. Seguranca corporativa exige desacoplamento estrito de perimetro por replicas de leitura e protocolos MCP.*
+*Contexto: Escrevi este post apos uma revisao tensa de arquitetura com o CISO de um grande banco que com razao se recusou a conceder credenciais diretas de banco de dados para um framework de agentes. Seguranca corporativa exige desacoplamento estrito de perimetro por replicas de leitura e protocolos MCP.*
 
 O maior gargalo que impede agentes corporativos de irem para producao nao e a capacidade do modelo. E o perimetro de seguranca da informacao.
 
@@ -54,8 +54,8 @@ Agentes nunca alteram o estado de producao de forma sincrona. Quando um agente c
 
 Seguranca nao e um detalhe adicional em engenharia agentica. O isolamento de perimetro e o preco inegociavel de entrada para a producao corporativa.
 
-## Recursos Estrategicos e Ensaios Relacionados
-- <a href="/blog/pt/post/agentes-ilimitados-maquinas-estados-finitos/">Estudo de Caso: 42 Chamadas em Loop as 2 da Manha</a>
-- <a href="/blog/pt/post/por-que-rag-falha-em-erp/">Por Que RAG Tradicional Falha em ERPs Financeiros</a>
-- <a href="/blog/pt/post/cemiterio-de-pocs/">Por Que Agentes Falham: O Cemiterio de PoCs</a>
-- <a href="https://hsnlabs.ai/pt/advisory/">Advisory Estrategico da HSN Labs para Liderancas C-Level</a>
+## Recursos Estrategicos e Posts Relacionados
+- <a href="/blog/pt/post/como-construir-ontologia-enterprise-do-zero/">Como Construir uma Ontologia Enterprise do Zero: Passo a Passo</a>
+- <a href="/blog/pt/post/como-construir-ontologia-operacional-python-mcp/">Como Construir uma Ontologia Operacional de Negocios em Python e MCP</a>
+- <a href="/blog/pt/post/sistemas-legados-motor-execucao/">Sistemas Transacionais Legados Nao Vao Morrer: Eles Sao o Motor</a>
+- <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da HSN Labs</a>

@@ -50,7 +50,7 @@ True autonomy does not mean letting a model run wild without supervision. True a
 Autonomy is not created by writing longer system prompts. Autonomy is created by building resilient architectures that make operational failure impossible.
 
 ## Strategic Resources and Related Essays
-- <a href="../collapse-of-legacy-rpa/">The RPA Market Is Collapsing</a>
-- <a href="../balance-sheet-guard-bpo-extinction/">What I Learned Building HR Tech About Dying BPO Contracts</a>
-- <a href="../the-poc-graveyard/">Why Agents Fail: The PoC Graveyard</a>
+- <a href="../how-to-build-an-enterprise-ontology-from-scratch/">How to Build an Enterprise Ontology from Scratch: Step by Step</a>
+- <a href="../the-operational-ontology/">The Operational Ontology: How Enterprises Connect LLMs to Proprietary State</a>
+- <a href="../legacy-core-backing-engine/">Legacy Core Systems Will Not Die: They Are the Execution Engine</a>
 - <a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a>

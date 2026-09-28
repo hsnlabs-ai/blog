@@ -68,8 +68,8 @@ Se a arquitetura se provar viavel e o caso de negocio justificar o deploy, a des
 
 Pare de pagar por apresentacoes de slides. Exija software funcional em cinco dias.
 
-## Recursos Estrategicos e Ensaios Relacionados
-- <a href="/blog/pt/post/cemiterio-de-pocs/">Por Que Agentes Falham: O Cemiterio de PoCs</a>
-- <a href="/blog/pt/post/colapso-rpa-legado/">O Mercado de RPA Esta em Colapso</a>
-- <a href="/blog/pt/post/matriz-substituicao-bpo/">A Matriz de Substituicao de BPO: Metricas Operacionais e Financeiras</a>
+## Recursos Estrategicos e Posts Relacionados
+- <a href="/blog/pt/post/como-construir-ontologia-enterprise-do-zero/">Como Construir uma Ontologia Enterprise do Zero: Passo a Passo</a>
+- <a href="/blog/pt/post/a-ontologia-operacional/">A Ontologia Operacional: Como Empresas Conectam LLMs aos Dados Proprietarios</a>
+- <a href="/blog/pt/post/isolamento-perimetro-mcp-contratos-dados/">Como Protegemos Bancos de Dados Enterprise de Agentes de IA</a>
 - <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da HSN Labs</a>

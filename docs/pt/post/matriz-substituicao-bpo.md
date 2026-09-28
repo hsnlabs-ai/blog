@@ -46,9 +46,10 @@ Substituir contratos terceirizados por forcas de trabalho digitais autonomas exi
 2. Isolamento de Perimetro: Modelos operam estritamente sobre replicas de leitura sanitizadas e interfaces de Model Context Protocol.
 3. Testes Continuos contra Dados Historicos: Cada esteira automatizada e avaliada continuamente contra suites de testes de regressao.
 
-## Recursos Estrategicos e Ensaios Relacionados
-- <a href="/blog/pt/post/colapso-rpa-legado/">O Mercado de RPA Esta em Colapso</a>
-- <a href="/blog/pt/post/chatbot-vs-agente/">Chatbot vs Agente: Por Que Substituir BPOs Exige Ontologias em Producao</a>
-- <a href="/blog/pt/post/sprint-arquitetura-cinco-dias/">Por Que Apresentacoes de Big 4 Falham em Projetos de Agentes</a>
-- <a href="/blog/pt/post/cemiterio-de-pocs/">Por Que Agentes Falham: O Cemiterio de PoCs</a>
+## Notas de Campo e Artigos Relacionados
+- <a href="/blog/pt/post/comprar-ou-construir-crm-vendas-b2b/">CRM de Vendas B2B: Comprar Salesforce, Adaptar Twenty ou Construir com Agentes</a>
+- <a href="/blog/pt/post/preco-palantir-tco-alternativas-abertas/">O TCO Real da Palantir: A Barreira em Dolar e Alternativas Abertas</a>
+- <a href="/blog/pt/post/playbook-c-suite-protecao-margem/">O Playbook de Transicao da Diretoria: Protegendo Margens na Era Agentica</a>
+- <a href="/blog/pt/post/arbitragem-protocolo-sinistros-subscricao/">Arbitragem de Protocolos: Liquidacao Multimodal Autonoma de Sinistros</a>
+- <a href="/blog/pt/post/custo-ia-ilimitada-ti-legada/">O Custo de IA Sem Limites na TI Legada</a>
 - <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da HSN Labs</a>

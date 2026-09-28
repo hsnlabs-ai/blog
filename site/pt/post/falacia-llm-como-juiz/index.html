@@ -43,6 +43,7 @@
     <link rel="stylesheet" href="../../../assets/css/media.min.css">
     <link rel="stylesheet" href="../../../assets/css/mkdocstrings.min.css">
     <script src="../../../assets/js/pagination.js"></script>
+    <script src="../../../assets/js/relative_dates.js"></script>
     <script src="../../../search/main.js"></script>
     <link href="../../../stylesheets/extra.css" rel="stylesheet">
     <link href="../../../assets/css/pagination.css" rel="stylesheet">
@@ -115,18 +116,20 @@
             <!-- block header -->
 <div class="blog-header-inner">
   <div class="blog-header-brand-group">
-    <a href="https://hsnlabs.ai" class="blog-brand-link" title="HSN Labs Main Site">
+    
+    <a href="https://hsnlabs.ai/pt/" class="blog-brand-link" title="HSN Labs">
       <img src="../../../assets/brand/lockups/hsnlabs-lockup-horizontal-light.png" alt="HSN Labs" class="blog-brand-logo">
     </a>
     <span class="blog-brand-sep" aria-hidden="true">/</span>
-    <a href="../../.." class="blog-badge-link" title="HSN Labs Blog">
+    <a href="../../" class="blog-badge-link" title="HSN Labs Blog">
       <span class="blog-badge-text">Blog</span>
     </a>
+    
   </div>
 
   <nav class="blog-header-menu" aria-label="Main Navigation">
     
-    <a href="../../" class="blog-nav-link ">Ensaios</a>
+    <a href="../../" class="blog-nav-link ">Posts</a>
     <a href="https://hsnlabs.ai/pt/bootcamp" class="blog-nav-link">Bootcamp</a>
     <a href="https://hsnlabs.ai/pt/advisory" class="blog-nav-link">Advisory</a>
     <a href="../../.." class="blog-nav-link" title="Switch to English">EN</a>
@@ -134,7 +137,7 @@
   </nav>
 
   <div class="blog-header-actions">
-    <button class="blog-action-icon blog-search-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" title="Search essays" aria-label="Search essays">
+    <button class="blog-action-icon blog-search-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" title="Buscar posts" aria-label="Buscar posts">
       <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <circle cx="11" cy="11" r="8"></circle>
         <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
@@ -147,7 +150,9 @@
       </svg>
     </a>
 
-    <a href="https://hsnlabs.ai/bootcamp" class="btn btn-primary blog-header-cta">Apply for Bootcamp</a>
+    
+    <a href="https://hsnlabs.ai/pt/bootcamp" class="btn btn-primary blog-header-cta">Inscrever no Bootcamp</a>
+    
   </div>
 </div>
 <!-- endblock -->
@@ -181,22 +186,58 @@
 <!-- block blog_sidebar -->
 
 
+
 <div class="blog-sidebar" id="component-blog-sidebar">
 
     
     <div class="blog-sidebar-widget">
-        <h3 class="blog-sidebar-widget-title">Recent Posts</h3>
+        <h3 class="blog-sidebar-widget-title">Posts Recentes</h3>
         <ul class="blog-sidebar-list">
             
-            <li><a href="../../../post/cleveland-clinic-case-study-operational-agents/">Case Study: How Cleveland Clinic Scaled Patient Flow Across 6,600 Hospital Beds</a></li>
+            <li>
+                <a href="../../../post/buy-versus-build-b2b-enterprise-crm/">Buy versus Build: B2B Enterprise CRM, Twenty, and Agentic Stacks</a>
+                
+                <div class="blog-sidebar-post-meta">
+                    <span class="blog-sidebar-date" data-date="2026-09-28">postado hoje</span>
+                </div>
+                
+            </li>
             
-            <li><a href="../../../post/how-to-build-operational-ontology-python-mcp/">How to Build an Operational Business Ontology in Python with Pydantic and MCP</a></li>
+            <li>
+                <a href="../../../post/cleveland-clinic-case-study-operational-agents/">Case Study: How Cleveland Clinic Scaled Patient Flow Across 6,600 Hospital Beds</a>
+                
+                <div class="blog-sidebar-post-meta">
+                    <span class="blog-sidebar-date" data-date="2026-09-28">postado hoje</span>
+                </div>
+                
+            </li>
             
-            <li><a href="../../../post/kafka-metamorfose-ia-futuro-do-trabalho/">De 1915 à Era da IA: Kafka, utilitarismo e o valor de quem trabalha</a></li>
+            <li>
+                <a href="../../../post/bpo-replacement-matrix/">The BPO Replacement Matrix: Operational and Financial Impact of Production Agents</a>
+                
+                <div class="blog-sidebar-post-meta">
+                    <span class="blog-sidebar-date" data-date="2026-09-27">há 1 dia</span>
+                </div>
+                
+            </li>
             
-            <li><a href="../../../post/palantir-aip-bootcamp-operational-ontology/">The Architecture of Palantir AIP: Why Enterprise Agents Fail Without an Operational Ontology</a></li>
+            <li>
+                <a href="../../../post/how-to-build-an-enterprise-ontology-from-scratch/">How to Build an Enterprise Ontology from Scratch: The Complete Architectural Blueprint</a>
+                
+                <div class="blog-sidebar-post-meta">
+                    <span class="blog-sidebar-date" data-date="2026-09-27">há 1 dia</span>
+                </div>
+                
+            </li>
             
-            <li><a href="../../../post/palantir-pricing-tco-and-open-alternatives/">The Real TCO of Palantir: The Dollar Barrier and Modern Open Alternatives</a></li>
+            <li>
+                <a href="../../../post/ontology-vs-database-schema/">Ontology vs. Database Schema: Why Relational Tables and Vector Stores Fall Short for AI</a>
+                
+                <div class="blog-sidebar-post-meta">
+                    <span class="blog-sidebar-date" data-date="2026-09-27">há 1 dia</span>
+                </div>
+                
+            </li>
             
         </ul>
     </div>
@@ -204,18 +245,18 @@
 
     
     <div class="blog-sidebar-widget">
-        <h3 class="blog-sidebar-widget-title">Categories</h3>
+        <h3 class="blog-sidebar-widget-title">Categorias</h3>
         <ul class="blog-sidebar-list">
+            
+            <li><a href="../../../category/agentic-economics/">Agentic Economics</a></li>
             
             <li><a href="../../../category/case-studies/">Case Studies</a></li>
             
             <li><a href="../../../category/agent-development-life-cycle/">Agent Development Life Cycle</a></li>
             
-            <li><a href="../../../category/future-of-work/">Future of Work</a></li>
-            
-            <li><a href="../../../category/agentic-economics/">Agentic Economics</a></li>
-            
             <li><a href="../../../category/why-agents-fail/">Why Agents Fail</a></li>
+            
+            <li><a href="../../../category/future-of-work/">Future of Work</a></li>
             
         </ul>
     </div>
@@ -226,33 +267,25 @@
         <h3 class="blog-sidebar-widget-title">Tags</h3>
         <div class="blog-sidebar-tags">
             
+            <a class="blog-sidebar-tag" href="../../../tag/crm/">crm</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/model-context-protocol/">model-context-protocol</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/saas/">saas</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/bpo/">bpo</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/architecture/">architecture</a>
+            
             <a class="blog-sidebar-tag" href="../../../tag/case-studies/">case-studies</a>
             
             <a class="blog-sidebar-tag" href="../../../tag/production/">production</a>
             
-            <a class="blog-sidebar-tag" href="../../../tag/architecture/">architecture</a>
-            
             <a class="blog-sidebar-tag" href="../../../tag/roi/">roi</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/data-contracts/">data-contracts</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/evaluation/">evaluation</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/future-of-work/">future-of-work</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/artificial-intelligence/">artificial-intelligence</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/philosophy/">philosophy</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/hr/">hr</a>
             
             <a class="blog-sidebar-tag" href="../../../tag/economics/">economics</a>
             
             <a class="blog-sidebar-tag" href="../../../tag/ebitda/">ebitda</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/ai-failures/">ai-failures</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/bpo/">bpo</a>
             
             <a class="blog-sidebar-tag" href="../../../tag/ontology/">ontology</a>
             
@@ -268,6 +301,8 @@
             
             <a class="blog-sidebar-tag" href="../../../tag/vector-database/">vector-database</a>
             
+            <a class="blog-sidebar-tag" href="../../../tag/ai-failures/">ai-failures</a>
+            
             <a class="blog-sidebar-tag" href="../../../tag/knowledge-graph/">knowledge-graph</a>
             
             <a class="blog-sidebar-tag" href="../../../tag/data-engineering/">data-engineering</a>
@@ -282,9 +317,21 @@
             
             <a class="blog-sidebar-tag" href="../../../tag/margins/">margins</a>
             
+            <a class="blog-sidebar-tag" href="../../../tag/data-contracts/">data-contracts</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/evaluation/">evaluation</a>
+            
             <a class="blog-sidebar-tag" href="../../../tag/consulting/">consulting</a>
             
             <a class="blog-sidebar-tag" href="../../../tag/sprint/">sprint</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/future-of-work/">future-of-work</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/artificial-intelligence/">artificial-intelligence</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/philosophy/">philosophy</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/hr/">hr</a>
             
             <a class="blog-sidebar-tag" href="../../../tag/collections/">collections</a>
             
@@ -356,7 +403,7 @@
                     <line x1="19" y1="12" x2="5" y2="12"></line>
                     <polyline points="12 19 5 12 12 5"></polyline>
                 </svg>
-                Todos os Ensaios
+                Todos os Posts
             </a>
             
             
@@ -413,12 +460,12 @@
 <li>Telemetria Completa e Capacidade de Repeticao: Rastreamos cada fluxo, monitorando cada token, estado intermediario e chamada de ferramenta. Se um agente produz uma transicao inesperada, nossos engenheiros conseguem reproduzir o rastro exato de execucao com total fidelidade no ambiente local de desenvolvimento.</li>
 </ul>
 <p>Nao avalie agentes de producao com prompts opinativos. Avalie com assercoes de codigo verificaveis e comprovacoes matematicas.</p>
-<h2 id="recursos-estrategicos-e-ensaios-relacionados">Recursos Estrategicos e Ensaios Relacionados</h2>
+<h2 id="recursos-estrategicos-e-posts-relacionados">Recursos Estrategicos e Posts Relacionados</h2>
 <ul>
-<li><a href="/blog/pt/post/cemiterio-de-pocs/">Por Que Agentes Falham: O Cemiterio de PoCs</a></li>
+<li><a href="/blog/pt/post/o-que-e-uma-ontologia-para-agentes-ia/">O Que E uma Ontologia para Agentes de IA? O Guia Definitivo</a></li>
 <li><a href="/blog/pt/post/deriva-de-integracao/">A Deriva de Integracao: Quando Prompts Quebram Agentes em Producao</a></li>
-<li><a href="/blog/pt/post/agentes-ilimitados-maquinas-estados-finitos/">Estudo de Caso: 42 Chamadas em Loop as 2 da Manha</a></li>
-<li><a href="https://hsnlabs.ai/pt/advisory/">Advisory Estrategico da HSN Labs para Liderancas C-Level</a></li>
+<li><a href="/blog/pt/post/palantir-vs-databricks-arquitetura-agentes/">Palantir vs Databricks: Por Que Data Lakes Falham na Orquestracao de Agentes</a></li>
+<li><a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da HSN Labs</a></li>
 </ul>
 <hr />
 <p><em>Artigo publicado originalmente em <a href="https://hsnlabs.ai/blog/pt/post/falacia-llm-como-juiz/">HSN Labs</a>. Autor: <a href="https://hsnlabs.ai">Hugo S. Nascimento</a>.</em></p>
@@ -462,7 +509,7 @@
                     <line x1="19" y1="12" x2="5" y2="12"></line>
                     <polyline points="12 19 5 12 12 5"></polyline>
                 </svg>
-                Voltar para Todos os Ensaios
+                Voltar para Todos os Posts
             </a>
             <a href="https://hsnlabs.ai/pt/bootcamp" class="btn btn-primary article-nav-cta-btn">
                 Aplicar para o Bootcamp →
@@ -494,87 +541,88 @@
     <!-- Editorial & SEO Sitemap Grid -->
     <div class="footer-seo-grid">
       
-      <!-- Brand & Positioning Column -->
+      
+      <!-- Brand & Positioning Column (PT) -->
       <div class="footer-seo-col brand-col">
-        <a href="https://hsnlabs.ai" class="footer-brand-link" title="HSN Labs">
+        <a href="https://hsnlabs.ai/pt/" class="footer-brand-link" title="HSN Labs">
           <img src="../../../assets/brand/lockups/hsnlabs-lockup-horizontal-light.png" alt="HSN Labs" class="footer-brand-logo">
         </a>
         <p class="footer-brand-tagline">
-          Enterprise Agent Architecture and executable domain ontologies for mission-critical operations.
+          Arquitetura de Agentes Enterprise e ontologias executaveis de dominio para operacoes criticas.
         </p>
         <p class="footer-brand-meta">
-          AI Architecture Boutique<br>
-          São Paulo, Brazil · WeWork Paulista Ave 1374<br>
+          Boutique de Arquitetura de IA<br>
+          São Paulo, Brasil · WeWork Av. Paulista 1374<br>
           <a href="mailto:hugo@hsnlabs.ai" class="footer-link-subtle">hugo@hsnlabs.ai</a>
         </p>
         <div class="footer-badges-row">
           <a href="../../../feed_rss_created.xml" class="footer-rss-chip" target="_blank" rel="noopener">
             <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" style="display:inline-block;vertical-align:-1px;margin-right:4px;"><path d="M6.18 15.64a2.18 2.18 0 0 1 2.18 2.18C8.36 19 7.38 20 6.18 20C5 20 4 19 4 17.82a2.18 2.18 0 0 1 2.18-2.18M4 4.44A15.56 15.56 0 0 1 19.56 20h-2.83A12.73 12.73 0 0 0 4 7.27V4.44m0 5.66a9.9 9.9 0 0 1 9.9 9.9h-2.83A7.07 7.07 0 0 0 4 12.93V10.1z"/></svg>RSS Feed 2.0
           </a>
-          <a href="../../../llms.txt" class="footer-llms-chip">llms.txt for LLMs &amp; Agents</a>
+          <a href="../../../llms.txt" class="footer-llms-chip">llms.txt para LLMs e Agentes</a>
         </div>
       </div>
 
-      <!-- Pillar 1: Why Agents Fail -->
+      <!-- Pillar 1: Why Agents Fail (PT) -->
       <div class="footer-seo-col">
-        <div class="footer-col-header">Why Agents Fail</div>
+        <div class="footer-col-header">Por Que Agentes Falham</div>
         <ul class="footer-link-list">
-          <li><a href="../../../post/the-poc-graveyard/">The Enterprise PoC Graveyard</a></li>
-          <li><a href="../../../post/integration-drift/">Integration Drift in Production</a></li>
-          <li><a href="../../../post/why-rag-breaks-on-erp/">Why RAG Breaks on Financial ERPs</a></li>
-          <li><a href="../../../post/llm-as-judge-fallacy/">LLM-as-a-Judge Fallacy in Banking</a></li>
+          <li><a href="../cemiterio-de-pocs/">O Cemiterio de PoCs Enterprise</a></li>
+          <li><a href="../deriva-de-integracao/">Deriva de Integracao em Producao</a></li>
+          <li><a href="../por-que-rag-falha-em-erp/">Por Que RAG Falha em ERPs Financeiros</a></li>
+          <li><a href="./">A Falacia do LLM como Juiz no Setor Bancario</a></li>
         </ul>
       </div>
 
-      <!-- Pillar 2: Agent Development Life Cycle -->
+      <!-- Pillar 2: Agent Development Life Cycle (PT) -->
       <div class="footer-seo-col">
-        <div class="footer-col-header">Agent Development Life Cycle</div>
+        <div class="footer-col-header">Ciclo de Vida do Agente</div>
         <ul class="footer-link-list">
-          <li><a href="../../../post/perimeter-isolation-mcp-data-contracts/">Perimeter Isolation and MCP</a></li>
-          <li><a href="../../../post/legacy-core-backing-engine/">Legacy Core as Agentic Engine</a></li>
-          <li><a href="../../../post/chatbot-vs-agent/">Chatbot vs Transactional Agent</a></li>
-          <li><a href="../../../post/five-day-architecture-sprint/">Why Big 4 Slide Decks Fail on AI</a></li>
+          <li><a href="../isolamento-perimetro-mcp-contratos-dados/">Isolamento de Perimetro e MCP</a></li>
+          <li><a href="../sistemas-legados-motor-execucao/">Sistemas Legados como Motor de Execucao</a></li>
+          <li><a href="../chatbot-vs-agente/">Chatbot vs Agente Transacional</a></li>
+          <li><a href="../sprint-arquitetura-cinco-dias/">Por Que Apresentacoes da Big 4 Falham em IA</a></li>
         </ul>
       </div>
 
-      <!-- Pillar 3: Future of Work -->
+      <!-- Pillar 3: Future of Work (PT) -->
       <div class="footer-seo-col">
-        <div class="footer-col-header">Future of Work</div>
+        <div class="footer-col-header">Futuro do Trabalho</div>
         <ul class="footer-link-list">
-          <li><a href="../../../post/death-of-tier-1-erp-helpdesk/">Death of Tier-1 ERP Support</a></li>
-          <li><a href="../../../post/balance-sheet-guard-bpo-extinction/">Extinction of HR Outsourcing</a></li>
-          <li><a href="../../../post/collapse-of-legacy-rpa/">Collapse of Legacy RPA</a></li>
+          <li><a href="../guarda-do-balanco-extincao-bpo/">Extincao do BPO de Recursos Humanos</a></li>
+          <li><a href="../colapso-rpa-legado/">O Colapso do RPA Legado</a></li>
         </ul>
       </div>
 
-      <!-- Pillar 4: Agentic Economics -->
+      <!-- Pillar 4: Agentic Economics (PT) -->
       <div class="footer-seo-col">
-        <div class="footer-col-header">Agentic Economics</div>
+        <div class="footer-col-header">Economia dos Agentes</div>
         <ul class="footer-link-list">
-          <li><a href="../../../post/bpo-replacement-matrix/">BPO Replacement Matrix</a></li>
-          <li><a href="../../../post/c-suite-margin-protection-playbook/">C-Suite Margin Playbook</a></li>
-          <li><a href="../../../post/cost-legacy-it/">Cost of Unbounded AI in Legacy IT</a></li>
-          <li><a href="../../../post/protocol-arbitrage-claims-underwriting/">Protocol Arbitrage in Claims</a></li>
+          <li><a href="../matriz-substituicao-bpo/">Matriz de Substituicao de BPO</a></li>
+          <li><a href="../custo-ia-ilimitada-ti-legada/">O Custo da IA Ilimitada na TI Legada</a></li>
         </ul>
       </div>
 
-      <!-- Pillar 5: Case Studies -->
+      <!-- Pillar 5: Case Studies (PT) -->
       <div class="footer-seo-col">
-        <div class="footer-col-header">Case Studies</div>
+        <div class="footer-col-header">Estudos de Caso</div>
         <ul class="footer-link-list">
-          <li><a href="../../../post/latam-airlines-case-study/">LATAM Airlines: 3% Margin Engine</a></li>
-          <li><a href="../../../post/unconstrained-agents-finite-state-machines/">State Machines vs API Loops</a></li>
-          <li><a href="../../../post/autonomous-negotiations-collections-contracts/">Autonomous Collections &amp; Contracts</a></li>
-          <li><a href="../../../post/manifesto/">Why I Built HSN Labs</a></li>
+          <li><a href="../estudo-caso-latam-airlines/">LATAM Airlines: Motor de Margem a 3%</a></li>
+          <li><a href="../agentes-ilimitados-maquinas-estados-finitos/">Maquinas de Estados vs Loops de API</a></li>
+          <li><a href="../manifesto/">Por Que Construi a HSN Labs</a></li>
         </ul>
       </div>
+
+      
 
     </div>
 
     <!-- Minimalist Bottom Line -->
     <div class="footer-bottom-bar">
       <div class="footer-bottom-copy">
-        2026 HSN Labs. Enterprise Agent Architecture.
+        
+        2026 HSN Labs. Arquitetura de Agentes Enterprise.
+        
       </div>
       <div class="footer-bottom-nav">
         <a href="https://github.com/hsnlabs-ai" target="_blank" rel="noopener">GitHub</a>
@@ -583,10 +631,12 @@
         <a href="../../../feed_rss_created.xml">RSS Feed</a>
         <a href="../../../feed_json_created.json">JSON Feed</a>
         <a href="../../../sitemap.xml">Sitemap</a>
-        <a href="https://hsnlabs.ai/bootcamp">Bootcamp</a>
-        <a href="https://hsnlabs.ai/advisory">Advisory</a>
-        <a href="https://hsnlabs.ai/privacy-policy">Privacy Policy</a>
-        <a href="https://hsnlabs.ai/modern-slavery-statement">Compliance</a>
+        
+        <a href="https://hsnlabs.ai/pt/bootcamp">Bootcamp</a>
+        <a href="https://hsnlabs.ai/pt/advisory">Advisory</a>
+        <a href="https://hsnlabs.ai/pt/privacy-policy">Politica de Privacidade</a>
+        <a href="https://hsnlabs.ai/pt/modern-slavery-statement">Conformidade</a>
+        
       </div>
     </div>
 
@@ -599,6 +649,7 @@
     <script src="../../../assets/js/bootstrap.bundle.min.js"></script>
     <script src="../../../assets/js/main.min.js"></script>
     <script src="../../../assets/js/pagination.js" defer></script>
+    <script src="../../../assets/js/relative_dates.js" defer></script>
     <script src="../../../search/main.js" defer></script>
 
 </body>

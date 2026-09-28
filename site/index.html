@@ -15,13 +15,13 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/brand/favicons/favicon-16x16.png">
     <meta name="theme-color" content="#52B4FD"><link rel="canonical" href="https://hsnlabs.ai/blog/">
     <meta name="title" content="Hugo S. Nascimento">
-    <meta name="description" content="Enterprise Agent Architecture — Essays and field notes on enterprise AI architectures, business ontologies, and avoiding runtime failures in production.">
+    <meta name="description" content="Enterprise Agent Architecture — Posts and field notes on enterprise AI architectures, business ontologies, and avoiding runtime failures in production.">
 
     <!-- OpenGraph Metadata -->
     <meta property="og:site_name" content="HSN Labs">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Hugo S. Nascimento">
-    <meta property="og:description" content="Enterprise Agent Architecture — Essays and field notes on enterprise AI architectures, business ontologies, and avoiding runtime failures in production.">
+    <meta property="og:description" content="Enterprise Agent Architecture — Posts and field notes on enterprise AI architectures, business ontologies, and avoiding runtime failures in production.">
     <meta property="og:url" content="https://hsnlabs.ai/blog/">
     <meta property="og:image" content="https://hsnlabs.ai/blog/assets/brand/og-image.png">
     <meta property="og:image:secure_url" content="https://hsnlabs.ai/blog/assets/brand/og-image.png">
@@ -30,7 +30,7 @@
     <meta name="twitter:site" content="@hsnlabs">
     <meta name="twitter:creator" content="@hugo_nasc">
     <meta name="twitter:title" content="Hugo S. Nascimento">
-    <meta name="twitter:description" content="Enterprise Agent Architecture — Essays and field notes on enterprise AI architectures, business ontologies, and avoiding runtime failures in production.">
+    <meta name="twitter:description" content="Enterprise Agent Architecture — Posts and field notes on enterprise AI architectures, business ontologies, and avoiding runtime failures in production.">
     <meta name="twitter:image" content="https://hsnlabs.ai/blog/assets/brand/og-image.png">
 
     <script>var base_url = '.';</script>
@@ -42,6 +42,7 @@
     <link rel="stylesheet" href="assets/css/media.min.css">
     <link rel="stylesheet" href="assets/css/mkdocstrings.min.css">
     <script src="assets/js/pagination.js"></script>
+    <script src="assets/js/relative_dates.js"></script>
     <script src="search/main.js"></script>
     <link href="stylesheets/extra.css" rel="stylesheet">
     <link href="assets/css/pagination.css" rel="stylesheet">
@@ -82,7 +83,7 @@
   "@type": "Blog",
   "name": "Hugo S. Nascimento — Enterprise Agent Architecture",
   "url": "https://hsnlabs.ai/blog/",
-  "description": "Enterprise Agent Architecture — Essays and field notes on enterprise AI architectures, business ontologies, and avoiding runtime failures in production.",
+  "description": "Enterprise Agent Architecture — Posts and field notes on enterprise AI architectures, business ontologies, and avoiding runtime failures in production.",
   "inLanguage": "en",
   "author": {
     "@type": "Person",
@@ -123,6 +124,7 @@
             <!-- block header -->
 <div class="blog-header-inner">
   <div class="blog-header-brand-group">
+    
     <a href="https://hsnlabs.ai" class="blog-brand-link" title="HSN Labs Main Site">
       <img src="assets/brand/lockups/hsnlabs-lockup-horizontal-light.png" alt="HSN Labs" class="blog-brand-logo">
     </a>
@@ -130,11 +132,12 @@
     <a href="." class="blog-badge-link" title="HSN Labs Blog">
       <span class="blog-badge-text">Blog</span>
     </a>
+    
   </div>
 
   <nav class="blog-header-menu" aria-label="Main Navigation">
     
-    <a href="." class="blog-nav-link active">All Essays</a>
+    <a href="." class="blog-nav-link active">All Posts</a>
     <a href="https://hsnlabs.ai/bootcamp" class="blog-nav-link">Bootcamp</a>
     <a href="https://hsnlabs.ai/advisory" class="blog-nav-link">Advisory</a>
     <a href="about/resume/" class="blog-nav-link ">About Hugo</a>
@@ -143,7 +146,7 @@
   </nav>
 
   <div class="blog-header-actions">
-    <button class="blog-action-icon blog-search-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" title="Search essays" aria-label="Search essays">
+    <button class="blog-action-icon blog-search-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" title="Search posts" aria-label="Search posts">
       <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <circle cx="11" cy="11" r="8"></circle>
         <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
@@ -156,7 +159,9 @@
       </svg>
     </a>
 
+    
     <a href="https://hsnlabs.ai/bootcamp" class="btn btn-primary blog-header-cta">Apply for Bootcamp</a>
+    
   </div>
 </div>
 <!-- endblock -->
@@ -190,6 +195,7 @@
 <!-- block blog_sidebar -->
 
 
+
 <div class="blog-sidebar" id="component-blog-sidebar">
 
     
@@ -197,15 +203,50 @@
         <h3 class="blog-sidebar-widget-title">Recent Posts</h3>
         <ul class="blog-sidebar-list">
             
-            <li><a href="post/cleveland-clinic-case-study-operational-agents/">Case Study: How Cleveland Clinic Scaled Patient Flow Across 6,600 Hospital Beds</a></li>
+            <li>
+                <a href="post/buy-versus-build-b2b-enterprise-crm/">Buy versus Build: B2B Enterprise CRM, Twenty, and Agentic Stacks</a>
+                
+                <div class="blog-sidebar-post-meta">
+                    <span class="blog-sidebar-date" data-date="2026-09-28">posted today</span>
+                </div>
+                
+            </li>
             
-            <li><a href="post/how-to-build-operational-ontology-python-mcp/">How to Build an Operational Business Ontology in Python with Pydantic and MCP</a></li>
+            <li>
+                <a href="post/cleveland-clinic-case-study-operational-agents/">Case Study: How Cleveland Clinic Scaled Patient Flow Across 6,600 Hospital Beds</a>
+                
+                <div class="blog-sidebar-post-meta">
+                    <span class="blog-sidebar-date" data-date="2026-09-28">posted today</span>
+                </div>
+                
+            </li>
             
-            <li><a href="post/kafka-metamorfose-ia-futuro-do-trabalho/">De 1915 à Era da IA: Kafka, utilitarismo e o valor de quem trabalha</a></li>
+            <li>
+                <a href="post/bpo-replacement-matrix/">The BPO Replacement Matrix: Operational and Financial Impact of Production Agents</a>
+                
+                <div class="blog-sidebar-post-meta">
+                    <span class="blog-sidebar-date" data-date="2026-09-27">1 day ago</span>
+                </div>
+                
+            </li>
             
-            <li><a href="post/palantir-aip-bootcamp-operational-ontology/">The Architecture of Palantir AIP: Why Enterprise Agents Fail Without an Operational Ontology</a></li>
+            <li>
+                <a href="post/how-to-build-an-enterprise-ontology-from-scratch/">How to Build an Enterprise Ontology from Scratch: The Complete Architectural Blueprint</a>
+                
+                <div class="blog-sidebar-post-meta">
+                    <span class="blog-sidebar-date" data-date="2026-09-27">1 day ago</span>
+                </div>
+                
+            </li>
             
-            <li><a href="post/palantir-pricing-tco-and-open-alternatives/">The Real TCO of Palantir: The Dollar Barrier and Modern Open Alternatives</a></li>
+            <li>
+                <a href="post/ontology-vs-database-schema/">Ontology vs. Database Schema: Why Relational Tables and Vector Stores Fall Short for AI</a>
+                
+                <div class="blog-sidebar-post-meta">
+                    <span class="blog-sidebar-date" data-date="2026-09-27">1 day ago</span>
+                </div>
+                
+            </li>
             
         </ul>
     </div>
@@ -216,15 +257,15 @@
         <h3 class="blog-sidebar-widget-title">Categories</h3>
         <ul class="blog-sidebar-list">
             
+            <li><a href="category/agentic-economics/">Agentic Economics</a></li>
+            
             <li><a href="category/case-studies/">Case Studies</a></li>
             
             <li><a href="category/agent-development-life-cycle/">Agent Development Life Cycle</a></li>
             
-            <li><a href="category/future-of-work/">Future of Work</a></li>
-            
-            <li><a href="category/agentic-economics/">Agentic Economics</a></li>
-            
             <li><a href="category/why-agents-fail/">Why Agents Fail</a></li>
+            
+            <li><a href="category/future-of-work/">Future of Work</a></li>
             
         </ul>
     </div>
@@ -235,33 +276,25 @@
         <h3 class="blog-sidebar-widget-title">Tags</h3>
         <div class="blog-sidebar-tags">
             
+            <a class="blog-sidebar-tag" href="tag/crm/">crm</a>
+            
+            <a class="blog-sidebar-tag" href="tag/model-context-protocol/">model-context-protocol</a>
+            
+            <a class="blog-sidebar-tag" href="tag/saas/">saas</a>
+            
+            <a class="blog-sidebar-tag" href="tag/bpo/">bpo</a>
+            
+            <a class="blog-sidebar-tag" href="tag/architecture/">architecture</a>
+            
             <a class="blog-sidebar-tag" href="tag/case-studies/">case-studies</a>
             
             <a class="blog-sidebar-tag" href="tag/production/">production</a>
             
-            <a class="blog-sidebar-tag" href="tag/architecture/">architecture</a>
-            
             <a class="blog-sidebar-tag" href="tag/roi/">roi</a>
-            
-            <a class="blog-sidebar-tag" href="tag/data-contracts/">data-contracts</a>
-            
-            <a class="blog-sidebar-tag" href="tag/evaluation/">evaluation</a>
-            
-            <a class="blog-sidebar-tag" href="tag/future-of-work/">future-of-work</a>
-            
-            <a class="blog-sidebar-tag" href="tag/artificial-intelligence/">artificial-intelligence</a>
-            
-            <a class="blog-sidebar-tag" href="tag/philosophy/">philosophy</a>
-            
-            <a class="blog-sidebar-tag" href="tag/hr/">hr</a>
             
             <a class="blog-sidebar-tag" href="tag/economics/">economics</a>
             
             <a class="blog-sidebar-tag" href="tag/ebitda/">ebitda</a>
-            
-            <a class="blog-sidebar-tag" href="tag/ai-failures/">ai-failures</a>
-            
-            <a class="blog-sidebar-tag" href="tag/bpo/">bpo</a>
             
             <a class="blog-sidebar-tag" href="tag/ontology/">ontology</a>
             
@@ -277,6 +310,8 @@
             
             <a class="blog-sidebar-tag" href="tag/vector-database/">vector-database</a>
             
+            <a class="blog-sidebar-tag" href="tag/ai-failures/">ai-failures</a>
+            
             <a class="blog-sidebar-tag" href="tag/knowledge-graph/">knowledge-graph</a>
             
             <a class="blog-sidebar-tag" href="tag/data-engineering/">data-engineering</a>
@@ -291,9 +326,21 @@
             
             <a class="blog-sidebar-tag" href="tag/margins/">margins</a>
             
+            <a class="blog-sidebar-tag" href="tag/data-contracts/">data-contracts</a>
+            
+            <a class="blog-sidebar-tag" href="tag/evaluation/">evaluation</a>
+            
             <a class="blog-sidebar-tag" href="tag/consulting/">consulting</a>
             
             <a class="blog-sidebar-tag" href="tag/sprint/">sprint</a>
+            
+            <a class="blog-sidebar-tag" href="tag/future-of-work/">future-of-work</a>
+            
+            <a class="blog-sidebar-tag" href="tag/artificial-intelligence/">artificial-intelligence</a>
+            
+            <a class="blog-sidebar-tag" href="tag/philosophy/">philosophy</a>
+            
+            <a class="blog-sidebar-tag" href="tag/hr/">hr</a>
             
             <a class="blog-sidebar-tag" href="tag/collections/">collections</a>
             
@@ -367,7 +414,7 @@
 <p>Delivered client architectures include <strong>Deloitte</strong>, <strong>Santander</strong>, <strong>Softplan</strong>, <strong>Unipar Carbocloro</strong>, <strong>LWSA</strong>, <strong>Turbi</strong>, <strong>Caju</strong>, <strong>Cast Group</strong>, and <strong>Insi</strong>.</p>
 <p><a href="https://hsnlabs.ai">HSN Labs Boutique</a> &nbsp;&bull;&nbsp; <a href="https://www.linkedin.com/in/hugosoaresnascimento/">LinkedIn</a> &nbsp;&bull;&nbsp; <a href="https://github.com/hsnlabs-ai/blog">GitHub</a> &nbsp;&bull;&nbsp; <a href="https://hsnlabs.ai/blog/feed_rss_created.xml">RSS Feed</a></p>
 <hr />
-<h2 id="engineering-essays-field-notes">Engineering Essays &amp; Field Notes</h2>
+<h2 id="engineering-posts-field-notes">Engineering Posts &amp; Field Notes</h2>
 <link rel="alternate" hreflang="en" href="https://hsnlabs.ai/blog/">
 <link rel="alternate" hreflang="pt-BR" href="https://hsnlabs.ai/blog/pt/">
 <link rel="alternate" hreflang="x-default" href="https://hsnlabs.ai/blog/">
@@ -390,6 +437,26 @@
         <div class="blog-row-body">
             <div class="blog-row-byline">
                 
+                <h2 class="blog-row-title">
+                    <a href="post/buy-versus-build-b2b-enterprise-crm/">Buy versus Build: B2B Enterprise CRM, Twenty, and Agentic Stacks</a>
+                </h2>
+            </div>
+            <p class="blog-row-meta">
+                2026-09-28 · Agentic Economics · Hugo S. Nascimento
+            </p>
+            
+            <p class="blog-row-description">Technical and financial analysis comparing Salesforce seats, Twenty CRM, and custom agentic stacks for enterprise engineering leaders.</p>
+            
+            <a class="blog-row-cta" href="post/buy-versus-build-b2b-enterprise-crm/">Read Post &rarr;</a>
+        </div>
+    </article>
+    
+    
+    <article class="blog-row blog-post-item" data-page="1" style="">
+        
+        <div class="blog-row-body">
+            <div class="blog-row-byline">
+                
                 <img class="blog-row-avatar" src="https://github.com/hugonotnice.png" alt="Hugo S. Nascimento" loading="lazy">
                 
                 <h2 class="blog-row-title">
@@ -402,125 +469,7 @@
             
             <p class="blog-row-description">Detailed case study on how Cleveland Clinic eliminated spreadsheet bottlenecks and cut bed capacity calculation time by 75% using operational ontologies.</p>
             
-            <a class="blog-row-cta" href="post/cleveland-clinic-case-study-operational-agents/">Read Essay &rarr;</a>
-        </div>
-    </article>
-    
-    
-    <article class="blog-row blog-post-item" data-page="1" style="">
-        
-        <div class="blog-row-body">
-            <div class="blog-row-byline">
-                
-                <img class="blog-row-avatar" src="https://github.com/hugonotnice.png" alt="Hugo S. Nascimento" loading="lazy">
-                
-                <h2 class="blog-row-title">
-                    <a href="post/how-to-build-operational-ontology-python-mcp/">How to Build an Operational Business Ontology in Python with Pydantic and MCP</a>
-                </h2>
-            </div>
-            <p class="blog-row-meta">
-                2026-09-28 · Agent Development Life Cycle · Hugo S. Nascimento
-            </p>
-            
-            <p class="blog-row-description">Step-by-step engineering architecture to build an operational business ontology in pure Python using Pydantic schemas and Model Context Protocol actions without proprietary lock-in.</p>
-            
-            <a class="blog-row-cta" href="post/how-to-build-operational-ontology-python-mcp/">Read Essay &rarr;</a>
-        </div>
-    </article>
-    
-    
-    <article class="blog-row blog-post-item" data-page="1" style="">
-        
-        <a class="blog-row-thumb" href="post/kafka-metamorfose-ia-futuro-do-trabalho/">
-            <img src="assets/images/posts/kafka/capa-metamorfose.jpg" alt="De 1915 à Era da IA: Kafka, utilitarismo e o valor de quem trabalha" loading="lazy">
-        </a>
-        
-        <div class="blog-row-body">
-            <div class="blog-row-byline">
-                
-                <img class="blog-row-avatar" src="https://github.com/hugonotnice.png" alt="Hugo S. Nascimento" loading="lazy">
-                
-                <h2 class="blog-row-title">
-                    <a href="post/kafka-metamorfose-ia-futuro-do-trabalho/">De 1915 à Era da IA: Kafka, utilitarismo e o valor de quem trabalha</a>
-                </h2>
-            </div>
-            <p class="blog-row-meta">
-                2026-09-28 · Future of Work · Hugo S. Nascimento
-            </p>
-            
-            <p class="blog-row-description">Reflexão sobre utilitarismo, desvalorização do trabalhador e o impacto de agentes de IA a partir de A Metamorfose de Franz Kafka.</p>
-            
-            <a class="blog-row-cta" href="post/kafka-metamorfose-ia-futuro-do-trabalho/">Read Essay &rarr;</a>
-        </div>
-    </article>
-    
-    
-    <article class="blog-row blog-post-item" data-page="1" style="">
-        
-        <a class="blog-row-thumb" href="post/palantir-aip-bootcamp-operational-ontology/">
-            <img src="assets/diagrams/palantir-aip-architecture-pt.png" alt="The Architecture of Palantir AIP: Why Enterprise Agents Fail Without an Operational Ontology" loading="lazy">
-        </a>
-        
-        <div class="blog-row-body">
-            <div class="blog-row-byline">
-                
-                <img class="blog-row-avatar" src="https://github.com/hugonotnice.png" alt="Hugo S. Nascimento" loading="lazy">
-                
-                <h2 class="blog-row-title">
-                    <a href="post/palantir-aip-bootcamp-operational-ontology/">The Architecture of Palantir AIP: Why Enterprise Agents Fail Without an Operational Ontology</a>
-                </h2>
-            </div>
-            <p class="blog-row-meta">
-                2026-09-28 · Agent Development Life Cycle · Hugo S. Nascimento
-            </p>
-            
-            <p class="blog-row-description">How Palantir AIP bootcamps compressed 9-month sales cycles into 5-day deployments by binding LLMs to operational ontologies instead of raw prompts.</p>
-            
-            <a class="blog-row-cta" href="post/palantir-aip-bootcamp-operational-ontology/">Read Essay &rarr;</a>
-        </div>
-    </article>
-    
-    
-    <article class="blog-row blog-post-item" data-page="1" style="">
-        
-        <div class="blog-row-body">
-            <div class="blog-row-byline">
-                
-                <img class="blog-row-avatar" src="https://github.com/hugonotnice.png" alt="Hugo S. Nascimento" loading="lazy">
-                
-                <h2 class="blog-row-title">
-                    <a href="post/palantir-pricing-tco-and-open-alternatives/">The Real TCO of Palantir: The Dollar Barrier and Modern Open Alternatives</a>
-                </h2>
-            </div>
-            <p class="blog-row-meta">
-                2026-09-28 · Agentic Economics · Hugo S. Nascimento
-            </p>
-            
-            <p class="blog-row-description">Auditing the total cost of ownership behind Palantir contracts, foreign exchange exposure, and how to build open ontologies without 7-figure licensing.</p>
-            
-            <a class="blog-row-cta" href="post/palantir-pricing-tco-and-open-alternatives/">Read Essay &rarr;</a>
-        </div>
-    </article>
-    
-    
-    <article class="blog-row blog-post-item" data-page="1" style="">
-        
-        <div class="blog-row-body">
-            <div class="blog-row-byline">
-                
-                <img class="blog-row-avatar" src="https://github.com/hugonotnice.png" alt="Hugo S. Nascimento" loading="lazy">
-                
-                <h2 class="blog-row-title">
-                    <a href="post/palantir-vs-databricks-agent-architecture/">Palantir vs Databricks: Why Data Lakes Fail at Agentic Operations</a>
-                </h2>
-            </div>
-            <p class="blog-row-meta">
-                2026-09-28 · Why Agents Fail · Hugo S. Nascimento
-            </p>
-            
-            <p class="blog-row-description">Architectural breakdown comparing analytical lakehouses against operational ontologies for mission-critical enterprise AI agents.</p>
-            
-            <a class="blog-row-cta" href="post/palantir-vs-databricks-agent-architecture/">Read Essay &rarr;</a>
+            <a class="blog-row-cta" href="post/cleveland-clinic-case-study-operational-agents/">Read Post &rarr;</a>
         </div>
     </article>
     
@@ -542,7 +491,7 @@
             
             <p class="blog-row-description">Quantitative framework analyzing unit economics, operational metrics, and margin impact of replacing legacy BPO contracts with autonomous software agents.</p>
             
-            <a class="blog-row-cta" href="post/bpo-replacement-matrix/">Read Essay &rarr;</a>
+            <a class="blog-row-cta" href="post/bpo-replacement-matrix/">Read Post &rarr;</a>
         </div>
     </article>
     
@@ -564,7 +513,7 @@
             
             <p class="blog-row-description">The complete step-by-step engineering blueprint to build and deploy an operational business ontology for autonomous AI agents in enterprise production.</p>
             
-            <a class="blog-row-cta" href="post/how-to-build-an-enterprise-ontology-from-scratch/">Read Essay &rarr;</a>
+            <a class="blog-row-cta" href="post/how-to-build-an-enterprise-ontology-from-scratch/">Read Post &rarr;</a>
         </div>
     </article>
     
@@ -586,7 +535,7 @@
             
             <p class="blog-row-description">Why raw SQL schemas and vector stores fail autonomous AI agents: the limits of text-to-SQL, semantic ambiguity, and how ontologies provide deterministic operational boundaries.</p>
             
-            <a class="blog-row-cta" href="post/ontology-vs-database-schema/">Read Essay &rarr;</a>
+            <a class="blog-row-cta" href="post/ontology-vs-database-schema/">Read Post &rarr;</a>
         </div>
     </article>
     
@@ -608,12 +557,12 @@
             
             <p class="blog-row-description">The architectural distinction between ontologies and knowledge graphs in enterprise AI systems: schemas versus instances, preventing graph drift, and building hybrid neuro-symbolic stacks.</p>
             
-            <a class="blog-row-cta" href="post/ontology-vs-knowledge-graph/">Read Essay &rarr;</a>
+            <a class="blog-row-cta" href="post/ontology-vs-knowledge-graph/">Read Post &rarr;</a>
         </div>
     </article>
     
     
-    <article class="blog-row blog-post-item" data-page="2" style="display: none;">
+    <article class="blog-row blog-post-item" data-page="1" style="">
         
         <a class="blog-row-thumb" href="post/the-operational-ontology/">
             <img src="assets/diagrams/hsn-agent-architecture.png" alt="The Operational Ontology: How Enterprises Connect Data, Business Rules, and Autonomous Actions" loading="lazy">
@@ -634,12 +583,12 @@
             
             <p class="blog-row-description">The core architecture of executable business ontologies: moving from static documentation to kinetic action engines, Palantir AIP mechanics, and deploying production MCP harnesses.</p>
             
-            <a class="blog-row-cta" href="post/the-operational-ontology/">Read Essay &rarr;</a>
+            <a class="blog-row-cta" href="post/the-operational-ontology/">Read Post &rarr;</a>
         </div>
     </article>
     
     
-    <article class="blog-row blog-post-item" data-page="2" style="display: none;">
+    <article class="blog-row blog-post-item" data-page="1" style="">
         
         <div class="blog-row-body">
             <div class="blog-row-byline">
@@ -656,12 +605,12 @@
             
             <p class="blog-row-description">The complete guide to operational ontologies for enterprise AI agents: why prompt-based systems fail, how to map business invariants into executable code, and how to govern autonomous actions.</p>
             
-            <a class="blog-row-cta" href="post/what-is-an-ontology-for-ai-agents/">Read Essay &rarr;</a>
+            <a class="blog-row-cta" href="post/what-is-an-ontology-for-ai-agents/">Read Post &rarr;</a>
         </div>
     </article>
     
     
-    <article class="blog-row blog-post-item" data-page="2" style="display: none;">
+    <article class="blog-row blog-post-item" data-page="1" style="">
         
         <div class="blog-row-body">
             <div class="blog-row-byline">
@@ -678,7 +627,29 @@
             
             <p class="blog-row-description">Executive blueprint for boardrooms and CFOs defending operational margins against legacy IT cost structures in the agentic economy.</p>
             
-            <a class="blog-row-cta" href="post/c-suite-margin-protection-playbook/">Read Essay &rarr;</a>
+            <a class="blog-row-cta" href="post/c-suite-margin-protection-playbook/">Read Post &rarr;</a>
+        </div>
+    </article>
+    
+    
+    <article class="blog-row blog-post-item" data-page="1" style="">
+        
+        <div class="blog-row-body">
+            <div class="blog-row-byline">
+                
+                <img class="blog-row-avatar" src="https://github.com/hugonotnice.png" alt="Hugo S. Nascimento" loading="lazy">
+                
+                <h2 class="blog-row-title">
+                    <a href="post/how-to-build-operational-ontology-python-mcp/">How to Build an Operational Business Ontology in Python with Pydantic and MCP</a>
+                </h2>
+            </div>
+            <p class="blog-row-meta">
+                2026-09-25 · Agent Development Life Cycle · Hugo S. Nascimento
+            </p>
+            
+            <p class="blog-row-description">Step-by-step engineering architecture to build an operational business ontology in pure Python using Pydantic schemas and Model Context Protocol actions without proprietary lock-in.</p>
+            
+            <a class="blog-row-cta" href="post/how-to-build-operational-ontology-python-mcp/">Read Post &rarr;</a>
         </div>
     </article>
     
@@ -700,7 +671,33 @@
             
             <p class="blog-row-description">Why traditional Big 4 strategy slide decks fail to deliver working agentic software in complex enterprise production environments.</p>
             
-            <a class="blog-row-cta" href="post/five-day-architecture-sprint/">Read Essay &rarr;</a>
+            <a class="blog-row-cta" href="post/five-day-architecture-sprint/">Read Post &rarr;</a>
+        </div>
+    </article>
+    
+    
+    <article class="blog-row blog-post-item" data-page="2" style="display: none;">
+        
+        <a class="blog-row-thumb" href="post/kafka-metamorfose-ia-futuro-do-trabalho/">
+            <img src="assets/images/posts/kafka/capa-metamorfose.jpg" alt="De 1915 à Era da IA: Kafka, utilitarismo e o valor de quem trabalha" loading="lazy">
+        </a>
+        
+        <div class="blog-row-body">
+            <div class="blog-row-byline">
+                
+                <img class="blog-row-avatar" src="https://github.com/hugonotnice.png" alt="Hugo S. Nascimento" loading="lazy">
+                
+                <h2 class="blog-row-title">
+                    <a href="post/kafka-metamorfose-ia-futuro-do-trabalho/">De 1915 à Era da IA: Kafka, utilitarismo e o valor de quem trabalha</a>
+                </h2>
+            </div>
+            <p class="blog-row-meta">
+                2026-09-22 · Future of Work · Hugo S. Nascimento
+            </p>
+            
+            <p class="blog-row-description">Reflexão sobre utilitarismo, desvalorização do trabalhador e o impacto de agentes de IA a partir de A Metamorfose de Franz Kafka.</p>
+            
+            <a class="blog-row-cta" href="post/kafka-metamorfose-ia-futuro-do-trabalho/">Read Post &rarr;</a>
         </div>
     </article>
     
@@ -722,7 +719,33 @@
             
             <p class="blog-row-description">Production architecture for autonomous collections, contract negotiation, and high-velocity commercial execution.</p>
             
-            <a class="blog-row-cta" href="post/autonomous-negotiations-collections-contracts/">Read Essay &rarr;</a>
+            <a class="blog-row-cta" href="post/autonomous-negotiations-collections-contracts/">Read Post &rarr;</a>
+        </div>
+    </article>
+    
+    
+    <article class="blog-row blog-post-item" data-page="2" style="display: none;">
+        
+        <a class="blog-row-thumb" href="post/palantir-aip-bootcamp-operational-ontology/">
+            <img src="assets/diagrams/palantir-aip-architecture-pt.png" alt="The Architecture of Palantir AIP: Why Enterprise Agents Fail Without an Operational Ontology" loading="lazy">
+        </a>
+        
+        <div class="blog-row-body">
+            <div class="blog-row-byline">
+                
+                <img class="blog-row-avatar" src="https://github.com/hugonotnice.png" alt="Hugo S. Nascimento" loading="lazy">
+                
+                <h2 class="blog-row-title">
+                    <a href="post/palantir-aip-bootcamp-operational-ontology/">The Architecture of Palantir AIP: Why Enterprise Agents Fail Without an Operational Ontology</a>
+                </h2>
+            </div>
+            <p class="blog-row-meta">
+                2026-09-18 · Agent Development Life Cycle · Hugo S. Nascimento
+            </p>
+            
+            <p class="blog-row-description">How Palantir AIP bootcamps compressed 9-month sales cycles into 5-day deployments by binding LLMs to operational ontologies instead of raw prompts.</p>
+            
+            <a class="blog-row-cta" href="post/palantir-aip-bootcamp-operational-ontology/">Read Post &rarr;</a>
         </div>
     </article>
     
@@ -744,7 +767,51 @@
             
             <p class="blog-row-description">Operational field lessons on the structural collapse of enterprise HR outsourcing contracts and manual workflows.</p>
             
-            <a class="blog-row-cta" href="post/balance-sheet-guard-bpo-extinction/">Read Essay &rarr;</a>
+            <a class="blog-row-cta" href="post/balance-sheet-guard-bpo-extinction/">Read Post &rarr;</a>
+        </div>
+    </article>
+    
+    
+    <article class="blog-row blog-post-item" data-page="2" style="display: none;">
+        
+        <div class="blog-row-body">
+            <div class="blog-row-byline">
+                
+                <img class="blog-row-avatar" src="https://github.com/hugonotnice.png" alt="Hugo S. Nascimento" loading="lazy">
+                
+                <h2 class="blog-row-title">
+                    <a href="post/palantir-pricing-tco-and-open-alternatives/">The Real TCO of Palantir: The Dollar Barrier and Modern Open Alternatives</a>
+                </h2>
+            </div>
+            <p class="blog-row-meta">
+                2026-09-14 · Agentic Economics · Hugo S. Nascimento
+            </p>
+            
+            <p class="blog-row-description">Auditing the total cost of ownership behind Palantir contracts, foreign exchange exposure, and how to build open ontologies without 7-figure licensing.</p>
+            
+            <a class="blog-row-cta" href="post/palantir-pricing-tco-and-open-alternatives/">Read Post &rarr;</a>
+        </div>
+    </article>
+    
+    
+    <article class="blog-row blog-post-item" data-page="2" style="display: none;">
+        
+        <div class="blog-row-body">
+            <div class="blog-row-byline">
+                
+                <img class="blog-row-avatar" src="https://github.com/hugonotnice.png" alt="Hugo S. Nascimento" loading="lazy">
+                
+                <h2 class="blog-row-title">
+                    <a href="post/palantir-vs-databricks-agent-architecture/">Palantir vs Databricks: Why Data Lakes Fail at Agentic Operations</a>
+                </h2>
+            </div>
+            <p class="blog-row-meta">
+                2026-09-11 · Why Agents Fail · Hugo S. Nascimento
+            </p>
+            
+            <p class="blog-row-description">Architectural breakdown comparing analytical lakehouses against operational ontologies for mission-critical enterprise AI agents.</p>
+            
+            <a class="blog-row-cta" href="post/palantir-vs-databricks-agent-architecture/">Read Post &rarr;</a>
         </div>
     </article>
     
@@ -766,7 +833,7 @@
             
             <p class="blog-row-description">Autonomous multimodal adjudication and real-time protocol arbitrage across complex insurance claims and healthcare underwriting.</p>
             
-            <a class="blog-row-cta" href="post/protocol-arbitrage-claims-underwriting/">Read Essay &rarr;</a>
+            <a class="blog-row-cta" href="post/protocol-arbitrage-claims-underwriting/">Read Post &rarr;</a>
         </div>
     </article>
     
@@ -788,7 +855,7 @@
             
             <p class="blog-row-description">The structural collapse of hourly billable support models across enterprise ERP consultancies and IT helpdesks.</p>
             
-            <a class="blog-row-cta" href="post/death-of-tier-1-erp-helpdesk/">Read Essay &rarr;</a>
+            <a class="blog-row-cta" href="post/death-of-tier-1-erp-helpdesk/">Read Post &rarr;</a>
         </div>
     </article>
     
@@ -810,12 +877,12 @@
             
             <p class="blog-row-description">Why brittle screen-recording bots are collapsing in enterprise environments and how production agent architectures replace them.</p>
             
-            <a class="blog-row-cta" href="post/collapse-of-legacy-rpa/">Read Essay &rarr;</a>
+            <a class="blog-row-cta" href="post/collapse-of-legacy-rpa/">Read Post &rarr;</a>
         </div>
     </article>
     
     
-    <article class="blog-row blog-post-item" data-page="2" style="display: none;">
+    <article class="blog-row blog-post-item" data-page="3" style="display: none;">
         
         <div class="blog-row-body">
             <div class="blog-row-byline">
@@ -832,7 +899,7 @@
             
             <p class="blog-row-description">Root cause post-mortem on why ninety percent of enterprise AI proofs of concept fail before reaching live production.</p>
             
-            <a class="blog-row-cta" href="post/the-poc-graveyard/">Read Essay &rarr;</a>
+            <a class="blog-row-cta" href="post/the-poc-graveyard/">Read Post &rarr;</a>
         </div>
     </article>
     
@@ -854,7 +921,7 @@
             
             <p class="blog-row-description">Architectural patterns for perimeter isolation, context contracts, and cryptographic access boundaries shielding enterprise data from AI agents.</p>
             
-            <a class="blog-row-cta" href="post/perimeter-isolation-mcp-data-contracts/">Read Essay &rarr;</a>
+            <a class="blog-row-cta" href="post/perimeter-isolation-mcp-data-contracts/">Read Post &rarr;</a>
         </div>
     </article>
     
@@ -876,7 +943,7 @@
             
             <p class="blog-row-description">Field post-mortem on deploying resilient enterprise agents in low-margin, high-throughput commercial aviation operations.</p>
             
-            <a class="blog-row-cta" href="post/latam-airlines-case-study/">Read Essay &rarr;</a>
+            <a class="blog-row-cta" href="post/latam-airlines-case-study/">Read Post &rarr;</a>
         </div>
     </article>
     
@@ -898,7 +965,7 @@
             
             <p class="blog-row-description">Structural vulnerabilities and compliance liabilities of relying on stochastic LLM evaluators to audit critical financial decisions.</p>
             
-            <a class="blog-row-cta" href="post/llm-as-judge-fallacy/">Read Essay &rarr;</a>
+            <a class="blog-row-cta" href="post/llm-as-judge-fallacy/">Read Post &rarr;</a>
         </div>
     </article>
     
@@ -920,7 +987,7 @@
             
             <p class="blog-row-description">Emergency incident audit and architectural remedy for unbounded agent API loops through finite state machines.</p>
             
-            <a class="blog-row-cta" href="post/unconstrained-agents-finite-state-machines/">Read Essay &rarr;</a>
+            <a class="blog-row-cta" href="post/unconstrained-agents-finite-state-machines/">Read Post &rarr;</a>
         </div>
     </article>
     
@@ -942,7 +1009,7 @@
             
             <p class="blog-row-description">Why vector similarity retrieval corrupts arithmetic precision and ledger integrity in enterprise financial ERPs.</p>
             
-            <a class="blog-row-cta" href="post/why-rag-breaks-on-erp/">Read Essay &rarr;</a>
+            <a class="blog-row-cta" href="post/why-rag-breaks-on-erp/">Read Post &rarr;</a>
         </div>
     </article>
     
@@ -964,7 +1031,7 @@
             
             <p class="blog-row-description">Why legacy core transaction systems remain the indispensable foundation powering autonomous enterprise agents.</p>
             
-            <a class="blog-row-cta" href="post/legacy-core-backing-engine/">Read Essay &rarr;</a>
+            <a class="blog-row-cta" href="post/legacy-core-backing-engine/">Read Post &rarr;</a>
         </div>
     </article>
     
@@ -986,7 +1053,7 @@
             
             <p class="blog-row-description">How to detect and guard production agent workflows against silent runtime breaks caused by upstream schema and API drift.</p>
             
-            <a class="blog-row-cta" href="post/integration-drift/">Read Essay &rarr;</a>
+            <a class="blog-row-cta" href="post/integration-drift/">Read Post &rarr;</a>
         </div>
     </article>
     
@@ -1008,7 +1075,7 @@
             
             <p class="blog-row-description">Critical architectural differences between conversational chatbots and production enterprise agents mutating live ERP state.</p>
             
-            <a class="blog-row-cta" href="post/chatbot-vs-agent/">Read Essay &rarr;</a>
+            <a class="blog-row-cta" href="post/chatbot-vs-agent/">Read Post &rarr;</a>
         </div>
     </article>
     
@@ -1030,12 +1097,12 @@
             
             <p class="blog-row-description">Economic and technical audit of runaway costs and execution risks caused by unbounded stochastic AI on legacy enterprise infrastructure.</p>
             
-            <a class="blog-row-cta" href="post/cost-legacy-it/">Read Essay &rarr;</a>
+            <a class="blog-row-cta" href="post/cost-legacy-it/">Read Post &rarr;</a>
         </div>
     </article>
     
     
-    <article class="blog-row blog-post-item" data-page="3" style="display: none;">
+    <article class="blog-row blog-post-item" data-page="4" style="display: none;">
         
         <div class="blog-row-body">
             <div class="blog-row-byline">
@@ -1052,7 +1119,7 @@
             
             <p class="blog-row-description">Foundational thesis of HSN Labs: building production-grade enterprise agent architectures on executable domain ontologies.</p>
             
-            <a class="blog-row-cta" href="post/manifesto/">Read Essay &rarr;</a>
+            <a class="blog-row-cta" href="post/manifesto/">Read Post &rarr;</a>
         </div>
     </article>
     
@@ -1060,9 +1127,9 @@
     
     
     
-    <div id="blog-pagination" class="blog-pagination" data-total-pages="3" data-page-size="10">
+    <div id="blog-pagination" class="blog-pagination" data-total-pages="4" data-page-size="10">
         <div class="pagination-info">
-            <span id="pagination-status">Showing 1 to 10 of 30 essays</span>
+            <span id="pagination-status">Showing 1 to 10 of 31 posts</span>
         </div>
         <nav class="pagination-controls" aria-label="Blog Pagination">
             <button class="pagination-btn pagination-nav" id="pagination-prev" disabled aria-label="Previous page">
@@ -1076,6 +1143,8 @@
                 <button class="pagination-btn pagination-num " data-target-page="2" aria-label="Page 2">2</button>
                 
                 <button class="pagination-btn pagination-num " data-target-page="3" aria-label="Page 3">3</button>
+                
+                <button class="pagination-btn pagination-num " data-target-page="4" aria-label="Page 4">4</button>
                 
             </div>
             <button class="pagination-btn pagination-nav" id="pagination-next" aria-label="Next page">
@@ -1112,7 +1181,8 @@
     <!-- Editorial & SEO Sitemap Grid -->
     <div class="footer-seo-grid">
       
-      <!-- Brand & Positioning Column -->
+      
+      <!-- Brand & Positioning Column (EN) -->
       <div class="footer-seo-col brand-col">
         <a href="https://hsnlabs.ai" class="footer-brand-link" title="HSN Labs">
           <img src="assets/brand/lockups/hsnlabs-lockup-horizontal-light.png" alt="HSN Labs" class="footer-brand-logo">
@@ -1133,7 +1203,7 @@
         </div>
       </div>
 
-      <!-- Pillar 1: Why Agents Fail -->
+      <!-- Pillar 1: Why Agents Fail (EN) -->
       <div class="footer-seo-col">
         <div class="footer-col-header">Why Agents Fail</div>
         <ul class="footer-link-list">
@@ -1144,7 +1214,7 @@
         </ul>
       </div>
 
-      <!-- Pillar 2: Agent Development Life Cycle -->
+      <!-- Pillar 2: Agent Development Life Cycle (EN) -->
       <div class="footer-seo-col">
         <div class="footer-col-header">Agent Development Life Cycle</div>
         <ul class="footer-link-list">
@@ -1155,7 +1225,7 @@
         </ul>
       </div>
 
-      <!-- Pillar 3: Future of Work -->
+      <!-- Pillar 3: Future of Work (EN) -->
       <div class="footer-seo-col">
         <div class="footer-col-header">Future of Work</div>
         <ul class="footer-link-list">
@@ -1165,7 +1235,7 @@
         </ul>
       </div>
 
-      <!-- Pillar 4: Agentic Economics -->
+      <!-- Pillar 4: Agentic Economics (EN) -->
       <div class="footer-seo-col">
         <div class="footer-col-header">Agentic Economics</div>
         <ul class="footer-link-list">
@@ -1176,7 +1246,7 @@
         </ul>
       </div>
 
-      <!-- Pillar 5: Case Studies -->
+      <!-- Pillar 5: Case Studies (EN) -->
       <div class="footer-seo-col">
         <div class="footer-col-header">Case Studies</div>
         <ul class="footer-link-list">
@@ -1186,13 +1256,16 @@
           <li><a href="post/manifesto/">Why I Built HSN Labs</a></li>
         </ul>
       </div>
+      
 
     </div>
 
     <!-- Minimalist Bottom Line -->
     <div class="footer-bottom-bar">
       <div class="footer-bottom-copy">
+        
         2026 HSN Labs. Enterprise Agent Architecture.
+        
       </div>
       <div class="footer-bottom-nav">
         <a href="https://github.com/hsnlabs-ai" target="_blank" rel="noopener">GitHub</a>
@@ -1201,10 +1274,12 @@
         <a href="feed_rss_created.xml">RSS Feed</a>
         <a href="feed_json_created.json">JSON Feed</a>
         <a href="sitemap.xml">Sitemap</a>
+        
         <a href="https://hsnlabs.ai/bootcamp">Bootcamp</a>
         <a href="https://hsnlabs.ai/advisory">Advisory</a>
         <a href="https://hsnlabs.ai/privacy-policy">Privacy Policy</a>
         <a href="https://hsnlabs.ai/modern-slavery-statement">Compliance</a>
+        
       </div>
     </div>
 
@@ -1217,6 +1292,7 @@
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.min.js"></script>
     <script src="assets/js/pagination.js" defer></script>
+    <script src="assets/js/relative_dates.js" defer></script>
     <script src="search/main.js" defer></script>
 
 </body>

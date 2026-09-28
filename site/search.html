@@ -15,13 +15,13 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/brand/favicons/favicon-16x16.png">
     <meta name="theme-color" content="#52B4FD"><link rel="canonical" href="https://hsnlabs.ai/blog/">
     <meta name="title" content="Hugo S. Nascimento">
-    <meta name="description" content="Enterprise Agent Architecture — Essays and field notes on enterprise AI architectures, business ontologies, and avoiding runtime failures in production.">
+    <meta name="description" content="Enterprise Agent Architecture — Posts and field notes on enterprise AI architectures, business ontologies, and avoiding runtime failures in production.">
 
     <!-- OpenGraph Metadata -->
     <meta property="og:site_name" content="HSN Labs">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Hugo S. Nascimento">
-    <meta property="og:description" content="Enterprise Agent Architecture — Essays and field notes on enterprise AI architectures, business ontologies, and avoiding runtime failures in production.">
+    <meta property="og:description" content="Enterprise Agent Architecture — Posts and field notes on enterprise AI architectures, business ontologies, and avoiding runtime failures in production.">
     <meta property="og:url" content="https://hsnlabs.ai/blog/">
     <meta property="og:image" content="https://hsnlabs.ai/blog/assets/brand/og-image.png">
     <meta property="og:image:secure_url" content="https://hsnlabs.ai/blog/assets/brand/og-image.png">
@@ -30,7 +30,7 @@
     <meta name="twitter:site" content="@hsnlabs">
     <meta name="twitter:creator" content="@hugo_nasc">
     <meta name="twitter:title" content="Hugo S. Nascimento">
-    <meta name="twitter:description" content="Enterprise Agent Architecture — Essays and field notes on enterprise AI architectures, business ontologies, and avoiding runtime failures in production.">
+    <meta name="twitter:description" content="Enterprise Agent Architecture — Posts and field notes on enterprise AI architectures, business ontologies, and avoiding runtime failures in production.">
     <meta name="twitter:image" content="https://hsnlabs.ai/blog/assets/brand/og-image.png">
 
     <script>var base_url = '.';</script>
@@ -42,6 +42,7 @@
     <link rel="stylesheet" href="./assets/css/media.min.css">
     <link rel="stylesheet" href="./assets/css/mkdocstrings.min.css">
     <script src="./assets/js/pagination.js"></script>
+    <script src="./assets/js/relative_dates.js"></script>
     <script src="./search/main.js"></script>
     <link href="./stylesheets/extra.css" rel="stylesheet">
     <link href="./assets/css/pagination.css" rel="stylesheet">
@@ -85,6 +86,7 @@
             <!-- block header -->
 <div class="blog-header-inner">
   <div class="blog-header-brand-group">
+    
     <a href="https://hsnlabs.ai" class="blog-brand-link" title="HSN Labs Main Site">
       <img src="./assets/brand/lockups/hsnlabs-lockup-horizontal-light.png" alt="HSN Labs" class="blog-brand-logo">
     </a>
@@ -92,11 +94,12 @@
     <a href="./." class="blog-badge-link" title="HSN Labs Blog">
       <span class="blog-badge-text">Blog</span>
     </a>
+    
   </div>
 
   <nav class="blog-header-menu" aria-label="Main Navigation">
     
-    <a href="./." class="blog-nav-link ">All Essays</a>
+    <a href="./." class="blog-nav-link ">All Posts</a>
     <a href="https://hsnlabs.ai/bootcamp" class="blog-nav-link">Bootcamp</a>
     <a href="https://hsnlabs.ai/advisory" class="blog-nav-link">Advisory</a>
     <a href="./about/resume/" class="blog-nav-link ">About Hugo</a>
@@ -105,7 +108,7 @@
   </nav>
 
   <div class="blog-header-actions">
-    <button class="blog-action-icon blog-search-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" title="Search essays" aria-label="Search essays">
+    <button class="blog-action-icon blog-search-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" title="Search posts" aria-label="Search posts">
       <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <circle cx="11" cy="11" r="8"></circle>
         <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
@@ -118,7 +121,9 @@
       </svg>
     </a>
 
+    
     <a href="https://hsnlabs.ai/bootcamp" class="btn btn-primary blog-header-cta">Apply for Bootcamp</a>
+    
   </div>
 </div>
 <!-- endblock -->
@@ -150,6 +155,7 @@
 </div>
 
 <!-- block blog_sidebar -->
+
 
 
 <div class="blog-sidebar" id="component-blog-sidebar">
@@ -209,7 +215,8 @@
     <!-- Editorial & SEO Sitemap Grid -->
     <div class="footer-seo-grid">
       
-      <!-- Brand & Positioning Column -->
+      
+      <!-- Brand & Positioning Column (EN) -->
       <div class="footer-seo-col brand-col">
         <a href="https://hsnlabs.ai" class="footer-brand-link" title="HSN Labs">
           <img src="./assets/brand/lockups/hsnlabs-lockup-horizontal-light.png" alt="HSN Labs" class="footer-brand-logo">
@@ -230,7 +237,7 @@
         </div>
       </div>
 
-      <!-- Pillar 1: Why Agents Fail -->
+      <!-- Pillar 1: Why Agents Fail (EN) -->
       <div class="footer-seo-col">
         <div class="footer-col-header">Why Agents Fail</div>
         <ul class="footer-link-list">
@@ -241,7 +248,7 @@
         </ul>
       </div>
 
-      <!-- Pillar 2: Agent Development Life Cycle -->
+      <!-- Pillar 2: Agent Development Life Cycle (EN) -->
       <div class="footer-seo-col">
         <div class="footer-col-header">Agent Development Life Cycle</div>
         <ul class="footer-link-list">
@@ -252,7 +259,7 @@
         </ul>
       </div>
 
-      <!-- Pillar 3: Future of Work -->
+      <!-- Pillar 3: Future of Work (EN) -->
       <div class="footer-seo-col">
         <div class="footer-col-header">Future of Work</div>
         <ul class="footer-link-list">
@@ -262,7 +269,7 @@
         </ul>
       </div>
 
-      <!-- Pillar 4: Agentic Economics -->
+      <!-- Pillar 4: Agentic Economics (EN) -->
       <div class="footer-seo-col">
         <div class="footer-col-header">Agentic Economics</div>
         <ul class="footer-link-list">
@@ -273,7 +280,7 @@
         </ul>
       </div>
 
-      <!-- Pillar 5: Case Studies -->
+      <!-- Pillar 5: Case Studies (EN) -->
       <div class="footer-seo-col">
         <div class="footer-col-header">Case Studies</div>
         <ul class="footer-link-list">
@@ -283,13 +290,16 @@
           <li><a href="./post/manifesto/">Why I Built HSN Labs</a></li>
         </ul>
       </div>
+      
 
     </div>
 
     <!-- Minimalist Bottom Line -->
     <div class="footer-bottom-bar">
       <div class="footer-bottom-copy">
+        
         2026 HSN Labs. Enterprise Agent Architecture.
+        
       </div>
       <div class="footer-bottom-nav">
         <a href="https://github.com/hsnlabs-ai" target="_blank" rel="noopener">GitHub</a>
@@ -298,10 +308,12 @@
         <a href="./feed_rss_created.xml">RSS Feed</a>
         <a href="./feed_json_created.json">JSON Feed</a>
         <a href="./sitemap.xml">Sitemap</a>
+        
         <a href="https://hsnlabs.ai/bootcamp">Bootcamp</a>
         <a href="https://hsnlabs.ai/advisory">Advisory</a>
         <a href="https://hsnlabs.ai/privacy-policy">Privacy Policy</a>
         <a href="https://hsnlabs.ai/modern-slavery-statement">Compliance</a>
+        
       </div>
     </div>
 
@@ -314,6 +326,7 @@
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/main.min.js"></script>
     <script src="./assets/js/pagination.js" defer></script>
+    <script src="./assets/js/relative_dates.js" defer></script>
     <script src="./search/main.js" defer></script>
 
 </body>

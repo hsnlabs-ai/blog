@@ -413,3 +413,14 @@ Build the rules. Compile the invariants. Gate the actions. Once the harness exis
 ---
 
 *At HSN Labs, we design and deploy bespoke operational ontologies and resilient multi-agent architectures for mid-to-large enterprises. If your organization is ready to transition from fragile AI demos to mission-critical production execution, apply for our on-site [Agentic Architecture Bootcamp](https://hsnlabs.ai/bootcamp).*
+
+## Related Field Notes and Technical Spokes
+- <a href="../the-operational-ontology/">The Operational Ontology: How Enterprises Connect LLMs to Proprietary State</a>
+- <a href="../how-to-build-operational-ontology-python-mcp/">How to Build an Operational Business Ontology in Python and MCP</a>
+- <a href="../ontology-vs-knowledge-graph/">Ontology vs. Knowledge Graph: Key Differences, Architecture, and Agent Reliability</a>
+- <a href="../palantir-aip-bootcamp-operational-ontology/">The Architecture of Palantir AIP: Why Enterprise Agents Require an Operational Ontology</a>
+- <a href="../perimeter-isolation-mcp-data-contracts/">How We Protect Enterprise Databases from AI Agents</a>
+- <a href="../legacy-core-backing-engine/">Legacy Core Systems Will Not Die: They Are the Execution Engine</a>
+- <a href="../five-day-architecture-sprint/">Why Big 4 Slide Decks Fail on Agent Projects</a>
+- <a href="../chatbot-vs-agent/">Chatbot vs Agent: Why Replacing BPOs Requires Production Ontologies</a>
+- <a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a>

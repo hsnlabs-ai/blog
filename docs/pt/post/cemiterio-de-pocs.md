@@ -14,7 +14,7 @@ author: Hugo S. Nascimento
 
 <!-- more -->
 
-*Contexto: Escrevi este ensaio apos uma reuniao a portas fechadas na Avenida Paulista com o CIO de uma grande corporacao que gastou quatrocentos mil dolares em tres demonstracoes de diretoria que jamais passariam na revisao de seguranca. Aqui explico por que pilotos corporativos travam e como nos os puxamos para producao.*
+*Contexto: Escrevi este post apos uma reuniao a portas fechadas na Avenida Paulista com o CIO de uma grande corporacao que gastou quatrocentos mil dolares em tres demonstracoes de diretoria que jamais passariam na revisao de seguranca. Aqui explico por que pilotos corporativos travam e como nos os puxamos para producao.*
 
 Mais de oitenta e cinco por cento dos pilotos corporativos de IA generativa nunca chegam a producao. Eles sao silenciosamente enterrados no que chamo de Cemiterio de PoCs.
 
@@ -59,7 +59,8 @@ Na HSN Labs, nao construimos apresentacoes de slides para conselhos nem demos fr
 
 O valor corporativo nao e medido por chatbots conversadores. Ele e medido por software em producao que escreve em bancos de dados centrais sem quebrar a operacao da empresa.
 
-## Recursos Estrategicos e Ensaios Relacionados
-- <a href="/blog/pt/post/chatbot-vs-agente/">Chatbot vs Agente: Por Que Substituir BPOs Exige Ontologias em Producao</a>
-- <a href="/blog/pt/post/colapso-rpa-legado/">O Mercado de RPA Esta em Colapso</a>
+## Recursos Estrategicos e Posts Relacionados
+- <a href="/blog/pt/post/o-que-e-uma-ontologia-para-agentes-ia/">O Que E uma Ontologia para Agentes de IA? O Guia Definitivo</a>
+- <a href="/blog/pt/post/por-que-rag-falha-em-erp/">Por Que RAG Tradicional Falha em ERPs Financeiros</a>
+- <a href="/blog/pt/post/deriva-de-integracao/">A Deriva de Integracao: Quando Prompts Quebram Agentes em Producao</a>
 - <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da HSN Labs</a>

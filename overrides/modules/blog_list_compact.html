@@ -24,7 +24,7 @@
             {% if post.description %}
             <p class="blog-row-description">{{ post.description }}</p>
             {% endif %}
-            <a class="blog-row-cta" href="{{ post.url|url }}">{{ (config.theme.blog.cta_label if config.theme.blog else None) or "Read Essay" }} &rarr;</a>
+            <a class="blog-row-cta" href="{{ post.url|url }}">{{ (config.theme.blog.cta_label if config.theme.blog else None) or "Read Post" }} &rarr;</a>
         </div>
     </article>
     {% endfor %}
@@ -34,7 +34,7 @@
     {% if total_pages > 1 %}
     <div id="blog-pagination" class="blog-pagination" data-total-pages="{{ total_pages }}" data-page-size="10">
         <div class="pagination-info">
-            <span id="pagination-status">Showing 1 to 10 of {{ total_posts }} essays</span>
+            <span id="pagination-status">Showing 1 to 10 of {{ total_posts }} posts</span>
         </div>
         <nav class="pagination-controls" aria-label="Blog Pagination">
             <button class="pagination-btn pagination-nav" id="pagination-prev" disabled aria-label="Previous page">
