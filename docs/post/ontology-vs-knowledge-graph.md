@@ -25,28 +25,26 @@ author: Hugo S. Nascimento
 Enterprise data teams frequently use the terms *ontology* and *knowledge graph* interchangeably. In production engineering, conflating them causes immediate architectural failure.
 
 Here is the exact difference:
+
 - An **Ontology** is the **schema, logic, and rule system**. It defines the abstract types, valid relationships, mathematical invariants, and permissible state transitions of your business. It is the type definition in code.
 - A **Knowledge Graph** is the **network of concrete instances and facts**. It instantiates those abstract types with live enterprise records (specific customers, actual invoices, real hospital beds, physical shipping containers) and connects them via directed edges. It is the object instance living in memory.
 
-```
-+-------------------------------------------------------------------------+
-|                  ONTOLOGY vs. KNOWLEDGE GRAPH ARCHITECTURE              |
-|                                                                         |
-|  [ THE ONTOLOGY (Schema & Invariants) ]                                 |
-|  Class: CorporateAccount                                                |
-|  Rule: Must have exactly 1 TaxIdentifier                                |
-|  Invariant: CreditLimit >= OpenExposure                                 |
-|  Allowed Actions: [ApproveCredit, FreezeAccount, IssueBilling]          |
-|                                |                                        |
-|                                v (Governs & Validates Instantiation)   |
-|                                                                         |
-|  [ THE KNOWLEDGE GRAPH (Live Instance Network) ]                        |
-|  Node: Account(Acme Corp) ---[OWNS]---> Node: Invoice(#4021)            |
-|         |                                      |                        |
-|      [LOCATED_IN]                           [SHIPPED_VIA]               |
-|         v                                      v                        |
-|  Node: Country(Brazil)                 Node: Carrier(DHL Express)       |
-+-------------------------------------------------------------------------+
+```mermaid
+flowchart TD
+    subgraph ONT[The Ontology: Metamodel and Invariants]
+        O1[Class: CorporateAccount]
+        O2[Rule: Exactly 1 TaxIdentifier]
+        O3[Invariant: CreditLimit >= OpenExposure]
+        O4[Allowed Actions: ApproveCredit, FreezeAccount, IssueBilling]
+    end
+
+    subgraph KG[The Knowledge Graph: Live Instance Network]
+        A[Account: Acme Corp] -->|OWNS| I[Invoice: #4021]
+        A -->|LOCATED_IN| C[Country: Brazil]
+        I -->|SHIPPED_VIA| D[Carrier: DHL Express]
+    end
+
+    ONT -->|Governs and Validates Instantiation| KG
 ```
 
 You cannot build a functional knowledge graph for autonomous AI agents without a strict operational ontology. 
@@ -93,6 +91,7 @@ A property graph consists of three mathematical elements:
 Knowledge graphs excel at multi-hop relational retrieval. When an engineer asks: *"Which Tier-2 suppliers provide subcomponents to the assembly line that experienced downtime yesterday?"*, a graph engine traverses edges in milliseconds. A relational database would choke on a seven-way SQL join.
 
 However, knowledge graphs have zero inherent operational execution capabilities.
+
 - A graph node does not know if an invoice is legally payable.
 - An edge cannot prevent an AI agent from writing an invalid relationship into the database.
 - A graph engine cannot enforce finite state machine transitions without external validation code.
@@ -107,27 +106,11 @@ In enterprise production, the ontology sits as the compiler and governor directl
 
 Every node creation, edge traversal, and state mutation attempted by an AI agent must pass through the ontology's validation harness before hitting the graph storage engine.
 
-```
-+--------------------------------------------------------------------------+
-|                  THE PRODUCTION NEURO-SYMBOLIC STACK                     |
-|                                                                          |
-|  [ 1. Autonomous AI Agent / LLM ]                                        |
-|         |                                                                |
-|         | Emits structured intent: "Link Invoice 940 to PO 810"          |
-|         v                                                                |
-|  [ 2. Operational Ontology Layer (Python / Pydantic / FSM) ]              |
-|         |                                                                |
-|         |-- 1. Validates PO 810 is in 'OPEN' state                       |
-|         |-- 2. Asserts Invoice amount <= PO remaining budget             |
-|         |-- 3. Compiles verified Cypher / Graph mutation                 |
-|         |                                                                |
-|         v (Valid mutation only)                                          |
-|  [ 3. Enterprise Knowledge Graph (Neo4j / Memgraph / Neptune) ]          |
-|         |                                                                |
-|         | Commits: (Invoice:940)-[:FULFILLS {matched_at: NOW}]->(PO:810) |
-|         v                                                                |
-|  [ 4. Event Streaming & Ledger Integration (Kafka / SAP / Postgres) ]    |
-+--------------------------------------------------------------------------+
+```mermaid
+flowchart TD
+    A[1. Autonomous AI Agent / LLM] -->|Emits Intent: Link Invoice 940 to PO 810| B[2. Operational Ontology Layer<br>Python / Pydantic / FSM]
+    B -->|Validates PO 810 is OPEN<br>Asserts Amount <= Remaining Budget<br>Compiles Verified Cypher Mutation| C[3. Enterprise Knowledge Graph<br>Neo4j / Memgraph / Neptune]
+    C -->|Commits Graph Mutation| D[4. Event Streaming and Ledger Integration<br>Kafka / SAP / Postgres]
 ```
 
 ---
@@ -216,6 +199,7 @@ If an LLM hallucinates and attempts to bind a $50,000 invoice to an approved Pur
 In an unconstrained architecture, the agent writes the edge into the database, silently corrupting corporate books.
 
 In this ontology-governed architecture:
+
 1. The `model_validator` executes before any database connection is opened.
 2. The assertion `invoice_amount > po_remaining_balance` triggers a hard `ValueError`.
 3. The execution aborts. The graph state remains pure.
@@ -241,14 +225,17 @@ Understanding where each storage and modeling paradigm fits across the enterpris
 ## Enterprise Use Cases: When to Deploy Both
 
 ### 1. Healthcare: Protocol Adherence & Clinical Trial Matching
+
 * **The Knowledge Graph:** Maps the patient history, previous diagnoses, prescribed pharmaceuticals, genetic markers, and clinical trial eligibility criteria across hospital networks.
 * **The Operational Ontology:** Enforces statutory FDA protocols, drug-drug interaction contraindications, and patient consent invariants. An agent can discover experimental trials via the graph, but the ontology strictly forbids scheduling an enrollment action if contraindications exist.
 
 ### 2. Banking: Anti-Money Laundering & Sanctions Screening
+
 * **The Knowledge Graph:** Traces synthetic identity networks, multi-layered shell corporation ownership chains, and shared bank account endpoints across millions of wire transfers.
 * **The Operational Ontology:** Governs statutory regulatory reporting (FinCEN, COAF), freezes accounts under legal injunctions, and calculates risk exposure metrics with certified decimal precision.
 
 ### 3. Supply Chain: Resilient Disruption Routing
+
 * **The Knowledge Graph:** Models deep Tier-1, Tier-2, and Tier-3 supplier dependencies, maritime shipping lanes, port customs bottlenecks, and warehouse inventory counts.
 * **The Operational Ontology:** Defines what constitutes an authorized emergency re-routing action, validates alternative supplier credit ratings, and automatically triggers contractual price escalation clauses within legal thresholds.
 
@@ -259,6 +246,7 @@ Understanding where each storage and modeling paradigm fits across the enterpris
 Building a knowledge graph without an operational ontology is the enterprise software equivalent of deploying an un-typed programming language into production with zero tests. It looks impressive in internal demo recordings, but it breaks the moment it touches real corporate data.
 
 The formula for resilient, mission-critical autonomous agents is clear:
+
 1. Model your **business entities, invariants, and action state machines** in code as an **Operational Ontology**.
 2. Connect your **multi-source relational records and dependency networks** as a **Knowledge Graph**.
 3. Force every agent action to **compile through the ontology before mutating the graph or the underlying ERP**.
@@ -270,6 +258,7 @@ This neuro-symbolic separation is what separates brittle toy chatbots from enter
 *At HSN Labs, we engineer custom operational ontologies and resilient graph architectures for enterprise operations. To audit your AI agent infrastructure or deploy production-grade systems in five days, review our on-site [Agentic Architecture Bootcamp](https://hsnlabs.ai/bootcamp).*
 
 ## Strategic Resources and Related Essays
+
 - <a href="../how-to-build-an-enterprise-ontology-from-scratch/">How to Build an Enterprise Ontology from Scratch: Step by Step</a>
 - <a href="../the-operational-ontology/">The Operational Ontology: How Enterprises Connect LLMs to Proprietary State</a>
 - <a href="../palantir-aip-bootcamp-operational-ontology/">The Architecture of Palantir AIP: Why Enterprise Agents Require an Operational Ontology</a>

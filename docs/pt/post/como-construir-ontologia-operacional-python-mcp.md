@@ -29,6 +29,7 @@ As classes definem entidades como Cliente, Fatura e Regra de Desconto, garantind
 ## Integração com Model Context Protocol
 
 Com os modelos definidos, criamos um servidor MCP leve. O servidor expõe funções formais como ferramentas:
+
 - Consulta de status de fatura por identificador único
 - Validação de elegibilidade de abatimento comercial
 - Registro de liquidação com chave de segurança
@@ -44,6 +45,7 @@ Cada ferramenta recebe esquemas JSON gerados automaticamente a partir dos modelo
 A integração entre Python, Pydantic e MCP é a espinha dorsal tecnológica que permite a HSN Labs colocar agentes em produção em corporações reguladas com confiabilidade absoluta.
 
 ## Recursos Estratégicos e Posts Relacionados
+
 - <a href="/blog/pt/post/como-construir-ontologia-enterprise-do-zero/">Como Construir uma Ontologia Enterprise do Zero: Passo a Passo</a>
 - <a href="/blog/pt/post/a-ontologia-operacional/">A Ontologia Operacional: Como Empresas Conectam LLMs aos Dados Proprietários</a>
 - <a href="/blog/pt/post/isolamento-perimetro-mcp-contratos-dados/">Como Protegemos Bancos de Dados Enterprise de Agentes de IA</a>

@@ -157,6 +157,7 @@ A inteligência artificial está retirando de nós a desculpa de vivermos atolad
 Mas isso exige uma escolha consciente de líderes, gestores e cidadãos: rejeitar a tentação de medir seres humanos apenas pela sua utilidade produtiva. O valor intrínseco de cada trabalhador precisa estar no centro da transição para a IA. Se esquecermos disso, continuaremos repetindo em 2026 a tragédia que Kafka denunciou em 1915.
 
 ## Related Field Notes and Technical Spokes
+
 - <a href="../collapse-of-legacy-rpa/">The RPA Market Is Collapsing</a>
 - <a href="../balance-sheet-guard-bpo-extinction/">What I Learned Building HR Tech About Dying BPO Contracts</a>
 - <a href="../death-of-tier-1-erp-helpdesk/">The Death of Tier-1 Support: Why ERP Consultancies Lose Billable Hours</a>

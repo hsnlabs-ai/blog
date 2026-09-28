@@ -35,6 +35,7 @@ Tarefas operacionais de intermediação, burocracia de planilhas e alimentação
 A tecnologia precisa libertar o trabalhador da condição instrumental descrita por Kafka, em vez de empurrá-lo para a invisibilidade. Essa é uma discussão que líderes conscientes precisam travar com coragem antes que a automação se torne apenas uma ferramenta de exclusão em massa.
 
 ## Notas de Campo e Artigos Relacionados
+
 - <a href="/blog/pt/post/colapso-rpa-legado/">O Mercado de RPA Está em Colapso</a>
 - <a href="/blog/pt/post/guarda-do-balanco-extincao-bpo/">O Que Aprendi Construindo HR Tech Sobre a Morte do BPO</a>
 - <a href="/blog/pt/post/morte-suporte-nivel-1-erp/">A Morte do Suporte Nível 1: Por Que Consultorias de ERP Perdem Horas Faturáveis</a>

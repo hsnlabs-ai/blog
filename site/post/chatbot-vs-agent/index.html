@@ -44,6 +44,8 @@
     <link rel="stylesheet" href="../../assets/css/mkdocstrings.min.css">
     <script src="../../assets/js/pagination.js"></script>
     <script src="../../assets/js/relative_dates.js"></script>
+    <script src="../../assets/js/mermaid.min.js"></script>
+    <script src="../../assets/js/mermaid_init.js"></script>
     <script src="../../search/main.js"></script>
     <link href="../../stylesheets/extra.css" rel="stylesheet">
     <link href="../../assets/css/pagination.css" rel="stylesheet">
@@ -439,11 +441,13 @@
 <p>A chatbot answers text questions. An autonomous agent executes multi-step workflows and mutates state in core enterprise systems.</p>
 <p>Treating conversational chatbots as enterprise agents is the most common reason corporate automation initiatives fail to deliver financial returns.</p>
 <p>When a company deploys an internal chat interface that summarizes PDF policy documents, it has created an informational tool. It has not eliminated an operational cost center.</p>
-<p>If your strategic objective is to terminate a multi-million-dollar third-party BPO contract, conversational answers are useless. You need software that executes real work:
-* Reconciling thousands of incoming vendor invoices against ERP purchase orders in SAP or Totvs.
-* Validating inventory allocations across multiple distributed warehouse databases.
-* Adjudicating customer billing disputes according to strict contract terms.
-* Committing double-entry financial ledger changes with immutable audit trails.</p>
+<p>If your strategic objective is to terminate a multi-million-dollar third-party BPO contract, conversational answers are useless. You need software that executes real work:</p>
+<ul>
+<li>Reconciling thousands of incoming vendor invoices against ERP purchase orders in SAP or Totvs.</li>
+<li>Validating inventory allocations across multiple distributed warehouse databases.</li>
+<li>Adjudicating customer billing disputes according to strict contract terms.</li>
+<li>Committing double-entry financial ledger changes with immutable audit trails.</li>
+</ul>
 <h2 id="the-human-in-the-loop-purgatory">The Human-in-the-Loop Purgatory</h2>
 <p>When software teams connect probabilistic language models directly to enterprise systems without execution constraints, they quickly realize that models hallucinate. </p>
 <p>Terrified of corrupted database records or unauthorized payouts, their immediate reaction is to insert a human verification step into every single agent decision.</p>
@@ -452,9 +456,9 @@
 <h2 id="the-production-path-to-true-autonomy">The Production Path to True Autonomy</h2>
 <p>True autonomy does not mean letting a model run wild without supervision. True autonomy means establishing mathematical certainty around routine transactions so humans only handle real exceptions:</p>
 <ul>
-<li>Mathematically Bounded State Machines: The agent can only execute actions permitted by the current transactional state. An agent cannot trigger a payout while an invoice is in verification state.</li>
-<li>Hard Schema Enforcement: Every data payload is parsed and validated by strict Pydantic schemas before any production API is invoked. If an input field violates the schema, the execution is halted before touching corporate infrastructure.</li>
-<li>Asymmetric Exception Escalation: Ninety-five percent of routine transactions pass all invariant checks and execute autonomously at machine speed. The remaining five percent containing true anomalies or contract disputes are packaged into clean diagnostic payloads and escalated to senior human managers.</li>
+<li><strong>Mathematically Bounded State Machines:</strong> The agent can only execute actions permitted by the current transactional state. An agent cannot trigger a payout while an invoice is in verification state.</li>
+<li><strong>Hard Schema Enforcement:</strong> Every data payload is parsed and validated by strict Pydantic schemas before any production API is invoked. If an input field violates the schema, the execution is halted before touching corporate infrastructure.</li>
+<li><strong>Asymmetric Exception Escalation:</strong> Ninety-five percent of routine transactions pass all invariant checks and execute autonomously at machine speed. The remaining five percent containing true anomalies or contract disputes are packaged into clean diagnostic payloads and escalated to senior human managers.</li>
 </ul>
 <p>Autonomy is not created by writing longer system prompts. Autonomy is created by building resilient architectures that make operational failure impossible.</p>
 <h2 id="strategic-resources-and-related-essays">Strategic Resources and Related Essays</h2>
@@ -650,6 +654,8 @@
     <script src="../../assets/js/main.min.js"></script>
     <script src="../../assets/js/pagination.js" defer></script>
     <script src="../../assets/js/relative_dates.js" defer></script>
+    <script src="../../assets/js/mermaid.min.js" defer></script>
+    <script src="../../assets/js/mermaid_init.js" defer></script>
     <script src="../../search/main.js" defer></script>
 
 </body>

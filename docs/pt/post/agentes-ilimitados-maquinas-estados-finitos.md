@@ -51,13 +51,14 @@ Um modelo sem limites não possui noção inerente de causalidade corporativa. E
 
 Na HSN Labs, nunca permitimos loops abertos de ferramentas em produção. Impomos uma separação estrita entre raciocínio e execução por meio de Máquinas de Estados Finitos:
 
-* Estados Discretos Permitidos: A cada microssegundo, uma transação corporativa existe em um estado explícito: Rascunho, Validado, Aprovado ou Efetivado. O agente só tem visibilidade e permissão para propor ferramentas que pertencem a esse estado específico. E fisicamente impossível para um agente no estado de Rascunho disparar uma ação de Efetivação.
-* Funções de Guarda Invariantes: As transições entre estados não são governadas pelo modelo de linguagem. Elas são governadas por funções de guarda em Python em nível de código. Mesmo que o modelo sugira o cancelamento de um pedido, a guarda em software verifica se a mercadoria já saiu do centro de distribuição. Se a guarda avaliar como falso, a transição e rejeitada no nível da arquitetura.
-* Propostas em Vez de Escritas Diretas: O modelo de linguagem nunca recebe credenciais diretas de escrita no banco de dados. O modelo e tratado como um motor de propostas não confiável. Ele analisa linguagem natural e propõe uma carga de transição de estado. Validadores estritos de schema como Pydantic processam essa carga, verificam invariantes e efetuam a gravação no banco.
+* **Estados Discretos Permitidos:** A cada microssegundo, uma transação corporativa existe em um estado explícito: Rascunho, Validado, Aprovado ou Efetivado. O agente só tem visibilidade e permissão para propor ferramentas que pertencem a esse estado específico. E fisicamente impossível para um agente no estado de Rascunho disparar uma ação de Efetivação.
+* **Funções de Guarda Invariantes:** As transições entre estados não são governadas pelo modelo de linguagem. Elas são governadas por funções de guarda em Python em nível de código. Mesmo que o modelo sugira o cancelamento de um pedido, a guarda em software verifica se a mercadoria já saiu do centro de distribuição. Se a guarda avaliar como falso, a transição e rejeitada no nível da arquitetura.
+* **Propostas em Vez de Escritas Diretas:** O modelo de linguagem nunca recebe credenciais diretas de escrita no banco de dados. O modelo e tratado como um motor de propostas não confiável. Ele analisa linguagem natural e propõe uma carga de transição de estado. Validadores estritos de schema como Pydantic processam essa carga, verificam invariantes e efetuam a gravação no banco.
 
 Autonomia não significa ausência de regras. Autonomia corporativa é a capacidade de o software rodar com confiabilidade porque seus limites são matematicamente inquebráveis.
 
 ## Recursos Estratégicos e Posts Relacionados
+
 - <a href="/blog/pt/post/manifesto/">Por Que Criei a HSN Labs</a>
 - <a href="/blog/pt/post/estudo-caso-cleveland-clinic-agentes-operacionais/">Estudo de Caso: Como a Cleveland Clinic Escalou Fluxo de Pacientes</a>
 - <a href="/blog/pt/post/negociacoes-autonomas-cobranca-contratos/">Operações em Alta Velocidade: Negociação Autônoma, Cobrança e Contratos</a>

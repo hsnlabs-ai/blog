@@ -44,6 +44,8 @@
     <link rel="stylesheet" href="../../../assets/css/mkdocstrings.min.css">
     <script src="../../../assets/js/pagination.js"></script>
     <script src="../../../assets/js/relative_dates.js"></script>
+    <script src="../../../assets/js/mermaid.min.js"></script>
+    <script src="../../../assets/js/mermaid_init.js"></script>
     <script src="../../../search/main.js"></script>
     <link href="../../../stylesheets/extra.css" rel="stylesheet">
     <link href="../../../assets/css/pagination.css" rel="stylesheet">
@@ -482,10 +484,12 @@
 </tbody>
 </table>
 <h2 id="por-que-tabelas-relacionais-quebram-agentes">Por Que Tabelas Relacionais Quebram Agentes</h2>
-<p>Quando conectamos um modelo de linguagem diretamente a um banco SQL via técnicas de text-to-SQL sem uma ontologia intermediária, três falhas ocorrem invariavelmente:
-- Queries com joins incorretos gerando dados falsos para a diretoria
-- Consultas excessivamente pesadas que travam a base de produção
-- Gravações perigosas em tabelas legadas sem validação de regras de auditoria</p>
+<p>Quando conectamos um modelo de linguagem diretamente a um banco SQL via técnicas de text-to-SQL sem uma ontologia intermediária, três falhas ocorrem invariavelmente:</p>
+<ul>
+<li>Queries com joins incorretos gerando dados falsos para a diretoria</li>
+<li>Consultas excessivamente pesadas que travam a base de produção</li>
+<li>Gravações perigosas em tabelas legadas sem validação de regras de auditoria</li>
+</ul>
 <p>Uma ontologia operacional atua como a camada de inteligência e proteção que traduz a intenção do agente em ações validadas, impedindo desastres operacionais antes que aconteçam.</p>
 <h2 id="recursos-estrategicos-e-posts-relacionados">Recursos Estratégicos e Posts Relacionados</h2>
 <ul>
@@ -677,6 +681,8 @@
     <script src="../../../assets/js/main.min.js"></script>
     <script src="../../../assets/js/pagination.js" defer></script>
     <script src="../../../assets/js/relative_dates.js" defer></script>
+    <script src="../../../assets/js/mermaid.min.js" defer></script>
+    <script src="../../../assets/js/mermaid_init.js" defer></script>
     <script src="../../../search/main.js" defer></script>
 
 </body>

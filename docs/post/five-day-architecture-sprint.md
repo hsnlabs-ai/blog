@@ -70,6 +70,7 @@ If the architecture proves viable and the business case justifies deployment, di
 Stop paying for slide decks. Demand working software in five days.
 
 ## Strategic Resources and Related Essays
+
 - <a href="../how-to-build-an-enterprise-ontology-from-scratch/">How to Build an Enterprise Ontology from Scratch: Step by Step</a>
 - <a href="../the-operational-ontology/">The Operational Ontology: How Enterprises Connect LLMs to Proprietary State</a>
 - <a href="../perimeter-isolation-mcp-data-contracts/">How We Protect Enterprise Databases from AI Agents</a>

@@ -56,6 +56,7 @@ Pare de construir interfaces vazias de texto livre. Use IA como um processador i
 E assim que você substitui TI legada. E assim que você expande margens. E assim que você prova retorno sobre investimento para um CFO.
 
 ## Recursos Estratégicos e Posts Relacionados
+
 - <a href="/blog/pt/post/manifesto/">Por Que Criei a HSN Labs</a>
 - <a href="/blog/pt/post/estudo-caso-cleveland-clinic-agentes-operacionais/">Estudo de Caso: Como a Cleveland Clinic Escalou Fluxo de Pacientes</a>
 - <a href="/blog/pt/post/negociacoes-autonomas-cobranca-contratos/">Operações em Alta Velocidade: Negociação Autônoma, Cobrança e Contratos</a>

@@ -44,6 +44,8 @@
     <link rel="stylesheet" href="../../../assets/css/mkdocstrings.min.css">
     <script src="../../../assets/js/pagination.js"></script>
     <script src="../../../assets/js/relative_dates.js"></script>
+    <script src="../../../assets/js/mermaid.min.js"></script>
+    <script src="../../../assets/js/mermaid_init.js"></script>
     <script src="../../../search/main.js"></script>
     <link href="../../../stylesheets/extra.css" rel="stylesheet">
     <link href="../../../assets/css/pagination.css" rel="stylesheet">
@@ -455,9 +457,9 @@
 <h2 id="como-avaliamos-agentes-enterprise-na-hsn-labs">Como Avaliamos Agentes Enterprise na HSN Labs</h2>
 <p>Na HSN Labs, rejeitamos notas subjetivas de prompts em esteiras corporativas. Avaliamos sistemas autônomos usando os mesmos padrões rigorosos de engenharia aplicados a software crítico financeiro e aeroespacial:</p>
 <ul>
-<li>Asserções Binárias de Invariantes: Escrevemos funções estritas de asserção de código em Python. O JSON de saída atendeu rigorosamente ao schema Pydantic? As partidas dobradas de débito e crédito fecharam em zero exato? A resposta omitiu dados protegidos e números restritos de contas? Esses testes retornam aprovação ou reprovação binária, não uma opinião subjetiva.</li>
-<li>Conjuntos Dourados e Imutáveis de Teste: Cada incidente de produção e caso de borda e transformado em um cenário de teste automatizado imutável. Antes que qualquer grafo de agentes atualizado toque a homologação, ele precisa passar por centenas de testes históricos de regressão.</li>
-<li>Telemetria Completa e Capacidade de Repetição: Rastreamos cada fluxo, monitorando cada token, estado intermediário e chamada de ferramenta. Se um agente produz uma transição inesperada, nossos engenheiros conseguem reproduzir o rastro exato de execução com total fidelidade no ambiente local de desenvolvimento.</li>
+<li><strong>Asserções Binárias de Invariantes:</strong> Escrevemos funções estritas de asserção de código em Python. O JSON de saída atendeu rigorosamente ao schema Pydantic? As partidas dobradas de débito e crédito fecharam em zero exato? A resposta omitiu dados protegidos e números restritos de contas? Esses testes retornam aprovação ou reprovação binária, não uma opinião subjetiva.</li>
+<li><strong>Conjuntos Dourados e Imutáveis de Teste:</strong> Cada incidente de produção e caso de borda e transformado em um cenário de teste automatizado imutável. Antes que qualquer grafo de agentes atualizado toque a homologação, ele precisa passar por centenas de testes históricos de regressão.</li>
+<li><strong>Telemetria Completa e Capacidade de Repetição:</strong> Rastreamos cada fluxo, monitorando cada token, estado intermediário e chamada de ferramenta. Se um agente produz uma transição inesperada, nossos engenheiros conseguem reproduzir o rastro exato de execução com total fidelidade no ambiente local de desenvolvimento.</li>
 </ul>
 <p>Não avalie agentes de produção com prompts opinativos. Avalie com asserções de código verificáveis e comprovações matemáticas.</p>
 <h2 id="recursos-estrategicos-e-posts-relacionados">Recursos Estratégicos e Posts Relacionados</h2>
@@ -650,6 +652,8 @@
     <script src="../../../assets/js/main.min.js"></script>
     <script src="../../../assets/js/pagination.js" defer></script>
     <script src="../../../assets/js/relative_dates.js" defer></script>
+    <script src="../../../assets/js/mermaid.min.js" defer></script>
+    <script src="../../../assets/js/mermaid_init.js" defer></script>
     <script src="../../../search/main.js" defer></script>
 
 </body>

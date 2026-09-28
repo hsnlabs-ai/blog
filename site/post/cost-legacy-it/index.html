@@ -44,6 +44,8 @@
     <link rel="stylesheet" href="../../assets/css/mkdocstrings.min.css">
     <script src="../../assets/js/pagination.js"></script>
     <script src="../../assets/js/relative_dates.js"></script>
+    <script src="../../assets/js/mermaid.min.js"></script>
+    <script src="../../assets/js/mermaid_init.js"></script>
     <script src="../../search/main.js"></script>
     <link href="../../stylesheets/extra.css" rel="stylesheet">
     <link href="../../assets/css/pagination.css" rel="stylesheet">
@@ -451,9 +453,9 @@
 <h2 id="the-solution-architectural-decoupling">The Solution: Architectural Decoupling</h2>
 <p>To deploy agents into legacy corporate environments safely, you must decouple probabilistic intent from code-level execution:</p>
 <ul>
-<li>The Reasoning Engine Proposes: The language model parses unstructured customer emails, PDF documents, and natural language requests, proposing a structured intent payload.</li>
-<li>The Ontology Layer Validates: An executable business ontology checks whether the proposed action complies with corporate rules, temporal bounds, and relational invariants.</li>
-<li>The Execution Worker Commits: If and only if all validation guards pass, an isolated software worker executes the transaction through existing, secure enterprise APIs or database protocols.</li>
+<li><strong>The Reasoning Engine Proposes:</strong> The language model parses unstructured customer emails, PDF documents, and natural language requests, proposing a structured intent payload.</li>
+<li><strong>The Ontology Layer Validates:</strong> An executable business ontology checks whether the proposed action complies with corporate rules, temporal bounds, and relational invariants.</li>
+<li><strong>The Execution Worker Commits:</strong> If and only if all validation guards pass, an isolated software worker executes the transaction through existing, secure enterprise APIs or database protocols.</li>
 </ul>
 <p>Predictability is the prerequisite for enterprise production access. If your architecture cannot guarantee system boundaries, it will never leave the sandbox.</p>
 <h2 id="strategic-resources-and-related-essays">Strategic Resources and Related Essays</h2>
@@ -649,6 +651,8 @@
     <script src="../../assets/js/main.min.js"></script>
     <script src="../../assets/js/pagination.js" defer></script>
     <script src="../../assets/js/relative_dates.js" defer></script>
+    <script src="../../assets/js/mermaid.min.js" defer></script>
+    <script src="../../assets/js/mermaid_init.js" defer></script>
     <script src="../../search/main.js" defer></script>
 
 </body>

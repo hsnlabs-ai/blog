@@ -61,6 +61,7 @@ Establish clear financial approval thresholds where high-value transactions auto
 The agentic transition is not an optional technology experiment. It is a mandatory defense of your corporate balance sheet.
 
 ## Strategic Resources and Related Essays
+
 - <a href="../bpo-replacement-matrix/">The BPO Replacement Matrix: Operational and Financial Metrics</a>
 - <a href="../buy-versus-build-b2b-enterprise-crm/">Buy versus Build: B2B Enterprise CRM, Twenty, and Agentic Stacks</a>
 - <a href="../protocol-arbitrage-claims-underwriting/">Protocol Arbitrage: Autonomous Multimodal Adjudication Across Complex Claims</a>

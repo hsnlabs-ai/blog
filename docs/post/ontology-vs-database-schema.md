@@ -23,6 +23,7 @@ author: Hugo S. Nascimento
 ## Executive Summary
 
 When enterprise software teams attempt to give AI agents access to corporate data, they almost universally default to two patterns:
+
 1. **The Vector Store Approach:** Embed enterprise documents and data records into a vector database, retrieving text chunks via cosine similarity.
 2. **The Text-to-SQL Approach:** Dump the relational database schema (DDL) into the system prompt and let the LLM generate dynamic SQL queries on the fly.
 
@@ -33,20 +34,19 @@ Both patterns fail in production when applied to mission-critical operations.
 
 An **Operational Business Ontology** is the missing architectural tier. It wraps raw relational schemas in strongly typed business objects, compiled invariants, and executable state machines, ensuring that agents query and mutate enterprise data with 100% deterministic precision.
 
-```
-+-------------------------------------------------------------------------+
-|                  STORAGE SCHEMAS vs. OPERATIONAL ONTOLOGY               |
-|                                                                         |
-|  [ The Database Schema (DDL) ]                                          |
-|  Defines: Storage structure, column types, primary/foreign keys         |
-|  Answers: "How is this byte stored on disk?"                            |
-|  Blind to: Operational workflows, business invariants, allowed actions  |
-|                                                                         |
-|  [ The Operational Ontology ]                                           |
-|  Defines: Business entities, lifecycle states, execution contracts     |
-|  Answers: "What does this data mean, and what actions are legal?"       |
-|  Enforces: State machines, capital limits, audit trails, authorization  |
-+-------------------------------------------------------------------------+
+```mermaid
+flowchart TD
+    subgraph DDL[Physical Storage Schema DDL]
+        D1[Storage Structure, Column Types, Primary and Foreign Keys]
+        D2[Scope: How bytes are stored on disk]
+        D3[Blind to: Workflows, Business Invariants, Legal Actions]
+    end
+
+    subgraph ONT[Operational Business Ontology]
+        O1[Business Entities, Lifecycle States, Execution Contracts]
+        O2[Scope: Semantic meaning and legal operations]
+        O3[Enforces: Finite State Machines, Capital Limits, Audit Trails]
+    end
 ```
 
 ---
@@ -59,6 +59,7 @@ In the real world of enterprise IT, pure Text-to-SQL fails for four structural r
 
 ### 1. The Semantic Ambiguity Crisis
 Ask three enterprise executives: *"How many active customers do we have?"*
+
 - The **Head of Sales** considers an active customer anyone who signed a contract in the last twelve months.
 - The **Head of Product** considers an active customer anyone who logged into the SaaS platform in the last thirty days.
 - The **CFO** considers an active customer anyone who generated positive net revenue and has zero overdue invoices.
@@ -130,22 +131,13 @@ When teams realize Text-to-SQL is fragile, they frequently swing to the other ex
 
 Vector databases are exceptional for finding conceptually related text passages across unstructured PDF libraries. They are completely incapable of structured enterprise execution.
 
-```
-+--------------------------------------------------------------------------+
-|                  WHY VECTOR EMBEDDINGS FAIL ON ENTERPRISE DATA           |
-|                                                                          |
-|  Executive Prompt: "Calculate total overdue accounts payable for Tier-1  |
-|                     vendors in Western Europe."                          |
-|                                                                          |
-|  Vector DB Action: Retrieves 10 text chunks mentioning 'overdue',        |
-|                    'Western Europe', and 'Tier-1 vendors'.               |
-|                                                                          |
-|  Catastrophic Flaws:                                                     |
-|  1. Incompleteness: Misses 80% of actual vendor invoices (token limit).  |
-|  2. Mathematical Void: Cannot perform arithmetic summation over chunks.  |
-|  3. Temporal Blindness: Confuses 2024 invoices with 2026 invoices.       |
-|  4. No Foreign Keys: Cannot verify if invoices were already paid in ERP. |
-+--------------------------------------------------------------------------+
+```mermaid
+flowchart TD
+    PRM[Executive Prompt: Calculate total overdue AP for Tier-1 vendors] --> VEC[Vector DB Retrieval<br>Pulls 10 chunks mentioning overdue and Tier-1]
+    VEC --> ERR1[Incompleteness: Misses 80% of invoices due to token limits]
+    VEC --> ERR2[Mathematical Void: Cannot compute exact arithmetic over chunks]
+    VEC --> ERR3[Temporal Blindness: Confuses 2024 invoices with 2026 invoices]
+    VEC --> ERR4[No Foreign Keys: Cannot verify payment status in ERP ledger]
 ```
 
 Vector databases operate on **probabilistic linguistic proximity**. Enterprise operations require **exact relational and mathematical determinism**.
@@ -259,6 +251,7 @@ def execute_issue_credit_memo(request: IssueCreditMemoRequest, agent_id: str):
 ### Why This Protects the Enterprise
 
 When the LLM attempts to generate the action:
+
 1. If the customer is in dispute, Python raises a `PermissionError`.
 2. If the amount is $45,000 against a $50,000 order, Python raises a `ValueError`.
 3. The database connection is never even contacted.
@@ -272,24 +265,12 @@ For enterprise CTOs and Heads of Data, you do not need to rewrite your underlyin
 
 The industry standard architecture in 2026 is the **Ontology Facade Pattern**:
 
-```
-+-------------------------------------------------------------------------+
-|                      THE ONTOLOGY FACADE PATTERN                        |
-|                                                                         |
-|  [ Autonomous AI Agents ]                                               |
-|        ^                                                                |
-|        | (Strict Model Context Protocol / Pydantic Contracts)           |
-|        v                                                                |
-|  [ OPERATIONAL ONTOLOGY FACADE ]                                        |
-|  - Invariant Verification Engine                                        |
-|  - Finite State Machine Orchestrator                                    |
-|  - Unified Object Model across Silos                                    |
-|        |                                                                |
-|        +-------------------+-------------------+                        |
-|        | (Validated SQL)   | (Validated API)   | (CDC Streaming)        |
-|        v                   v                   v                        |
-|  [ Postgres / Oracle ] [ SAP S/4HANA ]    [ Salesforce CRM ]           |
-+-------------------------------------------------------------------------+
+```mermaid
+flowchart TD
+    AGT[Autonomous AI Agents] <-->|Model Context Protocol / Pydantic Contracts| FAC[Operational Ontology Facade<br>Invariant Engine + FSM Orchestrator + Unified Object Model]
+    FAC -->|Validated SQL Queries| DB[Postgres / Oracle Databases]
+    FAC -->|Validated API Calls| ERP[SAP S/4HANA ERP]
+    FAC -->|CDC Event Streaming| CRM[Salesforce CRM]
 ```
 
 1. **Keep your existing databases intact:** Do not touch your core SAP, Postgres, or Oracle tables.
@@ -305,6 +286,7 @@ Data tables are passive storage arrays. Vector stores are probabilistic text ind
 If you connect autonomous AI agents directly to database tables, you will spend your engineering budget firefighting hallucinated SQL joins, data corruption, and catastrophic edge-case failures.
 
 To build autonomous agents that can be trusted with corporate balance sheets:
+
 - Stop treating database schemas as business logic.
 - Stop treating vector similarity as relational truth.
 - Build an **Operational Business Ontology** as the semantic and behavioral gatekeeper of your enterprise.
@@ -314,6 +296,7 @@ To build autonomous agents that can be trusted with corporate balance sheets:
 *At HSN Labs, we build production-grade operational ontologies that wrap enterprise legacy databases and power autonomous agent architectures. To assess your current data architecture and deploy an executable ontology in five days, book our on-site [Agentic Architecture Bootcamp](https://hsnlabs.ai/bootcamp).*
 
 ## Strategic Resources and Related Essays
+
 - <a href="../what-is-an-ontology-for-ai-agents/">What Is an Ontology for AI Agents? The Definitive Guide</a>
 - <a href="../why-rag-breaks-on-erp/">Why I Never Use Normal RAG on Financial ERPs</a>
 - <a href="../palantir-vs-databricks-agent-architecture/">Palantir vs Databricks: Why Data Lakes Fail at Agent Orchestration</a>

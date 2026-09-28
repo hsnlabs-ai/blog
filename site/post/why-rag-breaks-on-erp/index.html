@@ -44,6 +44,8 @@
     <link rel="stylesheet" href="../../assets/css/mkdocstrings.min.css">
     <script src="../../assets/js/pagination.js"></script>
     <script src="../../assets/js/relative_dates.js"></script>
+    <script src="../../assets/js/mermaid.min.js"></script>
+    <script src="../../assets/js/mermaid_init.js"></script>
     <script src="../../search/main.js"></script>
     <link href="../../stylesheets/extra.css" rel="stylesheet">
     <link href="../../assets/css/pagination.css" rel="stylesheet">
@@ -457,9 +459,9 @@
 <h2 id="what-i-build-instead-executable-ontologies">What I Build Instead: Executable Ontologies</h2>
 <p>At HSN Labs, we do not let language models guess relational SQL or search raw embeddings for financial truth. Here is the exact architecture I enforce instead:</p>
 <ul>
-<li>Pre-Compiled Business Ontologies: We map the enterprise schema into an explicit knowledge graph that defines verified relationships, valid join paths, and business rules before any query runs.</li>
-<li>Strictly Typed Query Generation: The agent does not generate open-ended SQL strings. It selects parameterized query templates validated against strict Pydantic schemas. Every parameter is checked before it touches the read replica.</li>
-<li>Hard Invariant Assertions: When the database returns records, code-level assertion layers verify ledger balances, currency alignment, and temporal validity before context reaches the user or downstream worker.</li>
+<li><strong>Pre-Compiled Business Ontologies:</strong> We map the enterprise schema into an explicit knowledge graph that defines verified relationships, valid join paths, and business rules before any query runs.</li>
+<li><strong>Strictly Typed Query Generation:</strong> The agent does not generate open-ended SQL strings. It selects parameterized query templates validated against strict Pydantic schemas. Every parameter is checked before it touches the read replica.</li>
+<li><strong>Hard Invariant Assertions:</strong> When the database returns records, code-level assertion layers verify ledger balances, currency alignment, and temporal validity before context reaches the user or downstream worker.</li>
 </ul>
 <p>If an architecture cannot guarantee mathematical precision on financial records, it does not belong in enterprise production.</p>
 <h2 id="strategic-resources-and-related-essays">Strategic Resources and Related Essays</h2>
@@ -655,6 +657,8 @@
     <script src="../../assets/js/main.min.js"></script>
     <script src="../../assets/js/pagination.js" defer></script>
     <script src="../../assets/js/relative_dates.js" defer></script>
+    <script src="../../assets/js/mermaid.min.js" defer></script>
+    <script src="../../assets/js/mermaid_init.js" defer></script>
     <script src="../../search/main.js" defer></script>
 
 </body>

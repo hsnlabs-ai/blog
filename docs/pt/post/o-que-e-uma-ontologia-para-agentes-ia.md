@@ -25,6 +25,7 @@ A razão e simples: agentes probabilísticos não compreendem o contexto operaci
 Imagine contratar um analista brilhante, mas que nunca teve contato com os sistemas internos da sua companhia. Se você pedir para ele resolver uma ocorrência sem explicar o que significa cada código de status ou quais limites de alçada ele possui, ele tomara decisões equivocadas.
 
 A ontologia funciona como o sistema nervoso digital da empresa. Ela explica ao agente:
+
 - Quem são as entidades do negócio e como se relacionam
 - Quais dados são confiáveis e quais são históricos legados
 - Quais operações podem ser executadas autonomamente e quais exigem autorização humana
@@ -46,6 +47,7 @@ Enquanto o RAG recupera fragmentos de texto desestruturados com base em similari
 Construir ontologias é o investimento definitivo que separa empresas que apenas experimentam com IA daquelas que extraem valor econômico real e sustentável de seus sistemas autônomos.
 
 ## Notas de Campo e Artigos Relacionados
+
 - <a href="/blog/pt/post/cemiterio-de-pocs/">Por Que Agentes Falham: O Cemitério de PoCs</a>
 - <a href="/blog/pt/post/por-que-rag-falha-em-erp/">Por Que RAG Tradicional Falha em ERPs Financeiros</a>
 - <a href="/blog/pt/post/deriva-de-integracao/">A Deriva de Integração: Quando Prompts Quebram Agentes em Produção</a>

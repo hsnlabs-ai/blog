@@ -60,6 +60,7 @@ The legacy database remains the single source of truth. Transactional commits, f
 Do not burn capital rewriting systems that already work. Turn your legacy core into the headless backing engine for autonomous agents.
 
 ## Strategic Resources and Related Essays
+
 - <a href="../how-to-build-an-enterprise-ontology-from-scratch/">How to Build an Enterprise Ontology from Scratch: Step by Step</a>
 - <a href="../perimeter-isolation-mcp-data-contracts/">How We Protect Enterprise Databases from AI Agents</a>
 - <a href="../chatbot-vs-agent/">Chatbot vs Agent: Why Replacing BPOs Requires Production Ontologies</a>

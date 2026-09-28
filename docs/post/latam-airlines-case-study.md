@@ -57,6 +57,7 @@ Stop building free-text wrappers. Use AI as a ruthless parser to turn noise into
 That is how you replace legacy IT. That is how you expand margins. That is how you prove ROI to a CFO.
 
 ## Strategic Resources and Related Essays
+
 - <a href="../manifesto/">Why I Built HSN Labs</a>
 - <a href="../cleveland-clinic-case-study-operational-agents/">Case Study: How Cleveland Clinic Scaled Patient Flow with Operational Agents</a>
 - <a href="../autonomous-negotiations-collections-contracts/">High-Velocity Operations: Autonomous Negotiation, Collections, and Contract Execution</a>

@@ -57,6 +57,7 @@ Adjudication should never be a subjective art. It is the formal application of c
 When enterprises replace slow, error-prone manual review queues with autonomous multimodal agents, they do not just slash operational overhead by eighty percent. They eliminate clerical leakage, recover millions in trapped EBITDA, and provide instantaneous decisions to their customers.
 
 ## Strategic Resources and Related Essays
+
 - <a href="../bpo-replacement-matrix/">The BPO Replacement Matrix: Operational and Financial Metrics</a>
 - <a href="../c-suite-margin-protection-playbook/">The C-Suite Transition Playbook: Protecting Margins in the Agentic Economy</a>
 - <a href="../cost-legacy-it/">The Cost of Unbounded AI in Legacy IT</a>

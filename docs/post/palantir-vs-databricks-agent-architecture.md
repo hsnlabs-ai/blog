@@ -18,6 +18,7 @@ Enterprise engineering teams are making a structural mistake with AI agents.
 They take their existing analytical data platform—usually a lakehouse like Databricks or Snowflake—and attempt to build transactional AI agents directly on top of it.
 
 The architecture seems clean on paper:
+
 1. Store enterprise tables in Delta Lake.
 2. Govern data assets with Unity Catalog.[4]
 3. Point an autonomous agent with a retrieval tool at the lakehouse tables.
@@ -47,6 +48,7 @@ Databricks is an exceptional data intelligence engine.[4] Unity Catalog delivers
 However, Unity Catalog governs *data artifacts*.[4] It does not govern *operational actions*.
 
 When an autonomous agent operates in a real enterprise, it does not just aggregate historical metrics. It mutates operational reality:
+
 - Reallocating acute hospital beds.[3][5]
 - Rerouting international supply chain purchase orders.
 - Adjusting dynamic credit limits on banking ledgers.
@@ -118,6 +120,7 @@ When you decouple analytical storage from operational execution, autonomous agen
 [5] https://www.palantir.com/platforms/foundry/ontology — Palantir Foundry: Operational Ontology Overview
 
 ## Strategic Resources and Related Essays
+
 - <a href="../what-is-an-ontology-for-ai-agents/">What Is an Ontology for AI Agents? The Definitive Guide</a>
 - <a href="../ontology-vs-database-schema/">Ontology vs. Database Schema: Why Relational Tables Break Agents</a>
 - <a href="../llm-as-judge-fallacy/">Why LLM-as-a-Judge Fails in Banking</a>

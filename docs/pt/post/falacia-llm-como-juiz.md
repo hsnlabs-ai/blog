@@ -51,13 +51,14 @@ O que essa media esconde e que em duas de cada cem transações, o modelo efetuo
 
 Na HSN Labs, rejeitamos notas subjetivas de prompts em esteiras corporativas. Avaliamos sistemas autônomos usando os mesmos padrões rigorosos de engenharia aplicados a software crítico financeiro e aeroespacial:
 
-* Asserções Binárias de Invariantes: Escrevemos funções estritas de asserção de código em Python. O JSON de saída atendeu rigorosamente ao schema Pydantic? As partidas dobradas de débito e crédito fecharam em zero exato? A resposta omitiu dados protegidos e números restritos de contas? Esses testes retornam aprovação ou reprovação binária, não uma opinião subjetiva.
-* Conjuntos Dourados e Imutáveis de Teste: Cada incidente de produção e caso de borda e transformado em um cenário de teste automatizado imutável. Antes que qualquer grafo de agentes atualizado toque a homologação, ele precisa passar por centenas de testes históricos de regressão.
-* Telemetria Completa e Capacidade de Repetição: Rastreamos cada fluxo, monitorando cada token, estado intermediário e chamada de ferramenta. Se um agente produz uma transição inesperada, nossos engenheiros conseguem reproduzir o rastro exato de execução com total fidelidade no ambiente local de desenvolvimento.
+* **Asserções Binárias de Invariantes:** Escrevemos funções estritas de asserção de código em Python. O JSON de saída atendeu rigorosamente ao schema Pydantic? As partidas dobradas de débito e crédito fecharam em zero exato? A resposta omitiu dados protegidos e números restritos de contas? Esses testes retornam aprovação ou reprovação binária, não uma opinião subjetiva.
+* **Conjuntos Dourados e Imutáveis de Teste:** Cada incidente de produção e caso de borda e transformado em um cenário de teste automatizado imutável. Antes que qualquer grafo de agentes atualizado toque a homologação, ele precisa passar por centenas de testes históricos de regressão.
+* **Telemetria Completa e Capacidade de Repetição:** Rastreamos cada fluxo, monitorando cada token, estado intermediário e chamada de ferramenta. Se um agente produz uma transição inesperada, nossos engenheiros conseguem reproduzir o rastro exato de execução com total fidelidade no ambiente local de desenvolvimento.
 
 Não avalie agentes de produção com prompts opinativos. Avalie com asserções de código verificáveis e comprovações matemáticas.
 
 ## Recursos Estratégicos e Posts Relacionados
+
 - <a href="/blog/pt/post/o-que-e-uma-ontologia-para-agentes-ia/">O Que É uma Ontologia para Agentes de IA? O Guia Definitivo</a>
 - <a href="/blog/pt/post/deriva-de-integracao/">A Deriva de Integração: Quando Prompts Quebram Agentes em Produção</a>
 - <a href="/blog/pt/post/palantir-vs-databricks-arquitetura-agentes/">Palantir vs Databricks: Por Que Data Lakes Falham na Orquestração de Agentes</a>

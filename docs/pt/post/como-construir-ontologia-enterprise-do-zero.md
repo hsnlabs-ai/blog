@@ -24,6 +24,7 @@ Se os sistemas centrais da sua empresa não possuírem uma representação forma
 
 ### Etapa 1: Delimitação do Domínio e Mapeamento de Entidades
 O primeiro passo não é escrever código, mas identificar as entidades fundamentais do negócio. Em uma operação logística, por exemplo:
+
 - Pedido de Transporte
 - Veículo
 - Motorista
@@ -35,11 +36,13 @@ Para cada entidade, definem-se os atributos essenciais e as fontes verdadeiras d
 
 ### Etapa 2: Mapeamento de Relacionamentos e Invariantes
 Entidades isoladas são apenas tabelas. O valor da ontologia surge na definição dos relacionamentos e das regras que nunca podem ser quebradas pelo software:
+
 - Um veículo só pode ser alocado para uma rota se possuir vistoria técnica válida
 - Uma fatura só pode ser liquidada se o conhecimento de transporte contiver o comprovante de entrega autenticado
 
 ### Etapa 3: Codificação de Ações Permitidas
 Diferente de um simples catálogo de metadados, uma ontologia operacional define quais ações mutáveis podem ser invocadas pelo sistema. Cada ação contem:
+
 - Pre-condições estritas para ser executada
 - Parâmetros obrigatórios de entrada
 - Efeitos colaterais esperados no banco de dados central
@@ -56,6 +59,7 @@ Com a ontologia consolidada, as entidades e ações são expostas para os agente
 Construir uma ontologia corporativa exige rigor analítico e compreensão profunda dos processos de negócio. No entanto, é o único investimento estrutural que transforma protótipos frágeis em software corporativo resiliente.
 
 ## Notas de Campo e Artigos Relacionados
+
 - <a href="/blog/pt/post/a-ontologia-operacional/">A Ontologia Operacional: Como Empresas Conectam LLMs aos Dados Proprietários</a>
 - <a href="/blog/pt/post/como-construir-ontologia-operacional-python-mcp/">Como Construir uma Ontologia Operacional de Negócios em Python e MCP</a>
 - <a href="/blog/pt/post/ontologia-vs-grafo-conhecimento/">Ontologia vs Grafo de Conhecimento: Diferenças Chave e Arquitetura</a>

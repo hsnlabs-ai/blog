@@ -53,13 +53,14 @@ Busca vetorial não possui noção inerente de sequência temporal. A menos que 
 
 Na HSN Labs, não deixamos modelos de linguagem chutar comandos SQL nem buscar embeddings soltos para achar verdades financeiras. Esta é a arquitetura exata que aplicamos:
 
-* Ontologias de Negócio Pré-Compiladas: Mapeamos o schema corporativo em um grafo de conhecimento explícito que define relacionamentos verificados, caminhos válidos de junção e regras de negócio antes de qualquer consulta rodar.
-* Geração de Consultas com Tipagem Rígida: O agente não cria strings livres de SQL. Ele seleciona templates parametrizados e validados contra schemas estritos em Pydantic. Cada parâmetro e auditado antes de tocar a replica de leitura.
-* Camadas de Invariantes em Código: Quando o banco retorna registros, camadas de asserções em nível de software verificam saldos contábeis, alinhamento de moedas e validade temporal antes que o contexto alcance o usuário ou o sistema seguinte.
+* **Ontologias de Negócio Pré-Compiladas:** Mapeamos o schema corporativo em um grafo de conhecimento explícito que define relacionamentos verificados, caminhos válidos de junção e regras de negócio antes de qualquer consulta rodar.
+* **Geração de Consultas com Tipagem Rígida:** O agente não cria strings livres de SQL. Ele seleciona templates parametrizados e validados contra schemas estritos em Pydantic. Cada parâmetro e auditado antes de tocar a replica de leitura.
+* **Camadas de Invariantes em Código:** Quando o banco retorna registros, camadas de asserções em nível de software verificam saldos contábeis, alinhamento de moedas e validade temporal antes que o contexto alcance o usuário ou o sistema seguinte.
 
 Se uma arquitetura não pode garantir precisão matemática em registros financeiros, ela não tem lugar na produção corporativa.
 
 ## Recursos Estratégicos e Posts Relacionados
+
 - <a href="/blog/pt/post/o-que-e-uma-ontologia-para-agentes-ia/">O Que É uma Ontologia para Agentes de IA? O Guia Definitivo</a>
 - <a href="/blog/pt/post/ontologia-vs-schema-banco-dados/">Ontologia vs Schema de Banco de Dados: Por Que Tabelas Relacionais Quebram Agentes</a>
 - <a href="/blog/pt/post/cemiterio-de-pocs/">Por Que Agentes Falham: O Cemitério de PoCs</a>

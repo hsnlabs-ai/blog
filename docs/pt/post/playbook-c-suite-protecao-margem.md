@@ -24,6 +24,7 @@ Historicamente, a resposta da diretoria para ganho de eficiência era a renegoci
 
 ### 1. Auditoria de Custos de Mesa de Atendimento
 O primeiro passo consiste em identificar onde estoques massivos de trabalho manual estão concentrados. Em noventa por cento dos casos auditados pela HSN Labs, os gargalos estão em:
+
 - Conciliação contábil e fiscal entre sistemas divergentes
 - Triagem e validação de pedidos de compras com regras complexas
 - Processamento e liquidação de sinistros em instituições seguradoras
@@ -45,6 +46,7 @@ Nenhuma iniciativa de redução de custos se sustenta se criar passivos regulat�
 A transição para software agêntico não é um projeto experimental de TI. E uma decisão estratégica de alocação de capital que define quais empresas manterão margens saudáveis na próxima década.
 
 ## Recursos Estratégicos e Posts Relacionados
+
 - <a href="/blog/pt/post/matriz-substituicao-bpo/">A Matriz de Substituição de BPO: Métricas Operacionais e Financeiras</a>
 - <a href="/blog/pt/post/comprar-ou-construir-crm-vendas-b2b/">CRM de Vendas B2B: Comprar Salesforce, Adaptar Twenty ou Construir com Agentes</a>
 - <a href="/blog/pt/post/arbitragem-protocolo-sinistros-subscricao/">Arbitragem de Protocolos: Liquidação Multimodal Autônoma de Sinistros</a>

@@ -44,6 +44,8 @@
     <link rel="stylesheet" href="../../assets/css/mkdocstrings.min.css">
     <script src="../../assets/js/pagination.js"></script>
     <script src="../../assets/js/relative_dates.js"></script>
+    <script src="../../assets/js/mermaid.min.js"></script>
+    <script src="../../assets/js/mermaid_init.js"></script>
     <script src="../../search/main.js"></script>
     <link href="../../stylesheets/extra.css" rel="stylesheet">
     <link href="../../assets/css/pagination.css" rel="stylesheet">
@@ -443,10 +445,10 @@
 <h2 id="public-diligence-and-primary-sources">Public Diligence and Primary Sources</h2>
 <p>All pricing and licensing figures cited in this document were verified from public pricing pages and official documentation on September 28, 2026:</p>
 <ul>
-<li>Salesforce Sales Cloud public pricing: verified via <a href="https://www.salesforce.com/sales/pricing/">Salesforce Sales Pricing</a>.</li>
-<li>HubSpot Sales Hub public pricing: verified via <a href="https://www.hubspot.com/pricing/sales">HubSpot Sales Pricing</a>.</li>
-<li>Twenty CRM source repository and documentation: verified via <a href="https://twenty.com">Twenty Open Source CRM</a> and <a href="https://github.com/twentyhq/twenty">twentyhq/twenty on GitHub</a>.</li>
-<li>Protocol specification: verified via Anthropic documentation on <a href="https://modelcontextprotocol.io">Model Context Protocol Documentation</a>.</li>
+<li><strong>Salesforce Sales Cloud public pricing:</strong> verified via <a href="https://www.salesforce.com/sales/pricing/">Salesforce Sales Pricing</a>.</li>
+<li><strong>HubSpot Sales Hub public pricing:</strong> verified via <a href="https://www.hubspot.com/pricing/sales">HubSpot Sales Pricing</a>.</li>
+<li><strong>Twenty CRM source repository and documentation:</strong> verified via <a href="https://twenty.com">Twenty Open Source CRM</a> and <a href="https://github.com/twentyhq/twenty">twentyhq/twenty on GitHub</a>.</li>
+<li><strong>Protocol specification:</strong> verified via Anthropic documentation on <a href="https://modelcontextprotocol.io">Model Context Protocol Documentation</a>.</li>
 </ul>
 <p>Legal compliance notice: referenced figures represent standard public list prices for individual annual commitments disclosed by vendors on the reference date. They do not account for private volume discounts negotiated by corporate procurement departments, custom reseller margins, or subsequent price changes enacted by trademark owners.</p>
 <hr />
@@ -460,7 +462,7 @@
 <li>Manually searching for the existing company record to inspect master attributes.</li>
 <li>Manually creating new contact records for participants, keying in names, titles, departments, email addresses, and direct phone numbers.</li>
 <li>Creating a new deal record or updating an existing opportunity.</li>
-<li>Manually adjusting mandatory pipeline fields: stage, win probability, target closing date, and weighted contract value.</li>
+<li><strong>Manually adjusting mandatory pipeline fields:</strong> stage, win probability, target closing date, and weighted contract value.</li>
 <li>Typing freeform meeting notes summarizing technical pain points and promised action items.</li>
 <li>Switching browser tabs to electronic signature platforms to check contract drafts.</li>
 <li>Returning to the CRM interface to update internal analytics fields mandated by Revenue Operations.</li>
@@ -468,44 +470,46 @@
 <h3 id="the-visual-interface-paradox">The Visual Interface Paradox</h3>
 <p>This dependence on human graphical interfaces creates severe operational pathology:</p>
 <ul>
-<li>Operational Resistance: companies hire enterprise sellers for negotiation acumen, strategic domain grasp, and relationship building. Forcing them to spend hours filling form fields in web portals generates friction, dissatisfaction, and active evasion.</li>
-<li>Degraded Data Fidelity: treating CRM input as administrative chore causes sales reps to enter data hurriedly, incompletely, or days late. Many enter fictitious information solely to satisfy activity tracking dashboards.</li>
-<li>Illusory Pipeline Visibility: executive leadership and board members assume they have granular operational telemetry. In reality, they see delayed, subjective self-assessments influenced by quarterly quota anxiety.</li>
-<li>Administrative Overhead: organizations hire dedicated Revenue Operations analysts whose primary role degrades into auditing missing fields, badgering reps for updates, and deduplicating corrupted contact lists.</li>
+<li><strong>Operational Resistance:</strong> companies hire enterprise sellers for negotiation acumen, strategic domain grasp, and relationship building. Forcing them to spend hours filling form fields in web portals generates friction, dissatisfaction, and active evasion.</li>
+<li><strong>Degraded Data Fidelity:</strong> treating CRM input as administrative chore causes sales reps to enter data hurriedly, incompletely, or days late. Many enter fictitious information solely to satisfy activity tracking dashboards.</li>
+<li><strong>Illusory Pipeline Visibility:</strong> executive leadership and board members assume they have granular operational telemetry. In reality, they see delayed, subjective self-assessments influenced by quarterly quota anxiety.</li>
+<li><strong>Administrative Overhead:</strong> organizations hire dedicated Revenue Operations analysts whose primary role degrades into auditing missing fields, badgering reps for updates, and deduplicating corrupted contact lists.</li>
 </ul>
 <h3 id="the-economics-of-the-dual-bleed">The Economics of the Dual Bleed</h3>
 <p>The Dual Bleed occurs when an enterprise pays twice for the exact same business workflow:</p>
 <ul>
-<li>Bleed 1: Direct recurring software license fees per seat, compounded by mandatory annual commitments, storage overages, and per-resolution AI add-on fees.</li>
-<li>Bleed 2: Salaries, payroll taxes, and overhead paid to high-cost sales professionals who spend between 30 percent and 45 percent of productive hours acting as manual data-entry clerks.</li>
+<li><strong>Bleed 1:</strong> Direct recurring software license fees per seat, compounded by mandatory annual commitments, storage overages, and per-resolution AI add-on fees.</li>
+<li><strong>Bleed 2:</strong> Salaries, payroll taxes, and overhead paid to high-cost sales professionals who spend between 30 percent and 45 percent of productive hours acting as manual data-entry clerks.</li>
 </ul>
-<p>Consider a standard enterprise sales organization with 20 account executives and 2 operational analysts:
-* Direct annual spend on enterprise SaaS tiers: 80,000 USD to 95,000 USD annually.
-* Combined sales compensation: roughly 2.4 million USD annually in base salaries and benefits.
-* Productivity waste from manual data entry: 35 percent of productive hours lost translates to over 800,000 USD in misallocated payroll annually.
-* Combined impact: the company burns nearly 900,000 USD every year to keep an imperfect, delayed visual system barely populated with subjective data.</p>
+<p>Consider a standard enterprise sales organization with 20 account executives and 2 operational analysts:</p>
+<ul>
+<li><strong>Direct annual spend on enterprise SaaS tiers:</strong> 80,000 USD to 95,000 USD annually.</li>
+<li><strong>Combined sales compensation:</strong> roughly 2.4 million USD annually in base salaries and benefits.</li>
+<li><strong>Productivity waste from manual data entry:</strong> 35 percent of productive hours lost translates to over 800,000 USD in misallocated payroll annually.</li>
+<li><strong>Combined impact:</strong> the company burns nearly 900,000 USD every year to keep an imperfect, delayed visual system barely populated with subjective data.</li>
+</ul>
 <hr />
 <h2 id="2-the-buy-option-proprietary-enterprise-suites">2. The Buy Option: Proprietary Enterprise Suites</h2>
 <p>Procuring established market suites remains the default path for corporate leadership seeking to minimize vendor selection risk.</p>
 <h3 id="salesforce-sales-cloud-enterprise-and-unlimited">Salesforce Sales Cloud Enterprise and Unlimited</h3>
 <p>Salesforce is the dominant global enterprise incumbent:</p>
 <ul>
-<li>Pricing Model: annual commitment required, billed on a per-seat monthly basis.</li>
-<li>Enterprise Edition: public list price of 175 USD per user monthly, totaling 2,100 USD annually per seat.</li>
-<li>Unlimited Edition: public list price of 350 USD per user monthly, totaling 4,200 USD annually per seat.</li>
-<li>Agentforce 1 Sales Edition: public list price of 550 USD per user monthly, bundling proprietary agent tools and data cloud consumption credits.</li>
-<li>Professional Services Cost: certified systems integrators charge initial scoping and deployment fees between 50,000 USD and 200,000 USD to configure custom objects, Apex automations, and Flow Builder logic.</li>
-<li>Technical Strengths: proven enterprise identity management, highly granular role-based access control, immense AppExchange partner ecosystem, and rigorous enterprise security certifications.</li>
-<li>Structural Liabilities: multi-year contracts with aggressive renewal terms, slow cycles for altering custom business logic, permanent reliance on certified administrators, and substantial extra fees for expanded data consumption or agentic features.</li>
+<li><strong>Pricing Model:</strong> annual commitment required, billed on a per-seat monthly basis.</li>
+<li><strong>Enterprise Edition:</strong> public list price of 175 USD per user monthly, totaling 2,100 USD annually per seat.</li>
+<li><strong>Unlimited Edition:</strong> public list price of 350 USD per user monthly, totaling 4,200 USD annually per seat.</li>
+<li><strong>Agentforce 1 Sales Edition:</strong> public list price of 550 USD per user monthly, bundling proprietary agent tools and data cloud consumption credits.</li>
+<li><strong>Professional Services Cost:</strong> certified systems integrators charge initial scoping and deployment fees between 50,000 USD and 200,000 USD to configure custom objects, Apex automations, and Flow Builder logic.</li>
+<li><strong>Technical Strengths:</strong> proven enterprise identity management, highly granular role-based access control, immense AppExchange partner ecosystem, and rigorous enterprise security certifications.</li>
+<li><strong>Structural Liabilities:</strong> multi-year contracts with aggressive renewal terms, slow cycles for altering custom business logic, permanent reliance on certified administrators, and substantial extra fees for expanded data consumption or agentic features.</li>
 </ul>
 <h3 id="hubspot-sales-hub-enterprise">HubSpot Sales Hub Enterprise</h3>
 <p>HubSpot targets mid-market and scaling enterprise teams prioritizing speed:</p>
 <ul>
-<li>Pricing Model: annual contract structured around seat minimums.</li>
-<li>Enterprise Edition: base price starting at 150 USD per sales seat monthly, with mandatory entry bundles of 10 seats at 1,500 USD monthly.</li>
-<li>Mandatory Onboarding Fee: one-time professional services charge between 3,500 USD and 6,000 USD upon initial setup.</li>
-<li>Technical Strengths: streamlined user experience accelerating rep onboarding, quick workflow configuration, and native integration with inbound marketing systems.</li>
-<li>Structural Liabilities: architectural constraints when modeling complex multi-tiered corporate hierarchies, exponential price escalation as contact databases scale, and brittle bidirectional synchronization against legacy ERP cores like SAP and Totvs.</li>
+<li><strong>Pricing Model:</strong> annual contract structured around seat minimums.</li>
+<li><strong>Enterprise Edition:</strong> base price starting at 150 USD per sales seat monthly, with mandatory entry bundles of 10 seats at 1,500 USD monthly.</li>
+<li><strong>Mandatory Onboarding Fee:</strong> one-time professional services charge between 3,500 USD and 6,000 USD upon initial setup.</li>
+<li><strong>Technical Strengths:</strong> streamlined user experience accelerating rep onboarding, quick workflow configuration, and native integration with inbound marketing systems.</li>
+<li><strong>Structural Liabilities:</strong> architectural constraints when modeling complex multi-tiered corporate hierarchies, exponential price escalation as contact databases scale, and brittle bidirectional synchronization against legacy ERP cores like SAP and Totvs.</li>
 </ul>
 <h3 id="when-commercial-saas-is-the-rational-choice">When Commercial SaaS Is the Rational Choice</h3>
 <p>The Buy route remains correct under specific operational parameters:</p>
@@ -521,18 +525,18 @@
 <h3 id="twenty-crm-architecture-and-capabilities">Twenty CRM: Architecture and Capabilities</h3>
 <p>Twenty represents the leading modern open source CRM framework:</p>
 <ul>
-<li>Central Repository: open source codebase available at <a href="https://github.com/twentyhq/twenty">twentyhq/twenty</a> with extensive developer community adoption.</li>
-<li>Technology Stack: built on Node.js with TypeScript, NestJS backend framework, React frontend, GraphQL API layer, and PostgreSQL persistence.</li>
-<li>Business Model: completely free open source codebase for self-hosted infrastructure, alongside managed cloud tiers priced at 9 USD per seat monthly for Pro and 19 USD for Organization.</li>
-<li>Extensibility: dynamic custom object creation without manual SQL migrations, paired with a modular developer framework termed Twenty Apps.</li>
-<li>Agent Integration: native Model Context Protocol support in cloud workspaces, enabling external coding agents and assistants to inspect and mutate CRM state.</li>
+<li><strong>Central Repository:</strong> open source codebase available at <a href="https://github.com/twentyhq/twenty">twentyhq/twenty</a> with extensive developer community adoption.</li>
+<li><strong>Technology Stack:</strong> built on Node.js with TypeScript, NestJS backend framework, React frontend, GraphQL API layer, and PostgreSQL persistence.</li>
+<li><strong>Business Model:</strong> completely free open source codebase for self-hosted infrastructure, alongside managed cloud tiers priced at 9 USD per seat monthly for Pro and 19 USD for Organization.</li>
+<li><strong>Extensibility:</strong> dynamic custom object creation without manual SQL migrations, paired with a modular developer framework termed Twenty Apps.</li>
+<li><strong>Agent Integration:</strong> native Model Context Protocol support in cloud workspaces, enabling external coding agents and assistants to inspect and mutate CRM state.</li>
 </ul>
 <h3 id="infrastructure-realities-of-open-source">Infrastructure Realities of Open Source</h3>
 <p>Running open source software in enterprise production requires engineering capital:</p>
 <ul>
-<li>Cloud Hosting Costs: maintaining containerized environments across AWS, Google Cloud, or dedicated instances with managed high-availability PostgreSQL, automated snapshots, and load balancers costs between 800 USD and 2,000 USD monthly.</li>
-<li>Internal Maintenance Overhead: applying security patches, running database migrations, and guaranteeing uptime requires 20 percent to 40 percent of a dedicated fullstack or DevOps engineer.</li>
-<li>The Persistent Interface Dilemma: while Twenty eliminates recurring per-seat software fees, it preserves a full graphical interface centered on human clicks. If account executives still spend hours typing into web forms, the human labor bleed remains unaddressed.</li>
+<li><strong>Cloud Hosting Costs:</strong> maintaining containerized environments across AWS, Google Cloud, or dedicated instances with managed high-availability PostgreSQL, automated snapshots, and load balancers costs between 800 USD and 2,000 USD monthly.</li>
+<li><strong>Internal Maintenance Overhead:</strong> applying security patches, running database migrations, and guaranteeing uptime requires 20 percent to 40 percent of a dedicated fullstack or DevOps engineer.</li>
+<li><strong>The Persistent Interface Dilemma:</strong> while Twenty eliminates recurring per-seat software fees, it preserves a full graphical interface centered on human clicks. If account executives still spend hours typing into web forms, the human labor bleed remains unaddressed.</li>
 </ul>
 <hr />
 <h2 id="4-the-build-option-zero-ui-agentic-stacks">4. The Build Option: Zero-UI Agentic Stacks</h2>
@@ -541,93 +545,75 @@
 <p>The open source ecosystem in 2026 produced distinct frameworks designed specifically for agent operation:</p>
 <h4 id="1-clayton-agent-crm">1. Clayton Agent CRM</h4>
 <ul>
-<li>Documentation and Repository: available at <a href="https://github.com/clayton/agent-crm">clayton/agent-crm on GitHub</a>.</li>
-<li>Core Architectural Thesis: open source CRM built exclusively for autonomous agents, paired with a read-only human dashboard for pipeline inspection.</li>
-<li>Zero Visual Mutations: the dashboard contains zero forms, drag-and-drop controls, or mutation endpoints. Agents execute all pipeline state changes through a JSON command-line interface or typed Model Context Protocol tools.</li>
-<li>Local Storage and Skeptical Review: operates over local SQLite as the source of truth and incorporates an adversarial CRO review engine that flags unsupported revenue assumptions and expired pipeline commitments.</li>
+<li><strong>Documentation and Repository:</strong> available at <a href="https://github.com/clayton/agent-crm">clayton/agent-crm on GitHub</a>.</li>
+<li><strong>Core Architectural Thesis:</strong> open source CRM built exclusively for autonomous agents, paired with a read-only human dashboard for pipeline inspection.</li>
+<li><strong>Zero Visual Mutations:</strong> the dashboard contains zero forms, drag-and-drop controls, or mutation endpoints. Agents execute all pipeline state changes through a JSON command-line interface or typed Model Context Protocol tools.</li>
+<li><strong>Local Storage and Skeptical Review:</strong> operates over local SQLite as the source of truth and incorporates an adversarial CRO review engine that flags unsupported revenue assumptions and expired pipeline commitments.</li>
 </ul>
 <h4 id="2-accordo-framework">2. Accordo Framework</h4>
 <ul>
-<li>Documentation and Repository: available at <a href="https://github.com/khaoss85/agent-crm">khaoss85/agent-crm</a> and official portal <a href="https://accordo.dev">Accordo Dev</a>.</li>
-<li>Core Architectural Thesis: Node.js framework enabling coding agents to scaffold CRM applications as vendored, fully owned source code governed by deterministic workflows and audit logs.</li>
-<li>Strict Execution Boundary: agents never write directly to raw database tables. Every change routes through typed service methods enforcing business policies, author identity, and immutable run traces.</li>
-<li>Protocol Surface: stdio-based Model Context Protocol server exposing project inspection, deal listing, controlled stage transitions, and human approval gates.</li>
+<li><strong>Documentation and Repository:</strong> available at <a href="https://github.com/khaoss85/agent-crm">khaoss85/agent-crm</a> and official portal <a href="https://accordo.dev">Accordo Dev</a>.</li>
+<li><strong>Core Architectural Thesis:</strong> Node.js framework enabling coding agents to scaffold CRM applications as vendored, fully owned source code governed by deterministic workflows and audit logs.</li>
+<li><strong>Strict Execution Boundary:</strong> agents never write directly to raw database tables. Every change routes through typed service methods enforcing business policies, author identity, and immutable run traces.</li>
+<li><strong>Protocol Surface:</strong> stdio-based Model Context Protocol server exposing project inspection, deal listing, controlled stage transitions, and human approval gates.</li>
 </ul>
 <h4 id="3-comp-ai-and-trycrm-convex">3. Comp AI and TryCRM Convex</h4>
 <ul>
-<li>Documentation and Repository: reactive deployment available at <a href="https://github.com/waynesutton/trycrm-convex">waynesutton/trycrm-convex on GitHub</a>.</li>
-<li>Core Architectural Thesis: agentic-first CRM operating over reactive cloud data infrastructure.</li>
-<li>Evidence Ledger: autonomous research agents enrich accounts and contacts by logging verifiable source links, strictly rejecting ungrounded assumptions.</li>
+<li><strong>Documentation and Repository:</strong> reactive deployment available at <a href="https://github.com/waynesutton/trycrm-convex">waynesutton/trycrm-convex on GitHub</a>.</li>
+<li><strong>Core Architectural Thesis:</strong> agentic-first CRM operating over reactive cloud data infrastructure.</li>
+<li><strong>Evidence Ledger:</strong> autonomous research agents enrich accounts and contacts by logging verifiable source links, strictly rejecting ungrounded assumptions.</li>
 </ul>
 <h3 id="reference-architecture-headless-agentic-crm">Reference Architecture: Headless Agentic CRM</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Real-World Sales Interaction Channels
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>Corporate Email + Meeting Audio + Calendar Feeds
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>                         |
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>                         v
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>               Sales Event Gateway
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>         Asynchronous streaming ingestion
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>                         |
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>                         v
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>       Entity Extraction and Data Invariants
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>        Pydantic structured schema validation
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>                         |
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>                         v
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>           Finite State Machine Engine
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>        Deterministic deal stage transitions
-<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>                         |
-<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>                         v
-<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>        MCP Server and Immutable Audit Log
-<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>      Guarded write methods and approval gates
-<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>                         |
-<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>      +------------------+------------------+
-<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>      |                                     |
-<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>      v                                     v
-<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>Local Transactional Store           Corporate Systems
-<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>PostgreSQL or SQLite DB             SAP ERP, Totvs, Signatures
-</code></pre></div>
+<pre class="mermaid"><code>flowchart TD
+    A[Real-World Sales Interaction Channels&lt;br&gt;Corporate Email, Meeting Audio and Calendar Feeds] --&gt; B[Sales Event Gateway&lt;br&gt;Asynchronous streaming ingestion]
+    B --&gt; C[Entity Extraction and Data Invariants&lt;br&gt;Pydantic structured schema validation]
+    C --&gt; D[Finite State Machine Engine&lt;br&gt;Deterministic deal stage transitions]
+    D --&gt; E[MCP Server and Immutable Audit Log&lt;br&gt;Guarded write methods and approval gates]
+    E --&gt; F[Local Transactional Store&lt;br&gt;PostgreSQL or SQLite DB]
+    E --&gt; G[Corporate Systems&lt;br&gt;SAP ERP, Totvs, Signatures]</code></pre>
 <h3 id="protocol-tool-contract-in-json-schema">Protocol Tool Contract in JSON Schema</h3>
 <p>Below is the strict JSON Schema definition utilized by autonomous agents to progress deal stages without human form intervention:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">{</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"advance_deal_stage"</span><span class="p">,</span>
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">  </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Progresses enterprise deal stage upon verification of required documentary evidence"</span><span class="p">,</span>
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">  </span><span class="nt">"parameters"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">    </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"object"</span><span class="p">,</span>
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">    </span><span class="nt">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">      </span><span class="nt">"account_id"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">        </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span>
-<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">        </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unique corporate account identifier within internal systems"</span>
-<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">      </span><span class="p">},</span>
-<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">      </span><span class="nt">"tax_registration_id"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">        </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span>
-<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w">        </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Verified corporate tax identifier validated against government registry"</span>
-<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">      </span><span class="p">},</span>
-<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w">      </span><span class="nt">"target_stage"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="w">        </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span>
-<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="w">        </span><span class="nt">"enum"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="w">          </span><span class="s2">"discovery_completed"</span><span class="p">,</span>
-<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="w">          </span><span class="s2">"proposal_approved"</span><span class="p">,</span>
-<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="w">          </span><span class="s2">"legal_review"</span><span class="p">,</span>
-<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a><span class="w">          </span><span class="s2">"contract_signed"</span>
-<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a><span class="w">        </span><span class="p">]</span>
-<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a><span class="w">      </span><span class="p">},</span>
-<a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a><span class="w">      </span><span class="nt">"annual_contract_value"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a><span class="w">        </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"number"</span><span class="p">,</span>
-<a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a><span class="w">        </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Contract value calculated against active pricing book and verified terms"</span>
-<a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a><span class="w">      </span><span class="p">},</span>
-<a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a><span class="w">      </span><span class="nt">"evidence_document_hash"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-1-29" name="__codelineno-1-29" href="#__codelineno-1-29"></a><span class="w">        </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span>
-<a id="__codelineno-1-30" name="__codelineno-1-30" href="#__codelineno-1-30"></a><span class="w">        </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Cryptographic SHA256 hash of signed agreement or verified meeting minutes"</span>
-<a id="__codelineno-1-31" name="__codelineno-1-31" href="#__codelineno-1-31"></a><span class="w">      </span><span class="p">}</span>
-<a id="__codelineno-1-32" name="__codelineno-1-32" href="#__codelineno-1-32"></a><span class="w">    </span><span class="p">},</span>
-<a id="__codelineno-1-33" name="__codelineno-1-33" href="#__codelineno-1-33"></a><span class="w">    </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<a id="__codelineno-1-34" name="__codelineno-1-34" href="#__codelineno-1-34"></a><span class="w">      </span><span class="s2">"account_id"</span><span class="p">,</span>
-<a id="__codelineno-1-35" name="__codelineno-1-35" href="#__codelineno-1-35"></a><span class="w">      </span><span class="s2">"tax_registration_id"</span><span class="p">,</span>
-<a id="__codelineno-1-36" name="__codelineno-1-36" href="#__codelineno-1-36"></a><span class="w">      </span><span class="s2">"target_stage"</span><span class="p">,</span>
-<a id="__codelineno-1-37" name="__codelineno-1-37" href="#__codelineno-1-37"></a><span class="w">      </span><span class="s2">"annual_contract_value"</span><span class="p">,</span>
-<a id="__codelineno-1-38" name="__codelineno-1-38" href="#__codelineno-1-38"></a><span class="w">      </span><span class="s2">"evidence_document_hash"</span>
-<a id="__codelineno-1-39" name="__codelineno-1-39" href="#__codelineno-1-39"></a><span class="w">    </span><span class="p">]</span>
-<a id="__codelineno-1-40" name="__codelineno-1-40" href="#__codelineno-1-40"></a><span class="w">  </span><span class="p">}</span>
-<a id="__codelineno-1-41" name="__codelineno-1-41" href="#__codelineno-1-41"></a><span class="p">}</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">{</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"advance_deal_stage"</span><span class="p">,</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Progresses enterprise deal stage upon verification of required documentary evidence"</span><span class="p">,</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="nt">"parameters"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"object"</span><span class="p">,</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span><span class="nt">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">      </span><span class="nt">"account_id"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">        </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">        </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unique corporate account identifier within internal systems"</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">      </span><span class="p">},</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">      </span><span class="nt">"tax_registration_id"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">        </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">        </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Verified corporate tax identifier validated against government registry"</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">      </span><span class="p">},</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">      </span><span class="nt">"target_stage"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">        </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span>
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">        </span><span class="nt">"enum"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="w">          </span><span class="s2">"discovery_completed"</span><span class="p">,</span>
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">          </span><span class="s2">"proposal_approved"</span><span class="p">,</span>
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="w">          </span><span class="s2">"legal_review"</span><span class="p">,</span>
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="w">          </span><span class="s2">"contract_signed"</span>
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="w">        </span><span class="p">]</span>
+<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="w">      </span><span class="p">},</span>
+<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="w">      </span><span class="nt">"annual_contract_value"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="w">        </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"number"</span><span class="p">,</span>
+<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="w">        </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Contract value calculated against active pricing book and verified terms"</span>
+<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="w">      </span><span class="p">},</span>
+<a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a><span class="w">      </span><span class="nt">"evidence_document_hash"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a><span class="w">        </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span>
+<a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a><span class="w">        </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Cryptographic SHA256 hash of signed agreement or verified meeting minutes"</span>
+<a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a><span class="w">      </span><span class="p">}</span>
+<a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a><span class="w">    </span><span class="p">},</span>
+<a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a><span class="w">    </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a><span class="w">      </span><span class="s2">"account_id"</span><span class="p">,</span>
+<a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a><span class="w">      </span><span class="s2">"tax_registration_id"</span><span class="p">,</span>
+<a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a><span class="w">      </span><span class="s2">"target_stage"</span><span class="p">,</span>
+<a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a><span class="w">      </span><span class="s2">"annual_contract_value"</span><span class="p">,</span>
+<a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a><span class="w">      </span><span class="s2">"evidence_document_hash"</span>
+<a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a><span class="w">    </span><span class="p">]</span>
+<a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a><span class="p">}</span>
 </code></pre></div>
 <hr />
 <h2 id="5-comparative-24-month-tco-matrix">5. Comparative 24-Month TCO Matrix</h2>
@@ -704,77 +690,77 @@
 <h2 id="7-decision-diagnostic-checklist">7. Decision Diagnostic Checklist</h2>
 <p>Assign the indicated points for each affirmative response regarding your enterprise sales setup:</p>
 <ul>
-<li>Criterion 1: Does the commercial organization employ 15 or more dedicated enterprise account executives?</li>
+<li><strong>Criterion 1:</strong> Does the commercial organization employ 15 or more dedicated enterprise account executives?</li>
 <li>
-<p>Score: 2 points.</p>
+<p><strong>Score:</strong> 2 points.</p>
 </li>
 <li>
-<p>Criterion 2: Does total annual spend on CRM software licenses exceed 50,000 USD?</p>
+<p><strong>Criterion 2:</strong> Does total annual spend on CRM software licenses exceed 50,000 USD?</p>
 </li>
 <li>
-<p>Score: 3 points.</p>
+<p><strong>Score:</strong> 3 points.</p>
 </li>
 <li>
-<p>Criterion 3: Do account executives report losing more than one hour daily updating CRM forms and pipeline stages?</p>
+<p><strong>Criterion 3:</strong> Do account executives report losing more than one hour daily updating CRM forms and pipeline stages?</p>
 </li>
 <li>
-<p>Score: 3 points.</p>
+<p><strong>Score:</strong> 3 points.</p>
 </li>
 <li>
-<p>Criterion 4: Do revenue forecasts regularly miss targets due to outdated or fabricated pipeline records?</p>
+<p><strong>Criterion 4:</strong> Do revenue forecasts regularly miss targets due to outdated or fabricated pipeline records?</p>
 </li>
 <li>
-<p>Score: 2 points.</p>
+<p><strong>Score:</strong> 2 points.</p>
 </li>
 <li>
-<p>Criterion 5: Does your sales model require complex pricing logic and approvals that demand expensive custom code in commercial tools?</p>
+<p><strong>Criterion 5:</strong> Does your sales model require complex pricing logic and approvals that demand expensive custom code in commercial tools?</p>
 </li>
 <li>
-<p>Score: 3 points.</p>
+<p><strong>Score:</strong> 3 points.</p>
 </li>
 <li>
-<p>Criterion 6: Do internal compliance policies mandate that customer transcripts and contracts remain strictly within private cloud perimeters?</p>
+<p><strong>Criterion 6:</strong> Do internal compliance policies mandate that customer transcripts and contracts remain strictly within private cloud perimeters?</p>
 </li>
 <li>
-<p>Score: 2 points.</p>
+<p><strong>Score:</strong> 2 points.</p>
 </li>
 <li>
-<p>Criterion 7: Must the CRM integrate continuously with legacy ERP cores such as SAP, Totvs Protheus, or mainframes?</p>
+<p><strong>Criterion 7:</strong> Must the CRM integrate continuously with legacy ERP cores such as SAP, Totvs Protheus, or mainframes?</p>
 </li>
 <li>
-<p>Score: 3 points.</p>
+<p><strong>Score:</strong> 3 points.</p>
 </li>
 <li>
-<p>Criterion 8: Does your company maintain an internal engineering team or trusted partner capable of managing containerized services?</p>
+<p><strong>Criterion 8:</strong> Does your company maintain an internal engineering team or trusted partner capable of managing containerized services?</p>
 </li>
 <li>
-<p>Score: 2 points.</p>
+<p><strong>Score:</strong> 2 points.</p>
 </li>
 <li>
-<p>Criterion 9: Does executive leadership seek structural OPEX reduction rather than deploying generic chat copilots on top of SaaS seats?</p>
+<p><strong>Criterion 9:</strong> Does executive leadership seek structural OPEX reduction rather than deploying generic chat copilots on top of SaaS seats?</p>
 </li>
 <li>
-<p>Score: 3 points.</p>
+<p><strong>Score:</strong> 3 points.</p>
 </li>
 <li>
-<p>Criterion 10: Does your commercial execution model represent the primary competitive advantage of your enterprise?</p>
+<p><strong>Criterion 10:</strong> Does your commercial execution model represent the primary competitive advantage of your enterprise?</p>
 </li>
-<li>Score: 3 points.</li>
+<li><strong>Score:</strong> 3 points.</li>
 </ul>
 <h3 id="score-interpretation">Score Interpretation</h3>
 <ul>
-<li>0 to 8 points: Choose Buy. The scale does not justify proprietary engineering. Subscribe to standard commercial tiers and focus organizational energy on commercial execution.</li>
-<li>9 to 16 points: Choose Adapt with Twenty CRM. Software license spend is beginning to stress operational margins. Self-hosting Twenty CRM eliminates per-seat fees and secures data ownership.</li>
-<li>17 to 26 points: Build with HSN Labs. Your organization bears the full weight of the Dual Bleed. Spending hundreds of thousands on manual screens drains capital and wastes valuable selling capacity.</li>
+<li><strong>0 to 8 points:</strong> Choose Buy. The scale does not justify proprietary engineering. Subscribe to standard commercial tiers and focus organizational energy on commercial execution.</li>
+<li><strong>9 to 16 points:</strong> Choose Adapt with Twenty CRM. Software license spend is beginning to stress operational margins. Self-hosting Twenty CRM eliminates per-seat fees and secures data ownership.</li>
+<li><strong>17 to 26 points:</strong> Build with HSN Labs. Your organization bears the full weight of the Dual Bleed. Spending hundreds of thousands on manual screens drains capital and wastes valuable selling capacity.</li>
 </ul>
 <hr />
 <h2 id="8-progressive-replacement-strategy">8. Progressive Replacement Strategy</h2>
 <p>Decommissioning legacy enterprise CRM platforms should never be executed via sudden cutover. At HSN Labs, we execute the Progressive Replacement methodology across four controlled phases:</p>
 <ul>
-<li>Phase 1: Passive Listening. Agents connect to communication gateways, mapping accounts and stakeholder graphs in the background without disturbing active sales reps.</li>
-<li>Phase 2: Active Assistance. Agents generate meeting preparation briefs and draft follow-up correspondence, winning rep trust by saving tangible selling time.</li>
-<li>Phase 3: Interface Bypass. Agents assume responsibility for updating deal records directly in the central database, rendering manual login to the legacy CRM optional.</li>
-<li>Phase 4: Financial Decommissioning. Formal cancellation of surplus SaaS user seats, realizing audited cost reductions on the corporate balance sheet.</li>
+<li><strong>Phase 1:</strong> Passive Listening. Agents connect to communication gateways, mapping accounts and stakeholder graphs in the background without disturbing active sales reps.</li>
+<li><strong>Phase 2:</strong> Active Assistance. Agents generate meeting preparation briefs and draft follow-up correspondence, winning rep trust by saving tangible selling time.</li>
+<li><strong>Phase 3:</strong> Interface Bypass. Agents assume responsibility for updating deal records directly in the central database, rendering manual login to the legacy CRM optional.</li>
+<li><strong>Phase 4:</strong> Financial Decommissioning. Formal cancellation of surplus SaaS user seats, realizing audited cost reductions on the corporate balance sheet.</li>
 </ul>
 <hr />
 <h2 id="audited-industry-benchmark">Audited Industry Benchmark</h2>
@@ -973,6 +959,8 @@
     <script src="../../assets/js/main.min.js"></script>
     <script src="../../assets/js/pagination.js" defer></script>
     <script src="../../assets/js/relative_dates.js" defer></script>
+    <script src="../../assets/js/mermaid.min.js" defer></script>
+    <script src="../../assets/js/mermaid_init.js" defer></script>
     <script src="../../search/main.js" defer></script>
 
 </body>

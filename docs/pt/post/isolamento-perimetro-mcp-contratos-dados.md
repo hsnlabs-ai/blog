@@ -55,6 +55,7 @@ Agentes nunca alteram o estado de produção de forma síncrona. Quando um agent
 Segurança não é um detalhe adicional em engenharia agêntica. O isolamento de perímetro é o preço inegociável de entrada para a produção corporativa.
 
 ## Recursos Estratégicos e Posts Relacionados
+
 - <a href="/blog/pt/post/como-construir-ontologia-enterprise-do-zero/">Como Construir uma Ontologia Enterprise do Zero: Passo a Passo</a>
 - <a href="/blog/pt/post/como-construir-ontologia-operacional-python-mcp/">Como Construir uma Ontologia Operacional de Negócios em Python e MCP</a>
 - <a href="/blog/pt/post/sistemas-legados-motor-execucao/">Sistemas Transacionais Legados Não Vão Morrer: Eles São o Motor</a>

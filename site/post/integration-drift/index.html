@@ -44,6 +44,8 @@
     <link rel="stylesheet" href="../../assets/css/mkdocstrings.min.css">
     <script src="../../assets/js/pagination.js"></script>
     <script src="../../assets/js/relative_dates.js"></script>
+    <script src="../../assets/js/mermaid.min.js"></script>
+    <script src="../../assets/js/mermaid_init.js"></script>
     <script src="../../search/main.js"></script>
     <link href="../../stylesheets/extra.css" rel="stylesheet">
     <link href="../../assets/css/pagination.css" rel="stylesheet">
@@ -442,19 +444,21 @@
 <p>The root cause was integration drift. The upstream cloud model provider had deployed an unannounced minor checkpoint update to their model weights.</p>
 <h2 id="how-prompts-silently-corrupt-enterprise-pipelines">How Prompts Silently Corrupt Enterprise Pipelines</h2>
 <p>During development, an engineer writes a prompt asking the model to return a structured JSON object. The model complies, outputting valid fields during staging tests.</p>
-<p>Two weeks later, the exact same prompt produces subtle structural mutations:
-* An integer field like customer_id suddenly returns as a string with leading zeros.
-* A mandatory foreign key is omitted because the model summarized an ambiguous invoice note.
-* An uppercase enum value like STATUS_APPROVED is substituted with a near synonym like STATUS_CONFIRMED.
-* Nested arrays flatten into comma-separated strings.</p>
+<p>Two weeks later, the exact same prompt produces subtle structural mutations:</p>
+<ul>
+<li>An integer field like customer_id suddenly returns as a string with leading zeros.</li>
+<li>A mandatory foreign key is omitted because the model summarized an ambiguous invoice note.</li>
+<li>An uppercase enum value like STATUS_APPROVED is substituted with a near synonym like STATUS_CONFIRMED.</li>
+<li>Nested arrays flatten into comma-separated strings.</li>
+</ul>
 <p>To a human reader inspecting the output in a chat window, these differences seem trivial. </p>
 <p>To a downstream PostgreSQL database, a FastAPI endpoint, or an enterprise service bus, they are fatal parsing exceptions. Batch jobs abort, database locks stall, and human engineers are forced to pull late-night shifts to clean up corrupted records.</p>
 <h2 id="eliminating-integration-drift-at-the-architecture-layer">Eliminating Integration Drift at the Architecture Layer</h2>
 <p>At HSN Labs, we treat natural language prompts as completely untrusted input. We eliminate integration drift by removing schema responsibility from the model:</p>
 <ul>
-<li>Strict Pydantic Schema Parsing: Every model output is intercepted by a strict schema validator before it can touch enterprise infrastructure. If a field type drifts by a single character, the payload is caught and sanitized at the perimeter.</li>
-<li>Semantic Routing with Parameterized Executors: We never let models generate open-ended code or direct API query strings. The model is restricted to intent classification and parameter extraction. Isolated software workers construct the actual API payloads using pre-compiled templates.</li>
-<li>Finite State Transition Guards: Multi-step agent operations are bounded by finite state machines. If an upstream model update causes an agent to suggest an illegal state transition, the state machine guard rejects the transition before any database write executes.</li>
+<li><strong>Strict Pydantic Schema Parsing:</strong> Every model output is intercepted by a strict schema validator before it can touch enterprise infrastructure. If a field type drifts by a single character, the payload is caught and sanitized at the perimeter.</li>
+<li><strong>Semantic Routing with Parameterized Executors:</strong> We never let models generate open-ended code or direct API query strings. The model is restricted to intent classification and parameter extraction. Isolated software workers construct the actual API payloads using pre-compiled templates.</li>
+<li><strong>Finite State Transition Guards:</strong> Multi-step agent operations are bounded by finite state machines. If an upstream model update causes an agent to suggest an illegal state transition, the state machine guard rejects the transition before any database write executes.</li>
 </ul>
 <p>Engineering production stability means designing systems where upstream model drift cannot corrupt your core corporate infrastructure.</p>
 <h2 id="strategic-resources-and-related-essays">Strategic Resources and Related Essays</h2>
@@ -650,6 +654,8 @@
     <script src="../../assets/js/main.min.js"></script>
     <script src="../../assets/js/pagination.js" defer></script>
     <script src="../../assets/js/relative_dates.js" defer></script>
+    <script src="../../assets/js/mermaid.min.js" defer></script>
+    <script src="../../assets/js/mermaid_init.js" defer></script>
     <script src="../../search/main.js" defer></script>
 
 </body>

@@ -53,13 +53,14 @@ Se um sistema autônomo não puder provar isolamento de perímetro, separação 
 
 Na HSN Labs, não construímos apresentações de slides para conselhos nem demos frágeis de sandbox. Quando nossos engenheiros entram em um cliente corporativo, aplicamos três regras inegociáveis:
 
-* Ancorar Cada Passo em Ontologias Explícitas: Modelos nunca consultam bancos relacionais diretamente. Eles interagem com grafos de domínio pré-compilados que impõem invariantes de esquema antes de qualquer execução.
-* Delimitar a Execução com Máquinas de Estados Finitos: Cada fluxo de trabalho agêntico precisa operar dentro de transições de estado matematicamente comprováveis. O modelo pode sugerir o caminho, mas travas de software em nível de código impõem os limites.
-* Executar Testes de Regressão em Nível de Código: Testamos agentes contra dados reais de transações anteriores, medindo conformidade e precisão com tolerância zero a alucinações.
+* **Ancorar Cada Passo em Ontologias Explícitas:** Modelos nunca consultam bancos relacionais diretamente. Eles interagem com grafos de domínio pré-compilados que impõem invariantes de esquema antes de qualquer execução.
+* **Delimitar a Execução com Máquinas de Estados Finitos:** Cada fluxo de trabalho agêntico precisa operar dentro de transições de estado matematicamente comprováveis. O modelo pode sugerir o caminho, mas travas de software em nível de código impõem os limites.
+* **Executar Testes de Regressão em Nível de Código:** Testamos agentes contra dados reais de transações anteriores, medindo conformidade e precisão com tolerância zero a alucinações.
 
 O valor corporativo não é medido por chatbots conversadores. Ele é medido por software em produção que escreve em bancos de dados centrais sem quebrar a operação da empresa.
 
 ## Recursos Estratégicos e Posts Relacionados
+
 - <a href="/blog/pt/post/o-que-e-uma-ontologia-para-agentes-ia/">O Que É uma Ontologia para Agentes de IA? O Guia Definitivo</a>
 - <a href="/blog/pt/post/por-que-rag-falha-em-erp/">Por Que RAG Tradicional Falha em ERPs Financeiros</a>
 - <a href="/blog/pt/post/deriva-de-integracao/">A Deriva de Integração: Quando Prompts Quebram Agentes em Produção</a>

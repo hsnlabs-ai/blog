@@ -26,10 +26,10 @@ author: Hugo S. Nascimento
 
 As informações financeiras e de licenciamento apresentadas neste documento foram consultadas publicamente em 28 de setembro de 2026 a partir das seguintes fontes oficiais:
 
-* Tabela de preços pública do Salesforce Sales Cloud: disponível no portal comercial <a href="https://www.salesforce.com/sales/pricing/">Salesforce Sales Pricing</a>.
-* Tabela de preços pública do HubSpot Sales Hub: disponível no portal comercial <a href="https://www.hubspot.com/pricing/sales">HubSpot Sales Pricing</a>.
-* Repositório de código e documentação do Twenty CRM: disponível em <a href="https://twenty.com">Twenty Open Source CRM</a> e <a href="https://github.com/twentyhq/twenty">twentyhq/twenty no GitHub</a>.
-* Especificação técnica do protocolo aberto: disponível na documentação da Anthropic em <a href="https://modelcontextprotocol.io">Model Context Protocol Documentation</a>.
+* **Tabela de preços pública do Salesforce Sales Cloud:** disponível no portal comercial <a href="https://www.salesforce.com/sales/pricing/">Salesforce Sales Pricing</a>.
+* **Tabela de preços pública do HubSpot Sales Hub:** disponível no portal comercial <a href="https://www.hubspot.com/pricing/sales">HubSpot Sales Pricing</a>.
+* **Repositório de código e documentação do Twenty CRM:** disponível em <a href="https://twenty.com">Twenty Open Source CRM</a> e <a href="https://github.com/twentyhq/twenty">twentyhq/twenty no GitHub</a>.
+* **Especificação técnica do protocolo aberto:** disponível na documentação da Anthropic em <a href="https://modelcontextprotocol.io">Model Context Protocol Documentation</a>.
 
 Ressalva jurídica de conformidade: os valores citados refletem preços de tabela pública para contratações anuais individuais divulgados pelos respectivos fornecedores na data de referência. Não contemplam descontos corporativos por volume acordados em contratos privados, condições personalizadas de parceiros revendedores ou alterações posteriores de preços praticadas pelas empresas proprietárias das marcas.
 
@@ -47,7 +47,7 @@ Considere a jornada típica de um vendedor corporativo sênior após conduzir um
 3. Busca manual pelo registro da empresa cliente para verificar dados cadastrais.
 4. Criação manual de novos registros de contatos para decisores identificados na chamada, preenchendo campos de nome, cargo, departamento, endereço de email corporativo e canal de contato direto.
 5. Criação de um novo registro de oportunidade ou atualização do registro existente.
-6. Ajuste manual de campos obrigatórios: estágio de funil, probabilidade percentual de fechamento, data estimada de assinatura e valor total estimado do contrato.
+6. **Ajuste manual de campos obrigatórios:** estágio de funil, probabilidade percentual de fechamento, data estimada de assinatura e valor total estimado do contrato.
 7. Digitação de notas de texto livre resumindo as dores de negócio levantadas e os próximos passos prometidos.
 8. Alternância para o software de assinatura eletrônica para conferir o envio da minuta contratual ou proposta comercial.
 9. Retorno à tela do CRM para atualizar campos analíticos de auditoria interna exigidos pela equipe de Revenue Operations.
@@ -55,22 +55,23 @@ Considere a jornada típica de um vendedor corporativo sênior após conduzir um
 ### O Paradoxo da Interface Visual
 Essa dependência de telas visuais gera uma dinâmica perversa dentro das organizações:
 
-* Rejeição Operacional: executivos de vendas são contratados por sua capacidade de relacionamento, negociação estratégica e compreensão de problemas complexos. Obrigá-los a despender horas preenchendo dezenas de campos em formulários web gera atrito, desengajamento e resistência ativa.
-* Degradação da Qualidade da Base: por encararem o CRM como uma obrigação burocrática que drena tempo de prospecção, os vendedores registram informações de forma corrida, incompleta ou com dias de atraso. Muitos preenchem dados artificiais unicamente para cumprir indicadores de atividade monitorados pela diretoria.
-* Perda de Previsibilidade Real: a diretoria executiva e o conselho de administração acreditam dispor de visibilidade total sobre o pipeline de vendas. Na realidade, enxergam apenas informações parciais e enviesadas, sujeitas à interpretação subjetiva e ao humor do vendedor no momento em que atualizou o sistema.
-* Custo Oculto de Higienização: as corporações acabam contratando analistas dedicados de operações de vendas cujo papel quase exclusivo consiste em auditar bases, cobrar atualizações atrasadas e limpar cadastros duplicados.
+* **Rejeição Operacional:** executivos de vendas são contratados por sua capacidade de relacionamento, negociação estratégica e compreensão de problemas complexos. Obrigá-los a despender horas preenchendo dezenas de campos em formulários web gera atrito, desengajamento e resistência ativa.
+* **Degradação da Qualidade da Base:** por encararem o CRM como uma obrigação burocrática que drena tempo de prospecção, os vendedores registram informações de forma corrida, incompleta ou com dias de atraso. Muitos preenchem dados artificiais unicamente para cumprir indicadores de atividade monitorados pela diretoria.
+* **Perda de Previsibilidade Real:** a diretoria executiva e o conselho de administração acreditam dispor de visibilidade total sobre o pipeline de vendas. Na realidade, enxergam apenas informações parciais e enviesadas, sujeitas à interpretação subjetiva e ao humor do vendedor no momento em que atualizou o sistema.
+* **Custo Oculto de Higienização:** as corporações acabam contratando analistas dedicados de operações de vendas cujo papel quase exclusivo consiste em auditar bases, cobrar atualizações atrasadas e limpar cadastros duplicados.
 
 ### A Matemática da Sangria Dupla: O Dual Bleed
 O conceito do Dual Bleed descreve a situação em que a empresa paga duas vezes pelo mesmo processo de negócio:
 
-* Primeira Sangria: despesa financeira direta com licenças recorrentes de software SaaS por usuário, aliada a taxas adicionais por módulos avançados e add-ons de inteligência artificial cobrados por conversa ou consumo.
-* Segunda Sangria: folha de pagamento, encargos sociais e custos operacionais de profissionais comerciais qualificados que despendem entre 30 por cento e 45 por cento de suas horas de trabalho atuando como digitadores manuais de dados em telas.
+* **Primeira Sangria:** despesa financeira direta com licenças recorrentes de software SaaS por usuário, aliada a taxas adicionais por módulos avançados e add-ons de inteligência artificial cobrados por conversa ou consumo.
+* **Segunda Sangria:** folha de pagamento, encargos sociais e custos operacionais de profissionais comerciais qualificados que despendem entre 30 por cento e 45 por cento de suas horas de trabalho atuando como digitadores manuais de dados em telas.
 
 Considere uma operação B2B típica composta por 20 vendedores corporativos e 2 analistas de operações:
-* Gasto direto anual em licenças SaaS avançadas: cerca de 80.000 USD a 95.000 USD, representando aproximadamente 450.000 BRL anuais em taxas correntes.
-* Folha salarial média da equipe comercial: 350.000 BRL mensais somando salários e encargos trabalhistas brasileiros.
-* Desperdício operacional por digitação manual: 35 por cento do tempo produtivo consumido por preenchimento de telas representa mais de 120.000 BRL mensais em capacidade humana desperdiçada, totalizando 1.440.000 BRL anuais jogados fora em tarefas mecânicas.
-* Impacto combinado: a empresa despende quase 1.900.000 BRL por ano para manter um sistema visual alimentado com dados imperfeitos e defasados.
+
+* **Gasto direto anual em licenças SaaS avançadas:** cerca de 80.000 USD a 95.000 USD, representando aproximadamente 450.000 BRL anuais em taxas correntes.
+* **Folha salarial média da equipe comercial:** 350.000 BRL mensais somando salários e encargos trabalhistas brasileiros.
+* **Desperdício operacional por digitação manual:** 35 por cento do tempo produtivo consumido por preenchimento de telas representa mais de 120.000 BRL mensais em capacidade humana desperdiçada, totalizando 1.440.000 BRL anuais jogados fora em tarefas mecânicas.
+* **Impacto combinado:** a empresa despende quase 1.900.000 BRL por ano para manter um sistema visual alimentado com dados imperfeitos e defasados.
 
 ---
 
@@ -81,22 +82,22 @@ Contratar grandes suítes de mercado é a opção tradicional adotada por direto
 ### Salesforce Sales Cloud Enterprise e Unlimited
 A Salesforce é a líder consolidada do segmento enterprise global:
 
-* Modelo de Precificação: contratação com compromisso de faturamento anual por assento de usuário.
-* Edição Enterprise: tabela pública em 175 USD mensais por usuário, equivalente a 2.100 USD anuais por vendedor.
-* Edição Unlimited: tabela pública em 350 USD mensais por usuário, equivalente a 4.200 USD anuais por vendedor.
-* Edição Agentforce 1 Sales: tabela pública em 550 USD mensais por usuário, trazendo módulos integrados de agentes e créditos de consumo de dados corporativos.
-* Custos de Implantação e Parametrização: consultorias parceiras homologadas cobram investimentos iniciais entre 50.000 USD e 200.000 USD para desenhar schemas customizados, fluxos no Flow Builder e integrações via Apex.
-* Vantagens Técnicas: maturidade comprovada em gestão de identidades, controle de acesso baseado em papéis extremamente granular, ecossistema imenso de extensões homologadas no AppExchange e certificações de segurança corporativa global.
-* Fragilidades Estruturais: contratos plurianuais com cláusulas rígidas de saída, extrema lentidão para alteração de regras de negócio customizadas, dependência crônica de administradores certificados dedicados e custos adicionais significativos a cada expansão de volume de dados ou recursos de IA.
+* **Modelo de Precificação:** contratação com compromisso de faturamento anual por assento de usuário.
+* **Edição Enterprise:** tabela pública em 175 USD mensais por usuário, equivalente a 2.100 USD anuais por vendedor.
+* **Edição Unlimited:** tabela pública em 350 USD mensais por usuário, equivalente a 4.200 USD anuais por vendedor.
+* **Edição Agentforce 1 Sales:** tabela pública em 550 USD mensais por usuário, trazendo módulos integrados de agentes e créditos de consumo de dados corporativos.
+* **Custos de Implantação e Parametrização:** consultorias parceiras homologadas cobram investimentos iniciais entre 50.000 USD e 200.000 USD para desenhar schemas customizados, fluxos no Flow Builder e integrações via Apex.
+* **Vantagens Técnicas:** maturidade comprovada em gestão de identidades, controle de acesso baseado em papéis extremamente granular, ecossistema imenso de extensões homologadas no AppExchange e certificações de segurança corporativa global.
+* **Fragilidades Estruturais:** contratos plurianuais com cláusulas rígidas de saída, extrema lentidão para alteração de regras de negócio customizadas, dependência crônica de administradores certificados dedicados e custos adicionais significativos a cada expansão de volume de dados ou recursos de IA.
 
 ### HubSpot Sales Hub Enterprise
 A HubSpot posiciona-se como alternativa mais ágil e amigável às equipes de operações:
 
-* Modelo de Precificação: faturamento anual estruturado em pacotes básicos de assentos.
-* Edição Enterprise: valor base a partir de 150 USD mensais por usuário vendedor, com pacote inicial obrigatório de 10 assentos a 1.500 USD mensais.
-* Taxa Obrigatória de Integração: investimento único de serviços profissionais entre 3.500 USD e 6.000 USD no momento da contratação inicial.
-* Vantagens Técnicas: usabilidade superior que facilita a adoção inicial por vendedores, configuração rápida de fluxos e integração nativa com ferramentas de marketing digital inbound.
-* Fragilidades Estruturais: limitações de modelagem quando a empresa exige relacionamentos de dados multidimensionais complexos, custos que disparam exponencialmente com o crescimento do banco de contatos e dificuldades de sincronização bidirecional em tempo real com sistemas ERP legados como SAP e Totvs Protheus.
+* **Modelo de Precificação:** faturamento anual estruturado em pacotes básicos de assentos.
+* **Edição Enterprise:** valor base a partir de 150 USD mensais por usuário vendedor, com pacote inicial obrigatório de 10 assentos a 1.500 USD mensais.
+* **Taxa Obrigatória de Integração:** investimento único de serviços profissionais entre 3.500 USD e 6.000 USD no momento da contratação inicial.
+* **Vantagens Técnicas:** usabilidade superior que facilita a adoção inicial por vendedores, configuração rápida de fluxos e integração nativa com ferramentas de marketing digital inbound.
+* **Fragilidades Estruturais:** limitações de modelagem quando a empresa exige relacionamentos de dados multidimensionais complexos, custos que disparam exponencialmente com o crescimento do banco de contatos e dificuldades de sincronização bidirecional em tempo real com sistemas ERP legados como SAP e Totvs Protheus.
 
 ### Quando Contratar SaaS Comercial Faz Sentido
 A opção Buy é a escolha racional nas seguintes condições:
@@ -115,18 +116,18 @@ A adaptação de plataformas de código aberto permite que empresas assumam o co
 ### Twenty CRM: Arquitetura e Capacidades
 O projeto Twenty destaca-se como a principal solução moderna de CRM open source disponível no mercado:
 
-* Repositório Central: código fonte sob licença aberta disponível em <a href="https://github.com/twentyhq/twenty">twentyhq/twenty</a> com dezenas de milhares de estrelas no GitHub.
-* Stack Tecnológica: construída em Node.js com TypeScript, framework NestJS no backend, interface moderna em React, camada de comunicação via GraphQL e persistência em PostgreSQL.
-* Modelo de Negócio: código aberto totalmente gratuito para hospedagem própria em servidores dedicados, complementado por versão gerenciada em nuvem com planos Pro a 9 USD por usuário ao mês e Organization a 19 USD por usuário ao mês.
-* Extensibilidade: capacidade de criação de objetos customizados dinamicamente sem necessidade de alterar o esquema central do banco de dados manualmente, associada a um framework modular para desenvolvedores denominado Twenty Apps.
-* Integração com IA: suporte nativo à conexão via Model Context Protocol em espaços de trabalho, permitindo que ferramentas externas de assistentes consultem e alterem dados do CRM.
+* **Repositório Central:** código fonte sob licença aberta disponível em <a href="https://github.com/twentyhq/twenty">twentyhq/twenty</a> com dezenas de milhares de estrelas no GitHub.
+* **Stack Tecnológica:** construída em Node.js com TypeScript, framework NestJS no backend, interface moderna em React, camada de comunicação via GraphQL e persistência em PostgreSQL.
+* **Modelo de Negócio:** código aberto totalmente gratuito para hospedagem própria em servidores dedicados, complementado por versão gerenciada em nuvem com planos Pro a 9 USD por usuário ao mês e Organization a 19 USD por usuário ao mês.
+* **Extensibilidade:** capacidade de criação de objetos customizados dinamicamente sem necessidade de alterar o esquema central do banco de dados manualmente, associada a um framework modular para desenvolvedores denominado Twenty Apps.
+* **Integração com IA:** suporte nativo à conexão via Model Context Protocol em espaços de trabalho, permitindo que ferramentas externas de assistentes consultem e alterem dados do CRM.
 
 ### A Realidade dos Custos de Sustentação em Código Aberto
 Adotar software de código aberto não significa custo financeiro zero:
 
-* Gastos de Infraestrutura em Nuvem: manutenção de ambientes conteinerizados em provedores como AWS, Google Cloud ou servidores dedicados com banco de dados gerenciado em alta disponibilidade, rotinas automáticas de snapshot e balanceadores de carga consome entre 800 USD e 2.000 USD mensais.
-* Horas de Engenharia Interna: sustentação de instâncias em produção, aplicação de correções de segurança, execução de migrações de banco de dados e garantia de disponibilidade exigem a alocação de pelo menos 20 por cento a 40 por cento do tempo de um desenvolvedor pleno ou engenheiro de DevOps.
-* O Dilema da Interface Persistente: embora o Twenty CRM elimine a sangria de licenças por usuário, ele mantém uma interface gráfica completa focada no clique humano. Se os executivos de vendas continuarem sendo forçados a alimentar o painel manualmente, a sangria das horas de trabalho desperdiçadas permanecerá inalterada.
+* **Gastos de Infraestrutura em Nuvem:** manutenção de ambientes conteinerizados em provedores como AWS, Google Cloud ou servidores dedicados com banco de dados gerenciado em alta disponibilidade, rotinas automáticas de snapshot e balanceadores de carga consome entre 800 USD e 2.000 USD mensais.
+* **Horas de Engenharia Interna:** sustentação de instâncias em produção, aplicação de correções de segurança, execução de migrações de banco de dados e garantia de disponibilidade exigem a alocação de pelo menos 20 por cento a 40 por cento do tempo de um desenvolvedor pleno ou engenheiro de DevOps.
+* **O Dilema da Interface Persistente:** embora o Twenty CRM elimine a sangria de licenças por usuário, ele mantém uma interface gráfica completa focada no clique humano. Se os executivos de vendas continuarem sendo forçados a alimentar o painel manualmente, a sangria das horas de trabalho desperdiçadas permanecerá inalterada.
 
 ---
 
@@ -139,49 +140,35 @@ Construir uma solução agêntica própria não significa programar um clone vis
 O ecossistema de software de código aberto em 2026 viu o nascimento de projetos estruturados especificamente para operação por agentes:
 
 #### 1. Clayton Agent CRM
-* Documentação e Repositório: disponível publicamente em <a href="https://github.com/clayton/agent-crm">clayton/agent-crm no GitHub</a>.
-* Tese Central: projeto de CRM open source desenhado exclusivamente para agentes, acompanhado de painel visual estritamente de leitura para humanos inspecionarem o estado das contas.
-* Operação sem Escrita Visual: o painel administrativo não possui formulários, endpoints de mutação HTTP ou controles de arrastar e soltar. Todas as alterações de dados ocorrem por meio de linha de comando estruturada em JSON ou ferramentas tipadas via Model Context Protocol.
-* Base Local e Auditoria: adota SQLite local como fonte de verdade dos registros e implementa um motor de revisão crítica de vendas que desafia previsões infundadas, apontando riscos de pipeline com base em evidências reais.
+
+* **Documentação e Repositório:** disponível publicamente em <a href="https://github.com/clayton/agent-crm">clayton/agent-crm no GitHub</a>.
+* **Tese Central:** projeto de CRM open source desenhado exclusivamente para agentes, acompanhado de painel visual estritamente de leitura para humanos inspecionarem o estado das contas.
+* **Operação sem Escrita Visual:** o painel administrativo não possui formulários, endpoints de mutação HTTP ou controles de arrastar e soltar. Todas as alterações de dados ocorrem por meio de linha de comando estruturada em JSON ou ferramentas tipadas via Model Context Protocol.
+* **Base Local e Auditoria:** adota SQLite local como fonte de verdade dos registros e implementa um motor de revisão crítica de vendas que desafia previsões infundadas, apontando riscos de pipeline com base em evidências reais.
 
 #### 2. Accordo Framework
-* Documentação e Repositório: disponível em <a href="https://github.com/khaoss85/agent-crm">khaoss85/agent-crm</a> e portal oficial <a href="https://accordo.dev">Accordo Dev</a>.
-* Tese Central: framework em Node.js que permite a agentes de código gerarem uma aplicação de CRM como código próprio da empresa, incorporando fluxos de trabalho determinísticos e trilha de auditoria rastreável.
-* Política Estrita de Segurança: o agente nunca escreve diretamente em tabelas brutas de banco de dados. Toda mutação ocorre por meio de chamadas a métodos de serviço que executam validações invariantes, preservam a identidade do autor e registram logs imutáveis.
-* Conectividade com Protocolos: servidor nativo de Model Context Protocol executado via entrada e saída padrão de terminal, expondo ferramentas de consulta de projetos, transição controlada de estágios e requisições de aprovação humana.
+
+* **Documentação e Repositório:** disponível em <a href="https://github.com/khaoss85/agent-crm">khaoss85/agent-crm</a> e portal oficial <a href="https://accordo.dev">Accordo Dev</a>.
+* **Tese Central:** framework em Node.js que permite a agentes de código gerarem uma aplicação de CRM como código próprio da empresa, incorporando fluxos de trabalho determinísticos e trilha de auditoria rastreável.
+* **Política Estrita de Segurança:** o agente nunca escreve diretamente em tabelas brutas de banco de dados. Toda mutação ocorre por meio de chamadas a métodos de serviço que executam validações invariantes, preservam a identidade do autor e registram logs imutáveis.
+* **Conectividade com Protocolos:** servidor nativo de Model Context Protocol executado via entrada e saída padrão de terminal, expondo ferramentas de consulta de projetos, transição controlada de estágios e requisições de aprovação humana.
 
 #### 3. Comp AI e TryCRM Convex
-* Documentação e Repositório: versão reativa disponível em <a href="https://github.com/waynesutton/trycrm-convex">waynesutton/trycrm-convex no GitHub</a>.
-* Tese Central: CRM de código aberto desenhado para operação por agentes de pesquisa autônoma executado sobre infraestrutura em nuvem integrada.
-* Livro-Razão de Evidências: agentes de enriquecimento investigam empresas e contatos, registrando fatos acompanhados de suas fontes originais e rejeitando dados deduzidos por mera suposição probabilística.
+
+* **Documentação e Repositório:** versão reativa disponível em <a href="https://github.com/waynesutton/trycrm-convex">waynesutton/trycrm-convex no GitHub</a>.
+* **Tese Central:** CRM de código aberto desenhado para operação por agentes de pesquisa autônoma executado sobre infraestrutura em nuvem integrada.
+* **Livro-Razão de Evidências:** agentes de enriquecimento investigam empresas e contatos, registrando fatos acompanhados de suas fontes originais e rejeitando dados deduzidos por mera suposição probabilística.
 
 ### Arquitetura de Referência sem Telas da HSN Labs
 
-```
-Canais Reais de Interação Comercial
-Emails Corporativos + Gravações de Chamadas + Calendário
-                         |
-                         v
-              Gateway de Eventos de Venda
-            Captura assíncrona em tempo real
-                         |
-                         v
-          Camada de Extração e Invariantes
-       Validação estruturada de dados com Pydantic
-                         |
-                         v
-         Máquina de Estados Finitos - FSM
-     Controle estrito de transições de estágio
-                         |
-                         v
-      Servidor MCP e Trilha Imutável de Auditoria
-    Métodos fechados de gravação e aprovação humana
-                         |
-      +------------------+------------------+
-      |                                     |
-      v                                     v
-Base Transacional Local            Sistemas Corporativos
-PostgreSQL ou SQLite              ERP SAP, Totvs e Assinaturas
+```mermaid
+flowchart TD
+    A[Canais Reais de Interação Comercial<br>Emails Corporativos, Chamadas e Calendário] --> B[Gateway de Eventos de Venda<br>Captura assíncrona em tempo real]
+    B --> C[Camada de Extração e Invariantes<br>Validação estruturada de dados com Pydantic]
+    C --> D[Máquina de Estados Finitos - FSM<br>Controle estrito de transições de estágio]
+    D --> E[Servidor MCP e Trilha Imutável de Auditoria<br>Métodos fechados de gravação e aprovação humana]
+    E --> F[Base Transacional Local<br>PostgreSQL ou SQLite]
+    E --> G[Sistemas Corporativos<br>ERP SAP, Totvs e Assinaturas]
 ```
 
 ### Contrato de Ferramenta em JSON Schema
@@ -267,40 +254,41 @@ O principal risco reside na necessidade de alocar capacidade interna de engenhar
 
 Atribua a pontuação correspondente para cada resposta afirmativa da sua empresa:
 
-* Critério 1: A equipe comercial possui 15 ou mais executivos dedicados a vendas corporativas?
-  * Pontuação: 2 pontos.
+* **Critério 1:** A equipe comercial possui 15 ou mais executivos dedicados a vendas corporativas?
+  * **Pontuação:** 2 pontos.
 
-* Critério 2: O gasto direto anual somado com licenças de CRM ultrapassa 50.000 USD ou 250.000 BRL?
-  * Pontuação: 3 pontos.
+* **Critério 2:** O gasto direto anual somado com licenças de CRM ultrapassa 50.000 USD ou 250.000 BRL?
+  * **Pontuação:** 3 pontos.
 
-* Critério 3: Executivos de vendas queixam-se de burocracia e perdem mais de uma hora diária alimentando campos manuais?
-  * Pontuação: 3 pontos.
+* **Critério 3:** Executivos de vendas queixam-se de burocracia e perdem mais de uma hora diária alimentando campos manuais?
+  * **Pontuação:** 3 pontos.
 
-* Critério 4: Previsões de fechamento de pipeline falham com frequência devido a dados imprecisos ou desatualizados?
-  * Pontuação: 2 pontos.
+* **Critério 4:** Previsões de fechamento de pipeline falham com frequência devido a dados imprecisos ou desatualizados?
+  * **Pontuação:** 2 pontos.
 
-* Critério 5: O processo de vendas demanda regras avançadas de precificação e aprovação que exigem customizações caras nos CRMs de mercado?
-  * Pontuação: 3 pontos.
+* **Critério 5:** O processo de vendas demanda regras avançadas de precificação e aprovação que exigem customizações caras nos CRMs de mercado?
+  * **Pontuação:** 3 pontos.
 
-* Critério 6: A empresa possui diretrizes de conformidade que recomendam manter transcrições e propostas sob custódia exclusiva em servidores internos?
-  * Pontuação: 2 pontos.
+* **Critério 6:** A empresa possui diretrizes de conformidade que recomendam manter transcrições e propostas sob custódia exclusiva em servidores internos?
+  * **Pontuação:** 2 pontos.
 
-* Critério 7: O CRM precisa conectar-se continuamente a sistemas legados corporativos como SAP, Totvs Protheus ou mainframes?
-  * Pontuação: 3 pontos.
+* **Critério 7:** O CRM precisa conectar-se continuamente a sistemas legados corporativos como SAP, Totvs Protheus ou mainframes?
+  * **Pontuação:** 3 pontos.
 
-* Critério 8: A organização conta com equipe técnica própria de desenvolvimento ou parceiros capazes de gerenciar microsserviços?
-  * Pontuação: 2 pontos.
+* **Critério 8:** A organização conta com equipe técnica própria de desenvolvimento ou parceiros capazes de gerenciar microsserviços?
+  * **Pontuação:** 2 pontos.
 
-* Critério 9: A diretoria executiva busca redução estrutural de despesas operacionais em vez de contratar assistentes genéricos de texto?
-  * Pontuação: 3 pontos.
+* **Critério 9:** A diretoria executiva busca redução estrutural de despesas operacionais em vez de contratar assistentes genéricos de texto?
+  * **Pontuação:** 3 pontos.
 
-* Critério 10: O modelo comercial representa o diferencial competitivo estratégico do negócio frente aos concorrentes?
-  * Pontuação: 3 pontos.
+* **Critério 10:** O modelo comercial representa o diferencial competitivo estratégico do negócio frente aos concorrentes?
+  * **Pontuação:** 3 pontos.
 
 ### Interpretação dos Resultados
-* De 0 a 8 pontos: Adote a Opção Buy. O tamanho da operação não justifica esforço de engenharia. Contrate planos básicos de suítes comerciais e mantenha foco no fechamento de negócios.
-* De 9 a 16 pontos: Adote a Opção Adapt com Twenty CRM. O volume financeiro de licenças começou a pressionar o fluxo de caixa. A auto-hospedagem de Twenty CRM reduz custos diretos e coloca o banco de dados sob governança própria.
-* De 17 a 26 pontos: Desenvolva Arquitetura Agêntica com a HSN Labs. Sua operação sofre integralmente os custos do Dual Bleed. Manter softwares tradicionais com preenchimento manual consome capital valioso de margem e reduz a produtividade da sua equipe.
+
+* **De 0 a 8 pontos:** Adote a Opção Buy. O tamanho da operação não justifica esforço de engenharia. Contrate planos básicos de suítes comerciais e mantenha foco no fechamento de negócios.
+* **De 9 a 16 pontos:** Adote a Opção Adapt com Twenty CRM. O volume financeiro de licenças começou a pressionar o fluxo de caixa. A auto-hospedagem de Twenty CRM reduz custos diretos e coloca o banco de dados sob governança própria.
+* **De 17 a 26 pontos:** Desenvolva Arquitetura Agêntica com a HSN Labs. Sua operação sofre integralmente os custos do Dual Bleed. Manter softwares tradicionais com preenchimento manual consome capital valioso de margem e reduz a produtividade da sua equipe.
 
 ---
 
@@ -308,10 +296,10 @@ Atribua a pontuação correspondente para cada resposta afirmativa da sua empres
 
 A migração de um sistema crítico de CRM não deve ser realizada com desligamento abrupto da plataforma antiga. Na HSN Labs, aplicamos o método de Substituição Progressiva em quatro etapas:
 
-* Fase 1: Escuta Passiva. Os agentes conectam-se às caixas postais e calendários dos vendedores, construindo o grafo de contas e decisores em segundo plano sem alterar a rotina de trabalho existente.
-* Fase 2: Assistência Ativa. Os agentes passam a redigir briefings de preparação de reuniões e minutas de follow-up, conquistando a adesão dos vendedores ao economizar tempo útil de trabalho.
-* Fase 3: Bypass de Alimentação. O agente assume a gravação e atualização formal dos registros comerciais diretamente na base de dados, tornando o login no painel legado um ato opcional.
-* Fase 4: Descomissionamento Financeiro. Cancelamento oficial dos assentos excedentes de software SaaS, consolidando a economia auditada no balanço financeiro da companhia.
+* **Fase 1:** Escuta Passiva. Os agentes conectam-se às caixas postais e calendários dos vendedores, construindo o grafo de contas e decisores em segundo plano sem alterar a rotina de trabalho existente.
+* **Fase 2:** Assistência Ativa. Os agentes passam a redigir briefings de preparação de reuniões e minutas de follow-up, conquistando a adesão dos vendedores ao economizar tempo útil de trabalho.
+* **Fase 3:** Bypass de Alimentação. O agente assume a gravação e atualização formal dos registros comerciais diretamente na base de dados, tornando o login no painel legado um ato opcional.
+* **Fase 4:** Descomissionamento Financeiro. Cancelamento oficial dos assentos excedentes de software SaaS, consolidando a economia auditada no balanço financeiro da companhia.
 
 ---
 
@@ -322,6 +310,7 @@ Klarna: descontinuou contratos enterprise de Salesforce e Zendesk em favor de st
 ---
 
 ## Recursos Estratégicos e Posts Relacionados
+
 - <a href="/blog/pt/post/matriz-substituicao-bpo/">A Matriz de Substituição de BPO: Métricas Operacionais e Financeiras</a>
 - <a href="/blog/pt/post/preco-palantir-tco-alternativas-abertas/">O TCO Real da Palantir: A Barreira em Dólar e Alternativas Abertas</a>
 - <a href="/blog/pt/post/playbook-c-suite-protecao-margem/">O Playbook de Transição da Diretoria: Protegendo Margens na Era Agêntica</a>

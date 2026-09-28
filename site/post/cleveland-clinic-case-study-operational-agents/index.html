@@ -44,6 +44,8 @@
     <link rel="stylesheet" href="../../assets/css/mkdocstrings.min.css">
     <script src="../../assets/js/pagination.js"></script>
     <script src="../../assets/js/relative_dates.js"></script>
+    <script src="../../assets/js/mermaid.min.js"></script>
+    <script src="../../assets/js/mermaid_init.js"></script>
     <script src="../../search/main.js"></script>
     <link href="../../stylesheets/extra.css" rel="stylesheet">
     <link href="../../assets/css/pagination.css" rel="stylesheet">
@@ -441,10 +443,12 @@
 <hr />
 <h2 id="1-the-pre-agent-bottleneck-spreadsheet-chaos">1. The Pre-Agent Bottleneck: Spreadsheet Chaos</h2>
 <p>Before implementing an operational data architecture, patient bed placement and nurse staffing relied on manual human coordination.[6]</p>
-<p>Every morning across 23 hospitals:
-- Nursing managers spent several hours each shift manually reviewing static spreadsheets.[6]
-- Clinical supervisors placed hundreds of phone calls between intensive care units, post-anesthesia wards, and emergency departments to identify departing patients.[6]
-- Discharge projections were fundamentally backward-looking: staff reacted to bed vacancies hours after patients physically vacated rooms.</p>
+<p>Every morning across 23 hospitals:</p>
+<ul>
+<li>Nursing managers spent several hours each shift manually reviewing static spreadsheets.[6]</li>
+<li>Clinical supervisors placed hundreds of phone calls between intensive care units, post-anesthesia wards, and emergency departments to identify departing patients.[6]</li>
+<li><strong>Discharge projections were fundamentally backward-looking:</strong> staff reacted to bed vacancies hours after patients physically vacated rooms.</li>
+</ul>
 <p>This friction created massive operational delays. </p>
 <p>Patients requiring acute specialized transfers were delayed at regional community hospitals because central coordination could not calculate campus-wide capacity in real time.[6]</p>
 <hr />
@@ -473,10 +477,12 @@
 <a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>[ Operational Execution &amp; Real-Time Dashboards ]
 <a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>Automated Placement Recommendations / Capacity Forecasting / Clinical Routing
 </code></pre></div>
-<p>Instead of asking a generative model to compose free-text clinical instructions, automated reasoning engines execute against strict ontology objects:[5]
-- <strong>Granular Demand Forecasting:</strong> Projecting exact patient census and acuity levels for every hospital unit hours before admissions peak.[6]
-- <strong>Algorithmic Staff Matching:</strong> Dynamically aligning nurse supply with forecasted clinical demand across acute institutes.[6]
-- <strong>Automated Placement Routing:</strong> Identifying incoming surgical patients and reserving optimal post-operative recovery beds with zero human phone tag.[6]</p>
+<p>Instead of asking a generative model to compose free-text clinical instructions, automated reasoning engines execute against strict ontology objects:[5]</p>
+<ul>
+<li><strong>Granular Demand Forecasting:</strong> Projecting exact patient census and acuity levels for every hospital unit hours before admissions peak.[6]</li>
+<li><strong>Algorithmic Staff Matching:</strong> Dynamically aligning nurse supply with forecasted clinical demand across acute institutes.[6]</li>
+<li><strong>Automated Placement Routing:</strong> Identifying incoming surgical patients and reserving optimal post-operative recovery beds with zero human phone tag.[6]</li>
+</ul>
 <hr />
 <h2 id="4-audited-production-impact">4. Audited Production Impact</h2>
 <p>The implementation produced immediate, audited improvements across Cleveland Clinic operations:[6]</p>
@@ -490,10 +496,12 @@
 <p>The operational success of Cleveland Clinic contains a universal lesson for enterprise technology leaders:</p>
 <p>The commercial value of artificial intelligence is not unlocked by the foundation model. The foundation model is a commodity reasoning engine. </p>
 <p>The real enterprise asset is the <strong>Operational Ontology</strong>—the strongly-typed software model of your company's physical assets, legal constraints, and transactional execution perimeters.[5]</p>
-<p>Whether you manage 6,600 hospital beds, international freight lines, or financial loan books, the formula for production reliability remains unchanged:
-- Stop building free-text conversational chatbots.
-- Map your operational business ontology in code.
-- Bind autonomous actions to deterministic validation perimeters.</p>
+<p>Whether you manage 6,600 hospital beds, international freight lines, or financial loan books, the formula for production reliability remains unchanged:</p>
+<ul>
+<li>Stop building free-text conversational chatbots.</li>
+<li>Map your operational business ontology in code.</li>
+<li>Bind autonomous actions to deterministic validation perimeters.</li>
+</ul>
 <hr />
 <h2 id="sources">Sources</h2>
 <p>[3] https://www.palantir.com/impact/tampa-general-hospital — Tampa General Hospital Case Study: Infusing Data Throughout the Care Continuum
@@ -692,6 +700,8 @@
     <script src="../../assets/js/main.min.js"></script>
     <script src="../../assets/js/pagination.js" defer></script>
     <script src="../../assets/js/relative_dates.js" defer></script>
+    <script src="../../assets/js/mermaid.min.js" defer></script>
+    <script src="../../assets/js/mermaid_init.js" defer></script>
     <script src="../../search/main.js" defer></script>
 
 </body>

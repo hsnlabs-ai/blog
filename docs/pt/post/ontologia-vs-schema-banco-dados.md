@@ -35,6 +35,7 @@ A tabela a seguir resume as diferenças críticas entre cada paradigma:
 ## Por Que Tabelas Relacionais Quebram Agentes
 
 Quando conectamos um modelo de linguagem diretamente a um banco SQL via técnicas de text-to-SQL sem uma ontologia intermediária, três falhas ocorrem invariavelmente:
+
 - Queries com joins incorretos gerando dados falsos para a diretoria
 - Consultas excessivamente pesadas que travam a base de produção
 - Gravações perigosas em tabelas legadas sem validação de regras de auditoria
@@ -42,6 +43,7 @@ Quando conectamos um modelo de linguagem diretamente a um banco SQL via técnica
 Uma ontologia operacional atua como a camada de inteligência e proteção que traduz a intenção do agente em ações validadas, impedindo desastres operacionais antes que aconteçam.
 
 ## Recursos Estratégicos e Posts Relacionados
+
 - <a href="/blog/pt/post/o-que-e-uma-ontologia-para-agentes-ia/">O Que É uma Ontologia para Agentes de IA? O Guia Definitivo</a>
 - <a href="/blog/pt/post/por-que-rag-falha-em-erp/">Por Que RAG Tradicional Falha em ERPs Financeiros</a>
 - <a href="/blog/pt/post/palantir-vs-databricks-arquitetura-agentes/">Palantir vs Databricks: Por Que Data Lakes Falham na Orquestração de Agentes</a>

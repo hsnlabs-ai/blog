@@ -36,6 +36,7 @@ Uma vez que todos os fluxos e regras de negócio são codificados dentro dos mec
 ## A Alternativa Aberta Desenvolvida pela HSN Labs
 
 A combinação de padrões modernos de software permitiu criar ontologias corporativas de alta performance sem depender de contratos milionários:
+
 - Python e Pydantic para modelagem ontológica estrita
 - Model Context Protocol para padronização de interfaces e ferramentas
 - DuckDB e bancos relacionais modernos para processamento analítico ultrarrapido
@@ -44,6 +45,7 @@ A combinação de padrões modernos de software permitiu criar ontologias corpor
 Essa abordagem devolve o controle do código para a empresa, reduz o custo total de propriedade em até oitenta por cento e entrega resultados mensuráveis em semanas, não anos.
 
 ## Recursos Estratégicos e Posts Relacionados
+
 - <a href="/blog/pt/post/matriz-substituicao-bpo/">A Matriz de Substituição de BPO: Métricas Operacionais e Financeiras</a>
 - <a href="/blog/pt/post/comprar-ou-construir-crm-vendas-b2b/">CRM de Vendas B2B: Comprar Salesforce, Adaptar Twenty ou Construir com Agentes</a>
 - <a href="/blog/pt/post/custo-ia-ilimitada-ti-legada/">O Custo de IA Sem Limites na TI Legada</a>

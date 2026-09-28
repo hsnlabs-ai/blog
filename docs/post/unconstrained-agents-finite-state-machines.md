@@ -52,13 +52,14 @@ An unconstrained model has no inherent concept of enterprise causality. In an op
 
 At HSN Labs, we never permit open-ended tool loops in production. We enforce a strict separation between reasoning and execution through Finite State Machines:
 
-* Discrete Permissible States: At any given microsecond, an enterprise transaction exists in an explicit state: Draft, Validated, Approved, or Committed. The agent is only allowed to see and propose tools that belong to that specific state. It is physically impossible for an agent in Draft state to trigger a Commit action.
-* Invariant Guard Functions: Transitions between states are not governed by the language model. They are governed by code-level Python guard functions. Even if a model suggests an order cancellation, the software guard checks whether goods have already left the fulfillment center. If the guard evaluates to false, the transition is rejected at the architecture level.
-* Proposals Instead of Direct Writes: The language model never holds database write credentials. The model is treated as an untrusted proposal engine. It analyzes unstructured natural language and proposes a state transition payload. Strict schema validators like Pydantic parse the payload, check invariants, and execute the database write.
+* **Discrete Permissible States:** At any given microsecond, an enterprise transaction exists in an explicit state: Draft, Validated, Approved, or Committed. The agent is only allowed to see and propose tools that belong to that specific state. It is physically impossible for an agent in Draft state to trigger a Commit action.
+* **Invariant Guard Functions:** Transitions between states are not governed by the language model. They are governed by code-level Python guard functions. Even if a model suggests an order cancellation, the software guard checks whether goods have already left the fulfillment center. If the guard evaluates to false, the transition is rejected at the architecture level.
+* **Proposals Instead of Direct Writes:** The language model never holds database write credentials. The model is treated as an untrusted proposal engine. It analyzes unstructured natural language and proposes a state transition payload. Strict schema validators like Pydantic parse the payload, check invariants, and execute the database write.
 
 Autonomy is not the absence of rules. Enterprise autonomy is the ability of software to execute reliably because the boundaries are mathematically unbreakable.
 
 ## Strategic Resources and Related Essays
+
 - <a href="../manifesto/">Why I Built HSN Labs</a>
 - <a href="../cleveland-clinic-case-study-operational-agents/">Case Study: How Cleveland Clinic Scaled Patient Flow with Operational Agents</a>
 - <a href="../autonomous-negotiations-collections-contracts/">High-Velocity Operations: Autonomous Negotiation, Collections, and Contract Execution</a>

@@ -41,6 +41,7 @@ When an autonomous agent is connected directly to ERP APIs and error logs, it de
 
 ### 2. The Internal Helpdesk Triage Queue
 The same mechanical waste plagues internal IT service management:
+
 * Unlocking Active Directory accounts and resetting multi-factor authentication tokens.
 * Provisioning standardized email group memberships and role-based access permissions.
 * Diagnosing recurring VPN handshake failures and local network configuration errors.
@@ -57,6 +58,7 @@ When autonomous agents monitor system telemetry and operational exceptions in re
 The billable hour consulting firm wants systems to break so they can bill hours to fix them. The enterprise needs systems that repair themselves. Autonomous agents make that economic alignment possible.
 
 ## Strategic Resources and Related Essays
+
 - <a href="../kafka-metamorfose-ia-futuro-do-trabalho/">De 1915 a Era da IA: Kafka, utilitarismo e o valor do trabalho</a>
 - <a href="../collapse-of-legacy-rpa/">The RPA Market Is Collapsing</a>
 - <a href="../balance-sheet-guard-bpo-extinction/">What I Learned Building HR Tech About Dying BPO Contracts</a>

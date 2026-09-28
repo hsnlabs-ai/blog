@@ -36,11 +36,13 @@ Se dois pacientes de alta prioridade necessitarem do mesmo tipo de equipamento e
 ## Lições para Líderes de Tecnologia
 
 A experiência da Cleveland Clinic reforça os princípios centrais defendidos pela HSN Labs em contratos corporativos:
+
 - Dashboards passivos estão obsoletos em ambientes de alta velocidade
 - Agentes autônomos precisam de ontologias de domínio estritas para agir com precisão
 - Integração profunda com sistemas de registro é o único caminho para criar valor mensurável
 
 ## Recursos Estratégicos e Posts Relacionados
+
 - <a href="/blog/pt/post/manifesto/">Por Que Criei a HSN Labs</a>
 - <a href="/blog/pt/post/estudo-caso-latam-airlines/">LATAM Airlines: Agentes em Produção com Margem de 3 Por Cento</a>
 - <a href="/blog/pt/post/agentes-ilimitados-maquinas-estados-finitos/">Estudo de Caso: 42 Chamadas em Loop às 2 da Manhã</a>

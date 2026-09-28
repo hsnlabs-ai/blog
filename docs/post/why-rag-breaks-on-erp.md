@@ -54,13 +54,14 @@ Vector search has no inherent concept of temporal sequence. Unless an engineer m
 
 At HSN Labs, we do not let language models guess relational SQL or search raw embeddings for financial truth. Here is the exact architecture I enforce instead:
 
-* Pre-Compiled Business Ontologies: We map the enterprise schema into an explicit knowledge graph that defines verified relationships, valid join paths, and business rules before any query runs.
-* Strictly Typed Query Generation: The agent does not generate open-ended SQL strings. It selects parameterized query templates validated against strict Pydantic schemas. Every parameter is checked before it touches the read replica.
-* Hard Invariant Assertions: When the database returns records, code-level assertion layers verify ledger balances, currency alignment, and temporal validity before context reaches the user or downstream worker.
+* **Pre-Compiled Business Ontologies:** We map the enterprise schema into an explicit knowledge graph that defines verified relationships, valid join paths, and business rules before any query runs.
+* **Strictly Typed Query Generation:** The agent does not generate open-ended SQL strings. It selects parameterized query templates validated against strict Pydantic schemas. Every parameter is checked before it touches the read replica.
+* **Hard Invariant Assertions:** When the database returns records, code-level assertion layers verify ledger balances, currency alignment, and temporal validity before context reaches the user or downstream worker.
 
 If an architecture cannot guarantee mathematical precision on financial records, it does not belong in enterprise production.
 
 ## Strategic Resources and Related Essays
+
 - <a href="../what-is-an-ontology-for-ai-agents/">What Is an Ontology for AI Agents? The Definitive Guide</a>
 - <a href="../ontology-vs-database-schema/">Ontology vs. Database Schema: Why Relational Tables Break Agents</a>
 - <a href="../the-poc-graveyard/">Why Agents Fail: The PoC Graveyard</a>

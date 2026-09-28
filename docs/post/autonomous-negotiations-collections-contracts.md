@@ -60,6 +60,7 @@ Scaling front-office operations no longer requires signing another commercial le
 By replacing manual human queues with autonomous negotiation pipelines, enterprises achieve infinite operational scale, eliminate training overhead, and deliver instant, high-converting customer experiences.
 
 ## Strategic Resources and Related Essays
+
 - <a href="../manifesto/">Why I Built HSN Labs</a>
 - <a href="../latam-airlines-case-study/">LATAM Airlines: Production Agents in a 3 Percent Margin Business</a>
 - <a href="../unconstrained-agents-finite-state-machines/">Case Study: 42 Calls in a Loop at 2 AM</a>

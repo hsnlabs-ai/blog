@@ -44,6 +44,8 @@
     <link rel="stylesheet" href="../../assets/css/mkdocstrings.min.css">
     <script src="../../assets/js/pagination.js"></script>
     <script src="../../assets/js/relative_dates.js"></script>
+    <script src="../../assets/js/mermaid.min.js"></script>
+    <script src="../../assets/js/mermaid_init.js"></script>
     <script src="../../search/main.js"></script>
     <link href="../../stylesheets/extra.css" rel="stylesheet">
     <link href="../../assets/css/pagination.css" rel="stylesheet">
@@ -456,9 +458,9 @@
 <h2 id="the-solution-stochastic-planning-bounded-code-execution">The Solution: Stochastic Planning, Bounded Code Execution</h2>
 <p>At HSN Labs, we never permit open-ended tool loops in production. We enforce a strict separation between reasoning and execution through Finite State Machines:</p>
 <ul>
-<li>Discrete Permissible States: At any given microsecond, an enterprise transaction exists in an explicit state: Draft, Validated, Approved, or Committed. The agent is only allowed to see and propose tools that belong to that specific state. It is physically impossible for an agent in Draft state to trigger a Commit action.</li>
-<li>Invariant Guard Functions: Transitions between states are not governed by the language model. They are governed by code-level Python guard functions. Even if a model suggests an order cancellation, the software guard checks whether goods have already left the fulfillment center. If the guard evaluates to false, the transition is rejected at the architecture level.</li>
-<li>Proposals Instead of Direct Writes: The language model never holds database write credentials. The model is treated as an untrusted proposal engine. It analyzes unstructured natural language and proposes a state transition payload. Strict schema validators like Pydantic parse the payload, check invariants, and execute the database write.</li>
+<li><strong>Discrete Permissible States:</strong> At any given microsecond, an enterprise transaction exists in an explicit state: Draft, Validated, Approved, or Committed. The agent is only allowed to see and propose tools that belong to that specific state. It is physically impossible for an agent in Draft state to trigger a Commit action.</li>
+<li><strong>Invariant Guard Functions:</strong> Transitions between states are not governed by the language model. They are governed by code-level Python guard functions. Even if a model suggests an order cancellation, the software guard checks whether goods have already left the fulfillment center. If the guard evaluates to false, the transition is rejected at the architecture level.</li>
+<li><strong>Proposals Instead of Direct Writes:</strong> The language model never holds database write credentials. The model is treated as an untrusted proposal engine. It analyzes unstructured natural language and proposes a state transition payload. Strict schema validators like Pydantic parse the payload, check invariants, and execute the database write.</li>
 </ul>
 <p>Autonomy is not the absence of rules. Enterprise autonomy is the ability of software to execute reliably because the boundaries are mathematically unbreakable.</p>
 <h2 id="strategic-resources-and-related-essays">Strategic Resources and Related Essays</h2>
@@ -654,6 +656,8 @@
     <script src="../../assets/js/main.min.js"></script>
     <script src="../../assets/js/pagination.js" defer></script>
     <script src="../../assets/js/relative_dates.js" defer></script>
+    <script src="../../assets/js/mermaid.min.js" defer></script>
+    <script src="../../assets/js/mermaid_init.js" defer></script>
     <script src="../../search/main.js" defer></script>
 
 </body>

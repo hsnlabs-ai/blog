@@ -44,6 +44,8 @@
     <link rel="stylesheet" href="../../assets/css/mkdocstrings.min.css">
     <script src="../../assets/js/pagination.js"></script>
     <script src="../../assets/js/relative_dates.js"></script>
+    <script src="../../assets/js/mermaid.min.js"></script>
+    <script src="../../assets/js/mermaid_init.js"></script>
     <script src="../../search/main.js"></script>
     <link href="../../stylesheets/extra.css" rel="stylesheet">
     <link href="../../assets/css/pagination.css" rel="stylesheet">
@@ -450,10 +452,12 @@
 <li><strong>Unbounded Action Execution:</strong> Giving an autonomous model unconstrained tool-calling permissions against an ERP database guarantees operational corruption.</li>
 </ol>
 <p>Palantir does not connect LLMs to raw database tables. Palantir binds LLMs to an <strong>Operational Ontology</strong>.[3]</p>
-<p>An ontology is not a vector database. It is a digital twin of enterprise business logic written in strict software:
-- <strong>Objects:</strong> Real-world entities such as patients, hospital beds, supply orders, or shipping containers.
-- <strong>Properties:</strong> Verified schema attributes extracted from disparate systems of record.
-- <strong>Actions:</strong> Code-level state transitions and APIs that enforce business rules and authorization controls before any database mutation occurs.</p>
+<p>An ontology is not a vector database. It is a digital twin of enterprise business logic written in strict software:</p>
+<ul>
+<li><strong>Objects:</strong> Real-world entities such as patients, hospital beds, supply orders, or shipping containers.</li>
+<li><strong>Properties:</strong> Verified schema attributes extracted from disparate systems of record.</li>
+<li><strong>Actions:</strong> Code-level state transitions and APIs that enforce business rules and authorization controls before any database mutation occurs.</li>
+</ul>
 <p>When an AI agent operates through an ontology, the model does not write raw database mutations. The model selects typed, bounded actions governed by strict deterministic rules.</p>
 <hr />
 <h2 id="2-tampa-general-hospital-83-reduction-in-placement-delay">2. Tampa General Hospital: 83% Reduction in Placement Delay</h2>
@@ -461,10 +465,12 @@
 <p>Tampa General Hospital operates over 1,000 acute care beds.[3] </p>
 <p>In a traditional hospital setting, managing patient admissions and bed allocations requires nurse managers to spend several hours every shift navigating disconnected spreadsheets and making manual phone calls across clinical units.</p>
 <p>Tampa General deployed Palantir Foundry and AIP to integrate nurse scheduling, electronic health record telemetry, and surgical calendars into a unified hospital ontology.[3]</p>
-<p>The results demonstrate the difference between conversational wrappers and production agent architecture:
-- <strong>83% reduction in time spent managing patient placements.</strong>[3]
-- <strong>28% reduction in patient hold time in the Post-Anesthesia Care Unit.</strong>[3]
-- <strong>30% improvement in nurse staffing ratios.</strong>[3]</p>
+<p>The results demonstrate the difference between conversational wrappers and production agent architecture:</p>
+<ul>
+<li><strong>83% reduction in time spent managing patient placements.</strong>[3]</li>
+<li><strong>28% reduction in patient hold time in the Post-Anesthesia Care Unit.</strong>[3]</li>
+<li><strong>30% improvement in nurse staffing ratios.</strong>[3]</li>
+</ul>
 <p>The agent does not generate creative medical advice. The agent monitors real-time patient admissions against bed capacity invariants, predicts transfer bottlenecks, and routes surgical queues directly to hospital decision-makers.</p>
 <hr />
 <h2 id="3-why-the-5-day-bootcamp-de-risks-enterprise-capex">3. Why the 5-Day Bootcamp De-Risks Enterprise CapEx</h2>
@@ -472,18 +478,22 @@
 <blockquote>
 <p>"Beginning in 2023, we introduced AIP bootcamps to the initial stages of our customer acquisition process, which helped to accelerate these discussions and provide an opportunity for our customers to experience our platforms through their own use cases in days."[1]</p>
 </blockquote>
-<p>The economics of enterprise procurement are broken:
-- Systems integrators charge millions of dollars on time-and-materials contracts to produce advisory documentation.
-- Enterprise CIOs and CFOs are paralyzed by the risk of funding multi-quarter technology migrations that fail in code.</p>
+<p>The economics of enterprise procurement are broken:</p>
+<ul>
+<li>Systems integrators charge millions of dollars on time-and-materials contracts to produce advisory documentation.</li>
+<li>Enterprise CIOs and CFOs are paralyzed by the risk of funding multi-quarter technology migrations that fail in code.</li>
+</ul>
 <p>The bootcamp eliminates speculative technical risk. By delivering functional workflows on customer data within 120 hours, the economic buyer evaluates working software rather than corporate promises.[1][2]</p>
 <hr />
 <h2 id="4-building-the-operational-ontology-without-vendor-lock-in">4. Building the Operational Ontology Without Vendor Lock-In</h2>
 <p>While Palantir has proven the validity of ontology-first agent engineering, enterprises face a major structural barrier: multi-million-dollar annual software licensing commitments and proprietary platform lock-in.</p>
 <p>Mid-market enterprises and cost-conscious corporations do not need seven-figure proprietary platforms to achieve production agent reliability. </p>
-<p>At HSN Labs, we execute the same fundamental engineering blueprint using modular, open enterprise architecture:
-1. <strong>Domain Ontology Mapping:</strong> Reverse-engineering corporate databases into Pydantic data contracts and graph relations.
-2. <strong>Deterministic State Perimeters:</strong> Wrapping autonomous reasoning graphs in formal finite state machines.
-3. <strong>Five-Day Architecture Sprint:</strong> Deploying an isolated sandbox prototype on real corporate data to prove audited unit ROI before production rollout.</p>
+<p>At HSN Labs, we execute the same fundamental engineering blueprint using modular, open enterprise architecture:</p>
+<ol>
+<li><strong>Domain Ontology Mapping:</strong> Reverse-engineering corporate databases into Pydantic data contracts and graph relations.</li>
+<li><strong>Deterministic State Perimeters:</strong> Wrapping autonomous reasoning graphs in formal finite state machines.</li>
+<li><strong>Five-Day Architecture Sprint:</strong> Deploying an isolated sandbox prototype on real corporate data to prove audited unit ROI before production rollout.</li>
+</ol>
 <p>If you connect foundation models to raw enterprise data without a strict operational ontology, your agents will fail in production. </p>
 <p>If you bind autonomous agents to code-level software guards and typed business objects, you eliminate hallucinations and unlock operational scale.</p>
 <hr />
@@ -684,6 +694,8 @@
     <script src="../../assets/js/main.min.js"></script>
     <script src="../../assets/js/pagination.js" defer></script>
     <script src="../../assets/js/relative_dates.js" defer></script>
+    <script src="../../assets/js/mermaid.min.js" defer></script>
+    <script src="../../assets/js/mermaid_init.js" defer></script>
     <script src="../../search/main.js" defer></script>
 
 </body>

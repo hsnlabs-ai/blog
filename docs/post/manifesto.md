@@ -62,6 +62,7 @@ That transition cannot be achieved through theoretical presentations or fragile 
 HSN Labs is the engineering boutique I built to partner with enterprise leaders who are already actively pursuing this transition and demand production systems that do not break.
 
 ## Related Field Notes and Technical Spokes
+
 - <a href="../cleveland-clinic-case-study-operational-agents/">Case Study: How Cleveland Clinic Scaled Patient Flow with Operational Agents</a>
 - <a href="../latam-airlines-case-study/">LATAM Airlines: Production Agents in a 3 Percent Margin Business</a>
 - <a href="../unconstrained-agents-finite-state-machines/">Case Study: 42 Calls in a Loop at 2 AM</a>

@@ -29,6 +29,7 @@ A causa raiz foi a deriva de integração. O provedor de nuvem do modelo havia a
 Durante o desenvolvimento, um engenheiro escreve um prompt pedindo para o modelo retornar um objeto JSON estruturado. O modelo atende e gera campos válidos durante os testes de homologação.
 
 Duas semanas depois, o mesmissimo prompt produz mutações estruturais sutis:
+
 * Um campo inteiro como identificador de cliente de repente retorna como texto com zeros a esquerda.
 * Uma chave estrangeira obrigatória e omitida porque o modelo resumiu uma observação ambígua da fatura.
 * Um valor em maiúsculas como STATUS_APROVADO e substituído por um sinônimo próximo como STATUS_CONFIRMADO.
@@ -42,13 +43,14 @@ Para um banco PostgreSQL, um endpoint FastAPI ou um barramento de serviços corp
 
 Na HSN Labs, tratamos prompts em linguagem natural como entradas completamente não confiáveis. Eliminamos a deriva de integração retirando do modelo a responsabilidade sobre o schema:
 
-* Validação Rígida com Schemas Pydantic: Cada saída do modelo e interceptada por um validador estrito de schema antes de tocar a infraestrutura corporativa. Se o tipo de um campo sofrer deriva de um único caractere, o dado e capturado e sanitizado no perímetro.
-* Roteamento Semântico com Executores Parametrizados: Nunca permitimos que modelos gerem código livre ou comandos SQL diretos. O modelo e restrito a classificação de intenção e extração de parâmetros. Trabalhadores isolados de software constroem as cargas reais de API usando templates pré-compilados.
-* Travas de Transição de Estados Finitos: Operações agênticas de múltiplas etapas são delimitadas por máquinas de estados finitos. Se uma atualização no modelo levar o agente a sugerir uma transição de estado ilegal, a trava da máquina de estados rejeita a solicitação antes de qualquer escrita no banco.
+* **Validação Rígida com Schemas Pydantic:** Cada saída do modelo e interceptada por um validador estrito de schema antes de tocar a infraestrutura corporativa. Se o tipo de um campo sofrer deriva de um único caractere, o dado e capturado e sanitizado no perímetro.
+* **Roteamento Semântico com Executores Parametrizados:** Nunca permitimos que modelos gerem código livre ou comandos SQL diretos. O modelo e restrito a classificação de intenção e extração de parâmetros. Trabalhadores isolados de software constroem as cargas reais de API usando templates pré-compilados.
+* **Travas de Transição de Estados Finitos:** Operações agênticas de múltiplas etapas são delimitadas por máquinas de estados finitos. Se uma atualização no modelo levar o agente a sugerir uma transição de estado ilegal, a trava da máquina de estados rejeita a solicitação antes de qualquer escrita no banco.
 
 Garantir estabilidade em produção significa projetar sistemas onde derivas nos modelos não possam corromper sua infraestrutura corporativa central.
 
 ## Recursos Estratégicos e Posts Relacionados
+
 - <a href="/blog/pt/post/o-que-e-uma-ontologia-para-agentes-ia/">O Que É uma Ontologia para Agentes de IA? O Guia Definitivo</a>
 - <a href="/blog/pt/post/cemiterio-de-pocs/">Por Que Agentes Falham: O Cemitério de PoCs</a>
 - <a href="/blog/pt/post/falacia-llm-como-juiz/">Por Que LLM Como Juiz Falha no Setor Bancário</a>

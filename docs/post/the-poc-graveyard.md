@@ -54,13 +54,14 @@ If an autonomous system cannot prove perimeter isolation, read-only boundary sep
 
 At HSN Labs, we do not build boardroom slide decks or unconstrained sandbox demos. When our Forward Deployed Engineers enter an enterprise client, we enforce three non-negotiable rules:
 
-* Ground Every Step in Explicit Ontologies: Models never query relational databases directly. They interact with pre-compiled domain graphs that enforce schema invariants before execution.
-* Bound Execution with Finite State Machines: Every agentic workflow must operate within mathematically provable state transitions. The model can suggest the path, but code-level software guards enforce the bounds.
-* Run Code-Level Regression Assertions: We test agents against live transaction replays, measuring invariant adherence and accuracy with zero tolerance for hallucinations.
+* **Ground Every Step in Explicit Ontologies:** Models never query relational databases directly. They interact with pre-compiled domain graphs that enforce schema invariants before execution.
+* **Bound Execution with Finite State Machines:** Every agentic workflow must operate within mathematically provable state transitions. The model can suggest the path, but code-level software guards enforce the bounds.
+* **Run Code-Level Regression Assertions:** We test agents against live transaction replays, measuring invariant adherence and accuracy with zero tolerance for hallucinations.
 
 Enterprise value is not measured by chatbots that talk. It is measured by production software that writes to core databases without breaking the business.
 
 ## Strategic Resources and Related Essays
+
 - <a href="../what-is-an-ontology-for-ai-agents/">What Is an Ontology for AI Agents? The Definitive Guide</a>
 - <a href="../why-rag-breaks-on-erp/">Why I Never Use Normal RAG on Financial ERPs</a>
 - <a href="../integration-drift/">The Integration Drift: When Prompts Break Production Agents</a>

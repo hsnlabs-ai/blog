@@ -45,6 +45,7 @@ Casos em conformidade total com a matriz de risco da empresa são aprovados inst
 Transformar a regulação de sinistros em um processo de software em tempo real é a vantagem competitiva definitiva para companhias que desejam liderar o setor.
 
 ## Recursos Estratégicos e Posts Relacionados
+
 - <a href="/blog/pt/post/matriz-substituicao-bpo/">A Matriz de Substituição de BPO: Métricas Operacionais e Financeiras</a>
 - <a href="/blog/pt/post/playbook-c-suite-protecao-margem/">O Playbook de Transição da Diretoria: Protegendo Margens na Era Agêntica</a>
 - <a href="/blog/pt/post/custo-ia-ilimitada-ti-legada/">O Custo de IA Sem Limites na TI Legada</a>

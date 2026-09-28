@@ -44,11 +44,12 @@ This matrix analyzes the thirteen core enterprise outsourcing verticals being ac
 
 Replacing third-party outsourcing contracts with autonomous digital workforces requires adherence to three engineering principles:
 
-1. Zero Direct Stochastic Execution: Large language models propose actions, but formal finite state machines commit mutations to enterprise databases.
-2. Perimeter Isolation: Models operate strictly against isolated read replicas and sanitized Model Context Protocol interfaces.
-3. Continuous Ground Truth Testing: Every automated pipeline is evaluated continuously against historic regression test suites.
+1. **Zero Direct Stochastic Execution:** Large language models propose actions, but formal finite state machines commit mutations to enterprise databases.
+2. **Perimeter Isolation:** Models operate strictly against isolated read replicas and sanitized Model Context Protocol interfaces.
+3. **Continuous Ground Truth Testing:** Every automated pipeline is evaluated continuously against historic regression test suites.
 
 ## Related Field Notes and Technical Spokes
+
 - <a href="../buy-versus-build-b2b-enterprise-crm/">Buy versus Build: B2B Enterprise CRM, Twenty, and Agentic Stacks</a>
 - <a href="../palantir-pricing-tco-and-open-alternatives/">The Real TCO of Palantir: The Dollar Barrier and Modern Open Alternatives</a>
 - <a href="../c-suite-margin-protection-playbook/">The C-Suite Transition Playbook: Protecting Margins in the Agentic Economy</a>

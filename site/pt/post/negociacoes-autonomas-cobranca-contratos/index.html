@@ -44,6 +44,8 @@
     <link rel="stylesheet" href="../../../assets/css/mkdocstrings.min.css">
     <script src="../../../assets/js/pagination.js"></script>
     <script src="../../../assets/js/relative_dates.js"></script>
+    <script src="../../../assets/js/mermaid.min.js"></script>
+    <script src="../../../assets/js/mermaid_init.js"></script>
     <script src="../../../search/main.js"></script>
     <link href="../../../stylesheets/extra.css" rel="stylesheet">
     <link href="../../../assets/css/pagination.css" rel="stylesheet">
@@ -442,21 +444,25 @@
 <h3 id="1-limites-parametricos-definidos-por-ontologia">1. Limites Parametricos Definidos por Ontologia</h3>
 <p>O agente não decide termos de negociação de forma probabilística. Ele opera sobre uma ontologia que codifica a política de crédito da instituição. Parâmetros como valor do desconto máximo, taxa de juros permitida, prazos de parcelamento e restrições de garantia são consultados em tempo de execução a partir de regras formais.</p>
 <h3 id="2-maquina-de-estados-finitos-para-conducao-do-fluxo">2. Máquina de Estados Finitos para Condução do Fluxo</h3>
-<p>A conversa e tratada como uma transição de estados em uma Máquina de Estados Finitos. Cada intervenção do devedor ou cliente avança o sistema entre estados definidos:
-- Identificação e autenticação positiva
-- Apresentação do saldo devedor auditado
-- Coleta de proposta inicial
-- Validação da proposta contra a matriz de crédito
-- Formalização do termo aditivo ou emissão do boleto
-- Baixa no sistema central de gestão financeira</p>
+<p>A conversa e tratada como uma transição de estados em uma Máquina de Estados Finitos. Cada intervenção do devedor ou cliente avança o sistema entre estados definidos:</p>
+<ul>
+<li>Identificação e autenticação positiva</li>
+<li>Apresentação do saldo devedor auditado</li>
+<li>Coleta de proposta inicial</li>
+<li>Validação da proposta contra a matriz de crédito</li>
+<li>Formalização do termo aditivo ou emissão do boleto</li>
+<li>Baixa no sistema central de gestão financeira</li>
+</ul>
 <p>Se o cliente propuser condições fora da matriz autorizada, o agente não cede e não improvisa. Ele sugere a melhor alternativa viável ou aciona a esteira de aprovação humana especializada.</p>
 <h3 id="3-mutacao-segura-com-verificacao-de-dois-fatores">3. Mutação Segura com Verificação de Dois Fatores</h3>
 <p>Nenhum contrato é alterado no ERP sem que o agente confirme a assinatura digital ou a concordância formal do cliente sob trilha auditável. Toda transação gera logs imutáveis contendo o histórico das mensagens, os dados consultados e os hashes criptográficos do aceite.</p>
 <h2 id="metricas-de-impacto-em-producao">Métricas de Impacto em Produção</h2>
-<p>A implementação dessa esteira em uma grande instituição financeira demonstrou resultados consistentes:
-- Tempo médio de liquidação de acordo reduzido de quatro dias para sete minutos
-- Queda de oitenta e dois por cento no custo operacional por contrato renegociado
-- Zero acordos emitidos fora da política de crédito em mais de cinquenta mil operações</p>
+<p>A implementação dessa esteira em uma grande instituição financeira demonstrou resultados consistentes:</p>
+<ul>
+<li>Tempo médio de liquidação de acordo reduzido de quatro dias para sete minutos</li>
+<li>Queda de oitenta e dois por cento no custo operacional por contrato renegociado</li>
+<li>Zero acordos emitidos fora da política de crédito em mais de cinquenta mil operações</li>
+</ul>
 <p>Automatizar negociação de contratos não é uma questão de criar prompts persuasivos. E uma questão de cercar modelos de linguagem com garantias matemáticas e integração estrita com os sistemas centrais da organização.</p>
 <h2 id="recursos-estrategicos-e-posts-relacionados">Recursos Estratégicos e Posts Relacionados</h2>
 <ul>
@@ -648,6 +654,8 @@
     <script src="../../../assets/js/main.min.js"></script>
     <script src="../../../assets/js/pagination.js" defer></script>
     <script src="../../../assets/js/relative_dates.js" defer></script>
+    <script src="../../../assets/js/mermaid.min.js" defer></script>
+    <script src="../../../assets/js/mermaid_init.js" defer></script>
     <script src="../../../search/main.js" defer></script>
 
 </body>

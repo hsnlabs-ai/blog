@@ -23,6 +23,7 @@ Tratar chatbots conversacionais como agentes corporativos é o motivo mais comum
 Quando uma empresa implanta uma interface interna de chat que resume documentos de políticas em PDF, ela criou uma ferramenta de consulta. Ela não eliminou um centro de custo operacional.
 
 Se o seu objetivo estratégico e cancelar um contrato milionário de terceirização de BPO, respostas em linguagem natural são inúteis. Você precisa de software que execute trabalho real:
+
 * Conciliar milhares de faturas de fornecedores com ordens de compra em ERPs como SAP ou Totvs.
 * Validar alocações de estoque em múltiplos bancos de dados distribuídos de centros de distribuição.
 * Liquidar disputas de faturamento de clientes de acordo com termos estritos de contrato.
@@ -42,13 +43,14 @@ Se um analista humano precisa revisar e aprovar cada conciliação de fatura, re
 
 Verdadeira autonomia não significa deixar um modelo correr solto sem supervisão. Verdadeira autonomia significa estabelecer certeza matemática em torno de transações rotineiras para que humanos tratem apenas exceções reais:
 
-* Máquinas de Estados Matematicamente Delimitadas: O agente só pode executar ações permitidas pelo estado transacional atual. Um agente não pode disparar um pagamento enquanto uma fatura ainda estiver em estado de verificação.
-* Aplicação Rígida de Schemas: Cada carga de dados e analisada e validada por schemas estritos em Pydantic antes de qualquer chamada a APIs de produção. Se um campo violar o schema, a execução e interrompida antes de tocar a infraestrutura corporativa.
-* Escalonamento Assimétrico de Exceções: Noventa e cinco por cento das transações rotineiras passam em todas as checagens invariantes e executam de forma autônoma em velocidade de máquina. Os cinco por cento restantes contendo anomalias reais ou disputas contratuais são empacotados em registros limpos de diagnóstico e escalados para gestores humanos seniores.
+* **Máquinas de Estados Matematicamente Delimitadas:** O agente só pode executar ações permitidas pelo estado transacional atual. Um agente não pode disparar um pagamento enquanto uma fatura ainda estiver em estado de verificação.
+* **Aplicação Rígida de Schemas:** Cada carga de dados e analisada e validada por schemas estritos em Pydantic antes de qualquer chamada a APIs de produção. Se um campo violar o schema, a execução e interrompida antes de tocar a infraestrutura corporativa.
+* **Escalonamento Assimétrico de Exceções:** Noventa e cinco por cento das transações rotineiras passam em todas as checagens invariantes e executam de forma autônoma em velocidade de máquina. Os cinco por cento restantes contendo anomalias reais ou disputas contratuais são empacotados em registros limpos de diagnóstico e escalados para gestores humanos seniores.
 
 Autonomia não é criada escrevendo prompts de sistema mais longos. Autonomia e criada construindo arquiteturas resilientes que tornam a falha operacional matematicamente impossível.
 
 ## Recursos Estratégicos e Posts Relacionados
+
 - <a href="/blog/pt/post/como-construir-ontologia-enterprise-do-zero/">Como Construir uma Ontologia Enterprise do Zero: Passo a Passo</a>
 - <a href="/blog/pt/post/a-ontologia-operacional/">A Ontologia Operacional: Como Empresas Conectam LLMs aos Dados Proprietários</a>
 - <a href="/blog/pt/post/sistemas-legados-motor-execucao/">Sistemas Transacionais Legados Não Vão Morrer: Eles São o Motor</a>

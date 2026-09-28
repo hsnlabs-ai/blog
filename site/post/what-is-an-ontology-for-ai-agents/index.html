@@ -44,6 +44,8 @@
     <link rel="stylesheet" href="../../assets/css/mkdocstrings.min.css">
     <script src="../../assets/js/pagination.js"></script>
     <script src="../../assets/js/relative_dates.js"></script>
+    <script src="../../assets/js/mermaid.min.js"></script>
+    <script src="../../assets/js/mermaid_init.js"></script>
     <script src="../../search/main.js"></script>
     <link href="../../stylesheets/extra.css" rel="stylesheet">
     <link href="../../assets/css/pagination.css" rel="stylesheet">
@@ -440,30 +442,21 @@
 <h2 id="executive-summary">Executive Summary</h2>
 <p>If you connect a frontier large language model directly to your corporate database, REST APIs, or ERP, it will hallucinate invalid business actions. </p>
 <p>It does not fail because the model lacks intelligence. It fails because raw databases only store primitive types, APIs only expose execution endpoints, and language models only predict tokens. None of these layers understand what a business actually is.</p>
-<p>An <strong>ontology for AI agents</strong> is an executable, code-level semantic model that formalizes three things:
-1. <strong>Business Entities:</strong> The core nouns of your company (Customers, Invoices, Contracts, Work Orders) with immutable mathematical invariants.
-2. <strong>Relational Constraints:</strong> The legal relationships connecting these entities (e.g., <em>An invoice cannot exist without a verified purchase order receipt</em>).
-3. <strong>Executable Action Interfaces:</strong> The state machines that dictate exactly what an agent is permitted to execute, under what preconditions, and with what post-execution state transitions.</p>
+<p>An <strong>ontology for AI agents</strong> is an executable, code-level semantic model that formalizes three things:</p>
+<ol>
+<li><strong>Business Entities:</strong> The core nouns of your company (Customers, Invoices, Contracts, Work Orders) with immutable mathematical invariants.</li>
+<li><strong>Relational Constraints:</strong> The legal relationships connecting these entities (e.g., <em>An invoice cannot exist without a verified purchase order receipt</em>).</li>
+<li><strong>Executable Action Interfaces:</strong> The state machines that dictate exactly what an agent is permitted to execute, under what preconditions, and with what post-execution state transitions.</li>
+</ol>
 <p>Without an ontology, an AI agent is a probabilistic script guessing at database queries. With an ontology, an AI agent is a deterministic software operator governed by compiled business logic.</p>
 <hr />
 <h2 id="the-root-problem-the-stochastic-deterministic-chasm">The Root Problem: The Stochastic-Deterministic Chasm</h2>
 <p>Enterprise software is strictly deterministic. A general ledger does not negotiate balance sheets. An ERP database enforces unique constraints, primary keys, and statutory accounting rules. If a software transaction violates double-entry balancing, the database engine aborts the transaction.</p>
 <p>Large language models are fundamentally probabilistic. They compute probability distributions over high-dimensional vector spaces. They generate the most statistically probable continuation of a prompt string.</p>
 <p>When enterprises attempt to bridge this chasm with system prompts, they build on sand.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>+-------------------------------------------------------------------+
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>|                     THE FRAGILE PROMPT PARADIGM                   |
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>|                                                                   |
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>|   Prompt: "You are an AP agent. Only approve invoices under $10k"  |
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>|                                 |                                 |
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>|                                 v (Probabilistic Evaluation)      |
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>|                       [ Frontier LLM ]                            |
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>|                                 |                                 |
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>|           "Looks safe, approving payment of $12,450..."           |
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>|                                 |                                 |
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>|                                 v (Silent State Corruption)       |
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>|                 [ Enterprise SQL Database / ERP ]                 |
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>+-------------------------------------------------------------------+
-</code></pre></div>
+<pre class="mermaid"><code>flowchart TD
+    A[System Prompt: Only approve invoices under $10k] --&gt;|Probabilistic Evaluation| B[Frontier LLM]
+    B --&gt;|Hallucination: Approving payment of $12,450| C[Enterprise SQL Database / ERP&lt;br&gt;Silent State Corruption]</code></pre>
 <p>Telling an LLM <em>"You are an accounts payable agent. You must never approve an invoice over ten thousand dollars without managerial sign-off"</em> in a markdown system prompt fails in production. Under context dilution, prompt injection, or novel operational edge cases, the model will eventually drift. It will misread currency symbols, confuse total line items with net line items, or approve an unauthorized payout.</p>
 <p>An enterprise cannot deploy mission-critical balance sheet operations on statistical confidence intervals. </p>
 <p>To run autonomous agents safely, you must place an immutable, compiled barrier between the stochastic brain of the model and the deterministic state of your enterprise systems. That barrier is an <strong>operational ontology</strong>.</p>
@@ -471,10 +464,12 @@
 <h2 id="deconstructing-the-term-from-academic-rdf-to-executable-code">Deconstructing the Term: From Academic RDF to Executable Code</h2>
 <p>For thirty years, the word <em>ontology</em> belonged to philosophy departments and academic computer science laboratories.</p>
 <p>In traditional computer science, an ontology was defined by Tom Gruber in 1993 as an <em>"explicit specification of a conceptualization"</em>. Academic researchers built massive, static knowledge representation graphs using XML, RDF (Resource Description Framework), and OWL (Web Ontology Language). </p>
-<p>These academic ontologies failed in the enterprise for three concrete reasons:
-1. <strong>They were static:</strong> They described what things were, but had no mechanism to execute actions.
-2. <strong>They were detached from live state:</strong> Updating an OWL graph required complex manual curation rather than real-time event streaming from production databases.
-3. <strong>They ignored performance:</strong> Graph query engines (SPARQL) crumbled when subjected to millions of real-time transactions per second.</p>
+<p>These academic ontologies failed in the enterprise for three concrete reasons:</p>
+<ol>
+<li><strong>They were static:</strong> They described what things were, but had no mechanism to execute actions.</li>
+<li><strong>They were detached from live state:</strong> Updating an OWL graph required complex manual curation rather than real-time event streaming from production databases.</li>
+<li><strong>They ignored performance:</strong> Graph query engines (SPARQL) crumbled when subjected to millions of real-time transactions per second.</li>
+</ol>
 <p>In modern AI engineering, we discard the academic baggage. We do not use OWL or RDF. </p>
 <p>An <strong>Operational Ontology for AI Agents</strong> is written in executable code (Python, TypeScript, or Rust). It binds real-time database records to typed memory objects, validates business rules at runtime, and exposes atomic action endpoints via standardized protocols like the Model Context Protocol (MCP).</p>
 <table>
@@ -521,15 +516,15 @@
 <hr />
 <h2 id="the-semantic-ladder-where-ontology-fits-in-your-stack">The Semantic Ladder: Where Ontology Fits in Your Stack</h2>
 <p>To understand why an ontology is necessary, you must understand the hierarchy of corporate knowledge representation. Most enterprise architectures stop at Layer 2 or Layer 3. Autonomous agents require Layer 5.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>       [ Level 5: Operational Ontology ]    &lt;-- Governs Autonomous Agents
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>                     ^
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>       [ Level 4: Knowledge Graph ]         &lt;-- Connects Context Across Silos
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>                     ^
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>       [ Level 3: Relational Schema ]       &lt;-- Stores Raw Relational Data
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>                     ^
-<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>       [ Level 2: Data Taxonomy ]           &lt;-- Categorizes Departmental Nouns
-<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>                     ^
-<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>       [ Level 1: Data Dictionary ]         &lt;-- Defines Column Headers
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>       [ Level 5: Operational Ontology ]    &lt;-- Governs Autonomous Agents
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>                     ^
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>       [ Level 4: Knowledge Graph ]         &lt;-- Connects Context Across Silos
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>                     ^
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>       [ Level 3: Relational Schema ]       &lt;-- Stores Raw Relational Data
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>                     ^
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>       [ Level 2: Data Taxonomy ]           &lt;-- Categorizes Departmental Nouns
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>                     ^
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>       [ Level 1: Data Dictionary ]         &lt;-- Defines Column Headers
 </code></pre></div>
 <h3 id="level-1-data-dictionary">Level 1: Data Dictionary</h3>
 <p>A passive glossary of table columns. It tells you that <code>inv_tot_amt</code> in table <code>t_fin_01</code> is a floating-point number representing total currency. It provides zero behavioral context.</p>
@@ -540,46 +535,28 @@
 <h3 id="level-4-knowledge-graph">Level 4: Knowledge Graph</h3>
 <p>A network of interconnected data nodes representing specific enterprise instances. It knows that <code>Invoice #9042</code> was issued by <code>Supplier Corp</code> and reviewed by <code>Analyst Alice</code>. It enables multi-hop relational search, but lacks execution contracts.</p>
 <h3 id="level-5-operational-business-ontology">Level 5: Operational Business Ontology</h3>
-<p>The complete semantic operating system. It defines:
-- What entities exist and their business meaning across disparate systems (ERP, CRM, WMS).
-- What mathematical invariants must hold true across their lifecycle.
-- What actions are legally possible on an entity based on its current discrete state.
-- Who or what is authorized to trigger those actions.</p>
+<p>The complete semantic operating system. It defines:</p>
+<ul>
+<li>What entities exist and their business meaning across disparate systems (ERP, CRM, WMS).</li>
+<li>What mathematical invariants must hold true across their lifecycle.</li>
+<li>What actions are legally possible on an entity based on its current discrete state.</li>
+<li>Who or what is authorized to trigger those actions.</li>
+</ul>
 <hr />
 <h2 id="the-three-components-of-an-agent-ontology">The Three Components of an Agent Ontology</h2>
 <p>An operational ontology is built from three distinct architectural layers:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>+--------------------------------------------------------------------------+
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>|                       OPERATIONAL ONTOLOGY ARCHITECTURE                  |
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>|                                                                          |
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>|  +--------------------------------------------------------------------+  |
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>|  | 1. OBJECT DEFINITIONS (Entities &amp; Invariants)                      |  |
-<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>|  |    - Typed data contracts (Pydantic / Zod)                         |  |
-<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>|  |    - Immutable business rules (Assertions)                         |  |
-<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>|  +--------------------------------------------------------------------+  |
-<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>|                                 |                                        |
-<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>|                                 v                                        |
-<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>|  +--------------------------------------------------------------------+  |
-<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>|  | 2. STATE BINDINGS (Live Context)                                  |  |
-<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>|  |    - Real-time event streams (Postgres, SAP, Salesforce)           |  |
-<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>|  |    - Relationship links &amp; dependency graphs                        |  |
-<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>|  +--------------------------------------------------------------------+  |
-<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a>|                                 |                                        |
-<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>|                                 v                                        |
-<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a>|  +--------------------------------------------------------------------+  |
-<a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a>|  | 3. EXECUTABLE ACTION CATALOG (Finite State Machines)               |  |
-<a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a>|  |    - Pre-condition validation gates                                |  |
-<a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a>|  |    - Atomic state transition controllers                           |  |
-<a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a>|  |    - Post-condition ledger audits                                  |  |
-<a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a>|  +--------------------------------------------------------------------+  |
-<a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a>+--------------------------------------------------------------------------+
-</code></pre></div>
+<pre class="mermaid"><code>flowchart TD
+    A[1. Object Definitions&lt;br&gt;Typed data contracts and immutable business rules] --&gt; B[2. State Bindings&lt;br&gt;Real-time event streams from Postgres, SAP, Salesforce]
+    B --&gt; C[3. Executable Action Catalog&lt;br&gt;Precondition validation, state machines, postcondition ledger audits]</code></pre>
 <h3 id="1-object-definitions-the-nouns">1. Object Definitions (The Nouns)</h3>
 <p>Objects are typed definitions of enterprise concepts. They do not mirror raw database tables 1:1. Instead, they synthesize data across fragmented systems into unified business objects.</p>
-<p>For example, a <code>CommercialAccount</code> object synthesizes:
-- Master customer records from Salesforce.
-- Credit limits and aging accounts receivable from SAP S/4HANA.
-- Support ticket escalation statuses from Zendesk.
-- Active contract terms from Ironclad.</p>
+<p>For example, a <code>CommercialAccount</code> object synthesizes:</p>
+<ul>
+<li>Master customer records from Salesforce.</li>
+<li>Credit limits and aging accounts receivable from SAP S/4HANA.</li>
+<li>Support ticket escalation statuses from Zendesk.</li>
+<li>Active contract terms from Ironclad.</li>
+</ul>
 <p>Critically, each object defines its <strong>mathematical invariants</strong>—rules that can never be violated under any operational condition. If an agent attempts an action that would leave an object in an invalid invariant state, the transaction fails immediately.</p>
 <h3 id="2-state-bindings-the-live-context">2. State Bindings (The Live Context)</h3>
 <p>An ontology is not a static cache. It maintains live bi-directional bindings with underlying system databases through Change Data Capture (CDC) pipelines, webhooks, or direct database connectors.</p>
@@ -587,102 +564,104 @@
 <h3 id="3-the-executable-action-catalog-the-verbs">3. The Executable Action Catalog (The Verbs)</h3>
 <p>This is what separates modern agent ontologies from legacy semantic web experiments. </p>
 <p>In an operational ontology, every action an agent can take (e.g., <code>IssueCreditMemo</code>, <code>TriggerVendorDispute</code>, <code>ApprovePurchaseOrder</code>) is formalized as an atomic tool contract governed by a Finite State Machine (FSM).</p>
-<p>Each action specifies:
-- <strong>Input Schema:</strong> Strictly validated arguments.
-- <strong>Preconditions:</strong> What state must the object be in for this action to be valid?
-- <strong>Execution Body:</strong> The deterministic API or database call that mutates underlying enterprise software.
-- <strong>Postconditions:</strong> What assertions must pass after execution before the transaction is committed?</p>
+<p>Each action specifies:</p>
+<ul>
+<li><strong>Input Schema:</strong> Strictly validated arguments.</li>
+<li><strong>Preconditions:</strong> What state must the object be in for this action to be valid?</li>
+<li><strong>Execution Body:</strong> The deterministic API or database call that mutates underlying enterprise software.</li>
+<li><strong>Postconditions:</strong> What assertions must pass after execution before the transaction is committed?</li>
+</ul>
 <hr />
 <h2 id="code-implementation-an-executable-python-ontology">Code Implementation: An Executable Python Ontology</h2>
 <p>Let us examine how this looks in production code. </p>
 <p>The following snippet demonstrates an operational ontology for an autonomous Accounts Payable reconciliation agent. Notice that we do not rely on prompt engineering or conversational guidelines to enforce compliance. We enforce compliance at the Python compiler and runtime validation layer.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">decimal</span><span class="w"> </span><span class="kn">import</span> <span class="n">Decimal</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">enum</span><span class="w"> </span><span class="kn">import</span> <span class="n">Enum</span>
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">Optional</span><span class="p">,</span> <span class="n">List</span>
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="kn">from</span><span class="w"> </span><span class="nn">pydantic</span><span class="w"> </span><span class="kn">import</span> <span class="n">BaseModel</span><span class="p">,</span> <span class="n">Field</span><span class="p">,</span> <span class="n">model_validator</span>
-<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>
-<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>
-<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="k">class</span><span class="w"> </span><span class="nc">InvoiceStatus</span><span class="p">(</span><span class="nb">str</span><span class="p">,</span> <span class="n">Enum</span><span class="p">):</span>
-<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>    <span class="n">DRAFT</span> <span class="o">=</span> <span class="s2">"draft"</span>
-<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>    <span class="n">SUBMITTED</span> <span class="o">=</span> <span class="s2">"submitted"</span>
-<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>    <span class="n">MATCHED</span> <span class="o">=</span> <span class="s2">"matched"</span>
-<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>    <span class="n">DISPUTED</span> <span class="o">=</span> <span class="s2">"disputed"</span>
-<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>    <span class="n">APPROVED</span> <span class="o">=</span> <span class="s2">"approved"</span>
-<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>    <span class="n">PAID</span> <span class="o">=</span> <span class="s2">"paid"</span>
-<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>
-<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>
-<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="k">class</span><span class="w"> </span><span class="nc">LineItem</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
-<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>    <span class="n">item_id</span><span class="p">:</span> <span class="nb">str</span>
-<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>    <span class="n">sku</span><span class="p">:</span> <span class="nb">str</span>
-<a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a>    <span class="n">quantity</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="n">gt</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">"Quantity must be strictly positive"</span><span class="p">)</span>
-<a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a>    <span class="n">unit_price</span><span class="p">:</span> <span class="n">Decimal</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="n">gt</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">"Unit price must be positive"</span><span class="p">)</span>
-<a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a>    <span class="n">total_amount</span><span class="p">:</span> <span class="n">Decimal</span>
-<a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a>
-<a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a>    <span class="nd">@model_validator</span><span class="p">(</span><span class="n">mode</span><span class="o">=</span><span class="s2">"after"</span><span class="p">)</span>
-<a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">verify_arithmetic</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">"LineItem"</span><span class="p">:</span>
-<a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a>        <span class="n">expected</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">quantity</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">unit_price</span>
-<a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a>        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">total_amount</span> <span class="o">!=</span> <span class="n">expected</span><span class="p">:</span>
-<a id="__codelineno-3-27" name="__codelineno-3-27" href="#__codelineno-3-27"></a>            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
-<a id="__codelineno-3-28" name="__codelineno-3-28" href="#__codelineno-3-28"></a>                <span class="sa">f</span><span class="s2">"Arithmetic mismatch on SKU </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">sku</span><span class="si">}</span><span class="s2">: "</span>
-<a id="__codelineno-3-29" name="__codelineno-3-29" href="#__codelineno-3-29"></a>                <span class="sa">f</span><span class="s2">"quantity (</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">quantity</span><span class="si">}</span><span class="s2">) * unit_price (</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">unit_price</span><span class="si">}</span><span class="s2">) != </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">total_amount</span><span class="si">}</span><span class="s2">"</span>
-<a id="__codelineno-3-30" name="__codelineno-3-30" href="#__codelineno-3-30"></a>            <span class="p">)</span>
-<a id="__codelineno-3-31" name="__codelineno-3-31" href="#__codelineno-3-31"></a>        <span class="k">return</span> <span class="bp">self</span>
-<a id="__codelineno-3-32" name="__codelineno-3-32" href="#__codelineno-3-32"></a>
-<a id="__codelineno-3-33" name="__codelineno-3-33" href="#__codelineno-3-33"></a>
-<a id="__codelineno-3-34" name="__codelineno-3-34" href="#__codelineno-3-34"></a><span class="k">class</span><span class="w"> </span><span class="nc">CorporateInvoice</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
-<a id="__codelineno-3-35" name="__codelineno-3-35" href="#__codelineno-3-35"></a>    <span class="n">invoice_id</span><span class="p">:</span> <span class="nb">str</span>
-<a id="__codelineno-3-36" name="__codelineno-3-36" href="#__codelineno-3-36"></a>    <span class="n">vendor_id</span><span class="p">:</span> <span class="nb">str</span>
-<a id="__codelineno-3-37" name="__codelineno-3-37" href="#__codelineno-3-37"></a>    <span class="n">purchase_order_id</span><span class="p">:</span> <span class="nb">str</span>
-<a id="__codelineno-3-38" name="__codelineno-3-38" href="#__codelineno-3-38"></a>    <span class="n">status</span><span class="p">:</span> <span class="n">InvoiceStatus</span>
-<a id="__codelineno-3-39" name="__codelineno-3-39" href="#__codelineno-3-39"></a>    <span class="n">line_items</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">LineItem</span><span class="p">]</span>
-<a id="__codelineno-3-40" name="__codelineno-3-40" href="#__codelineno-3-40"></a>    <span class="n">tax_amount</span><span class="p">:</span> <span class="n">Decimal</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="n">ge</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
-<a id="__codelineno-3-41" name="__codelineno-3-41" href="#__codelineno-3-41"></a>    <span class="n">net_amount</span><span class="p">:</span> <span class="n">Decimal</span>
-<a id="__codelineno-3-42" name="__codelineno-3-42" href="#__codelineno-3-42"></a>    <span class="n">gross_amount</span><span class="p">:</span> <span class="n">Decimal</span>
-<a id="__codelineno-3-43" name="__codelineno-3-43" href="#__codelineno-3-43"></a>    <span class="n">approved_by</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
-<a id="__codelineno-3-44" name="__codelineno-3-44" href="#__codelineno-3-44"></a>
-<a id="__codelineno-3-45" name="__codelineno-3-45" href="#__codelineno-3-45"></a>    <span class="nd">@model_validator</span><span class="p">(</span><span class="n">mode</span><span class="o">=</span><span class="s2">"after"</span><span class="p">)</span>
-<a id="__codelineno-3-46" name="__codelineno-3-46" href="#__codelineno-3-46"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">verify_invoice_invariants</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">"CorporateInvoice"</span><span class="p">:</span>
-<a id="__codelineno-3-47" name="__codelineno-3-47" href="#__codelineno-3-47"></a>        <span class="n">calculated_net</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">item</span><span class="o">.</span><span class="n">total_amount</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">line_items</span><span class="p">)</span>
-<a id="__codelineno-3-48" name="__codelineno-3-48" href="#__codelineno-3-48"></a>        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">net_amount</span> <span class="o">!=</span> <span class="n">calculated_net</span><span class="p">:</span>
-<a id="__codelineno-3-49" name="__codelineno-3-49" href="#__codelineno-3-49"></a>            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Net amount mismatch: reported </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">net_amount</span><span class="si">}</span><span class="s2">, calculated </span><span class="si">{</span><span class="n">calculated_net</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
-<a id="__codelineno-3-50" name="__codelineno-3-50" href="#__codelineno-3-50"></a>
-<a id="__codelineno-3-51" name="__codelineno-3-51" href="#__codelineno-3-51"></a>        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">gross_amount</span> <span class="o">!=</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">net_amount</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">tax_amount</span><span class="p">):</span>
-<a id="__codelineno-3-52" name="__codelineno-3-52" href="#__codelineno-3-52"></a>            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">"Gross amount does not equal net amount plus tax."</span><span class="p">)</span>
-<a id="__codelineno-3-53" name="__codelineno-3-53" href="#__codelineno-3-53"></a>
-<a id="__codelineno-3-54" name="__codelineno-3-54" href="#__codelineno-3-54"></a>        <span class="k">return</span> <span class="bp">self</span>
-<a id="__codelineno-3-55" name="__codelineno-3-55" href="#__codelineno-3-55"></a>
-<a id="__codelineno-3-56" name="__codelineno-3-56" href="#__codelineno-3-56"></a>
-<a id="__codelineno-3-57" name="__codelineno-3-57" href="#__codelineno-3-57"></a><span class="c1"># Operational Action Contracts (The Verbs)</span>
-<a id="__codelineno-3-58" name="__codelineno-3-58" href="#__codelineno-3-58"></a><span class="k">class</span><span class="w"> </span><span class="nc">ApproveInvoiceAction</span><span class="p">:</span>
-<a id="__codelineno-3-59" name="__codelineno-3-59" href="#__codelineno-3-59"></a><span class="w">    </span><span class="sd">"""</span>
-<a id="__codelineno-3-60" name="__codelineno-3-60" href="#__codelineno-3-60"></a><span class="sd">    Executable action contract inside the Operational Ontology.</span>
-<a id="__codelineno-3-61" name="__codelineno-3-61" href="#__codelineno-3-61"></a><span class="sd">    Enforces deterministic state transitions and authorization thresholds.</span>
-<a id="__codelineno-3-62" name="__codelineno-3-62" href="#__codelineno-3-62"></a><span class="sd">    """</span>
-<a id="__codelineno-3-63" name="__codelineno-3-63" href="#__codelineno-3-63"></a>    <span class="n">MAX_AUTONOMOUS_LIMIT</span> <span class="o">=</span> <span class="n">Decimal</span><span class="p">(</span><span class="s2">"10000.00"</span><span class="p">)</span>
-<a id="__codelineno-3-64" name="__codelineno-3-64" href="#__codelineno-3-64"></a>
-<a id="__codelineno-3-65" name="__codelineno-3-65" href="#__codelineno-3-65"></a>    <span class="nd">@classmethod</span>
-<a id="__codelineno-3-66" name="__codelineno-3-66" href="#__codelineno-3-66"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">execute</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">invoice</span><span class="p">:</span> <span class="n">CorporateInvoice</span><span class="p">,</span> <span class="n">operator_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">CorporateInvoice</span><span class="p">:</span>
-<a id="__codelineno-3-67" name="__codelineno-3-67" href="#__codelineno-3-67"></a>        <span class="c1"># Precondition 1: State validation via Finite State Machine</span>
-<a id="__codelineno-3-68" name="__codelineno-3-68" href="#__codelineno-3-68"></a>        <span class="k">if</span> <span class="n">invoice</span><span class="o">.</span><span class="n">status</span> <span class="o">!=</span> <span class="n">InvoiceStatus</span><span class="o">.</span><span class="n">MATCHED</span><span class="p">:</span>
-<a id="__codelineno-3-69" name="__codelineno-3-69" href="#__codelineno-3-69"></a>            <span class="k">raise</span> <span class="ne">PermissionError</span><span class="p">(</span>
-<a id="__codelineno-3-70" name="__codelineno-3-70" href="#__codelineno-3-70"></a>                <span class="sa">f</span><span class="s2">"Action Rejected: Cannot approve invoice in '</span><span class="si">{</span><span class="n">invoice</span><span class="o">.</span><span class="n">status</span><span class="si">}</span><span class="s2">' state. "</span>
-<a id="__codelineno-3-71" name="__codelineno-3-71" href="#__codelineno-3-71"></a>                <span class="s2">"Invoice must be in 'MATCHED' state."</span>
-<a id="__codelineno-3-72" name="__codelineno-3-72" href="#__codelineno-3-72"></a>            <span class="p">)</span>
-<a id="__codelineno-3-73" name="__codelineno-3-73" href="#__codelineno-3-73"></a>
-<a id="__codelineno-3-74" name="__codelineno-3-74" href="#__codelineno-3-74"></a>        <span class="c1"># Precondition 2: Balance Sheet Invariant Check</span>
-<a id="__codelineno-3-75" name="__codelineno-3-75" href="#__codelineno-3-75"></a>        <span class="k">if</span> <span class="n">invoice</span><span class="o">.</span><span class="n">gross_amount</span> <span class="o">&gt;</span> <span class="bp">cls</span><span class="o">.</span><span class="n">MAX_AUTONOMOUS_LIMIT</span><span class="p">:</span>
-<a id="__codelineno-3-76" name="__codelineno-3-76" href="#__codelineno-3-76"></a>            <span class="k">raise</span> <span class="ne">PermissionError</span><span class="p">(</span>
-<a id="__codelineno-3-77" name="__codelineno-3-77" href="#__codelineno-3-77"></a>                <span class="sa">f</span><span class="s2">"Action Rejected: Invoice total $</span><span class="si">{</span><span class="n">invoice</span><span class="o">.</span><span class="n">gross_amount</span><span class="si">}</span><span class="s2"> exceeds "</span>
-<a id="__codelineno-3-78" name="__codelineno-3-78" href="#__codelineno-3-78"></a>                <span class="sa">f</span><span class="s2">"autonomous execution limit of $</span><span class="si">{</span><span class="bp">cls</span><span class="o">.</span><span class="n">MAX_AUTONOMOUS_LIMIT</span><span class="si">}</span><span class="s2">. "</span>
-<a id="__codelineno-3-79" name="__codelineno-3-79" href="#__codelineno-3-79"></a>                <span class="s2">"Escalation to human executive required."</span>
-<a id="__codelineno-3-80" name="__codelineno-3-80" href="#__codelineno-3-80"></a>            <span class="p">)</span>
-<a id="__codelineno-3-81" name="__codelineno-3-81" href="#__codelineno-3-81"></a>
-<a id="__codelineno-3-82" name="__codelineno-3-82" href="#__codelineno-3-82"></a>        <span class="c1"># Deterministic State Transition</span>
-<a id="__codelineno-3-83" name="__codelineno-3-83" href="#__codelineno-3-83"></a>        <span class="n">invoice</span><span class="o">.</span><span class="n">status</span> <span class="o">=</span> <span class="n">InvoiceStatus</span><span class="o">.</span><span class="n">APPROVED</span>
-<a id="__codelineno-3-84" name="__codelineno-3-84" href="#__codelineno-3-84"></a>        <span class="n">invoice</span><span class="o">.</span><span class="n">approved_by</span> <span class="o">=</span> <span class="n">operator_id</span>
-<a id="__codelineno-3-85" name="__codelineno-3-85" href="#__codelineno-3-85"></a>
-<a id="__codelineno-3-86" name="__codelineno-3-86" href="#__codelineno-3-86"></a>        <span class="c1"># Here: Trigger transactional commit to ERP ledger (e.g. SAP via RFC/API)</span>
-<a id="__codelineno-3-87" name="__codelineno-3-87" href="#__codelineno-3-87"></a>        <span class="k">return</span> <span class="n">invoice</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">decimal</span><span class="w"> </span><span class="kn">import</span> <span class="n">Decimal</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">enum</span><span class="w"> </span><span class="kn">import</span> <span class="n">Enum</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">Optional</span><span class="p">,</span> <span class="n">List</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="kn">from</span><span class="w"> </span><span class="nn">pydantic</span><span class="w"> </span><span class="kn">import</span> <span class="n">BaseModel</span><span class="p">,</span> <span class="n">Field</span><span class="p">,</span> <span class="n">model_validator</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="k">class</span><span class="w"> </span><span class="nc">InvoiceStatus</span><span class="p">(</span><span class="nb">str</span><span class="p">,</span> <span class="n">Enum</span><span class="p">):</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>    <span class="n">DRAFT</span> <span class="o">=</span> <span class="s2">"draft"</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>    <span class="n">SUBMITTED</span> <span class="o">=</span> <span class="s2">"submitted"</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>    <span class="n">MATCHED</span> <span class="o">=</span> <span class="s2">"matched"</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>    <span class="n">DISPUTED</span> <span class="o">=</span> <span class="s2">"disputed"</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>    <span class="n">APPROVED</span> <span class="o">=</span> <span class="s2">"approved"</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>    <span class="n">PAID</span> <span class="o">=</span> <span class="s2">"paid"</span>
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="k">class</span><span class="w"> </span><span class="nc">LineItem</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>    <span class="n">item_id</span><span class="p">:</span> <span class="nb">str</span>
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>    <span class="n">sku</span><span class="p">:</span> <span class="nb">str</span>
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>    <span class="n">quantity</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="n">gt</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">"Quantity must be strictly positive"</span><span class="p">)</span>
+<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>    <span class="n">unit_price</span><span class="p">:</span> <span class="n">Decimal</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="n">gt</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">"Unit price must be positive"</span><span class="p">)</span>
+<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>    <span class="n">total_amount</span><span class="p">:</span> <span class="n">Decimal</span>
+<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a>
+<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a>    <span class="nd">@model_validator</span><span class="p">(</span><span class="n">mode</span><span class="o">=</span><span class="s2">"after"</span><span class="p">)</span>
+<a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">verify_arithmetic</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">"LineItem"</span><span class="p">:</span>
+<a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a>        <span class="n">expected</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">quantity</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">unit_price</span>
+<a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a>        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">total_amount</span> <span class="o">!=</span> <span class="n">expected</span><span class="p">:</span>
+<a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a>            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+<a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a>                <span class="sa">f</span><span class="s2">"Arithmetic mismatch on SKU </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">sku</span><span class="si">}</span><span class="s2">: "</span>
+<a id="__codelineno-1-29" name="__codelineno-1-29" href="#__codelineno-1-29"></a>                <span class="sa">f</span><span class="s2">"quantity (</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">quantity</span><span class="si">}</span><span class="s2">) * unit_price (</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">unit_price</span><span class="si">}</span><span class="s2">) != </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">total_amount</span><span class="si">}</span><span class="s2">"</span>
+<a id="__codelineno-1-30" name="__codelineno-1-30" href="#__codelineno-1-30"></a>            <span class="p">)</span>
+<a id="__codelineno-1-31" name="__codelineno-1-31" href="#__codelineno-1-31"></a>        <span class="k">return</span> <span class="bp">self</span>
+<a id="__codelineno-1-32" name="__codelineno-1-32" href="#__codelineno-1-32"></a>
+<a id="__codelineno-1-33" name="__codelineno-1-33" href="#__codelineno-1-33"></a>
+<a id="__codelineno-1-34" name="__codelineno-1-34" href="#__codelineno-1-34"></a><span class="k">class</span><span class="w"> </span><span class="nc">CorporateInvoice</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+<a id="__codelineno-1-35" name="__codelineno-1-35" href="#__codelineno-1-35"></a>    <span class="n">invoice_id</span><span class="p">:</span> <span class="nb">str</span>
+<a id="__codelineno-1-36" name="__codelineno-1-36" href="#__codelineno-1-36"></a>    <span class="n">vendor_id</span><span class="p">:</span> <span class="nb">str</span>
+<a id="__codelineno-1-37" name="__codelineno-1-37" href="#__codelineno-1-37"></a>    <span class="n">purchase_order_id</span><span class="p">:</span> <span class="nb">str</span>
+<a id="__codelineno-1-38" name="__codelineno-1-38" href="#__codelineno-1-38"></a>    <span class="n">status</span><span class="p">:</span> <span class="n">InvoiceStatus</span>
+<a id="__codelineno-1-39" name="__codelineno-1-39" href="#__codelineno-1-39"></a>    <span class="n">line_items</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">LineItem</span><span class="p">]</span>
+<a id="__codelineno-1-40" name="__codelineno-1-40" href="#__codelineno-1-40"></a>    <span class="n">tax_amount</span><span class="p">:</span> <span class="n">Decimal</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="n">ge</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<a id="__codelineno-1-41" name="__codelineno-1-41" href="#__codelineno-1-41"></a>    <span class="n">net_amount</span><span class="p">:</span> <span class="n">Decimal</span>
+<a id="__codelineno-1-42" name="__codelineno-1-42" href="#__codelineno-1-42"></a>    <span class="n">gross_amount</span><span class="p">:</span> <span class="n">Decimal</span>
+<a id="__codelineno-1-43" name="__codelineno-1-43" href="#__codelineno-1-43"></a>    <span class="n">approved_by</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+<a id="__codelineno-1-44" name="__codelineno-1-44" href="#__codelineno-1-44"></a>
+<a id="__codelineno-1-45" name="__codelineno-1-45" href="#__codelineno-1-45"></a>    <span class="nd">@model_validator</span><span class="p">(</span><span class="n">mode</span><span class="o">=</span><span class="s2">"after"</span><span class="p">)</span>
+<a id="__codelineno-1-46" name="__codelineno-1-46" href="#__codelineno-1-46"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">verify_invoice_invariants</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">"CorporateInvoice"</span><span class="p">:</span>
+<a id="__codelineno-1-47" name="__codelineno-1-47" href="#__codelineno-1-47"></a>        <span class="n">calculated_net</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">item</span><span class="o">.</span><span class="n">total_amount</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">line_items</span><span class="p">)</span>
+<a id="__codelineno-1-48" name="__codelineno-1-48" href="#__codelineno-1-48"></a>        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">net_amount</span> <span class="o">!=</span> <span class="n">calculated_net</span><span class="p">:</span>
+<a id="__codelineno-1-49" name="__codelineno-1-49" href="#__codelineno-1-49"></a>            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Net amount mismatch: reported </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">net_amount</span><span class="si">}</span><span class="s2">, calculated </span><span class="si">{</span><span class="n">calculated_net</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<a id="__codelineno-1-50" name="__codelineno-1-50" href="#__codelineno-1-50"></a>
+<a id="__codelineno-1-51" name="__codelineno-1-51" href="#__codelineno-1-51"></a>        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">gross_amount</span> <span class="o">!=</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">net_amount</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">tax_amount</span><span class="p">):</span>
+<a id="__codelineno-1-52" name="__codelineno-1-52" href="#__codelineno-1-52"></a>            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">"Gross amount does not equal net amount plus tax."</span><span class="p">)</span>
+<a id="__codelineno-1-53" name="__codelineno-1-53" href="#__codelineno-1-53"></a>
+<a id="__codelineno-1-54" name="__codelineno-1-54" href="#__codelineno-1-54"></a>        <span class="k">return</span> <span class="bp">self</span>
+<a id="__codelineno-1-55" name="__codelineno-1-55" href="#__codelineno-1-55"></a>
+<a id="__codelineno-1-56" name="__codelineno-1-56" href="#__codelineno-1-56"></a>
+<a id="__codelineno-1-57" name="__codelineno-1-57" href="#__codelineno-1-57"></a><span class="c1"># Operational Action Contracts (The Verbs)</span>
+<a id="__codelineno-1-58" name="__codelineno-1-58" href="#__codelineno-1-58"></a><span class="k">class</span><span class="w"> </span><span class="nc">ApproveInvoiceAction</span><span class="p">:</span>
+<a id="__codelineno-1-59" name="__codelineno-1-59" href="#__codelineno-1-59"></a><span class="w">    </span><span class="sd">"""</span>
+<a id="__codelineno-1-60" name="__codelineno-1-60" href="#__codelineno-1-60"></a><span class="sd">    Executable action contract inside the Operational Ontology.</span>
+<a id="__codelineno-1-61" name="__codelineno-1-61" href="#__codelineno-1-61"></a><span class="sd">    Enforces deterministic state transitions and authorization thresholds.</span>
+<a id="__codelineno-1-62" name="__codelineno-1-62" href="#__codelineno-1-62"></a><span class="sd">    """</span>
+<a id="__codelineno-1-63" name="__codelineno-1-63" href="#__codelineno-1-63"></a>    <span class="n">MAX_AUTONOMOUS_LIMIT</span> <span class="o">=</span> <span class="n">Decimal</span><span class="p">(</span><span class="s2">"10000.00"</span><span class="p">)</span>
+<a id="__codelineno-1-64" name="__codelineno-1-64" href="#__codelineno-1-64"></a>
+<a id="__codelineno-1-65" name="__codelineno-1-65" href="#__codelineno-1-65"></a>    <span class="nd">@classmethod</span>
+<a id="__codelineno-1-66" name="__codelineno-1-66" href="#__codelineno-1-66"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">execute</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">invoice</span><span class="p">:</span> <span class="n">CorporateInvoice</span><span class="p">,</span> <span class="n">operator_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">CorporateInvoice</span><span class="p">:</span>
+<a id="__codelineno-1-67" name="__codelineno-1-67" href="#__codelineno-1-67"></a>        <span class="c1"># Precondition 1: State validation via Finite State Machine</span>
+<a id="__codelineno-1-68" name="__codelineno-1-68" href="#__codelineno-1-68"></a>        <span class="k">if</span> <span class="n">invoice</span><span class="o">.</span><span class="n">status</span> <span class="o">!=</span> <span class="n">InvoiceStatus</span><span class="o">.</span><span class="n">MATCHED</span><span class="p">:</span>
+<a id="__codelineno-1-69" name="__codelineno-1-69" href="#__codelineno-1-69"></a>            <span class="k">raise</span> <span class="ne">PermissionError</span><span class="p">(</span>
+<a id="__codelineno-1-70" name="__codelineno-1-70" href="#__codelineno-1-70"></a>                <span class="sa">f</span><span class="s2">"Action Rejected: Cannot approve invoice in '</span><span class="si">{</span><span class="n">invoice</span><span class="o">.</span><span class="n">status</span><span class="si">}</span><span class="s2">' state. "</span>
+<a id="__codelineno-1-71" name="__codelineno-1-71" href="#__codelineno-1-71"></a>                <span class="s2">"Invoice must be in 'MATCHED' state."</span>
+<a id="__codelineno-1-72" name="__codelineno-1-72" href="#__codelineno-1-72"></a>            <span class="p">)</span>
+<a id="__codelineno-1-73" name="__codelineno-1-73" href="#__codelineno-1-73"></a>
+<a id="__codelineno-1-74" name="__codelineno-1-74" href="#__codelineno-1-74"></a>        <span class="c1"># Precondition 2: Balance Sheet Invariant Check</span>
+<a id="__codelineno-1-75" name="__codelineno-1-75" href="#__codelineno-1-75"></a>        <span class="k">if</span> <span class="n">invoice</span><span class="o">.</span><span class="n">gross_amount</span> <span class="o">&gt;</span> <span class="bp">cls</span><span class="o">.</span><span class="n">MAX_AUTONOMOUS_LIMIT</span><span class="p">:</span>
+<a id="__codelineno-1-76" name="__codelineno-1-76" href="#__codelineno-1-76"></a>            <span class="k">raise</span> <span class="ne">PermissionError</span><span class="p">(</span>
+<a id="__codelineno-1-77" name="__codelineno-1-77" href="#__codelineno-1-77"></a>                <span class="sa">f</span><span class="s2">"Action Rejected: Invoice total $</span><span class="si">{</span><span class="n">invoice</span><span class="o">.</span><span class="n">gross_amount</span><span class="si">}</span><span class="s2"> exceeds "</span>
+<a id="__codelineno-1-78" name="__codelineno-1-78" href="#__codelineno-1-78"></a>                <span class="sa">f</span><span class="s2">"autonomous execution limit of $</span><span class="si">{</span><span class="bp">cls</span><span class="o">.</span><span class="n">MAX_AUTONOMOUS_LIMIT</span><span class="si">}</span><span class="s2">. "</span>
+<a id="__codelineno-1-79" name="__codelineno-1-79" href="#__codelineno-1-79"></a>                <span class="s2">"Escalation to human executive required."</span>
+<a id="__codelineno-1-80" name="__codelineno-1-80" href="#__codelineno-1-80"></a>            <span class="p">)</span>
+<a id="__codelineno-1-81" name="__codelineno-1-81" href="#__codelineno-1-81"></a>
+<a id="__codelineno-1-82" name="__codelineno-1-82" href="#__codelineno-1-82"></a>        <span class="c1"># Deterministic State Transition</span>
+<a id="__codelineno-1-83" name="__codelineno-1-83" href="#__codelineno-1-83"></a>        <span class="n">invoice</span><span class="o">.</span><span class="n">status</span> <span class="o">=</span> <span class="n">InvoiceStatus</span><span class="o">.</span><span class="n">APPROVED</span>
+<a id="__codelineno-1-84" name="__codelineno-1-84" href="#__codelineno-1-84"></a>        <span class="n">invoice</span><span class="o">.</span><span class="n">approved_by</span> <span class="o">=</span> <span class="n">operator_id</span>
+<a id="__codelineno-1-85" name="__codelineno-1-85" href="#__codelineno-1-85"></a>
+<a id="__codelineno-1-86" name="__codelineno-1-86" href="#__codelineno-1-86"></a>        <span class="c1"># Here: Trigger transactional commit to ERP ledger (e.g. SAP via RFC/API)</span>
+<a id="__codelineno-1-87" name="__codelineno-1-87" href="#__codelineno-1-87"></a>        <span class="k">return</span> <span class="n">invoice</span>
 </code></pre></div>
 <h3 id="why-this-architecture-cannot-fail-in-production">Why This Architecture Cannot Fail in Production</h3>
 <p>Look closely at what happens when an autonomous agent interacts with this system:</p>
@@ -695,30 +674,12 @@
 <h2 id="how-ai-agents-interact-with-an-operational-ontology">How AI Agents Interact with an Operational Ontology</h2>
 <p>In an enterprise deployment, the agent does not receive a massive SQL schema dump or thousands of lines of documentation. It receives an ontology interface exposed via structured tools.</p>
 <p>The interaction follows a five-stage deterministic loop:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>[ 1. Discovery ]
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>  Agent queries Ontology Catalog:
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>  "What operations are permitted on Invoice #8410 in its current state?"
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>         |
-<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>         v
-<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>[ 2. Context Injection ]
-<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>  Ontology returns typed Object State + Permitted Action Schemas:
-<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>  Status: MATCHED | Permitted Tools: [ApproveInvoice, FlagDiscrepancy]
-<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>         |
-<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>         v
-<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>[ 3. Decision &amp; Parameter Generation ]
-<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>  LLM reasons over business context and emits structured tool call:
-<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a>  Tool: ApproveInvoice(invoice_id="8410", operator_id="agent_alpha")
-<a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a>         |
-<a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a>         v
-<a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a>[ 4. Hard Semantic Gatekeeper ]
-<a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a>  Ontology validates Preconditions, Types, and Invariants.
-<a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a>  If valid -&gt; Executes mutation on enterprise system.
-<a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a>  If invalid -&gt; Returns deterministic error message to LLM for course correction.
-<a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a>         |
-<a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a>         v
-<a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a>[ 5. Postcondition Audit &amp; Event Dispatch ]
-<a id="__codelineno-4-23" name="__codelineno-4-23" href="#__codelineno-4-23"></a>  Ontology verifies ledger balance and dispatches Kafka event to audit trail.
-</code></pre></div>
+<pre class="mermaid"><code>flowchart TD
+    D1[1. Discovery&lt;br&gt;Agent queries Ontology Catalog for legal operations on Invoice #8410] --&gt; D2[2. Context Injection&lt;br&gt;Ontology returns typed state MATCHED and permitted tools]
+    D2 --&gt; D3[3. Decision and Parameter Generation&lt;br&gt;LLM reasons over context and emits structured tool call]
+    D3 --&gt; D4{4. Semantic Gatekeeper&lt;br&gt;Validates preconditions, types and invariants}
+    D4 --&gt;|Valid Mutation| D5[5. Core System Mutation and Event Dispatch&lt;br&gt;Executes mutation on ERP and logs audit trail]
+    D4 --&gt;|Invalid Invariant| D6[Deterministic Error to Agent&lt;br&gt;Agent self-corrects parameter]</code></pre>
 <p>By decoupling <strong>reasoning</strong> from <strong>execution boundaries</strong>, the LLM is leveraged for what it excels at (understanding unstructured vendor communications, summarizing discrepancies, identifying context) while the ontology handles what software must guarantee (arithmetic integrity, security, state validity, transactional commits).</p>
 <hr />
 <h2 id="the-four-catastrophic-failure-modes-ontologies-eliminate">The Four Catastrophic Failure Modes Ontologies Eliminate</h2>
@@ -803,11 +764,13 @@
 <p>Platforms like Palantir AIP charge millions of dollars in annual software licensing primarily because they sell a pre-packaged enterprise ontology. </p>
 <p>By building a modular, code-first operational ontology using open standards (Python, Pydantic, FastMCP, PostgreSQL), an enterprise retains 100% ownership of its intellectual property. You build the ontology once, and you can swap the underlying LLM provider (Anthropic, OpenAI, local open-source models) overnight without altering a single line of business logic.</p>
 <h3 id="3-absolute-regulatory-and-audit-compliance">3. Absolute Regulatory and Audit Compliance</h3>
-<p>When an AI agent takes an action in an enterprise with an operational ontology, every transaction generates an immutable cryptographic audit record:
-- What state the entity occupied.
-- What preconditions passed.
-- Which specific tool executed the mutation.
-- What exact user or agent identifier authorized the transition.</p>
+<p>When an AI agent takes an action in an enterprise with an operational ontology, every transaction generates an immutable cryptographic audit record:</p>
+<ul>
+<li>What state the entity occupied.</li>
+<li>What preconditions passed.</li>
+<li>Which specific tool executed the mutation.</li>
+<li>What exact user or agent identifier authorized the transition.</li>
+</ul>
 <p>In regulated verticals like banking, healthcare, and insurance, this auditability is the difference between passing a regulatory examination and facing severe statutory penalties.</p>
 <hr />
 <h2 id="conclusion-the-architecture-of-production-ai">Conclusion: The Architecture of Production AI</h2>
@@ -1013,6 +976,8 @@
     <script src="../../assets/js/main.min.js"></script>
     <script src="../../assets/js/pagination.js" defer></script>
     <script src="../../assets/js/relative_dates.js" defer></script>
+    <script src="../../assets/js/mermaid.min.js" defer></script>
+    <script src="../../assets/js/mermaid_init.js" defer></script>
     <script src="../../search/main.js" defer></script>
 
 </body>

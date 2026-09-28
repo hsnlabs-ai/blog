@@ -30,6 +30,7 @@ The root cause was integration drift. The upstream cloud model provider had depl
 During development, an engineer writes a prompt asking the model to return a structured JSON object. The model complies, outputting valid fields during staging tests.
 
 Two weeks later, the exact same prompt produces subtle structural mutations:
+
 * An integer field like customer_id suddenly returns as a string with leading zeros.
 * A mandatory foreign key is omitted because the model summarized an ambiguous invoice note.
 * An uppercase enum value like STATUS_APPROVED is substituted with a near synonym like STATUS_CONFIRMED.
@@ -43,13 +44,14 @@ To a downstream PostgreSQL database, a FastAPI endpoint, or an enterprise servic
 
 At HSN Labs, we treat natural language prompts as completely untrusted input. We eliminate integration drift by removing schema responsibility from the model:
 
-* Strict Pydantic Schema Parsing: Every model output is intercepted by a strict schema validator before it can touch enterprise infrastructure. If a field type drifts by a single character, the payload is caught and sanitized at the perimeter.
-* Semantic Routing with Parameterized Executors: We never let models generate open-ended code or direct API query strings. The model is restricted to intent classification and parameter extraction. Isolated software workers construct the actual API payloads using pre-compiled templates.
-* Finite State Transition Guards: Multi-step agent operations are bounded by finite state machines. If an upstream model update causes an agent to suggest an illegal state transition, the state machine guard rejects the transition before any database write executes.
+* **Strict Pydantic Schema Parsing:** Every model output is intercepted by a strict schema validator before it can touch enterprise infrastructure. If a field type drifts by a single character, the payload is caught and sanitized at the perimeter.
+* **Semantic Routing with Parameterized Executors:** We never let models generate open-ended code or direct API query strings. The model is restricted to intent classification and parameter extraction. Isolated software workers construct the actual API payloads using pre-compiled templates.
+* **Finite State Transition Guards:** Multi-step agent operations are bounded by finite state machines. If an upstream model update causes an agent to suggest an illegal state transition, the state machine guard rejects the transition before any database write executes.
 
 Engineering production stability means designing systems where upstream model drift cannot corrupt your core corporate infrastructure.
 
 ## Strategic Resources and Related Essays
+
 - <a href="../what-is-an-ontology-for-ai-agents/">What Is an Ontology for AI Agents? The Definitive Guide</a>
 - <a href="../the-poc-graveyard/">Why Agents Fail: The PoC Graveyard</a>
 - <a href="../llm-as-judge-fallacy/">Why LLM-as-a-Judge Fails in Banking</a>

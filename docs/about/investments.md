@@ -3,6 +3,7 @@
 I invest in and advise early-stage technology companies. 
 
 ## Focus Areas
+
 - B2B SaaS
 - Enterprise Infrastructure
 - Data-Intensive Applications

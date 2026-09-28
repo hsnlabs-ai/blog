@@ -44,6 +44,8 @@
     <link rel="stylesheet" href="../../../assets/css/mkdocstrings.min.css">
     <script src="../../../assets/js/pagination.js"></script>
     <script src="../../../assets/js/relative_dates.js"></script>
+    <script src="../../../assets/js/mermaid.min.js"></script>
+    <script src="../../../assets/js/mermaid_init.js"></script>
     <script src="../../../search/main.js"></script>
     <link href="../../../stylesheets/extra.css" rel="stylesheet">
     <link href="../../../assets/css/pagination.css" rel="stylesheet">
@@ -439,24 +441,30 @@
 <p>Se os sistemas centrais da sua empresa não possuírem uma representação formal e clara do que é um cliente, um pedido, uma fatura e quais ações são permitidas em cada etapa, o melhor modelo disponível no mercado continuara alucinando e gerando erros operacionais graves.</p>
 <h2 id="as-cinco-etapas-do-blueprint-arquitetural">As Cinco Etapas do Blueprint Arquitetural</h2>
 <h3 id="etapa-1-delimitacao-do-dominio-e-mapeamento-de-entidades">Etapa 1: Delimitação do Domínio e Mapeamento de Entidades</h3>
-<p>O primeiro passo não é escrever código, mas identificar as entidades fundamentais do negócio. Em uma operação logística, por exemplo:
-- Pedido de Transporte
-- Veículo
-- Motorista
-- Rota
-- Ponto de Coleta e Entrega
-- Ocorrência Operacional</p>
+<p>O primeiro passo não é escrever código, mas identificar as entidades fundamentais do negócio. Em uma operação logística, por exemplo:</p>
+<ul>
+<li>Pedido de Transporte</li>
+<li>Veículo</li>
+<li>Motorista</li>
+<li>Rota</li>
+<li>Ponto de Coleta e Entrega</li>
+<li>Ocorrência Operacional</li>
+</ul>
 <p>Para cada entidade, definem-se os atributos essenciais e as fontes verdadeiras de dados onde essas informações residem no ambiente de produção.</p>
 <h3 id="etapa-2-mapeamento-de-relacionamentos-e-invariantes">Etapa 2: Mapeamento de Relacionamentos e Invariantes</h3>
-<p>Entidades isoladas são apenas tabelas. O valor da ontologia surge na definição dos relacionamentos e das regras que nunca podem ser quebradas pelo software:
-- Um veículo só pode ser alocado para uma rota se possuir vistoria técnica válida
-- Uma fatura só pode ser liquidada se o conhecimento de transporte contiver o comprovante de entrega autenticado</p>
+<p>Entidades isoladas são apenas tabelas. O valor da ontologia surge na definição dos relacionamentos e das regras que nunca podem ser quebradas pelo software:</p>
+<ul>
+<li>Um veículo só pode ser alocado para uma rota se possuir vistoria técnica válida</li>
+<li>Uma fatura só pode ser liquidada se o conhecimento de transporte contiver o comprovante de entrega autenticado</li>
+</ul>
 <h3 id="etapa-3-codificacao-de-acoes-permitidas">Etapa 3: Codificação de Ações Permitidas</h3>
-<p>Diferente de um simples catálogo de metadados, uma ontologia operacional define quais ações mutáveis podem ser invocadas pelo sistema. Cada ação contem:
-- Pre-condições estritas para ser executada
-- Parâmetros obrigatórios de entrada
-- Efeitos colaterais esperados no banco de dados central
-- Permissões de segurança necessárias</p>
+<p>Diferente de um simples catálogo de metadados, uma ontologia operacional define quais ações mutáveis podem ser invocadas pelo sistema. Cada ação contem:</p>
+<ul>
+<li>Pre-condições estritas para ser executada</li>
+<li>Parâmetros obrigatórios de entrada</li>
+<li>Efeitos colaterais esperados no banco de dados central</li>
+<li>Permissões de segurança necessárias</li>
+</ul>
 <h3 id="etapa-4-implementacao-de-validadores-em-tempo-de-execucao">Etapa 4: Implementação de Validadores em Tempo de Execução</h3>
 <p>Utilizamos bibliotecas rigorosas de tipagem em Python como Pydantic para transformar a especificação da ontologia em validadores de código. Se a saída proposta por um agente violar qualquer regra da ontologia, o sistema intercepta o comando antes de qualquer gravação no banco legado.</p>
 <h3 id="etapa-5-exposicao-via-model-context-protocol">Etapa 5: Exposição via Model Context Protocol</h3>
@@ -658,6 +666,8 @@
     <script src="../../../assets/js/main.min.js"></script>
     <script src="../../../assets/js/pagination.js" defer></script>
     <script src="../../../assets/js/relative_dates.js" defer></script>
+    <script src="../../../assets/js/mermaid.min.js" defer></script>
+    <script src="../../../assets/js/mermaid_init.js" defer></script>
     <script src="../../../search/main.js" defer></script>
 
 </body>

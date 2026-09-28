@@ -32,6 +32,7 @@ Palantir does not publish a self-service pricing page. Pricing is negotiated via
 According to Palantir's official 2023 Form 10-K filing with the U.S. Securities and Exchange Commission, the company generated $2.225 billion in total revenue across 497 total customers worldwide.[1]
 
 Dividing full-year revenue by customer count yields a mathematical reality:
+
 - **Average Revenue Per Customer (ARPC):** ~$4.47 million USD per year.[1]
 - **Typical Contract Duration:** One to five years.[1]
 
@@ -106,6 +107,7 @@ By decoupling the architectural discipline of operational ontologies from propri
 [5] https://www.palantir.com/platforms/foundry/ontology — Palantir Foundry: Operational Ontology Overview
 
 ## Strategic Resources and Related Essays
+
 - <a href="../bpo-replacement-matrix/">The BPO Replacement Matrix: Operational and Financial Metrics</a>
 - <a href="../buy-versus-build-b2b-enterprise-crm/">Buy versus Build: B2B Enterprise CRM, Twenty, and Agentic Stacks</a>
 - <a href="../cost-legacy-it/">The Cost of Unbounded AI in Legacy IT</a>

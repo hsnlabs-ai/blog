@@ -48,13 +48,14 @@ Legacy RPA vendors charge ten to twenty thousand dollars annually per unattended
 
 At HSN Labs, we do not build systems that emulate human eyes and hands on a desktop screen. We deploy autonomous agents that communicate directly with underlying system protocols:
 
-* Headless Protocol Execution: An autonomous agent does not search a display for a button labeled Submit Order. It communicates directly with backend services via database adapters, REST endpoints, Model Context Protocol servers, or command line interfaces. A frontend interface redesign has zero impact on system uptime.
-* Robust Handling of Variance: When a traditional RPA bot encounters an invoice layout with an extra line item, it crashes. When an autonomous agent encounters document variance, it parses the payload against an explicit ontology, extracts the verified entities, and applies business rules without manual code patches.
-* Fractional Infrastructure Footprint: By eliminating heavy virtual machine farms, autonomous agents run inside lightweight containers that scale dynamically with transactional volume. Operating costs drop by more than eighty percent while throughput increases tenfold.
+* **Headless Protocol Execution:** An autonomous agent does not search a display for a button labeled Submit Order. It communicates directly with backend services via database adapters, REST endpoints, Model Context Protocol servers, or command line interfaces. A frontend interface redesign has zero impact on system uptime.
+* **Robust Handling of Variance:** When a traditional RPA bot encounters an invoice layout with an extra line item, it crashes. When an autonomous agent encounters document variance, it parses the payload against an explicit ontology, extracts the verified entities, and applies business rules without manual code patches.
+* **Fractional Infrastructure Footprint:** By eliminating heavy virtual machine farms, autonomous agents run inside lightweight containers that scale dynamically with transactional volume. Operating costs drop by more than eighty percent while throughput increases tenfold.
 
 The era of paying millions to maintain fragile screen-scraping bots is finished. Enterprise operations belong to autonomous, protocol-level agents that never touch a mouse.
 
 ## Strategic Resources and Related Essays
+
 - <a href="../kafka-metamorfose-ia-futuro-do-trabalho/">De 1915 a Era da IA: Kafka, utilitarismo e o valor do trabalho</a>
 - <a href="../balance-sheet-guard-bpo-extinction/">What I Learned Building HR Tech About Dying BPO Contracts</a>
 - <a href="../death-of-tier-1-erp-helpdesk/">The Death of Tier-1 Support: Why ERP Consultancies Lose Billable Hours</a>

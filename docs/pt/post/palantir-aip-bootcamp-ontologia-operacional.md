@@ -40,6 +40,7 @@ Na HSN Labs, respeitamos a genialidade da arquitetura da Palantir, mas entendemo
 Construímos arquiteturas equivalentes utilizando tecnologias de código aberto, Pydantic, servidores MCP e bancos analíticos modernos, entregando a mesma robustez ontológica sem o aprisionamento tecnológico e financeiro de plataformas fechadas.
 
 ## Recursos Estratégicos e Posts Relacionados
+
 - <a href="/blog/pt/post/como-construir-ontologia-enterprise-do-zero/">Como Construir uma Ontologia Enterprise do Zero: Passo a Passo</a>
 - <a href="/blog/pt/post/ontologia-vs-grafo-conhecimento/">Ontologia vs Grafo de Conhecimento: Diferenças Chave e Arquitetura</a>
 - <a href="/blog/pt/post/sistemas-legados-motor-execucao/">Sistemas Transacionais Legados Não Vão Morrer: Eles São o Motor</a>

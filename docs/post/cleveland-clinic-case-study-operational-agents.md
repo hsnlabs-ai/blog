@@ -30,9 +30,10 @@ Here is an architectural field audit of how Cleveland Clinic moved from spreadsh
 Before implementing an operational data architecture, patient bed placement and nurse staffing relied on manual human coordination.[6]
 
 Every morning across 23 hospitals:
+
 - Nursing managers spent several hours each shift manually reviewing static spreadsheets.[6]
 - Clinical supervisors placed hundreds of phone calls between intensive care units, post-anesthesia wards, and emergency departments to identify departing patients.[6]
-- Discharge projections were fundamentally backward-looking: staff reacted to bed vacancies hours after patients physically vacated rooms.
+- **Discharge projections were fundamentally backward-looking:** staff reacted to bed vacancies hours after patients physically vacated rooms.
 
 This friction created massive operational delays. 
 
@@ -74,6 +75,7 @@ Automated Placement Recommendations / Capacity Forecasting / Clinical Routing
 ```
 
 Instead of asking a generative model to compose free-text clinical instructions, automated reasoning engines execute against strict ontology objects:[5]
+
 - **Granular Demand Forecasting:** Projecting exact patient census and acuity levels for every hospital unit hours before admissions peak.[6]
 - **Algorithmic Staff Matching:** Dynamically aligning nurse supply with forecasted clinical demand across acute institutes.[6]
 - **Automated Placement Routing:** Identifying incoming surgical patients and reserving optimal post-operative recovery beds with zero human phone tag.[6]
@@ -99,6 +101,7 @@ The commercial value of artificial intelligence is not unlocked by the foundatio
 The real enterprise asset is the **Operational Ontology**—the strongly-typed software model of your company's physical assets, legal constraints, and transactional execution perimeters.[5]
 
 Whether you manage 6,600 hospital beds, international freight lines, or financial loan books, the formula for production reliability remains unchanged:
+
 - Stop building free-text conversational chatbots.
 - Map your operational business ontology in code.
 - Bind autonomous actions to deterministic validation perimeters.
@@ -112,6 +115,7 @@ Whether you manage 6,600 hospital beds, international freight lines, or financia
 [6] https://www.palantir.com/impact/cleveland-clinic — Cleveland Clinic Impact Study: Enhancing Hospital Operations with Palantir Foundry
 
 ## Strategic Resources and Related Essays
+
 - <a href="../manifesto/">Why I Built HSN Labs</a>
 - <a href="../latam-airlines-case-study/">LATAM Airlines: Production Agents in a 3 Percent Margin Business</a>
 - <a href="../unconstrained-agents-finite-state-machines/">Case Study: 42 Calls in a Loop at 2 AM</a>

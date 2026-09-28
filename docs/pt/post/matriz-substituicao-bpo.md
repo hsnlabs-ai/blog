@@ -42,11 +42,12 @@ Esta matriz analisa as treze verticais centrais de terceirização empresarial q
 
 Substituir contratos terceirizados por forças de trabalho digitais autônomas exige obediência a três princípios de engenharia:
 
-1. Zero Execução Estocástica Direta: Modelos de linguagem sugerem ações, mas máquinas formais de estados finitos gravam as alterações nos bancos corporativos.
-2. Isolamento de Perímetro: Modelos operam estritamente sobre replicas de leitura sanitizadas e interfaces de Model Context Protocol.
-3. Testes Contínuos contra Dados Históricos: Cada esteira automatizada e avaliada continuamente contra suites de testes de regressão.
+1. **Zero Execução Estocástica Direta:** Modelos de linguagem sugerem ações, mas máquinas formais de estados finitos gravam as alterações nos bancos corporativos.
+2. **Isolamento de Perímetro:** Modelos operam estritamente sobre replicas de leitura sanitizadas e interfaces de Model Context Protocol.
+3. **Testes Contínuos contra Dados Históricos:** Cada esteira automatizada e avaliada continuamente contra suites de testes de regressão.
 
 ## Notas de Campo e Artigos Relacionados
+
 - <a href="/blog/pt/post/comprar-ou-construir-crm-vendas-b2b/">CRM de Vendas B2B: Comprar Salesforce, Adaptar Twenty ou Construir com Agentes</a>
 - <a href="/blog/pt/post/preco-palantir-tco-alternativas-abertas/">O TCO Real da Palantir: A Barreira em Dólar e Alternativas Abertas</a>
 - <a href="/blog/pt/post/playbook-c-suite-protecao-margem/">O Playbook de Transição da Diretoria: Protegendo Margens na Era Agêntica</a>

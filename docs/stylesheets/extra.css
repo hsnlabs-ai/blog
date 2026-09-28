@@ -634,6 +634,26 @@ code, kbd, pre, samp {
   border-left: 3px solid var(--cyan);
 }
 
+/* Mermaid Diagrams */
+.container.post pre.mermaid,
+.container.post div.mermaid,
+pre.mermaid,
+div.mermaid {
+  background: transparent !important;
+  border: none !important;
+  padding: 1.5rem 0 !important;
+  text-align: center;
+  overflow-x: auto;
+  border-left: none !important;
+}
+
+pre.mermaid svg,
+div.mermaid svg {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0 !important;
+}
+
 .container.post code {
   font-family: var(--font-mono);
   background: var(--canvas);

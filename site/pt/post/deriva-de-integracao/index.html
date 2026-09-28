@@ -44,6 +44,8 @@
     <link rel="stylesheet" href="../../../assets/css/mkdocstrings.min.css">
     <script src="../../../assets/js/pagination.js"></script>
     <script src="../../../assets/js/relative_dates.js"></script>
+    <script src="../../../assets/js/mermaid.min.js"></script>
+    <script src="../../../assets/js/mermaid_init.js"></script>
     <script src="../../../search/main.js"></script>
     <link href="../../../stylesheets/extra.css" rel="stylesheet">
     <link href="../../../assets/css/pagination.css" rel="stylesheet">
@@ -441,19 +443,21 @@
 <p>A causa raiz foi a deriva de integração. O provedor de nuvem do modelo havia aplicado uma atualização menor nos pesos do modelo sem aviso prévio.</p>
 <h2 id="como-prompts-corrompem-silenciosamente-esteiras-corporativas">Como Prompts Corrompem Silenciosamente Esteiras Corporativas</h2>
 <p>Durante o desenvolvimento, um engenheiro escreve um prompt pedindo para o modelo retornar um objeto JSON estruturado. O modelo atende e gera campos válidos durante os testes de homologação.</p>
-<p>Duas semanas depois, o mesmissimo prompt produz mutações estruturais sutis:
-* Um campo inteiro como identificador de cliente de repente retorna como texto com zeros a esquerda.
-* Uma chave estrangeira obrigatória e omitida porque o modelo resumiu uma observação ambígua da fatura.
-* Um valor em maiúsculas como STATUS_APROVADO e substituído por um sinônimo próximo como STATUS_CONFIRMADO.
-* Listas aninhadas colapsam em strings separadas por vírgula.</p>
+<p>Duas semanas depois, o mesmissimo prompt produz mutações estruturais sutis:</p>
+<ul>
+<li>Um campo inteiro como identificador de cliente de repente retorna como texto com zeros a esquerda.</li>
+<li>Uma chave estrangeira obrigatória e omitida porque o modelo resumiu uma observação ambígua da fatura.</li>
+<li>Um valor em maiúsculas como STATUS_APROVADO e substituído por um sinônimo próximo como STATUS_CONFIRMADO.</li>
+<li>Listas aninhadas colapsam em strings separadas por vírgula.</li>
+</ul>
 <p>Para um leitor humano inspecionando a saída em uma janela de chat, essas diferenças parecem irrelevantes. </p>
 <p>Para um banco PostgreSQL, um endpoint FastAPI ou um barramento de serviços corporativo, elas são exceções fatais de parse. Rotinas em lote abortam, travas de banco de dados congelam e desenvolvedores seniores são forçados a passar madrugadas limpando dados corrompidos.</p>
 <h2 id="eliminando-a-deriva-de-integracao-na-camada-de-arquitetura">Eliminando a Deriva de Integração na Camada de Arquitetura</h2>
 <p>Na HSN Labs, tratamos prompts em linguagem natural como entradas completamente não confiáveis. Eliminamos a deriva de integração retirando do modelo a responsabilidade sobre o schema:</p>
 <ul>
-<li>Validação Rígida com Schemas Pydantic: Cada saída do modelo e interceptada por um validador estrito de schema antes de tocar a infraestrutura corporativa. Se o tipo de um campo sofrer deriva de um único caractere, o dado e capturado e sanitizado no perímetro.</li>
-<li>Roteamento Semântico com Executores Parametrizados: Nunca permitimos que modelos gerem código livre ou comandos SQL diretos. O modelo e restrito a classificação de intenção e extração de parâmetros. Trabalhadores isolados de software constroem as cargas reais de API usando templates pré-compilados.</li>
-<li>Travas de Transição de Estados Finitos: Operações agênticas de múltiplas etapas são delimitadas por máquinas de estados finitos. Se uma atualização no modelo levar o agente a sugerir uma transição de estado ilegal, a trava da máquina de estados rejeita a solicitação antes de qualquer escrita no banco.</li>
+<li><strong>Validação Rígida com Schemas Pydantic:</strong> Cada saída do modelo e interceptada por um validador estrito de schema antes de tocar a infraestrutura corporativa. Se o tipo de um campo sofrer deriva de um único caractere, o dado e capturado e sanitizado no perímetro.</li>
+<li><strong>Roteamento Semântico com Executores Parametrizados:</strong> Nunca permitimos que modelos gerem código livre ou comandos SQL diretos. O modelo e restrito a classificação de intenção e extração de parâmetros. Trabalhadores isolados de software constroem as cargas reais de API usando templates pré-compilados.</li>
+<li><strong>Travas de Transição de Estados Finitos:</strong> Operações agênticas de múltiplas etapas são delimitadas por máquinas de estados finitos. Se uma atualização no modelo levar o agente a sugerir uma transição de estado ilegal, a trava da máquina de estados rejeita a solicitação antes de qualquer escrita no banco.</li>
 </ul>
 <p>Garantir estabilidade em produção significa projetar sistemas onde derivas nos modelos não possam corromper sua infraestrutura corporativa central.</p>
 <h2 id="recursos-estrategicos-e-posts-relacionados">Recursos Estratégicos e Posts Relacionados</h2>
@@ -646,6 +650,8 @@
     <script src="../../../assets/js/main.min.js"></script>
     <script src="../../../assets/js/pagination.js" defer></script>
     <script src="../../../assets/js/relative_dates.js" defer></script>
+    <script src="../../../assets/js/mermaid.min.js" defer></script>
+    <script src="../../../assets/js/mermaid_init.js" defer></script>
     <script src="../../../search/main.js" defer></script>
 
 </body>

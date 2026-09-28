@@ -32,24 +32,23 @@ An AI agent does not look at a dashboard. An AI agent must **act**. It must reco
 To enable autonomous action without risking corporate bankruptcy, enterprises must transition from passive data models to an **Operational Ontology**.
 
 An Operational Ontology is an active software layer that fuses three foundational primitives into a single executable interface:
+
 1. **Live State Synchronization:** Real-time bi-directional bindings to core enterprise software (SAP, Salesforce, Postgres, Kafka).
 2. **Deterministic Business Invariants:** Code-level assertions that define what states and actions are legally permissible.
 3. **The Kinetic Action Engine:** A catalog of atomic, parameterized tools governed by finite state machines that agents can execute via protocols like the Model Context Protocol (MCP).
 
-```
-+--------------------------------------------------------------------------+
-|                  PASSIVE DATA WAREHOUSE vs. OPERATIONAL ONTOLOGY         |
-|                                                                          |
-|  [ The Old Passive Stack (Built for Humans) ]                            |
-|  Production DBs ---> Data Lake ---> dbt Models ---> BI Dashboard         |
-|                                                                          |
-|  [ The Operational Ontology Stack (Built for Autonomous Agents) ]         |
-|  Core ERP / CRM <===[CDC / Kafka]===> [ OPERATIONAL ONTOLOGY ]           |
-|                                            |   (Entities + Invariants)   |
-|                                            |                             |
-|                                            v (Atomic MCP Tool Call)      |
-|                                     [ AI Autonomous Agent ]              |
-+--------------------------------------------------------------------------+
+```mermaid
+flowchart TD
+    subgraph OLD[Passive Data Warehouse: Built for Humans]
+        P1[Production DBs] --> P2[Data Lake]
+        P2 --> P3[dbt Models]
+        P3 --> P4[BI Dashboard]
+    end
+
+    subgraph NEW[Operational Ontology: Built for Autonomous Agents]
+        ERP[Core ERP / CRM] <-->|CDC / Kafka| ONT[Operational Ontology<br>Entities + Invariants]
+        ONT <-->|Atomic MCP Tool Calls| AGT[Autonomous AI Agent]
+    end
 ```
 
 ---
@@ -78,29 +77,17 @@ By leveraging modern open protocols—specifically Python, Pydantic, PostgreSQL,
 
 Building an operational ontology requires moving beyond passive metadata management. It consists of three tightly coupled engineering layers:
 
-```
-+-------------------------------------------------------------------------+
-|                  THE THREE PILLARS OF OPERATIONAL ONTOLOGY              |
-|                                                                         |
-|  [ 1. SEMANTIC DATA BINDING ]                                           |
-|  - Ingests real-time events via CDC / Kafka / Postgres WAL             |
-|  - Synthesizes fragmented multi-system schemas into single objects       |
-|  - Enforces atomic read consistency                                     |
-|                                                                         |
-|  [ 2. KINETIC INVARIANT HARNESS ]                                       |
-|  - Compiles business rules into typed schema assertions                 |
-|  - Governs lifecycle states via Finite State Machines (FSMs)             |
-|  - Enforces mathematical & double-entry balance constraints             |
-|                                                                         |
-|  [ 3. ATOMIC ACTION REGISTRY ]                                          |
-|  - Exposes parameterized tools via Model Context Protocol (MCP)         |
-|  - Verifies pre-conditions before dispatching write mutations           |
-|  - Generates immutable cryptographic audit trails                       |
-+-------------------------------------------------------------------------+
+```mermaid
+flowchart TD
+    A[1. Semantic Data Binding<br>Ingests real-time events via CDC and Kafka<br>Synthesizes fragmented multi-system schemas<br>Enforces atomic read consistency]
+    B[2. Kinetic Invariant Harness<br>Compiles business rules into typed schema assertions<br>Governs lifecycle states via Finite State Machines<br>Enforces mathematical balance constraints]
+    C[3. Atomic Action Registry<br>Exposes parameterized tools via Model Context Protocol<br>Verifies preconditions before dispatching mutations<br>Generates immutable cryptographic audit trails]
+    A --> B --> C
 ```
 
 ### Pillar 1: Semantic Data Binding (The Nouns)
 In a modern enterprise, an operational entity never lives in a single database.
+
 - A **Customer** has billing data in Stripe, master contract terms in Salesforce, usage metrics in Snowflake, and credit limits in SAP.
 - If you ask an LLM to query these systems directly, it will fail due to schema fragmentation and divergent naming conventions (`cust_id` vs. `account_uuid` vs. `client_number`).
 
@@ -110,9 +97,10 @@ The Semantic Data Binding layer abstracts this fragmentation. It uses Change Dat
 Business rules must live in compiled code, never in human documentation or natural language prompt templates.
 
 An operational ontology models business logic as **mathematical invariants**. An invariant is a condition that must evaluate to `True` before, during, and after any state transition.
-- In financial operations: `GrossAmount == NetAmount + TaxAmount`.
-- In supply chain: `CommittedInventory <= TotalPhysicalStock - QuarantinedStock`.
-- In healthcare: `DispenseDrug(D) -> PatientHasAllergy(D.compound) == False`.
+
+- **In financial operations:** `GrossAmount == NetAmount + TaxAmount`.
+- **In supply chain:** `CommittedInventory <= TotalPhysicalStock - QuarantinedStock`.
+- **In healthcare:** `DispenseDrug(D) -> PatientHasAllergy(D.compound) == False`.
 
 If an agent attempts an action that would violate an invariant, the ontology blocks the execution at the code boundary. The agent is physically incapable of committing an invalid transaction.
 
@@ -122,6 +110,7 @@ The Action Registry maps corporate capabilities into discrete, executable contra
 In an operational ontology, agents are never granted raw SQL write access (`UPDATE`, `INSERT`, `DELETE`) or unrestricted REST API keys. Instead, they are granted access to a catalog of curated **Operational Actions** exposed via standard tool-calling interfaces like FastMCP.
 
 Every action in the registry is:
+
 - **Parameterized:** Governed by strict Pydantic or JSON schemas.
 - **Idempotent:** Safe against network retries and agent loop re-entries.
 - **State-Gated:** Can only be executed if the target object occupies a specific state in its finite state machine.
@@ -228,6 +217,7 @@ def reroute_maritime_container(payload: RerouteContainerPayload) -> str:
 ### The Architectural Beauty of this Model
 
 Notice what is happening here from an systems engineering perspective:
+
 1. **Zero Prompt Vulnerability:** The agent cannot trick the system by saying *"This is an emergency, waive the cost limit."* The `AUTONOMOUS_DIVERSION_CEILING` is hardcoded Python logic. It evaluates independently of the model's linguistic interpretation.
 2. **State Purity:** If the container was already in `HELD_CUSTOMS` status, the agent is physically blocked from rerouting it. The finite state machine enforces the statutory sequence of shipping law.
 3. **Seamless Tool Discovery:** Because this is exposed via FastMCP, any autonomous agent orchestrator (LangGraph, OpenAI Swarm, Claude Code, Antigravity) automatically discovers the tool, its parameter constraints, and its return signatures.
@@ -242,17 +232,19 @@ To demonstrate the economic power of an operational ontology, consider a Tier-1 
 Under traditional operations, 400 outsourced BPO analysts manually inspect claims PDFs, check policy coverage in an AS400 legacy mainframe, verify deductible balances in SAP, and issue wire transfers. 
 
 When the insurer tested standard LLMs with LangChain and vector databases to automate the process, the failure rate was over 30%:
+
 - Agents approved claims for patients whose policies had lapsed two days prior.
 - Agents calculated reimbursement amounts using average market rates instead of contractually agreed tariff tables.
 - Multiple agents processed duplicate claims simultaneously, issuing double payouts.
 
 ### The Operational Ontology Fix
 The engineering team replaced the prompt-based architecture with an **Insurance Operational Ontology**:
+
 1. **Domain Objects:** `PatientPolicy`, `MedicalClaim`, `TariffSchedule`, `ProviderAgreement`.
 2. **Invariants:** 
    - A claim can never be adjudicated unless `PatientPolicy.status == ACTIVE` at the exact timestamp of medical service.
    - Payout amount must equal `ClaimItems * TariffRate - DeductibleBalance`. Zero floating point deviation allowed.
-   - Idempotency lock: A claim ID occupies an immutable distributed lock during processing to prevent concurrent processing.
+   - **Idempotency lock:** A claim ID occupies an immutable distributed lock during processing to prevent concurrent processing.
 3. **Results:**
    - **Autonomous Adjudication Rate:** 72% of all claims adjudicated with zero human touch.
    - **Error Rate in Production:** 0.00% on mathematical calculations and state transitions.
@@ -264,18 +256,14 @@ The engineering team replaced the prompt-based architecture with an **Insurance 
 
 Traditional enterprises suffer from the **Linear Staffing Trap**: if business transactions grow by 100%, operational headcount (and OPEX) must grow by roughly 100%.
 
-```
-+--------------------------------------------------------------------------+
-|                  THE OPERATIONAL SCALING BREAKTHROUGH                    |
-|                                                                          |
-|  Traditional Enterprise:                                                 |
-|  Transactions:  10k/mo --->  50k/mo ---> 100k/mo                         |
-|  BPO / Ops:     20 FTE ---> 100 FTE ---> 200 FTE (Linear OPEX Explosion) |
-|                                                                          |
-|  Ontology-Governed Autonomous Enterprise:                                |
-|  Transactions:  10k/mo --->  50k/mo ---> 100k/mo                         |
-|  BPO / Ops:     20 FTE --->  25 FTE --->  30 FTE (Expanding EBITDA)      |
-+--------------------------------------------------------------------------+
+```mermaid
+flowchart LR
+    subgraph TRAD[Traditional Enterprise]
+        T1[10k tx/mo: 20 FTE] --> T2[50k tx/mo: 100 FTE] --> T3[100k tx/mo: 200 FTE<br>Linear OPEX Explosion]
+    end
+    subgraph ONTO[Ontology-Governed Enterprise]
+        O1[10k tx/mo: 20 FTE] --> O2[50k tx/mo: 25 FTE] --> O3[100k tx/mo: 30 FTE<br>Expanding EBITDA Margins]
+    end
 ```
 
 An operational ontology transforms software from a passive record-keeping expense into an autonomous operational asset. 
@@ -299,6 +287,7 @@ If that code does not exist, your AI agents cannot safely operate. Build the ont
 *At HSN Labs, we design and deploy bespoke operational ontologies and resilient multi-agent systems for mid-to-large enterprises. To map your enterprise state machines and launch a production pilot in five days, explore our on-site [Agentic Architecture Bootcamp](https://hsnlabs.ai/bootcamp).*
 
 ## Strategic Resources and Related Essays
+
 - <a href="../how-to-build-an-enterprise-ontology-from-scratch/">How to Build an Enterprise Ontology from Scratch: Step by Step</a>
 - <a href="../ontology-vs-knowledge-graph/">Ontology vs. Knowledge Graph: Key Differences, Architecture, and Agent Reliability</a>
 - <a href="../how-to-build-operational-ontology-python-mcp/">How to Build an Operational Business Ontology in Python and MCP</a>

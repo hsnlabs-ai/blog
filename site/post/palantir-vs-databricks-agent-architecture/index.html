@@ -44,6 +44,8 @@
     <link rel="stylesheet" href="../../assets/css/mkdocstrings.min.css">
     <script src="../../assets/js/pagination.js"></script>
     <script src="../../assets/js/relative_dates.js"></script>
+    <script src="../../assets/js/mermaid.min.js"></script>
+    <script src="../../assets/js/mermaid_init.js"></script>
     <script src="../../search/main.js"></script>
     <link href="../../stylesheets/extra.css" rel="stylesheet">
     <link href="../../assets/css/pagination.css" rel="stylesheet">
@@ -435,10 +437,12 @@
             <p><em>Reading time: 5 minutes. Author: Hugo S. Nascimento.</em></p>
 <p>Enterprise engineering teams are making a structural mistake with AI agents.</p>
 <p>They take their existing analytical data platform—usually a lakehouse like Databricks or Snowflake—and attempt to build transactional AI agents directly on top of it.</p>
-<p>The architecture seems clean on paper:
-1. Store enterprise tables in Delta Lake.
-2. Govern data assets with Unity Catalog.[4]
-3. Point an autonomous agent with a retrieval tool at the lakehouse tables.</p>
+<p>The architecture seems clean on paper:</p>
+<ol>
+<li>Store enterprise tables in Delta Lake.</li>
+<li>Govern data assets with Unity Catalog.[4]</li>
+<li>Point an autonomous agent with a retrieval tool at the lakehouse tables.</li>
+</ol>
 <p>Within two weeks of production testing, the system stalls. </p>
 <p>The agent takes twelve seconds to answer a single operational prompt. Queries against massive analytical tables consume unbounded cloud compute. Worse, when the agent attempts to commit an action back to a legacy ERP, the lakehouse offers zero native mechanisms to enforce transactional state machines or rollback invalid mutations.</p>
 <p>Here is the architectural reason why analytical lakehouses fail at agentic operations, why Palantir built an operational ontology instead of a database, and how to construct the correct hybrid architecture.[4][5]</p>
@@ -483,10 +487,12 @@
 </table>
 <p>Databricks is an exceptional data intelligence engine.[4] Unity Catalog delivers centralized governance across analytical tables, machine learning models, and SQL endpoints.[4] </p>
 <p>However, Unity Catalog governs <em>data artifacts</em>.[4] It does not govern <em>operational actions</em>.</p>
-<p>When an autonomous agent operates in a real enterprise, it does not just aggregate historical metrics. It mutates operational reality:
-- Reallocating acute hospital beds.[3][5]
-- Rerouting international supply chain purchase orders.
-- Adjusting dynamic credit limits on banking ledgers.</p>
+<p>When an autonomous agent operates in a real enterprise, it does not just aggregate historical metrics. It mutates operational reality:</p>
+<ul>
+<li>Reallocating acute hospital beds.[3][5]</li>
+<li>Rerouting international supply chain purchase orders.</li>
+<li>Adjusting dynamic credit limits on banking ledgers.</li>
+</ul>
 <p>An analytical lakehouse cannot safely govern these mutations.</p>
 <hr />
 <h2 id="2-why-rag-on-delta-tables-hallucinates-in-production">2. Why RAG on Delta Tables Hallucinates in Production</h2>
@@ -723,6 +729,8 @@
     <script src="../../assets/js/main.min.js"></script>
     <script src="../../assets/js/pagination.js" defer></script>
     <script src="../../assets/js/relative_dates.js" defer></script>
+    <script src="../../assets/js/mermaid.min.js" defer></script>
+    <script src="../../assets/js/mermaid_init.js" defer></script>
     <script src="../../search/main.js" defer></script>
 
 </body>

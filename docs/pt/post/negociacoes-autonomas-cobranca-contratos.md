@@ -30,6 +30,7 @@ O agente não decide termos de negociação de forma probabilística. Ele opera 
 
 ### 2. Máquina de Estados Finitos para Condução do Fluxo
 A conversa e tratada como uma transição de estados em uma Máquina de Estados Finitos. Cada intervenção do devedor ou cliente avança o sistema entre estados definidos:
+
 - Identificação e autenticação positiva
 - Apresentação do saldo devedor auditado
 - Coleta de proposta inicial
@@ -45,6 +46,7 @@ Nenhum contrato é alterado no ERP sem que o agente confirme a assinatura digita
 ## Métricas de Impacto em Produção
 
 A implementação dessa esteira em uma grande instituição financeira demonstrou resultados consistentes:
+
 - Tempo médio de liquidação de acordo reduzido de quatro dias para sete minutos
 - Queda de oitenta e dois por cento no custo operacional por contrato renegociado
 - Zero acordos emitidos fora da política de crédito em mais de cinquenta mil operações
@@ -52,6 +54,7 @@ A implementação dessa esteira em uma grande instituição financeira demonstro
 Automatizar negociação de contratos não é uma questão de criar prompts persuasivos. E uma questão de cercar modelos de linguagem com garantias matemáticas e integração estrita com os sistemas centrais da organização.
 
 ## Recursos Estratégicos e Posts Relacionados
+
 - <a href="/blog/pt/post/manifesto/">Por Que Criei a HSN Labs</a>
 - <a href="/blog/pt/post/estudo-caso-latam-airlines/">LATAM Airlines: Agentes em Produção com Margem de 3 Por Cento</a>
 - <a href="/blog/pt/post/agentes-ilimitados-maquinas-estados-finitos/">Estudo de Caso: 42 Chamadas em Loop às 2 da Manhã</a>

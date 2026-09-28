@@ -44,6 +44,8 @@
     <link rel="stylesheet" href="../../../assets/css/mkdocstrings.min.css">
     <script src="../../../assets/js/pagination.js"></script>
     <script src="../../../assets/js/relative_dates.js"></script>
+    <script src="../../../assets/js/mermaid.min.js"></script>
+    <script src="../../../assets/js/mermaid_init.js"></script>
     <script src="../../../search/main.js"></script>
     <link href="../../../stylesheets/extra.css" rel="stylesheet">
     <link href="../../../assets/css/pagination.css" rel="stylesheet">
@@ -441,10 +443,12 @@
 <p>O primeiro componente é a definição das classes fundamentais de dados. Usamos modelos imutáveis com validadores customizados para barrar dados inválidos antes que cheguem ao agente.</p>
 <p>As classes definem entidades como Cliente, Fatura e Regra de Desconto, garantindo que nenhum valor monetário seja negativo e que identificadores fiscais sigam as normas do país.</p>
 <h2 id="integracao-com-model-context-protocol">Integração com Model Context Protocol</h2>
-<p>Com os modelos definidos, criamos um servidor MCP leve. O servidor expõe funções formais como ferramentas:
-- Consulta de status de fatura por identificador único
-- Validação de elegibilidade de abatimento comercial
-- Registro de liquidação com chave de segurança</p>
+<p>Com os modelos definidos, criamos um servidor MCP leve. O servidor expõe funções formais como ferramentas:</p>
+<ul>
+<li>Consulta de status de fatura por identificador único</li>
+<li>Validação de elegibilidade de abatimento comercial</li>
+<li>Registro de liquidação com chave de segurança</li>
+</ul>
 <p>Cada ferramenta recebe esquemas JSON gerados automaticamente a partir dos modelos Pydantic, garantindo que o agente receba documentação perfeita de parâmetros e restrições de negócio.</p>
 <h2 id="vantagens-em-ambiente-de-producao">Vantagens em Ambiente de Produção</h2>
 <ul>
@@ -643,6 +647,8 @@
     <script src="../../../assets/js/main.min.js"></script>
     <script src="../../../assets/js/pagination.js" defer></script>
     <script src="../../../assets/js/relative_dates.js" defer></script>
+    <script src="../../../assets/js/mermaid.min.js" defer></script>
+    <script src="../../../assets/js/mermaid_init.js" defer></script>
     <script src="../../../search/main.js" defer></script>
 
 </body>

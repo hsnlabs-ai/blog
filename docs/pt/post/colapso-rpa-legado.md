@@ -47,13 +47,14 @@ Fornecedores de RPA tradicional cobram de dez a vinte mil dólares anuais por ro
 
 Na HSN Labs, não construímos sistemas que emulam olhos e mãos humanas em uma tela de desktop. Implantamos agentes autônomos que se comunicam diretamente com os protocolos fundamentais dos sistemas:
 
-* Execução de Protocolo Headless: Um agente autônomo não procura na tela por um botão com o rótulo Enviar Pedido. Ele se comunica diretamente com serviços de backend por adaptadores de banco de dados, endpoints REST, servidores de Model Context Protocol ou interfaces de linha de comando. A reformulação visual de uma interface frontend tem zero impacto na disponibilidade da operação.
-* Tratamento Robusto de Variações: Quando um bot tradicional de RPA encontra um layout de fatura com uma linha adicional, ele quebra. Quando um agente autônomo encontra variação documental, ele processa a carga contra uma ontologia explícita, extrai entidades verificadas e aplica regras de negócio sem correções manuais de código.
-* Pegada Fracionária de Infraestrutura: Ao eliminar fazendas pesadas de máquinas virtuais, agentes autônomos rodam dentro de conteineres leves que escalam dinamicamente com o volume de transações. Custos operacionais caem mais de oitenta por cento enquanto a vazão transacional multiplica por dez.
+* **Execução de Protocolo Headless:** Um agente autônomo não procura na tela por um botão com o rótulo Enviar Pedido. Ele se comunica diretamente com serviços de backend por adaptadores de banco de dados, endpoints REST, servidores de Model Context Protocol ou interfaces de linha de comando. A reformulação visual de uma interface frontend tem zero impacto na disponibilidade da operação.
+* **Tratamento Robusto de Variações:** Quando um bot tradicional de RPA encontra um layout de fatura com uma linha adicional, ele quebra. Quando um agente autônomo encontra variação documental, ele processa a carga contra uma ontologia explícita, extrai entidades verificadas e aplica regras de negócio sem correções manuais de código.
+* **Pegada Fracionária de Infraestrutura:** Ao eliminar fazendas pesadas de máquinas virtuais, agentes autônomos rodam dentro de conteineres leves que escalam dinamicamente com o volume de transações. Custos operacionais caem mais de oitenta por cento enquanto a vazão transacional multiplica por dez.
 
 A era de pagar milhões para manter bots frágeis de raspagem de tela acabou. Operações corporativas pertencem a agentes autônomos em nível de protocolo que nunca tocam em um mouse.
 
 ## Recursos Estratégicos e Posts Relacionados
+
 - <a href="/blog/pt/post/kafka-metamorfose-ia-futuro-do-trabalho/">De 1915 a Era da IA: Kafka, utilitarismo e o valor do trabalho</a>
 - <a href="/blog/pt/post/guarda-do-balanco-extincao-bpo/">O Que Aprendi Construindo HR Tech Sobre a Morte do BPO</a>
 - <a href="/blog/pt/post/morte-suporte-nivel-1-erp/">A Morte do Suporte Nível 1: Por Que Consultorias de ERP Perdem Horas Faturáveis</a>

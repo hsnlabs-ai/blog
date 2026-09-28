@@ -1,0 +1,121 @@
+[
+  {
+    "file": "docs/post/buy-versus-build-b2b-enterprise-crm.md",
+    "heading": "### Reference Architecture: Headless Agentic CRM",
+    "lang": "",
+    "line_count": 24,
+    "full_body": "Real-World Sales Interaction Channels\nCorporate Email + Meeting Audio + Calendar Feeds\n                         |\n                         v\n               Sales Event Gateway\n         Asynchronous streaming ingestion\n                         |\n                         v\n       Entity Extraction and Data Invariants\n        Pydantic structured schema validation\n                         |\n                         v\n           Finite State Machine Engine\n        Deterministic deal stage transitions\n                         |\n                         v\n        MCP Server and Immutable Audit Log\n      Guarded write methods and approval gates\n                         |\n      +------------------+------------------+\n      |                                     |\n      v                                     v\nLocal Transactional Store           Corporate Systems\nPostgreSQL or SQLite DB             SAP ERP, Totvs, Signatures"
+  },
+  {
+    "file": "docs/post/how-to-build-an-enterprise-ontology-from-scratch.md",
+    "heading": "## Executive Summary",
+    "lang": "",
+    "line_count": 17,
+    "full_body": "+--------------------------------------------------------------------------+\n|                  THE 7-PHASE ONTOLOGY ENGINEERING PIPELINE               |\n|                                                                          |\n|  [ Phase 1: Domain Scoping ]       --> Identify 3-5 Core Business Nouns  |\n|               |                                                          |\n|  [ Phase 2: Invariant Extraction ] --> Formalize Mathematical Assertions |\n|               |                                                          |\n|  [ Phase 3: FSM State Modeling ]   --> Define Legal Transition Graphs    |\n|               |                                                          |\n|  [ Phase 4: FastMCP Tool Registry] --> Build Parameterized Action Tools  |\n|               |                                                          |\n|  [ Phase 5: Core Synchronization ] --> Stream Real-Time Data (CDC/Kafka) |\n|               |                                                          |\n|  [ Phase 6: Adversarial Fuzzing ]  --> Stress Test Invariant Gatekeepers |\n|               |                                                          |\n|  [ Phase 7: Agent Orchestration ]  --> Deploy Autonomous Agent Fleets    |\n+--------------------------------------------------------------------------+"
+  },
+  {
+    "file": "docs/post/how-to-build-an-enterprise-ontology-from-scratch.md",
+    "heading": "## Phase 3: Modeling Finite State Machines (FSMs)",
+    "lang": "",
+    "line_count": 14,
+    "full_body": "+--------------------------------------------------------------------------+\n|                  FINITE STATE MACHINE: VENDOR INVOICE                    |\n|                                                                          |\n|       [ RECEIVED ]                                                       |\n|             |                                                            |\n|             v (Action: RunThreeWayMatch)                                 |\n|       [ MATCHED ] ---------------> [ DISPUTED ]                          |\n|             |                            |                               |\n|             v (Action: ApprovePayment)   v (Action: RequestVendorCredit) |\n|       [ APPROVED ]                 [ CREDIT_ISSUED ]                     |\n|             |                                                            |\n|             v (Action: ExecuteWireTransfer)                              |\n|       [ PAID / SETTLED ]                                                 |\n+--------------------------------------------------------------------------+"
+  },
+  {
+    "file": "docs/post/how-to-build-an-enterprise-ontology-from-scratch.md",
+    "heading": "## Phase 5: Live Core Synchronization (CDC & Event Streaming)",
+    "lang": "",
+    "line_count": 17,
+    "full_body": "+--------------------------------------------------------------------------+\n|                  REAL-TIME CORE SYNCHRONIZATION PIPELINE                 |\n|                                                                          |\n|  [ Enterprise ERP / Core DB (Postgres / Oracle / SAP) ]                  |\n|         |                                                                |\n|         v (Write-Ahead Log / Transaction Log)                            |\n|  [ Debezium / Kafka Connect ]                                            |\n|         |                                                                |\n|         v (Sub-second Event Stream)                                      |\n|  [ Apache Kafka / Redpanda Cluster ]                                     |\n|         |                                                                |\n|         v                                                                |\n|  [ Operational Ontology In-Memory Cache (Redis / SQLite / Rust) ]        |\n|         ^                                                                |\n|         | (Microsecond Entity Reads)                                     |\n|  [ Autonomous AI Agent Fleet ]                                           |\n+--------------------------------------------------------------------------+"
+  },
+  {
+    "file": "docs/post/how-to-build-an-enterprise-ontology-from-scratch.md",
+    "heading": "## Phase 7: Orchestrating Autonomous Agents on the Ontology Harness",
+    "lang": "",
+    "line_count": 21,
+    "full_body": "[ Incoming Business Event / Webhook ]\n         |\n         v\n[ Autonomous AI Agent (LLM Reasoning Loop) ]\n         |\n         | Discovers available tools via MCP:\n         | -> query_ontology_entity(id)\n         | -> execute_ontology_action(payload)\n         |\n         v\n[ Operational Ontology Guard ]\n         |\n    +----+----+\n    |         |\n[ Valid ]  [ Invalid Invariant ]\n    |         |\n    |         v\n    |     [ Deterministic Error Returned to Agent ]\n    |     Agent self-corrects: \"Invariant failed, escalating to human.\"\n    v\n[ Atomic Mutation Committed to ERP ]"
+  },
+  {
+    "file": "docs/post/ontology-vs-database-schema.md",
+    "heading": "## Executive Summary",
+    "lang": "",
+    "line_count": 13,
+    "full_body": "+-------------------------------------------------------------------------+\n|                  STORAGE SCHEMAS vs. OPERATIONAL ONTOLOGY               |\n|                                                                         |\n|  [ The Database Schema (DDL) ]                                          |\n|  Defines: Storage structure, column types, primary/foreign keys         |\n|  Answers: \"How is this byte stored on disk?\"                            |\n|  Blind to: Operational workflows, business invariants, allowed actions  |\n|                                                                         |\n|  [ The Operational Ontology ]                                           |\n|  Defines: Business entities, lifecycle states, execution contracts     |\n|  Answers: \"What does this data mean, and what actions are legal?\"       |\n|  Enforces: State machines, capital limits, audit trails, authorization  |\n+-------------------------------------------------------------------------+"
+  },
+  {
+    "file": "docs/post/ontology-vs-database-schema.md",
+    "heading": "## Why Vector Stores Cannot Save You",
+    "lang": "",
+    "line_count": 15,
+    "full_body": "+--------------------------------------------------------------------------+\n|                  WHY VECTOR EMBEDDINGS FAIL ON ENTERPRISE DATA           |\n|                                                                          |\n|  Executive Prompt: \"Calculate total overdue accounts payable for Tier-1  |\n|                     vendors in Western Europe.\"                          |\n|                                                                          |\n|  Vector DB Action: Retrieves 10 text chunks mentioning 'overdue',        |\n|                    'Western Europe', and 'Tier-1 vendors'.               |\n|                                                                          |\n|  Catastrophic Flaws:                                                     |\n|  1. Incompleteness: Misses 80% of actual vendor invoices (token limit).  |\n|  2. Mathematical Void: Cannot perform arithmetic summation over chunks.  |\n|  3. Temporal Blindness: Confuses 2024 invoices with 2026 invoices.       |\n|  4. No Foreign Keys: Cannot verify if invoices were already paid in ERP. |\n+--------------------------------------------------------------------------+"
+  },
+  {
+    "file": "docs/post/ontology-vs-database-schema.md",
+    "heading": "## Architectural Recommendation: The Ontology Facade Pattern",
+    "lang": "",
+    "line_count": 17,
+    "full_body": "+-------------------------------------------------------------------------+\n|                      THE ONTOLOGY FACADE PATTERN                        |\n|                                                                         |\n|  [ Autonomous AI Agents ]                                               |\n|        ^                                                                |\n|        | (Strict Model Context Protocol / Pydantic Contracts)           |\n|        v                                                                |\n|  [ OPERATIONAL ONTOLOGY FACADE ]                                        |\n|  - Invariant Verification Engine                                        |\n|  - Finite State Machine Orchestrator                                    |\n|  - Unified Object Model across Silos                                    |\n|        |                                                                |\n|        +-------------------+-------------------+                        |\n|        | (Validated SQL)   | (Validated API)   | (CDC Streaming)        |\n|        v                   v                   v                        |\n|  [ Postgres / Oracle ] [ SAP S/4HANA ]    [ Salesforce CRM ]           |\n+-------------------------------------------------------------------------+"
+  },
+  {
+    "file": "docs/post/ontology-vs-knowledge-graph.md",
+    "heading": "## Executive Summary",
+    "lang": "",
+    "line_count": 18,
+    "full_body": "+-------------------------------------------------------------------------+\n|                  ONTOLOGY vs. KNOWLEDGE GRAPH ARCHITECTURE              |\n|                                                                         |\n|  [ THE ONTOLOGY (Schema & Invariants) ]                                 |\n|  Class: CorporateAccount                                                |\n|  Rule: Must have exactly 1 TaxIdentifier                                |\n|  Invariant: CreditLimit >= OpenExposure                                 |\n|  Allowed Actions: [ApproveCredit, FreezeAccount, IssueBilling]          |\n|                                |                                        |\n|                                v (Governs & Validates Instantiation)   |\n|                                                                         |\n|  [ THE KNOWLEDGE GRAPH (Live Instance Network) ]                        |\n|  Node: Account(Acme Corp) ---[OWNS]---> Node: Invoice(#4021)            |\n|         |                                      |                        |\n|      [LOCATED_IN]                           [SHIPPED_VIA]               |\n|         v                                      v                        |\n|  Node: Country(Brazil)                 Node: Carrier(DHL Express)       |\n+-------------------------------------------------------------------------+"
+  },
+  {
+    "file": "docs/post/ontology-vs-knowledge-graph.md",
+    "heading": "## The Dual-Stack Architecture: Coupling the Graph to the Ontology",
+    "lang": "",
+    "line_count": 20,
+    "full_body": "+--------------------------------------------------------------------------+\n|                  THE PRODUCTION NEURO-SYMBOLIC STACK                     |\n|                                                                          |\n|  [ 1. Autonomous AI Agent / LLM ]                                        |\n|         |                                                                |\n|         | Emits structured intent: \"Link Invoice 940 to PO 810\"          |\n|         v                                                                |\n|  [ 2. Operational Ontology Layer (Python / Pydantic / FSM) ]              |\n|         |                                                                |\n|         |-- 1. Validates PO 810 is in 'OPEN' state                       |\n|         |-- 2. Asserts Invoice amount <= PO remaining budget             |\n|         |-- 3. Compiles verified Cypher / Graph mutation                 |\n|         |                                                                |\n|         v (Valid mutation only)                                          |\n|  [ 3. Enterprise Knowledge Graph (Neo4j / Memgraph / Neptune) ]          |\n|         |                                                                |\n|         | Commits: (Invoice:940)-[:FULFILLS {matched_at: NOW}]->(PO:810) |\n|         v                                                                |\n|  [ 4. Event Streaming & Ledger Integration (Kafka / SAP / Postgres) ]    |\n+--------------------------------------------------------------------------+"
+  },
+  {
+    "file": "docs/post/the-operational-ontology.md",
+    "heading": "## Executive Summary",
+    "lang": "",
+    "line_count": 13,
+    "full_body": "+--------------------------------------------------------------------------+\n|                  PASSIVE DATA WAREHOUSE vs. OPERATIONAL ONTOLOGY         |\n|                                                                          |\n|  [ The Old Passive Stack (Built for Humans) ]                            |\n|  Production DBs ---> Data Lake ---> dbt Models ---> BI Dashboard         |\n|                                                                          |\n|  [ The Operational Ontology Stack (Built for Autonomous Agents) ]         |\n|  Core ERP / CRM <===[CDC / Kafka]===> [ OPERATIONAL ONTOLOGY ]           |\n|                                            |   (Entities + Invariants)   |\n|                                            |                             |\n|                                            v (Atomic MCP Tool Call)      |\n|                                     [ AI Autonomous Agent ]              |\n+--------------------------------------------------------------------------+"
+  },
+  {
+    "file": "docs/post/the-operational-ontology.md",
+    "heading": "## The Three Pillars of an Operational Ontology",
+    "lang": "",
+    "line_count": 18,
+    "full_body": "+-------------------------------------------------------------------------+\n|                  THE THREE PILLARS OF OPERATIONAL ONTOLOGY              |\n|                                                                         |\n|  [ 1. SEMANTIC DATA BINDING ]                                           |\n|  - Ingests real-time events via CDC / Kafka / Postgres WAL             |\n|  - Synthesizes fragmented multi-system schemas into single objects       |\n|  - Enforces atomic read consistency                                     |\n|                                                                         |\n|  [ 2. KINETIC INVARIANT HARNESS ]                                       |\n|  - Compiles business rules into typed schema assertions                 |\n|  - Governs lifecycle states via Finite State Machines (FSMs)             |\n|  - Enforces mathematical & double-entry balance constraints             |\n|                                                                         |\n|  [ 3. ATOMIC ACTION REGISTRY ]                                          |\n|  - Exposes parameterized tools via Model Context Protocol (MCP)         |\n|  - Verifies pre-conditions before dispatching write mutations           |\n|  - Generates immutable cryptographic audit trails                       |\n+-------------------------------------------------------------------------+"
+  },
+  {
+    "file": "docs/post/the-operational-ontology.md",
+    "heading": "## The Economic Equation: Breaking the Linear Scaling Trap",
+    "lang": "",
+    "line_count": 11,
+    "full_body": "+--------------------------------------------------------------------------+\n|                  THE OPERATIONAL SCALING BREAKTHROUGH                    |\n|                                                                          |\n|  Traditional Enterprise:                                                 |\n|  Transactions:  10k/mo --->  50k/mo ---> 100k/mo                         |\n|  BPO / Ops:     20 FTE ---> 100 FTE ---> 200 FTE (Linear OPEX Explosion) |\n|                                                                          |\n|  Ontology-Governed Autonomous Enterprise:                                |\n|  Transactions:  10k/mo --->  50k/mo ---> 100k/mo                         |\n|  BPO / Ops:     20 FTE --->  25 FTE --->  30 FTE (Expanding EBITDA)      |\n+--------------------------------------------------------------------------+"
+  },
+  {
+    "file": "docs/post/what-is-an-ontology-for-ai-agents.md",
+    "heading": "## The Root Problem: The Stochastic-Deterministic Chasm",
+    "lang": "",
+    "line_count": 13,
+    "full_body": "+-------------------------------------------------------------------+\n|                     THE FRAGILE PROMPT PARADIGM                   |\n|                                                                   |\n|   Prompt: \"You are an AP agent. Only approve invoices under $10k\"  |\n|                                 |                                 |\n|                                 v (Probabilistic Evaluation)      |\n|                       [ Frontier LLM ]                            |\n|                                 |                                 |\n|           \"Looks safe, approving payment of $12,450...\"           |\n|                                 |                                 |\n|                                 v (Silent State Corruption)       |\n|                 [ Enterprise SQL Database / ERP ]                 |\n+-------------------------------------------------------------------+"
+  },
+  {
+    "file": "docs/post/what-is-an-ontology-for-ai-agents.md",
+    "heading": "## The Three Components of an Agent Ontology",
+    "lang": "",
+    "line_count": 24,
+    "full_body": "+--------------------------------------------------------------------------+\n|                       OPERATIONAL ONTOLOGY ARCHITECTURE                  |\n|                                                                          |\n|  +--------------------------------------------------------------------+  |\n|  | 1. OBJECT DEFINITIONS (Entities & Invariants)                      |  |\n|  |    - Typed data contracts (Pydantic / Zod)                         |  |\n|  |    - Immutable business rules (Assertions)                         |  |\n|  +--------------------------------------------------------------------+  |\n|                                 |                                        |\n|                                 v                                        |\n|  +--------------------------------------------------------------------+  |\n|  | 2. STATE BINDINGS (Live Context)                                  |  |\n|  |    - Real-time event streams (Postgres, SAP, Salesforce)           |  |\n|  |    - Relationship links & dependency graphs                        |  |\n|  +--------------------------------------------------------------------+  |\n|                                 |                                        |\n|                                 v                                        |\n|  +--------------------------------------------------------------------+  |\n|  | 3. EXECUTABLE ACTION CATALOG (Finite State Machines)               |  |\n|  |    - Pre-condition validation gates                                |  |\n|  |    - Atomic state transition controllers                           |  |\n|  |    - Post-condition ledger audits                                  |  |\n|  +--------------------------------------------------------------------+  |\n+--------------------------------------------------------------------------+"
+  },
+  {
+    "file": "docs/post/what-is-an-ontology-for-ai-agents.md",
+    "heading": "## How AI Agents Interact with an Operational Ontology",
+    "lang": "",
+    "line_count": 23,
+    "full_body": "[ 1. Discovery ]\n  Agent queries Ontology Catalog:\n  \"What operations are permitted on Invoice #8410 in its current state?\"\n         |\n         v\n[ 2. Context Injection ]\n  Ontology returns typed Object State + Permitted Action Schemas:\n  Status: MATCHED | Permitted Tools: [ApproveInvoice, FlagDiscrepancy]\n         |\n         v\n[ 3. Decision & Parameter Generation ]\n  LLM reasons over business context and emits structured tool call:\n  Tool: ApproveInvoice(invoice_id=\"8410\", operator_id=\"agent_alpha\")\n         |\n         v\n[ 4. Hard Semantic Gatekeeper ]\n  Ontology validates Preconditions, Types, and Invariants.\n  If valid -> Executes mutation on enterprise system.\n  If invalid -> Returns deterministic error message to LLM for course correction.\n         |\n         v\n[ 5. Postcondition Audit & Event Dispatch ]\n  Ontology verifies ledger balance and dispatches Kafka event to audit trail."
+  },
+  {
+    "file": "docs/pt/post/comprar-ou-construir-crm-vendas-b2b.md",
+    "heading": "### Arquitetura de Referência sem Telas da HSN Labs",
+    "lang": "",
+    "line_count": 24,
+    "full_body": "Canais Reais de Interação Comercial\nEmails Corporativos + Gravações de Chamadas + Calendário\n                         |\n                         v\n              Gateway de Eventos de Venda\n            Captura assíncrona em tempo real\n                         |\n                         v\n          Camada de Extração e Invariantes\n       Validação estruturada de dados com Pydantic\n                         |\n                         v\n         Máquina de Estados Finitos - FSM\n     Controle estrito de transições de estágio\n                         |\n                         v\n      Servidor MCP e Trilha Imutável de Auditoria\n    Métodos fechados de gravação e aprovação humana\n                         |\n      +------------------+------------------+\n      |                                     |\n      v                                     v\nBase Transacional Local            Sistemas Corporativos\nPostgreSQL ou SQLite              ERP SAP, Totvs e Assinaturas"
+  }
+]

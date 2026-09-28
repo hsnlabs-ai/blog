@@ -44,6 +44,8 @@
     <link rel="stylesheet" href="../../../assets/css/mkdocstrings.min.css">
     <script src="../../../assets/js/pagination.js"></script>
     <script src="../../../assets/js/relative_dates.js"></script>
+    <script src="../../../assets/js/mermaid.min.js"></script>
+    <script src="../../../assets/js/mermaid_init.js"></script>
     <script src="../../../search/main.js"></script>
     <link href="../../../stylesheets/extra.css" rel="stylesheet">
     <link href="../../../assets/css/pagination.css" rel="stylesheet">
@@ -455,9 +457,9 @@
 <h2 id="a-solucao-planejamento-estocastico-execucao-delimitada-em-codigo">A Solução: Planejamento Estocástico, Execução Delimitada em Código</h2>
 <p>Na HSN Labs, nunca permitimos loops abertos de ferramentas em produção. Impomos uma separação estrita entre raciocínio e execução por meio de Máquinas de Estados Finitos:</p>
 <ul>
-<li>Estados Discretos Permitidos: A cada microssegundo, uma transação corporativa existe em um estado explícito: Rascunho, Validado, Aprovado ou Efetivado. O agente só tem visibilidade e permissão para propor ferramentas que pertencem a esse estado específico. E fisicamente impossível para um agente no estado de Rascunho disparar uma ação de Efetivação.</li>
-<li>Funções de Guarda Invariantes: As transições entre estados não são governadas pelo modelo de linguagem. Elas são governadas por funções de guarda em Python em nível de código. Mesmo que o modelo sugira o cancelamento de um pedido, a guarda em software verifica se a mercadoria já saiu do centro de distribuição. Se a guarda avaliar como falso, a transição e rejeitada no nível da arquitetura.</li>
-<li>Propostas em Vez de Escritas Diretas: O modelo de linguagem nunca recebe credenciais diretas de escrita no banco de dados. O modelo e tratado como um motor de propostas não confiável. Ele analisa linguagem natural e propõe uma carga de transição de estado. Validadores estritos de schema como Pydantic processam essa carga, verificam invariantes e efetuam a gravação no banco.</li>
+<li><strong>Estados Discretos Permitidos:</strong> A cada microssegundo, uma transação corporativa existe em um estado explícito: Rascunho, Validado, Aprovado ou Efetivado. O agente só tem visibilidade e permissão para propor ferramentas que pertencem a esse estado específico. E fisicamente impossível para um agente no estado de Rascunho disparar uma ação de Efetivação.</li>
+<li><strong>Funções de Guarda Invariantes:</strong> As transições entre estados não são governadas pelo modelo de linguagem. Elas são governadas por funções de guarda em Python em nível de código. Mesmo que o modelo sugira o cancelamento de um pedido, a guarda em software verifica se a mercadoria já saiu do centro de distribuição. Se a guarda avaliar como falso, a transição e rejeitada no nível da arquitetura.</li>
+<li><strong>Propostas em Vez de Escritas Diretas:</strong> O modelo de linguagem nunca recebe credenciais diretas de escrita no banco de dados. O modelo e tratado como um motor de propostas não confiável. Ele analisa linguagem natural e propõe uma carga de transição de estado. Validadores estritos de schema como Pydantic processam essa carga, verificam invariantes e efetuam a gravação no banco.</li>
 </ul>
 <p>Autonomia não significa ausência de regras. Autonomia corporativa é a capacidade de o software rodar com confiabilidade porque seus limites são matematicamente inquebráveis.</p>
 <h2 id="recursos-estrategicos-e-posts-relacionados">Recursos Estratégicos e Posts Relacionados</h2>
@@ -650,6 +652,8 @@
     <script src="../../../assets/js/main.min.js"></script>
     <script src="../../../assets/js/pagination.js" defer></script>
     <script src="../../../assets/js/relative_dates.js" defer></script>
+    <script src="../../../assets/js/mermaid.min.js" defer></script>
+    <script src="../../../assets/js/mermaid_init.js" defer></script>
     <script src="../../../search/main.js" defer></script>
 
 </body>

@@ -69,6 +69,7 @@ Se a arquitetura se provar viável e o caso de negócio justificar o deploy, a d
 Pare de pagar por apresentações de slides. Exija software funcional em cinco dias.
 
 ## Recursos Estratégicos e Posts Relacionados
+
 - <a href="/blog/pt/post/como-construir-ontologia-enterprise-do-zero/">Como Construir uma Ontologia Enterprise do Zero: Passo a Passo</a>
 - <a href="/blog/pt/post/a-ontologia-operacional/">A Ontologia Operacional: Como Empresas Conectam LLMs aos Dados Proprietários</a>
 - <a href="/blog/pt/post/isolamento-perimetro-mcp-contratos-dados/">Como Protegemos Bancos de Dados Enterprise de Agentes de IA</a>

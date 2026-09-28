@@ -25,30 +25,21 @@ author: Hugo S. Nascimento
 If you want autonomous AI agents to execute mission-critical enterprise workflows without hallucinating or corrupting business state, you must build an **Operational Business Ontology**.
 
 An operational ontology is not a slide deck. It is not an academic paper. It is an **executable software harness** that:
+
 1. Synthesizes fragmented multi-system records into strongly typed domain objects.
 2. Compiles statutory business rules into non-negotiable mathematical invariants.
 3. Gates all mutations through deterministic finite state machines exposed via the Model Context Protocol (MCP).
 
 This guide provides the complete, end-to-end engineering methodology for building an enterprise ontology from scratch in seven concrete phases.
 
-```
-+--------------------------------------------------------------------------+
-|                  THE 7-PHASE ONTOLOGY ENGINEERING PIPELINE               |
-|                                                                          |
-|  [ Phase 1: Domain Scoping ]       --> Identify 3-5 Core Business Nouns  |
-|               |                                                          |
-|  [ Phase 2: Invariant Extraction ] --> Formalize Mathematical Assertions |
-|               |                                                          |
-|  [ Phase 3: FSM State Modeling ]   --> Define Legal Transition Graphs    |
-|               |                                                          |
-|  [ Phase 4: FastMCP Tool Registry] --> Build Parameterized Action Tools  |
-|               |                                                          |
-|  [ Phase 5: Core Synchronization ] --> Stream Real-Time Data (CDC/Kafka) |
-|               |                                                          |
-|  [ Phase 6: Adversarial Fuzzing ]  --> Stress Test Invariant Gatekeepers |
-|               |                                                          |
-|  [ Phase 7: Agent Orchestration ]  --> Deploy Autonomous Agent Fleets    |
-+--------------------------------------------------------------------------+
+```mermaid
+flowchart TD
+    P1[Phase 1: Domain Scoping<br>Identify 3-5 Core Business Nouns] --> P2[Phase 2: Invariant Extraction<br>Formalize Mathematical Assertions]
+    P2 --> P3[Phase 3: FSM State Modeling<br>Define Legal Transition Graphs]
+    P3 --> P4[Phase 4: FastMCP Tool Registry<br>Build Parameterized Action Tools]
+    P4 --> P5[Phase 5: Core Synchronization<br>Stream Real-Time Data via CDC and Kafka]
+    P5 --> P6[Phase 6: Adversarial Fuzzing<br>Stress Test Invariant Gatekeepers]
+    P6 --> P7[Phase 7: Agent Orchestration<br>Deploy Autonomous Agent Fleets]
 ```
 
 ---
@@ -63,10 +54,12 @@ Data teams attempt to model the entire global enterprise at once—cataloging ev
 Never build a general ontology. Build an ontology for a **single high-margin, high-friction operational workflow**.
 
 Ask the CFO two questions:
+
 1. *Where are we spending more than $2 million annually on outsourced BPO labor doing manual copy-paste validation?*
 2. *Which operational process has the highest transaction latency and customer dispute rate?*
 
 Typical target workflows include:
+
 - **Accounts Payable & Invoice Three-Way Matching**
 - **Autonomous Loan Underwriting & Collateral Verification**
 - **Healthcare Prior Authorization & Claims Adjudication**
@@ -74,6 +67,7 @@ Typical target workflows include:
 
 ### Identifying the Nouns and Verbs
 Sit with operational directors (not IT managers) for two hours. Map the operational vocabulary into:
+
 - **Core Entities (Nouns):** Max 3 to 5 objects (e.g., `PurchaseOrder`, `VendorInvoice`, `GoodsReceipt`).
 - **Operational Actions (Verbs):** Max 5 to 7 mutations (e.g., `MatchInvoice`, `FlagDiscrepancy`, `ApprovePayment`, `TriggerVendorDebit`).
 
@@ -152,6 +146,7 @@ class VendorInvoiceEntity(BaseModel):
 ```
 
 ### Key Engineering Decisions:
+
 1. **Always Use `Decimal`, Never `float`:** Floating point arithmetic produces IEEE 754 rounding errors (`0.1 + 0.2 == 0.30000000000000004`). In enterprise accounting, a one-cent variance is a failed audit.
 2. **Compile-Time Assertions:** Notice that if an LLM generates a slightly incorrect total, the `model_validator` instantly raises a `ValueError`. The model is physically barred from instantiating an invalid entity.
 
@@ -163,21 +158,13 @@ An entity is not a static data bag. It moves through a lifecycle.
 
 To prevent agents from executing out-of-order operations (e.g., trying to pay an invoice before it has been approved), every entity in your ontology must be bound to an explicit **Finite State Machine**.
 
-```
-+--------------------------------------------------------------------------+
-|                  FINITE STATE MACHINE: VENDOR INVOICE                    |
-|                                                                          |
-|       [ RECEIVED ]                                                       |
-|             |                                                            |
-|             v (Action: RunThreeWayMatch)                                 |
-|       [ MATCHED ] ---------------> [ DISPUTED ]                          |
-|             |                            |                               |
-|             v (Action: ApprovePayment)   v (Action: RequestVendorCredit) |
-|       [ APPROVED ]                 [ CREDIT_ISSUED ]                     |
-|             |                                                            |
-|             v (Action: ExecuteWireTransfer)                              |
-|       [ PAID / SETTLED ]                                                 |
-+--------------------------------------------------------------------------+
+```mermaid
+flowchart TD
+    REC[RECEIVED] -->|Action: RunThreeWayMatch| MAT[MATCHED]
+    MAT -->|Action: FlagDiscrepancy| DIS[DISPUTED]
+    DIS -->|Action: RequestVendorCredit| CRE[CREDIT_ISSUED]
+    MAT -->|Action: ApprovePayment| APP[APPROVED]
+    APP -->|Action: ExecuteWireTransfer| PAI[PAID / SETTLED]
 ```
 
 ### Implementing State Transition Guards in Python
@@ -291,24 +278,12 @@ An ontology that is out of sync with production databases is a liability.
 
 To keep the ontology synchronized in real time without bogging down your core transactional database, implement **Change Data Capture (CDC)**:
 
-```
-+--------------------------------------------------------------------------+
-|                  REAL-TIME CORE SYNCHRONIZATION PIPELINE                 |
-|                                                                          |
-|  [ Enterprise ERP / Core DB (Postgres / Oracle / SAP) ]                  |
-|         |                                                                |
-|         v (Write-Ahead Log / Transaction Log)                            |
-|  [ Debezium / Kafka Connect ]                                            |
-|         |                                                                |
-|         v (Sub-second Event Stream)                                      |
-|  [ Apache Kafka / Redpanda Cluster ]                                     |
-|         |                                                                |
-|         v                                                                |
-|  [ Operational Ontology In-Memory Cache (Redis / SQLite / Rust) ]        |
-|         ^                                                                |
-|         | (Microsecond Entity Reads)                                     |
-|  [ Autonomous AI Agent Fleet ]                                           |
-+--------------------------------------------------------------------------+
+```mermaid
+flowchart TD
+    ERP[Enterprise ERP / Core DB<br>Postgres, Oracle, SAP] -->|Write-Ahead Log / WAL| DEB[Debezium / Kafka Connect]
+    DEB -->|Sub-second Event Stream| KAF[Apache Kafka / Redpanda Cluster]
+    KAF -->|Materialized Entity Cache| ONT[Operational Ontology Cache<br>Redis / SQLite / In-Memory]
+    ONT <-->|Microsecond Context Reads| AGT[Autonomous AI Agent Fleet]
 ```
 
 1. **Debezium captures database mutations** directly from the database write-ahead log (WAL) with zero impact on query performance.
@@ -359,28 +334,12 @@ With the ontology compiled, tested, and synchronized, you deploy your agent flee
 
 Whether you use **LangGraph**, **Claude Code**, or custom **Antigravity** agent loops, the agent architecture is now decoupled and simplified:
 
-```
-[ Incoming Business Event / Webhook ]
-         |
-         v
-[ Autonomous AI Agent (LLM Reasoning Loop) ]
-         |
-         | Discovers available tools via MCP:
-         | -> query_ontology_entity(id)
-         | -> execute_ontology_action(payload)
-         |
-         v
-[ Operational Ontology Guard ]
-         |
-    +----+----+
-    |         |
-[ Valid ]  [ Invalid Invariant ]
-    |         |
-    |         v
-    |     [ Deterministic Error Returned to Agent ]
-    |     Agent self-corrects: "Invariant failed, escalating to human."
-    v
-[ Atomic Mutation Committed to ERP ]
+```mermaid
+flowchart TD
+    EVT[Incoming Business Event / Webhook] --> AGT[Autonomous AI Agent<br>LLM Reasoning Loop]
+    AGT -->|MCP Tool Calls<br>query_ontology_entity / execute_action| GRD[Operational Ontology Guard<br>Pydantic and FSM Validation]
+    GRD -->|Valid Mutation| ERP[Atomic Mutation Committed to ERP]
+    GRD -->|Invalid Invariant| ERR[Deterministic Error Returned to Agent<br>Agent self-corrects or escalates to human]
 ```
 
 The LLM is now operating inside a **deterministic sandbox**. It can reason about vendor emails, parse messy unstructured PDFs, and draft correspondence. But the moment it decides to execute a business transaction, it is strictly bound by the laws of your operational ontology.
@@ -392,6 +351,7 @@ The LLM is now operating inside a **deterministic sandbox**. It can reason about
 Enterprise leadership often assumes building an operational ontology requires eighteen months of Big 4 consulting.
 
 At HSN Labs, we build and deploy production operational ontologies in a **5-Day Forward Deployed Sprint**:
+
 - **Day 1: Semantic Discovery:** Map the 3 core entities, their mathematical invariants, and their finite state machine lifecycle.
 - **Day 2: Ontology Code Generation:** Scaffold strongly typed Pydantic models, custom validators, and state machine guards in Python.
 - **Day 3: Kinetic Tooling via FastMCP:** Implement and containerize the action registry with explicit authorization gates.
@@ -415,6 +375,7 @@ Build the rules. Compile the invariants. Gate the actions. Once the harness exis
 *At HSN Labs, we design and deploy bespoke operational ontologies and resilient multi-agent architectures for mid-to-large enterprises. If your organization is ready to transition from fragile AI demos to mission-critical production execution, apply for our on-site [Agentic Architecture Bootcamp](https://hsnlabs.ai/bootcamp).*
 
 ## Related Field Notes and Technical Spokes
+
 - <a href="../the-operational-ontology/">The Operational Ontology: How Enterprises Connect LLMs to Proprietary State</a>
 - <a href="../how-to-build-operational-ontology-python-mcp/">How to Build an Operational Business Ontology in Python and MCP</a>
 - <a href="../ontology-vs-knowledge-graph/">Ontology vs. Knowledge Graph: Key Differences, Architecture, and Agent Reliability</a>

@@ -44,6 +44,8 @@
     <link rel="stylesheet" href="../../assets/css/mkdocstrings.min.css">
     <script src="../../assets/js/pagination.js"></script>
     <script src="../../assets/js/relative_dates.js"></script>
+    <script src="../../assets/js/mermaid.min.js"></script>
+    <script src="../../assets/js/mermaid_init.js"></script>
     <script src="../../search/main.js"></script>
     <link href="../../stylesheets/extra.css" rel="stylesheet">
     <link href="../../assets/css/pagination.css" rel="stylesheet">
@@ -454,9 +456,9 @@
 <h2 id="how-protocol-level-agents-replace-screen-clickers">How Protocol-Level Agents Replace Screen Clickers</h2>
 <p>At HSN Labs, we do not build systems that emulate human eyes and hands on a desktop screen. We deploy autonomous agents that communicate directly with underlying system protocols:</p>
 <ul>
-<li>Headless Protocol Execution: An autonomous agent does not search a display for a button labeled Submit Order. It communicates directly with backend services via database adapters, REST endpoints, Model Context Protocol servers, or command line interfaces. A frontend interface redesign has zero impact on system uptime.</li>
-<li>Robust Handling of Variance: When a traditional RPA bot encounters an invoice layout with an extra line item, it crashes. When an autonomous agent encounters document variance, it parses the payload against an explicit ontology, extracts the verified entities, and applies business rules without manual code patches.</li>
-<li>Fractional Infrastructure Footprint: By eliminating heavy virtual machine farms, autonomous agents run inside lightweight containers that scale dynamically with transactional volume. Operating costs drop by more than eighty percent while throughput increases tenfold.</li>
+<li><strong>Headless Protocol Execution:</strong> An autonomous agent does not search a display for a button labeled Submit Order. It communicates directly with backend services via database adapters, REST endpoints, Model Context Protocol servers, or command line interfaces. A frontend interface redesign has zero impact on system uptime.</li>
+<li><strong>Robust Handling of Variance:</strong> When a traditional RPA bot encounters an invoice layout with an extra line item, it crashes. When an autonomous agent encounters document variance, it parses the payload against an explicit ontology, extracts the verified entities, and applies business rules without manual code patches.</li>
+<li><strong>Fractional Infrastructure Footprint:</strong> By eliminating heavy virtual machine farms, autonomous agents run inside lightweight containers that scale dynamically with transactional volume. Operating costs drop by more than eighty percent while throughput increases tenfold.</li>
 </ul>
 <p>The era of paying millions to maintain fragile screen-scraping bots is finished. Enterprise operations belong to autonomous, protocol-level agents that never touch a mouse.</p>
 <h2 id="strategic-resources-and-related-essays">Strategic Resources and Related Essays</h2>
@@ -652,6 +654,8 @@
     <script src="../../assets/js/main.min.js"></script>
     <script src="../../assets/js/pagination.js" defer></script>
     <script src="../../assets/js/relative_dates.js" defer></script>
+    <script src="../../assets/js/mermaid.min.js" defer></script>
+    <script src="../../assets/js/mermaid_init.js" defer></script>
     <script src="../../search/main.js" defer></script>
 
 </body>

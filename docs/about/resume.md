@@ -28,6 +28,7 @@ Active member of Latin America largest technology innovation ecosystem.
 ### Oncase — Product Manager, Data-Intensive Applications
 February 2018 to March 2020
 Owned enterprise data products post-Series A.
+
 - Built analytics datasets on Snowflake, BigQuery, Redshift, and Amazon S3.
 - Shipped high-volume processing pipelines with Databricks and Apache Spark.
 - Implemented streaming data architectures with Apache Kafka.

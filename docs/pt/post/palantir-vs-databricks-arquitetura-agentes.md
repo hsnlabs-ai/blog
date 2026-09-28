@@ -40,6 +40,7 @@ Não propomos substituir o seu lakehouse existente. Propomos posicionar uma cama
 O data lake continua cuidando do histórico e análise profunda, enquanto a ontologia operacional governa a ação em tempo real com segurança irrevogável.
 
 ## Recursos Estratégicos e Posts Relacionados
+
 - <a href="/blog/pt/post/o-que-e-uma-ontologia-para-agentes-ia/">O Que É uma Ontologia para Agentes de IA? O Guia Definitivo</a>
 - <a href="/blog/pt/post/ontologia-vs-schema-banco-dados/">Ontologia vs Schema de Banco de Dados: Por Que Tabelas Relacionais Quebram Agentes</a>
 - <a href="/blog/pt/post/falacia-llm-como-juiz/">Por Que LLM Como Juiz Falha no Setor Bancário</a>

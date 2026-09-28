@@ -59,6 +59,7 @@ O banco de dados legado continua sendo a fonte única da verdade. As gravações
 Não queime capital reescrevendo sistemas que já funcionam. Transforme seu legado no motor de execução headless para agentes autônomos.
 
 ## Recursos Estratégicos e Posts Relacionados
+
 - <a href="/blog/pt/post/como-construir-ontologia-enterprise-do-zero/">Como Construir uma Ontologia Enterprise do Zero: Passo a Passo</a>
 - <a href="/blog/pt/post/isolamento-perimetro-mcp-contratos-dados/">Como Protegemos Bancos de Dados Enterprise de Agentes de IA</a>
 - <a href="/blog/pt/post/chatbot-vs-agente/">Chatbot vs Agente: Por Que Substituir BPOs Exige Ontologias em Produção</a>

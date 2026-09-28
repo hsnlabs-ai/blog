@@ -24,6 +24,7 @@ Compreender a fronteira exata entre esses dois conceitos é o primeiro passo par
 
 ### O Que É um Grafo de Conhecimento?
 Um grafo de conhecimento é uma base de dados que representa informações como uma rede de nos e arestas. Ele armazena instâncias concretas do mundo real:
+
 - O cliente Carlos Souza
 - A filial de Curitiba
 - O contrato assinado em outubro
@@ -38,6 +39,7 @@ Se o grafo de conhecimento é o conjunto de casas, carros e jogadores em um tabu
 ## Como os Dois Componentes Trabalham Juntos
 
 Em uma arquitetura moderna da HSN Labs, esses componentes operam em simbiose perfeita:
+
 - A Ontologia estabelece as definições e as travas de segurança
 - O Grafo de Conhecimento materializa o estado atual das operações da companhia
 - Os Agentes de Software consultam o grafo sob a supervisão estrita da ontologia para executar tarefas no mundo real
@@ -45,6 +47,7 @@ Em uma arquitetura moderna da HSN Labs, esses componentes operam em simbiose per
 Sem ontologia, um grafo de conhecimento torna-se um emaranhado de dados sem governanca. Sem grafo de conhecimento, a ontologia e apenas um esquema teórico sem utilidade prática.
 
 ## Recursos Estratégicos e Posts Relacionados
+
 - <a href="/blog/pt/post/como-construir-ontologia-enterprise-do-zero/">Como Construir uma Ontologia Enterprise do Zero: Passo a Passo</a>
 - <a href="/blog/pt/post/a-ontologia-operacional/">A Ontologia Operacional: Como Empresas Conectam LLMs aos Dados Proprietários</a>
 - <a href="/blog/pt/post/palantir-aip-bootcamp-ontologia-operacional/">A Arquitetura do Palantir AIP: Por Que Agentes Exigem Ontologia Operacional</a>

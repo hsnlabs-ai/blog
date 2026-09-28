@@ -43,6 +43,7 @@ This architecture fails in enterprise environments for three mathematical reason
 Palantir does not connect LLMs to raw database tables. Palantir binds LLMs to an **Operational Ontology**.[3]
 
 An ontology is not a vector database. It is a digital twin of enterprise business logic written in strict software:
+
 - **Objects:** Real-world entities such as patients, hospital beds, supply orders, or shipping containers.
 - **Properties:** Verified schema attributes extracted from disparate systems of record.
 - **Actions:** Code-level state transitions and APIs that enforce business rules and authorization controls before any database mutation occurs.
@@ -62,6 +63,7 @@ In a traditional hospital setting, managing patient admissions and bed allocatio
 Tampa General deployed Palantir Foundry and AIP to integrate nurse scheduling, electronic health record telemetry, and surgical calendars into a unified hospital ontology.[3]
 
 The results demonstrate the difference between conversational wrappers and production agent architecture:
+
 - **83% reduction in time spent managing patient placements.**[3]
 - **28% reduction in patient hold time in the Post-Anesthesia Care Unit.**[3]
 - **30% improvement in nurse staffing ratios.**[3]
@@ -77,6 +79,7 @@ In their official 2023 Form 10-K filing with the U.S. Securities and Exchange Co
 > "Beginning in 2023, we introduced AIP bootcamps to the initial stages of our customer acquisition process, which helped to accelerate these discussions and provide an opportunity for our customers to experience our platforms through their own use cases in days."[1]
 
 The economics of enterprise procurement are broken:
+
 - Systems integrators charge millions of dollars on time-and-materials contracts to produce advisory documentation.
 - Enterprise CIOs and CFOs are paralyzed by the risk of funding multi-quarter technology migrations that fail in code.
 
@@ -91,6 +94,7 @@ While Palantir has proven the validity of ontology-first agent engineering, ente
 Mid-market enterprises and cost-conscious corporations do not need seven-figure proprietary platforms to achieve production agent reliability. 
 
 At HSN Labs, we execute the same fundamental engineering blueprint using modular, open enterprise architecture:
+
 1. **Domain Ontology Mapping:** Reverse-engineering corporate databases into Pydantic data contracts and graph relations.
 2. **Deterministic State Perimeters:** Wrapping autonomous reasoning graphs in formal finite state machines.
 3. **Five-Day Architecture Sprint:** Deploying an isolated sandbox prototype on real corporate data to prove audited unit ROI before production rollout.
@@ -108,6 +112,7 @@ If you bind autonomous agents to code-level software guards and typed business o
 [3] https://www.palantir.com/impact/tampa-general-hospital — Tampa General Hospital Case Study: Infusing Data Throughout the Care Continuum
 
 ## Strategic Resources and Related Essays
+
 - <a href="../how-to-build-an-enterprise-ontology-from-scratch/">How to Build an Enterprise Ontology from Scratch: Step by Step</a>
 - <a href="../ontology-vs-knowledge-graph/">Ontology vs. Knowledge Graph: Key Differences, Architecture, and Agent Reliability</a>
 - <a href="../legacy-core-backing-engine/">Legacy Core Systems Will Not Die: They Are the Execution Engine</a>

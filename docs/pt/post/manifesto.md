@@ -61,6 +61,7 @@ Essa transição não pode ser alcançada por meio de apresentações teóricas 
 A HSN Labs é a boutique de engenharia que construí para trabalhar em parceria com líderes empresariais que já estão buscando ativamente essa transição e exigem sistemas em produção que não quebrem.
 
 ## Notas de Campo e Artigos Relacionados
+
 - <a href="/blog/pt/post/estudo-caso-cleveland-clinic-agentes-operacionais/">Estudo de Caso: Como a Cleveland Clinic Escalou Fluxo de Pacientes</a>
 - <a href="/blog/pt/post/estudo-caso-latam-airlines/">LATAM Airlines: Agentes em Produção com Margem de 3 Por Cento</a>
 - <a href="/blog/pt/post/agentes-ilimitados-maquinas-estados-finitos/">Estudo de Caso: 42 Chamadas em Loop às 2 da Manhã</a>
