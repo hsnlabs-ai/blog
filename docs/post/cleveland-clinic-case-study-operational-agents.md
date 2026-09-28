@@ -59,19 +59,11 @@ Cleveland Clinic did not deploy a chatbot to converse with doctors. They deploye
 
 The platform constructs an active operational representation of the entire hospital network:[6]
 
-```
-[ Clinical Systems of Record ]
-Epic EHR / Kronos Staff Scheduling / Surgical Rosters / Telemetry Sensors
-                           │
-                           ▼ (Streaming Ingestion & Schema Normalization)
-[ The Hospital Operational Ontology ]
-Objects: Patients, Beds, Operating Theaters, Nursing Shifts, Medical Equipment
-Properties: Acuity Level, Oxygen Support, Shift End-Time, Infection Isolation
-Actions: AssignBed, ReserveOperatingSuite, TransferPatient, EscalateStaffing
-                           │
-                           ▼ (Bounded Agent Decision Engines)
-[ Operational Execution & Real-Time Dashboards ]
-Automated Placement Recommendations / Capacity Forecasting / Clinical Routing
+```mermaid
+flowchart TD
+    A["Clinical Systems of Record<br>Epic EHR, Kronos Staff Scheduling, Surgical Rosters"] --> B["The Hospital Operational Ontology<br>Clinical Entities, Bed Invariants and Resources"]
+    B --> C["Bounded Agent Decision Engines<br>AssignBed, TransferPatient, EscalateStaffing"]
+    C --> D["Operational Execution and Real-Time Dashboards<br>Automated Placement Recommendations and Clinical Routing"]
 ```
 
 Instead of asking a generative model to compose free-text clinical instructions, automated reasoning engines execute against strict ontology objects:[5]

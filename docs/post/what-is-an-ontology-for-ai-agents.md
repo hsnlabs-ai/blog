@@ -89,16 +89,12 @@ An **Operational Ontology for AI Agents** is written in executable code (Python,
 
 To understand why an ontology is necessary, you must understand the hierarchy of corporate knowledge representation. Most enterprise architectures stop at Layer 2 or Layer 3. Autonomous agents require Layer 5.
 
-```
-       [ Level 5: Operational Ontology ]    <-- Governs Autonomous Agents
-                     ^
-       [ Level 4: Knowledge Graph ]         <-- Connects Context Across Silos
-                     ^
-       [ Level 3: Relational Schema ]       <-- Stores Raw Relational Data
-                     ^
-       [ Level 2: Data Taxonomy ]           <-- Categorizes Departmental Nouns
-                     ^
-       [ Level 1: Data Dictionary ]         <-- Defines Column Headers
+```mermaid
+flowchart BT
+    L1["Level 1: Data Dictionary<br>Column headers and primitive types"] --> L2["Level 2: Data Taxonomy<br>Categorizes departmental nouns"]
+    L2 --> L3["Level 3: Relational Schema<br>Stores raw relational data and foreign keys"]
+    L3 --> L4["Level 4: Knowledge Graph<br>Connects context across enterprise silos"]
+    L4 --> L5["Level 5: Operational Ontology<br>Governs autonomous agents and execution boundaries"]
 ```
 
 ### Level 1: Data Dictionary

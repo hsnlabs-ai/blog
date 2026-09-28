@@ -5,6 +5,8 @@ description: Posts e notas de campo sobre arquitetura de agentes enterprise, ont
 
 # Hugo S. Nascimento
 
+<img src="../assets/images/author/hugo-nascimento.jpg" alt="Hugo S. Nascimento" class="author-photo" width="200" height="250" loading="eager" />
+
 Sou CPTO na Eva People e Fundador da HSN Labs. Fundador de 3 startups investidas por venture capital, engenheiro e investidor.
 
 Meu foco operacional é **Arquitetura de Agentes Enterprise**. Construo arquiteturas multiagente customizadas sobre ontologias de domínio executáveis para operações corporativas de missão crítica. Substituo operações manuais frágeis de BPO e gargalos de TI legada por forças de trabalho digitais autônomas que não alucinam nem falham em produção.

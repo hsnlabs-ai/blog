@@ -57,6 +57,65 @@ flowchart TD
     A --> B --> C
 ```
 
+---
+
+## Contrato de Ação Operacional Governamental
+
+Abaixo exemplificamos a definição formal de uma ferramenta corporativa exposta ao agente para reencaminhamento logístico de cargas portuárias:
+
+```json
+{
+  "name": "reencaminhar_container_porto",
+  "description": "Executa alteracao de rota de container no sistema portuario",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "container_id": {
+        "type": "string",
+        "pattern": "^CONT-[0-9]{6}$"
+      },
+      "porto_destino_novo": {
+        "type": "string",
+        "enum": [
+          "SANTOS",
+          "PARANAGUA",
+          "ITAJAI"
+        ]
+      },
+      "custo_desvio_estimado": {
+        "type": "number",
+        "maximum": 50000.00
+      },
+      "aprovador_humano": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "container_id",
+      "porto_destino_novo",
+      "custo_desvio_estimado"
+    ]
+  }
+}
+```
+
+---
+
+## A Armadilha de Contratação Linear
+
+Empresas tradicionais sofrem da armadilha de custos lineares: se o volume de transações cresce, o quadro operacional precisa crescer na mesma proporção. A ontologia operacional quebra essa barreira ao permitir automação com segurança matemática:
+
+```mermaid
+flowchart LR
+    subgraph TRAD["Empresa Tradicional: Armadilha Linear"]
+        T1["10k tx por mes: 20 FTE"] --> T2["50k tx por mes: 100 FTE"] --> T3["100k tx por mes: 200 FTE<br>Custos Operacionais Explodem"]
+    end
+    subgraph ONTO["Empresa com Ontologia Operacional"]
+        O1["10k tx por mes: 20 FTE"] --> O2["50k tx por mes: 25 FTE"] --> O3["100k tx por mes: 30 FTE<br>Margens EBITDA em Expansao"]
+    end
+```
+
+---
 
 ## Por Que Essa Abordagem Vence em Produção
 

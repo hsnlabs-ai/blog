@@ -24,6 +24,13 @@ Abordagens tradicionais de painéis de controle e dashboards analíticos apenas 
 
 Para resolver o gargalo, a instituição não tentou colocar um modelo de linguagem generativo conversando com os médicos. Em vez disso, foi desenhada uma ontologia operacional integrando três domínios centrais:
 
+```mermaid
+flowchart TD
+    A["Sistemas Clínicos de Registro<br>Prontuário Epic, Escalas Kronos e Telemetria"] --> B["Ontologia Operacional Hospitalar<br>Entidades Clínicas, Leitos e Recursos"]
+    B --> C["Ações e Motores de Decisão Delimitados<br>Alocação de Leitos, Transferências e Escalonamento"]
+    C --> D["Execução Operacional e Painéis em Tempo Real<br>Recomendações Automatizadas e Roteamento Clínico"]
+```
+
 ### 1. Entidades Clínicas e de Infraestrutura
 O sistema mapeia digitalmente cada leito, aparelho respiratório, leito de UTI, equipe de plantão e paciente como nos conectados com atributos em tempo real. Uma mudança no prontuário eletrônico atualiza imediatamente as restrições operacionais daquele leito.
 

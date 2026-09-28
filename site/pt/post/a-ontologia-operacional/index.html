@@ -464,6 +464,54 @@
     B["2. Arcabouco de Invariantes Cineticas&lt;br&gt;Compila regras de negocio em assercoes tipadas&lt;br&gt;Governa ciclo de vida via Maquinas de Estados Finitos&lt;br&gt;Garante integridade contabil e matematica"]
     C["3. Catalogo de Acoes Atomicas&lt;br&gt;Expoe ferramentas parametrizadas via Model Context Protocol&lt;br&gt;Valida pre-condicoes antes de despachar mutacoes&lt;br&gt;Gera trilhas criptograficas imutaveis de auditoria"]
     A --&gt; B --&gt; C</code></pre>
+<hr />
+<h2 id="contrato-de-acao-operacional-governamental">Contrato de Ação Operacional Governamental</h2>
+<p>Abaixo exemplificamos a definição formal de uma ferramenta corporativa exposta ao agente para reencaminhamento logístico de cargas portuárias:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">{</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"reencaminhar_container_porto"</span><span class="p">,</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Executa alteracao de rota de container no sistema portuario"</span><span class="p">,</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="nt">"parameters"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"object"</span><span class="p">,</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span><span class="nt">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">      </span><span class="nt">"container_id"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">        </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">        </span><span class="nt">"pattern"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^CONT-[0-9]{6}$"</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">      </span><span class="p">},</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">      </span><span class="nt">"porto_destino_novo"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">        </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">        </span><span class="nt">"enum"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">          </span><span class="s2">"SANTOS"</span><span class="p">,</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">          </span><span class="s2">"PARANAGUA"</span><span class="p">,</span>
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">          </span><span class="s2">"ITAJAI"</span>
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">        </span><span class="p">]</span>
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="w">      </span><span class="p">},</span>
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">      </span><span class="nt">"custo_desvio_estimado"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="w">        </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"number"</span><span class="p">,</span>
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="w">        </span><span class="nt">"maximum"</span><span class="p">:</span><span class="w"> </span><span class="mf">50000.00</span>
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="w">      </span><span class="p">},</span>
+<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="w">      </span><span class="nt">"aprovador_humano"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="w">        </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span>
+<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="w">      </span><span class="p">}</span>
+<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="w">    </span><span class="p">},</span>
+<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="w">    </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a><span class="w">      </span><span class="s2">"container_id"</span><span class="p">,</span>
+<a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a><span class="w">      </span><span class="s2">"porto_destino_novo"</span><span class="p">,</span>
+<a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a><span class="w">      </span><span class="s2">"custo_desvio_estimado"</span>
+<a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a><span class="w">    </span><span class="p">]</span>
+<a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a><span class="p">}</span>
+</code></pre></div>
+<hr />
+<h2 id="a-armadilha-de-contratacao-linear">A Armadilha de Contratação Linear</h2>
+<p>Empresas tradicionais sofrem da armadilha de custos lineares: se o volume de transações cresce, o quadro operacional precisa crescer na mesma proporção. A ontologia operacional quebra essa barreira ao permitir automação com segurança matemática:</p>
+<pre class="mermaid"><code>flowchart LR
+    subgraph TRAD["Empresa Tradicional: Armadilha Linear"]
+        T1["10k tx por mes: 20 FTE"] --&gt; T2["50k tx por mes: 100 FTE"] --&gt; T3["100k tx por mes: 200 FTE&lt;br&gt;Custos Operacionais Explodem"]
+    end
+    subgraph ONTO["Empresa com Ontologia Operacional"]
+        O1["10k tx por mes: 20 FTE"] --&gt; O2["50k tx por mes: 25 FTE"] --&gt; O3["100k tx por mes: 30 FTE&lt;br&gt;Margens EBITDA em Expansao"]
+    end</code></pre>
+<hr />
 <h2 id="por-que-essa-abordagem-vence-em-producao">Por Que Essa Abordagem Vence em Produção</h2>
 <p>Sem essa arquitetura, o modelo de linguagem atua como um funcionário recem-contratado que recebe acesso irrestrito ao banco de dados sem nenhum manual de procedimentos. Ele inevitavelmente comete erros graves de interpretação.</p>
 <p>Ao operar sobre uma ontologia operacional, o agente recebe um contexto milimetricamente desenhado para sua missão, com todas as regras de negócio pré-compiladas em validadores determinísticos.</p>

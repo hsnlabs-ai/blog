@@ -78,8 +78,9 @@ A knowledge graph organizes enterprise information as a property graph or an RDF
 
 A property graph consists of three mathematical elements:
 
-```
-(Node: Source) ---[Directed Edge: Relationship {Properties}]---> (Node: Target)
+```mermaid
+flowchart LR
+    S["Node: Source Entity"] -->|"Directed Edge: Relationship"| T["Node: Target Entity"]
 ```
 
 1. **Nodes (Vertices):** Discrete entity instances (e.g., `Customer: "Global Logistics Ltd"`, `Part: "Hydraulic Valve X9"`, `Facility: "Warehouse 04"`).

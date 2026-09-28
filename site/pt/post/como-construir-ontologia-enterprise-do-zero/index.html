@@ -433,42 +433,144 @@
         
 
         <div class="article-content-body">
-            <p><em>Tempo de leitura: 7 minutos. Autor: Hugo S. Nascimento.</em></p>
+            <p><em>Tempo de leitura: 8 minutos. Autor: Hugo S. Nascimento.</em></p>
 <!-- more -->
 
 <p><em>Contexto: Todo projeto de agentes na HSN Labs começa no mesmo lugar: desenhando a ontologia operacional do cliente. Sem essa fundação de dados e regras, nenhum modelo de linguagem consegue atuar de forma segura no mundo corporativo.</em></p>
 <p>A maioria das iniciativas de IA começa escolhendo qual modelo de linguagem utilizar ou configurando bancos vetoriais. Essa é a ordem inversa da boa engenharia de software.</p>
 <p>Se os sistemas centrais da sua empresa não possuírem uma representação formal e clara do que é um cliente, um pedido, uma fatura e quais ações são permitidas em cada etapa, o melhor modelo disponível no mercado continuara alucinando e gerando erros operacionais graves.</p>
-<h2 id="as-cinco-etapas-do-blueprint-arquitetural">As Cinco Etapas do Blueprint Arquitetural</h2>
-<h3 id="etapa-1-delimitacao-do-dominio-e-mapeamento-de-entidades">Etapa 1: Delimitação do Domínio e Mapeamento de Entidades</h3>
-<p>O primeiro passo não é escrever código, mas identificar as entidades fundamentais do negócio. Em uma operação logística, por exemplo:</p>
-<ul>
-<li>Pedido de Transporte</li>
-<li>Veículo</li>
-<li>Motorista</li>
-<li>Rota</li>
-<li>Ponto de Coleta e Entrega</li>
-<li>Ocorrência Operacional</li>
-</ul>
-<p>Para cada entidade, definem-se os atributos essenciais e as fontes verdadeiras de dados onde essas informações residem no ambiente de produção.</p>
-<h3 id="etapa-2-mapeamento-de-relacionamentos-e-invariantes">Etapa 2: Mapeamento de Relacionamentos e Invariantes</h3>
-<p>Entidades isoladas são apenas tabelas. O valor da ontologia surge na definição dos relacionamentos e das regras que nunca podem ser quebradas pelo software:</p>
-<ul>
-<li>Um veículo só pode ser alocado para uma rota se possuir vistoria técnica válida</li>
-<li>Uma fatura só pode ser liquidada se o conhecimento de transporte contiver o comprovante de entrega autenticado</li>
-</ul>
-<h3 id="etapa-3-codificacao-de-acoes-permitidas">Etapa 3: Codificação de Ações Permitidas</h3>
-<p>Diferente de um simples catálogo de metadados, uma ontologia operacional define quais ações mutáveis podem ser invocadas pelo sistema. Cada ação contem:</p>
-<ul>
-<li>Pre-condições estritas para ser executada</li>
-<li>Parâmetros obrigatórios de entrada</li>
-<li>Efeitos colaterais esperados no banco de dados central</li>
-<li>Permissões de segurança necessárias</li>
-</ul>
-<h3 id="etapa-4-implementacao-de-validadores-em-tempo-de-execucao">Etapa 4: Implementação de Validadores em Tempo de Execução</h3>
-<p>Utilizamos bibliotecas rigorosas de tipagem em Python como Pydantic para transformar a especificação da ontologia em validadores de código. Se a saída proposta por um agente violar qualquer regra da ontologia, o sistema intercepta o comando antes de qualquer gravação no banco legado.</p>
-<h3 id="etapa-5-exposicao-via-model-context-protocol">Etapa 5: Exposição via Model Context Protocol</h3>
-<p>Com a ontologia consolidada, as entidades e ações são expostas para os agentes na forma de ferramentas padronizadas via MCP. Isso permite que qualquer modelo homologado interaja com a infraestrutura com clareza semântica total.</p>
+<pre class="mermaid"><code>flowchart TD
+    P1["Fase 1: Escopo de Dominio&lt;br&gt;Identificar Entidades Centrais"] --&gt; P2["Fase 2: Extracao de Invariantes&lt;br&gt;Formalizar Assercoes Matematicas"]
+    P2 --&gt; P3["Fase 3: Maquina de Estados Finitos&lt;br&gt;Definir Transicoes Legais"]
+    P3 --&gt; P4["Fase 4: Catalogo de Acoes MCP&lt;br&gt;Construir Ferramentas Parametrizadas"]
+    P4 --&gt; P5["Fase 5: Sincronizacao em Tempo Real&lt;br&gt;Captura de Dados de Mudanca CDC"]
+    P5 --&gt; P6["Fase 6: Testes Adversariais&lt;br&gt;Estressar Travas de Seguranca"]
+    P6 --&gt; P7["Fase 7: Orquestracao Agentica&lt;br&gt;Implantar Frotas Autonomas"]</code></pre>
+<hr />
+<h2 id="as-sete-fases-do-blueprint-de-engenharia">As Sete Fases do Blueprint de Engenharia</h2>
+<h3 id="fase-1-delimitacao-do-dominio-e-mapeamento-de-entidades">Fase 1: Delimitação do Domínio e Mapeamento de Entidades</h3>
+<p>O primeiro passo não é escrever prompts, mas isolar de três a cinco entidades fundamentais do negócio. Em uma operação de faturamento, por exemplo: Fatura, Pedido de Compra, Fornecedor e Memorando de Crédito.</p>
+<h3 id="fase-2-extracao-de-invariantes-e-contratos-de-dados">Fase 2: Extração de Invariantes e Contratos de Dados</h3>
+<p>Entidades corporativas exigem asserções matemáticas rigorosas. Abaixo demonstramos a especificação de um contrato estrito de dados para faturamento:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">{</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"FaturaFornecedor"</span><span class="p">,</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"object"</span><span class="p">,</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="nt">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="nt">"fatura_id"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">      </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">      </span><span class="nt">"pattern"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^FAT-[0-9]{8}$"</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">    </span><span class="p">},</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">    </span><span class="nt">"fornecedor_id"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">      </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">      </span><span class="nt">"minLength"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">    </span><span class="p">},</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">    </span><span class="nt">"valor_itens"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">      </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"number"</span><span class="p">,</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">      </span><span class="nt">"minimum"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.01</span>
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">    </span><span class="p">},</span>
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">    </span><span class="nt">"valor_impostos"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="w">      </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"number"</span><span class="p">,</span>
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">      </span><span class="nt">"minimum"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.00</span>
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="w">    </span><span class="p">},</span>
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="w">    </span><span class="nt">"valor_total"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="w">      </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"number"</span><span class="p">,</span>
+<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="w">      </span><span class="nt">"minimum"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.01</span>
+<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="w">    </span><span class="p">},</span>
+<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="w">    </span><span class="nt">"moeda"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="w">      </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span>
+<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="w">      </span><span class="nt">"enum"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"BRL"</span><span class="p">,</span><span class="w"> </span><span class="s2">"USD"</span><span class="p">,</span><span class="w"> </span><span class="s2">"EUR"</span><span class="p">]</span>
+<a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a><span class="w">  </span><span class="p">},</span>
+<a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a><span class="w">  </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a><span class="w">    </span><span class="s2">"fatura_id"</span><span class="p">,</span>
+<a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a><span class="w">    </span><span class="s2">"fornecedor_id"</span><span class="p">,</span>
+<a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a><span class="w">    </span><span class="s2">"valor_itens"</span><span class="p">,</span>
+<a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a><span class="w">    </span><span class="s2">"valor_impostos"</span><span class="p">,</span>
+<a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a><span class="w">    </span><span class="s2">"valor_total"</span><span class="p">,</span>
+<a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a><span class="w">    </span><span class="s2">"moeda"</span>
+<a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a><span class="w">  </span><span class="p">]</span>
+<a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a><span class="p">}</span>
+</code></pre></div>
+<hr />
+<h3 id="fase-3-maquinas-de-estados-finitos">Fase 3: Máquinas de Estados Finitos</h3>
+<p>Para impedir que agentes tentem pagar faturas antes de auditoria contábil, toda entidade e atrelada a uma máquina de estados finitos:</p>
+<pre class="mermaid"><code>flowchart TD
+    REC["RECEBIDA"] --&gt;|Acao: ConciliacaoAutomatica| MAT["CONCILIADA"]
+    MAT --&gt;|Acao: AprovarPagamento| APP["APROVADA"]
+    APP --&gt;|Acao: ExecutarLiquidacao| PAI["PAGA E LIQUIDADA"]</code></pre>
+<p>Abaixo detalhamos a matriz formal de transição de estados:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nt">transicoes_fatura</span><span class="p">:</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="nt">RECEBIDA</span><span class="p">:</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="nt">acoes_permitidas</span><span class="p">:</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ConciliacaoAutomatica</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">    </span><span class="nt">proximo_estado</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">CONCILIADA</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">  </span><span class="nt">CONCILIADA</span><span class="p">:</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">    </span><span class="nt">acoes_permitidas</span><span class="p">:</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">AprovarPagamento</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">    </span><span class="nt">proximo_estado</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">APROVADA</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">  </span><span class="nt">APROVADA</span><span class="p">:</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">    </span><span class="nt">acoes_permitidas</span><span class="p">:</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ExecutarLiquidacao</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w">    </span><span class="nt">proximo_estado</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PAGA_E_LIQUIDADA</span>
+</code></pre></div>
+<hr />
+<h3 id="fase-4-catalogo-de-acoes-via-model-context-protocol">Fase 4: Catálogo de Ações via Model Context Protocol</h3>
+<p>As ações executáveis são expostas como ferramentas MCP com validação de pré-condições:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">{</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"aprovar_liquidacao_fatura"</span><span class="p">,</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">  </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Aprova pagamento de fatura conciliada para envio ao ERP"</span><span class="p">,</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">  </span><span class="nt">"parameters"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">    </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"object"</span><span class="p">,</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">    </span><span class="nt">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">      </span><span class="nt">"fatura_id"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">        </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">        </span><span class="nt">"pattern"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^FAT-[0-9]{8}$"</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">      </span><span class="p">},</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">      </span><span class="nt">"operador_aprovador"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">        </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span>
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="w">      </span><span class="p">},</span>
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="w">      </span><span class="nt">"valor_aprovado"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="w">        </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"number"</span><span class="p">,</span>
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="w">        </span><span class="nt">"minimum"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.01</span>
+<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="w">      </span><span class="p">}</span>
+<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="w">    </span><span class="p">},</span>
+<a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="w">    </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a><span class="w">      </span><span class="s2">"fatura_id"</span><span class="p">,</span>
+<a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a><span class="w">      </span><span class="s2">"operador_aprovador"</span><span class="p">,</span>
+<a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a><span class="w">      </span><span class="s2">"valor_aprovado"</span>
+<a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a><span class="w">    </span><span class="p">]</span>
+<a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a><span class="p">}</span>
+</code></pre></div>
+<hr />
+<h3 id="fase-5-sincronizacao-em-tempo-real-via-cdc">Fase 5: Sincronização em Tempo Real via CDC</h3>
+<p>Para manter a ontologia consistente sem sobrecarregar o banco transacional, implementamos captura de mudanças em tempo real:</p>
+<pre class="mermaid"><code>flowchart TD
+    ERP["Bancos Transacionais Legados&lt;br&gt;SAP S/4HANA e PostgreSQL"] --&gt;|Eventos CDC via Debezium| KFK["Kafka Broker"]
+    KFK --&gt;|Ingestao Continua| ONT["Ontologia Operacional"]
+    ONT &lt;--&gt;|Leituras em Milissegundos| AGT["Frota de Agentes Autonomos"]</code></pre>
+<hr />
+<h3 id="fase-6-testes-adversariais-e-fuzzing-de-invariantes">Fase 6: Testes Adversariais e Fuzzing de Invariantes</h3>
+<p>Antes de colocar o agente em produção, as travas da ontologia são submetidas a baterias de testes com payloads malformados:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nt">teste_adversarial_invariante</span><span class="p">:</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="nt">cenario</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">tentativa_pagamento_fatura_nao_conciliada</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">  </span><span class="nt">payload_entrada</span><span class="p">:</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">    </span><span class="nt">fatura_id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FAT-99018274</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">    </span><span class="nt">estado_atual</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">RECEBIDA</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">    </span><span class="nt">acao_solicitada</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ExecutarLiquidacao</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">  </span><span class="nt">resultado_esperado</span><span class="p">:</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">    </span><span class="nt">status</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">BLOQUEADO</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">    </span><span class="nt">codigo_invariante</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">TRANSICAO_ESTADO_INVALIDA</span>
+</code></pre></div>
+<hr />
+<h3 id="fase-7-orquestracao-e-execucao-agentica">Fase 7: Orquestração e Execução Agêntica</h3>
+<p>Na camada final, os agentes operam sob a blindagem contínua da ontologia:</p>
+<pre class="mermaid"><code>flowchart TD
+    AGT["Agente Autonomo de IA"] --&gt;|Intencao de Mutacao| GRD["Validador Semantico da Ontologia"]
+    GRD --&gt;|Invariante Respeitada| FSM["Maquina de Estados"]
+    FSM --&gt;|Gravacao Atomica| ERP["SAP ERP e PostgreSQL"]
+    GRD --&gt;|Invariante Invalida| ERR["Erro Deterministico Retornado ao Agente&lt;br&gt;Agente autocorrige ou aciona humano"]</code></pre>
+<hr />
 <h2 id="conclusao-tecnica">Conclusão Técnica</h2>
 <p>Construir uma ontologia corporativa exige rigor analítico e compreensão profunda dos processos de negócio. No entanto, é o único investimento estrutural que transforma protótipos frágeis em software corporativo resiliente.</p>
 <h2 id="notas-de-campo-e-artigos-relacionados">Notas de Campo e Artigos Relacionados</h2>

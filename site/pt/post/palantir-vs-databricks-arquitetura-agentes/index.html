@@ -448,7 +448,10 @@
 <h3 id="3-a-capacidade-de-fechar-o-ciclo">3. A Capacidade de Fechar o Ciclo</h3>
 <p>Um data lake é somente leitura para quem consome análises. Um agente autônomo precisa ler o estado atual, calcular a decisão ideal e gravar o resultado no banco legado. Sem uma camada ontológica com permissões e rollback transacional, permitir que agentes escrevam no ambiente corporativo é um risco inaceitável.</p>
 <h2 id="a-arquitetura-recomendada-pela-hsn-labs">A Arquitetura Recomendada pela HSN Labs</h2>
-<p>Não propomos substituir o seu lakehouse existente. Propomos posicionar uma camada ontológica operacional entre o seu ecossistema de dados e os seus agentes de software. </p>
+<p>Não propomos substituir o seu lakehouse existente. Propomos posicionar uma camada ontológica operacional entre o seu ecossistema de dados e os seus agentes de software.</p>
+<pre class="mermaid"><code>flowchart TD
+    A["Plano de Dados Analíticos&lt;br&gt;Databricks Delta Lake e Unity Catalog"] --&gt; B["Plano de Execução Operacional&lt;br&gt;Camada de Ontologia HSN Labs, Contratos Pydantic e MCP"]
+    B --&gt; C["Sistemas Transacionais de Registro&lt;br&gt;SAP ERP, Salesforce CRM e PostgreSQL de Produção"]</code></pre>
 <p>O data lake continua cuidando do histórico e análise profunda, enquanto a ontologia operacional governa a ação em tempo real com segurança irrevogável.</p>
 <h2 id="recursos-estrategicos-e-posts-relacionados">Recursos Estratégicos e Posts Relacionados</h2>
 <ul>

@@ -441,6 +441,10 @@
 <p>Abordagens tradicionais de painéis de controle e dashboards analíticos apenas exibiam o problema. Não tomavam nenhuma ação no mundo real.</p>
 <h2 id="a-solucao-com-ontologia-operacional-de-saude">A Solução com Ontologia Operacional de Saúde</h2>
 <p>Para resolver o gargalo, a instituição não tentou colocar um modelo de linguagem generativo conversando com os médicos. Em vez disso, foi desenhada uma ontologia operacional integrando três domínios centrais:</p>
+<pre class="mermaid"><code>flowchart TD
+    A["Sistemas Clínicos de Registro&lt;br&gt;Prontuário Epic, Escalas Kronos e Telemetria"] --&gt; B["Ontologia Operacional Hospitalar&lt;br&gt;Entidades Clínicas, Leitos e Recursos"]
+    B --&gt; C["Ações e Motores de Decisão Delimitados&lt;br&gt;Alocação de Leitos, Transferências e Escalonamento"]
+    C --&gt; D["Execução Operacional e Painéis em Tempo Real&lt;br&gt;Recomendações Automatizadas e Roteamento Clínico"]</code></pre>
 <h3 id="1-entidades-clinicas-e-de-infraestrutura">1. Entidades Clínicas e de Infraestrutura</h3>
 <p>O sistema mapeia digitalmente cada leito, aparelho respiratório, leito de UTI, equipe de plantão e paciente como nos conectados com atributos em tempo real. Uma mudança no prontuário eletrônico atualiza imediatamente as restrições operacionais daquele leito.</p>
 <h3 id="2-acoes-de-despacho-em-malha-fechada">2. Ações de Despacho em Malha Fechada</h3>

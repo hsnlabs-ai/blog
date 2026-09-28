@@ -464,19 +464,10 @@
 <hr />
 <h2 id="3-the-architecture-digital-twin-of-hospital-operations">3. The Architecture: Digital Twin of Hospital Operations</h2>
 <p>The platform constructs an active operational representation of the entire hospital network:[6]</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>[ Clinical Systems of Record ]
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>Epic EHR / Kronos Staff Scheduling / Surgical Rosters / Telemetry Sensors
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>                           │
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>                           ▼ (Streaming Ingestion &amp; Schema Normalization)
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>[ The Hospital Operational Ontology ]
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>Objects: Patients, Beds, Operating Theaters, Nursing Shifts, Medical Equipment
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>Properties: Acuity Level, Oxygen Support, Shift End-Time, Infection Isolation
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>Actions: AssignBed, ReserveOperatingSuite, TransferPatient, EscalateStaffing
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>                           │
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>                           ▼ (Bounded Agent Decision Engines)
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>[ Operational Execution &amp; Real-Time Dashboards ]
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>Automated Placement Recommendations / Capacity Forecasting / Clinical Routing
-</code></pre></div>
+<pre class="mermaid"><code>flowchart TD
+    A["Clinical Systems of Record&lt;br&gt;Epic EHR, Kronos Staff Scheduling, Surgical Rosters"] --&gt; B["The Hospital Operational Ontology&lt;br&gt;Clinical Entities, Bed Invariants and Resources"]
+    B --&gt; C["Bounded Agent Decision Engines&lt;br&gt;AssignBed, TransferPatient, EscalateStaffing"]
+    C --&gt; D["Operational Execution and Real-Time Dashboards&lt;br&gt;Automated Placement Recommendations and Clinical Routing"]</code></pre>
 <p>Instead of asking a generative model to compose free-text clinical instructions, automated reasoning engines execute against strict ontology objects:[5]</p>
 <ul>
 <li><strong>Granular Demand Forecasting:</strong> Projecting exact patient census and acuity levels for every hospital unit hours before admissions peak.[6]</li>

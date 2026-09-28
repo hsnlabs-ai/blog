@@ -33,34 +33,11 @@ In enterprise operations, data cannot be treated as passive tabular rows. An ope
 2. **Properties and Links:** Strongly-typed attributes and deterministic relationships connecting entities together (e.g., an `Invoice` links to a `PurchaseOrder` and an approved `VendorAccount`).[5]
 3. **Actions:** Guarded mutations and write-backs that alter system state across external transactional APIs (e.g., `ApprovePayment`, `ReassignBed`, `ReleaseEscrow`).[5]
 
-```
- ┌────────────────────────────────────────────────────────┐
- │                   ENTERPRISE LLM / REASONING ENGINE     │
- └───────────────────────────┬────────────────────────────┘
-                             │ (Pydantic Function Schemas)
-                             ▼
- ┌────────────────────────────────────────────────────────┐
- │              OPERATIONAL ONTOLOGY LAYER (PYTHON)       │
- │                                                        │
- │   [Objects & State]        [Links & Graph Contracts]   │
- │   - InvoiceRecord          - Invoice -> PO (1:1)       │
- │   - VendorContract         - PO -> Supplier (N:1)      │
- │   - DisputeClaim           - Claim -> Ticket (1:1)     │
- └───────────────────────────┬────────────────────────────┘
-                             │ (Validated Invariant Payload)
-                             ▼
- ┌────────────────────────────────────────────────────────┐
- │         MODEL CONTEXT PROTOCOL (MCP) ACTION GATEWAY    │
- │                                                        │
- │   @mcp.tool() -> Invariant Verification Engine         │
- │   - Rule 1: Sum(LineItems) == InvoiceTotal             │
- │   - Rule 2: Vendor.Status == "ACTIVE"                  │
- │   - Rule 3: Amount <= DiscretionaryAuthorizationCap    │
- └───────────────────────────┬────────────────────────────┘
-                             │ (Atomic ERP / Database Write)
-                             ▼
-                 [ CORE SYSTEMS OF RECORD ]
-              SAP S/4HANA / Salesforce / PostgreSQL
+```mermaid
+flowchart TD
+    A["Enterprise LLM and Reasoning Engine"] --> B["Operational Ontology Layer in Python<br>Objects, State and Graph Contracts"]
+    B --> C["Model Context Protocol Action Gateway<br>Invariant Verification Engine"]
+    C --> D["Core Systems of Record<br>SAP S/4HANA, Salesforce and PostgreSQL"]
 ```
 
 ---

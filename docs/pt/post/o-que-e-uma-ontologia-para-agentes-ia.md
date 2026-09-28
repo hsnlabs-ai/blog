@@ -20,6 +20,97 @@ O entusiasmo em torno de agentes autônomos gerou uma avalanche de demonstraçõ
 
 A razão e simples: agentes probabilísticos não compreendem o contexto operacional da sua empresa a menos que você forneça uma estrutura formal de domínio. Essa estrutura é o que chamamos de Ontologia.
 
+Modelos de linguagem computam distribuições estatísticas de probabilidade. Quando empresas tentam conter o comportamento desses modelos apenas com prompts de sistema em texto corrido, constroem sobre alicerces frágeis:
+
+```mermaid
+flowchart TD
+    A["System Prompt: Apenas aprove faturas abaixo de 10 mil reais"] -->|Avaliacao Probabilistica| B["Modelo de Fronteira LLM"]
+    B -->|Alucinacao: Aprovando pagamento de 12450 reais| C["Banco Relacional ERP<br>Corrupcao Silenciosa de Estado"]
+```
+
+---
+
+## A Escada Semântica: Onde a Ontologia se Posiciona
+
+Para compreender a necessidade de uma ontologia, e preciso visualizar a hierarquia da representação do conhecimento corporativo:
+
+```mermaid
+flowchart BT
+    L1["Nivel 1: Dicionario de Dados<br>Nomes de colunas e tipos primitivos"] --> L2["Nivel 2: Taxonomia de Dados<br>Categorizacao de termos de departamentos"]
+    L2 --> L3["Nivel 3: Esquema Relacional<br>Tabelas, chaves primarias e estrangeiras"]
+    L3 --> L4["Nivel 4: Grafo de Conhecimento<br>Rede semantica conectando instancias"]
+    L4 --> L5["Nivel 5: Ontologia Operacional<br>Invariantes, maquinas de estado e acoes executaveis"]
+```
+
+---
+
+## Os Três Componentes de uma Ontologia para Agentes
+
+Uma ontologia operacional é composta por três camadas essenciais:
+
+```mermaid
+flowchart TD
+    A["1. Definicoes de Objetos<br>Contratos tipados e regras imutaveis de negocio"] --> B["2. Vinculos de Estado em Tempo Real<br>Fluxos de eventos de PostgreSQL, SAP e Salesforce"]
+    B --> C["3. Catalogo de Acoes Executaveis<br>Validacao de pre-condicoes, maquinas de estado e auditoria"]
+```
+
+---
+
+## Contrato de Validação em Tempo de Execução
+
+Abaixo exemplificamos como a ontologia governa a validação de liquidação financeira através de um contrato estrito:
+
+```json
+{
+  "title": "AprovacaoFaturaCorporativa",
+  "type": "object",
+  "properties": {
+    "fatura_id": {
+      "type": "string",
+      "pattern": "^FAT-[0-9]{8}$"
+    },
+    "fornecedor_id": {
+      "type": "string",
+      "minLength": 3
+    },
+    "valor_total": {
+      "type": "number",
+      "minimum": 0.01
+    },
+    "limite_alcada": {
+      "type": "number",
+      "default": 10000.00
+    },
+    "operador_aprovador": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "fatura_id",
+    "fornecedor_id",
+    "valor_total",
+    "operador_aprovador"
+  ]
+}
+```
+
+---
+
+## O Ciclo de Execução em Produção
+
+Em vez de enviar documentações infinitas de banco de dados, o agente interage com o ecossistema através de um loop fechado e determinístico:
+
+```mermaid
+flowchart TD
+    D1["1. Descoberta<br>Agente consulta Catalogo Ontologico para operacoes legais"] --> D2["2. Injecao de Contexto<br>Ontologia retorna estado tipado e ferramentas permitidas"]
+    D2 --> D3["3. Decisao e Parametros<br>Modelo raciocina sobre o contexto e emite ferramenta"]
+    D3 --> D4["4. Validador Semantico<br>Valida pre-condicoes, tipos e invariantes"]
+    D4 -->|Mutacao Valida| D5["5. Mutacao no ERP e Auditoria<br>Executa gravacao e registra trilha criptografica"]
+    D4 -->|Invariante Invalida| D6["Erro Deterministico para o Agente<br>Agente autocorrige parametros"]
+```
+
+---
+
 ## O Conceito em Linguagem Simples
 
 Imagine contratar um analista brilhante, mas que nunca teve contato com os sistemas internos da sua companhia. Se você pedir para ele resolver uma ocorrência sem explicar o que significa cada código de status ou quais limites de alçada ele possui, ele tomara decisões equivocadas.

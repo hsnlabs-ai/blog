@@ -35,7 +35,13 @@ Um data lake é somente leitura para quem consome análises. Um agente autônomo
 
 ## A Arquitetura Recomendada pela HSN Labs
 
-Não propomos substituir o seu lakehouse existente. Propomos posicionar uma camada ontológica operacional entre o seu ecossistema de dados e os seus agentes de software. 
+Não propomos substituir o seu lakehouse existente. Propomos posicionar uma camada ontológica operacional entre o seu ecossistema de dados e os seus agentes de software.
+
+```mermaid
+flowchart TD
+    A["Plano de Dados Analíticos<br>Databricks Delta Lake e Unity Catalog"] --> B["Plano de Execução Operacional<br>Camada de Ontologia HSN Labs, Contratos Pydantic e MCP"]
+    B --> C["Sistemas Transacionais de Registro<br>SAP ERP, Salesforce CRM e PostgreSQL de Produção"]
+```
 
 O data lake continua cuidando do histórico e análise profunda, enquanto a ontologia operacional governa a ação em tempo real com segurança irrevogável.
 

@@ -90,17 +90,10 @@ Enterprises do not need to replace their existing lakehouse to deploy resilient 
 
 The solution is not choosing between Databricks and an ontology; it is establishing a clear separation of concerns:
 
-```
-[ Analytical Data Plane ]
-Databricks Delta Lake / Unity Catalog (Heavy Batch Compute & Feature Store)
-                │
-                ▼ (Continuous Sync / Schema Contracts)
-[ Operational Execution Plane ]
-HSN Labs Ontology Layer (Pydantic Contracts + State Machines + MCP)
-                │
-                ▼ (Bounded Action Execution)
-[ Core Systems of Record ]
-SAP ERP / Salesforce CRM / Production Postgres / Transactional Core
+```mermaid
+flowchart TD
+    A["Analytical Data Plane<br>Databricks Delta Lake and Unity Catalog"] --> B["Operational Execution Plane<br>HSN Labs Ontology Layer, Pydantic Contracts and MCP"]
+    B --> C["Core Systems of Record<br>SAP ERP, Salesforce CRM and Production Postgres"]
 ```
 
 1. **Keep Analytical Heavy Lifting in the Lakehouse:** Use Databricks for batch processing, vector embeddings generation, and offline analytical pipelines.[4]
