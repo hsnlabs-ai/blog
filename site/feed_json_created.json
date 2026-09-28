@@ -55,6 +55,27 @@
             ]
         },
         {
+            "id": "https://hsnlabs.ai/blog/post/kafka-metamorfose-ia-futuro-do-trabalho/",
+            "url": "https://hsnlabs.ai/blog/post/kafka-metamorfose-ia-futuro-do-trabalho/",
+            "title": "De 1915 a era da IA: Kafka, utilitarismo e o valor de quem trabalha",
+            "content_html": "Reflexao sobre utilitarismo, desvalorizacao do trabalhador e o impacto de agentes de IA a partir de A Metamorfose de Franz Kafka.",
+            "image": null,
+            "date_modified": "2026-09-28T00:00:00+00:00",
+            "date_published": "2026-09-28T00:00:00+00:00",
+            "authors": [
+                {
+                    "name": "Hugo S. Nascimento"
+                }
+            ],
+            "tags": [
+                "Future of Work",
+                "artificial-intelligence",
+                "future-of-work",
+                "hr",
+                "philosophy"
+            ]
+        },
+        {
             "id": "https://hsnlabs.ai/blog/post/palantir-aip-bootcamp-operational-ontology/",
             "url": "https://hsnlabs.ai/blog/post/palantir-aip-bootcamp-operational-ontology/",
             "title": "The Architecture of Palantir AIP: Why Enterprise Agents Fail Without an Operational Ontology",
@@ -395,26 +416,6 @@
                 "architecture",
                 "erp",
                 "rag"
-            ]
-        },
-        {
-            "id": "https://hsnlabs.ai/blog/post/legacy-core-backing-engine/",
-            "url": "https://hsnlabs.ai/blog/post/legacy-core-backing-engine/",
-            "title": "Legacy Core Systems Will Not Die: They Are the Engine Behind Autonomous Agents",
-            "content_html": "Why legacy core transaction systems remain the indispensable foundation powering autonomous enterprise agents.",
-            "image": null,
-            "date_modified": "2026-08-04T00:00:00+00:00",
-            "date_published": "2026-08-04T00:00:00+00:00",
-            "authors": [
-                {
-                    "name": "Hugo S. Nascimento"
-                }
-            ],
-            "tags": [
-                "Agent Development Life Cycle",
-                "architecture",
-                "legacy-core",
-                "mainframe"
             ]
         }
     ]

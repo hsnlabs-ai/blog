@@ -59,6 +59,7 @@ Technical essays, case studies, and post-mortems on enterprise agent architectur
 - The Real TCO of Palantir: The Dollar Barrier and Modern Open Alternatives: https://hsnlabs.ai/blog/post/palantir-pricing-tco-and-open-alternatives/
 - Case Study: How Cleveland Clinic Scaled Patient Flow Across 6,600 Hospital Beds: https://hsnlabs.ai/blog/post/cleveland-clinic-case-study-operational-agents/
 - How to Build an Operational Business Ontology in Python with Pydantic and MCP: https://hsnlabs.ai/blog/post/how-to-build-operational-ontology-python-mcp/
+- De 1915 a era da IA: Kafka, utilitarismo e o valor de quem trabalha: https://hsnlabs.ai/blog/post/kafka-metamorfose-ia-futuro-do-trabalho/
 
 ## Feeds & Machine Readability
 - RSS Feed: https://hsnlabs.ai/blog/feed_rss_created.xml

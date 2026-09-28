@@ -13,8 +13,8 @@
     <language>en</language>
 
     
-    <pubDate>Sun, 27 Sep 2026 22:11:45 -0000</pubDate>
-    <lastBuildDate>Sun, 27 Sep 2026 22:11:45 -0000</lastBuildDate>
+    <pubDate>Mon, 28 Sep 2026 11:42:11 -0000</pubDate>
+    <lastBuildDate>Mon, 28 Sep 2026 11:42:11 -0000</lastBuildDate>
     <ttl>1440</ttl>
 
     
@@ -90,6 +90,37 @@
       <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
       
       <guid isPermaLink="true">https://hsnlabs.ai/blog/post/how-to-build-operational-ontology-python-mcp/</guid>
+      
+    </item>
+    
+    <item>
+      <title>De 1915 a era da IA: Kafka, utilitarismo e o valor de quem trabalha</title>
+      
+      
+        
+      <author>Hugo S. Nascimento</author>
+        
+      
+      
+      
+        
+      <category>Future of Work</category>
+        
+      <category>artificial-intelligence</category>
+        
+      <category>future-of-work</category>
+        
+      <category>hr</category>
+        
+      <category>philosophy</category>
+        
+      
+      <description>Reflexao sobre utilitarismo, desvalorizacao do trabalhador e o impacto de agentes de IA a partir de A Metamorfose de Franz Kafka.</description>
+      <link>https://hsnlabs.ai/blog/post/kafka-metamorfose-ia-futuro-do-trabalho/</link>
+      <pubDate>Mon, 28 Sep 2026 00:00:00 +0000</pubDate>
+      <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
+      
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/post/kafka-metamorfose-ia-futuro-do-trabalho/</guid>
       
     </item>
     
@@ -589,35 +620,6 @@
       <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
       
       <guid isPermaLink="true">https://hsnlabs.ai/blog/post/why-rag-breaks-on-erp/</guid>
-      
-    </item>
-    
-    <item>
-      <title>Legacy Core Systems Will Not Die: They Are the Engine Behind Autonomous Agents</title>
-      
-      
-        
-      <author>Hugo S. Nascimento</author>
-        
-      
-      
-      
-        
-      <category>Agent Development Life Cycle</category>
-        
-      <category>architecture</category>
-        
-      <category>legacy-core</category>
-        
-      <category>mainframe</category>
-        
-      
-      <description>Why legacy core transaction systems remain the indispensable foundation powering autonomous enterprise agents.</description>
-      <link>https://hsnlabs.ai/blog/post/legacy-core-backing-engine/</link>
-      <pubDate>Tue, 04 Aug 2026 00:00:00 +0000</pubDate>
-      <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
-      
-      <guid isPermaLink="true">https://hsnlabs.ai/blog/post/legacy-core-backing-engine/</guid>
       
     </item>
     
