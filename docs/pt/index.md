@@ -17,8 +17,6 @@ Arquiteturas entregues incluem **Deloitte**, **Santander**, **Softplan**, **Unip
 
 ---
 
-## Posts de Engenharia e Notas de Campo
-
 <div class="blog-list" id="component-blog-list">
   <article class="blog-row blog-post-item">
     <div class="blog-row-body">

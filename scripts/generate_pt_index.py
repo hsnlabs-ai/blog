@@ -44,9 +44,6 @@ lines.append('<a href="https://hsnlabs.ai/pt/">HSN Labs Boutique</a> &nbsp;&bull
 lines.append("")
 lines.append("---")
 lines.append("")
-lines.append("## Posts de Engenharia e Notas de Campo")
-lines.append("")
-
 lines.append('<div class="blog-list" id="component-blog-list">')
 for p in posts:
     lines.append('  <article class="blog-row blog-post-item">')

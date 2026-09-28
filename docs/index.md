@@ -22,4 +22,3 @@ Delivered client architectures include **Deloitte**, **Santander**, **Softplan**
 
 ---
 
-## Engineering Posts & Field Notes
