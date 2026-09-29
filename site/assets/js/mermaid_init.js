@@ -1,5 +1,23 @@
 document.addEventListener("DOMContentLoaded", async function () {
-  if (typeof mermaid === "undefined") return;
+  const mermaidBlocks = Array.from(document.querySelectorAll("pre.mermaid, .mermaid"));
+  if (mermaidBlocks.length === 0) return;
+
+  if (typeof mermaid === "undefined") {
+    try {
+      await new Promise(function (resolve, reject) {
+        const script = document.createElement("script");
+        const currentScript = document.querySelector('script[src*="mermaid_init.js"]');
+        const basePath = currentScript ? currentScript.src.replace(/mermaid_init\.js(\?.*)?$/, "") : "assets/js/";
+        script.src = basePath + "mermaid.min.js";
+        script.onload = resolve;
+        script.onerror = reject;
+        document.head.appendChild(script);
+      });
+    } catch (e) {
+      console.error("Falha ao carregar mermaid.min.js:", e);
+      return;
+    }
+  }
 
   mermaid.initialize({
     startOnLoad: false,
@@ -34,7 +52,6 @@ document.addEventListener("DOMContentLoaded", async function () {
     }
   });
 
-  const mermaidBlocks = Array.from(document.querySelectorAll("pre.mermaid, .mermaid"));
   for (let i = 0; i < mermaidBlocks.length; i++) {
     const el = mermaidBlocks[i];
     const codeEl = el.querySelector("code");

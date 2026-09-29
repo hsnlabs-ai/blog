@@ -27,7 +27,6 @@ extra_css:
 extra_javascript:
   - assets/js/pagination.js
   - assets/js/relative_dates.js
-  - assets/js/mermaid.min.js
   - assets/js/mermaid_init.js
 
 plugins:
