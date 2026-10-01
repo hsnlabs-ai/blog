@@ -35,10 +35,8 @@
   ],
   "categories_map": {
     "Why Agents Fail": "Por Que Agentes Falham",
-    "Agent Development Life Cycle": "Ciclo de Vida de Desenvolvimento de Agentes",
-    "Future of Work": "O Futuro do Trabalho",
-    "Agentic Economics": "Economia Agentica",
-    "Case Studies": "Estudos de Caso"
+    "Agentic Engineering": "Engenharia Agêntica",
+    "Future of Work": "O Futuro do Trabalho"
   },
   "ui_strings": {
     "all_essays": "Todos os Posts",
