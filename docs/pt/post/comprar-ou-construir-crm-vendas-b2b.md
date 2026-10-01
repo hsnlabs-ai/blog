@@ -1,7 +1,7 @@
 ---
 title: "CRM de Vendas B2B: Comprar Salesforce, Adaptar Twenty ou Construir com Agentes"
 date: "2026-09-28"
-category: Agentic Economics
+category: Future of Work
 tags:
   - crm
   - model-context-protocol
@@ -309,9 +309,8 @@ Klarna: descontinuou contratos enterprise de Salesforce e Zendesk em favor de st
 
 ---
 
-## Recursos Estratégicos e Posts Relacionados
-
-- <a href="/blog/pt/post/matriz-substituicao-bpo/">A Matriz de Substituição de BPO: Métricas Operacionais e Financeiras</a>
-- <a href="/blog/pt/post/preco-palantir-tco-alternativas-abertas/">O TCO Real da Palantir: A Barreira em Dólar e Alternativas Abertas</a>
-- <a href="/blog/pt/post/playbook-c-suite-protecao-margem/">O Playbook de Transição da Diretoria: Protegendo Margens na Era Agêntica</a>
+## Recursos Estrategicos e Posts Relacionados
+- <a href="/blog/pt/post/matriz-substituicao-bpo/">A Matriz de Substituicao de BPO: Metricas Operacionais e Financeiras</a>
+- <a href="/blog/pt/post/preco-palantir-tco-alternativas-abertas/">O TCO Real da Palantir: A Barreira em Dolar e Alternativas Abertas</a>
+- <a href="/blog/pt/post/playbook-c-suite-protecao-margem/">O Playbook de Transicao da Diretoria: Protegendo Margens na Era Agentica</a>
 - <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da HSN Labs</a>

@@ -1,7 +1,7 @@
 ---
 title: 'LATAM Airlines: Agentes em Produção com Margem de 3 Por Cento'
 date: '2026-08-21'
-category: Case Studies
+category: Agentic Engineering
 tags:
 - case-studies
 - latam-airlines
@@ -55,9 +55,8 @@ Pare de construir interfaces vazias de texto livre. Use IA como um processador i
 
 E assim que você substitui TI legada. E assim que você expande margens. E assim que você prova retorno sobre investimento para um CFO.
 
-## Recursos Estratégicos e Posts Relacionados
-
-- <a href="/blog/pt/post/manifesto/">Por Que Criei a HSN Labs</a>
+## Recursos Estrategicos e Posts Relacionados
+- <a href="/blog/pt/post/como-construir-ontologia-enterprise-do-zero/">Como Construir uma Ontologia Enterprise do Zero: Passo a Passo</a>
 - <a href="/blog/pt/post/estudo-caso-cleveland-clinic-agentes-operacionais/">Estudo de Caso: Como a Cleveland Clinic Escalou Fluxo de Pacientes</a>
-- <a href="/blog/pt/post/negociacoes-autonomas-cobranca-contratos/">Operações em Alta Velocidade: Negociação Autônoma, Cobrança e Contratos</a>
+- <a href="/blog/pt/post/agentes-ilimitados-maquinas-estados-finitos/">Estudo de Caso: 42 Chamadas em Loop as 2 da Manha</a>
 - <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da HSN Labs</a>

@@ -40,3 +40,9 @@ A tecnologia precisa libertar o trabalhador da condição instrumental descrita 
 - <a href="/blog/pt/post/guarda-do-balanco-extincao-bpo/">O Que Aprendi Construindo HR Tech Sobre a Morte do BPO</a>
 - <a href="/blog/pt/post/morte-suporte-nivel-1-erp/">A Morte do Suporte Nível 1: Por Que Consultorias de ERP Perdem Horas Faturáveis</a>
 - <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da HSN Labs</a>
+
+## Recursos Estrategicos e Posts Relacionados
+- <a href="/blog/pt/post/matriz-substituicao-bpo/">A Matriz de Substituicao de BPO: Metricas Operacionais e Financeiras</a>
+- <a href="/blog/pt/post/colapso-rpa-legado/">O Mercado de RPA Esta em Colapso</a>
+- <a href="/blog/pt/post/guarda-do-balanco-extincao-bpo/">O Que Aprendi Construindo HR Tech Sobre a Morte do BPO</a>
+- <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da HSN Labs</a>

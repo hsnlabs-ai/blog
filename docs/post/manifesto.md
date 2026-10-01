@@ -1,7 +1,7 @@
 ---
 title: Why I Built HSN Labs
 date: '2026-07-08'
-category: Case Studies
+category: Future of Work
 tags:
 - case-studies
 - hsn-labs
@@ -67,4 +67,10 @@ HSN Labs is the engineering boutique I built to partner with enterprise leaders 
 - <a href="../latam-airlines-case-study/">LATAM Airlines: Production Agents in a 3 Percent Margin Business</a>
 - <a href="../unconstrained-agents-finite-state-machines/">Case Study: 42 Calls in a Loop at 2 AM</a>
 - <a href="../autonomous-negotiations-collections-contracts/">High-Velocity Operations: Autonomous Negotiation, Collections, and Contract Execution</a>
+- <a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a>
+
+## Strategic Resources and Related Essays
+- <a href="../bpo-replacement-matrix/">The BPO Replacement Matrix: Operational and Financial Metrics</a>
+- <a href="../kafka-metamorfose-ia-futuro-do-trabalho/">De 1915 a Era da IA: Kafka, utilitarismo e o valor do trabalho</a>
+- <a href="../collapse-of-legacy-rpa/">The RPA Market Is Collapsing</a>
 - <a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a>

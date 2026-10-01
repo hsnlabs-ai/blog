@@ -187,9 +187,8 @@ flowchart TD
 
 ---
 
-## Recursos Estratégicos e Posts Relacionados
-
-- <a href="/blog/pt/post/o-que-e-uma-ontologia-para-agentes-ia/">O Que É uma Ontologia para Agentes de IA? O Guia Definitivo</a>
-- <a href="/blog/pt/post/por-que-rag-falha-em-erp/">Por Que RAG Tradicional Falha em ERPs Financeiros</a>
-- <a href="/blog/pt/post/palantir-vs-databricks-arquitetura-agentes/">Palantir vs Databricks: Por Que Data Lakes Falham na Orquestração de Agentes</a>
+## Recursos Estrategicos e Posts Relacionados
+- <a href="/blog/pt/post/o-que-e-uma-ontologia-para-agentes-ia/">O Que E uma Ontologia para Agentes de IA? O Guia Definitivo</a>
+- <a href="/blog/pt/post/palantir-vs-databricks-arquitetura-agentes/">Palantir vs Databricks: Por Que Data Lakes Falham na Orquestracao de Agentes</a>
+- <a href="/blog/pt/post/cemiterio-de-pocs/">Por Que Agentes Falham: O Cemiterio de PoCs</a>
 - <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da HSN Labs</a>

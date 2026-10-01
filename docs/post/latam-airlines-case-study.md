@@ -1,7 +1,7 @@
 ---
 title: 'LATAM Airlines: Production Agents in a 3% Margin Business'
 date: '2026-08-21'
-category: Case Studies
+category: Agentic Engineering
 tags:
 - case-studies
 - latam-airlines
@@ -57,8 +57,7 @@ Stop building free-text wrappers. Use AI as a ruthless parser to turn noise into
 That is how you replace legacy IT. That is how you expand margins. That is how you prove ROI to a CFO.
 
 ## Strategic Resources and Related Essays
-
-- <a href="../manifesto/">Why I Built HSN Labs</a>
+- <a href="../how-to-build-an-enterprise-ontology-from-scratch/">How to Build an Enterprise Ontology from Scratch: Step by Step</a>
 - <a href="../cleveland-clinic-case-study-operational-agents/">Case Study: How Cleveland Clinic Scaled Patient Flow with Operational Agents</a>
-- <a href="../autonomous-negotiations-collections-contracts/">High-Velocity Operations: Autonomous Negotiation, Collections, and Contract Execution</a>
+- <a href="../unconstrained-agents-finite-state-machines/">Case Study: 42 Calls in a Loop at 2 AM</a>
 - <a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a>

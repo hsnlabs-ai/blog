@@ -1,7 +1,7 @@
 ---
 title: 'Operações em Alta Velocidade: Negociação Autônoma, Cobrança e Execução Contratual'
 date: '2026-09-18'
-category: Case Studies
+category: Future of Work
 tags:
 - bpo
 - collections
@@ -53,9 +53,8 @@ A implementação dessa esteira em uma grande instituição financeira demonstro
 
 Automatizar negociação de contratos não é uma questão de criar prompts persuasivos. E uma questão de cercar modelos de linguagem com garantias matemáticas e integração estrita com os sistemas centrais da organização.
 
-## Recursos Estratégicos e Posts Relacionados
-
+## Recursos Estrategicos e Posts Relacionados
+- <a href="/blog/pt/post/matriz-substituicao-bpo/">A Matriz de Substituicao de BPO: Metricas Operacionais e Financeiras</a>
 - <a href="/blog/pt/post/manifesto/">Por Que Criei a HSN Labs</a>
-- <a href="/blog/pt/post/estudo-caso-latam-airlines/">LATAM Airlines: Agentes em Produção com Margem de 3 Por Cento</a>
-- <a href="/blog/pt/post/agentes-ilimitados-maquinas-estados-finitos/">Estudo de Caso: 42 Chamadas em Loop às 2 da Manhã</a>
+- <a href="/blog/pt/post/kafka-metamorfose-ia-futuro-do-trabalho/">De 1915 a Era da IA: Kafka, utilitarismo e o valor do trabalho</a>
 - <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da HSN Labs</a>

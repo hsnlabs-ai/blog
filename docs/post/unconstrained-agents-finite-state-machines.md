@@ -1,7 +1,7 @@
 ---
 title: 'Case Study: 42 Calls in a Loop at 2 AM'
 date: '2026-08-12'
-category: Case Studies
+category: Agentic Engineering
 tags:
 - case-studies
 - production
@@ -59,8 +59,7 @@ At HSN Labs, we never permit open-ended tool loops in production. We enforce a s
 Autonomy is not the absence of rules. Enterprise autonomy is the ability of software to execute reliably because the boundaries are mathematically unbreakable.
 
 ## Strategic Resources and Related Essays
-
-- <a href="../manifesto/">Why I Built HSN Labs</a>
-- <a href="../cleveland-clinic-case-study-operational-agents/">Case Study: How Cleveland Clinic Scaled Patient Flow with Operational Agents</a>
-- <a href="../autonomous-negotiations-collections-contracts/">High-Velocity Operations: Autonomous Negotiation, Collections, and Contract Execution</a>
+- <a href="../how-to-build-an-enterprise-ontology-from-scratch/">How to Build an Enterprise Ontology from Scratch: Step by Step</a>
+- <a href="../the-operational-ontology/">The Operational Ontology: How Enterprises Connect LLMs to Proprietary State</a>
+- <a href="../how-to-build-operational-ontology-python-mcp/">How to Build an Operational Business Ontology in Python and MCP</a>
 - <a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a>

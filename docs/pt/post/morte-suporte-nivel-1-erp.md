@@ -39,9 +39,8 @@ Consultorias que baseiam sua receita no volume de profissionais alocados para ta
 
 O futuro pertence as consultorias que operam como boutiques de arquitetura, estruturando sistemas de agentes proprietários que resolvem problemas operacionais de forma autônoma.
 
-## Recursos Estratégicos e Posts Relacionados
-
-- <a href="/blog/pt/post/kafka-metamorfose-ia-futuro-do-trabalho/">De 1915 a Era da IA: Kafka, utilitarismo e o valor do trabalho</a>
-- <a href="/blog/pt/post/colapso-rpa-legado/">O Mercado de RPA Está em Colapso</a>
-- <a href="/blog/pt/post/guarda-do-balanco-extincao-bpo/">O Que Aprendi Construindo HR Tech Sobre a Morte do BPO</a>
+## Recursos Estrategicos e Posts Relacionados
+- <a href="/blog/pt/post/matriz-substituicao-bpo/">A Matriz de Substituicao de BPO: Metricas Operacionais e Financeiras</a>
+- <a href="/blog/pt/post/comprar-ou-construir-crm-vendas-b2b/">CRM de Vendas B2B: Comprar Salesforce, Adaptar Twenty ou Construir com Agentes</a>
+- <a href="/blog/pt/post/preco-palantir-tco-alternativas-abertas/">O TCO Real da Palantir: A Barreira em Dolar e Alternativas Abertas</a>
 - <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da HSN Labs</a>

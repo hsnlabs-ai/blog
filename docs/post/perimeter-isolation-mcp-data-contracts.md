@@ -1,7 +1,7 @@
 ---
 title: How We Protect Enterprise Databases from AI Agents
 date: '2026-08-26'
-category: Agent Development Life Cycle
+category: Agentic Engineering
 tags:
 - architecture
 - mcp
@@ -56,8 +56,7 @@ Agents never mutate production state synchronously. When an agent decides an inv
 Security is not an afterthought in agentic engineering. Perimeter isolation is the non-negotiable price of admission to enterprise production.
 
 ## Strategic Resources and Related Essays
-
 - <a href="../how-to-build-an-enterprise-ontology-from-scratch/">How to Build an Enterprise Ontology from Scratch: Step by Step</a>
-- <a href="../how-to-build-operational-ontology-python-mcp/">How to Build an Operational Business Ontology in Python and MCP</a>
 - <a href="../legacy-core-backing-engine/">Legacy Core Systems Will Not Die: They Are the Execution Engine</a>
+- <a href="../five-day-architecture-sprint/">Why Big 4 Slide Decks Fail on Agent Projects</a>
 - <a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a>

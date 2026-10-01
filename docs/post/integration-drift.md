@@ -51,8 +51,7 @@ At HSN Labs, we treat natural language prompts as completely untrusted input. We
 Engineering production stability means designing systems where upstream model drift cannot corrupt your core corporate infrastructure.
 
 ## Strategic Resources and Related Essays
-
 - <a href="../what-is-an-ontology-for-ai-agents/">What Is an Ontology for AI Agents? The Definitive Guide</a>
-- <a href="../the-poc-graveyard/">Why Agents Fail: The PoC Graveyard</a>
 - <a href="../llm-as-judge-fallacy/">Why LLM-as-a-Judge Fails in Banking</a>
+- <a href="../ontology-vs-database-schema/">Ontology vs. Database Schema: Why Relational Tables Break Agents</a>
 - <a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a>

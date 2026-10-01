@@ -61,7 +61,6 @@ At HSN Labs, we do not build boardroom slide decks or unconstrained sandbox demo
 Enterprise value is not measured by chatbots that talk. It is measured by production software that writes to core databases without breaking the business.
 
 ## Strategic Resources and Related Essays
-
 - <a href="../what-is-an-ontology-for-ai-agents/">What Is an Ontology for AI Agents? The Definitive Guide</a>
 - <a href="../why-rag-breaks-on-erp/">Why I Never Use Normal RAG on Financial ERPs</a>
 - <a href="../integration-drift/">The Integration Drift: When Prompts Break Production Agents</a>

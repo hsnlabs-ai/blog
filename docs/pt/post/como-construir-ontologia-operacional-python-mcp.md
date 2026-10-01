@@ -1,7 +1,7 @@
 ---
 title: 'Como Construir uma Ontologia Operacional de Negócios em Python com Pydantic e MCP'
 date: '2026-09-25'
-category: Agent Development Life Cycle
+category: Agentic Engineering
 tags:
 - python
 - mcp
@@ -156,9 +156,8 @@ Inteligência artificial corporativa não e um problema de engenharia de prompt.
 
 Ao substituir prompts vagos por contratos fortemente tipados e rotear comandos através de gateways MCP, líderes de tecnologia alcançam precisão operacional sem dependência de contratos fechados.
 
-## Recursos Estratégicos e Posts Relacionados
-
+## Recursos Estrategicos e Posts Relacionados
 - <a href="/blog/pt/post/como-construir-ontologia-enterprise-do-zero/">Como Construir uma Ontologia Enterprise do Zero: Passo a Passo</a>
-- <a href="/blog/pt/post/a-ontologia-operacional/">A Ontologia Operacional: Como Empresas Conectam LLMs aos Dados Proprietários</a>
-- <a href="/blog/pt/post/isolamento-perimetro-mcp-contratos-dados/">Como Protegemos Bancos de Dados Enterprise de Agentes de IA</a>
+- <a href="/blog/pt/post/ontologia-vs-grafo-conhecimento/">Ontologia vs Grafo de Conhecimento: Diferencas Chave e Arquitetura</a>
+- <a href="/blog/pt/post/palantir-aip-bootcamp-ontologia-operacional/">A Arquitetura do Palantir AIP: Por Que Agentes Exigem Ontologia Operacional</a>
 - <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da HSN Labs</a>

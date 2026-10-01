@@ -1,7 +1,7 @@
 ---
 title: 'A Ontologia Operacional: Como Empresas Conectam Dados, Regras de Negócio e Ações Autônomas'
 date: '2026-09-27'
-category: Agent Development Life Cycle
+category: Agentic Engineering
 tags:
 - ontology
 - foundation
@@ -125,9 +125,8 @@ Ao operar sobre uma ontologia operacional, o agente recebe um contexto milimetri
 
 O resultado é software de inteligência artificial confiável, rápido e pronto para operar nos setores mais regulados da economia global.
 
-## Recursos Estratégicos e Posts Relacionados
-
+## Recursos Estrategicos e Posts Relacionados
 - <a href="/blog/pt/post/como-construir-ontologia-enterprise-do-zero/">Como Construir uma Ontologia Enterprise do Zero: Passo a Passo</a>
-- <a href="/blog/pt/post/ontologia-vs-grafo-conhecimento/">Ontologia vs Grafo de Conhecimento: Diferenças Chave e Arquitetura</a>
-- <a href="/blog/pt/post/como-construir-ontologia-operacional-python-mcp/">Como Construir uma Ontologia Operacional de Negócios em Python e MCP</a>
+- <a href="/blog/pt/post/como-construir-ontologia-operacional-python-mcp/">Como Construir uma Ontologia Operacional de Negocios em Python e MCP</a>
+- <a href="/blog/pt/post/ontologia-vs-grafo-conhecimento/">Ontologia vs Grafo de Conhecimento: Diferencas Chave e Arquitetura</a>
 - <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da HSN Labs</a>

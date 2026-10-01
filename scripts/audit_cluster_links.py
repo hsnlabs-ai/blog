@@ -15,7 +15,7 @@ CLUSTERS = {
             "palantir-vs-databricks-agent-architecture"
         ]
     },
-    "agent-development-life-cycle": {
+    "agentic-engineering": {
         "hub": "how-to-build-an-enterprise-ontology-from-scratch",
         "spokes": [
             "the-operational-ontology",
@@ -25,34 +25,26 @@ CLUSTERS = {
             "perimeter-isolation-mcp-data-contracts",
             "legacy-core-backing-engine",
             "five-day-architecture-sprint",
-            "chatbot-vs-agent"
+            "chatbot-vs-agent",
+            "latam-airlines-case-study",
+            "cleveland-clinic-case-study-operational-agents",
+            "unconstrained-agents-finite-state-machines"
         ]
     },
     "future-of-work": {
-        "hub": "kafka-metamorfose-ia-futuro-do-trabalho",
-        "spokes": [
-            "collapse-of-legacy-rpa",
-            "balance-sheet-guard-bpo-extinction",
-            "death-of-tier-1-erp-helpdesk"
-        ]
-    },
-    "agentic-economics": {
         "hub": "bpo-replacement-matrix",
         "spokes": [
+            "kafka-metamorfose-ia-futuro-do-trabalho",
+            "collapse-of-legacy-rpa",
+            "balance-sheet-guard-bpo-extinction",
+            "death-of-tier-1-erp-helpdesk",
             "buy-versus-build-b2b-enterprise-crm",
             "palantir-pricing-tco-and-open-alternatives",
             "c-suite-margin-protection-playbook",
             "protocol-arbitrage-claims-underwriting",
-            "cost-legacy-it"
-        ]
-    },
-    "case-studies": {
-        "hub": "manifesto",
-        "spokes": [
-            "cleveland-clinic-case-study-operational-agents",
-            "latam-airlines-case-study",
-            "unconstrained-agents-finite-state-machines",
-            "autonomous-negotiations-collections-contracts"
+            "cost-legacy-it",
+            "autonomous-negotiations-collections-contracts",
+            "manifesto"
         ]
     }
 }

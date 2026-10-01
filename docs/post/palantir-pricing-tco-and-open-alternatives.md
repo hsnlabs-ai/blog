@@ -1,7 +1,7 @@
 ---
 title: "The Real TCO of Palantir: The Dollar Barrier and Modern Open Alternatives"
 date: "2026-09-14"
-category: Agentic Economics
+category: Future of Work
 tags:
 - economics
 - ebitda
@@ -107,8 +107,7 @@ By decoupling the architectural discipline of operational ontologies from propri
 [5] https://www.palantir.com/platforms/foundry/ontology — Palantir Foundry: Operational Ontology Overview
 
 ## Strategic Resources and Related Essays
-
 - <a href="../bpo-replacement-matrix/">The BPO Replacement Matrix: Operational and Financial Metrics</a>
-- <a href="../buy-versus-build-b2b-enterprise-crm/">Buy versus Build: B2B Enterprise CRM, Twenty, and Agentic Stacks</a>
-- <a href="../cost-legacy-it/">The Cost of Unbounded AI in Legacy IT</a>
+- <a href="../c-suite-margin-protection-playbook/">The C-Suite Transition Playbook: Protecting Margins in the Agentic Economy</a>
+- <a href="../protocol-arbitrage-claims-underwriting/">Protocol Arbitrage: Autonomous Multimodal Adjudication Across Complex Claims</a>
 - <a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a>

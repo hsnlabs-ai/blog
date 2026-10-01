@@ -1,7 +1,7 @@
 ---
 title: 'A Matriz de Substituição de BPO: Métricas Operacionais e Financeiras'
 date: '2026-09-27'
-category: Agentic Economics
+category: Future of Work
 tags:
 - economics
 - ebitda
@@ -47,10 +47,15 @@ Substituir contratos terceirizados por forças de trabalho digitais autônomas e
 3. **Testes Contínuos contra Dados Históricos:** Cada esteira automatizada e avaliada continuamente contra suites de testes de regressão.
 
 ## Notas de Campo e Artigos Relacionados
-
+- <a href="/blog/pt/post/kafka-metamorfose-ia-futuro-do-trabalho/">De 1915 a Era da IA: Kafka, utilitarismo e o valor do trabalho</a>
+- <a href="/blog/pt/post/colapso-rpa-legado/">O Mercado de RPA Esta em Colapso</a>
+- <a href="/blog/pt/post/guarda-do-balanco-extincao-bpo/">O Que Aprendi Construindo HR Tech Sobre a Morte do BPO</a>
+- <a href="/blog/pt/post/morte-suporte-nivel-1-erp/">A Morte do Suporte Nivel 1: Por Que Consultorias de ERP Perdem Horas Faturaveis</a>
 - <a href="/blog/pt/post/comprar-ou-construir-crm-vendas-b2b/">CRM de Vendas B2B: Comprar Salesforce, Adaptar Twenty ou Construir com Agentes</a>
-- <a href="/blog/pt/post/preco-palantir-tco-alternativas-abertas/">O TCO Real da Palantir: A Barreira em Dólar e Alternativas Abertas</a>
-- <a href="/blog/pt/post/playbook-c-suite-protecao-margem/">O Playbook de Transição da Diretoria: Protegendo Margens na Era Agêntica</a>
-- <a href="/blog/pt/post/arbitragem-protocolo-sinistros-subscricao/">Arbitragem de Protocolos: Liquidação Multimodal Autônoma de Sinistros</a>
+- <a href="/blog/pt/post/preco-palantir-tco-alternativas-abertas/">O TCO Real da Palantir: A Barreira em Dolar e Alternativas Abertas</a>
+- <a href="/blog/pt/post/playbook-c-suite-protecao-margem/">O Playbook de Transicao da Diretoria: Protegendo Margens na Era Agentica</a>
+- <a href="/blog/pt/post/arbitragem-protocolo-sinistros-subscricao/">Arbitragem de Protocolos: Liquidacao Multimodal Autonoma de Sinistros</a>
 - <a href="/blog/pt/post/custo-ia-ilimitada-ti-legada/">O Custo de IA Sem Limites na TI Legada</a>
+- <a href="/blog/pt/post/negociacoes-autonomas-cobranca-contratos/">Operacoes em Alta Velocidade: Negociacao Autonoma, Cobranca e Contratos</a>
+- <a href="/blog/pt/post/manifesto/">Por Que Criei a HSN Labs</a>
 - <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da HSN Labs</a>

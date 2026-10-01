@@ -1,7 +1,7 @@
 ---
 title: The Cost of Unbounded AI in Legacy IT
 date: '2026-07-15'
-category: Agentic Economics
+category: Future of Work
 tags:
 - architecture
 - legacy-it
@@ -49,8 +49,7 @@ To deploy agents into legacy corporate environments safely, you must decouple pr
 Predictability is the prerequisite for enterprise production access. If your architecture cannot guarantee system boundaries, it will never leave the sandbox.
 
 ## Strategic Resources and Related Essays
-
 - <a href="../bpo-replacement-matrix/">The BPO Replacement Matrix: Operational and Financial Metrics</a>
-- <a href="../palantir-pricing-tco-and-open-alternatives/">The Real TCO of Palantir: The Dollar Barrier and Modern Open Alternatives</a>
-- <a href="../protocol-arbitrage-claims-underwriting/">Protocol Arbitrage: Autonomous Multimodal Adjudication Across Complex Claims</a>
+- <a href="../autonomous-negotiations-collections-contracts/">High-Velocity Operations: Autonomous Negotiation, Collections, and Contract Execution</a>
+- <a href="../manifesto/">Why I Built HSN Labs</a>
 - <a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a>

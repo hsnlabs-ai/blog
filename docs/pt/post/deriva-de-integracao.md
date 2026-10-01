@@ -49,9 +49,8 @@ Na HSN Labs, tratamos prompts em linguagem natural como entradas completamente n
 
 Garantir estabilidade em produção significa projetar sistemas onde derivas nos modelos não possam corromper sua infraestrutura corporativa central.
 
-## Recursos Estratégicos e Posts Relacionados
-
-- <a href="/blog/pt/post/o-que-e-uma-ontologia-para-agentes-ia/">O Que É uma Ontologia para Agentes de IA? O Guia Definitivo</a>
-- <a href="/blog/pt/post/cemiterio-de-pocs/">Por Que Agentes Falham: O Cemitério de PoCs</a>
-- <a href="/blog/pt/post/falacia-llm-como-juiz/">Por Que LLM Como Juiz Falha no Setor Bancário</a>
+## Recursos Estrategicos e Posts Relacionados
+- <a href="/blog/pt/post/o-que-e-uma-ontologia-para-agentes-ia/">O Que E uma Ontologia para Agentes de IA? O Guia Definitivo</a>
+- <a href="/blog/pt/post/falacia-llm-como-juiz/">Por Que LLM Como Juiz Falha no Setor Bancario</a>
+- <a href="/blog/pt/post/ontologia-vs-schema-banco-dados/">Ontologia vs Schema de Banco de Dados: Por Que Tabelas Relacionais Quebram Agentes</a>
 - <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da HSN Labs</a>

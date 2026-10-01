@@ -1,7 +1,7 @@
 ---
 title: 'Chatbot vs Agente: Por Que Substituir BPOs Exige Ontologias em Produção'
 date: '2026-07-22'
-category: Agent Development Life Cycle
+category: Agentic Engineering
 tags:
 - architecture
 - guardrails
@@ -49,9 +49,8 @@ Verdadeira autonomia não significa deixar um modelo correr solto sem supervisã
 
 Autonomia não é criada escrevendo prompts de sistema mais longos. Autonomia e criada construindo arquiteturas resilientes que tornam a falha operacional matematicamente impossível.
 
-## Recursos Estratégicos e Posts Relacionados
-
+## Recursos Estrategicos e Posts Relacionados
 - <a href="/blog/pt/post/como-construir-ontologia-enterprise-do-zero/">Como Construir uma Ontologia Enterprise do Zero: Passo a Passo</a>
-- <a href="/blog/pt/post/a-ontologia-operacional/">A Ontologia Operacional: Como Empresas Conectam LLMs aos Dados Proprietários</a>
-- <a href="/blog/pt/post/sistemas-legados-motor-execucao/">Sistemas Transacionais Legados Não Vão Morrer: Eles São o Motor</a>
+- <a href="/blog/pt/post/estudo-caso-latam-airlines/">LATAM Airlines: Agentes em Producao com Margem de 3 Por Cento</a>
+- <a href="/blog/pt/post/estudo-caso-cleveland-clinic-agentes-operacionais/">Estudo de Caso: Como a Cleveland Clinic Escalou Fluxo de Pacientes</a>
 - <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da HSN Labs</a>

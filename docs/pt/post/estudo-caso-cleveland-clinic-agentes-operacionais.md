@@ -1,7 +1,7 @@
 ---
 title: 'Estudo de Caso: Como a Cleveland Clinic Escalou o Fluxo de Pacientes em 6.600 Leitos Hospitalares'
 date: '2026-09-28'
-category: Case Studies
+category: Agentic Engineering
 tags:
 - healthcare
 - ontologies
@@ -48,9 +48,8 @@ A experiência da Cleveland Clinic reforça os princípios centrais defendidos p
 - Agentes autônomos precisam de ontologias de domínio estritas para agir com precisão
 - Integração profunda com sistemas de registro é o único caminho para criar valor mensurável
 
-## Recursos Estratégicos e Posts Relacionados
-
-- <a href="/blog/pt/post/manifesto/">Por Que Criei a HSN Labs</a>
-- <a href="/blog/pt/post/estudo-caso-latam-airlines/">LATAM Airlines: Agentes em Produção com Margem de 3 Por Cento</a>
-- <a href="/blog/pt/post/agentes-ilimitados-maquinas-estados-finitos/">Estudo de Caso: 42 Chamadas em Loop às 2 da Manhã</a>
+## Recursos Estrategicos e Posts Relacionados
+- <a href="/blog/pt/post/como-construir-ontologia-enterprise-do-zero/">Como Construir uma Ontologia Enterprise do Zero: Passo a Passo</a>
+- <a href="/blog/pt/post/agentes-ilimitados-maquinas-estados-finitos/">Estudo de Caso: 42 Chamadas em Loop as 2 da Manha</a>
+- <a href="/blog/pt/post/a-ontologia-operacional/">A Ontologia Operacional: Como Empresas Conectam LLMs aos Dados Proprietarios</a>
 - <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da HSN Labs</a>

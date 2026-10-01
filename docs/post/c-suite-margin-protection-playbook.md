@@ -1,7 +1,7 @@
 ---
 title: 'The C-Suite Transition Playbook: Protecting Margins in the Agentic Economy'
 date: '2026-09-25'
-category: Agentic Economics
+category: Future of Work
 tags:
 - economics
 - c-suite
@@ -61,8 +61,7 @@ Establish clear financial approval thresholds where high-value transactions auto
 The agentic transition is not an optional technology experiment. It is a mandatory defense of your corporate balance sheet.
 
 ## Strategic Resources and Related Essays
-
 - <a href="../bpo-replacement-matrix/">The BPO Replacement Matrix: Operational and Financial Metrics</a>
-- <a href="../buy-versus-build-b2b-enterprise-crm/">Buy versus Build: B2B Enterprise CRM, Twenty, and Agentic Stacks</a>
 - <a href="../protocol-arbitrage-claims-underwriting/">Protocol Arbitrage: Autonomous Multimodal Adjudication Across Complex Claims</a>
+- <a href="../cost-legacy-it/">The Cost of Unbounded AI in Legacy IT</a>
 - <a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a>

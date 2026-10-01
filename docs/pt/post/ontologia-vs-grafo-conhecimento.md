@@ -1,7 +1,7 @@
 ---
 title: 'Ontologia vs Grafo de Conhecimento: Diferenças Centrais, Arquitetura e Aplicações Enterprise'
 date: '2026-09-27'
-category: Agent Development Life Cycle
+category: Agentic Engineering
 tags:
 - ontology
 - knowledge-graph
@@ -123,9 +123,8 @@ Em uma arquitetura moderna da HSN Labs, esses componentes operam em simbiose per
 
 Sem ontologia, um grafo de conhecimento torna-se um emaranhado de dados sem governanca. Sem grafo de conhecimento, a ontologia e apenas um esquema teórico sem utilidade prática.
 
-## Recursos Estratégicos e Posts Relacionados
-
+## Recursos Estrategicos e Posts Relacionados
 - <a href="/blog/pt/post/como-construir-ontologia-enterprise-do-zero/">Como Construir uma Ontologia Enterprise do Zero: Passo a Passo</a>
-- <a href="/blog/pt/post/a-ontologia-operacional/">A Ontologia Operacional: Como Empresas Conectam LLMs aos Dados Proprietários</a>
 - <a href="/blog/pt/post/palantir-aip-bootcamp-ontologia-operacional/">A Arquitetura do Palantir AIP: Por Que Agentes Exigem Ontologia Operacional</a>
+- <a href="/blog/pt/post/isolamento-perimetro-mcp-contratos-dados/">Como Protegemos Bancos de Dados Enterprise de Agentes de IA</a>
 - <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da HSN Labs</a>

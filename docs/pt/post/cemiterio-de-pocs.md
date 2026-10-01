@@ -59,9 +59,8 @@ Na HSN Labs, não construímos apresentações de slides para conselhos nem demo
 
 O valor corporativo não é medido por chatbots conversadores. Ele é medido por software em produção que escreve em bancos de dados centrais sem quebrar a operação da empresa.
 
-## Recursos Estratégicos e Posts Relacionados
-
-- <a href="/blog/pt/post/o-que-e-uma-ontologia-para-agentes-ia/">O Que É uma Ontologia para Agentes de IA? O Guia Definitivo</a>
+## Recursos Estrategicos e Posts Relacionados
+- <a href="/blog/pt/post/o-que-e-uma-ontologia-para-agentes-ia/">O Que E uma Ontologia para Agentes de IA? O Guia Definitivo</a>
 - <a href="/blog/pt/post/por-que-rag-falha-em-erp/">Por Que RAG Tradicional Falha em ERPs Financeiros</a>
-- <a href="/blog/pt/post/deriva-de-integracao/">A Deriva de Integração: Quando Prompts Quebram Agentes em Produção</a>
+- <a href="/blog/pt/post/deriva-de-integracao/">A Deriva de Integracao: Quando Prompts Quebram Agentes em Producao</a>
 - <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da HSN Labs</a>

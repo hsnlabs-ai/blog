@@ -1,7 +1,7 @@
 ---
 title: 'Arbitragem de Protocolo: Liquidação Multimodal Autônoma em Seguros e Saúde'
 date: '2026-09-11'
-category: Agentic Economics
+category: Future of Work
 tags:
 - insurance
 - healthcare
@@ -44,9 +44,8 @@ Casos em conformidade total com a matriz de risco da empresa são aprovados inst
 
 Transformar a regulação de sinistros em um processo de software em tempo real é a vantagem competitiva definitiva para companhias que desejam liderar o setor.
 
-## Recursos Estratégicos e Posts Relacionados
-
-- <a href="/blog/pt/post/matriz-substituicao-bpo/">A Matriz de Substituição de BPO: Métricas Operacionais e Financeiras</a>
-- <a href="/blog/pt/post/playbook-c-suite-protecao-margem/">O Playbook de Transição da Diretoria: Protegendo Margens na Era Agêntica</a>
+## Recursos Estrategicos e Posts Relacionados
+- <a href="/blog/pt/post/matriz-substituicao-bpo/">A Matriz de Substituicao de BPO: Metricas Operacionais e Financeiras</a>
 - <a href="/blog/pt/post/custo-ia-ilimitada-ti-legada/">O Custo de IA Sem Limites na TI Legada</a>
+- <a href="/blog/pt/post/negociacoes-autonomas-cobranca-contratos/">Operacoes em Alta Velocidade: Negociacao Autonoma, Cobranca e Contratos</a>
 - <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da HSN Labs</a>

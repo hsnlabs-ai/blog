@@ -1,7 +1,7 @@
 ---
 title: O Custo de IA Sem Limites na TI Legada
 date: '2026-07-15'
-category: Agentic Economics
+category: Future of Work
 tags:
 - architecture
 - legacy-it
@@ -47,9 +47,8 @@ Para implantar agentes em ambientes corporativos legados com segurança, você p
 
 Previsibilidade e o pré-requisito para acesso a produção corporativa. Se a sua arquitetura não puder garantir limites de sistema, ela jamais sairá da sandbox.
 
-## Recursos Estratégicos e Posts Relacionados
-
-- <a href="/blog/pt/post/matriz-substituicao-bpo/">A Matriz de Substituição de BPO: Métricas Operacionais e Financeiras</a>
-- <a href="/blog/pt/post/preco-palantir-tco-alternativas-abertas/">O TCO Real da Palantir: A Barreira em Dólar e Alternativas Abertas</a>
-- <a href="/blog/pt/post/arbitragem-protocolo-sinistros-subscricao/">Arbitragem de Protocolos: Liquidação Multimodal Autônoma de Sinistros</a>
+## Recursos Estrategicos e Posts Relacionados
+- <a href="/blog/pt/post/matriz-substituicao-bpo/">A Matriz de Substituicao de BPO: Metricas Operacionais e Financeiras</a>
+- <a href="/blog/pt/post/negociacoes-autonomas-cobranca-contratos/">Operacoes em Alta Velocidade: Negociacao Autonoma, Cobranca e Contratos</a>
+- <a href="/blog/pt/post/manifesto/">Por Que Criei a HSN Labs</a>
 - <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da HSN Labs</a>

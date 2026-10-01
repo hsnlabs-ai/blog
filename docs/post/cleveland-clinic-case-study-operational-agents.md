@@ -1,7 +1,7 @@
 ---
 title: "Case Study: How Cleveland Clinic Scaled Patient Flow Across 6,600 Hospital Beds"
 date: "2026-09-28"
-category: Case Studies
+category: Agentic Engineering
 tags:
 - case-studies
 - production
@@ -107,8 +107,7 @@ Whether you manage 6,600 hospital beds, international freight lines, or financia
 [6] https://www.palantir.com/impact/cleveland-clinic — Cleveland Clinic Impact Study: Enhancing Hospital Operations with Palantir Foundry
 
 ## Strategic Resources and Related Essays
-
-- <a href="../manifesto/">Why I Built HSN Labs</a>
-- <a href="../latam-airlines-case-study/">LATAM Airlines: Production Agents in a 3 Percent Margin Business</a>
+- <a href="../how-to-build-an-enterprise-ontology-from-scratch/">How to Build an Enterprise Ontology from Scratch: Step by Step</a>
 - <a href="../unconstrained-agents-finite-state-machines/">Case Study: 42 Calls in a Loop at 2 AM</a>
+- <a href="../the-operational-ontology/">The Operational Ontology: How Enterprises Connect LLMs to Proprietary State</a>
 - <a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a>

@@ -1,7 +1,7 @@
 ---
 title: Por Que Apresentações de Big 4 Falham em Projetos de Agentes
 date: '2026-09-22'
-category: Agent Development Life Cycle
+category: Agentic Engineering
 tags:
 - case-studies
 - consulting
@@ -68,9 +68,8 @@ Se a arquitetura se provar viável e o caso de negócio justificar o deploy, a d
 
 Pare de pagar por apresentações de slides. Exija software funcional em cinco dias.
 
-## Recursos Estratégicos e Posts Relacionados
-
+## Recursos Estrategicos e Posts Relacionados
 - <a href="/blog/pt/post/como-construir-ontologia-enterprise-do-zero/">Como Construir uma Ontologia Enterprise do Zero: Passo a Passo</a>
-- <a href="/blog/pt/post/a-ontologia-operacional/">A Ontologia Operacional: Como Empresas Conectam LLMs aos Dados Proprietários</a>
-- <a href="/blog/pt/post/isolamento-perimetro-mcp-contratos-dados/">Como Protegemos Bancos de Dados Enterprise de Agentes de IA</a>
+- <a href="/blog/pt/post/chatbot-vs-agente/">Chatbot vs Agente: Por Que Substituir BPOs Exige Ontologias em Producao</a>
+- <a href="/blog/pt/post/estudo-caso-latam-airlines/">LATAM Airlines: Agentes em Producao com Margem de 3 Por Cento</a>
 - <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da HSN Labs</a>

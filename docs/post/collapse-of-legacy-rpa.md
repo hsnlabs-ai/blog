@@ -55,8 +55,7 @@ At HSN Labs, we do not build systems that emulate human eyes and hands on a desk
 The era of paying millions to maintain fragile screen-scraping bots is finished. Enterprise operations belong to autonomous, protocol-level agents that never touch a mouse.
 
 ## Strategic Resources and Related Essays
-
-- <a href="../kafka-metamorfose-ia-futuro-do-trabalho/">De 1915 a Era da IA: Kafka, utilitarismo e o valor do trabalho</a>
+- <a href="../bpo-replacement-matrix/">The BPO Replacement Matrix: Operational and Financial Metrics</a>
 - <a href="../balance-sheet-guard-bpo-extinction/">What I Learned Building HR Tech About Dying BPO Contracts</a>
 - <a href="../death-of-tier-1-erp-helpdesk/">The Death of Tier-1 Support: Why ERP Consultancies Lose Billable Hours</a>
 - <a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a>

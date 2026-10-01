@@ -1,7 +1,7 @@
 ---
 title: "How to Build an Operational Business Ontology in Python with Pydantic and MCP"
 date: "2026-09-25"
-category: Agent Development Life Cycle
+category: Agentic Engineering
 tags:
 - architecture
 - production
@@ -188,8 +188,7 @@ By replacing opaque prompts with strongly-typed Pydantic contracts and routing a
 [8] https://docs.pydantic.dev/latest — Pydantic: Fast Data Validation for Python
 
 ## Strategic Resources and Related Essays
-
 - <a href="../how-to-build-an-enterprise-ontology-from-scratch/">How to Build an Enterprise Ontology from Scratch: Step by Step</a>
-- <a href="../the-operational-ontology/">The Operational Ontology: How Enterprises Connect LLMs to Proprietary State</a>
-- <a href="../perimeter-isolation-mcp-data-contracts/">How We Protect Enterprise Databases from AI Agents</a>
+- <a href="../ontology-vs-knowledge-graph/">Ontology vs. Knowledge Graph: Key Differences, Architecture, and Agent Reliability</a>
+- <a href="../palantir-aip-bootcamp-operational-ontology/">The Architecture of Palantir AIP: Why Enterprise Agents Require an Operational Ontology</a>
 - <a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a>

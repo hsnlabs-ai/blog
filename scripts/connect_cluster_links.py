@@ -12,7 +12,7 @@ with open(os.path.join(BASE_DIR, "i18n/routes-map.json"), "r", encoding="utf-8")
 posts_map = {p["slug_en"]: p for p in routes["blog_posts"]}
 
 CLUSTERS = {
-    "Why Agents Fail": {
+    "why-agents-fail": {
         "hub": "what-is-an-ontology-for-ai-agents",
         "spokes": [
             "the-poc-graveyard",
@@ -21,17 +21,9 @@ CLUSTERS = {
             "llm-as-judge-fallacy",
             "ontology-vs-database-schema",
             "palantir-vs-databricks-agent-architecture"
-        ],
-        "spoke_siblings": {
-            "the-poc-graveyard": ["why-rag-breaks-on-erp", "integration-drift"],
-            "why-rag-breaks-on-erp": ["ontology-vs-database-schema", "the-poc-graveyard"],
-            "integration-drift": ["the-poc-graveyard", "llm-as-judge-fallacy"],
-            "llm-as-judge-fallacy": ["integration-drift", "palantir-vs-databricks-agent-architecture"],
-            "ontology-vs-database-schema": ["why-rag-breaks-on-erp", "palantir-vs-databricks-agent-architecture"],
-            "palantir-vs-databricks-agent-architecture": ["ontology-vs-database-schema", "llm-as-judge-fallacy"]
-        }
+        ]
     },
-    "Agent Development Life Cycle": {
+    "agentic-engineering": {
         "hub": "how-to-build-an-enterprise-ontology-from-scratch",
         "spokes": [
             "the-operational-ontology",
@@ -41,63 +33,27 @@ CLUSTERS = {
             "perimeter-isolation-mcp-data-contracts",
             "legacy-core-backing-engine",
             "five-day-architecture-sprint",
-            "chatbot-vs-agent"
-        ],
-        "spoke_siblings": {
-            "the-operational-ontology": ["ontology-vs-knowledge-graph", "how-to-build-operational-ontology-python-mcp"],
-            "how-to-build-operational-ontology-python-mcp": ["the-operational-ontology", "perimeter-isolation-mcp-data-contracts"],
-            "ontology-vs-knowledge-graph": ["the-operational-ontology", "palantir-aip-bootcamp-operational-ontology"],
-            "palantir-aip-bootcamp-operational-ontology": ["ontology-vs-knowledge-graph", "legacy-core-backing-engine"],
-            "perimeter-isolation-mcp-data-contracts": ["how-to-build-operational-ontology-python-mcp", "legacy-core-backing-engine"],
-            "legacy-core-backing-engine": ["perimeter-isolation-mcp-data-contracts", "chatbot-vs-agent"],
-            "five-day-architecture-sprint": ["the-operational-ontology", "perimeter-isolation-mcp-data-contracts"],
-            "chatbot-vs-agent": ["the-operational-ontology", "legacy-core-backing-engine"]
-        }
+            "chatbot-vs-agent",
+            "latam-airlines-case-study",
+            "cleveland-clinic-case-study-operational-agents",
+            "unconstrained-agents-finite-state-machines"
+        ]
     },
-    "Future of Work": {
-        "hub": "kafka-metamorfose-ia-futuro-do-trabalho",
-        "spokes": [
-            "collapse-of-legacy-rpa",
-            "balance-sheet-guard-bpo-extinction",
-            "death-of-tier-1-erp-helpdesk"
-        ],
-        "spoke_siblings": {
-            "collapse-of-legacy-rpa": ["balance-sheet-guard-bpo-extinction", "death-of-tier-1-erp-helpdesk"],
-            "balance-sheet-guard-bpo-extinction": ["collapse-of-legacy-rpa", "death-of-tier-1-erp-helpdesk"],
-            "death-of-tier-1-erp-helpdesk": ["collapse-of-legacy-rpa", "balance-sheet-guard-bpo-extinction"]
-        }
-    },
-    "Agentic Economics": {
+    "future-of-work": {
         "hub": "bpo-replacement-matrix",
         "spokes": [
+            "kafka-metamorfose-ia-futuro-do-trabalho",
+            "collapse-of-legacy-rpa",
+            "balance-sheet-guard-bpo-extinction",
+            "death-of-tier-1-erp-helpdesk",
             "buy-versus-build-b2b-enterprise-crm",
             "palantir-pricing-tco-and-open-alternatives",
             "c-suite-margin-protection-playbook",
             "protocol-arbitrage-claims-underwriting",
-            "cost-legacy-it"
-        ],
-        "spoke_siblings": {
-            "buy-versus-build-b2b-enterprise-crm": ["palantir-pricing-tco-and-open-alternatives", "c-suite-margin-protection-playbook"],
-            "palantir-pricing-tco-and-open-alternatives": ["buy-versus-build-b2b-enterprise-crm", "cost-legacy-it"],
-            "c-suite-margin-protection-playbook": ["buy-versus-build-b2b-enterprise-crm", "protocol-arbitrage-claims-underwriting"],
-            "protocol-arbitrage-claims-underwriting": ["c-suite-margin-protection-playbook", "cost-legacy-it"],
-            "cost-legacy-it": ["palantir-pricing-tco-and-open-alternatives", "protocol-arbitrage-claims-underwriting"]
-        }
-    },
-    "Case Studies": {
-        "hub": "manifesto",
-        "spokes": [
-            "cleveland-clinic-case-study-operational-agents",
-            "latam-airlines-case-study",
-            "unconstrained-agents-finite-state-machines",
-            "autonomous-negotiations-collections-contracts"
-        ],
-        "spoke_siblings": {
-            "cleveland-clinic-case-study-operational-agents": ["latam-airlines-case-study", "unconstrained-agents-finite-state-machines"],
-            "latam-airlines-case-study": ["cleveland-clinic-case-study-operational-agents", "autonomous-negotiations-collections-contracts"],
-            "unconstrained-agents-finite-state-machines": ["cleveland-clinic-case-study-operational-agents", "autonomous-negotiations-collections-contracts"],
-            "autonomous-negotiations-collections-contracts": ["latam-airlines-case-study", "unconstrained-agents-finite-state-machines"]
-        }
+            "cost-legacy-it",
+            "autonomous-negotiations-collections-contracts",
+            "manifesto"
+        ]
     }
 }
 
@@ -223,14 +179,13 @@ def update_hub_pt(hub_slug, spokes):
 for cat, data in CLUSTERS.items():
     hub_slug = data["hub"]
     spokes = data["spokes"]
-    spoke_siblings = data["spoke_siblings"]
     
     print(f"Atualizando Hub: {hub_slug}")
     update_hub_en(hub_slug, spokes)
     update_hub_pt(hub_slug, spokes)
     
-    for sp in spokes:
-        sibs = spoke_siblings[sp]
+    for i, sp in enumerate(spokes):
+        sibs = [spokes[(i + 1) % len(spokes)], spokes[(i + 2) % len(spokes)]]
         print(f"  Atualizando Spoke: {sp} (irmaos: {sibs})")
         update_spoke_en(sp, hub_slug, sibs)
         update_spoke_pt(sp, hub_slug, sibs)

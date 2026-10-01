@@ -59,8 +59,7 @@ At HSN Labs, we reject subjective prompt grading in enterprise pipelines. We eva
 Do not grade production agents with subjective opinion prompts. Grade them with verifiable code assertions and mathematical proofs.
 
 ## Strategic Resources and Related Essays
-
 - <a href="../what-is-an-ontology-for-ai-agents/">What Is an Ontology for AI Agents? The Definitive Guide</a>
-- <a href="../integration-drift/">The Integration Drift: When Prompts Break Production Agents</a>
+- <a href="../ontology-vs-database-schema/">Ontology vs. Database Schema: Why Relational Tables Break Agents</a>
 - <a href="../palantir-vs-databricks-agent-architecture/">Palantir vs Databricks: Why Data Lakes Fail at Agent Orchestration</a>
 - <a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a>

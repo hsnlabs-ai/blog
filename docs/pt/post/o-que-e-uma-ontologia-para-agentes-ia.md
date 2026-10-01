@@ -138,11 +138,10 @@ Enquanto o RAG recupera fragmentos de texto desestruturados com base em similari
 Construir ontologias é o investimento definitivo que separa empresas que apenas experimentam com IA daquelas que extraem valor econômico real e sustentável de seus sistemas autônomos.
 
 ## Notas de Campo e Artigos Relacionados
-
-- <a href="/blog/pt/post/cemiterio-de-pocs/">Por Que Agentes Falham: O Cemitério de PoCs</a>
+- <a href="/blog/pt/post/cemiterio-de-pocs/">Por Que Agentes Falham: O Cemiterio de PoCs</a>
 - <a href="/blog/pt/post/por-que-rag-falha-em-erp/">Por Que RAG Tradicional Falha em ERPs Financeiros</a>
-- <a href="/blog/pt/post/deriva-de-integracao/">A Deriva de Integração: Quando Prompts Quebram Agentes em Produção</a>
-- <a href="/blog/pt/post/falacia-llm-como-juiz/">Por Que LLM Como Juiz Falha no Setor Bancário</a>
+- <a href="/blog/pt/post/deriva-de-integracao/">A Deriva de Integracao: Quando Prompts Quebram Agentes em Producao</a>
+- <a href="/blog/pt/post/falacia-llm-como-juiz/">Por Que LLM Como Juiz Falha no Setor Bancario</a>
 - <a href="/blog/pt/post/ontologia-vs-schema-banco-dados/">Ontologia vs Schema de Banco de Dados: Por Que Tabelas Relacionais Quebram Agentes</a>
-- <a href="/blog/pt/post/palantir-vs-databricks-arquitetura-agentes/">Palantir vs Databricks: Por Que Data Lakes Falham na Orquestração de Agentes</a>
+- <a href="/blog/pt/post/palantir-vs-databricks-arquitetura-agentes/">Palantir vs Databricks: Por Que Data Lakes Falham na Orquestracao de Agentes</a>
 - <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da HSN Labs</a>

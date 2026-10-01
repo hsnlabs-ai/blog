@@ -1,7 +1,7 @@
 ---
 title: 'Como Construir uma Ontologia Enterprise do Zero: Blueprint Arquitetural Completo'
 date: '2026-09-27'
-category: Agent Development Life Cycle
+category: Agentic Engineering
 tags:
 - ontology
 - architecture
@@ -193,13 +193,15 @@ flowchart TD
 Construir uma ontologia corporativa exige rigor analítico e compreensão profunda dos processos de negócio. No entanto, é o único investimento estrutural que transforma protótipos frágeis em software corporativo resiliente.
 
 ## Notas de Campo e Artigos Relacionados
-
-- <a href="/blog/pt/post/a-ontologia-operacional/">A Ontologia Operacional: Como Empresas Conectam LLMs aos Dados Proprietários</a>
-- <a href="/blog/pt/post/como-construir-ontologia-operacional-python-mcp/">Como Construir uma Ontologia Operacional de Negócios em Python e MCP</a>
-- <a href="/blog/pt/post/ontologia-vs-grafo-conhecimento/">Ontologia vs Grafo de Conhecimento: Diferenças Chave e Arquitetura</a>
+- <a href="/blog/pt/post/a-ontologia-operacional/">A Ontologia Operacional: Como Empresas Conectam LLMs aos Dados Proprietarios</a>
+- <a href="/blog/pt/post/como-construir-ontologia-operacional-python-mcp/">Como Construir uma Ontologia Operacional de Negocios em Python e MCP</a>
+- <a href="/blog/pt/post/ontologia-vs-grafo-conhecimento/">Ontologia vs Grafo de Conhecimento: Diferencas Chave e Arquitetura</a>
 - <a href="/blog/pt/post/palantir-aip-bootcamp-ontologia-operacional/">A Arquitetura do Palantir AIP: Por Que Agentes Exigem Ontologia Operacional</a>
 - <a href="/blog/pt/post/isolamento-perimetro-mcp-contratos-dados/">Como Protegemos Bancos de Dados Enterprise de Agentes de IA</a>
-- <a href="/blog/pt/post/sistemas-legados-motor-execucao/">Sistemas Transacionais Legados Não Vão Morrer: Eles São o Motor</a>
-- <a href="/blog/pt/post/sprint-arquitetura-cinco-dias/">Por Que Apresentações de Big 4 Falham em Projetos de Agentes</a>
-- <a href="/blog/pt/post/chatbot-vs-agente/">Chatbot vs Agente: Por Que Substituir BPOs Exige Ontologias em Produção</a>
+- <a href="/blog/pt/post/sistemas-legados-motor-execucao/">Sistemas Transacionais Legados Nao Vao Morrer: Eles Sao o Motor</a>
+- <a href="/blog/pt/post/sprint-arquitetura-cinco-dias/">Por Que Apresentacoes de Big 4 Falham em Projetos de Agentes</a>
+- <a href="/blog/pt/post/chatbot-vs-agente/">Chatbot vs Agente: Por Que Substituir BPOs Exige Ontologias em Producao</a>
+- <a href="/blog/pt/post/estudo-caso-latam-airlines/">LATAM Airlines: Agentes em Producao com Margem de 3 Por Cento</a>
+- <a href="/blog/pt/post/estudo-caso-cleveland-clinic-agentes-operacionais/">Estudo de Caso: Como a Cleveland Clinic Escalou Fluxo de Pacientes</a>
+- <a href="/blog/pt/post/agentes-ilimitados-maquinas-estados-finitos/">Estudo de Caso: 42 Chamadas em Loop as 2 da Manha</a>
 - <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da HSN Labs</a>

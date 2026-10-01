@@ -370,7 +370,6 @@ The bridge between probabilistic machine intelligence and deterministic corporat
 *At HSN Labs, we design and deploy bespoke operational ontologies and resilient multi-agent architectures for mid-to-large enterprises. If your team is moving beyond proof-of-concepts into mission-critical production operations, apply for our 5-day on-site [Agentic Architecture Bootcamp](https://hsnlabs.ai/bootcamp).*
 
 ## Related Field Notes and Technical Spokes
-
 - <a href="../the-poc-graveyard/">Why Agents Fail: The PoC Graveyard</a>
 - <a href="../why-rag-breaks-on-erp/">Why I Never Use Normal RAG on Financial ERPs</a>
 - <a href="../integration-drift/">The Integration Drift: When Prompts Break Production Agents</a>

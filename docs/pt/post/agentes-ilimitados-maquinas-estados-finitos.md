@@ -1,7 +1,7 @@
 ---
 title: 'Estudo de Caso: 42 Chamadas em Loop às 2 da Manhã'
 date: '2026-08-12'
-category: Case Studies
+category: Agentic Engineering
 tags:
 - case-studies
 - production
@@ -57,9 +57,8 @@ Na HSN Labs, nunca permitimos loops abertos de ferramentas em produção. Impomo
 
 Autonomia não significa ausência de regras. Autonomia corporativa é a capacidade de o software rodar com confiabilidade porque seus limites são matematicamente inquebráveis.
 
-## Recursos Estratégicos e Posts Relacionados
-
-- <a href="/blog/pt/post/manifesto/">Por Que Criei a HSN Labs</a>
-- <a href="/blog/pt/post/estudo-caso-cleveland-clinic-agentes-operacionais/">Estudo de Caso: Como a Cleveland Clinic Escalou Fluxo de Pacientes</a>
-- <a href="/blog/pt/post/negociacoes-autonomas-cobranca-contratos/">Operações em Alta Velocidade: Negociação Autônoma, Cobrança e Contratos</a>
+## Recursos Estrategicos e Posts Relacionados
+- <a href="/blog/pt/post/como-construir-ontologia-enterprise-do-zero/">Como Construir uma Ontologia Enterprise do Zero: Passo a Passo</a>
+- <a href="/blog/pt/post/a-ontologia-operacional/">A Ontologia Operacional: Como Empresas Conectam LLMs aos Dados Proprietarios</a>
+- <a href="/blog/pt/post/como-construir-ontologia-operacional-python-mcp/">Como Construir uma Ontologia Operacional de Negocios em Python e MCP</a>
 - <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da HSN Labs</a>

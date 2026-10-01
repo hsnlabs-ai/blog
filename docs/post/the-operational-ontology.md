@@ -1,7 +1,7 @@
 ---
 title: "The Operational Ontology: How Enterprises Connect Data, Business Rules, and Autonomous Actions"
 date: '2026-09-27'
-category: Agent Development Life Cycle
+category: Agentic Engineering
 tags:
 - ontology
 - operational-ontology
@@ -287,8 +287,7 @@ If that code does not exist, your AI agents cannot safely operate. Build the ont
 *At HSN Labs, we design and deploy bespoke operational ontologies and resilient multi-agent systems for mid-to-large enterprises. To map your enterprise state machines and launch a production pilot in five days, explore our on-site [Agentic Architecture Bootcamp](https://hsnlabs.ai/bootcamp).*
 
 ## Strategic Resources and Related Essays
-
 - <a href="../how-to-build-an-enterprise-ontology-from-scratch/">How to Build an Enterprise Ontology from Scratch: Step by Step</a>
-- <a href="../ontology-vs-knowledge-graph/">Ontology vs. Knowledge Graph: Key Differences, Architecture, and Agent Reliability</a>
 - <a href="../how-to-build-operational-ontology-python-mcp/">How to Build an Operational Business Ontology in Python and MCP</a>
+- <a href="../ontology-vs-knowledge-graph/">Ontology vs. Knowledge Graph: Key Differences, Architecture, and Agent Reliability</a>
 - <a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a>

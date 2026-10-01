@@ -1,7 +1,7 @@
 ---
 title: Why Big 4 Slide Decks Fail on Agent Projects
 date: '2026-09-22'
-category: Agent Development Life Cycle
+category: Agentic Engineering
 tags:
 - case-studies
 - consulting
@@ -70,8 +70,7 @@ If the architecture proves viable and the business case justifies deployment, di
 Stop paying for slide decks. Demand working software in five days.
 
 ## Strategic Resources and Related Essays
-
 - <a href="../how-to-build-an-enterprise-ontology-from-scratch/">How to Build an Enterprise Ontology from Scratch: Step by Step</a>
-- <a href="../the-operational-ontology/">The Operational Ontology: How Enterprises Connect LLMs to Proprietary State</a>
-- <a href="../perimeter-isolation-mcp-data-contracts/">How We Protect Enterprise Databases from AI Agents</a>
+- <a href="../chatbot-vs-agent/">Chatbot vs Agent: Why Replacing BPOs Requires Production Ontologies</a>
+- <a href="../latam-airlines-case-study/">LATAM Airlines: Production Agents in a 3 Percent Margin Business</a>
 - <a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a>

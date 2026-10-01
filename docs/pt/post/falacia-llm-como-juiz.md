@@ -57,9 +57,8 @@ Na HSN Labs, rejeitamos notas subjetivas de prompts em esteiras corporativas. Av
 
 Não avalie agentes de produção com prompts opinativos. Avalie com asserções de código verificáveis e comprovações matemáticas.
 
-## Recursos Estratégicos e Posts Relacionados
-
-- <a href="/blog/pt/post/o-que-e-uma-ontologia-para-agentes-ia/">O Que É uma Ontologia para Agentes de IA? O Guia Definitivo</a>
-- <a href="/blog/pt/post/deriva-de-integracao/">A Deriva de Integração: Quando Prompts Quebram Agentes em Produção</a>
-- <a href="/blog/pt/post/palantir-vs-databricks-arquitetura-agentes/">Palantir vs Databricks: Por Que Data Lakes Falham na Orquestração de Agentes</a>
+## Recursos Estrategicos e Posts Relacionados
+- <a href="/blog/pt/post/o-que-e-uma-ontologia-para-agentes-ia/">O Que E uma Ontologia para Agentes de IA? O Guia Definitivo</a>
+- <a href="/blog/pt/post/ontologia-vs-schema-banco-dados/">Ontologia vs Schema de Banco de Dados: Por Que Tabelas Relacionais Quebram Agentes</a>
+- <a href="/blog/pt/post/palantir-vs-databricks-arquitetura-agentes/">Palantir vs Databricks: Por Que Data Lakes Falham na Orquestracao de Agentes</a>
 - <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da HSN Labs</a>

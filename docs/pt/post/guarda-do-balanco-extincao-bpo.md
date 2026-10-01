@@ -65,9 +65,8 @@ O backoffice financeiro não é lugar para improviso criativo. E um motor operac
 
 Quando uma empresa substitui mão de obra terceirizada por trabalhadores digitais autônomos de software, ela não apenas reduz despesas operacionais em oitenta por cento. Ela blinda o balanço contra multas fiscais, passivos trabalhistas e falhas humanas sistemicas.
 
-## Recursos Estratégicos e Posts Relacionados
-
-- <a href="/blog/pt/post/kafka-metamorfose-ia-futuro-do-trabalho/">De 1915 a Era da IA: Kafka, utilitarismo e o valor do trabalho</a>
-- <a href="/blog/pt/post/colapso-rpa-legado/">O Mercado de RPA Está em Colapso</a>
-- <a href="/blog/pt/post/morte-suporte-nivel-1-erp/">A Morte do Suporte Nível 1: Por Que Consultorias de ERP Perdem Horas Faturáveis</a>
+## Recursos Estrategicos e Posts Relacionados
+- <a href="/blog/pt/post/matriz-substituicao-bpo/">A Matriz de Substituicao de BPO: Metricas Operacionais e Financeiras</a>
+- <a href="/blog/pt/post/morte-suporte-nivel-1-erp/">A Morte do Suporte Nivel 1: Por Que Consultorias de ERP Perdem Horas Faturaveis</a>
+- <a href="/blog/pt/post/comprar-ou-construir-crm-vendas-b2b/">CRM de Vendas B2B: Comprar Salesforce, Adaptar Twenty ou Construir com Agentes</a>
 - <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da HSN Labs</a>

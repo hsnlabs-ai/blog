@@ -1,7 +1,7 @@
 ---
 title: 'Playbook C-Suite: Proteção de Margem e Redução de Custos com Software Agêntico'
 date: '2026-09-25'
-category: Agentic Economics
+category: Future of Work
 tags:
 - c-suite
 - margins
@@ -45,9 +45,8 @@ Nenhuma iniciativa de redução de custos se sustenta se criar passivos regulat�
 
 A transição para software agêntico não é um projeto experimental de TI. E uma decisão estratégica de alocação de capital que define quais empresas manterão margens saudáveis na próxima década.
 
-## Recursos Estratégicos e Posts Relacionados
-
-- <a href="/blog/pt/post/matriz-substituicao-bpo/">A Matriz de Substituição de BPO: Métricas Operacionais e Financeiras</a>
-- <a href="/blog/pt/post/comprar-ou-construir-crm-vendas-b2b/">CRM de Vendas B2B: Comprar Salesforce, Adaptar Twenty ou Construir com Agentes</a>
-- <a href="/blog/pt/post/arbitragem-protocolo-sinistros-subscricao/">Arbitragem de Protocolos: Liquidação Multimodal Autônoma de Sinistros</a>
+## Recursos Estrategicos e Posts Relacionados
+- <a href="/blog/pt/post/matriz-substituicao-bpo/">A Matriz de Substituicao de BPO: Metricas Operacionais e Financeiras</a>
+- <a href="/blog/pt/post/arbitragem-protocolo-sinistros-subscricao/">Arbitragem de Protocolos: Liquidacao Multimodal Autonoma de Sinistros</a>
+- <a href="/blog/pt/post/custo-ia-ilimitada-ti-legada/">O Custo de IA Sem Limites na TI Legada</a>
 - <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da HSN Labs</a>

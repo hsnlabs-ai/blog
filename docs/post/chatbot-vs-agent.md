@@ -1,7 +1,7 @@
 ---
 title: 'Chatbot vs Agent: Why Replacing BPOs Requires Production Guardrails'
 date: '2026-07-22'
-category: Agent Development Life Cycle
+category: Agentic Engineering
 tags:
 - architecture
 - guardrails
@@ -51,8 +51,7 @@ True autonomy does not mean letting a model run wild without supervision. True a
 Autonomy is not created by writing longer system prompts. Autonomy is created by building resilient architectures that make operational failure impossible.
 
 ## Strategic Resources and Related Essays
-
 - <a href="../how-to-build-an-enterprise-ontology-from-scratch/">How to Build an Enterprise Ontology from Scratch: Step by Step</a>
-- <a href="../the-operational-ontology/">The Operational Ontology: How Enterprises Connect LLMs to Proprietary State</a>
-- <a href="../legacy-core-backing-engine/">Legacy Core Systems Will Not Die: They Are the Execution Engine</a>
+- <a href="../latam-airlines-case-study/">LATAM Airlines: Production Agents in a 3 Percent Margin Business</a>
+- <a href="../cleveland-clinic-case-study-operational-agents/">Case Study: How Cleveland Clinic Scaled Patient Flow with Operational Agents</a>
 - <a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a>

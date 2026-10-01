@@ -1,7 +1,7 @@
 ---
 title: "Buy versus Build: B2B Enterprise CRM, Twenty, and Agentic Stacks"
 date: "2026-09-28"
-category: Agentic Economics
+category: Future of Work
 tags:
   - crm
   - model-context-protocol
@@ -310,7 +310,6 @@ Klarna: deprecated Salesforce CRM and Zendesk enterprise contracts in favor of a
 ---
 
 ## Strategic Resources and Related Essays
-
 - <a href="../bpo-replacement-matrix/">The BPO Replacement Matrix: Operational and Financial Metrics</a>
 - <a href="../palantir-pricing-tco-and-open-alternatives/">The Real TCO of Palantir: The Dollar Barrier and Modern Open Alternatives</a>
 - <a href="../c-suite-margin-protection-playbook/">The C-Suite Transition Playbook: Protecting Margins in the Agentic Economy</a>
