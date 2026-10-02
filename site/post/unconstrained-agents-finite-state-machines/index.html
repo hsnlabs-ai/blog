@@ -446,6 +446,9 @@
 <p>When a database returns an error or an API returns a 400 Bad Request, an open-ended agent tries to reason its way out. Instead of stopping, it invents a new query. It calls another tool to fix the error it just made, compounding hallucinations until state corruption occurs.</p>
 <h3 id="3-out-of-sequence-state-mutations">3. Out-of-Sequence State Mutations</h3>
 <p>An unconstrained model has no inherent concept of enterprise causality. In an open-ended setup, nothing prevents the model from issuing a payment refund before the return shipment is logged, or marking a contract approved before compliance validation completes.</p>
+<blockquote>
+<p><strong>Agentes [×] Gente</strong> — Bi-weekly field notes on production agent architectures and enterprise workforce scaling are published in Hugo Soares's LinkedIn newsletter with over 1,600 subscribers. <a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7397999984089935872">Follow on LinkedIn ↗</a></p>
+</blockquote>
 <h2 id="the-solution-stochastic-planning-bounded-code-execution">The Solution: Stochastic Planning, Bounded Code Execution</h2>
 <p>At HSN Labs, we never permit open-ended tool loops in production. We enforce a strict separation between reasoning and execution through Finite State Machines:</p>
 <ul>

@@ -23,6 +23,32 @@ for post in ROUTES_MAP.get("blog_posts", []):
         EN_TO_PT_MAP[s_en] = s_pt
         PT_TO_EN_MAP[s_pt] = s_en
 
+def insert_newsletter_interstitial(markdown, is_pt=False):
+    if "Agentes [×] Gente" in markdown and "newsletter-follow" in markdown:
+        return markdown
+
+    if is_pt:
+        note = """
+> **Agentes [×] Gente** — Análises quinzenais sobre engenharia agêntica corporativa e futuro do trabalho são publicadas na newsletter de Hugo Soares no LinkedIn com mais de 1.600 assinantes. [Acompanhar no LinkedIn ↗](https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7397999984089935872)
+"""
+    else:
+        note = """
+> **Agentes [×] Gente** — Bi-weekly field notes on production agent architectures and enterprise workforce scaling are published in Hugo Soares's LinkedIn newsletter with over 1,600 subscribers. [Follow on LinkedIn ↗](https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7397999984089935872)
+"""
+
+    h2_matches = list(re.finditer(r'^##\s+', markdown, re.MULTILINE))
+    if len(h2_matches) >= 2:
+        idx = max(1, len(h2_matches) // 2)
+        pos = h2_matches[idx].start()
+        return markdown[:pos] + note + "\n\n" + markdown[pos:]
+    else:
+        paragraphs = re.split(r'\n\s*\n', markdown)
+        if len(paragraphs) > 3:
+            paragraphs.insert(3, note)
+            return "\n\n".join(paragraphs)
+        else:
+            return markdown + "\n\n" + note
+
 def on_page_markdown(markdown, page, config, files):
     src_uri = page.file.src_uri
     dest = page.file.dest_uri
@@ -33,26 +59,26 @@ def on_page_markdown(markdown, page, config, files):
         canonical_url += "/"
 
     if src_uri.startswith("post/"):
-        if "originally published on" in markdown:
-            return markdown
-        attribution = f"""
+        if "originally published on" not in markdown:
+            attribution = f"""
 
 ---
 
 *Article originally published on [HSN Labs]({canonical_url}). Author: [Hugo S. Nascimento](https://hsnlabs.ai).*
 """
-        return markdown + attribution
+            markdown = markdown + attribution
+        return insert_newsletter_interstitial(markdown, is_pt=False)
 
     if src_uri.startswith("pt/post/"):
-        if "publicado originalmente em" in markdown:
-            return markdown
-        attribution = f"""
+        if "publicado originalmente em" not in markdown:
+            attribution = f"""
 
 ---
 
 *Artigo publicado originalmente em [HSN Labs]({canonical_url}). Autor: [Hugo S. Nascimento](https://hsnlabs.ai).*
 """
-        return markdown + attribution
+            markdown = markdown + attribution
+        return insert_newsletter_interstitial(markdown, is_pt=True)
 
     return markdown
 
