@@ -64,6 +64,11 @@ These consultancies charge thousands of dollars per claim for calculations that 
 
 The financial back office is not a place for creative improvisation. It is an operational engine governed by mathematical invariants.
 
+<figure class="article-editorial-figure portrait">
+  <img src="../../assets/images/posts/bpo/hugo-nascimento-consultoria-laptop.jpg" alt="Hugo S. Nascimento auditing enterprise backoffice operations" loading="lazy" width="900" height="1350">
+  <figcaption class="editorial-caption">Hugo S. Nascimento: "Enterprise backoffices are governed by strict mathematical invariants, not manual outsourcing headcount."</figcaption>
+</figure>
+
 When an enterprise replaces billable outsourced headcount with autonomous software workers, it does not just reduce operating expenses by eighty percent. It insulates its balance sheet against compliance fines, labor liabilities, and systemic human error.
 
 ## Strategic Resources and Related Essays

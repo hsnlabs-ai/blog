@@ -1,5 +1,7 @@
 # Resume
 
+<img src="../../assets/images/author/hugo-nascimento-bio.jpg" alt="Hugo S. Nascimento — Professional Timeline & Leadership" class="author-photo" width="200" height="250" loading="eager" />
+
 Professional timeline and leadership record.
 
 ## Current Roles

@@ -12,9 +12,9 @@ author: Hugo S. Nascimento
 image: assets/images/posts/kafka/capa-metamorfose.jpg
 ---
 
-<figure style="max-width: 460px; margin: 0 auto 2.5rem auto; text-align: center;">
-  <img src="../../assets/images/posts/kafka/capa-metamorfose.jpg" alt="Capa do livro A Metamorfose de Franz Kafka pela Companhia das Letras" style="width: 100%; display: block; border: 1px solid #e2e8f0;" />
-  <figcaption style="font-size: 0.88rem; color: #64748b; margin-top: 0.6rem; line-height: 1.4;">Capa da edição brasileira de A Metamorfose de Franz Kafka, traduzida por Modesto Carone para a Companhia das Letras.</figcaption>
+<figure class="article-editorial-figure portrait" style="max-width: 360px;">
+  <img src="../../assets/images/posts/kafka/capa-metamorfose.jpg" alt="Capa do livro A Metamorfose de Franz Kafka pela Companhia das Letras" loading="lazy" />
+  <figcaption class="editorial-caption">Capa da edição brasileira de A Metamorfose de Franz Kafka, traduzida por Modesto Carone para a Companhia das Letras.</figcaption>
 </figure>
 
 *Reading time: 7 minutes. Author: Hugo S. Nascimento.*
@@ -27,9 +27,9 @@ image: assets/images/posts/kafka/capa-metamorfose.jpg
 
 No dia 26 de setembro de 2026, passei oito horas com vinte profissionais e lideranças de Recursos Humanos no Hub Plural Espinheiro, em Recife. Ao lado de Thays Neri, conduzi o <a href="https://www.sympla.com.br/evento/workshop-rh-depois-da-ia/3549049" target="_blank" rel="noopener">Workshop RH depois da IA</a>, um encontro desenhado para tirar a tecnologia das apresentações teóricas e colocá-la no centro da operação de gestão de pessoas.
 
-<figure style="max-width: 680px; margin: 2rem auto; text-align: center;">
-  <img src="../../assets/images/posts/kafka/workshop-rh-recife.jpg" alt="Hugo Nascimento analisando aplicação prática de IA na tela com líderes de RH" style="width: 100%; display: block; border: 1px solid #e2e8f0;" />
-  <figcaption style="font-size: 0.88rem; color: #64748b; margin-top: 0.6rem; line-height: 1.4;">Aplicação prática na tela: analisando em conjunto como construir instruções com contexto real e avaliar respostas de modelos para processos de seleção e políticas internas.</figcaption>
+<figure class="article-editorial-figure landscape">
+  <img src="../../assets/images/posts/kafka/workshop-rh-recife.jpg" alt="Hugo Nascimento analisando aplicação prática de IA na tela com líderes de RH" loading="lazy" />
+  <figcaption class="editorial-caption">Aplicação prática na tela: analisando em conjunto como construir instruções com contexto real e avaliar respostas de modelos para processos de seleção e políticas internas.</figcaption>
 </figure>
 
 Não ficamos presos a palestras expositivas. O foco do encontro foi a execução real. Cada participante abriu seu computador para desenhar comandos com critérios claros, estruturar bases de dados para agentes e testar na prática onde a inteligência artificial resolve gargalos de rotina, como análise de perfis de candidatos, comunicação interna e desenho de processos.

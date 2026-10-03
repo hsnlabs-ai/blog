@@ -10,7 +10,7 @@ blog_sidebar:
 
 # Hugo S. Nascimento
 
-<img src="assets/images/author/hugo-nascimento.jpg" alt="Hugo S. Nascimento" class="author-photo" width="200" height="250" loading="eager" />
+<img src="assets/images/author/hugo-nascimento.jpg" alt="Hugo S. Nascimento — CPTO Eva People & Founder HSN Labs" class="author-photo" width="200" height="250" loading="eager" />
 
 I am CPTO at Eva People and Founder & Managing Partner at HSN Labs. 3x venture-backed founder, engineer, and investor.
 

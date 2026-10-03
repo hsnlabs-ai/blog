@@ -63,6 +63,11 @@ Essas consultorias cobram valores elevados por calculo para tarefas que são tra
 
 O backoffice financeiro não é lugar para improviso criativo. E um motor operacional regido por invariantes matemáticas.
 
+<figure class="article-editorial-figure portrait">
+  <img src="../../../assets/images/posts/bpo/hugo-nascimento-consultoria-laptop.jpg" alt="Hugo S. Nascimento analisando operações e backoffices corporativos" loading="lazy" width="900" height="1350">
+  <figcaption class="editorial-caption">Hugo S. Nascimento: "Operações de backoffice são governadas por invariantes matemáticas estritas, não por contagem de pessoas terceirizadas."</figcaption>
+</figure>
+
 Quando uma empresa substitui mão de obra terceirizada por trabalhadores digitais autônomos de software, ela não apenas reduz despesas operacionais em oitenta por cento. Ela blinda o balanço contra multas fiscais, passivos trabalhistas e falhas humanas sistemicas.
 
 ## Recursos Estrategicos e Posts Relacionados

@@ -16,6 +16,11 @@ author: Hugo S. Nascimento
 
 *Contexto: No romance A Metamorfose, de Franz Kafka, Gregor Samsa acorda transformado em um inseto monstruoso. A primeira preocupação dele não é com a sua saúde ou condição física, mas sim com o fato de ter perdido o trem para o trabalho. Este post histórico e filosófico investiga a raiz do utilitarismo corporativo.*
 
+<figure class="article-editorial-figure portrait" style="max-width: 360px;">
+  <img src="../../../assets/images/posts/kafka/capa-metamorfose.jpg" alt="Capa do livro A Metamorfose de Franz Kafka" loading="lazy">
+  <figcaption class="editorial-caption">Capa da edição brasileira de A Metamorfose de Franz Kafka — Companhia das Letras, tradução de Modesto Carone.</figcaption>
+</figure>
+
 Quando Kafka publicou seu clássico há mais de um século, ele capturou a essência mais crue da Revolução Industrial: o ser humano reduzido a sua capacidade produtiva imediata. Gregor Samsa só possuía valor para sua família e para a sociedade enquanto conseguia carregar sua pasta e bater o ponto no escritório.
 
 Hoje, diante da aceleração desenfreada de agentes autônomos e automação cognitiva, a parábola de Kafka ressurge com força assustadora nos corredores corporativos.
@@ -29,6 +34,11 @@ Essa tese provou-se incorreta. Agentes de software bem desenhados analisam contr
 O choque que as carreiras corporativas estão vivenciando neste momento espelha o dilema kafkiano: o que sobra para o profissional quando o sistema descobre que a tarefa que justificava o seu salário pode ser executada por uma máquina a uma fração do custo?
 
 ## O Fim das Funções Meramente Instrumentais
+
+<figure class="article-editorial-figure landscape">
+  <img src="../../../assets/images/posts/kafka/workshop-rh-recife.jpg" alt="Hugo Nascimento analisando aplicação prática de IA com lideranças de RH no Hub Plural em Recife" loading="lazy">
+  <figcaption class="editorial-caption">Aplicação prática na tela: Hugo Nascimento conduzindo o Workshop RH Depois da IA no Hub Plural, em Recife, discutindo utilitarismo, automação cognitiva e o papel humano diante de agentes autônomos.</figcaption>
+</figure>
 
 Tarefas operacionais de intermediação, burocracia de planilhas e alimentação de sistemas estão com os dias contados. O profissional do futuro imediato precisara se distanciar da mera execução mecânica e assumir papeis de julgamento ético, arquitetura de sistemas e compreensão profunda de contexto humano.
 

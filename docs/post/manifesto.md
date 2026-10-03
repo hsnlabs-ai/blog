@@ -61,6 +61,11 @@ That transition cannot be achieved through theoretical presentations or fragile 
 
 HSN Labs is the engineering boutique I built to partner with enterprise leaders who are already actively pursuing this transition and demand production systems that do not break.
 
+<figure class="article-editorial-figure landscape">
+  <img src="../../assets/images/posts/manifesto/hugo-nascimento-manifesto-mesa.jpg" alt="Hugo S. Nascimento — Founder & Managing Partner at HSN Labs" loading="lazy" width="1200" height="800">
+  <figcaption class="editorial-caption">Hugo S. Nascimento: "Building resilient enterprise multi-agent architectures on executable business ontologies for mission-critical operations."</figcaption>
+</figure>
+
 ## Related Field Notes and Technical Spokes
 
 - <a href="../cleveland-clinic-case-study-operational-agents/">Case Study: How Cleveland Clinic Scaled Patient Flow with Operational Agents</a>

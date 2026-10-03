@@ -60,6 +60,11 @@ Essa transição não pode ser alcançada por meio de apresentações teóricas 
 
 A HSN Labs é a boutique de engenharia que construí para trabalhar em parceria com líderes empresariais que já estão buscando ativamente essa transição e exigem sistemas em produção que não quebrem.
 
+<figure class="article-editorial-figure landscape">
+  <img src="../../../assets/images/posts/manifesto/hugo-nascimento-manifesto-mesa.jpg" alt="Hugo S. Nascimento — Fundador da HSN Labs" loading="lazy" width="1200" height="800">
+  <figcaption class="editorial-caption">Hugo S. Nascimento: "Construindo arquiteturas de agentes corporativos sobre ontologias de domínio executáveis para operações de missão crítica."</figcaption>
+</figure>
+
 ## Notas de Campo e Artigos Relacionados
 
 - <a href="/blog/pt/post/estudo-caso-cleveland-clinic-agentes-operacionais/">Estudo de Caso: Como a Cleveland Clinic Escalou Fluxo de Pacientes</a>
