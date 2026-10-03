@@ -9,7 +9,7 @@ tags:
 - hr
 description: "Reflexão sobre utilitarismo, desvalorização do trabalhador e o impacto de agentes de IA a partir de A Metamorfose de Franz Kafka."
 author: Hugo S. Nascimento
-image: assets/images/posts/kafka/capa-metamorfose.jpg
+image: assets/images/posts/kafka-metamorfose-ia-futuro-do-trabalho/cover.webp
 ---
 
 <figure class="article-editorial-figure portrait" style="max-width: 360px;">

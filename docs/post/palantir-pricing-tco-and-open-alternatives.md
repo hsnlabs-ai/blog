@@ -9,6 +9,7 @@ tags:
 - architecture
 description: "Auditing the total cost of ownership behind Palantir contracts, foreign exchange exposure, and how to build open ontologies without 7-figure licensing."
 author: Hugo S. Nascimento
+image: assets/images/posts/palantir-pricing-tco-and-open-alternatives/cover.webp
 ---
 
 *Reading time: 5 minutes. Author: Hugo S. Nascimento.*

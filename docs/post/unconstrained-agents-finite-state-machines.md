@@ -9,6 +9,7 @@ tags:
 description: Emergency incident audit and architectural remedy for unbounded agent
   API loops through finite state machines.
 author: Hugo S. Nascimento
+image: assets/images/posts/unconstrained-agents-finite-state-machines/cover.webp
 ---
 
 *Reading time: 4 minutes. Author: Hugo S. Nascimento.*

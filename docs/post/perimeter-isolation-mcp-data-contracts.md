@@ -9,6 +9,7 @@ tags:
 description: Architectural patterns for perimeter isolation, context contracts, and
   cryptographic access boundaries shielding enterprise data from AI agents.
 author: Hugo S. Nascimento
+image: assets/images/posts/perimeter-isolation-mcp-data-contracts/cover.webp
 ---
 
 *Reading time: 4 minutes. Author: Hugo S. Nascimento.*

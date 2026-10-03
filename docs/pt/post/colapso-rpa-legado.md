@@ -8,6 +8,7 @@ tags:
 - automation
 description: 'Por que bots frágeis de gravação de tela estão em colapso em ambientes corporativos e como agentes em produção os substituem.'
 author: Hugo S. Nascimento
+image: assets/images/posts/collapse-of-legacy-rpa/cover.webp
 ---
 
 *Tempo de leitura: 4 minutos. Autor: Hugo S. Nascimento.*

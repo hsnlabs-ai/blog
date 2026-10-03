@@ -9,6 +9,7 @@ tags:
 description: Why traditional Big 4 strategy slide decks fail to deliver working agentic
   software in complex enterprise production environments.
 author: Hugo S. Nascimento
+image: assets/images/posts/five-day-architecture-sprint/cover.webp
 ---
 
 *Reading time: 4 minutes. Author: Hugo S. Nascimento.*

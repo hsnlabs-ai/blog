@@ -9,6 +9,7 @@ tags:
 description: Critical architectural differences between conversational chatbots and
   production enterprise agents mutating live ERP state.
 author: Hugo S. Nascimento
+image: assets/images/posts/chatbot-vs-agent/cover.webp
 ---
 
 *Reading time: 3 minutes. Author: Hugo S. Nascimento.*

@@ -8,6 +8,7 @@ tags:
 - engineering
 description: 'Tudo o que engenheiros e líderes de tecnologia precisam saber sobre ontologias operacionais para construir agentes que funcionam em produção.'
 author: Hugo S. Nascimento
+image: assets/images/posts/what-is-an-ontology-for-ai-agents/cover.webp
 ---
 
 *Tempo de leitura: 8 minutos. Autor: Hugo S. Nascimento.*

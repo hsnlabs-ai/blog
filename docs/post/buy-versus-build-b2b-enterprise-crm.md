@@ -10,6 +10,7 @@ tags:
   - architecture
 description: "Technical and financial analysis comparing Salesforce seats, Twenty CRM, and custom agentic stacks for enterprise engineering leaders."
 author: Hugo S. Nascimento
+image: assets/images/posts/buy-versus-build-b2b-enterprise-crm/cover.webp
 ---
 
 *Reading time: 16 minutes. Author: Hugo S. Nascimento.*

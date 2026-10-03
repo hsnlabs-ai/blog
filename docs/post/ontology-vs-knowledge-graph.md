@@ -10,6 +10,7 @@ tags:
 - data-engineering
 description: "The architectural distinction between ontologies and knowledge graphs in enterprise AI systems: schemas versus instances, preventing graph drift, and building hybrid neuro-symbolic stacks."
 author: Hugo S. Nascimento
+image: assets/images/posts/ontology-vs-knowledge-graph/cover.webp
 ---
 
 *Reading time: 12 minutes. Author: Hugo S. Nascimento.*

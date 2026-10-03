@@ -8,6 +8,7 @@ tags:
 - operations
 description: 'Análise arquitetural de como uma das maiores instituições de saúde do mundo orquestra leitos e fluxos críticos com agentes operacionais.'
 author: Hugo S. Nascimento
+image: assets/images/posts/cleveland-clinic-case-study-operational-agents/cover.webp
 ---
 
 *Tempo de leitura: 5 minutos. Autor: Hugo S. Nascimento.*

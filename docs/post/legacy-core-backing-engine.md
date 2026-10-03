@@ -9,6 +9,7 @@ tags:
 description: Why legacy core transaction systems remain the indispensable foundation
   powering autonomous enterprise agents.
 author: Hugo S. Nascimento
+image: assets/images/posts/legacy-core-backing-engine/cover.webp
 ---
 
 *Reading time: 4 minutes. Author: Hugo S. Nascimento.*

@@ -10,7 +10,7 @@ tags:
 - mcp
 description: "The core architecture of executable business ontologies: moving from static documentation to kinetic action engines, Palantir AIP mechanics, and deploying production MCP harnesses."
 author: Hugo S. Nascimento
-image: assets/diagrams/hsn-agent-architecture.png
+image: assets/images/posts/the-operational-ontology/cover.webp
 ---
 
 *Reading time: 14 minutes. Author: Hugo S. Nascimento.*

@@ -8,6 +8,7 @@ tags:
 - enterprise
 description: 'Passo a passo detalhado para desenhar, modelar e implantar ontologias corporativas funcionais para sistemas multiagente em produção.'
 author: Hugo S. Nascimento
+image: assets/images/posts/how-to-build-an-enterprise-ontology-from-scratch/cover.webp
 ---
 
 *Tempo de leitura: 8 minutos. Autor: Hugo S. Nascimento.*

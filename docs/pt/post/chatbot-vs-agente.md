@@ -8,6 +8,7 @@ tags:
 - state-machines
 description: 'Diferenças críticas de arquitetura entre chatbots conversacionais e agentes corporativos em produção que alteram o estado de ERPs.'
 author: Hugo S. Nascimento
+image: assets/images/posts/chatbot-vs-agent/cover.webp
 ---
 
 *Tempo de leitura: 3 minutos. Autor: Hugo S. Nascimento.*

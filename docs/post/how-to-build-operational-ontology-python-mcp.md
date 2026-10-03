@@ -9,6 +9,7 @@ tags:
 - evaluation
 description: "Step-by-step engineering architecture to build an operational business ontology in pure Python using Pydantic schemas and Model Context Protocol actions without proprietary lock-in."
 author: Hugo S. Nascimento
+image: assets/images/posts/how-to-build-operational-ontology-python-mcp/cover.webp
 ---
 
 *Reading time: 6 minutes. Author: Hugo S. Nascimento.*

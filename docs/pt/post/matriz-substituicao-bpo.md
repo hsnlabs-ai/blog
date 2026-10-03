@@ -8,6 +8,7 @@ tags:
 - bpo
 description: 'Framework quantitativo analisando economia unitária, métricas operacionais e impacto na margem ao substituir contratos de BPO por agentes de software.'
 author: Hugo S. Nascimento
+image: assets/images/posts/bpo-replacement-matrix/cover.webp
 ---
 
 *Tempo de leitura: 6 minutos. Autor: Hugo S. Nascimento.*

@@ -10,6 +10,7 @@ tags:
   - arquitetura
 description: "Análise técnica e econômica entre assentos de Salesforce, Twenty CRM e stacks agênticas proprietárias para líderes de tecnologia."
 author: Hugo S. Nascimento
+image: assets/images/posts/buy-versus-build-b2b-enterprise-crm/cover.webp
 ---
 
 *Tempo de leitura: 16 minutos. Autor: Hugo S. Nascimento.*

@@ -8,6 +8,7 @@ tags:
 - manifesto
 description: 'Tese fundadora da HSN Labs: construindo arquiteturas de agentes enterprise sobre ontologias executáveis de domínio.'
 author: Hugo S. Nascimento
+image: assets/images/posts/manifesto/cover.webp
 ---
 
 *Tempo de leitura: 4 minutos. Autor: Hugo S. Nascimento.*

@@ -9,7 +9,7 @@ tags:
 - roi
 description: "How Palantir AIP bootcamps compressed 9-month sales cycles into 5-day deployments by binding LLMs to operational ontologies instead of raw prompts."
 author: Hugo S. Nascimento
-image: assets/diagrams/palantir-aip-architecture-pt.png
+image: assets/images/posts/palantir-aip-bootcamp-operational-ontology/cover.webp
 ---
 
 *Reading time: 5 minutes. Author: Hugo S. Nascimento.*
@@ -49,6 +49,11 @@ An ontology is not a vector database. It is a digital twin of enterprise busines
 - **Actions:** Code-level state transitions and APIs that enforce business rules and authorization controls before any database mutation occurs.
 
 When an AI agent operates through an ontology, the model does not write raw database mutations. The model selects typed, bounded actions governed by strict deterministic rules.
+
+<figure class="article-editorial-figure">
+  <img src="../../assets/diagrams/palantir-aip-architecture-en.png" alt="Palantir AIP Architecture Overview - Operational Ontology and Action Engine" loading="lazy">
+  <figcaption class="editorial-caption">Palantir AIP official architecture diagram: connecting legacy systems of record, operational ontology entities, and bounded autonomous actions.</figcaption>
+</figure>
 
 ---
 

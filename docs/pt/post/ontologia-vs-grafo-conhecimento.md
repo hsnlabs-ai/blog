@@ -8,6 +8,7 @@ tags:
 - architecture
 description: 'Desmistificando os conceitos de ontologia e grafo de conhecimento em projetos corporativos de inteligência artificial e agentes autônomos.'
 author: Hugo S. Nascimento
+image: assets/images/posts/ontology-vs-knowledge-graph/cover.webp
 ---
 
 *Tempo de leitura: 6 minutos. Autor: Hugo S. Nascimento.*

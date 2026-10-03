@@ -8,6 +8,7 @@ tags:
 - erp
 description: 'Por que a busca vetorial por similaridade corrompe a precisão aritmética e a integridade de livros contábeis em ERPs.'
 author: Hugo S. Nascimento
+image: assets/images/posts/why-rag-breaks-on-erp/cover.webp
 ---
 
 *Tempo de leitura: 4 minutos. Autor: Hugo S. Nascimento.*

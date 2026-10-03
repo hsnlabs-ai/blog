@@ -10,6 +10,7 @@ tags:
 description: Production architecture for autonomous collections, contract negotiation,
   and high-velocity commercial execution.
 author: Hugo S. Nascimento
+image: assets/images/posts/autonomous-negotiations-collections-contracts/cover.webp
 ---
 
 *Reading time: 4 minutes. Author: Hugo S. Nascimento.*

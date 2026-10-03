@@ -8,6 +8,7 @@ tags:
 - api-loops
 description: 'Auditoria de incidente de emergência e remédio de arquitetura para loops infinitos de chamadas em agentes por máquinas de estados finitos.'
 author: Hugo S. Nascimento
+image: assets/images/posts/unconstrained-agents-finite-state-machines/cover.webp
 ---
 
 *Tempo de leitura: 4 minutos. Autor: Hugo S. Nascimento.*

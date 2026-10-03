@@ -8,6 +8,7 @@ tags:
 - audit
 description: 'Vulnerabilidades estruturais e riscos de conformidade ao confiar em avaliadores estocásticos de LLM para auditar decisões financeiras.'
 author: Hugo S. Nascimento
+image: assets/images/posts/llm-as-judge-fallacy/cover.webp
 ---
 
 *Tempo de leitura: 4 minutos. Autor: Hugo S. Nascimento.*

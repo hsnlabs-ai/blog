@@ -8,6 +8,7 @@ tags:
 - production
 description: 'Estudo de caso operacional sobre a implantação de agentes corporativos em aviação comercial com margens apertadas e alta volumetria.'
 author: Hugo S. Nascimento
+image: assets/images/posts/latam-airlines-case-study/cover.webp
 ---
 
 *Tempo de leitura: 4 minutos. Autor: Hugo S. Nascimento.*

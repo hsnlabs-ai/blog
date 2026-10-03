@@ -8,6 +8,7 @@ tags:
 - vector-stores
 description: 'Análise técnica das diferenças estruturais entre schemas de bancos de dados relacionais e ontologias operacionais para agentes autônomos.'
 author: Hugo S. Nascimento
+image: assets/images/posts/ontology-vs-database-schema/cover.webp
 ---
 
 *Tempo de leitura: 8 minutos. Autor: Hugo S. Nascimento.*

@@ -8,6 +8,7 @@ tags:
 - mainframe
 description: 'Por que sistemas transacionais legados continuam sendo a fundação indispensável para agentes enterprise autônomos.'
 author: Hugo S. Nascimento
+image: assets/images/posts/legacy-core-backing-engine/cover.webp
 ---
 
 *Tempo de leitura: 4 minutos. Autor: Hugo S. Nascimento.*

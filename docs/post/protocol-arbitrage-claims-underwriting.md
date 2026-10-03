@@ -9,6 +9,7 @@ tags:
 description: Autonomous multimodal adjudication and real-time protocol arbitrage across
   complex insurance claims and healthcare underwriting.
 author: Hugo S. Nascimento
+image: assets/images/posts/protocol-arbitrage-claims-underwriting/cover.webp
 ---
 
 *Reading time: 4 minutes. Author: Hugo S. Nascimento.*

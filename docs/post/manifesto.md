@@ -9,6 +9,7 @@ tags:
 description: 'Foundational thesis of HSN Labs: building production-grade enterprise
   agent architectures on executable domain ontologies.'
 author: Hugo S. Nascimento
+image: assets/images/posts/manifesto/cover.webp
 ---
 
 *Reading time: 4 minutes. Author: Hugo S. Nascimento.*

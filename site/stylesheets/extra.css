@@ -380,6 +380,63 @@ code, kbd, pre, samp {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
   transition: border-color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
   margin-bottom: 0;
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.blog-row-thumb {
+  flex-shrink: 0;
+  width: 260px;
+  aspect-ratio: 16 / 9;
+  border: 1px solid var(--hairline);
+  background: #000000;
+  overflow: hidden;
+  display: block;
+}
+
+.blog-row-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.25s ease;
+}
+
+.blog-row:hover .blog-row-thumb img {
+  transform: scale(1.03);
+}
+
+.blog-row-body {
+  flex: 1;
+  min-width: 0;
+}
+
+@media (max-width: 768px) {
+  .blog-row {
+    flex-direction: column;
+    gap: 1.25rem;
+    padding: 1.25rem 1.25rem;
+  }
+  .blog-row-thumb {
+    width: 100%;
+  }
+}
+
+.article-hero-figure {
+  margin: 1.5rem 0 2rem 0;
+  width: 100%;
+  border: 1px solid var(--hairline);
+  border-radius: 0 !important;
+  background: #000000;
+  overflow: hidden;
+}
+
+.article-hero-figure img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
 }
 
 .blog-row:hover {

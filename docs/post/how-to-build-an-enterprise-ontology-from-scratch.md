@@ -10,6 +10,7 @@ tags:
 - python
 description: "The complete step-by-step engineering blueprint to build and deploy an operational business ontology for autonomous AI agents in enterprise production."
 author: Hugo S. Nascimento
+image: assets/images/posts/how-to-build-an-enterprise-ontology-from-scratch/cover.webp
 ---
 
 *Reading time: 16 minutes. Author: Hugo S. Nascimento.*

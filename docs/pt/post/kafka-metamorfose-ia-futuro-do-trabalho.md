@@ -8,6 +8,7 @@ tags:
 - society
 description: 'Reflexão filosófica e econômica sobre a mercantilização do trabalho humano a luz da obra A Metamorfose e o avanço da automação por IA.'
 author: Hugo S. Nascimento
+image: assets/images/posts/kafka-metamorfose-ia-futuro-do-trabalho/cover.webp
 ---
 
 *Tempo de leitura: 6 minutos. Autor: Hugo S. Nascimento.*

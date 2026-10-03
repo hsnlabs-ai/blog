@@ -8,6 +8,7 @@ tags:
 - reliability
 description: 'Auditoria econômica e técnica sobre custos descontrolados e riscos operacionais causados por IA estocástica na infraestrutura legada.'
 author: Hugo S. Nascimento
+image: assets/images/posts/cost-legacy-it/cover.webp
 ---
 
 *Tempo de leitura: 3 minutos. Autor: Hugo S. Nascimento.*

@@ -8,6 +8,7 @@ tags:
 - hr-tech
 description: 'Lições operacionais sobre o colapso estrutural de contratos de terceirização de RH e fluxos de trabalho manuais em grandes empresas.'
 author: Hugo S. Nascimento
+image: assets/images/posts/balance-sheet-guard-bpo-extinction/cover.webp
 ---
 
 *Tempo de leitura: 5 minutos. Autor: Hugo S. Nascimento.*

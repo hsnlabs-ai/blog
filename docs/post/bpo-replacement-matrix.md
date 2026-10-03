@@ -10,6 +10,7 @@ tags:
 description: Quantitative framework analyzing unit economics, operational metrics,
   and margin impact of replacing legacy BPO contracts with autonomous software agents.
 author: Hugo S. Nascimento
+image: assets/images/posts/bpo-replacement-matrix/cover.webp
 ---
 
 *Reading time: 6 minutes. Author: Hugo S. Nascimento.*

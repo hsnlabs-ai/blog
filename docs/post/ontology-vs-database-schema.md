@@ -10,6 +10,7 @@ tags:
 - ai-failures
 description: "Why raw SQL schemas and vector stores fail autonomous AI agents: the limits of text-to-SQL, semantic ambiguity, and how ontologies provide deterministic operational boundaries."
 author: Hugo S. Nascimento
+image: assets/images/posts/ontology-vs-database-schema/cover.webp
 ---
 
 *Reading time: 13 minutes. Author: Hugo S. Nascimento.*

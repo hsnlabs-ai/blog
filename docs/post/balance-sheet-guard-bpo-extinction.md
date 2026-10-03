@@ -9,6 +9,7 @@ tags:
 description: Operational field lessons on the structural collapse of enterprise HR
   outsourcing contracts and manual workflows.
 author: Hugo S. Nascimento
+image: assets/images/posts/balance-sheet-guard-bpo-extinction/cover.webp
 ---
 
 *Reading time: 5 minutes. Author: Hugo S. Nascimento.*

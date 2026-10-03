@@ -8,6 +8,7 @@ tags:
 - sprint
 description: 'Por que decks genéricos de estratégia de consultorias tradicionais falham em entregar software agêntico em ambientes corporativos complexos.'
 author: Hugo S. Nascimento
+image: assets/images/posts/five-day-architecture-sprint/cover.webp
 ---
 
 *Tempo de leitura: 4 minutos. Autor: Hugo S. Nascimento.*

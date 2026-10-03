@@ -18,7 +18,8 @@ if PT_POSTS_DIR.exists():
                 "title": meta.get("title"),
                 "date": str(meta.get("date")),
                 "category": meta.get("category", ""),
-                "description": meta.get("description", "")
+                "description": meta.get("description", ""),
+                "image": meta.get("image", "")
             })
 
 # Sort posts by date descending
@@ -47,6 +48,10 @@ lines.append("")
 lines.append('<div class="blog-list" id="component-blog-list">')
 for p in posts:
     lines.append('  <article class="blog-row blog-post-item">')
+    if p.get("image"):
+        lines.append(f'    <a class="blog-row-thumb" href="/blog/pt/post/{p["slug"]}/">')
+        lines.append(f'      <img src="../{p["image"]}" alt="{p["title"]}" loading="lazy">')
+        lines.append('    </a>')
     lines.append('    <div class="blog-row-body">')
     lines.append('      <div class="blog-row-byline">')
     lines.append('        <img class="blog-row-avatar" src="../assets/images/author/hugo-nascimento.jpg" alt="Hugo S. Nascimento" loading="lazy">')

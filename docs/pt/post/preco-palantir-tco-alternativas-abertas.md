@@ -8,6 +8,7 @@ tags:
 - pricing
 description: 'Dissecando o custo total de propriedade da Palantir e como construir ontologias operacionais comparáveis com software de código aberto.'
 author: Hugo S. Nascimento
+image: assets/images/posts/palantir-pricing-tco-and-open-alternatives/cover.webp
 ---
 
 *Tempo de leitura: 6 minutos. Autor: Hugo S. Nascimento.*

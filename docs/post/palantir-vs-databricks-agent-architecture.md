@@ -9,6 +9,7 @@ tags:
 - data-contracts
 description: "Architectural breakdown comparing analytical lakehouses against operational ontologies for mission-critical enterprise AI agents."
 author: Hugo S. Nascimento
+image: assets/images/posts/palantir-vs-databricks-agent-architecture/cover.webp
 ---
 
 *Reading time: 5 minutes. Author: Hugo S. Nascimento.*

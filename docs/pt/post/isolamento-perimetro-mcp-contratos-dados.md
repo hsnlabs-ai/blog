@@ -8,6 +8,7 @@ tags:
 - data-contracts
 description: 'Padrões de arquitetura para isolamento de perímetro, contratos de contexto e limites de acesso blindando dados corporativos contra agentes de IA.'
 author: Hugo S. Nascimento
+image: assets/images/posts/perimeter-isolation-mcp-data-contracts/cover.webp
 ---
 
 *Tempo de leitura: 4 minutos. Autor: Hugo S. Nascimento.*

@@ -8,6 +8,7 @@ tags:
 - mcp
 description: 'Como detectar e blindar fluxos de agentes em produção contra quebras silenciosas provocadas por desvios de schemas e APIs.'
 author: Hugo S. Nascimento
+image: assets/images/posts/integration-drift/cover.webp
 ---
 
 *Tempo de leitura: 3 minutos. Autor: Hugo S. Nascimento.*

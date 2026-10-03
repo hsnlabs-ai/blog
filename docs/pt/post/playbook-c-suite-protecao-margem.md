@@ -8,6 +8,7 @@ tags:
 - unit-economics
 description: 'Guia executivo para CEOs, CFOs e CIOs sobre como proteger margens operacionais substituindo custos fixos de BPO por software agêntico.'
 author: Hugo S. Nascimento
+image: assets/images/posts/c-suite-margin-protection-playbook/cover.webp
 ---
 
 *Tempo de leitura: 6 minutos. Autor: Hugo S. Nascimento.*

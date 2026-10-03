@@ -8,6 +8,7 @@ tags:
 - architecture
 description: 'Comparativo arquitetural entre a abordagem de lakehouse e a ontologia operacional em projetos corporativos de software agêntico.'
 author: Hugo S. Nascimento
+image: assets/images/posts/palantir-vs-databricks-agent-architecture/cover.webp
 ---
 
 *Tempo de leitura: 6 minutos. Autor: Hugo S. Nascimento.*

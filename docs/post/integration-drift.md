@@ -9,6 +9,7 @@ tags:
 description: How to detect and guard production agent workflows against silent runtime
   breaks caused by upstream schema and API drift.
 author: Hugo S. Nascimento
+image: assets/images/posts/integration-drift/cover.webp
 ---
 
 *Reading time: 3 minutes. Author: Hugo S. Nascimento.*

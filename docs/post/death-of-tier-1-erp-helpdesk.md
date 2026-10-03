@@ -10,6 +10,7 @@ tags:
 description: The structural collapse of hourly billable support models across enterprise
   ERP consultancies and IT helpdesks.
 author: Hugo S. Nascimento
+image: assets/images/posts/death-of-tier-1-erp-helpdesk/cover.webp
 ---
 
 *Reading time: 4 minutes. Author: Hugo S. Nascimento.*

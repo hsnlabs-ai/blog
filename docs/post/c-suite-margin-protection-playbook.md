@@ -9,6 +9,7 @@ tags:
 description: Executive blueprint for boardrooms and CFOs defending operational margins
   against legacy IT cost structures in the agentic economy.
 author: Hugo S. Nascimento
+image: assets/images/posts/c-suite-margin-protection-playbook/cover.webp
 ---
 
 *Reading time: 4 minutes. Author: Hugo S. Nascimento.*

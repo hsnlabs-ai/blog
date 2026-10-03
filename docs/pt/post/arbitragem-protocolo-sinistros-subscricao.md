@@ -8,6 +8,7 @@ tags:
 - underwriting
 description: 'Como o processamento multimodal e protocolos de validação automatizam análise de sinistros e subscrição de apólices sem intermediação humana.'
 author: Hugo S. Nascimento
+image: assets/images/posts/protocol-arbitrage-claims-underwriting/cover.webp
 ---
 
 *Tempo de leitura: 6 minutos. Autor: Hugo S. Nascimento.*

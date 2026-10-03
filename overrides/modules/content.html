@@ -45,6 +45,12 @@
         {% endif %}
         {% endif %}
 
+        {% if page.meta and page.meta.image %}
+        <figure class="article-hero-figure">
+            <img src="{{ page.meta.image|url }}" alt="{{ page.title }}" loading="eager" />
+        </figure>
+        {% endif %}
+
         <div class="article-content-body">
             {{ page.content }}
         </div>

@@ -9,6 +9,7 @@ tags:
 description: Root cause post-mortem on why ninety percent of enterprise AI proofs
   of concept fail before reaching live production.
 author: Hugo S. Nascimento
+image: assets/images/posts/the-poc-graveyard/cover.webp
 ---
 
 *Reading time: 4 minutes. Author: Hugo S. Nascimento.*

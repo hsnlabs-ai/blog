@@ -9,6 +9,7 @@ tags:
 description: Field post-mortem on deploying resilient enterprise agents in low-margin,
   high-throughput commercial aviation operations.
 author: Hugo S. Nascimento
+image: assets/images/posts/latam-airlines-case-study/cover.webp
 ---
 
 *Reading time: 4 minutes. Author: Hugo S. Nascimento.*

@@ -8,6 +8,7 @@ tags:
 - consulting
 description: 'Como agentes operacionais com compreensão de regras de negócio estão tornando obsoletas as mesas terceirizadas de atendimento de ERP.'
 author: Hugo S. Nascimento
+image: assets/images/posts/death-of-tier-1-erp-helpdesk/cover.webp
 ---
 
 *Tempo de leitura: 5 minutos. Autor: Hugo S. Nascimento.*

@@ -9,6 +9,7 @@ tags:
 description: Economic and technical audit of runaway costs and execution risks caused
   by unbounded stochastic AI on legacy enterprise infrastructure.
 author: Hugo S. Nascimento
+image: assets/images/posts/cost-legacy-it/cover.webp
 ---
 
 *Reading time: 3 minutes. Author: Hugo S. Nascimento.*

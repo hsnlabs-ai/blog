@@ -8,6 +8,7 @@ tags:
 - pydantic
 description: 'Implementação prática em Python utilizando Pydantic e servidores Model Context Protocol para criar ontologias executáveis para agentes.'
 author: Hugo S. Nascimento
+image: assets/images/posts/how-to-build-operational-ontology-python-mcp/cover.webp
 ---
 
 *Tempo de leitura: 6 minutos. Autor: Hugo S. Nascimento.*

@@ -5,7 +5,7 @@ description: Posts e notas de campo sobre arquitetura de agentes enterprise, ont
 
 # Hugo S. Nascimento
 
-<img src="../assets/images/author/hugo-nascimento.jpg" alt="Hugo S. Nascimento — CPTO na Eva People e Fundador da HSN Labs" class="author-photo" width="200" height="250" loading="eager" />
+<img src="../assets/images/author/hugo-nascimento.jpg" alt="Hugo S. Nascimento" class="author-photo" width="200" height="250" loading="eager" />
 
 Sou CPTO na Eva People e Fundador da HSN Labs. Fundador de 3 startups investidas por venture capital, engenheiro e investidor.
 
@@ -19,6 +19,9 @@ Arquiteturas entregues incluem **Deloitte**, **Santander**, **Softplan**, **Unip
 
 <div class="blog-list" id="component-blog-list">
   <article class="blog-row blog-post-item">
+    <a class="blog-row-thumb" href="/blog/pt/post/comprar-ou-construir-crm-vendas-b2b/">
+      <img src="../assets/images/posts/buy-versus-build-b2b-enterprise-crm/cover.webp" alt="CRM de Vendas B2B: Comprar Salesforce, Adaptar Twenty ou Construir com Agentes" loading="lazy">
+    </a>
     <div class="blog-row-body">
       <div class="blog-row-byline">
         <img class="blog-row-avatar" src="../assets/images/author/hugo-nascimento.jpg" alt="Hugo S. Nascimento" loading="lazy">
@@ -32,6 +35,9 @@ Arquiteturas entregues incluem **Deloitte**, **Santander**, **Softplan**, **Unip
     </div>
   </article>
   <article class="blog-row blog-post-item">
+    <a class="blog-row-thumb" href="/blog/pt/post/estudo-caso-cleveland-clinic-agentes-operacionais/">
+      <img src="../assets/images/posts/cleveland-clinic-case-study-operational-agents/cover.webp" alt="Estudo de Caso: Como a Cleveland Clinic Escalou o Fluxo de Pacientes em 6.600 Leitos Hospitalares" loading="lazy">
+    </a>
     <div class="blog-row-body">
       <div class="blog-row-byline">
         <img class="blog-row-avatar" src="../assets/images/author/hugo-nascimento.jpg" alt="Hugo S. Nascimento" loading="lazy">
@@ -45,6 +51,9 @@ Arquiteturas entregues incluem **Deloitte**, **Santander**, **Softplan**, **Unip
     </div>
   </article>
   <article class="blog-row blog-post-item">
+    <a class="blog-row-thumb" href="/blog/pt/post/a-ontologia-operacional/">
+      <img src="../assets/images/posts/the-operational-ontology/cover.webp" alt="A Ontologia Operacional: Como Empresas Conectam Dados, Regras de Negócio e Ações Autônomas" loading="lazy">
+    </a>
     <div class="blog-row-body">
       <div class="blog-row-byline">
         <img class="blog-row-avatar" src="../assets/images/author/hugo-nascimento.jpg" alt="Hugo S. Nascimento" loading="lazy">
@@ -58,6 +67,9 @@ Arquiteturas entregues incluem **Deloitte**, **Santander**, **Softplan**, **Unip
     </div>
   </article>
   <article class="blog-row blog-post-item">
+    <a class="blog-row-thumb" href="/blog/pt/post/como-construir-ontologia-enterprise-do-zero/">
+      <img src="../assets/images/posts/how-to-build-an-enterprise-ontology-from-scratch/cover.webp" alt="Como Construir uma Ontologia Enterprise do Zero: Blueprint Arquitetural Completo" loading="lazy">
+    </a>
     <div class="blog-row-body">
       <div class="blog-row-byline">
         <img class="blog-row-avatar" src="../assets/images/author/hugo-nascimento.jpg" alt="Hugo S. Nascimento" loading="lazy">
@@ -71,6 +83,9 @@ Arquiteturas entregues incluem **Deloitte**, **Santander**, **Softplan**, **Unip
     </div>
   </article>
   <article class="blog-row blog-post-item">
+    <a class="blog-row-thumb" href="/blog/pt/post/matriz-substituicao-bpo/">
+      <img src="../assets/images/posts/bpo-replacement-matrix/cover.webp" alt="A Matriz de Substituição de BPO: Métricas Operacionais e Financeiras" loading="lazy">
+    </a>
     <div class="blog-row-body">
       <div class="blog-row-byline">
         <img class="blog-row-avatar" src="../assets/images/author/hugo-nascimento.jpg" alt="Hugo S. Nascimento" loading="lazy">
@@ -84,6 +99,9 @@ Arquiteturas entregues incluem **Deloitte**, **Santander**, **Softplan**, **Unip
     </div>
   </article>
   <article class="blog-row blog-post-item">
+    <a class="blog-row-thumb" href="/blog/pt/post/o-que-e-uma-ontologia-para-agentes-ia/">
+      <img src="../assets/images/posts/what-is-an-ontology-for-ai-agents/cover.webp" alt="O Que É uma Ontologia para Agentes de IA? O Guia Definitivo para Engenharia Corporativa" loading="lazy">
+    </a>
     <div class="blog-row-body">
       <div class="blog-row-byline">
         <img class="blog-row-avatar" src="../assets/images/author/hugo-nascimento.jpg" alt="Hugo S. Nascimento" loading="lazy">
@@ -97,6 +115,9 @@ Arquiteturas entregues incluem **Deloitte**, **Santander**, **Softplan**, **Unip
     </div>
   </article>
   <article class="blog-row blog-post-item">
+    <a class="blog-row-thumb" href="/blog/pt/post/ontologia-vs-grafo-conhecimento/">
+      <img src="../assets/images/posts/ontology-vs-knowledge-graph/cover.webp" alt="Ontologia vs Grafo de Conhecimento: Diferenças Centrais, Arquitetura e Aplicações Enterprise" loading="lazy">
+    </a>
     <div class="blog-row-body">
       <div class="blog-row-byline">
         <img class="blog-row-avatar" src="../assets/images/author/hugo-nascimento.jpg" alt="Hugo S. Nascimento" loading="lazy">
@@ -110,6 +131,9 @@ Arquiteturas entregues incluem **Deloitte**, **Santander**, **Softplan**, **Unip
     </div>
   </article>
   <article class="blog-row blog-post-item">
+    <a class="blog-row-thumb" href="/blog/pt/post/ontologia-vs-schema-banco-dados/">
+      <img src="../assets/images/posts/ontology-vs-database-schema/cover.webp" alt="Ontologia vs Schema de Banco de Dados: Por Que Tabelas Relacionais e Vetores Não Bastam para IA" loading="lazy">
+    </a>
     <div class="blog-row-body">
       <div class="blog-row-byline">
         <img class="blog-row-avatar" src="../assets/images/author/hugo-nascimento.jpg" alt="Hugo S. Nascimento" loading="lazy">
@@ -123,6 +147,9 @@ Arquiteturas entregues incluem **Deloitte**, **Santander**, **Softplan**, **Unip
     </div>
   </article>
   <article class="blog-row blog-post-item">
+    <a class="blog-row-thumb" href="/blog/pt/post/como-construir-ontologia-operacional-python-mcp/">
+      <img src="../assets/images/posts/how-to-build-operational-ontology-python-mcp/cover.webp" alt="Como Construir uma Ontologia Operacional de Negócios em Python com Pydantic e MCP" loading="lazy">
+    </a>
     <div class="blog-row-body">
       <div class="blog-row-byline">
         <img class="blog-row-avatar" src="../assets/images/author/hugo-nascimento.jpg" alt="Hugo S. Nascimento" loading="lazy">
@@ -136,6 +163,9 @@ Arquiteturas entregues incluem **Deloitte**, **Santander**, **Softplan**, **Unip
     </div>
   </article>
   <article class="blog-row blog-post-item">
+    <a class="blog-row-thumb" href="/blog/pt/post/playbook-c-suite-protecao-margem/">
+      <img src="../assets/images/posts/c-suite-margin-protection-playbook/cover.webp" alt="Playbook C-Suite: Proteção de Margem e Redução de Custos com Software Agêntico" loading="lazy">
+    </a>
     <div class="blog-row-body">
       <div class="blog-row-byline">
         <img class="blog-row-avatar" src="../assets/images/author/hugo-nascimento.jpg" alt="Hugo S. Nascimento" loading="lazy">
@@ -149,6 +179,9 @@ Arquiteturas entregues incluem **Deloitte**, **Santander**, **Softplan**, **Unip
     </div>
   </article>
   <article class="blog-row blog-post-item">
+    <a class="blog-row-thumb" href="/blog/pt/post/kafka-metamorfose-ia-futuro-do-trabalho/">
+      <img src="../assets/images/posts/kafka-metamorfose-ia-futuro-do-trabalho/cover.webp" alt="De 1915 a Era da IA: Kafka, Utilitarismo e o Valor de Quem Trabalha" loading="lazy">
+    </a>
     <div class="blog-row-body">
       <div class="blog-row-byline">
         <img class="blog-row-avatar" src="../assets/images/author/hugo-nascimento.jpg" alt="Hugo S. Nascimento" loading="lazy">
@@ -162,6 +195,9 @@ Arquiteturas entregues incluem **Deloitte**, **Santander**, **Softplan**, **Unip
     </div>
   </article>
   <article class="blog-row blog-post-item">
+    <a class="blog-row-thumb" href="/blog/pt/post/sprint-arquitetura-cinco-dias/">
+      <img src="../assets/images/posts/five-day-architecture-sprint/cover.webp" alt="Por Que Apresentações de Big 4 Falham em Projetos de Agentes" loading="lazy">
+    </a>
     <div class="blog-row-body">
       <div class="blog-row-byline">
         <img class="blog-row-avatar" src="../assets/images/author/hugo-nascimento.jpg" alt="Hugo S. Nascimento" loading="lazy">
@@ -175,6 +211,9 @@ Arquiteturas entregues incluem **Deloitte**, **Santander**, **Softplan**, **Unip
     </div>
   </article>
   <article class="blog-row blog-post-item">
+    <a class="blog-row-thumb" href="/blog/pt/post/negociacoes-autonomas-cobranca-contratos/">
+      <img src="../assets/images/posts/autonomous-negotiations-collections-contracts/cover.webp" alt="Operações em Alta Velocidade: Negociação Autônoma, Cobrança e Execução Contratual" loading="lazy">
+    </a>
     <div class="blog-row-body">
       <div class="blog-row-byline">
         <img class="blog-row-avatar" src="../assets/images/author/hugo-nascimento.jpg" alt="Hugo S. Nascimento" loading="lazy">
@@ -188,6 +227,9 @@ Arquiteturas entregues incluem **Deloitte**, **Santander**, **Softplan**, **Unip
     </div>
   </article>
   <article class="blog-row blog-post-item">
+    <a class="blog-row-thumb" href="/blog/pt/post/palantir-aip-bootcamp-ontologia-operacional/">
+      <img src="../assets/images/posts/palantir-aip-bootcamp-operational-ontology/cover.webp" alt="A Arquitetura do Palantir AIP: Por Que Agentes Corporativos Falham sem uma Ontologia Operacional" loading="lazy">
+    </a>
     <div class="blog-row-body">
       <div class="blog-row-byline">
         <img class="blog-row-avatar" src="../assets/images/author/hugo-nascimento.jpg" alt="Hugo S. Nascimento" loading="lazy">
@@ -201,6 +243,9 @@ Arquiteturas entregues incluem **Deloitte**, **Santander**, **Softplan**, **Unip
     </div>
   </article>
   <article class="blog-row blog-post-item">
+    <a class="blog-row-thumb" href="/blog/pt/post/guarda-do-balanco-extincao-bpo/">
+      <img src="../assets/images/posts/balance-sheet-guard-bpo-extinction/cover.webp" alt="O Que Aprendi Construindo HR Tech Sobre a Morte do BPO" loading="lazy">
+    </a>
     <div class="blog-row-body">
       <div class="blog-row-byline">
         <img class="blog-row-avatar" src="../assets/images/author/hugo-nascimento.jpg" alt="Hugo S. Nascimento" loading="lazy">
@@ -214,6 +259,9 @@ Arquiteturas entregues incluem **Deloitte**, **Santander**, **Softplan**, **Unip
     </div>
   </article>
   <article class="blog-row blog-post-item">
+    <a class="blog-row-thumb" href="/blog/pt/post/preco-palantir-tco-alternativas-abertas/">
+      <img src="../assets/images/posts/palantir-pricing-tco-and-open-alternatives/cover.webp" alt="O TCO Real da Palantir: A Barreira dos Milhões de Dólares e Alternativas Abertas Modernas" loading="lazy">
+    </a>
     <div class="blog-row-body">
       <div class="blog-row-byline">
         <img class="blog-row-avatar" src="../assets/images/author/hugo-nascimento.jpg" alt="Hugo S. Nascimento" loading="lazy">
@@ -227,6 +275,9 @@ Arquiteturas entregues incluem **Deloitte**, **Santander**, **Softplan**, **Unip
     </div>
   </article>
   <article class="blog-row blog-post-item">
+    <a class="blog-row-thumb" href="/blog/pt/post/arbitragem-protocolo-sinistros-subscricao/">
+      <img src="../assets/images/posts/protocol-arbitrage-claims-underwriting/cover.webp" alt="Arbitragem de Protocolo: Liquidação Multimodal Autônoma em Seguros e Saúde" loading="lazy">
+    </a>
     <div class="blog-row-body">
       <div class="blog-row-byline">
         <img class="blog-row-avatar" src="../assets/images/author/hugo-nascimento.jpg" alt="Hugo S. Nascimento" loading="lazy">
@@ -240,6 +291,9 @@ Arquiteturas entregues incluem **Deloitte**, **Santander**, **Softplan**, **Unip
     </div>
   </article>
   <article class="blog-row blog-post-item">
+    <a class="blog-row-thumb" href="/blog/pt/post/palantir-vs-databricks-arquitetura-agentes/">
+      <img src="../assets/images/posts/palantir-vs-databricks-agent-architecture/cover.webp" alt="Palantir vs Databricks: Por Que Data Lakes Falham em Operações com Agentes Autônomos" loading="lazy">
+    </a>
     <div class="blog-row-body">
       <div class="blog-row-byline">
         <img class="blog-row-avatar" src="../assets/images/author/hugo-nascimento.jpg" alt="Hugo S. Nascimento" loading="lazy">
@@ -253,6 +307,9 @@ Arquiteturas entregues incluem **Deloitte**, **Santander**, **Softplan**, **Unip
     </div>
   </article>
   <article class="blog-row blog-post-item">
+    <a class="blog-row-thumb" href="/blog/pt/post/morte-suporte-nivel-1-erp/">
+      <img src="../assets/images/posts/death-of-tier-1-erp-helpdesk/cover.webp" alt="A Morte do Suporte Nível 1: Por Que Consultorias de ERP Não Sustentarão o Modelo de Horas Faturáveis" loading="lazy">
+    </a>
     <div class="blog-row-body">
       <div class="blog-row-byline">
         <img class="blog-row-avatar" src="../assets/images/author/hugo-nascimento.jpg" alt="Hugo S. Nascimento" loading="lazy">
@@ -266,6 +323,9 @@ Arquiteturas entregues incluem **Deloitte**, **Santander**, **Softplan**, **Unip
     </div>
   </article>
   <article class="blog-row blog-post-item">
+    <a class="blog-row-thumb" href="/blog/pt/post/colapso-rpa-legado/">
+      <img src="../assets/images/posts/collapse-of-legacy-rpa/cover.webp" alt="O Mercado de RPA Está em Colapso" loading="lazy">
+    </a>
     <div class="blog-row-body">
       <div class="blog-row-byline">
         <img class="blog-row-avatar" src="../assets/images/author/hugo-nascimento.jpg" alt="Hugo S. Nascimento" loading="lazy">
@@ -279,6 +339,9 @@ Arquiteturas entregues incluem **Deloitte**, **Santander**, **Softplan**, **Unip
     </div>
   </article>
   <article class="blog-row blog-post-item">
+    <a class="blog-row-thumb" href="/blog/pt/post/cemiterio-de-pocs/">
+      <img src="../assets/images/posts/the-poc-graveyard/cover.webp" alt="Por Que Agentes Falham: O Cemitério de PoCs" loading="lazy">
+    </a>
     <div class="blog-row-body">
       <div class="blog-row-byline">
         <img class="blog-row-avatar" src="../assets/images/author/hugo-nascimento.jpg" alt="Hugo S. Nascimento" loading="lazy">
@@ -292,6 +355,9 @@ Arquiteturas entregues incluem **Deloitte**, **Santander**, **Softplan**, **Unip
     </div>
   </article>
   <article class="blog-row blog-post-item">
+    <a class="blog-row-thumb" href="/blog/pt/post/isolamento-perimetro-mcp-contratos-dados/">
+      <img src="../assets/images/posts/perimeter-isolation-mcp-data-contracts/cover.webp" alt="Como Protegemos Bancos de Dados Enterprise de Agentes de IA" loading="lazy">
+    </a>
     <div class="blog-row-body">
       <div class="blog-row-byline">
         <img class="blog-row-avatar" src="../assets/images/author/hugo-nascimento.jpg" alt="Hugo S. Nascimento" loading="lazy">
@@ -305,6 +371,9 @@ Arquiteturas entregues incluem **Deloitte**, **Santander**, **Softplan**, **Unip
     </div>
   </article>
   <article class="blog-row blog-post-item">
+    <a class="blog-row-thumb" href="/blog/pt/post/estudo-caso-latam-airlines/">
+      <img src="../assets/images/posts/latam-airlines-case-study/cover.webp" alt="LATAM Airlines: Agentes em Produção com Margem de 3 Por Cento" loading="lazy">
+    </a>
     <div class="blog-row-body">
       <div class="blog-row-byline">
         <img class="blog-row-avatar" src="../assets/images/author/hugo-nascimento.jpg" alt="Hugo S. Nascimento" loading="lazy">
@@ -318,6 +387,9 @@ Arquiteturas entregues incluem **Deloitte**, **Santander**, **Softplan**, **Unip
     </div>
   </article>
   <article class="blog-row blog-post-item">
+    <a class="blog-row-thumb" href="/blog/pt/post/falacia-llm-como-juiz/">
+      <img src="../assets/images/posts/llm-as-judge-fallacy/cover.webp" alt="Por Que LLM Como Juiz Falha no Setor Bancário" loading="lazy">
+    </a>
     <div class="blog-row-body">
       <div class="blog-row-byline">
         <img class="blog-row-avatar" src="../assets/images/author/hugo-nascimento.jpg" alt="Hugo S. Nascimento" loading="lazy">
@@ -331,6 +403,9 @@ Arquiteturas entregues incluem **Deloitte**, **Santander**, **Softplan**, **Unip
     </div>
   </article>
   <article class="blog-row blog-post-item">
+    <a class="blog-row-thumb" href="/blog/pt/post/agentes-ilimitados-maquinas-estados-finitos/">
+      <img src="../assets/images/posts/unconstrained-agents-finite-state-machines/cover.webp" alt="Estudo de Caso: 42 Chamadas em Loop às 2 da Manhã" loading="lazy">
+    </a>
     <div class="blog-row-body">
       <div class="blog-row-byline">
         <img class="blog-row-avatar" src="../assets/images/author/hugo-nascimento.jpg" alt="Hugo S. Nascimento" loading="lazy">
@@ -344,6 +419,9 @@ Arquiteturas entregues incluem **Deloitte**, **Santander**, **Softplan**, **Unip
     </div>
   </article>
   <article class="blog-row blog-post-item">
+    <a class="blog-row-thumb" href="/blog/pt/post/por-que-rag-falha-em-erp/">
+      <img src="../assets/images/posts/why-rag-breaks-on-erp/cover.webp" alt="Por Que RAG Tradicional Falha em ERPs Financeiros" loading="lazy">
+    </a>
     <div class="blog-row-body">
       <div class="blog-row-byline">
         <img class="blog-row-avatar" src="../assets/images/author/hugo-nascimento.jpg" alt="Hugo S. Nascimento" loading="lazy">
@@ -357,6 +435,9 @@ Arquiteturas entregues incluem **Deloitte**, **Santander**, **Softplan**, **Unip
     </div>
   </article>
   <article class="blog-row blog-post-item">
+    <a class="blog-row-thumb" href="/blog/pt/post/sistemas-legados-motor-execucao/">
+      <img src="../assets/images/posts/legacy-core-backing-engine/cover.webp" alt="Sistemas Transacionais Legados Não Vão Morrer: Eles São o Motor" loading="lazy">
+    </a>
     <div class="blog-row-body">
       <div class="blog-row-byline">
         <img class="blog-row-avatar" src="../assets/images/author/hugo-nascimento.jpg" alt="Hugo S. Nascimento" loading="lazy">
@@ -370,6 +451,9 @@ Arquiteturas entregues incluem **Deloitte**, **Santander**, **Softplan**, **Unip
     </div>
   </article>
   <article class="blog-row blog-post-item">
+    <a class="blog-row-thumb" href="/blog/pt/post/deriva-de-integracao/">
+      <img src="../assets/images/posts/integration-drift/cover.webp" alt="A Deriva de Integração: Quando Prompts Quebram Agentes em Produção" loading="lazy">
+    </a>
     <div class="blog-row-body">
       <div class="blog-row-byline">
         <img class="blog-row-avatar" src="../assets/images/author/hugo-nascimento.jpg" alt="Hugo S. Nascimento" loading="lazy">
@@ -383,6 +467,9 @@ Arquiteturas entregues incluem **Deloitte**, **Santander**, **Softplan**, **Unip
     </div>
   </article>
   <article class="blog-row blog-post-item">
+    <a class="blog-row-thumb" href="/blog/pt/post/chatbot-vs-agente/">
+      <img src="../assets/images/posts/chatbot-vs-agent/cover.webp" alt="Chatbot vs Agente: Por Que Substituir BPOs Exige Ontologias em Produção" loading="lazy">
+    </a>
     <div class="blog-row-body">
       <div class="blog-row-byline">
         <img class="blog-row-avatar" src="../assets/images/author/hugo-nascimento.jpg" alt="Hugo S. Nascimento" loading="lazy">
@@ -396,6 +483,9 @@ Arquiteturas entregues incluem **Deloitte**, **Santander**, **Softplan**, **Unip
     </div>
   </article>
   <article class="blog-row blog-post-item">
+    <a class="blog-row-thumb" href="/blog/pt/post/custo-ia-ilimitada-ti-legada/">
+      <img src="../assets/images/posts/cost-legacy-it/cover.webp" alt="O Custo de IA Sem Limites na TI Legada" loading="lazy">
+    </a>
     <div class="blog-row-body">
       <div class="blog-row-byline">
         <img class="blog-row-avatar" src="../assets/images/author/hugo-nascimento.jpg" alt="Hugo S. Nascimento" loading="lazy">
@@ -409,6 +499,9 @@ Arquiteturas entregues incluem **Deloitte**, **Santander**, **Softplan**, **Unip
     </div>
   </article>
   <article class="blog-row blog-post-item">
+    <a class="blog-row-thumb" href="/blog/pt/post/manifesto/">
+      <img src="../assets/images/posts/manifesto/cover.webp" alt="Por Que Criei a HSN Labs" loading="lazy">
+    </a>
     <div class="blog-row-body">
       <div class="blog-row-byline">
         <img class="blog-row-avatar" src="../assets/images/author/hugo-nascimento.jpg" alt="Hugo S. Nascimento" loading="lazy">

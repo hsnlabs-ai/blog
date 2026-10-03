@@ -8,6 +8,7 @@ tags:
 - enterprise
 description: 'Estudo aprofundado dos princípios de arquitetura do Palantir AIP e por que sua abordagem ontológica é a única que sobrevive em produção corporativa.'
 author: Hugo S. Nascimento
+image: assets/images/posts/palantir-aip-bootcamp-operational-ontology/cover.webp
 ---
 
 *Tempo de leitura: 7 minutos. Autor: Hugo S. Nascimento.*
@@ -21,6 +22,11 @@ Enquanto o Vale do Silício passava os últimos dois anos construindo aplicaçõ
 O sucesso estrondoso dos Bootcamps de AIP da Palantir não decorre de modelos proprietários de linguagem, mas sim da solidez da sua camada semântica.
 
 ## O Núcleo Arquitetural da Palantir
+
+<figure class="article-editorial-figure">
+  <img src="../../../assets/diagrams/palantir-aip-architecture-pt.png" alt="Visão Geral da Arquitetura Palantir AIP - Camadas Operacionais de Ontologia e Ações" loading="lazy">
+  <figcaption class="editorial-caption">Diagrama oficial da arquitetura Palantir AIP traduzido para português: conexão de dados, ontologia de negócio e ações autônomas sob governança estrita.</figcaption>
+</figure>
 
 A arquitetura da Palantir se divide em três camadas integradas:
 

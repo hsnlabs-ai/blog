@@ -8,6 +8,7 @@ tags:
 - enterprise
 description: 'O guia definitivo sobre como estruturar a camada ontológica que permite a agentes de software operar em produção corporativa sem falhas.'
 author: Hugo S. Nascimento
+image: assets/images/posts/the-operational-ontology/cover.webp
 ---
 
 *Tempo de leitura: 7 minutos. Autor: Hugo S. Nascimento.*
@@ -56,6 +57,11 @@ flowchart TD
     C["3. Catalogo de Acoes Atomicas<br>Expoe ferramentas parametrizadas via Model Context Protocol<br>Valida pre-condicoes antes de despachar mutacoes<br>Gera trilhas criptograficas imutaveis de auditoria"]
     A --> B --> C
 ```
+
+<figure class="article-editorial-figure">
+  <img src="../../../assets/diagrams/hsn-agent-architecture.png" alt="Arquitetura de Engenharia Agêntica Enterprise da HSN Labs" loading="lazy">
+  <figcaption class="editorial-caption">Arquitetura agêntica enterprise de ponta a ponta: ingestão cirúrgica de legados, ontologia operacional aberta, middlewares de governança, ciclo de vida com máquinas de estados e supervisão humana.</figcaption>
+</figure>
 
 ---
 

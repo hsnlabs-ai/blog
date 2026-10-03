@@ -13,8 +13,8 @@
     <language>en</language>
 
     
-    <pubDate>Sat, 03 Oct 2026 14:22:11 -0000</pubDate>
-    <lastBuildDate>Sat, 03 Oct 2026 14:22:11 -0000</lastBuildDate>
+    <pubDate>Sat, 03 Oct 2026 18:55:21 -0000</pubDate>
+    <lastBuildDate>Sat, 03 Oct 2026 18:55:21 -0000</lastBuildDate>
     <ttl>1440</ttl>
 
     
@@ -62,6 +62,8 @@
       
       <guid isPermaLink="true">https://hsnlabs.ai/blog/post/buy-versus-build-b2b-enterprise-crm/</guid>
       
+      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/buy-versus-build-b2b-enterprise-crm/cover.webp" type="image/webp" length="None" />
+      
     </item>
     
     <item>
@@ -93,6 +95,8 @@
       
       <guid isPermaLink="true">https://hsnlabs.ai/blog/post/cleveland-clinic-case-study-operational-agents/</guid>
       
+      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/cleveland-clinic-case-study-operational-agents/cover.webp" type="image/webp" length="None" />
+      
     </item>
     
     <item>
@@ -121,6 +125,8 @@
       <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
       
       <guid isPermaLink="true">https://hsnlabs.ai/blog/post/bpo-replacement-matrix/</guid>
+      
+      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/bpo-replacement-matrix/cover.webp" type="image/webp" length="None" />
       
     </item>
     
@@ -155,6 +161,8 @@
       
       <guid isPermaLink="true">https://hsnlabs.ai/blog/post/how-to-build-an-enterprise-ontology-from-scratch/</guid>
       
+      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/how-to-build-an-enterprise-ontology-from-scratch/cover.webp" type="image/webp" length="None" />
+      
     </item>
     
     <item>
@@ -187,6 +195,8 @@
       <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
       
       <guid isPermaLink="true">https://hsnlabs.ai/blog/post/ontology-vs-database-schema/</guid>
+      
+      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/ontology-vs-database-schema/cover.webp" type="image/webp" length="None" />
       
     </item>
     
@@ -221,6 +231,8 @@
       
       <guid isPermaLink="true">https://hsnlabs.ai/blog/post/ontology-vs-knowledge-graph/</guid>
       
+      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/ontology-vs-knowledge-graph/cover.webp" type="image/webp" length="None" />
+      
     </item>
     
     <item>
@@ -254,7 +266,7 @@
       
       <guid isPermaLink="true">https://hsnlabs.ai/blog/post/the-operational-ontology/</guid>
       
-      <enclosure url="https://hsnlabs.ai/blog/assets/diagrams/hsn-agent-architecture.png" type="image/png" length="None" />
+      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/the-operational-ontology/cover.webp" type="image/webp" length="None" />
       
     </item>
     
@@ -289,6 +301,8 @@
       
       <guid isPermaLink="true">https://hsnlabs.ai/blog/post/what-is-an-ontology-for-ai-agents/</guid>
       
+      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/what-is-an-ontology-for-ai-agents/cover.webp" type="image/webp" length="None" />
+      
     </item>
     
     <item>
@@ -317,6 +331,8 @@
       <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
       
       <guid isPermaLink="true">https://hsnlabs.ai/blog/post/c-suite-margin-protection-playbook/</guid>
+      
+      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/c-suite-margin-protection-playbook/cover.webp" type="image/webp" length="None" />
       
     </item>
     
@@ -349,6 +365,8 @@
       
       <guid isPermaLink="true">https://hsnlabs.ai/blog/post/how-to-build-operational-ontology-python-mcp/</guid>
       
+      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/how-to-build-operational-ontology-python-mcp/cover.webp" type="image/webp" length="None" />
+      
     </item>
     
     <item>
@@ -377,6 +395,8 @@
       <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
       
       <guid isPermaLink="true">https://hsnlabs.ai/blog/post/five-day-architecture-sprint/</guid>
+      
+      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/five-day-architecture-sprint/cover.webp" type="image/webp" length="None" />
       
     </item>
     
@@ -409,7 +429,7 @@
       
       <guid isPermaLink="true">https://hsnlabs.ai/blog/post/kafka-metamorfose-ia-futuro-do-trabalho/</guid>
       
-      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/kafka/capa-metamorfose.jpg" type="image/jpeg" length="None" />
+      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/kafka-metamorfose-ia-futuro-do-trabalho/cover.webp" type="image/webp" length="None" />
       
     </item>
     
@@ -439,6 +459,8 @@
       <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
       
       <guid isPermaLink="true">https://hsnlabs.ai/blog/post/autonomous-negotiations-collections-contracts/</guid>
+      
+      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/autonomous-negotiations-collections-contracts/cover.webp" type="image/webp" length="None" />
       
     </item>
     
@@ -471,7 +493,7 @@
       
       <guid isPermaLink="true">https://hsnlabs.ai/blog/post/palantir-aip-bootcamp-operational-ontology/</guid>
       
-      <enclosure url="https://hsnlabs.ai/blog/assets/diagrams/palantir-aip-architecture-pt.png" type="image/png" length="None" />
+      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/palantir-aip-bootcamp-operational-ontology/cover.webp" type="image/webp" length="None" />
       
     </item>
     
@@ -501,6 +523,8 @@
       <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
       
       <guid isPermaLink="true">https://hsnlabs.ai/blog/post/balance-sheet-guard-bpo-extinction/</guid>
+      
+      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/balance-sheet-guard-bpo-extinction/cover.webp" type="image/webp" length="None" />
       
     </item>
     
@@ -533,6 +557,8 @@
       
       <guid isPermaLink="true">https://hsnlabs.ai/blog/post/palantir-pricing-tco-and-open-alternatives/</guid>
       
+      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/palantir-pricing-tco-and-open-alternatives/cover.webp" type="image/webp" length="None" />
+      
     </item>
     
     <item>
@@ -564,6 +590,8 @@
       
       <guid isPermaLink="true">https://hsnlabs.ai/blog/post/palantir-vs-databricks-agent-architecture/</guid>
       
+      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/palantir-vs-databricks-agent-architecture/cover.webp" type="image/webp" length="None" />
+      
     </item>
     
     <item>
@@ -592,6 +620,8 @@
       <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
       
       <guid isPermaLink="true">https://hsnlabs.ai/blog/post/protocol-arbitrage-claims-underwriting/</guid>
+      
+      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/protocol-arbitrage-claims-underwriting/cover.webp" type="image/webp" length="None" />
       
     </item>
     
@@ -622,6 +652,8 @@
       
       <guid isPermaLink="true">https://hsnlabs.ai/blog/post/death-of-tier-1-erp-helpdesk/</guid>
       
+      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/death-of-tier-1-erp-helpdesk/cover.webp" type="image/webp" length="None" />
+      
     </item>
     
     <item>
@@ -650,6 +682,8 @@
       <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
       
       <guid isPermaLink="true">https://hsnlabs.ai/blog/post/collapse-of-legacy-rpa/</guid>
+      
+      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/collapse-of-legacy-rpa/cover.webp" type="image/webp" length="None" />
       
     </item>
     

@@ -8,6 +8,7 @@ tags:
 - ai-failures
 description: 'Post-mortem sobre a causa raiz de noventa por cento das provas de conceito de IA falharem antes da produção.'
 author: Hugo S. Nascimento
+image: assets/images/posts/the-poc-graveyard/cover.webp
 ---
 
 *Tempo de leitura: 4 minutos. Autor: Hugo S. Nascimento.*

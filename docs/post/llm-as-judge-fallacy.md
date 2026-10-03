@@ -9,6 +9,7 @@ tags:
 description: Structural vulnerabilities and compliance liabilities of relying on stochastic
   LLM evaluators to audit critical financial decisions.
 author: Hugo S. Nascimento
+image: assets/images/posts/llm-as-judge-fallacy/cover.webp
 ---
 
 *Reading time: 4 minutes. Author: Hugo S. Nascimento.*

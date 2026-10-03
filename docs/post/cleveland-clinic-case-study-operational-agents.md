@@ -9,6 +9,7 @@ tags:
 - roi
 description: "Detailed case study on how Cleveland Clinic eliminated spreadsheet bottlenecks and cut bed capacity calculation time by 75% using operational ontologies."
 author: Hugo S. Nascimento
+image: assets/images/posts/cleveland-clinic-case-study-operational-agents/cover.webp
 ---
 
 *Reading time: 5 minutes. Author: Hugo S. Nascimento.*

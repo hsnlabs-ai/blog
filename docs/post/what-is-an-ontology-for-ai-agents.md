@@ -10,6 +10,7 @@ tags:
 - deterministic-ai
 description: "The complete guide to operational ontologies for enterprise AI agents: why prompt-based systems fail, how to map business invariants into executable code, and how to govern autonomous actions."
 author: Hugo S. Nascimento
+image: assets/images/posts/what-is-an-ontology-for-ai-agents/cover.webp
 ---
 
 *Reading time: 14 minutes. Author: Hugo S. Nascimento.*

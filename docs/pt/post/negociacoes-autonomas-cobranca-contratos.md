@@ -9,6 +9,7 @@ tags:
 - fsm
 description: 'Como agentes operacionais com ontologia e máquinas de estados finitos automatizam negociação de cobrança e aditamentos contratuais sem erro.'
 author: Hugo S. Nascimento
+image: assets/images/posts/autonomous-negotiations-collections-contracts/cover.webp
 ---
 
 *Tempo de leitura: 5 minutos. Autor: Hugo S. Nascimento.*

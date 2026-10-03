@@ -9,6 +9,7 @@ tags:
 description: Why vector similarity retrieval corrupts arithmetic precision and ledger
   integrity in enterprise financial ERPs.
 author: Hugo S. Nascimento
+image: assets/images/posts/why-rag-breaks-on-erp/cover.webp
 ---
 
 *Reading time: 4 minutes. Author: Hugo S. Nascimento.*
