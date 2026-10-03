@@ -71,6 +71,11 @@ The strategic realization for the enterprise C-suite in 2026 is that **you do no
 
 By leveraging modern open protocols—specifically Python, Pydantic, PostgreSQL, and FastMCP—enterprises can build modular, fully owned operational ontologies tailored to their exact business mechanics.
 
+<figure class="article-editorial-figure">
+  <img src="../../assets/diagrams/hsn-agent-architecture.png" alt="HSN Labs Enterprise Agentic Architecture - The Open Alternative to Palantir AIP" loading="lazy">
+  <figcaption class="editorial-caption">HSN Labs enterprise agentic architecture: an open alternative to Palantir AIP running production multi-agent workflows on executable business ontologies.</figcaption>
+</figure>
+
 ---
 
 ## The Three Pillars of an Operational Ontology
