@@ -24,16 +24,16 @@ for post in ROUTES_MAP.get("blog_posts", []):
         PT_TO_EN_MAP[s_pt] = s_en
 
 def insert_newsletter_interstitial(markdown, is_pt=False):
-    if "Agentes [×] Gente" in markdown and "newsletter-follow" in markdown:
+    if ("Agentes [×] Gente" in markdown or "[Agentes] x [a Gente]" in markdown) and "newsletter-follow" in markdown:
         return markdown
 
     if is_pt:
         note = """
-> **Agentes [×] Gente** — Análises quinzenais sobre engenharia agêntica corporativa e futuro do trabalho são publicadas na newsletter de Hugo Soares no LinkedIn com mais de 1.600 assinantes. [Acompanhar no LinkedIn ↗](https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7397999984089935872)
+> **[Agentes] x [a Gente]** — Fora do hype, discutimos como a engenharia agêntica multiplica e alavanca a capacidade laboral humana. Análises quinzenais publicadas na newsletter de Hugo Soares no LinkedIn com mais de 1.600 assinantes. [Acompanhar no LinkedIn ↗](https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7397999984089935872)
 """
     else:
         note = """
-> **Agentes [×] Gente** — Bi-weekly field notes on production agent architectures and enterprise workforce scaling are published in Hugo Soares's LinkedIn newsletter with over 1,600 subscribers. [Follow on LinkedIn ↗](https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7397999984089935872)
+> **[Agentes] x [a Gente]** — Beyond the hype: how agentic engineering multiplies and leverages human labor capacity. Bi-weekly field notes published in Hugo Soares's LinkedIn newsletter with over 1,600 subscribers. [Follow on LinkedIn ↗](https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7397999984089935872)
 """
 
     h2_matches = list(re.finditer(r'^##\s+', markdown, re.MULTILINE))

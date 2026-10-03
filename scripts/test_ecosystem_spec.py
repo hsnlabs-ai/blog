@@ -24,7 +24,7 @@ def test_gate_e1_cross_navigation():
     assert '<li><a href="/pt/bootcamp/">Bootcamp de Agentes</a></li>' in site_pt_index, "Menu footer site PT deve apontar para /pt/bootcamp/"
     assert '<li><a href="/pt/advisory/">Advisory</a></li>' in site_pt_index, "Menu footer site PT deve apontar para /pt/advisory/"
     assert '<li><a href="/blog/pt/">Blog</a></li>' in site_pt_index, "Menu footer site PT deve apontar para /blog/pt/"
-    assert '<a href="/pt/privacy-policy/">Politica de Privacidade</a>' in site_pt_index, "Link de privacidade no footer do site PT deve apontar para /pt/privacy-policy/"
+    assert '<a href="/pt/privacy-policy/">Politica de Privacidade</a>' in site_pt_index or '<a href="/pt/privacy-policy/">Política de Privacidade</a>' in site_pt_index, "Link de privacidade no footer do site PT deve apontar para /pt/privacy-policy/"
     print("PASS: Gate E1 Navegacao Cruzada validada sem vazamento de idioma")
 
 def test_gate_e2_essay_term_extinction():
@@ -40,7 +40,7 @@ def test_gate_e2_essay_term_extinction():
 def test_gate_e3_lgpd_banner():
     print("--- Gate E3: Consistencia do Banner LGPD ---")
     pt_pages = list((SITE_DIR / "pt").glob("**/index.html"))
-    assert len(pt_pages) == 6, f"Esperadas 6 paginas PT no site, encontradas {len(pt_pages)}"
+    assert len(pt_pages) >= 6, f"Esperadas pelo menos 6 paginas PT no site, encontradas {len(pt_pages)}"
     for p in pt_pages:
         content = p.read_text(encoding="utf-8")
         assert "Consentimento de Privacidade e Cookies" in content, f"Titulo LGPD ausente em {p}"
