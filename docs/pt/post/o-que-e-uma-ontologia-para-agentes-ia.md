@@ -59,41 +59,15 @@ flowchart TD
 
 ## Contrato de Validação em Tempo de Execução
 
-Abaixo exemplificamos como a ontologia governa a validação de liquidação financeira através de um contrato estrito:
+Em uma ontologia operacional de conciliação de faturas, a governança de liquidação é amarrada por um contrato de validação estrito:
 
-```json
-{
-  "title": "AprovacaoFaturaCorporativa",
-  "type": "object",
-  "properties": {
-    "fatura_id": {
-      "type": "string",
-      "pattern": "^FAT-[0-9]{8}$"
-    },
-    "fornecedor_id": {
-      "type": "string",
-      "minLength": 3
-    },
-    "valor_total": {
-      "type": "number",
-      "minimum": 0.01
-    },
-    "limite_alcada": {
-      "type": "number",
-      "default": 10000.00
-    },
-    "operador_aprovador": {
-      "type": "string"
-    }
-  },
-  "required": [
-    "fatura_id",
-    "fornecedor_id",
-    "valor_total",
-    "operador_aprovador"
-  ]
-}
-```
+| Atributo do Contrato | Tipo e Restrição | Invariante de Segurança e Regra de Negócio |
+| :--- | :--- | :--- |
+| `fatura_id` | Padrão `^FAT-[0-9]{8}$` | Identificador padronizado da fatura conciliada. |
+| `fornecedor_id` | Texto mínimo 3 caracteres | Cadastro do fornecedor ativo e validado no ERP. |
+| `valor_total` | Numérico decimal maior que zero | Valor total confrontado com a soma matemática dos itens. |
+| `limite_alcada` | Numérico teto de 10 mil reais | **Alçada Autônoma:** Liquidações acima de R$ 10.000 são interrompidas para validação humana de diretoria. |
+| `operador_aprovador` | Identificador auditável | Assinatura criptográfica registrada na trilha imutável de auditoria. |
 
 ---
 

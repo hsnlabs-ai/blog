@@ -195,7 +195,7 @@
                 <a href="../../../post/buy-versus-build-b2b-enterprise-crm/">Buy versus Build: B2B Enterprise CRM, Twenty, and Agentic Stacks</a>
                 
                 <div class="blog-sidebar-post-meta">
-                    <span class="blog-sidebar-date" data-date="2026-09-28">há 5 dias</span>
+                    <span class="blog-sidebar-date" data-date="2026-09-28">há 6 dias</span>
                 </div>
                 
             </li>
@@ -204,7 +204,7 @@
                 <a href="../../../post/cleveland-clinic-case-study-operational-agents/">Case Study: How Cleveland Clinic Scaled Patient Flow Across 6,600 Hospital Beds</a>
                 
                 <div class="blog-sidebar-post-meta">
-                    <span class="blog-sidebar-date" data-date="2026-09-28">há 5 dias</span>
+                    <span class="blog-sidebar-date" data-date="2026-09-28">há 6 dias</span>
                 </div>
                 
             </li>
@@ -213,7 +213,7 @@
                 <a href="../../../post/bpo-replacement-matrix/">The BPO Replacement Matrix: Operational and Financial Impact of Production Agents</a>
                 
                 <div class="blog-sidebar-post-meta">
-                    <span class="blog-sidebar-date" data-date="2026-09-27">há 6 dias</span>
+                    <span class="blog-sidebar-date" data-date="2026-09-27">há 7 dias</span>
                 </div>
                 
             </li>
@@ -222,7 +222,7 @@
                 <a href="../../../post/how-to-build-an-enterprise-ontology-from-scratch/">How to Build an Enterprise Ontology from Scratch: The Complete Architectural Blueprint</a>
                 
                 <div class="blog-sidebar-post-meta">
-                    <span class="blog-sidebar-date" data-date="2026-09-27">há 6 dias</span>
+                    <span class="blog-sidebar-date" data-date="2026-09-27">há 7 dias</span>
                 </div>
                 
             </li>
@@ -231,7 +231,7 @@
                 <a href="../../../post/ontology-vs-database-schema/">Ontology vs. Database Schema: Why Relational Tables and Vector Stores Fall Short for AI</a>
                 
                 <div class="blog-sidebar-post-meta">
-                    <span class="blog-sidebar-date" data-date="2026-09-27">há 6 dias</span>
+                    <span class="blog-sidebar-date" data-date="2026-09-27">há 7 dias</span>
                 </div>
                 
             </li>
@@ -456,39 +456,43 @@
     B --&gt; C["3. Catalogo de Acoes Executaveis&lt;br&gt;Validacao de pre-condicoes, maquinas de estado e auditoria"]</code></pre>
 <hr />
 <h2 id="contrato-de-validacao-em-tempo-de-execucao">Contrato de Validação em Tempo de Execução</h2>
-<p>Abaixo exemplificamos como a ontologia governa a validação de liquidação financeira através de um contrato estrito:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">{</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"AprovacaoFaturaCorporativa"</span><span class="p">,</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"object"</span><span class="p">,</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="nt">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="nt">"fatura_id"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">      </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">      </span><span class="nt">"pattern"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^FAT-[0-9]{8}$"</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">    </span><span class="p">},</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">    </span><span class="nt">"fornecedor_id"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">      </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">      </span><span class="nt">"minLength"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span>
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">    </span><span class="p">},</span>
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">    </span><span class="nt">"valor_total"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">      </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"number"</span><span class="p">,</span>
-<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">      </span><span class="nt">"minimum"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.01</span>
-<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">    </span><span class="p">},</span>
-<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">    </span><span class="nt">"limite_alcada"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="w">      </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"number"</span><span class="p">,</span>
-<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">      </span><span class="nt">"default"</span><span class="p">:</span><span class="w"> </span><span class="mf">10000.00</span>
-<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="w">    </span><span class="p">},</span>
-<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="w">    </span><span class="nt">"operador_aprovador"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="w">      </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span>
-<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="w">    </span><span class="p">}</span>
-<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="w">  </span><span class="p">},</span>
-<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="w">  </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="w">    </span><span class="s2">"fatura_id"</span><span class="p">,</span>
-<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="w">    </span><span class="s2">"fornecedor_id"</span><span class="p">,</span>
-<a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a><span class="w">    </span><span class="s2">"valor_total"</span><span class="p">,</span>
-<a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a><span class="w">    </span><span class="s2">"operador_aprovador"</span>
-<a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a><span class="w">  </span><span class="p">]</span>
-<a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a><span class="p">}</span>
-</code></pre></div>
+<p>Em uma ontologia operacional de conciliação de faturas, a governança de liquidação é amarrada por um contrato de validação estrito:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Atributo do Contrato</th>
+<th style="text-align: left;">Tipo e Restrição</th>
+<th style="text-align: left;">Invariante de Segurança e Regra de Negócio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>fatura_id</code></td>
+<td style="text-align: left;">Padrão <code>^FAT-[0-9]{8}$</code></td>
+<td style="text-align: left;">Identificador padronizado da fatura conciliada.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>fornecedor_id</code></td>
+<td style="text-align: left;">Texto mínimo 3 caracteres</td>
+<td style="text-align: left;">Cadastro do fornecedor ativo e validado no ERP.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>valor_total</code></td>
+<td style="text-align: left;">Numérico decimal maior que zero</td>
+<td style="text-align: left;">Valor total confrontado com a soma matemática dos itens.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>limite_alcada</code></td>
+<td style="text-align: left;">Numérico teto de 10 mil reais</td>
+<td style="text-align: left;"><strong>Alçada Autônoma:</strong> Liquidações acima de R$ 10.000 são interrompidas para validação humana de diretoria.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>operador_aprovador</code></td>
+<td style="text-align: left;">Identificador auditável</td>
+<td style="text-align: left;">Assinatura criptográfica registrada na trilha imutável de auditoria.</td>
+</tr>
+</tbody>
+</table>
 <hr />
 <h2 id="o-ciclo-de-execucao-em-producao">O Ciclo de Execução em Produção</h2>
 <p>Em vez de enviar documentações infinitas de banco de dados, o agente interage com o ecossistema através de um loop fechado e determinístico:</p>

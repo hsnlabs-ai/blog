@@ -195,7 +195,7 @@
                 <a href="../../../post/buy-versus-build-b2b-enterprise-crm/">Buy versus Build: B2B Enterprise CRM, Twenty, and Agentic Stacks</a>
                 
                 <div class="blog-sidebar-post-meta">
-                    <span class="blog-sidebar-date" data-date="2026-09-28">há 5 dias</span>
+                    <span class="blog-sidebar-date" data-date="2026-09-28">há 6 dias</span>
                 </div>
                 
             </li>
@@ -204,7 +204,7 @@
                 <a href="../../../post/cleveland-clinic-case-study-operational-agents/">Case Study: How Cleveland Clinic Scaled Patient Flow Across 6,600 Hospital Beds</a>
                 
                 <div class="blog-sidebar-post-meta">
-                    <span class="blog-sidebar-date" data-date="2026-09-28">há 5 dias</span>
+                    <span class="blog-sidebar-date" data-date="2026-09-28">há 6 dias</span>
                 </div>
                 
             </li>
@@ -213,7 +213,7 @@
                 <a href="../../../post/bpo-replacement-matrix/">The BPO Replacement Matrix: Operational and Financial Impact of Production Agents</a>
                 
                 <div class="blog-sidebar-post-meta">
-                    <span class="blog-sidebar-date" data-date="2026-09-27">há 6 dias</span>
+                    <span class="blog-sidebar-date" data-date="2026-09-27">há 7 dias</span>
                 </div>
                 
             </li>
@@ -222,7 +222,7 @@
                 <a href="../../../post/how-to-build-an-enterprise-ontology-from-scratch/">How to Build an Enterprise Ontology from Scratch: The Complete Architectural Blueprint</a>
                 
                 <div class="blog-sidebar-post-meta">
-                    <span class="blog-sidebar-date" data-date="2026-09-27">há 6 dias</span>
+                    <span class="blog-sidebar-date" data-date="2026-09-27">há 7 dias</span>
                 </div>
                 
             </li>
@@ -231,7 +231,7 @@
                 <a href="../../../post/ontology-vs-database-schema/">Ontology vs. Database Schema: Why Relational Tables and Vector Stores Fall Short for AI</a>
                 
                 <div class="blog-sidebar-post-meta">
-                    <span class="blog-sidebar-date" data-date="2026-09-27">há 6 dias</span>
+                    <span class="blog-sidebar-date" data-date="2026-09-27">há 7 dias</span>
                 </div>
                 
             </li>
@@ -468,41 +468,39 @@
 
 <hr />
 <h2 id="contrato-de-acao-operacional-governamental">Contrato de Ação Operacional Governamental</h2>
-<p>Abaixo exemplificamos a definição formal de uma ferramenta corporativa exposta ao agente para reencaminhamento logístico de cargas portuárias:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">{</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"reencaminhar_container_porto"</span><span class="p">,</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Executa alteracao de rota de container no sistema portuario"</span><span class="p">,</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="nt">"parameters"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"object"</span><span class="p">,</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span><span class="nt">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">      </span><span class="nt">"container_id"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">        </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">        </span><span class="nt">"pattern"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^CONT-[0-9]{6}$"</span>
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">      </span><span class="p">},</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">      </span><span class="nt">"porto_destino_novo"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">        </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span>
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">        </span><span class="nt">"enum"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">          </span><span class="s2">"SANTOS"</span><span class="p">,</span>
-<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">          </span><span class="s2">"PARANAGUA"</span><span class="p">,</span>
-<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">          </span><span class="s2">"ITAJAI"</span>
-<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">        </span><span class="p">]</span>
-<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="w">      </span><span class="p">},</span>
-<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">      </span><span class="nt">"custo_desvio_estimado"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="w">        </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"number"</span><span class="p">,</span>
-<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="w">        </span><span class="nt">"maximum"</span><span class="p">:</span><span class="w"> </span><span class="mf">50000.00</span>
-<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="w">      </span><span class="p">},</span>
-<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="w">      </span><span class="nt">"aprovador_humano"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="w">        </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span>
-<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="w">      </span><span class="p">}</span>
-<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="w">    </span><span class="p">},</span>
-<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="w">    </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a><span class="w">      </span><span class="s2">"container_id"</span><span class="p">,</span>
-<a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a><span class="w">      </span><span class="s2">"porto_destino_novo"</span><span class="p">,</span>
-<a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a><span class="w">      </span><span class="s2">"custo_desvio_estimado"</span>
-<a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a><span class="w">    </span><span class="p">]</span>
-<a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a><span class="w">  </span><span class="p">}</span>
-<a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a><span class="p">}</span>
-</code></pre></div>
+<h2 id="contrato-operacional-de-acao-via-model-context-protocol">Contrato Operacional de Ação via Model Context Protocol</h2>
+<p>Em uma ontologia operacional de logística portuária, agentes autônomos recebem capacidades de execução governadas por contratos rígidos de ferramentas denominado reencaminhar_container_porto:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parâmetro da Ação</th>
+<th style="text-align: left;">Tipo e Restrição</th>
+<th style="text-align: left;">Invariante de Segurança e Regra Operacional</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>container_id</code></td>
+<td style="text-align: left;">Padrão <code>^CONT-[0-9]{6}$</code></td>
+<td style="text-align: left;">Identificador padronizado do container ativo.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>porto_destino_novo</code></td>
+<td style="text-align: left;">Enum SANTOS, PARANAGUA ou ITAJAI</td>
+<td style="text-align: left;">Restrito a portos homologados com berço disponível.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>custo_desvio_estimado</code></td>
+<td style="text-align: left;">Numérico teto de 50 mil reais</td>
+<td style="text-align: left;"><strong>Teto de Autonomia:</strong> Desvios com custo acima de R$ 50.000 exigem aprovação manual de alçada.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>aprovador_humano</code></td>
+<td style="text-align: left;">Identificador auditável</td>
+<td style="text-align: left;">Assinatura de auditoria quando houver intervenção humana na alçada.</td>
+</tr>
+</tbody>
+</table>
 <hr />
 <blockquote>
 <p><strong>[Agentes] x [a Gente]</strong> — Fora do hype, discutimos como a engenharia agêntica multiplica e alavanca a capacidade laboral humana. Análises quinzenais publicadas na newsletter de Hugo Soares no LinkedIn com mais de 1.600 assinantes. <a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7397999984089935872">Acompanhar no LinkedIn ↗</a></p>

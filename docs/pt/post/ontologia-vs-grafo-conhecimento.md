@@ -76,41 +76,16 @@ flowchart TD
 
 ---
 
-## Contrato de Mutação de Grafo
+## Contrato Operacional de Mutação de Grafo
 
-Abaixo apresentamos a especificação de ferramenta via contrato estrito que governa a escrita no grafo corporativo:
+Em vez de permitir queries brutas no grafo, as escritas são governadas por um contrato de ferramenta estrito:
 
-```json
-{
-  "name": "vincular_fatura_pedido_compra",
-  "description": "Vincula fatura validada ao respectivo pedido de compras no grafo corporativo",
-  "parameters": {
-    "type": "object",
-    "properties": {
-      "fatura_id": {
-        "type": "string",
-        "pattern": "^FAT-[0-9]{6}$"
-      },
-      "pedido_compra_id": {
-        "type": "string",
-        "pattern": "^PED-[0-9]{6}$"
-      },
-      "valor_total": {
-        "type": "number",
-        "minimum": 0.01
-      },
-      "operador_aprovador": {
-        "type": "string"
-      }
-    },
-    "required": [
-      "fatura_id",
-      "pedido_compra_id",
-      "valor_total"
-    ]
-  }
-}
-```
+| Parâmetro do Contrato | Tipo / Restrição | Invariante e Regra de Validação |
+| :--- | :--- | :--- |
+| `fatura_id` | Padrão `^FAT-[0-9]{6}$` | Identificador padronizado da fatura conciliada. |
+| `pedido_compra_id` | Padrão `^PED-[0-9]{6}$` | Pedido de compras com status `APROVADO` no grafo. |
+| `valor_total` | Numérico maior que zero | **Invariante de Saldo:** O valor da fatura não pode exceder o saldo orçamentário residual do pedido. |
+| `operador_aprovador` | Identificador auditável | Assinatura de auditoria do agente ou aprovador humano. |
 
 ---
 

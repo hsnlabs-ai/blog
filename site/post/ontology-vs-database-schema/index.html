@@ -196,7 +196,7 @@
                 <a href="../buy-versus-build-b2b-enterprise-crm/">Buy versus Build: B2B Enterprise CRM, Twenty, and Agentic Stacks</a>
                 
                 <div class="blog-sidebar-post-meta">
-                    <span class="blog-sidebar-date" data-date="2026-09-28">5 days ago</span>
+                    <span class="blog-sidebar-date" data-date="2026-09-28">6 days ago</span>
                 </div>
                 
             </li>
@@ -205,7 +205,7 @@
                 <a href="../cleveland-clinic-case-study-operational-agents/">Case Study: How Cleveland Clinic Scaled Patient Flow Across 6,600 Hospital Beds</a>
                 
                 <div class="blog-sidebar-post-meta">
-                    <span class="blog-sidebar-date" data-date="2026-09-28">5 days ago</span>
+                    <span class="blog-sidebar-date" data-date="2026-09-28">6 days ago</span>
                 </div>
                 
             </li>
@@ -214,7 +214,7 @@
                 <a href="../bpo-replacement-matrix/">The BPO Replacement Matrix: Operational and Financial Impact of Production Agents</a>
                 
                 <div class="blog-sidebar-post-meta">
-                    <span class="blog-sidebar-date" data-date="2026-09-27">6 days ago</span>
+                    <span class="blog-sidebar-date" data-date="2026-09-27">7 days ago</span>
                 </div>
                 
             </li>
@@ -223,7 +223,7 @@
                 <a href="../how-to-build-an-enterprise-ontology-from-scratch/">How to Build an Enterprise Ontology from Scratch: The Complete Architectural Blueprint</a>
                 
                 <div class="blog-sidebar-post-meta">
-                    <span class="blog-sidebar-date" data-date="2026-09-27">6 days ago</span>
+                    <span class="blog-sidebar-date" data-date="2026-09-27">7 days ago</span>
                 </div>
                 
             </li>
@@ -232,7 +232,7 @@
                 <a href="./">Ontology vs. Database Schema: Why Relational Tables and Vector Stores Fall Short for AI</a>
                 
                 <div class="blog-sidebar-post-meta">
-                    <span class="blog-sidebar-date" data-date="2026-09-27">6 days ago</span>
+                    <span class="blog-sidebar-date" data-date="2026-09-27">7 days ago</span>
                 </div>
                 
             </li>
@@ -475,43 +475,67 @@
 <p>Instead, answering that question requires complex filtering across <code>contracts</code>, <code>user_sessions</code>, <code>billing_records</code>, and <code>disputes</code>. When an LLM generates raw SQL from schema definitions alone, it guesses which definition to use. In production, this produces wild metric discrepancies that destroy executive confidence.</p>
 <h3 id="2-the-cryptic-legacy-schema-problem">2. The Cryptic Legacy Schema Problem</h3>
 <p>Enterprise software runs on systems like SAP ECC, SAP S/4HANA, AS400, or Totvs Protheus. </p>
-<p>These databases do not have clean, human-readable column names. They look like this:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1">-- Actual SAP ERP Table Definition Snippet</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">BSEG</span><span class="w"> </span><span class="p">(</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="n">MANDT</span><span class="w"> </span><span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="p">,</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="n">BUKRS</span><span class="w"> </span><span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="p">,</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="n">BELNR</span><span class="w"> </span><span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="p">,</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span><span class="n">GJAHR</span><span class="w"> </span><span class="nb">NUMERIC</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="p">,</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">    </span><span class="n">BUZEI</span><span class="w"> </span><span class="nb">NUMERIC</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="p">,</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">    </span><span class="n">SHKZG</span><span class="w"> </span><span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="p">,</span><span class="w"> </span><span class="c1">-- Debit/Credit Indicator (S/H)</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">    </span><span class="n">DMBTR</span><span class="w"> </span><span class="nb">NUMERIC</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="p">,</span><span class="w"> </span><span class="c1">-- Amount in Local Currency</span>
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">    </span><span class="n">KOART</span><span class="w"> </span><span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="w">  </span><span class="c1">-- Account Type (D/K/S/A/M)</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="p">);</span>
-</code></pre></div>
-<p>An LLM inspecting <code>BSEG</code> has no intrinsic understanding of what <code>MANDT</code>, <code>BUKRS</code>, or <code>SHKZG</code> represent in the context of Brazilian tax law or German corporate accounting. Feeding thousands of pages of SAP data dictionary documentation into context windows blows token budgets and produces catastrophic hallucination rates.</p>
+<p>These databases do not expose clean, human-readable column names. In a core accounting table like SAP's <code>BSEG</code> (Accounting Document Segment), columns appear as opaque technical abbreviations:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Legacy SAP Column</th>
+<th style="text-align: left;">Data Type</th>
+<th style="text-align: left;">Business Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>MANDT</code></td>
+<td style="text-align: left;"><code>VARCHAR(3)</code></td>
+<td style="text-align: left;">Client / Mandant identifier</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>BUKRS</code></td>
+<td style="text-align: left;"><code>VARCHAR(4)</code></td>
+<td style="text-align: left;">Company code</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>BELNR</code></td>
+<td style="text-align: left;"><code>VARCHAR(10)</code></td>
+<td style="text-align: left;">Accounting document number</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>GJAHR</code></td>
+<td style="text-align: left;"><code>NUMERIC(4)</code></td>
+<td style="text-align: left;">Fiscal year</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>BUZEI</code></td>
+<td style="text-align: left;"><code>NUMERIC(3)</code></td>
+<td style="text-align: left;">Number of line item within document</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>SHKZG</code></td>
+<td style="text-align: left;"><code>VARCHAR(1)</code></td>
+<td style="text-align: left;">Debit / Credit indicator (<code>S</code> = Debit, <code>H</code> = Credit)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>DMBTR</code></td>
+<td style="text-align: left;"><code>NUMERIC(13,2)</code></td>
+<td style="text-align: left;">Amount in local currency</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>KOART</code></td>
+<td style="text-align: left;"><code>VARCHAR(1)</code></td>
+<td style="text-align: left;">Account type (<code>D</code> = Customer, <code>K</code> = Vendor, <code>S</code> = G/L)</td>
+</tr>
+</tbody>
+</table>
+<p>An LLM inspecting <code>BSEG</code> has no intrinsic understanding of what <code>MANDT</code>, <code>BUKRS</code>, or <code>SHKZG</code> represent in the context of corporate accounting. Feeding thousands of pages of SAP data dictionary documentation into context windows blows token budgets and produces catastrophic hallucination rates.</p>
 <h3 id="3-lack-of-business-invariants">3. Lack of Business Invariants</h3>
-<p>Relational database schemas enforce technical constraints (e.g., <code>NOT NULL</code>, <code>REFERENCES</code>), but they are blind to dynamic business invariants.</p>
-<p>For example, consider a standard SQL constraint:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">orders</span><span class="w"> </span><span class="p">(</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">    </span><span class="n">order_id</span><span class="w"> </span><span class="n">UUID</span><span class="w"> </span><span class="k">PRIMARY</span><span class="w"> </span><span class="k">KEY</span><span class="p">,</span>
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="n">customer_id</span><span class="w"> </span><span class="n">UUID</span><span class="w"> </span><span class="k">REFERENCES</span><span class="w"> </span><span class="n">customers</span><span class="p">(</span><span class="n">customer_id</span><span class="p">),</span>
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">    </span><span class="n">status</span><span class="w"> </span><span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="p">,</span>
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">    </span><span class="n">total_amount</span><span class="w"> </span><span class="nb">NUMERIC</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span>
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="p">);</span>
-</code></pre></div>
-<p>As far as the PostgreSQL database engine is concerned, updating <code>status</code> from <code>PENDING</code> directly to <code>REFUNDED</code> without ever moving through <code>PAID</code> or <code>FULFILLED</code> is completely valid SQL. The database accepts the write. The business ledger is now corrupted.</p>
+<p>Relational database schemas enforce technical constraints (such as <code>NOT NULL</code> or foreign key references), but they are blind to dynamic business invariants.</p>
+<p>For example, consider an orders table storing <code>order_id</code>, <code>customer_id</code>, <code>status</code>, and <code>total_amount</code>. As far as the relational database engine is concerned, executing an update setting <code>status</code> from <code>PENDING</code> directly to <code>REFUNDED</code> without ever moving through <code>PAID</code> or <code>FULFILLED</code> is completely valid SQL. The database accepts the write. The business ledger is now corrupted.</p>
 <p>A database schema cannot enforce the temporal logic of an enterprise workflow. That logic belongs in an operational ontology.</p>
 <h3 id="4-denial-of-service-via-unbounded-queries">4. Denial of Service via Unbounded Queries</h3>
 <p>Giving an agent raw SQL write or execution permissions is an operational vulnerability. </p>
-<p>An autonomous agent attempting to answer a broad question may inadvertently generate an unindexed cross-table join across fifty million rows:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1">-- Catastrophic unindexed query generated by an LLM in production</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="k">SELECT</span><span class="w"> </span><span class="k">c</span><span class="p">.</span><span class="n">customer_name</span><span class="p">,</span><span class="w"> </span><span class="k">SUM</span><span class="p">(</span><span class="n">o</span><span class="p">.</span><span class="n">total_amount</span><span class="p">)</span>
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="k">FROM</span><span class="w"> </span><span class="n">customers</span><span class="w"> </span><span class="k">c</span><span class="w"> </span>
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="k">JOIN</span><span class="w"> </span><span class="n">orders</span><span class="w"> </span><span class="n">o</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="k">c</span><span class="p">.</span><span class="n">customer_id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">o</span><span class="p">.</span><span class="n">customer_id</span>
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="k">WHERE</span><span class="w"> </span><span class="n">o</span><span class="p">.</span><span class="n">notes</span><span class="w"> </span><span class="k">ILIKE</span><span class="w"> </span><span class="s1">'%urgent%'</span>
-<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="k">c</span><span class="p">.</span><span class="n">customer_name</span><span class="p">;</span>
-</code></pre></div>
-<p>This query will exhaust memory buffers, trigger CPU throttling, lock production tables, and take down live customer-facing applications.</p>
+<p>An autonomous agent attempting to answer a broad question may inadvertently generate an unindexed cross-table join across fifty million rows—for example, scanning every historical order with full-text wildcards (<code>ILIKE '%urgent%'</code>) grouped by customer name.</p>
+<p>This query exhausts database memory buffers, triggers CPU throttling, locks production tables, and takes down live customer-facing applications.</p>
 <hr />
 <h2 id="why-vector-stores-cannot-save-you">Why Vector Stores Cannot Save You</h2>
 <p>When teams realize Text-to-SQL is fragile, they frequently swing to the other extreme: vector databases and Retrieval-Augmented Generation (RAG).</p>
@@ -581,88 +605,59 @@
 <blockquote>
 <p><strong>[Agentes] x [a Gente]</strong> — Beyond the hype: how agentic engineering multiplies and leverages human labor capacity. Bi-weekly field notes published in Hugo Soares's LinkedIn newsletter with over 1,600 subscribers. <a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7397999984089935872">Follow on LinkedIn ↗</a></p>
 </blockquote>
-<h2 id="code-comparison-why-sql-ddl-fails-where-ontology-succeeds">Code Comparison: Why SQL DDL Fails Where Ontology Succeeds</h2>
+<h2 id="architectural-comparison-why-relational-ddl-fails-where-ontology-succeeds">Architectural Comparison: Why Relational DDL Fails Where Ontology Succeeds</h2>
 <p>Consider an enterprise operational requirement:
 <em>An enterprise cannot issue a credit memo to a customer if the customer's account is currently under legal dispute, or if the credit memo amount exceeds 15% of the total original order value.</em></p>
-<h3 id="approach-1-the-raw-sql-ddl-approach-fragile">Approach 1: The Raw SQL DDL Approach (Fragile)</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1">-- The Relational Table</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">credit_memos</span><span class="w"> </span><span class="p">(</span>
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="n">memo_id</span><span class="w"> </span><span class="n">UUID</span><span class="w"> </span><span class="k">PRIMARY</span><span class="w"> </span><span class="k">KEY</span><span class="w"> </span><span class="k">DEFAULT</span><span class="w"> </span><span class="n">gen_random_uuid</span><span class="p">(),</span>
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">    </span><span class="n">order_id</span><span class="w"> </span><span class="n">UUID</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="w"> </span><span class="k">REFERENCES</span><span class="w"> </span><span class="n">orders</span><span class="p">(</span><span class="n">order_id</span><span class="p">),</span>
-<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">    </span><span class="n">customer_id</span><span class="w"> </span><span class="n">UUID</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="w"> </span><span class="k">REFERENCES</span><span class="w"> </span><span class="n">customers</span><span class="p">(</span><span class="n">customer_id</span><span class="p">),</span>
-<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">    </span><span class="n">amount</span><span class="w"> </span><span class="nb">NUMERIC</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="p">,</span>
-<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">    </span><span class="n">created_at</span><span class="w"> </span><span class="k">TIMESTAMP</span><span class="w"> </span><span class="k">WITH</span><span class="w"> </span><span class="k">TIME</span><span class="w"> </span><span class="k">ZONE</span><span class="w"> </span><span class="k">DEFAULT</span><span class="w"> </span><span class="n">NOW</span><span class="p">()</span>
-<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="p">);</span>
-<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>
-<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="c1">-- When an AI agent executes raw SQL:</span>
-<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="c1">-- The agent can execute this valid SQL statement:</span>
-<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">credit_memos</span><span class="w"> </span><span class="p">(</span><span class="n">order_id</span><span class="p">,</span><span class="w"> </span><span class="n">customer_id</span><span class="p">,</span><span class="w"> </span><span class="n">amount</span><span class="p">)</span><span class="w"> </span>
-<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="s1">'b3f1c24e-4f10-4e12-8812-70b991a0110a'</span><span class="p">,</span><span class="w"> </span><span class="s1">'9041fa02-1200-4b11-9988-100293881020'</span><span class="p">,</span><span class="w"> </span><span class="mi">45000</span><span class="p">.</span><span class="mi">00</span><span class="p">);</span>
-<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>
-<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="c1">-- THE SQL ENGINE ACCEPTS THIS ROW!</span>
-<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="c1">-- Result: The customer was in legal dispute, and the original order was only $50,000.</span>
-<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="c1">-- The agent just issued an unauthorized $45,000 credit memo.</span>
-</code></pre></div>
-<p>The database had no mechanism to stop this because the types matched: UUIDs were valid, and the amount was a valid numeric value.</p>
+<h3 id="approach-1-the-raw-relational-table-approach-fragile">Approach 1: The Raw Relational Table Approach (Fragile)</h3>
+<p>Under a standard relational database setup, a <code>credit_memos</code> table stores <code>order_id</code>, <code>customer_id</code>, <code>amount</code>, and <code>created_at</code>.</p>
+<p>When an autonomous agent generates a raw SQL statement inserting an unauthorized $45,000 credit memo against a $50,000 order for an account under active litigation:</p>
+<ul>
+<li><strong>The Database Accepts the Row:</strong> The foreign keys are valid UUIDs, and the numeric field is a valid decimal.</li>
+<li><strong>The Ledger is Corrupted:</strong> The database engine has zero built-in mechanism to evaluate customer dispute status or calculate cross-record concession ratios.</li>
+</ul>
 <h3 id="approach-2-the-operational-ontology-approach-bulletproof">Approach 2: The Operational Ontology Approach (Bulletproof)</h3>
-<p>In an operational ontology, the agent is never given direct SQL insert privileges. It must call an <strong>Ontological Action Contract</strong>.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">decimal</span><span class="w"> </span><span class="kn">import</span> <span class="n">Decimal</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">enum</span><span class="w"> </span><span class="kn">import</span> <span class="n">Enum</span>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="kn">from</span><span class="w"> </span><span class="nn">pydantic</span><span class="w"> </span><span class="kn">import</span> <span class="n">BaseModel</span><span class="p">,</span> <span class="n">Field</span><span class="p">,</span> <span class="n">model_validator</span>
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>
-<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>
-<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="k">class</span><span class="w"> </span><span class="nc">AccountLegalStatus</span><span class="p">(</span><span class="nb">str</span><span class="p">,</span> <span class="n">Enum</span><span class="p">):</span>
-<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>    <span class="n">CLEAR</span> <span class="o">=</span> <span class="s2">"CLEAR"</span>
-<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>    <span class="n">UNDER_REVIEW</span> <span class="o">=</span> <span class="s2">"UNDER_REVIEW"</span>
-<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>    <span class="n">LEGAL_DISPUTE</span> <span class="o">=</span> <span class="s2">"LEGAL_DISPUTE"</span>
-<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>
-<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>
-<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="k">class</span><span class="w"> </span><span class="nc">IssueCreditMemoRequest</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
-<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a>    <span class="n">order_id</span><span class="p">:</span> <span class="nb">str</span>
-<a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a>    <span class="n">customer_id</span><span class="p">:</span> <span class="nb">str</span>
-<a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a>    <span class="n">original_order_amount</span><span class="p">:</span> <span class="n">Decimal</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="n">gt</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
-<a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a>    <span class="n">requested_credit_amount</span><span class="p">:</span> <span class="n">Decimal</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="n">gt</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
-<a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a>    <span class="n">customer_legal_status</span><span class="p">:</span> <span class="n">AccountLegalStatus</span>
-<a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a>
-<a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a>    <span class="nd">@model_validator</span><span class="p">(</span><span class="n">mode</span><span class="o">=</span><span class="s2">"after"</span><span class="p">)</span>
-<a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">validate_credit_memo_invariants</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">"IssueCreditMemoRequest"</span><span class="p">:</span>
-<a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a>        <span class="c1"># Invariant 1: Statutory Legal Blocker</span>
-<a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a>        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">customer_legal_status</span> <span class="o">==</span> <span class="n">AccountLegalStatus</span><span class="o">.</span><span class="n">LEGAL_DISPUTE</span><span class="p">:</span>
-<a id="__codelineno-4-23" name="__codelineno-4-23" href="#__codelineno-4-23"></a>            <span class="k">raise</span> <span class="ne">PermissionError</span><span class="p">(</span>
-<a id="__codelineno-4-24" name="__codelineno-4-24" href="#__codelineno-4-24"></a>                <span class="sa">f</span><span class="s2">"Ontology Invariant Violation: Customer </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">customer_id</span><span class="si">}</span><span class="s2"> is in 'LEGAL_DISPUTE'. "</span>
-<a id="__codelineno-4-25" name="__codelineno-4-25" href="#__codelineno-4-25"></a>                <span class="s2">"All automated credit concessions are legally frozen."</span>
-<a id="__codelineno-4-26" name="__codelineno-4-26" href="#__codelineno-4-26"></a>            <span class="p">)</span>
-<a id="__codelineno-4-27" name="__codelineno-4-27" href="#__codelineno-4-27"></a>
-<a id="__codelineno-4-28" name="__codelineno-4-28" href="#__codelineno-4-28"></a>        <span class="c1"># Invariant 2: Maximum Concession Percentage</span>
-<a id="__codelineno-4-29" name="__codelineno-4-29" href="#__codelineno-4-29"></a>        <span class="n">MAX_CONCESSION_RATIO</span> <span class="o">=</span> <span class="n">Decimal</span><span class="p">(</span><span class="s2">"0.15"</span><span class="p">)</span>
-<a id="__codelineno-4-30" name="__codelineno-4-30" href="#__codelineno-4-30"></a>        <span class="n">max_permitted_amount</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">original_order_amount</span> <span class="o">*</span> <span class="n">MAX_CONCESSION_RATIO</span>
-<a id="__codelineno-4-31" name="__codelineno-4-31" href="#__codelineno-4-31"></a>
-<a id="__codelineno-4-32" name="__codelineno-4-32" href="#__codelineno-4-32"></a>        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">requested_credit_amount</span> <span class="o">&gt;</span> <span class="n">max_permitted_amount</span><span class="p">:</span>
-<a id="__codelineno-4-33" name="__codelineno-4-33" href="#__codelineno-4-33"></a>            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
-<a id="__codelineno-4-34" name="__codelineno-4-34" href="#__codelineno-4-34"></a>                <span class="sa">f</span><span class="s2">"Ontology Invariant Violation: Requested credit $</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">requested_credit_amount</span><span class="si">}</span><span class="s2"> "</span>
-<a id="__codelineno-4-35" name="__codelineno-4-35" href="#__codelineno-4-35"></a>                <span class="sa">f</span><span class="s2">"exceeds 15% threshold ($</span><span class="si">{</span><span class="n">max_permitted_amount</span><span class="si">}</span><span class="s2">) of original order value ($</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">original_order_amount</span><span class="si">}</span><span class="s2">). "</span>
-<a id="__codelineno-4-36" name="__codelineno-4-36" href="#__codelineno-4-36"></a>                <span class="s2">"Action aborted."</span>
-<a id="__codelineno-4-37" name="__codelineno-4-37" href="#__codelineno-4-37"></a>            <span class="p">)</span>
-<a id="__codelineno-4-38" name="__codelineno-4-38" href="#__codelineno-4-38"></a>
-<a id="__codelineno-4-39" name="__codelineno-4-39" href="#__codelineno-4-39"></a>        <span class="k">return</span> <span class="bp">self</span>
-<a id="__codelineno-4-40" name="__codelineno-4-40" href="#__codelineno-4-40"></a>
-<a id="__codelineno-4-41" name="__codelineno-4-41" href="#__codelineno-4-41"></a>
-<a id="__codelineno-4-42" name="__codelineno-4-42" href="#__codelineno-4-42"></a><span class="c1"># Execution Function</span>
-<a id="__codelineno-4-43" name="__codelineno-4-43" href="#__codelineno-4-43"></a><span class="k">def</span><span class="w"> </span><span class="nf">execute_issue_credit_memo</span><span class="p">(</span><span class="n">request</span><span class="p">:</span> <span class="n">IssueCreditMemoRequest</span><span class="p">,</span> <span class="n">agent_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
-<a id="__codelineno-4-44" name="__codelineno-4-44" href="#__codelineno-4-44"></a>    <span class="c1"># This code ONLY runs if every invariant evaluated to True</span>
-<a id="__codelineno-4-45" name="__codelineno-4-45" href="#__codelineno-4-45"></a>    <span class="c1"># The ontology layer handles the actual database write safely</span>
-<a id="__codelineno-4-46" name="__codelineno-4-46" href="#__codelineno-4-46"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-4-47" name="__codelineno-4-47" href="#__codelineno-4-47"></a>        <span class="s2">"status"</span><span class="p">:</span> <span class="s2">"COMMITTED"</span><span class="p">,</span>
-<a id="__codelineno-4-48" name="__codelineno-4-48" href="#__codelineno-4-48"></a>        <span class="s2">"order_id"</span><span class="p">:</span> <span class="n">request</span><span class="o">.</span><span class="n">order_id</span><span class="p">,</span>
-<a id="__codelineno-4-49" name="__codelineno-4-49" href="#__codelineno-4-49"></a>        <span class="s2">"amount"</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">requested_credit_amount</span><span class="p">),</span>
-<a id="__codelineno-4-50" name="__codelineno-4-50" href="#__codelineno-4-50"></a>        <span class="s2">"authorized_by"</span><span class="p">:</span> <span class="n">agent_id</span>
-<a id="__codelineno-4-51" name="__codelineno-4-51" href="#__codelineno-4-51"></a>    <span class="p">}</span>
-</code></pre></div>
+<p>In an operational ontology, the agent is never given direct SQL insert privileges. It must call an <strong>Ontological Action Contract</strong> (<code>IssueCreditMemoRequest</code>):</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Action Parameter</th>
+<th style="text-align: left;">Type &amp; Constraint</th>
+<th style="text-align: left;">Evaluated Invariant Gate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>order_id</code></td>
+<td style="text-align: left;">String / UUID</td>
+<td style="text-align: left;">Must map to an existing, settled corporate sales order.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>customer_id</code></td>
+<td style="text-align: left;">String / UUID</td>
+<td style="text-align: left;">Reconciled against master customer compliance ledger.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>original_order_amount</code></td>
+<td style="text-align: left;">Decimal (&gt; 0)</td>
+<td style="text-align: left;">Exact monetary value extracted from original order record.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>requested_credit_amount</code></td>
+<td style="text-align: left;">Decimal (&gt; 0)</td>
+<td style="text-align: left;"><strong>Concession Ceiling Invariant:</strong> Cannot exceed 15% of <code>original_order_amount</code>. Amounts above ceiling trigger hard validation abortion.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>customer_legal_status</code></td>
+<td style="text-align: left;">Enum (<code>CLEAR</code>, <code>UNDER_REVIEW</code>, <code>LEGAL_DISPUTE</code>)</td>
+<td style="text-align: left;"><strong>Statutory Legal Blocker:</strong> If status is <code>LEGAL_DISPUTE</code>, all automated concessions are legally frozen.</td>
+</tr>
+</tbody>
+</table>
 <h3 id="why-this-protects-the-enterprise">Why This Protects the Enterprise</h3>
 <p>When the LLM attempts to generate the action:</p>
 <ol>
-<li>If the customer is in dispute, Python raises a <code>PermissionError</code>.</li>
-<li>If the amount is $45,000 against a $50,000 order, Python raises a <code>ValueError</code>.</li>
+<li>If the customer is in dispute, the contract raises an immediate statutory permission rejection.</li>
+<li>If the amount requested is $45,000 against a $50,000 order, the invariant validator aborts before any transaction starts.</li>
 <li>The database connection is never even contacted.</li>
 <li>The exact failure reason is returned to the agent context loop, allowing the model to respond intelligently: <em>"I cannot issue this credit memo: customer is flagged under legal dispute and the amount exceeds our 15% concession ceiling."</em></li>
 </ol>

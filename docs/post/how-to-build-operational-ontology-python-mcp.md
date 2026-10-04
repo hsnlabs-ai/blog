@@ -43,39 +43,21 @@ flowchart TD
 
 ---
 
-## 2. Layer 1: Defining Objects and Invariants with Pydantic
+## 2. Layer 1: Defining Objects and Invariants with Typed Contracts
 
-Pydantic is the industry-standard data validation library for Python.[8] Instead of passing unvalidated dictionaries or raw strings to an LLM, every business entity is defined as an immutable data contract.[8]
+In an enterprise architecture, rather than passing unvalidated dictionaries or raw strings to an LLM, every business entity is defined as an immutable data contract.[8]
 
-Here is an operational model for an automated enterprise dispute resolution workflow:
+In an automated enterprise dispute resolution workflow, the entity contract enforces strict perimeter invariants:
 
-```python
-from datetime import datetime
-from decimal import Decimal
-from enum import Enum
-from pydantic import BaseModel, Field, model_validator
-
-class DisputeCategory(str, Enum):
-    PRICING_DISCREPANCY = "PRICING_DISCREPANCY"
-    DAMAGED_GOODS = "DAMAGED_GOODS"
-    SHORT_SHIPMENT = "SHORT_SHIPMENT"
-
-class InvoiceDispute(BaseModel):
-    dispute_id: str = Field(..., pattern=r"^DISP-[0-9]{8}$")
-    invoice_number: str = Field(..., min_length=5)
-    vendor_id: str = Field(..., min_length=3)
-    claimed_amount: Decimal = Field(..., gt=0)
-    contract_tolerance_pct: Decimal = Field(default=Decimal("0.02"), ge=0, le=Decimal("0.10"))
-    category: DisputeCategory
-    created_at: datetime = Field(default_factory=datetime.utcnow)
-
-    @model_validator(mode="after")
-    def verify_reconciliation_threshold(self) -> "InvoiceDispute":
-        if self.claimed_amount > Decimal("50000.00"):
-            # Invariant: Disputed amounts over $50k require mandatory executive escalation
-            pass
-        return self
-```
+| Contract Attribute | Type / Constraints | Enforced Invariant & Business Guard |
+| :--- | :--- | :--- |
+| `dispute_id` | Pattern `^DISP-[0-9]{8}$` | Standardized audit key; prevents collision or untracked claims. |
+| `invoice_number` | String (min 5 chars) | Verified foreign key to active accounts payable ledger. |
+| `vendor_id` | String (min 3 chars) | Must map to an active, KYC-cleared corporate supplier. |
+| `claimed_amount` | Decimal (> 0) | Exact decimal precision; zero or negative values rejected. |
+| `contract_tolerance_pct` | Decimal (0.00 to 0.10) | Bounded contractual tolerance (default 2%, capped at 10%). |
+| `category` | Strict Enum | Restricted to `PRICING_DISCREPANCY`, `DAMAGED_GOODS`, `SHORT_SHIPMENT`. |
+| `reconciliation_threshold` | Boundary Check | Claims exceeding $50,000 USD trigger mandatory executive escalation. |
 
 By wrapping business objects in strict schemas, invalid model inputs are rejected at serialization before reaching execution code.[8]
 
@@ -87,58 +69,13 @@ Autonomous agents should never possess raw direct database write access. All sta
 
 The Model Context Protocol (MCP) is an open specification that standardizes how applications provide context and tools to LLMs.[7] MCP operates like a universal port, allowing agents to execute functions across secure infrastructure without bespoke integrations.[7]
 
-Here is an MCP action server implementing atomic transaction execution with validation checks:
+In an atomic dispute settlement workflow (`execute_dispute_settlement`), the MCP gateway enforces three sequential verification gates before committing any change to the enterprise ledger:
 
-```python
-from mcp.server.fastmcp import FastMCP
-from decimal import Decimal
-
-mcp = FastMCP("EnterpriseOntologyGateway")
-
-@mcp.tool()
-async def execute_dispute_settlement(
-    dispute_id: str,
-    approved_settlement: float,
-    operator_override: bool = False
-) -> dict:
-    """
-    Executes an atomic ERP credit memo adjustment for an active invoice dispute.
-    Strictly verifies financial invariants prior to SAP write-back.
-    """
-    amount = Decimal(str(approved_settlement))
-    
-    # 1. Fetch live entity from transactional graph
-    dispute = await fetch_dispute_object(dispute_id)
-    if not dispute:
-        return {"status": "REJECTED", "reason": f"Dispute {dispute_id} does not exist"}
-
-    # 2. Enforce Hard Execution Invariants
-    if amount > dispute.claimed_amount:
-        return {
-            "status": "VIOLATION",
-            "reason": "Settlement cannot exceed original claimed dispute amount"
-        }
-
-    if amount > Decimal("5000.00") and not operator_override:
-        return {
-            "status": "PENDING_APPROVAL",
-            "reason": "Settlements exceeding $5,000 require Human-in-the-Loop dual authorization"
-        }
-
-    # 3. Atomic ERP Transaction Write-back
-    erp_reference = await erp_client.post_credit_memo(
-        vendor_id=dispute.vendor_id,
-        invoice_number=dispute.invoice_number,
-        amount=amount
-    )
-
-    return {
-        "status": "COMMITTED",
-        "erp_transaction_id": erp_reference,
-        "dispute_id": dispute_id,
-        "reconciled_amount": float(amount)
-    }
-```
+| Gateway Step | Execution Gate | Boundary Rule |
+| :--- | :--- | :--- |
+| **1. Entity Verification** | Fetches live entity from transactional graph. | If dispute record does not exist or is closed, execution aborts immediately. |
+| **2. Financial Invariants** | Evaluates proposed settlement against claimed amount and capital limit. | **Rule A:** Settlement cannot exceed original claimed amount.<br>**Rule B:** Settlements over $5,000 USD require Human-in-the-Loop dual authorization. |
+| **3. Atomic ERP Commit** | Posts verified credit memo to SAP / core billing system. | Generates immutable transaction audit ID and returns cryptographically signed receipt. |
 
 This pattern ensures that the language model functions exclusively as a planner. The actual state modification is guarded by deterministic code invariants.
 

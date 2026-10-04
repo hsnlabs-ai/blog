@@ -39,48 +39,16 @@ flowchart TD
 O primeiro passo não é escrever prompts, mas isolar de três a cinco entidades fundamentais do negócio. Em uma operação de faturamento, por exemplo: Fatura, Pedido de Compra, Fornecedor e Memorando de Crédito.
 
 ### Fase 2: Extração de Invariantes e Contratos de Dados
-Entidades corporativas exigem asserções matemáticas rigorosas. Abaixo demonstramos a especificação de um contrato estrito de dados para faturamento:
+Entidades corporativas exigem asserções matemáticas rigorosas. Em uma ontologia operacional, entidades são estruturadas como contratos estritos onde cada atributo é amarrado por invariantes de negócio:
 
-```json
-{
-  "title": "FaturaFornecedor",
-  "type": "object",
-  "properties": {
-    "fatura_id": {
-      "type": "string",
-      "pattern": "^FAT-[0-9]{8}$"
-    },
-    "fornecedor_id": {
-      "type": "string",
-      "minLength": 3
-    },
-    "valor_itens": {
-      "type": "number",
-      "minimum": 0.01
-    },
-    "valor_impostos": {
-      "type": "number",
-      "minimum": 0.00
-    },
-    "valor_total": {
-      "type": "number",
-      "minimum": 0.01
-    },
-    "moeda": {
-      "type": "string",
-      "enum": ["BRL", "USD", "EUR"]
-    }
-  },
-  "required": [
-    "fatura_id",
-    "fornecedor_id",
-    "valor_itens",
-    "valor_impostos",
-    "valor_total",
-    "moeda"
-  ]
-}
-```
+| Atributo do Contrato | Tipo / Formato | Regra de Validação e Invariante |
+| :--- | :--- | :--- |
+| `fatura_id` | Texto padrao FAT com 8 digitos numericos | Identificador padronizado auditável. |
+| `fornecedor_id` | Texto minimo 3 caracteres | Deve existir e estar ativo no cadastro mestre. |
+| `valor_itens` | Numérico decimal maior que zero | Soma exata de todos os itens de linha faturados. |
+| `valor_impostos` | Numérico decimal maior ou igual a zero | Alíquotas validadas contra matriz fiscal. |
+| `valor_total` | Numérico decimal maior que zero | **Invariante Matemática:** `valor_total == valor_itens + valor_impostos`. Divergências bloqueiam ingestão. |
+| `moeda` | Enum BRL, USD ou EUR | Moeda declarada compatível com a praça contratual. |
 
 ---
 
@@ -96,54 +64,23 @@ flowchart TD
 
 Abaixo detalhamos a matriz formal de transição de estados:
 
-```yaml
-transicoes_fatura:
-  RECEBIDA:
-    acoes_permitidas:
-      - ConciliacaoAutomatica
-    proximo_estado: CONCILIADA
-  CONCILIADA:
-    acoes_permitidas:
-      - AprovarPagamento
-    proximo_estado: APROVADA
-  APROVADA:
-    acoes_permitidas:
-      - ExecutarLiquidacao
-    proximo_estado: PAGA_E_LIQUIDADA
-```
+| Estado Atual | Ações Permitidas | Próximo Estado Válido | Invariante de Execução |
+| :--- | :--- | :--- | :--- |
+| `RECEBIDA` | `ConciliacaoAutomatica` | `CONCILIADA` | Exige conferência fiscal e física no ERP. |
+| `CONCILIADA` | `AprovarPagamento` | `APROVADA` | Exige saldo orçamentário aprovado. |
+| `APROVADA` | `ExecutarLiquidacao` | `PAGA_E_LIQUIDADA` | Dispara liquidação bancária definitiva. |
+| `PAGA_E_LIQUIDADA` | Nenhuma | Estado Terminal | Registro imutável; bloqueia desembolsos duplicados. |
 
 ---
 
 ### Fase 4: Catálogo de Ações via Model Context Protocol
-As ações executáveis são expostas como ferramentas MCP com validação de pré-condições:
+As ações executáveis são expostas como ferramentas MCP com validação de pré-condições e checagens obrigatórias:
 
-```json
-{
-  "name": "aprovar_liquidacao_fatura",
-  "description": "Aprova pagamento de fatura conciliada para envio ao ERP",
-  "parameters": {
-    "type": "object",
-    "properties": {
-      "fatura_id": {
-        "type": "string",
-        "pattern": "^FAT-[0-9]{8}$"
-      },
-      "operador_aprovador": {
-        "type": "string"
-      },
-      "valor_aprovado": {
-        "type": "number",
-        "minimum": 0.01
-      }
-    },
-    "required": [
-      "fatura_id",
-      "operador_aprovador",
-      "valor_aprovado"
-    ]
-  }
-}
-```
+| Parâmetro da Ação | Tipo / Validação | Finalidade e Barreira de Segurança |
+| :--- | :--- | :--- |
+| `fatura_id` | Padrão `^FAT-[0-9]{8}$` | Identificador único da fatura conciliada. |
+| `operador_aprovador` | Identificador auditável | Registra a assinatura criptográfica do agente ou operador humano responsável. |
+| `valor_aprovado` | Numérico maior que zero | Confrontado contra o teto de autonomia financeira 10 mil dolares. Valores superiores exigem alçada de diretoria. |
 
 ---
 
@@ -160,19 +97,13 @@ flowchart TD
 ---
 
 ### Fase 6: Testes Adversariais e Fuzzing de Invariantes
-Antes de colocar o agente em produção, as travas da ontologia são submetidas a baterias de testes com payloads malformados:
+Antes de colocar o agente em produção, as travas da ontologia são submetidas a baterias de testes com payloads malformados e tentativas de injeção:
 
-```yaml
-teste_adversarial_invariante:
-  cenario: tentativa_pagamento_fatura_nao_conciliada
-  payload_entrada:
-    fatura_id: FAT-99018274
-    estado_atual: RECEBIDA
-    acao_solicitada: ExecutarLiquidacao
-  resultado_esperado:
-    status: BLOQUEADO
-    codigo_invariante: TRANSICAO_ESTADO_INVALIDA
-```
+| Vetor de Teste Adversarial | Cenário Simulado | Comportamento Obrigatório da Ontologia |
+| :--- | :--- | :--- |
+| **Transição Ilegal de Estado** | Agente tenta liquidar fatura que ainda está no estado `RECEBIDA`. | **Bloqueio Imediato:** Código de violação `TRANSICAO_ESTADO_INVALIDA`; mutação abortada. |
+| **Estouro de Alçada Financeira** | Agente solicita pagamento de fatura de R$ 150.000 sob pretexto de urgência executiva. | **Interceptação:** Travas determinísticas barram envio bancário e roteiam para aprovação manual. |
+| **Alucinação Aritmética** | Valores de itens declarados divergem do total bruto informado pelo fornecedor. | **Rejeição no Perímetro:** Fatura recusada na porta de entrada sem abrir conexão com banco legado. |
 
 ---
 

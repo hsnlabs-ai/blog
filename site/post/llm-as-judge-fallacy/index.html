@@ -196,7 +196,7 @@
                 <a href="../buy-versus-build-b2b-enterprise-crm/">Buy versus Build: B2B Enterprise CRM, Twenty, and Agentic Stacks</a>
                 
                 <div class="blog-sidebar-post-meta">
-                    <span class="blog-sidebar-date" data-date="2026-09-28">5 days ago</span>
+                    <span class="blog-sidebar-date" data-date="2026-09-28">6 days ago</span>
                 </div>
                 
             </li>
@@ -205,7 +205,7 @@
                 <a href="../cleveland-clinic-case-study-operational-agents/">Case Study: How Cleveland Clinic Scaled Patient Flow Across 6,600 Hospital Beds</a>
                 
                 <div class="blog-sidebar-post-meta">
-                    <span class="blog-sidebar-date" data-date="2026-09-28">5 days ago</span>
+                    <span class="blog-sidebar-date" data-date="2026-09-28">6 days ago</span>
                 </div>
                 
             </li>
@@ -214,7 +214,7 @@
                 <a href="../bpo-replacement-matrix/">The BPO Replacement Matrix: Operational and Financial Impact of Production Agents</a>
                 
                 <div class="blog-sidebar-post-meta">
-                    <span class="blog-sidebar-date" data-date="2026-09-27">6 days ago</span>
+                    <span class="blog-sidebar-date" data-date="2026-09-27">7 days ago</span>
                 </div>
                 
             </li>
@@ -223,7 +223,7 @@
                 <a href="../how-to-build-an-enterprise-ontology-from-scratch/">How to Build an Enterprise Ontology from Scratch: The Complete Architectural Blueprint</a>
                 
                 <div class="blog-sidebar-post-meta">
-                    <span class="blog-sidebar-date" data-date="2026-09-27">6 days ago</span>
+                    <span class="blog-sidebar-date" data-date="2026-09-27">7 days ago</span>
                 </div>
                 
             </li>
@@ -232,7 +232,7 @@
                 <a href="../ontology-vs-database-schema/">Ontology vs. Database Schema: Why Relational Tables and Vector Stores Fall Short for AI</a>
                 
                 <div class="blog-sidebar-post-meta">
-                    <span class="blog-sidebar-date" data-date="2026-09-27">6 days ago</span>
+                    <span class="blog-sidebar-date" data-date="2026-09-27">7 days ago</span>
                 </div>
                 
             </li>
@@ -416,7 +416,7 @@
         
         <p class="page-dates">
             Created on 2026-08-18
-             — updated on October 3, 2026
+             — updated on October 4, 2026
         </p>
         
         <hr class="page-dates-divider">
@@ -460,8 +460,13 @@
 <ul>
 <li><strong>Binary Invariant Assertions:</strong> We write strict code assertion functions in Python. Did the output JSON strictly conform to the Pydantic schema? Did the debit and credit ledger entries balance to exactly zero? Did the response omit tax IDs and restricted account numbers? These tests return a binary pass or fail, not a subjective opinion score.</li>
 <li><strong>Immutable Golden Datasets:</strong> Every production incident, edge case, and edge failure is turned into an immutable test fixture. Before any updated agent graph or model checkpoint touches staging, it must pass hundreds of historical regression tests.</li>
-<li><strong>Full Telemetry and Replayability:</strong> We instrument every workflow with LangSmith, tracing every token, intermediate state, and tool invocation. If an agent produces an unexpected state transition, our engineers can replay the exact execution trace with complete fidelity in local development.</li>
+<li><strong>Full Telemetry and Replayability:</strong> We instrument every workflow with LangSmith, tracing every token, intermediate state, and tool invocation.</li>
 </ul>
+<div style="display: flex; align-items: center; gap: 14px; margin: 16px 0; padding: 14px 18px; background: #0E1017; border: 1px solid #222736;">
+  <img src="../../assets/stack/langsmith.svg" alt="LangSmith Observability" style="height: 28px; width: 28px;" loading="lazy">
+  <span style="font-size: 0.85rem; color: #94A3B8; font-family: 'Inter', sans-serif;">Full-fidelity runtime tracing, latency telemetry, and deterministic evaluation suites.</span>
+</div>
+<p>If an agent produces an unexpected state transition, our engineers can replay the exact execution trace with complete fidelity in local development.</p>
 <p>Do not grade production agents with subjective opinion prompts. Grade them with verifiable code assertions and mathematical proofs.</p>
 <h2 id="strategic-resources-and-related-essays">Strategic Resources and Related Essays</h2>
 <ul>

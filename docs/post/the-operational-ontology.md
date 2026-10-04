@@ -123,101 +123,18 @@ Every action in the registry is:
 
 ---
 
-## Production Implementation: Building an Action Harness with FastMCP
+## Production Architecture: Building an Action Harness with Model Context Protocol
 
-The following code demonstrates how an enterprise operational ontology exposes a state-governed, invariant-protected action to an autonomous agent using Python and the Model Context Protocol (MCP).
+In an enterprise logistics operational ontology, autonomous agents are granted execution capabilities through state-governed, invariant-protected action harnesses operating over the **Model Context Protocol (MCP)**.
 
-```python
-from decimal import Decimal
-from enum import Enum
-from typing import Annotated
-from pydantic import BaseModel, Field, model_validator
-from mcp.server.fastmcp import FastMCP
+Consider an emergency maritime container rerouting workflow (`reroute_maritime_container`). Rather than allowing an LLM to issue unverified commands to a terminal operating system (TOS), the ontology gates the action across four sequential verification tiers:
 
-# Initialize Enterprise Ontology MCP Server
-ontology_server = FastMCP("Enterprise-Logistics-Ontology")
-
-
-class ContainerStatus(str, Enum):
-    IN_TRANSIT = "IN_TRANSIT"
-    HELD_CUSTOMS = "HELD_CUSTOMS"
-    RELEASED = "RELEASED"
-    DIVERTED = "DIVERTED"
-    DELIVERED = "DELIVERED"
-
-
-class CargoContainer(BaseModel):
-    container_id: str
-    vessel_id: str
-    destination_port: str
-    status: ContainerStatus
-    declared_value_usd: Decimal
-    is_hazardous_material: bool
-    demurrage_cost_daily: Decimal
-
-
-# 1. ACTION PAYLOAD SCHEMA (The Request Contract)
-class RerouteContainerPayload(BaseModel):
-    container_id: str
-    new_destination_port: str = Field(min_length=3, max_length=5, description="UN/LOCODE port identifier")
-    reason_code: str = Field(description="Operational rationale for diversion")
-    estimated_diversion_cost: Decimal = Field(gt=0, description="Cost of maritime rerouting")
-
-    @model_validator(mode="after")
-    def assert_valid_diversion(self) -> "RerouteContainerPayload":
-        # Rule: Cannot reroute without valid port format
-        if not self.new_destination_port.isupper():
-            raise ValueError("Destination port must be a valid uppercase UN/LOCODE string.")
-        return self
-
-
-# 2. THE KINETIC ACTION ENDPOINT
-@ontology_server.tool()
-def reroute_maritime_container(payload: RerouteContainerPayload) -> str:
-    """
-    Executes an emergency maritime container rerouting in the operational ontology.
-    Validates vessel proximity, customs clearance state, and economic thresholds.
-    """
-    # Step A: Fetch Live State from Synchronized Entity Store
-    # In production, this queries the in-memory domain cache backed by Postgres/CDC
-    container = CargoContainer(
-        container_id=payload.container_id,
-        vessel_id="VESSEL-ALPHA-7",
-        destination_port="BRSSZ", # Santos Port
-        status=ContainerStatus.IN_TRANSIT,
-        declared_value_usd=Decimal("450000.00"),
-        is_hazardous_material=False,
-        demurrage_cost_daily=Decimal("1200.00")
-    )
-
-    # Step B: Enforce Finite State Machine Transitions
-    if container.status != ContainerStatus.IN_TRANSIT:
-        raise PermissionError(
-            f"FSM Rejection: Cannot reroute container {container.container_id} in status '{container.status}'. "
-            "Container must be actively 'IN_TRANSIT'."
-        )
-
-    # Step C: Enforce Capital Allocation Invariants
-    # Max autonomous diversion cost authorization is $25,000 USD
-    AUTONOMOUS_DIVERSION_CEILING = Decimal("25000.00")
-    if payload.estimated_diversion_cost > AUTONOMOUS_DIVERSION_CEILING:
-        raise PermissionError(
-            f"Capital Invariant Rejection: Estimated cost ${payload.estimated_diversion_cost} "
-            f"exceeds agent autonomous ceiling of ${AUTONOMOUS_DIVERSION_CEILING}. "
-            "Human Maritime Director sign-off required."
-        )
-
-    # Step D: Execute State Mutation & Dispatch to Port Systems
-    container.status = ContainerStatus.DIVERTED
-    container.destination_port = payload.new_destination_port
-
-    # Dispatch mutation to terminal operating system (TOS) via EDI/API
-    # and publish audit event to Kafka
-    return (
-        f"SUCCESS: Container {container.container_id} diverted to {container.destination_port}. "
-        f"State updated to {container.status}. Reroute cost ${payload.estimated_diversion_cost} booked."
-    )
-```
+| Execution Stage | Architecture Component | Enforced Operational Invariant |
+| :--- | :--- | :--- |
+| **1. Request Payload Contract** | `RerouteContainerPayload` | **Parameter Validation:** Validates container ID format, uppercase UN/LOCODE port identifier, operational reason code, and positive estimated rerouting cost. |
+| **2. Live State Hydration** | Entity Domain Store (CDC Cache) | Hydrates container state (`CargoContainer`), vessel identifier, destination port, hazardous material status, and daily demurrage costs from memory in microseconds. |
+| **3. Finite State Machine Gate** | Lifecycle FSM Guard | **State Purity:** Container status must be strictly `IN_TRANSIT`. If container is in `HELD_CUSTOMS`, `RELEASED`, or `DELIVERED`, execution is immediately aborted. |
+| **4. Capital Allocation Invariant** | Economic Ceiling Enforcement | **Autonomous Ceiling:** Maximum autonomous diversion cost ceiling is capped at $25,000 USD. Costs exceeding threshold require mandatory human Maritime Director sign-off. |
 
 ### The Architectural Beauty of this Model
 

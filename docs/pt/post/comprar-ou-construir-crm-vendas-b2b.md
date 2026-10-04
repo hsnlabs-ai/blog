@@ -172,52 +172,17 @@ flowchart TD
     E --> G["Sistemas Corporativos<br>ERP SAP, Totvs e Assinaturas"]
 ```
 
-### Contrato de Ferramenta em JSON Schema
-Abaixo está a definição estrita de esquema utilizada por agentes para atualizar o estágio de negociação comercial sem intervenção de formulários visuais:
+### Contrato Operacional de Ferramenta: Avanço de Estágio
 
-```json
-{
-  "name": "atualizar_estagio_negociacao",
-  "description": "Avança o estágio comercial de uma conta mediante verificação de evidências factuais obrigatórias",
-  "parameters": {
-    "type": "object",
-    "properties": {
-      "codigo_conta": {
-        "type": "string",
-        "description": "Identificador único da conta corporativa no cadastro interno"
-      },
-      "cnpj_cliente": {
-        "type": "string",
-        "description": "Registro fiscal válido verificado contra bases da Receita Federal"
-      },
-      "novo_estagio": {
-        "type": "string",
-        "enum": [
-          "diagnostico_realizado",
-          "proposta_aprovada",
-          "alinhamento_juridico",
-          "contrato_assinado"
-        ]
-      },
-      "valor_anual_fechado": {
-        "type": "number",
-        "description": "Valor monetário calculado conforme catálogo de preços e condições registradas"
-      },
-      "hash_evidencia_documental": {
-        "type": "string",
-        "description": "Hash criptográfico SHA256 do arquivo de minuta assinado ou da ata de reunião"
-      }
-    },
-    "required": [
-      "codigo_conta",
-      "cnpj_cliente",
-      "novo_estagio",
-      "valor_anual_fechado",
-      "hash_evidencia_documental"
-    ]
-  }
-}
-```
+Em vez de conceder aos agentes permissão irrestrita de gravação no banco de dados, todas as mutações são governadas por contratos rígidos de ferramentas. Para avançar um negócio no funil sem intervenção de telas, o agente precisa atender a invariantes operacionais determinísticos:
+
+| Parâmetro do Contrato | Tipo | Invariante de Validação | Finalidade de Negócio |
+| :--- | :--- | :--- | :--- |
+| `codigo_conta` | Texto | Identificador corporativo ativo no cadastro | Vincula a alteração à conta master auditada. |
+| `cnpj_cliente` | Texto | Registro fiscal válido e ativo na Receita Federal | Impede a criação de registros ou entidades fantasmas. |
+| `novo_estagio` | Enum | Restrito a `diagnostico_realizado`, `proposta_aprovada`, `alinhamento_juridico`, `contrato_assinado` | Garante transições estritas em máquina de estados finitos. |
+| `valor_anual_fechado` | Numérico | Reconciliado com a tabela de preços oficial | Bloqueia descontos alucinados ou métricas de pipeline infladas. |
+| `hash_evidencia_documental` | SHA-256 | Hash criptográfico do documento assinado ou ata | Exige comprovação documental auditável antes da mutação. |
 
 ---
 

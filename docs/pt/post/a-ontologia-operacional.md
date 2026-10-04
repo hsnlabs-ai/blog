@@ -67,43 +67,16 @@ flowchart TD
 
 ## Contrato de Ação Operacional Governamental
 
-Abaixo exemplificamos a definição formal de uma ferramenta corporativa exposta ao agente para reencaminhamento logístico de cargas portuárias:
+## Contrato Operacional de Ação via Model Context Protocol
 
-```json
-{
-  "name": "reencaminhar_container_porto",
-  "description": "Executa alteracao de rota de container no sistema portuario",
-  "parameters": {
-    "type": "object",
-    "properties": {
-      "container_id": {
-        "type": "string",
-        "pattern": "^CONT-[0-9]{6}$"
-      },
-      "porto_destino_novo": {
-        "type": "string",
-        "enum": [
-          "SANTOS",
-          "PARANAGUA",
-          "ITAJAI"
-        ]
-      },
-      "custo_desvio_estimado": {
-        "type": "number",
-        "maximum": 50000.00
-      },
-      "aprovador_humano": {
-        "type": "string"
-      }
-    },
-    "required": [
-      "container_id",
-      "porto_destino_novo",
-      "custo_desvio_estimado"
-    ]
-  }
-}
-```
+Em uma ontologia operacional de logística portuária, agentes autônomos recebem capacidades de execução governadas por contratos rígidos de ferramentas denominado reencaminhar_container_porto:
+
+| Parâmetro da Ação | Tipo e Restrição | Invariante de Segurança e Regra Operacional |
+| :--- | :--- | :--- |
+| `container_id` | Padrão `^CONT-[0-9]{6}$` | Identificador padronizado do container ativo. |
+| `porto_destino_novo` | Enum SANTOS, PARANAGUA ou ITAJAI | Restrito a portos homologados com berço disponível. |
+| `custo_desvio_estimado` | Numérico teto de 50 mil reais | **Teto de Autonomia:** Desvios com custo acima de R$ 50.000 exigem aprovação manual de alçada. |
+| `aprovador_humano` | Identificador auditável | Assinatura de auditoria quando houver intervenção humana na alçada. |
 
 ---
 

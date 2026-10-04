@@ -196,7 +196,7 @@
                 <a href="../buy-versus-build-b2b-enterprise-crm/">Buy versus Build: B2B Enterprise CRM, Twenty, and Agentic Stacks</a>
                 
                 <div class="blog-sidebar-post-meta">
-                    <span class="blog-sidebar-date" data-date="2026-09-28">5 days ago</span>
+                    <span class="blog-sidebar-date" data-date="2026-09-28">6 days ago</span>
                 </div>
                 
             </li>
@@ -205,7 +205,7 @@
                 <a href="../cleveland-clinic-case-study-operational-agents/">Case Study: How Cleveland Clinic Scaled Patient Flow Across 6,600 Hospital Beds</a>
                 
                 <div class="blog-sidebar-post-meta">
-                    <span class="blog-sidebar-date" data-date="2026-09-28">5 days ago</span>
+                    <span class="blog-sidebar-date" data-date="2026-09-28">6 days ago</span>
                 </div>
                 
             </li>
@@ -214,7 +214,7 @@
                 <a href="../bpo-replacement-matrix/">The BPO Replacement Matrix: Operational and Financial Impact of Production Agents</a>
                 
                 <div class="blog-sidebar-post-meta">
-                    <span class="blog-sidebar-date" data-date="2026-09-27">6 days ago</span>
+                    <span class="blog-sidebar-date" data-date="2026-09-27">7 days ago</span>
                 </div>
                 
             </li>
@@ -223,7 +223,7 @@
                 <a href="../how-to-build-an-enterprise-ontology-from-scratch/">How to Build an Enterprise Ontology from Scratch: The Complete Architectural Blueprint</a>
                 
                 <div class="blog-sidebar-post-meta">
-                    <span class="blog-sidebar-date" data-date="2026-09-27">6 days ago</span>
+                    <span class="blog-sidebar-date" data-date="2026-09-27">7 days ago</span>
                 </div>
                 
             </li>
@@ -232,7 +232,7 @@
                 <a href="../ontology-vs-database-schema/">Ontology vs. Database Schema: Why Relational Tables and Vector Stores Fall Short for AI</a>
                 
                 <div class="blog-sidebar-post-meta">
-                    <span class="blog-sidebar-date" data-date="2026-09-27">6 days ago</span>
+                    <span class="blog-sidebar-date" data-date="2026-09-27">7 days ago</span>
                 </div>
                 
             </li>
@@ -416,7 +416,7 @@
         
         <p class="page-dates">
             Created on 2026-08-26
-             — updated on October 3, 2026
+             — updated on October 4, 2026
         </p>
         
         <hr class="page-dates-divider">
@@ -438,6 +438,11 @@
 <p>The biggest bottleneck preventing enterprise agents from shipping to production is not model capability. It is the security perimeter.</p>
 <p>A few months ago, I watched a software agency pitch an autonomous customer service agent to a Tier-1 financial institution. When the Chief Information Security Officer asked how the agent would update customer balances, the agency lead proudly announced that their LangChain agent had direct PostgreSQL write credentials.</p>
 <p>The CISO almost terminated the meeting on the spot.</p>
+<div style="display: flex; align-items: center; gap: 14px; margin: 20px 0; padding: 14px 18px; background: #0E1017; border: 1px solid #222736;">
+  <img src="../../assets/stack/langchain-oss-lockup-dark.svg" alt="LangChain OSS" style="height: 28px; width: auto;" loading="lazy">
+  <span style="font-size: 0.85rem; color: #94A3B8; font-family: 'Inter', sans-serif;">Modular data contracts and LCEL runnables isolated from core database write credentials.</span>
+</div>
+
 <p>Handing root database connection strings to a probabilistic neural network is gross engineering negligence. If an autonomous system can execute direct SQL queries against a live enterprise database, a single indirect prompt injection or hallucinated parameter can wipe out customer records or exfiltrate sensitive corporate secrets.</p>
 <h2 id="the-lethal-vulnerabilities-of-direct-agent-integrations">The Lethal Vulnerabilities of Direct Agent Integrations</h2>
 <p>Standard open-source frameworks encourage developers to connect models directly to enterprise systems via broad API keys. In enterprise production, this approach creates three critical vulnerabilities:</p>

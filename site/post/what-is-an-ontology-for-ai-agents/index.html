@@ -196,7 +196,7 @@
                 <a href="../buy-versus-build-b2b-enterprise-crm/">Buy versus Build: B2B Enterprise CRM, Twenty, and Agentic Stacks</a>
                 
                 <div class="blog-sidebar-post-meta">
-                    <span class="blog-sidebar-date" data-date="2026-09-28">5 days ago</span>
+                    <span class="blog-sidebar-date" data-date="2026-09-28">6 days ago</span>
                 </div>
                 
             </li>
@@ -205,7 +205,7 @@
                 <a href="../cleveland-clinic-case-study-operational-agents/">Case Study: How Cleveland Clinic Scaled Patient Flow Across 6,600 Hospital Beds</a>
                 
                 <div class="blog-sidebar-post-meta">
-                    <span class="blog-sidebar-date" data-date="2026-09-28">5 days ago</span>
+                    <span class="blog-sidebar-date" data-date="2026-09-28">6 days ago</span>
                 </div>
                 
             </li>
@@ -214,7 +214,7 @@
                 <a href="../bpo-replacement-matrix/">The BPO Replacement Matrix: Operational and Financial Impact of Production Agents</a>
                 
                 <div class="blog-sidebar-post-meta">
-                    <span class="blog-sidebar-date" data-date="2026-09-27">6 days ago</span>
+                    <span class="blog-sidebar-date" data-date="2026-09-27">7 days ago</span>
                 </div>
                 
             </li>
@@ -223,7 +223,7 @@
                 <a href="../how-to-build-an-enterprise-ontology-from-scratch/">How to Build an Enterprise Ontology from Scratch: The Complete Architectural Blueprint</a>
                 
                 <div class="blog-sidebar-post-meta">
-                    <span class="blog-sidebar-date" data-date="2026-09-27">6 days ago</span>
+                    <span class="blog-sidebar-date" data-date="2026-09-27">7 days ago</span>
                 </div>
                 
             </li>
@@ -232,7 +232,7 @@
                 <a href="../ontology-vs-database-schema/">Ontology vs. Database Schema: Why Relational Tables and Vector Stores Fall Short for AI</a>
                 
                 <div class="blog-sidebar-post-meta">
-                    <span class="blog-sidebar-date" data-date="2026-09-27">6 days ago</span>
+                    <span class="blog-sidebar-date" data-date="2026-09-27">7 days ago</span>
                 </div>
                 
             </li>
@@ -564,97 +564,39 @@
 <li><strong>Postconditions:</strong> What assertions must pass after execution before the transaction is committed?</li>
 </ul>
 <hr />
-<h2 id="code-implementation-an-executable-python-ontology">Code Implementation: An Executable Python Ontology</h2>
-<p>Let us examine how this looks in production code. </p>
-<p>The following snippet demonstrates an operational ontology for an autonomous Accounts Payable reconciliation agent. Notice that we do not rely on prompt engineering or conversational guidelines to enforce compliance. We enforce compliance at the Python compiler and runtime validation layer.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">decimal</span><span class="w"> </span><span class="kn">import</span> <span class="n">Decimal</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">enum</span><span class="w"> </span><span class="kn">import</span> <span class="n">Enum</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">Optional</span><span class="p">,</span> <span class="n">List</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="kn">from</span><span class="w"> </span><span class="nn">pydantic</span><span class="w"> </span><span class="kn">import</span> <span class="n">BaseModel</span><span class="p">,</span> <span class="n">Field</span><span class="p">,</span> <span class="n">model_validator</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="k">class</span><span class="w"> </span><span class="nc">InvoiceStatus</span><span class="p">(</span><span class="nb">str</span><span class="p">,</span> <span class="n">Enum</span><span class="p">):</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    <span class="n">DRAFT</span> <span class="o">=</span> <span class="s2">"draft"</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    <span class="n">SUBMITTED</span> <span class="o">=</span> <span class="s2">"submitted"</span>
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    <span class="n">MATCHED</span> <span class="o">=</span> <span class="s2">"matched"</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    <span class="n">DISPUTED</span> <span class="o">=</span> <span class="s2">"disputed"</span>
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>    <span class="n">APPROVED</span> <span class="o">=</span> <span class="s2">"approved"</span>
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>    <span class="n">PAID</span> <span class="o">=</span> <span class="s2">"paid"</span>
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>
-<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>
-<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="k">class</span><span class="w"> </span><span class="nc">LineItem</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
-<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>    <span class="n">item_id</span><span class="p">:</span> <span class="nb">str</span>
-<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>    <span class="n">sku</span><span class="p">:</span> <span class="nb">str</span>
-<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>    <span class="n">quantity</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="n">gt</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">"Quantity must be strictly positive"</span><span class="p">)</span>
-<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>    <span class="n">unit_price</span><span class="p">:</span> <span class="n">Decimal</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="n">gt</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">"Unit price must be positive"</span><span class="p">)</span>
-<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>    <span class="n">total_amount</span><span class="p">:</span> <span class="n">Decimal</span>
-<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>
-<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>    <span class="nd">@model_validator</span><span class="p">(</span><span class="n">mode</span><span class="o">=</span><span class="s2">"after"</span><span class="p">)</span>
-<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">verify_arithmetic</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">"LineItem"</span><span class="p">:</span>
-<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>        <span class="n">expected</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">quantity</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">unit_price</span>
-<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">total_amount</span> <span class="o">!=</span> <span class="n">expected</span><span class="p">:</span>
-<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
-<a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>                <span class="sa">f</span><span class="s2">"Arithmetic mismatch on SKU </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">sku</span><span class="si">}</span><span class="s2">: "</span>
-<a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a>                <span class="sa">f</span><span class="s2">"quantity (</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">quantity</span><span class="si">}</span><span class="s2">) * unit_price (</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">unit_price</span><span class="si">}</span><span class="s2">) != </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">total_amount</span><span class="si">}</span><span class="s2">"</span>
-<a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a>            <span class="p">)</span>
-<a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a>        <span class="k">return</span> <span class="bp">self</span>
-<a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a>
-<a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a>
-<a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a><span class="k">class</span><span class="w"> </span><span class="nc">CorporateInvoice</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
-<a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a>    <span class="n">invoice_id</span><span class="p">:</span> <span class="nb">str</span>
-<a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a>    <span class="n">vendor_id</span><span class="p">:</span> <span class="nb">str</span>
-<a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a>    <span class="n">purchase_order_id</span><span class="p">:</span> <span class="nb">str</span>
-<a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a>    <span class="n">status</span><span class="p">:</span> <span class="n">InvoiceStatus</span>
-<a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a>    <span class="n">line_items</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">LineItem</span><span class="p">]</span>
-<a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a>    <span class="n">tax_amount</span><span class="p">:</span> <span class="n">Decimal</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="n">ge</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
-<a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a>    <span class="n">net_amount</span><span class="p">:</span> <span class="n">Decimal</span>
-<a id="__codelineno-0-42" name="__codelineno-0-42" href="#__codelineno-0-42"></a>    <span class="n">gross_amount</span><span class="p">:</span> <span class="n">Decimal</span>
-<a id="__codelineno-0-43" name="__codelineno-0-43" href="#__codelineno-0-43"></a>    <span class="n">approved_by</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
-<a id="__codelineno-0-44" name="__codelineno-0-44" href="#__codelineno-0-44"></a>
-<a id="__codelineno-0-45" name="__codelineno-0-45" href="#__codelineno-0-45"></a>    <span class="nd">@model_validator</span><span class="p">(</span><span class="n">mode</span><span class="o">=</span><span class="s2">"after"</span><span class="p">)</span>
-<a id="__codelineno-0-46" name="__codelineno-0-46" href="#__codelineno-0-46"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">verify_invoice_invariants</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">"CorporateInvoice"</span><span class="p">:</span>
-<a id="__codelineno-0-47" name="__codelineno-0-47" href="#__codelineno-0-47"></a>        <span class="n">calculated_net</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">item</span><span class="o">.</span><span class="n">total_amount</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">line_items</span><span class="p">)</span>
-<a id="__codelineno-0-48" name="__codelineno-0-48" href="#__codelineno-0-48"></a>        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">net_amount</span> <span class="o">!=</span> <span class="n">calculated_net</span><span class="p">:</span>
-<a id="__codelineno-0-49" name="__codelineno-0-49" href="#__codelineno-0-49"></a>            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Net amount mismatch: reported </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">net_amount</span><span class="si">}</span><span class="s2">, calculated </span><span class="si">{</span><span class="n">calculated_net</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
-<a id="__codelineno-0-50" name="__codelineno-0-50" href="#__codelineno-0-50"></a>
-<a id="__codelineno-0-51" name="__codelineno-0-51" href="#__codelineno-0-51"></a>        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">gross_amount</span> <span class="o">!=</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">net_amount</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">tax_amount</span><span class="p">):</span>
-<a id="__codelineno-0-52" name="__codelineno-0-52" href="#__codelineno-0-52"></a>            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">"Gross amount does not equal net amount plus tax."</span><span class="p">)</span>
-<a id="__codelineno-0-53" name="__codelineno-0-53" href="#__codelineno-0-53"></a>
-<a id="__codelineno-0-54" name="__codelineno-0-54" href="#__codelineno-0-54"></a>        <span class="k">return</span> <span class="bp">self</span>
-<a id="__codelineno-0-55" name="__codelineno-0-55" href="#__codelineno-0-55"></a>
-<a id="__codelineno-0-56" name="__codelineno-0-56" href="#__codelineno-0-56"></a>
-<a id="__codelineno-0-57" name="__codelineno-0-57" href="#__codelineno-0-57"></a><span class="c1"># Operational Action Contracts (The Verbs)</span>
-<a id="__codelineno-0-58" name="__codelineno-0-58" href="#__codelineno-0-58"></a><span class="k">class</span><span class="w"> </span><span class="nc">ApproveInvoiceAction</span><span class="p">:</span>
-<a id="__codelineno-0-59" name="__codelineno-0-59" href="#__codelineno-0-59"></a><span class="w">    </span><span class="sd">"""</span>
-<a id="__codelineno-0-60" name="__codelineno-0-60" href="#__codelineno-0-60"></a><span class="sd">    Executable action contract inside the Operational Ontology.</span>
-<a id="__codelineno-0-61" name="__codelineno-0-61" href="#__codelineno-0-61"></a><span class="sd">    Enforces deterministic state transitions and authorization thresholds.</span>
-<a id="__codelineno-0-62" name="__codelineno-0-62" href="#__codelineno-0-62"></a><span class="sd">    """</span>
-<a id="__codelineno-0-63" name="__codelineno-0-63" href="#__codelineno-0-63"></a>    <span class="n">MAX_AUTONOMOUS_LIMIT</span> <span class="o">=</span> <span class="n">Decimal</span><span class="p">(</span><span class="s2">"10000.00"</span><span class="p">)</span>
-<a id="__codelineno-0-64" name="__codelineno-0-64" href="#__codelineno-0-64"></a>
-<a id="__codelineno-0-65" name="__codelineno-0-65" href="#__codelineno-0-65"></a>    <span class="nd">@classmethod</span>
-<a id="__codelineno-0-66" name="__codelineno-0-66" href="#__codelineno-0-66"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">execute</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">invoice</span><span class="p">:</span> <span class="n">CorporateInvoice</span><span class="p">,</span> <span class="n">operator_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">CorporateInvoice</span><span class="p">:</span>
-<a id="__codelineno-0-67" name="__codelineno-0-67" href="#__codelineno-0-67"></a>        <span class="c1"># Precondition 1: State validation via Finite State Machine</span>
-<a id="__codelineno-0-68" name="__codelineno-0-68" href="#__codelineno-0-68"></a>        <span class="k">if</span> <span class="n">invoice</span><span class="o">.</span><span class="n">status</span> <span class="o">!=</span> <span class="n">InvoiceStatus</span><span class="o">.</span><span class="n">MATCHED</span><span class="p">:</span>
-<a id="__codelineno-0-69" name="__codelineno-0-69" href="#__codelineno-0-69"></a>            <span class="k">raise</span> <span class="ne">PermissionError</span><span class="p">(</span>
-<a id="__codelineno-0-70" name="__codelineno-0-70" href="#__codelineno-0-70"></a>                <span class="sa">f</span><span class="s2">"Action Rejected: Cannot approve invoice in '</span><span class="si">{</span><span class="n">invoice</span><span class="o">.</span><span class="n">status</span><span class="si">}</span><span class="s2">' state. "</span>
-<a id="__codelineno-0-71" name="__codelineno-0-71" href="#__codelineno-0-71"></a>                <span class="s2">"Invoice must be in 'MATCHED' state."</span>
-<a id="__codelineno-0-72" name="__codelineno-0-72" href="#__codelineno-0-72"></a>            <span class="p">)</span>
-<a id="__codelineno-0-73" name="__codelineno-0-73" href="#__codelineno-0-73"></a>
-<a id="__codelineno-0-74" name="__codelineno-0-74" href="#__codelineno-0-74"></a>        <span class="c1"># Precondition 2: Balance Sheet Invariant Check</span>
-<a id="__codelineno-0-75" name="__codelineno-0-75" href="#__codelineno-0-75"></a>        <span class="k">if</span> <span class="n">invoice</span><span class="o">.</span><span class="n">gross_amount</span> <span class="o">&gt;</span> <span class="bp">cls</span><span class="o">.</span><span class="n">MAX_AUTONOMOUS_LIMIT</span><span class="p">:</span>
-<a id="__codelineno-0-76" name="__codelineno-0-76" href="#__codelineno-0-76"></a>            <span class="k">raise</span> <span class="ne">PermissionError</span><span class="p">(</span>
-<a id="__codelineno-0-77" name="__codelineno-0-77" href="#__codelineno-0-77"></a>                <span class="sa">f</span><span class="s2">"Action Rejected: Invoice total $</span><span class="si">{</span><span class="n">invoice</span><span class="o">.</span><span class="n">gross_amount</span><span class="si">}</span><span class="s2"> exceeds "</span>
-<a id="__codelineno-0-78" name="__codelineno-0-78" href="#__codelineno-0-78"></a>                <span class="sa">f</span><span class="s2">"autonomous execution limit of $</span><span class="si">{</span><span class="bp">cls</span><span class="o">.</span><span class="n">MAX_AUTONOMOUS_LIMIT</span><span class="si">}</span><span class="s2">. "</span>
-<a id="__codelineno-0-79" name="__codelineno-0-79" href="#__codelineno-0-79"></a>                <span class="s2">"Escalation to human executive required."</span>
-<a id="__codelineno-0-80" name="__codelineno-0-80" href="#__codelineno-0-80"></a>            <span class="p">)</span>
-<a id="__codelineno-0-81" name="__codelineno-0-81" href="#__codelineno-0-81"></a>
-<a id="__codelineno-0-82" name="__codelineno-0-82" href="#__codelineno-0-82"></a>        <span class="c1"># Deterministic State Transition</span>
-<a id="__codelineno-0-83" name="__codelineno-0-83" href="#__codelineno-0-83"></a>        <span class="n">invoice</span><span class="o">.</span><span class="n">status</span> <span class="o">=</span> <span class="n">InvoiceStatus</span><span class="o">.</span><span class="n">APPROVED</span>
-<a id="__codelineno-0-84" name="__codelineno-0-84" href="#__codelineno-0-84"></a>        <span class="n">invoice</span><span class="o">.</span><span class="n">approved_by</span> <span class="o">=</span> <span class="n">operator_id</span>
-<a id="__codelineno-0-85" name="__codelineno-0-85" href="#__codelineno-0-85"></a>
-<a id="__codelineno-0-86" name="__codelineno-0-86" href="#__codelineno-0-86"></a>        <span class="c1"># Here: Trigger transactional commit to ERP ledger (e.g. SAP via RFC/API)</span>
-<a id="__codelineno-0-87" name="__codelineno-0-87" href="#__codelineno-0-87"></a>        <span class="k">return</span> <span class="n">invoice</span>
-</code></pre></div>
+<h2 id="architectural-specification-an-executable-operational-ontology">Architectural Specification: An Executable Operational Ontology</h2>
+<p>In an enterprise operational ontology for autonomous Accounts Payable reconciliation, compliance is enforced at the data contract and validation layer rather than through conversational prompting or guidelines:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Architectural Component</th>
+<th style="text-align: left;">Schema Definition</th>
+<th style="text-align: left;">Enforced Invariant &amp; Boundary Rule</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong><code>LineItem</code> Entity</strong></td>
+<td style="text-align: left;"><code>item_id</code>, <code>sku</code>, <code>quantity</code> (&gt; 0), <code>unit_price</code> (&gt; 0), <code>total_amount</code></td>
+<td style="text-align: left;"><strong>Arithmetic Integrity:</strong> <code>total_amount == quantity * unit_price</code>. Discrepancies raise immediate compiler-level validation rejections.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><code>CorporateInvoice</code> Entity</strong></td>
+<td style="text-align: left;"><code>invoice_id</code>, <code>vendor_id</code>, <code>purchase_order_id</code>, <code>status</code>, <code>line_items[]</code>, <code>tax_amount</code>, <code>net_amount</code>, <code>gross_amount</code></td>
+<td style="text-align: left;"><strong>Subtotal Invariant:</strong> <code>net_amount == sum(lines.total_amount)</code>.<br><strong>Gross Integrity:</strong> <code>gross_amount == net_amount + tax_amount</code>.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Lifecycle State Machine</strong></td>
+<td style="text-align: left;">Strict progression enum: <code>DRAFT</code> &rarr; <code>SUBMITTED</code> &rarr; <code>MATCHED</code> &rarr; <code>APPROVED</code> &rarr; <code>PAID</code> (or <code>DISPUTED</code>)</td>
+<td style="text-align: left;"><strong>Deterministic Sequencing:</strong> Actions can only execute against entities occupying exact valid lifecycle states.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><code>ApproveInvoiceAction</code></strong></td>
+<td style="text-align: left;">Target invoice, operator audit identifier, maximum autonomous limit ($10,000 USD)</td>
+<td style="text-align: left;"><strong>Precondition 1:</strong> Invoice status must strictly equal <code>MATCHED</code>.<br><strong>Precondition 2:</strong> <code>gross_amount &lt;= $10,000.00</code>. Amounts above limit trigger mandatory human escalation.<br><strong>Postcondition:</strong> Sets status to <code>APPROVED</code>, records operator ID, and executes transactional ERP commit.</td>
+</tr>
+</tbody>
+</table>
 <h3 id="why-this-architecture-cannot-fail-in-production">Why This Architecture Cannot Fail in Production</h3>
 <p>Look closely at what happens when an autonomous agent interacts with this system:</p>
 <ol>

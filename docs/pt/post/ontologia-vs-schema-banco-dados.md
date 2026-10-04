@@ -39,19 +39,18 @@ flowchart TD
 
 ## O Problema dos Schemas Legados Crípticos
 
-Sistemas corporativos rodam sobre plataformas legadas como SAP ECC, SAP S/4HANA ou Totvs Protheus. Essas bases possuem colunas indecifráveis para um modelo de linguagem sem contexto operacional formal:
+Sistemas corporativos rodam sobre plataformas legadas como SAP ECC, SAP S/4HANA ou Totvs Protheus. Essas bases possuem colunas indecifráveis para um modelo de linguagem sem contexto operacional formal. Na tabela `BSEG` do SAP, Segmento de Documento Contabil, os campos são siglas opacas:
 
-```yaml
-tabela_sap_bseg:
-  mandt: VARCHAR_3
-  bukrs: VARCHAR_4
-  belnr: VARCHAR_10
-  gjahr: NUMERIC_4
-  buzei: NUMERIC_3
-  shkzg: VARCHAR_1
-  dmbtr: NUMERIC_13_2
-  koart: VARCHAR_1
-```
+| Coluna Legada SAP | Tipo de Dado | Significado de Negócio |
+| :--- | :--- | :--- |
+| `MANDT` | `VARCHAR 3` | Mandante / Identificador da empresa |
+| `BUKRS` | `VARCHAR 4` | Código da empresa |
+| `BELNR` | `VARCHAR 10` | Número do documento contábil |
+| `GJAHR` | `NUMERIC 4` | Exercício fiscal / Ano |
+| `BUZEI` | `NUMERIC 3` | Linha do item no lançamento |
+| `SHKZG` | `VARCHAR 1` | Indicador de Débito/Crédito S para debito e H para credito |
+| `DMBTR` | `NUMERIC 13 2` | Montante em moeda local |
+| `KOART` | `VARCHAR 1` | Tipo de conta D para Cliente, K para Fornecedor, S para Razao |
 
 Um agente probabilístico inspecionando essa tabela não sabe o significado dessas siglas na legislação fiscal. Enviar dicionários gigantescos de dados esgota a janela de contexto e eleva as taxas de alucinação.
 
@@ -59,30 +58,15 @@ Um agente probabilístico inspecionando essa tabela não sabe o significado dess
 
 ## Ausência de Invariantes de Negócio nos Schemas Relacionais
 
-Schemas de banco impõem restrições técnicas, mas são cegos para regras dinâmicas de fluxo comercial:
+Schemas de banco impõem restrições técnicas , a exemplo de tipos primitivos e chaves estrangeiras,, mas são cegos para regras dinâmicas de fluxo comercial.
 
-```yaml
-tabela_ordens:
-  ordem_id: UUID_CHAVE_PRIMARIA
-  cliente_id: UUID_REFERENCIA
-  status: TEXT
-  valor_total: NUMERIC
-```
-
-Para o PostgreSQL, alterar o status de pendente diretamente para reembolsado sem passar por pago ou faturado é uma operação totalmente válida. O banco aceita a gravação e a contabilidade e corrompida.
+Por exemplo, em uma tabela de pedidos armazenando `ordem_id`, `cliente_id`, `status` e `valor_total`, para o banco relacional alterar o status de `PENDENTE` diretamente para `REEMBOLSADO` sem passar por `PAGO` ou `FATURADO` é uma operação perfeitamente válida. O banco aceita a gravação e a contabilidade corporativa é corrompida.
 
 ---
 
 ## Risco de Negação de Serviço por Consultas Ilimitadas
 
-Conceder acesso SQL direto para um agente de IA e uma vulnerabilidade operacional grave. O modelo pode gerar consultas desindexadas cruzando milhões de registros:
-
-```sql
-SELECT c.cliente_nome, o.valor_total
-FROM clientes c
-JOIN pedidos o ON c.cliente_id = o.cliente_id
-WHERE o.status = 'PENDENTE'
-```
+Conceder acesso SQL direto para um agente de IA e uma vulnerabilidade operacional grave. O modelo pode gerar consultas desindexadas cruzando milhões de registros—por exemplo, varrendo todo o histórico de pedidos com filtros de texto aberto filtrando por status pendente sem índices adequados.
 
 Consultas desse tipo esgotam buffers de memória e travam a base de dados central em horário de pico.
 
@@ -114,63 +98,29 @@ flowchart TD
 
 ---
 
-## Comparação de Código: Falha do DDL vs Triunfo da Ontologia
+## Comparação Arquitetural: Falha do DDL Relacional vs Blindagem da Ontologia
 
-Considere a seguinte regra corporativa: uma empresa não pode emitir abatimento financeiro se o cliente estiver em disputa jurídica ou se o valor ultrapassar quinze por cento do pedido original.
+Considere a seguinte regra corporativa: *uma empresa não pode emitir abatimento financeiro se o cliente estiver em disputa jurídica ou se o valor ultrapassar quinze por cento do pedido original.*
 
 ### Abordagem Frágil via Tabela Relacional
 
-```yaml
-tabela_memorando_credito:
-  memorando_id: UUID_CHAVE_PRIMARIA
-  ordem_id: UUID_REFERENCIA
-  cliente_id: UUID_REFERENCIA
-  valor: NUMERIC
-  data_criacao: TIMESTAMP
-```
+Em um banco de dados relacional comum, a tabela de memorando de crédito armazena `memorando_id`, `ordem_id`, `cliente_id`, `valor` e `data_criacao`.
 
-O banco relacional aceita qualquer valor numérico inserido pelo agente, permitindo desvios financeiros irreversíveis.
+Se o agente autônomo gerar um comando de inserção direta liberando R$ 45.000 para uma conta com pendência jurídica:
+- O banco aceita a gravação porque os tipos são válidos com UUIDs validos e valor numerico aceito.
+- A empresa sofre o prejuízo porque o banco não tem capacidade de avaliar o status judicial do cliente nem de calcular limites percentuais cruzados.
 
 ### Abordagem Robusta via Ontologia Operacional
 
-Na ontologia operacional, o agente nunca recebe permissão direta de inserção no banco. Ele invoca uma ação com contrato estrito:
+Na ontologia operacional, o agente nunca recebe permissão direta de inserção no banco. Ele invoca uma ação com contrato estrito denominada emitir_memorando_credito:
 
-```json
-{
-  "name": "emitir_memorando_credito",
-  "description": "Executa compensacao de credito vinculada a pedido comercial",
-  "parameters": {
-    "type": "object",
-    "properties": {
-      "pedido_id": {
-        "type": "string"
-      },
-      "cliente_id": {
-        "type": "string"
-      },
-      "valor_pedido_original": {
-        "type": "number",
-        "minimum": 0.01
-      },
-      "valor_credito_solicitado": {
-        "type": "number",
-        "minimum": 0.01
-      },
-      "status_juridico": {
-        "type": "string",
-        "enum": ["REGULAR", "DISPUTA_JUDICIAL"]
-      }
-    },
-    "required": [
-      "pedido_id",
-      "cliente_id",
-      "valor_pedido_original",
-      "valor_credito_solicitado",
-      "status_juridico"
-    ]
-  }
-}
-```
+| Parâmetro da Ação | Tipo e Restrição | Invariante de Segurança Avaliado |
+| :--- | :--- | :--- |
+| `pedido_id` | Texto / UUID | Deve mapear para pedido comercial válido e faturado. |
+| `cliente_id` | Texto / UUID | Vinculado ao cadastro mestre de compliance do cliente. |
+| `valor_pedido_original` | Numérico decimal maior que zero | Valor extraído do pedido original liquidado. |
+| `valor_credito_solicitado` | Numérico decimal maior que zero | **Invariante de Teto:** Não pode ultrapassar 15% do valor original. Valores superiores são abortados na hora. |
+| `status_juridico` | Enum REGULAR ou DISPUTA_JUDICIAL | **Bloqueio Legal Estatutário:** Se estiver em `DISPUTA_JUDICIAL`, qualquer concessão financeira e sumariamente bloqueada. |
 
 ---
 

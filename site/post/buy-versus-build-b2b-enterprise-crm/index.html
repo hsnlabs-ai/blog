@@ -196,7 +196,7 @@
                 <a href="./">Buy versus Build: B2B Enterprise CRM, Twenty, and Agentic Stacks</a>
                 
                 <div class="blog-sidebar-post-meta">
-                    <span class="blog-sidebar-date" data-date="2026-09-28">5 days ago</span>
+                    <span class="blog-sidebar-date" data-date="2026-09-28">6 days ago</span>
                 </div>
                 
             </li>
@@ -205,7 +205,7 @@
                 <a href="../cleveland-clinic-case-study-operational-agents/">Case Study: How Cleveland Clinic Scaled Patient Flow Across 6,600 Hospital Beds</a>
                 
                 <div class="blog-sidebar-post-meta">
-                    <span class="blog-sidebar-date" data-date="2026-09-28">5 days ago</span>
+                    <span class="blog-sidebar-date" data-date="2026-09-28">6 days ago</span>
                 </div>
                 
             </li>
@@ -214,7 +214,7 @@
                 <a href="../bpo-replacement-matrix/">The BPO Replacement Matrix: Operational and Financial Impact of Production Agents</a>
                 
                 <div class="blog-sidebar-post-meta">
-                    <span class="blog-sidebar-date" data-date="2026-09-27">6 days ago</span>
+                    <span class="blog-sidebar-date" data-date="2026-09-27">7 days ago</span>
                 </div>
                 
             </li>
@@ -223,7 +223,7 @@
                 <a href="../how-to-build-an-enterprise-ontology-from-scratch/">How to Build an Enterprise Ontology from Scratch: The Complete Architectural Blueprint</a>
                 
                 <div class="blog-sidebar-post-meta">
-                    <span class="blog-sidebar-date" data-date="2026-09-27">6 days ago</span>
+                    <span class="blog-sidebar-date" data-date="2026-09-27">7 days ago</span>
                 </div>
                 
             </li>
@@ -232,7 +232,7 @@
                 <a href="../ontology-vs-database-schema/">Ontology vs. Database Schema: Why Relational Tables and Vector Stores Fall Short for AI</a>
                 
                 <div class="blog-sidebar-post-meta">
-                    <span class="blog-sidebar-date" data-date="2026-09-27">6 days ago</span>
+                    <span class="blog-sidebar-date" data-date="2026-09-27">7 days ago</span>
                 </div>
                 
             </li>
@@ -568,50 +568,50 @@
     D --&gt; E["Model Context Protocol Server and Immutable Audit Log&lt;br&gt;Closed mutating methods and human-in-the-loop gates"]
     E --&gt; F["Local Transational Store&lt;br&gt;PostgreSQL or SQLite"]
     E --&gt; G["Enterprise Core Systems&lt;br&gt;SAP, Totvs ERP and Billing Systems"]</code></pre>
-<h3 id="protocol-tool-contract-in-json-schema">Protocol Tool Contract in JSON Schema</h3>
-<p>Below is the strict JSON Schema definition utilized by autonomous agents to progress deal stages without human form intervention:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">{</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"advance_deal_stage"</span><span class="p">,</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Progresses enterprise deal stage upon verification of required documentary evidence"</span><span class="p">,</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="nt">"parameters"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"object"</span><span class="p">,</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span><span class="nt">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">      </span><span class="nt">"account_id"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">        </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">        </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unique corporate account identifier within internal systems"</span>
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">      </span><span class="p">},</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">      </span><span class="nt">"tax_registration_id"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">        </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span>
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">        </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Verified corporate tax identifier validated against government registry"</span>
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">      </span><span class="p">},</span>
-<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">      </span><span class="nt">"target_stage"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">        </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span>
-<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">        </span><span class="nt">"enum"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="w">          </span><span class="s2">"discovery_completed"</span><span class="p">,</span>
-<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">          </span><span class="s2">"proposal_approved"</span><span class="p">,</span>
-<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="w">          </span><span class="s2">"legal_review"</span><span class="p">,</span>
-<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="w">          </span><span class="s2">"contract_signed"</span>
-<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="w">        </span><span class="p">]</span>
-<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="w">      </span><span class="p">},</span>
-<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="w">      </span><span class="nt">"annual_contract_value"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="w">        </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"number"</span><span class="p">,</span>
-<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="w">        </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Contract value calculated against active pricing book and verified terms"</span>
-<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="w">      </span><span class="p">},</span>
-<a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a><span class="w">      </span><span class="nt">"evidence_document_hash"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a><span class="w">        </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span>
-<a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a><span class="w">        </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Cryptographic SHA256 hash of signed agreement or verified meeting minutes"</span>
-<a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a><span class="w">      </span><span class="p">}</span>
-<a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a><span class="w">    </span><span class="p">},</span>
-<a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a><span class="w">    </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a><span class="w">      </span><span class="s2">"account_id"</span><span class="p">,</span>
-<a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a><span class="w">      </span><span class="s2">"tax_registration_id"</span><span class="p">,</span>
-<a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a><span class="w">      </span><span class="s2">"target_stage"</span><span class="p">,</span>
-<a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a><span class="w">      </span><span class="s2">"annual_contract_value"</span><span class="p">,</span>
-<a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a><span class="w">      </span><span class="s2">"evidence_document_hash"</span>
-<a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a><span class="w">    </span><span class="p">]</span>
-<a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a><span class="w">  </span><span class="p">}</span>
-<a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a><span class="p">}</span>
-</code></pre></div>
+<h3 id="protocol-tool-contract-autonomous-stage-progression">Protocol Tool Contract: Autonomous Stage Progression</h3>
+<p>Rather than granting agents unrestricted database write access, mutations are governed by strict tool contracts. For an autonomous agent to progress an enterprise deal stage without human screen intervention, it must satisfy deterministic operational invariants:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Contract Parameter</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Validation Invariant</th>
+<th style="text-align: left;">Business Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>account_id</code></td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;">Must match active master record</td>
+<td style="text-align: left;">Links mutation to verified enterprise account.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>tax_registration_id</code></td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;">Validated against official corporate registry</td>
+<td style="text-align: left;">Prevents phantom entity creation.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>target_stage</code></td>
+<td style="text-align: left;">Enum</td>
+<td style="text-align: left;">Restricted to <code>discovery_completed</code>, <code>proposal_approved</code>, <code>legal_review</code>, <code>contract_signed</code></td>
+<td style="text-align: left;">Enforces forward-only finite state machine transitions.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>annual_contract_value</code></td>
+<td style="text-align: left;">Numeric</td>
+<td style="text-align: left;">Reconciled against active enterprise pricing book</td>
+<td style="text-align: left;">Bars hallucinatory discounts or inflated quota attribution.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>evidence_document_hash</code></td>
+<td style="text-align: left;">SHA-256</td>
+<td style="text-align: left;">Cryptographic hash of signed agreement or verified transcript</td>
+<td style="text-align: left;">Guarantees auditable documentary proof before pipeline mutation.</td>
+</tr>
+</tbody>
+</table>
 <hr />
 <blockquote>
 <p><strong>[Agentes] x [a Gente]</strong> — Beyond the hype: how agentic engineering multiplies and leverages human labor capacity. Bi-weekly field notes published in Hugo Soares's LinkedIn newsletter with over 1,600 subscribers. <a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7397999984089935872">Follow on LinkedIn ↗</a></p>

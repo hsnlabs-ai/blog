@@ -172,52 +172,17 @@ flowchart TD
     E --> G["Enterprise Core Systems<br>SAP, Totvs ERP and Billing Systems"]
 ```
 
-### Protocol Tool Contract in JSON Schema
-Below is the strict JSON Schema definition utilized by autonomous agents to progress deal stages without human form intervention:
+### Protocol Tool Contract: Autonomous Stage Progression
 
-```json
-{
-  "name": "advance_deal_stage",
-  "description": "Progresses enterprise deal stage upon verification of required documentary evidence",
-  "parameters": {
-    "type": "object",
-    "properties": {
-      "account_id": {
-        "type": "string",
-        "description": "Unique corporate account identifier within internal systems"
-      },
-      "tax_registration_id": {
-        "type": "string",
-        "description": "Verified corporate tax identifier validated against government registry"
-      },
-      "target_stage": {
-        "type": "string",
-        "enum": [
-          "discovery_completed",
-          "proposal_approved",
-          "legal_review",
-          "contract_signed"
-        ]
-      },
-      "annual_contract_value": {
-        "type": "number",
-        "description": "Contract value calculated against active pricing book and verified terms"
-      },
-      "evidence_document_hash": {
-        "type": "string",
-        "description": "Cryptographic SHA256 hash of signed agreement or verified meeting minutes"
-      }
-    },
-    "required": [
-      "account_id",
-      "tax_registration_id",
-      "target_stage",
-      "annual_contract_value",
-      "evidence_document_hash"
-    ]
-  }
-}
-```
+Rather than granting agents unrestricted database write access, mutations are governed by strict tool contracts. For an autonomous agent to progress an enterprise deal stage without human screen intervention, it must satisfy deterministic operational invariants:
+
+| Contract Parameter | Type | Validation Invariant | Business Purpose |
+| :--- | :--- | :--- | :--- |
+| `account_id` | String | Must match active master record | Links mutation to verified enterprise account. |
+| `tax_registration_id` | String | Validated against official corporate registry | Prevents phantom entity creation. |
+| `target_stage` | Enum | Restricted to `discovery_completed`, `proposal_approved`, `legal_review`, `contract_signed` | Enforces forward-only finite state machine transitions. |
+| `annual_contract_value` | Numeric | Reconciled against active enterprise pricing book | Bars hallucinatory discounts or inflated quota attribution. |
+| `evidence_document_hash` | SHA-256 | Cryptographic hash of signed agreement or verified transcript | Guarantees auditable documentary proof before pipeline mutation. |
 
 ---
 

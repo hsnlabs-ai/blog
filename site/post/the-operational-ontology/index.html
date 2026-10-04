@@ -196,7 +196,7 @@
                 <a href="../buy-versus-build-b2b-enterprise-crm/">Buy versus Build: B2B Enterprise CRM, Twenty, and Agentic Stacks</a>
                 
                 <div class="blog-sidebar-post-meta">
-                    <span class="blog-sidebar-date" data-date="2026-09-28">5 days ago</span>
+                    <span class="blog-sidebar-date" data-date="2026-09-28">6 days ago</span>
                 </div>
                 
             </li>
@@ -205,7 +205,7 @@
                 <a href="../cleveland-clinic-case-study-operational-agents/">Case Study: How Cleveland Clinic Scaled Patient Flow Across 6,600 Hospital Beds</a>
                 
                 <div class="blog-sidebar-post-meta">
-                    <span class="blog-sidebar-date" data-date="2026-09-28">5 days ago</span>
+                    <span class="blog-sidebar-date" data-date="2026-09-28">6 days ago</span>
                 </div>
                 
             </li>
@@ -214,7 +214,7 @@
                 <a href="../bpo-replacement-matrix/">The BPO Replacement Matrix: Operational and Financial Impact of Production Agents</a>
                 
                 <div class="blog-sidebar-post-meta">
-                    <span class="blog-sidebar-date" data-date="2026-09-27">6 days ago</span>
+                    <span class="blog-sidebar-date" data-date="2026-09-27">7 days ago</span>
                 </div>
                 
             </li>
@@ -223,7 +223,7 @@
                 <a href="../how-to-build-an-enterprise-ontology-from-scratch/">How to Build an Enterprise Ontology from Scratch: The Complete Architectural Blueprint</a>
                 
                 <div class="blog-sidebar-post-meta">
-                    <span class="blog-sidebar-date" data-date="2026-09-27">6 days ago</span>
+                    <span class="blog-sidebar-date" data-date="2026-09-27">7 days ago</span>
                 </div>
                 
             </li>
@@ -232,7 +232,7 @@
                 <a href="../ontology-vs-database-schema/">Ontology vs. Database Schema: Why Relational Tables and Vector Stores Fall Short for AI</a>
                 
                 <div class="blog-sidebar-post-meta">
-                    <span class="blog-sidebar-date" data-date="2026-09-27">6 days ago</span>
+                    <span class="blog-sidebar-date" data-date="2026-09-27">7 days ago</span>
                 </div>
                 
             </li>
@@ -508,98 +508,40 @@
 <li><strong>Audited:</strong> Emits a structured telemetry event to Kafka or an immutable ledger recording the authorizing agent ID, timestamp, pre-state, post-state, and operational parameters.</li>
 </ul>
 <hr />
-<h2 id="production-implementation-building-an-action-harness-with-fastmcp">Production Implementation: Building an Action Harness with FastMCP</h2>
-<p>The following code demonstrates how an enterprise operational ontology exposes a state-governed, invariant-protected action to an autonomous agent using Python and the Model Context Protocol (MCP).</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">decimal</span><span class="w"> </span><span class="kn">import</span> <span class="n">Decimal</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">enum</span><span class="w"> </span><span class="kn">import</span> <span class="n">Enum</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">Annotated</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="kn">from</span><span class="w"> </span><span class="nn">pydantic</span><span class="w"> </span><span class="kn">import</span> <span class="n">BaseModel</span><span class="p">,</span> <span class="n">Field</span><span class="p">,</span> <span class="n">model_validator</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="kn">from</span><span class="w"> </span><span class="nn">mcp.server.fastmcp</span><span class="w"> </span><span class="kn">import</span> <span class="n">FastMCP</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="c1"># Initialize Enterprise Ontology MCP Server</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="n">ontology_server</span> <span class="o">=</span> <span class="n">FastMCP</span><span class="p">(</span><span class="s2">"Enterprise-Logistics-Ontology"</span><span class="p">)</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="k">class</span><span class="w"> </span><span class="nc">ContainerStatus</span><span class="p">(</span><span class="nb">str</span><span class="p">,</span> <span class="n">Enum</span><span class="p">):</span>
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>    <span class="n">IN_TRANSIT</span> <span class="o">=</span> <span class="s2">"IN_TRANSIT"</span>
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>    <span class="n">HELD_CUSTOMS</span> <span class="o">=</span> <span class="s2">"HELD_CUSTOMS"</span>
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>    <span class="n">RELEASED</span> <span class="o">=</span> <span class="s2">"RELEASED"</span>
-<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>    <span class="n">DIVERTED</span> <span class="o">=</span> <span class="s2">"DIVERTED"</span>
-<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>    <span class="n">DELIVERED</span> <span class="o">=</span> <span class="s2">"DELIVERED"</span>
-<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>
-<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>
-<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="k">class</span><span class="w"> </span><span class="nc">CargoContainer</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
-<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>    <span class="n">container_id</span><span class="p">:</span> <span class="nb">str</span>
-<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>    <span class="n">vessel_id</span><span class="p">:</span> <span class="nb">str</span>
-<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>    <span class="n">destination_port</span><span class="p">:</span> <span class="nb">str</span>
-<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>    <span class="n">status</span><span class="p">:</span> <span class="n">ContainerStatus</span>
-<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>    <span class="n">declared_value_usd</span><span class="p">:</span> <span class="n">Decimal</span>
-<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>    <span class="n">is_hazardous_material</span><span class="p">:</span> <span class="nb">bool</span>
-<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>    <span class="n">demurrage_cost_daily</span><span class="p">:</span> <span class="n">Decimal</span>
-<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>
-<a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>
-<a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a><span class="c1"># 1. ACTION PAYLOAD SCHEMA (The Request Contract)</span>
-<a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a><span class="k">class</span><span class="w"> </span><span class="nc">RerouteContainerPayload</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
-<a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a>    <span class="n">container_id</span><span class="p">:</span> <span class="nb">str</span>
-<a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a>    <span class="n">new_destination_port</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="n">min_length</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">max_length</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">"UN/LOCODE port identifier"</span><span class="p">)</span>
-<a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a>    <span class="n">reason_code</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s2">"Operational rationale for diversion"</span><span class="p">)</span>
-<a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a>    <span class="n">estimated_diversion_cost</span><span class="p">:</span> <span class="n">Decimal</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="n">gt</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">"Cost of maritime rerouting"</span><span class="p">)</span>
-<a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a>
-<a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a>    <span class="nd">@model_validator</span><span class="p">(</span><span class="n">mode</span><span class="o">=</span><span class="s2">"after"</span><span class="p">)</span>
-<a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">assert_valid_diversion</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">"RerouteContainerPayload"</span><span class="p">:</span>
-<a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a>        <span class="c1"># Rule: Cannot reroute without valid port format</span>
-<a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a>        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">new_destination_port</span><span class="o">.</span><span class="n">isupper</span><span class="p">():</span>
-<a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a>            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">"Destination port must be a valid uppercase UN/LOCODE string."</span><span class="p">)</span>
-<a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a>        <span class="k">return</span> <span class="bp">self</span>
-<a id="__codelineno-0-42" name="__codelineno-0-42" href="#__codelineno-0-42"></a>
-<a id="__codelineno-0-43" name="__codelineno-0-43" href="#__codelineno-0-43"></a>
-<a id="__codelineno-0-44" name="__codelineno-0-44" href="#__codelineno-0-44"></a><span class="c1"># 2. THE KINETIC ACTION ENDPOINT</span>
-<a id="__codelineno-0-45" name="__codelineno-0-45" href="#__codelineno-0-45"></a><span class="nd">@ontology_server</span><span class="o">.</span><span class="n">tool</span><span class="p">()</span>
-<a id="__codelineno-0-46" name="__codelineno-0-46" href="#__codelineno-0-46"></a><span class="k">def</span><span class="w"> </span><span class="nf">reroute_maritime_container</span><span class="p">(</span><span class="n">payload</span><span class="p">:</span> <span class="n">RerouteContainerPayload</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
-<a id="__codelineno-0-47" name="__codelineno-0-47" href="#__codelineno-0-47"></a><span class="w">    </span><span class="sd">"""</span>
-<a id="__codelineno-0-48" name="__codelineno-0-48" href="#__codelineno-0-48"></a><span class="sd">    Executes an emergency maritime container rerouting in the operational ontology.</span>
-<a id="__codelineno-0-49" name="__codelineno-0-49" href="#__codelineno-0-49"></a><span class="sd">    Validates vessel proximity, customs clearance state, and economic thresholds.</span>
-<a id="__codelineno-0-50" name="__codelineno-0-50" href="#__codelineno-0-50"></a><span class="sd">    """</span>
-<a id="__codelineno-0-51" name="__codelineno-0-51" href="#__codelineno-0-51"></a>    <span class="c1"># Step A: Fetch Live State from Synchronized Entity Store</span>
-<a id="__codelineno-0-52" name="__codelineno-0-52" href="#__codelineno-0-52"></a>    <span class="c1"># In production, this queries the in-memory domain cache backed by Postgres/CDC</span>
-<a id="__codelineno-0-53" name="__codelineno-0-53" href="#__codelineno-0-53"></a>    <span class="n">container</span> <span class="o">=</span> <span class="n">CargoContainer</span><span class="p">(</span>
-<a id="__codelineno-0-54" name="__codelineno-0-54" href="#__codelineno-0-54"></a>        <span class="n">container_id</span><span class="o">=</span><span class="n">payload</span><span class="o">.</span><span class="n">container_id</span><span class="p">,</span>
-<a id="__codelineno-0-55" name="__codelineno-0-55" href="#__codelineno-0-55"></a>        <span class="n">vessel_id</span><span class="o">=</span><span class="s2">"VESSEL-ALPHA-7"</span><span class="p">,</span>
-<a id="__codelineno-0-56" name="__codelineno-0-56" href="#__codelineno-0-56"></a>        <span class="n">destination_port</span><span class="o">=</span><span class="s2">"BRSSZ"</span><span class="p">,</span> <span class="c1"># Santos Port</span>
-<a id="__codelineno-0-57" name="__codelineno-0-57" href="#__codelineno-0-57"></a>        <span class="n">status</span><span class="o">=</span><span class="n">ContainerStatus</span><span class="o">.</span><span class="n">IN_TRANSIT</span><span class="p">,</span>
-<a id="__codelineno-0-58" name="__codelineno-0-58" href="#__codelineno-0-58"></a>        <span class="n">declared_value_usd</span><span class="o">=</span><span class="n">Decimal</span><span class="p">(</span><span class="s2">"450000.00"</span><span class="p">),</span>
-<a id="__codelineno-0-59" name="__codelineno-0-59" href="#__codelineno-0-59"></a>        <span class="n">is_hazardous_material</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
-<a id="__codelineno-0-60" name="__codelineno-0-60" href="#__codelineno-0-60"></a>        <span class="n">demurrage_cost_daily</span><span class="o">=</span><span class="n">Decimal</span><span class="p">(</span><span class="s2">"1200.00"</span><span class="p">)</span>
-<a id="__codelineno-0-61" name="__codelineno-0-61" href="#__codelineno-0-61"></a>    <span class="p">)</span>
-<a id="__codelineno-0-62" name="__codelineno-0-62" href="#__codelineno-0-62"></a>
-<a id="__codelineno-0-63" name="__codelineno-0-63" href="#__codelineno-0-63"></a>    <span class="c1"># Step B: Enforce Finite State Machine Transitions</span>
-<a id="__codelineno-0-64" name="__codelineno-0-64" href="#__codelineno-0-64"></a>    <span class="k">if</span> <span class="n">container</span><span class="o">.</span><span class="n">status</span> <span class="o">!=</span> <span class="n">ContainerStatus</span><span class="o">.</span><span class="n">IN_TRANSIT</span><span class="p">:</span>
-<a id="__codelineno-0-65" name="__codelineno-0-65" href="#__codelineno-0-65"></a>        <span class="k">raise</span> <span class="ne">PermissionError</span><span class="p">(</span>
-<a id="__codelineno-0-66" name="__codelineno-0-66" href="#__codelineno-0-66"></a>            <span class="sa">f</span><span class="s2">"FSM Rejection: Cannot reroute container </span><span class="si">{</span><span class="n">container</span><span class="o">.</span><span class="n">container_id</span><span class="si">}</span><span class="s2"> in status '</span><span class="si">{</span><span class="n">container</span><span class="o">.</span><span class="n">status</span><span class="si">}</span><span class="s2">'. "</span>
-<a id="__codelineno-0-67" name="__codelineno-0-67" href="#__codelineno-0-67"></a>            <span class="s2">"Container must be actively 'IN_TRANSIT'."</span>
-<a id="__codelineno-0-68" name="__codelineno-0-68" href="#__codelineno-0-68"></a>        <span class="p">)</span>
-<a id="__codelineno-0-69" name="__codelineno-0-69" href="#__codelineno-0-69"></a>
-<a id="__codelineno-0-70" name="__codelineno-0-70" href="#__codelineno-0-70"></a>    <span class="c1"># Step C: Enforce Capital Allocation Invariants</span>
-<a id="__codelineno-0-71" name="__codelineno-0-71" href="#__codelineno-0-71"></a>    <span class="c1"># Max autonomous diversion cost authorization is $25,000 USD</span>
-<a id="__codelineno-0-72" name="__codelineno-0-72" href="#__codelineno-0-72"></a>    <span class="n">AUTONOMOUS_DIVERSION_CEILING</span> <span class="o">=</span> <span class="n">Decimal</span><span class="p">(</span><span class="s2">"25000.00"</span><span class="p">)</span>
-<a id="__codelineno-0-73" name="__codelineno-0-73" href="#__codelineno-0-73"></a>    <span class="k">if</span> <span class="n">payload</span><span class="o">.</span><span class="n">estimated_diversion_cost</span> <span class="o">&gt;</span> <span class="n">AUTONOMOUS_DIVERSION_CEILING</span><span class="p">:</span>
-<a id="__codelineno-0-74" name="__codelineno-0-74" href="#__codelineno-0-74"></a>        <span class="k">raise</span> <span class="ne">PermissionError</span><span class="p">(</span>
-<a id="__codelineno-0-75" name="__codelineno-0-75" href="#__codelineno-0-75"></a>            <span class="sa">f</span><span class="s2">"Capital Invariant Rejection: Estimated cost $</span><span class="si">{</span><span class="n">payload</span><span class="o">.</span><span class="n">estimated_diversion_cost</span><span class="si">}</span><span class="s2"> "</span>
-<a id="__codelineno-0-76" name="__codelineno-0-76" href="#__codelineno-0-76"></a>            <span class="sa">f</span><span class="s2">"exceeds agent autonomous ceiling of $</span><span class="si">{</span><span class="n">AUTONOMOUS_DIVERSION_CEILING</span><span class="si">}</span><span class="s2">. "</span>
-<a id="__codelineno-0-77" name="__codelineno-0-77" href="#__codelineno-0-77"></a>            <span class="s2">"Human Maritime Director sign-off required."</span>
-<a id="__codelineno-0-78" name="__codelineno-0-78" href="#__codelineno-0-78"></a>        <span class="p">)</span>
-<a id="__codelineno-0-79" name="__codelineno-0-79" href="#__codelineno-0-79"></a>
-<a id="__codelineno-0-80" name="__codelineno-0-80" href="#__codelineno-0-80"></a>    <span class="c1"># Step D: Execute State Mutation &amp; Dispatch to Port Systems</span>
-<a id="__codelineno-0-81" name="__codelineno-0-81" href="#__codelineno-0-81"></a>    <span class="n">container</span><span class="o">.</span><span class="n">status</span> <span class="o">=</span> <span class="n">ContainerStatus</span><span class="o">.</span><span class="n">DIVERTED</span>
-<a id="__codelineno-0-82" name="__codelineno-0-82" href="#__codelineno-0-82"></a>    <span class="n">container</span><span class="o">.</span><span class="n">destination_port</span> <span class="o">=</span> <span class="n">payload</span><span class="o">.</span><span class="n">new_destination_port</span>
-<a id="__codelineno-0-83" name="__codelineno-0-83" href="#__codelineno-0-83"></a>
-<a id="__codelineno-0-84" name="__codelineno-0-84" href="#__codelineno-0-84"></a>    <span class="c1"># Dispatch mutation to terminal operating system (TOS) via EDI/API</span>
-<a id="__codelineno-0-85" name="__codelineno-0-85" href="#__codelineno-0-85"></a>    <span class="c1"># and publish audit event to Kafka</span>
-<a id="__codelineno-0-86" name="__codelineno-0-86" href="#__codelineno-0-86"></a>    <span class="k">return</span> <span class="p">(</span>
-<a id="__codelineno-0-87" name="__codelineno-0-87" href="#__codelineno-0-87"></a>        <span class="sa">f</span><span class="s2">"SUCCESS: Container </span><span class="si">{</span><span class="n">container</span><span class="o">.</span><span class="n">container_id</span><span class="si">}</span><span class="s2"> diverted to </span><span class="si">{</span><span class="n">container</span><span class="o">.</span><span class="n">destination_port</span><span class="si">}</span><span class="s2">. "</span>
-<a id="__codelineno-0-88" name="__codelineno-0-88" href="#__codelineno-0-88"></a>        <span class="sa">f</span><span class="s2">"State updated to </span><span class="si">{</span><span class="n">container</span><span class="o">.</span><span class="n">status</span><span class="si">}</span><span class="s2">. Reroute cost $</span><span class="si">{</span><span class="n">payload</span><span class="o">.</span><span class="n">estimated_diversion_cost</span><span class="si">}</span><span class="s2"> booked."</span>
-<a id="__codelineno-0-89" name="__codelineno-0-89" href="#__codelineno-0-89"></a>    <span class="p">)</span>
-</code></pre></div>
+<h2 id="production-architecture-building-an-action-harness-with-model-context-protocol">Production Architecture: Building an Action Harness with Model Context Protocol</h2>
+<p>In an enterprise logistics operational ontology, autonomous agents are granted execution capabilities through state-governed, invariant-protected action harnesses operating over the <strong>Model Context Protocol (MCP)</strong>.</p>
+<p>Consider an emergency maritime container rerouting workflow (<code>reroute_maritime_container</code>). Rather than allowing an LLM to issue unverified commands to a terminal operating system (TOS), the ontology gates the action across four sequential verification tiers:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Execution Stage</th>
+<th style="text-align: left;">Architecture Component</th>
+<th style="text-align: left;">Enforced Operational Invariant</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>1. Request Payload Contract</strong></td>
+<td style="text-align: left;"><code>RerouteContainerPayload</code></td>
+<td style="text-align: left;"><strong>Parameter Validation:</strong> Validates container ID format, uppercase UN/LOCODE port identifier, operational reason code, and positive estimated rerouting cost.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>2. Live State Hydration</strong></td>
+<td style="text-align: left;">Entity Domain Store (CDC Cache)</td>
+<td style="text-align: left;">Hydrates container state (<code>CargoContainer</code>), vessel identifier, destination port, hazardous material status, and daily demurrage costs from memory in microseconds.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>3. Finite State Machine Gate</strong></td>
+<td style="text-align: left;">Lifecycle FSM Guard</td>
+<td style="text-align: left;"><strong>State Purity:</strong> Container status must be strictly <code>IN_TRANSIT</code>. If container is in <code>HELD_CUSTOMS</code>, <code>RELEASED</code>, or <code>DELIVERED</code>, execution is immediately aborted.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>4. Capital Allocation Invariant</strong></td>
+<td style="text-align: left;">Economic Ceiling Enforcement</td>
+<td style="text-align: left;"><strong>Autonomous Ceiling:</strong> Maximum autonomous diversion cost ceiling is capped at $25,000 USD. Costs exceeding threshold require mandatory human Maritime Director sign-off.</td>
+</tr>
+</tbody>
+</table>
 <h3 id="the-architectural-beauty-of-this-model">The Architectural Beauty of this Model</h3>
 <p>Notice what is happening here from an systems engineering perspective:</p>
 <ol>

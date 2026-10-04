@@ -161,101 +161,16 @@ Each action specifies:
 
 ---
 
-## Code Implementation: An Executable Python Ontology
+## Architectural Specification: An Executable Operational Ontology
 
-Let us examine how this looks in production code. 
+In an enterprise operational ontology for autonomous Accounts Payable reconciliation, compliance is enforced at the data contract and validation layer rather than through conversational prompting or guidelines:
 
-The following snippet demonstrates an operational ontology for an autonomous Accounts Payable reconciliation agent. Notice that we do not rely on prompt engineering or conversational guidelines to enforce compliance. We enforce compliance at the Python compiler and runtime validation layer.
-
-```python
-from decimal import Decimal
-from enum import Enum
-from typing import Optional, List
-from pydantic import BaseModel, Field, model_validator
-
-
-class InvoiceStatus(str, Enum):
-    DRAFT = "draft"
-    SUBMITTED = "submitted"
-    MATCHED = "matched"
-    DISPUTED = "disputed"
-    APPROVED = "approved"
-    PAID = "paid"
-
-
-class LineItem(BaseModel):
-    item_id: str
-    sku: str
-    quantity: int = Field(gt=0, description="Quantity must be strictly positive")
-    unit_price: Decimal = Field(gt=0, description="Unit price must be positive")
-    total_amount: Decimal
-
-    @model_validator(mode="after")
-    def verify_arithmetic(self) -> "LineItem":
-        expected = self.quantity * self.unit_price
-        if self.total_amount != expected:
-            raise ValueError(
-                f"Arithmetic mismatch on SKU {self.sku}: "
-                f"quantity ({self.quantity}) * unit_price ({self.unit_price}) != {self.total_amount}"
-            )
-        return self
-
-
-class CorporateInvoice(BaseModel):
-    invoice_id: str
-    vendor_id: str
-    purchase_order_id: str
-    status: InvoiceStatus
-    line_items: List[LineItem]
-    tax_amount: Decimal = Field(ge=0)
-    net_amount: Decimal
-    gross_amount: Decimal
-    approved_by: Optional[str] = None
-
-    @model_validator(mode="after")
-    def verify_invoice_invariants(self) -> "CorporateInvoice":
-        calculated_net = sum(item.total_amount for item in self.line_items)
-        if self.net_amount != calculated_net:
-            raise ValueError(f"Net amount mismatch: reported {self.net_amount}, calculated {calculated_net}")
-        
-        if self.gross_amount != (self.net_amount + self.tax_amount):
-            raise ValueError("Gross amount does not equal net amount plus tax.")
-        
-        return self
-
-
-# Operational Action Contracts (The Verbs)
-class ApproveInvoiceAction:
-    """
-    Executable action contract inside the Operational Ontology.
-    Enforces deterministic state transitions and authorization thresholds.
-    """
-    MAX_AUTONOMOUS_LIMIT = Decimal("10000.00")
-
-    @classmethod
-    def execute(cls, invoice: CorporateInvoice, operator_id: str) -> CorporateInvoice:
-        # Precondition 1: State validation via Finite State Machine
-        if invoice.status != InvoiceStatus.MATCHED:
-            raise PermissionError(
-                f"Action Rejected: Cannot approve invoice in '{invoice.status}' state. "
-                "Invoice must be in 'MATCHED' state."
-            )
-
-        # Precondition 2: Balance Sheet Invariant Check
-        if invoice.gross_amount > cls.MAX_AUTONOMOUS_LIMIT:
-            raise PermissionError(
-                f"Action Rejected: Invoice total ${invoice.gross_amount} exceeds "
-                f"autonomous execution limit of ${cls.MAX_AUTONOMOUS_LIMIT}. "
-                "Escalation to human executive required."
-            )
-
-        # Deterministic State Transition
-        invoice.status = InvoiceStatus.APPROVED
-        invoice.approved_by = operator_id
-        
-        # Here: Trigger transactional commit to ERP ledger (e.g. SAP via RFC/API)
-        return invoice
-```
+| Architectural Component | Schema Definition | Enforced Invariant & Boundary Rule |
+| :--- | :--- | :--- |
+| **`LineItem` Entity** | `item_id`, `sku`, `quantity` (> 0), `unit_price` (> 0), `total_amount` | **Arithmetic Integrity:** `total_amount == quantity * unit_price`. Discrepancies raise immediate compiler-level validation rejections. |
+| **`CorporateInvoice` Entity** | `invoice_id`, `vendor_id`, `purchase_order_id`, `status`, `line_items[]`, `tax_amount`, `net_amount`, `gross_amount` | **Subtotal Invariant:** `net_amount == sum(lines.total_amount)`.<br>**Gross Integrity:** `gross_amount == net_amount + tax_amount`. |
+| **Lifecycle State Machine** | Strict progression enum: `DRAFT` &rarr; `SUBMITTED` &rarr; `MATCHED` &rarr; `APPROVED` &rarr; `PAID` (or `DISPUTED`) | **Deterministic Sequencing:** Actions can only execute against entities occupying exact valid lifecycle states. |
+| **`ApproveInvoiceAction`** | Target invoice, operator audit identifier, maximum autonomous limit ($10,000 USD) | **Precondition 1:** Invoice status must strictly equal `MATCHED`.<br>**Precondition 2:** `gross_amount <= $10,000.00`. Amounts above limit trigger mandatory human escalation.<br>**Postcondition:** Sets status to `APPROVED`, records operator ID, and executes transactional ERP commit. |
 
 ### Why This Architecture Cannot Fail in Production
 

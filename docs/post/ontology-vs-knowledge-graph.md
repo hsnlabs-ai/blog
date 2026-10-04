@@ -117,82 +117,17 @@ flowchart TD
 
 ---
 
-## Code Walkthrough: Enforcing Ontological Contracts on a Graph
+## Architectural Pattern: Enforcing Ontological Contracts on a Graph
 
-The following production pattern demonstrates how an operational ontology written in Python with Pydantic intercepts and governs mutations on a property graph.
+In a production architecture, an operational ontology intercepts and governs all candidate mutations before any graph edge or node is written.
 
-```python
-from datetime import datetime
-from decimal import Decimal
-from enum import Enum
-from typing import Optional
-from pydantic import BaseModel, Field, model_validator
+Consider an enterprise workflow where an autonomous agent reconciles accounts payable by linking an `Invoice` entity to a corporate `PurchaseOrder` in a property graph:
 
-
-class PurchaseOrderStatus(str, Enum):
-    DRAFT = "DRAFT"
-    APPROVED = "APPROVED"
-    FULFILLED = "FULFILLED"
-    CLOSED = "CLOSED"
-
-
-# 1. ONTOLOGY CONTRACT (The Rule System)
-class RelationalLinkInvoiceToPOContract(BaseModel):
-    invoice_id: str
-    purchase_order_id: str
-    invoice_amount: Decimal = Field(gt=0)
-    po_remaining_balance: Decimal = Field(ge=0)
-    po_status: PurchaseOrderStatus
-
-    @model_validator(mode="after")
-    def validate_business_invariants(self) -> "RelationalLinkInvoiceToPOContract":
-        # Invariant 1: State Machine check
-        if self.po_status != PurchaseOrderStatus.APPROVED:
-            raise ValueError(
-                f"Ontology Violation: Cannot link invoice to Purchase Order in state '{self.po_status}'. "
-                "Target PO must be in 'APPROVED' state."
-            )
-        
-        # Invariant 2: Financial Balance Sheet Invariant
-        if self.invoice_amount > self.po_remaining_balance:
-            raise ValueError(
-                f"Ontology Violation: Invoice amount (${self.invoice_amount}) exceeds "
-                f"remaining PO balance (${self.po_remaining_balance}). "
-                "Transaction rejected to prevent ledger overrun."
-            )
-        return self
-
-
-# 2. GRAPH ADAPTER (The Execution Engine)
-class EnterpriseGraphAdapter:
-    """
-    Executes compiled, validated Cypher queries against the Property Graph.
-    Guarantees zero raw, unvalidated LLM queries touch the graph directly.
-    """
-    def __init__(self, graph_session):
-        self.session = graph_session
-
-    def execute_verified_link(self, contract: RelationalLinkInvoiceToPOContract) -> dict:
-        cypher_query = """
-        MATCH (inv:Invoice {id: $invoice_id})
-        MATCH (po:PurchaseOrder {id: $po_id})
-        CREATE (inv)-[rel:MATCHES_PURCHASE_ORDER {
-            linked_at: $timestamp,
-            settled_amount: $amount
-        }]->(po)
-        SET po.remaining_balance = po.remaining_balance - $amount
-        RETURN inv.id AS invoice_id, po.id AS po_id, rel.linked_at AS timestamp
-        """
-        parameters = {
-            "invoice_id": contract.invoice_id,
-            "po_id": contract.purchase_order_id,
-            "amount": float(contract.invoice_amount),
-            "timestamp": datetime.utcnow().isoformat()
-        }
-        
-        # Execute query deterministically
-        return {"status": "SUCCESS", "parameters": parameters}
-```
+| Architectural Component | Responsibility | Boundary Enforcement |
+| :--- | :--- | :--- |
+| **1. Ontological Contract (`RelationalLinkInvoiceToPOContract`)** | Invariant Rule Engine | **State Machine Check:** Target Purchase Order must be in `APPROVED` status (cannot link to `DRAFT`, `FULFILLED`, or `CLOSED`).<br>**Balance Sheet Invariant:** `invoice_amount <= po_remaining_balance`. Rejects transaction if invoice exceeds allocated budget. |
+| **2. Graph Adapter (`EnterpriseGraphAdapter`)** | Deterministic Execution | Translates validated contract into parameterized graph queries. AI agents never generate or execute raw Cypher queries directly against Neo4j. |
+| **3. Atomic State Mutation** | Ledger Consistency | Atomically writes the `MATCHES_PURCHASE_ORDER` relationship, decrements `po_remaining_balance`, and emits an immutable audit event. |
 
 ### Why This Eliminates Agent Runtime Failures
 

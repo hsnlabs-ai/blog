@@ -44,52 +44,16 @@ flowchart TD
 
 Em vez de enviar dicionários soltos ou textos não estruturados para o modelo, cada entidade corporativa e definida como um contrato de dados estrito.
 
-Abaixo apresentamos o modelo operacional para o fluxo de resolução de disputas financeiras:
+No fluxo de resolução de disputas financeiras, o contrato da entidade impõe invariantes rigorosos de perímetro:
 
-```json
-{
-  "title": "DisputaFatura",
-  "type": "object",
-  "properties": {
-    "disputa_id": {
-      "type": "string",
-      "pattern": "^DISP-[0-9]{8}$"
-    },
-    "numero_fatura": {
-      "type": "string",
-      "minLength": 5
-    },
-    "fornecedor_id": {
-      "type": "string",
-      "minLength": 3
-    },
-    "valor_reclamado": {
-      "type": "number",
-      "minimum": 0.01
-    },
-    "tolerancia_contratual_pct": {
-      "type": "number",
-      "default": 0.02,
-      "maximum": 0.10
-    },
-    "categoria": {
-      "type": "string",
-      "enum": [
-        "DIVERGENCIA_PRECO",
-        "MERCADORIA_DANIFICADA",
-        "ENTREGA_INCOMPLETA"
-      ]
-    }
-  },
-  "required": [
-    "disputa_id",
-    "numero_fatura",
-    "fornecedor_id",
-    "valor_reclamado",
-    "categoria"
-  ]
-}
-```
+| Atributo do Contrato | Tipo / Restrição | Invariante e Barreira Operacional |
+| :--- | :--- | :--- |
+| `disputa_id` | Padrão `^DISP-[0-9]{8}$` | Identificador único auditável; bloqueia duplicidades. |
+| `numero_fatura` | Texto minimo 5 caracteres | Chave estrangeira verificada contra o razão de contas a pagar. |
+| `fornecedor_id` | Texto mínimo 3 caracteres | Deve corresponder a fornecedor ativo e regular no cadastro mestre. |
+| `valor_reclamado` | Numérico decimal maior que zero | Precisão decimal exata; valores nulos ou negativos são rejeitados. |
+| `tolerancia_contratual_pct` | Numérico entre 0,00 e 0,10 | Margem de tolerância contratual delimitada padrão de 2 por cento com teto de 10 por cento. |
+| `categoria` | Enum Estrito | Restrito a `DIVERGENCIA_PRECO`, `MERCADORIA_DANIFICADA`, `ENTREGA_INCOMPLETA`. |
 
 Ao encapsular objetos de negócio em contratos rígidos, entradas inválidas são rejeitadas na serialização antes de atingir qualquer código de execução.
 
@@ -101,38 +65,13 @@ Agentes autônomos nunca devem possuir permissão direta de escrita no banco de 
 
 O Model Context Protocol estabelece um padrão aberto para fornecimento de ferramentas e contexto aos modelos. Ele opera como uma porta universal, permitindo a execução de funções em infraestruturas seguras sem integrações frágeis.
 
-Abaixo apresentamos o esquema de ferramenta MCP para liquidação atômica de disputas com validação de invariantes:
+Na ferramenta MCP de liquidação de disputas denominada executar_liquidacao_disputa, a execução é dividida em etapas obrigatórias de conferência:
 
-```json
-{
-  "name": "executar_liquidacao_disputa",
-  "description": "Executa compensacao financeira no ERP para disputas ativas de faturamento",
-  "parameters": {
-    "type": "object",
-    "properties": {
-      "disputa_id": {
-        "type": "string",
-        "pattern": "^DISP-[0-9]{8}$"
-      },
-      "valor_liquidacao_aprovado": {
-        "type": "number",
-        "minimum": 0.01
-      },
-      "autorizacao_excecao": {
-        "type": "boolean",
-        "default": false
-      },
-      "responsavel_aprovacao": {
-        "type": "string"
-      }
-    },
-    "required": [
-      "disputa_id",
-      "valor_liquidacao_aprovado"
-    ]
-  }
-}
-```
+| Etapa do Gateway | Verificação Executada | Regra de Bloqueio |
+| :--- | :--- | :--- |
+| **1. Validação de Entidade** | Consulta a disputa ativa no grafo transacional. | Se a disputa não existir ou já estiver encerrada, a execução é abortada. |
+| **2. Invariantes Financeiros** | Confronta o valor aprovado com o montante reclamado e alçadas. | O valor de liquidação jamais pode exceder o valor em disputa; quantias acima do teto de autonomia exigem dupla aprovação humana. |
+| **3. Liquidação Atômica no ERP** | Registra o memorando de crédito diretamente no SAP / ERP legado. | Gera ID transacional imutável e retorna recibo assinado para auditoria. |
 
 Esse padrão assegura que o modelo de linguagem atue exclusivamente como planejador. A modificação de estado é blindada por invariantes de código determinístico.
 
