@@ -83,6 +83,11 @@ A medical ontology connecting patients, surgical suites, and nurse rosters does 
 ### 3. Model Context Protocol (MCP) and State Machines
 Standardize tool execution using the **Model Context Protocol** and deterministic workflow engines like **LangGraph** or **Temporal**.
 
+<div style="display: flex; align-items: center; gap: 14px; margin: 20px 0; padding: 14px 18px; background: #0E1017; border: 1px solid #222736;">
+  <img src="/blog/assets/stack/langgraph-oss-lockup.svg" alt="LangGraph OSS Engine" style="height: 28px; width: auto;" loading="lazy">
+  <span style="font-size: 0.85rem; color: #94A3B8; font-family: 'Inter', sans-serif;">Production-tested state graph engine for deterministic operational ontologies.</span>
+</div>
+
 When an agent needs to execute a transaction, it does not invent an API call. It dispatches a strongly-typed event through an MCP endpoint, where code-level guardrails verify account balances, authorizations, and compliance invariants.
 
 ---

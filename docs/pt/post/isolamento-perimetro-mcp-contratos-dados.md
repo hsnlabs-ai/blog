@@ -23,6 +23,11 @@ Há alguns meses, assisti a uma agência de software apresentar uma proposta de 
 
 O CISO quase encerrou a reunião naquele instante.
 
+<div style="display: flex; align-items: center; gap: 14px; margin: 20px 0; padding: 14px 18px; background: #0E1017; border: 1px solid #222736;">
+  <img src="/blog/assets/stack/langchain-oss-lockup.svg" alt="LangChain OSS" style="height: 28px; width: auto;" loading="lazy">
+  <span style="font-size: 0.85rem; color: #94A3B8; font-family: 'Inter', sans-serif;">Contratos de dados modulares e executores LCEL isolados de credenciais de escrita do banco central.</span>
+</div>
+
 Entregar strings de conexão de administrador de banco de dados para uma rede neural probabilística e negligencia grave de engenharia. Se um sistema autônomo pode executar comandos SQL diretos contra um banco de produção, uma única injeção indireta de prompt ou um parâmetro alucinado pode apagar registros inteiros ou vazar segredos corporativos críticos.
 
 ## As Vulnerabilidades Letais das Integrações Diretas com Agentes

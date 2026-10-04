@@ -42,6 +42,12 @@ A combinação de padrões modernos de software permitiu criar ontologias corpor
 - Model Context Protocol para padronização de interfaces e ferramentas
 - DuckDB e bancos relacionais modernos para processamento analítico ultrarrapido
 - Modelos de código aberto para tarefas operacionais de baixo custo por token
+- LangGraph para orquestração de estados determinísticos e checkpoints
+
+<div style="display: flex; align-items: center; gap: 14px; margin: 20px 0; padding: 14px 18px; background: #0E1017; border: 1px solid #222736;">
+  <img src="/blog/assets/stack/langgraph-oss-lockup.svg" alt="Motor LangGraph OSS" style="height: 28px; width: auto;" loading="lazy">
+  <span style="font-size: 0.85rem; color: #94A3B8; font-family: 'Inter', sans-serif;">Motor de grafos de estado para ontologias operacionais determinísticas em produção.</span>
+</div>
 
 Essa abordagem devolve o controle do código para a empresa, reduz o custo total de propriedade em até oitenta por cento e entrega resultados mensuráveis em semanas, não anos.
 

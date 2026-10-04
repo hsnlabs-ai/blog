@@ -55,7 +55,12 @@ At HSN Labs, we reject subjective prompt grading in enterprise pipelines. We eva
 
 * **Binary Invariant Assertions:** We write strict code assertion functions in Python. Did the output JSON strictly conform to the Pydantic schema? Did the debit and credit ledger entries balance to exactly zero? Did the response omit tax IDs and restricted account numbers? These tests return a binary pass or fail, not a subjective opinion score.
 * **Immutable Golden Datasets:** Every production incident, edge case, and edge failure is turned into an immutable test fixture. Before any updated agent graph or model checkpoint touches staging, it must pass hundreds of historical regression tests.
-* **Full Telemetry and Replayability:** We instrument every workflow with LangSmith, tracing every token, intermediate state, and tool invocation. If an agent produces an unexpected state transition, our engineers can replay the exact execution trace with complete fidelity in local development.
+* **Full Telemetry and Replayability:** We instrument every workflow with LangSmith, tracing every token, intermediate state, and tool invocation.
+
+<div style="display: flex; align-items: center; gap: 14px; margin: 16px 0; padding: 14px 18px; background: #0E1017; border: 1px solid #222736;">
+  <img src="/blog/assets/stack/langsmith.svg" alt="LangSmith Observability" style="height: 28px; width: 28px;" loading="lazy">
+  <span style="font-size: 0.85rem; color: #94A3B8; font-family: 'Inter', sans-serif;">Full-fidelity runtime tracing, latency telemetry, and deterministic evaluation suites.</span>
+</div> If an agent produces an unexpected state transition, our engineers can replay the exact execution trace with complete fidelity in local development.
 
 Do not grade production agents with subjective opinion prompts. Grade them with verifiable code assertions and mathematical proofs.
 
