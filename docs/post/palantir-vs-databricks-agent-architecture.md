@@ -75,7 +75,7 @@ Crucially, the ontology attaches bounded actions directly to that object: `Updat
 Deep agents operate via multi-hop reasoning graphs.
 
 <div style="display: flex; align-items: center; gap: 14px; margin: 20px 0; padding: 14px 18px; background: #0E1017; border: 1px solid #222736;">
-  <img src="/blog/assets/stack/deepagents-oss-lockup.svg" alt="Deep Agents OSS" style="height: 28px; width: auto;" loading="lazy">
+  <img src="../../assets/stack/deepagents-oss-lockup-dark.svg" alt="Deep Agents OSS" style="height: 28px; width: auto;" loading="lazy">
   <span style="font-size: 0.85rem; color: #94A3B8; font-family: 'Inter', sans-serif;">Autonomous multi-agent swarms engineered over formal state graphs.</span>
 </div> An agent might inspect an anomaly, query historical inventory, verify contract pricing, and cross-reference vendor SLAs.
 

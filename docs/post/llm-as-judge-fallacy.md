@@ -58,7 +58,7 @@ At HSN Labs, we reject subjective prompt grading in enterprise pipelines. We eva
 * **Full Telemetry and Replayability:** We instrument every workflow with LangSmith, tracing every token, intermediate state, and tool invocation.
 
 <div style="display: flex; align-items: center; gap: 14px; margin: 16px 0; padding: 14px 18px; background: #0E1017; border: 1px solid #222736;">
-  <img src="/blog/assets/stack/langsmith.svg" alt="LangSmith Observability" style="height: 28px; width: 28px;" loading="lazy">
+  <img src="../../assets/stack/langsmith.svg" alt="LangSmith Observability" style="height: 28px; width: 28px;" loading="lazy">
   <span style="font-size: 0.85rem; color: #94A3B8; font-family: 'Inter', sans-serif;">Full-fidelity runtime tracing, latency telemetry, and deterministic evaluation suites.</span>
 </div> If an agent produces an unexpected state transition, our engineers can replay the exact execution trace with complete fidelity in local development.
 

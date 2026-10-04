@@ -25,7 +25,7 @@ A few months ago, I watched a software agency pitch an autonomous customer servi
 The CISO almost terminated the meeting on the spot.
 
 <div style="display: flex; align-items: center; gap: 14px; margin: 20px 0; padding: 14px 18px; background: #0E1017; border: 1px solid #222736;">
-  <img src="/blog/assets/stack/langchain-oss-lockup.svg" alt="LangChain OSS" style="height: 28px; width: auto;" loading="lazy">
+  <img src="../../assets/stack/langchain-oss-lockup-dark.svg" alt="LangChain OSS" style="height: 28px; width: auto;" loading="lazy">
   <span style="font-size: 0.85rem; color: #94A3B8; font-family: 'Inter', sans-serif;">Modular data contracts and LCEL runnables isolated from core database write credentials.</span>
 </div>
 

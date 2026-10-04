@@ -37,7 +37,7 @@ Um data lake é somente leitura para quem consome análises. Um agente autônomo
 ## A Arquitetura Recomendada pela HSN Labs
 
 <div style="display: flex; align-items: center; gap: 14px; margin: 20px 0; padding: 14px 18px; background: #0E1017; border: 1px solid #222736;">
-  <img src="/blog/assets/stack/deepagents-oss-lockup.svg" alt="Deep Agents OSS" style="height: 28px; width: auto;" loading="lazy">
+  <img src="../../../assets/stack/deepagents-oss-lockup-dark.svg" alt="Deep Agents OSS" style="height: 28px; width: auto;" loading="lazy">
   <span style="font-size: 0.85rem; color: #94A3B8; font-family: 'Inter', sans-serif;">Enxames de agentes autônomos profundos orquestrados sobre grafos formais de estado.</span>
 </div>
 
