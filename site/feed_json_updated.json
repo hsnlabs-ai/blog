@@ -13,6 +13,27 @@
     "language": "en",
     "items": [
         {
+            "id": "https://hsnlabs.ai/blog/post/the-agentic-pilot-canvas-v1-4/",
+            "url": "https://hsnlabs.ai/blog/post/the-agentic-pilot-canvas-v1-4/",
+            "title": "The Agentic Pilot Canvas v1.4: The Framework for Enterprise AI Pilots That Survive Production",
+            "content_html": "Open 10-block architecture framework for scoping and deploying enterprise AI pilots before writing production code. Version 1.4 updated in October 2026.",
+            "image": "https://hsnlabs.ai/blog/assets/images/posts/the-agentic-pilot-canvas/cover.png",
+            "date_modified": "2026-10-07T00:00:00+00:00",
+            "date_published": "2026-10-07T00:00:00+00:00",
+            "authors": [
+                {
+                    "name": "Hugo S. Nascimento"
+                }
+            ],
+            "tags": [
+                "Agentic Engineering",
+                "architecture",
+                "canvas",
+                "enterprise-agents",
+                "methodology"
+            ]
+        },
+        {
             "id": "https://hsnlabs.ai/blog/post/buy-versus-build-b2b-enterprise-crm/",
             "url": "https://hsnlabs.ai/blog/post/buy-versus-build-b2b-enterprise-crm/",
             "title": "Buy versus Build: B2B Enterprise CRM, Twenty, and Agentic Stacks",
@@ -408,26 +429,6 @@
                 "economics",
                 "erp-support",
                 "helpdesk"
-            ]
-        },
-        {
-            "id": "https://hsnlabs.ai/blog/post/collapse-of-legacy-rpa/",
-            "url": "https://hsnlabs.ai/blog/post/collapse-of-legacy-rpa/",
-            "title": "The RPA Market Is Collapsing",
-            "content_html": "Why brittle screen-recording bots are collapsing in enterprise environments and how production agent architectures replace them.",
-            "image": "https://hsnlabs.ai/blog/assets/images/posts/collapse-of-legacy-rpa/cover.webp",
-            "date_modified": "2026-09-04T00:00:00+00:00",
-            "date_published": "2026-09-04T00:00:00+00:00",
-            "authors": [
-                {
-                    "name": "Hugo S. Nascimento"
-                }
-            ],
-            "tags": [
-                "Future of Work",
-                "automation",
-                "economics",
-                "rpa"
             ]
         }
     ]

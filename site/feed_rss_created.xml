@@ -13,8 +13,8 @@
     <language>en</language>
 
     
-    <pubDate>Sun, 04 Oct 2026 19:49:41 -0000</pubDate>
-    <lastBuildDate>Sun, 04 Oct 2026 19:49:41 -0000</lastBuildDate>
+    <pubDate>Wed, 07 Oct 2026 21:10:06 -0000</pubDate>
+    <lastBuildDate>Wed, 07 Oct 2026 21:10:06 -0000</lastBuildDate>
     <ttl>1440</ttl>
 
     
@@ -30,6 +30,39 @@
     
 
     
+    
+    <item>
+      <title>The Agentic Pilot Canvas v1.4: The Framework for Enterprise AI Pilots That Survive Production</title>
+      
+      
+        
+      <author>Hugo S. Nascimento</author>
+        
+      
+      
+      
+        
+      <category>Agentic Engineering</category>
+        
+      <category>architecture</category>
+        
+      <category>canvas</category>
+        
+      <category>enterprise-agents</category>
+        
+      <category>methodology</category>
+        
+      
+      <description>Open 10-block architecture framework for scoping and deploying enterprise AI pilots before writing production code. Version 1.4 updated in October 2026.</description>
+      <link>https://hsnlabs.ai/blog/post/the-agentic-pilot-canvas-v1-4/</link>
+      <pubDate>Wed, 07 Oct 2026 00:00:00 +0000</pubDate>
+      <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
+      
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/post/the-agentic-pilot-canvas-v1-4/</guid>
+      
+      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/the-agentic-pilot-canvas/cover.png" type="image/png" length="None" />
+      
+    </item>
     
     <item>
       <title>Buy versus Build: B2B Enterprise CRM, Twenty, and Agentic Stacks</title>
@@ -653,37 +686,6 @@
       <guid isPermaLink="true">https://hsnlabs.ai/blog/post/death-of-tier-1-erp-helpdesk/</guid>
       
       <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/death-of-tier-1-erp-helpdesk/cover.webp" type="image/webp" length="None" />
-      
-    </item>
-    
-    <item>
-      <title>The RPA Market Is Collapsing</title>
-      
-      
-        
-      <author>Hugo S. Nascimento</author>
-        
-      
-      
-      
-        
-      <category>Future of Work</category>
-        
-      <category>automation</category>
-        
-      <category>economics</category>
-        
-      <category>rpa</category>
-        
-      
-      <description>Why brittle screen-recording bots are collapsing in enterprise environments and how production agent architectures replace them.</description>
-      <link>https://hsnlabs.ai/blog/post/collapse-of-legacy-rpa/</link>
-      <pubDate>Fri, 04 Sep 2026 00:00:00 +0000</pubDate>
-      <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
-      
-      <guid isPermaLink="true">https://hsnlabs.ai/blog/post/collapse-of-legacy-rpa/</guid>
-      
-      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/collapse-of-legacy-rpa/cover.webp" type="image/webp" length="None" />
       
     </item>
     
