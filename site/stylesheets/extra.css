@@ -1110,6 +1110,13 @@ td code {
   .header-github-link {
     display: none !important;
   }
+  .blog-header-menu {
+    margin: 0 12px;
+    gap: 16px;
+  }
+  .blog-header-actions {
+    gap: 8px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -1119,8 +1126,15 @@ td code {
   .blog-brand-logo {
     height: 32px;
   }
-  .blog-header-cta {
-    display: none;
+  .blog-header-menu {
+    display: none !important;
+  }
+  .blog-action-icon {
+    width: 36px;
+    height: 36px;
+  }
+  .blog-header-actions {
+    gap: 8px;
   }
   .footer-seo-grid {
     grid-template-columns: 1fr;
@@ -1141,16 +1155,6 @@ td code {
   .article-nav-return-btn,
   .article-nav-cta-btn {
     justify-content: center;
-  }
-  .blog-header-menu {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    max-width: 160px;
-    white-space: nowrap;
-    scrollbar-width: none;
-  }
-  .blog-header-menu::-webkit-scrollbar {
-    display: none;
   }
 }
 
