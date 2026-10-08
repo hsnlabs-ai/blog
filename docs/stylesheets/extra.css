@@ -356,6 +356,28 @@ code, kbd, pre, samp {
   user-select: none;
 }
 
+.header-github-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--ink);
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+  line-height: 1;
+}
+
+.header-github-link:hover {
+  opacity: 0.7;
+}
+
+.header-github-link svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
 /* Search Dropdown Wrap */
 .search-container-wrap {
   margin-top: 1rem;
@@ -1084,6 +1106,9 @@ td code {
 @media (max-width: 768px) {
   .blog-header-cta {
     display: none;
+  }
+  .header-github-link {
+    display: none !important;
   }
 }
 
