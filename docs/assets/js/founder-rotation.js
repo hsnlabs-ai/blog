@@ -127,7 +127,7 @@
       var img = card.querySelector('.founder-avatar-img, img');
       var label = card.querySelector('.founder-meta-title, .founder-callout-label, .founder-meta-label');
       var name = card.querySelector('.founder-meta-name, .founder-callout-name');
-      var btn = card.querySelector('.founder-callout-btn, .btn, a');
+      var btn = card.querySelector('.founder-callout-btn');
 
       if (!img) return;
 
