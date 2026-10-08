@@ -40,18 +40,21 @@ When working in this repository, you must adhere to the following rules:
   - The Founder Callout component (`.founder-callout-card`) is embedded inside `overrides/modules/content.html`, positioned right after `{{ page.content }}` and above the navigation buttons.
   - The Sidebar Technical Leadership widget is embedded inside `overrides/modules/blog_sidebar.html`.
   - **Rule for New Posts:** Authors and agents do NOT manually paste HTML cards into post markdown files. Any new post added under `docs/post/*.md` (EN) or `docs/pt/post/*.md` (PT) automatically inherits the Founder Callout upon `uv run mkdocs build`.
+- **Synchronized 5-State Rotation Engine (`assets/js/founder-rotation.js`):**
+  - Rotates every 10 seconds with a smooth 0.35s crossfade between 5 curated pairs of Photo and Title Question.
+  - **The 5 Linked States:**
+    1. Foto 1 (`hugo_01.jpg` — Ao vivo microfone): `Have a project in mind?` (PT: `Tem um projeto em mente?`)
+    2. Foto 6 (`hugo_06.jpg` — Mesa de madeira sorriso): `Let's talk about your project` (PT: `Vamos falar sobre o seu projeto?`)
+    3. Foto 9 (`hugo_09.jpg` — Corredor e laptop): `Building something new?` (PT: `Pensando em construir algo novo?`)
+    4. Foto 8 (`hugo_08.jpg` — Banco azul sorriso): `Want to run an idea by me?` (PT: `Quer trocar uma ideia sobre seu projeto?`)
+    5. Foto 5 (`hugo_05.jpg` — Estúdio plantas executivo): `Need help getting started?` (PT: `Precisa de ajuda para comecar?`)
+  - **Standardized CTA Elements (100% Identical Across all 5 States):**
+    - Subtitle: `Share it with Hugo, CPTO` (EN) / `Compartilhe com Hugo, CPTO` (PT).
+    - Button: `Start a Conversation` (EN) / `Iniciar Conversa` (PT).
+    - Anti-Wrap Invariant: The button enforces `white-space: nowrap !important; flex-shrink: 0 !important;` to prevent two-line breaks under all screen sizes.
+    - Destination: Directly targets the homepage contact section (`https://hsnlabs.ai/#contact` in EN, `https://hsnlabs.ai/pt/#contact` in PT).
 - **Localization and Invariants:**
-  - **English Posts (`docs/post/`):**
-    - Rótulo: `WANT TO DISCUSS THIS ARCHITECTURE?`
-    - Título: `Ask Hugo Soares, Founder & CPTO`
-    - CTA: `Get in Touch` (`mailto:hugo@hsnlabs.ai?subject=Blog Architecture Inquiry - HSN Labs`)
-  - **Portuguese Posts (`docs/pt/post/`):**
-    - Rótulo: `QUER DISCUTIR ESTA ARQUITETURA?`
-    - Título: `Fale com Hugo Soares, Founder e CPTO`
-    - CTA: `Entrar em Contato` (`mailto:hugo@hsnlabs.ai?subject=Consulta Blog - HSN Labs`)
-    - **Strict Zero-Parentheses Invariant:** Zero parentheses `(` and `)` permitted in visible Portuguese text, labels, or links.
-  - **Geometry & Brand:**
-    - Sharp 90-degree corners on card, avatar, and button (`border-radius: 0`).
-    - Authentic crumpled paper texture overlay via `mix-blend-mode: multiply` at 50% opacity.
-    - Official Title: Always `Founder & CPTO` (EN) or `Founder e CPTO` (PT). Never use "Arquiteto" or "Principal Architect".
+  - **Strict Zero-Parentheses Invariant:** Zero parentheses `(` and `)` permitted in visible Portuguese text, labels, or links.
+  - **Geometry & Brand:** Sharp 90-degree corners on card, avatar, and button (`border-radius: 0`). Crumpled paper texture overlay via `mix-blend-mode: multiply` at 50% opacity.
+  - **Official Title:** Always `Founder & CPTO` / `CPTO` (EN) or `Founder e CPTO` / `CPTO` (PT). Never use "Arquiteto" or "Principal Architect".
 
