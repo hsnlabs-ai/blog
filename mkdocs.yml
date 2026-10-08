@@ -28,6 +28,7 @@ extra_javascript:
   - assets/js/pagination.js
   - assets/js/relative_dates.js
   - assets/js/mermaid_init.js
+  - assets/js/founder-rotation.js
 
 plugins:
   - search
