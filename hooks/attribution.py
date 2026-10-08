@@ -29,11 +29,11 @@ def insert_newsletter_interstitial(markdown, is_pt=False):
 
     if is_pt:
         note = """
-> **[Agentes] x [a Gente]** — Fora do hype, discutimos como a engenharia agêntica multiplica e alavanca a capacidade laboral humana. Análises quinzenais publicadas na newsletter de Hugo Soares no LinkedIn com mais de 1.600 assinantes. [Acompanhar no LinkedIn ↗](https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7397999984089935872)
+> **[Agentes] x [a Gente]** — Fora do hype, discutimos como a engenharia agêntica multiplica e alavanca a capacidade laboral humana. Análises quinzenais publicadas na newsletter de Hugo S. Nascimento no LinkedIn com mais de 1.600 assinantes. [Acompanhar no LinkedIn ↗](https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7397999984089935872)
 """
     else:
         note = """
-> **[Agentes] x [a Gente]** — Beyond the hype: how agentic engineering multiplies and leverages human labor capacity. Bi-weekly field notes published in Hugo Soares's LinkedIn newsletter with over 1,600 subscribers. [Follow on LinkedIn ↗](https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7397999984089935872)
+> **[Agentes] x [a Gente]** — Beyond the hype: how agentic engineering multiplies and leverages human labor capacity. Bi-weekly field notes published in Hugo S. Nascimento's LinkedIn newsletter with over 1,600 subscribers. [Follow on LinkedIn ↗](https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7397999984089935872)
 """
 
     h2_matches = list(re.finditer(r'^##\s+', markdown, re.MULTILINE))

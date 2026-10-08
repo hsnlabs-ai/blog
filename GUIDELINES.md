@@ -24,8 +24,8 @@
 ## 3. Layout & Structure
 - Homepage (`docs/index.md`): Clean author profile with executive bio, authority proof points, and engineering essays feed. Must never display generic `HOME` page headers or automatic date stamps.
 - Pagination: 10 essays per page, rendered client-side with full DOM preservation for search crawler indexing.
-- Sidebar: Displays recent posts, categories, and tags with Brand Blue `#52B4FD` widget headers, plus the pinned Technical Leadership widget with Hugo Soares, Founder & CPTO.
-- Article Callout: Every article automatically terminates with the `.founder-callout-card` component prompting executive conversation with Hugo Soares, Founder & CPTO, rendered dynamically by language.
+- Sidebar: Displays recent posts, categories, and tags with Brand Blue `#52B4FD` widget headers, plus the pinned Technical Leadership widget with Hugo S. Nascimento, Founder & CPTO.
+- Article Callout: Every article automatically terminates with the `.founder-callout-card` component prompting executive conversation with Hugo S. Nascimento, Founder & CPTO, rendered dynamically by language.
 
 
 ## 4. Editorial Taxonomy & Pillars
