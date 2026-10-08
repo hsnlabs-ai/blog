@@ -1315,6 +1315,38 @@ td code {
   line-height: 1.3;
 }
 
+.founder-cred-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  text-decoration: none;
+  color: var(--ink);
+  margin-top: 5px;
+  transition: opacity 0.15s ease;
+}
+.founder-cred-link:hover {
+  opacity: 0.75;
+}
+.founder-cred-logo {
+  height: 16px;
+  width: auto;
+  display: block;
+}
+.founder-cred-text {
+  font-size: 0.88rem;
+  font-weight: 400;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+  line-height: 1;
+  white-space: nowrap;
+}
+.founder-cred-arrow {
+  font-size: 0.78rem;
+  color: var(--accent);
+  font-weight: 600;
+  margin-left: 1px;
+}
+
 .founder-callout-btn {
   background: #ffffff;
   color: var(--ink);

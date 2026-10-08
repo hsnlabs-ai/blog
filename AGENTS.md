@@ -50,6 +50,7 @@ When working in this repository, you must adhere to the following rules:
     5. Foto 5 (`hugo_05.jpg` — Estúdio plantas executivo): `Need help getting started?` (PT: `Precisa de ajuda para comecar?`)
   - **Standardized CTA Elements (100% Identical Across all 5 States):**
     - Subtitle: `Share it with Hugo, CPTO` (EN) / `Compartilhe com Hugo, CPTO` (PT).
+    - Inline Credential Lockup: Official LangChain brand mark and logotype (`lc-lockup-black.svg`) + `Certified Engineer ↗` linking to `/langchain` / `/pt/langchain`.
     - Button: `Start a Conversation` (EN) / `Iniciar Conversa` (PT).
     - Anti-Wrap Invariant: The button enforces `white-space: nowrap !important; flex-shrink: 0 !important;` to prevent two-line breaks under all screen sizes.
     - Destination: Directly targets the homepage contact section (`https://hsnlabs.ai/#contact` in EN, `https://hsnlabs.ai/pt/#contact` in PT).
