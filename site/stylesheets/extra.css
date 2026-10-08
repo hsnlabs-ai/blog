@@ -320,6 +320,42 @@ code, kbd, pre, samp {
   box-shadow: 0 4px 12px rgba(82, 180, 253, 0.4);
 }
 
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  line-height: 1;
+  user-select: none;
+  margin-left: 4px;
+}
+
+.lang-switch .lang-item {
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.15s ease;
+  line-height: 1;
+}
+
+.lang-switch a.lang-item:hover {
+  color: var(--ink);
+}
+
+.lang-switch .lang-item.active {
+  color: var(--ink);
+  font-weight: 600;
+  cursor: default;
+}
+
+.lang-switch .lang-sep {
+  color: var(--hairline-strong);
+  font-size: 0.75rem;
+  line-height: 1;
+  user-select: none;
+}
+
 /* Search Dropdown Wrap */
 .search-container-wrap {
   margin-top: 1rem;
