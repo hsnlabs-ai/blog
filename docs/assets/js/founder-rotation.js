@@ -1,8 +1,10 @@
 /**
  * Founder Callout 5-Pair Synchronized Rotation Engine — HSN Labs
- * Cycles through the 5 specific (Photo + Copy) pairings every 10 seconds.
- * Strictly preserves the 90-degree zero-border-radius design and zero-parentheses policy.
- * Directs button clicks to the homepage contact form (#contact / pt/#contact).
+ * Strictly standardizes the two CTA parts:
+ *   - Subtitle: "Share it with Hugo, CPTO" (PT: "Compartilhe com Hugo, CPTO")
+ *   - Button: "Start a Conversation" (PT: "Iniciar Conversa")
+ * Rotating ONLY the Photo (1, 6, 9, 8, 5) and the Title Question every 10 seconds.
+ * Strictly preserves 90-degree zero-border-radius design and zero-parentheses policy.
  */
 (function () {
   'use strict';
@@ -21,42 +23,41 @@
     ? (isPt ? 'https://hsnlabs.ai/pt/#contact' : 'https://hsnlabs.ai/#contact')
     : (isPt ? '/pt/#contact' : '/#contact');
 
-  // Asset base path detection for local dev vs production
   var assetBase = '/assets/images/author/pool/';
   if (isBlog && window.location.hostname === 'localhost') {
     assetBase = '/blog/assets/images/author/pool/';
   }
 
-  // The 5 pairs defined by user (Photos 1, 6, 9, 8, 5)
+  // The 5 pairs with standardized subtitle and button
   var pairsEN = [
     {
       img: assetBase + 'hugo_01.jpg',
       label: 'Have a project in mind?',
-      title: 'Talk to Hugo S. Nascimento, CPTO',
-      btn: 'Share Your Project'
+      title: 'Share it with Hugo, CPTO',
+      btn: 'Start a Conversation'
     },
     {
       img: assetBase + 'hugo_06.jpg',
       label: "Let's talk about your project",
-      title: 'Ask Hugo Soares, Founder & CPTO',
-      btn: 'Get in Touch'
+      title: 'Share it with Hugo, CPTO',
+      btn: 'Start a Conversation'
     },
     {
       img: assetBase + 'hugo_09.jpg',
       label: 'Building something new?',
-      title: 'Share it with Hugo S. Nascimento, CPTO',
-      btn: 'Tell Me About It'
+      title: 'Share it with Hugo, CPTO',
+      btn: 'Start a Conversation'
     },
     {
       img: assetBase + 'hugo_08.jpg',
       label: 'Want to run an idea by me?',
-      title: 'Ask Hugo S. Nascimento, Founder & CPTO',
-      btn: 'Send a Message'
+      title: 'Share it with Hugo, CPTO',
+      btn: 'Start a Conversation'
     },
     {
       img: assetBase + 'hugo_05.jpg',
       label: 'Need help getting started?',
-      title: 'Talk directly with Hugo Soares, CPTO',
+      title: 'Share it with Hugo, CPTO',
       btn: 'Start a Conversation'
     }
   ];
@@ -65,38 +66,37 @@
     {
       img: assetBase + 'hugo_01.jpg',
       label: 'Tem um projeto em mente?',
-      title: 'Fale com Hugo S. Nascimento, CPTO',
-      btn: 'Compartilhar Projeto'
+      title: 'Compartilhe com Hugo, CPTO',
+      btn: 'Iniciar Conversa'
     },
     {
       img: assetBase + 'hugo_06.jpg',
       label: 'Vamos falar sobre o seu projeto?',
-      title: 'Fale com Hugo Soares, Founder e CPTO',
-      btn: 'Entrar em Contato'
+      title: 'Compartilhe com Hugo, CPTO',
+      btn: 'Iniciar Conversa'
     },
     {
       img: assetBase + 'hugo_09.jpg',
       label: 'Pensando em construir algo novo?',
-      title: 'Compartilhe com Hugo S. Nascimento, CPTO',
-      btn: 'Contar Sobre o Projeto'
+      title: 'Compartilhe com Hugo, CPTO',
+      btn: 'Iniciar Conversa'
     },
     {
       img: assetBase + 'hugo_08.jpg',
       label: 'Quer trocar uma ideia sobre seu projeto?',
-      title: 'Fale com Hugo S. Nascimento, Founder e CPTO',
-      btn: 'Enviar Mensagem'
+      title: 'Compartilhe com Hugo, CPTO',
+      btn: 'Iniciar Conversa'
     },
     {
       img: assetBase + 'hugo_05.jpg',
       label: 'Precisa de ajuda para comecar?',
-      title: 'Fale diretamente com Hugo Soares, CPTO',
+      title: 'Compartilhe com Hugo, CPTO',
       btn: 'Iniciar Conversa'
     }
   ];
 
   var pairs = isPt ? pairsPT : pairsEN;
 
-  // Preload the 5 images
   function preloadImages() {
     for (var i = 0; i < pairs.length; i++) {
       var img = new Image();
@@ -142,24 +142,23 @@
 
       var currentIdx = initialIdx;
 
-      // Apply initial contact href if applicable
-      if (btn && btn.tagName === 'A') {
-        btn.href = contactBase;
+      // Lock button styles to never wrap or shrink
+      if (btn) {
+        btn.style.whiteSpace = 'nowrap';
+        btn.style.flexShrink = '0';
+        if (btn.tagName === 'A') btn.href = contactBase;
       }
 
-      // Prepare transition styles
       var transStyle = 'opacity ' + TRANSITION_DURATION_MS + 'ms ease-in-out';
       img.style.transition = transStyle;
       if (label) label.style.transition = transStyle;
       if (name) name.style.transition = transStyle;
       if (btn) btn.style.transition = transStyle;
 
-      // Interval rotation loop
       setInterval(function () {
         currentIdx = (currentIdx + 1) % pairs.length;
         var next = pairs[currentIdx];
 
-        // Fade out
         img.style.opacity = '0';
         if (label) label.style.opacity = '0';
         if (name) name.style.opacity = '0';
@@ -174,7 +173,6 @@
             btn.href = contactBase;
           }
 
-          // Fade in
           img.style.opacity = '1';
           if (label) label.style.opacity = '1';
           if (name) name.style.opacity = '1';
