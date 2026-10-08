@@ -26,3 +26,11 @@ When working in this repository, you must adhere to the following rules:
 ## 4. Workflows
 - **Content Creation:** All new content goes into `docs/writing/`. Follow the "Executive Impact first, Technical Proof second" structure.
 - **Build Tool:** Use `uv run mkdocs build` or `mkdocs serve`. Do not write raw HTML/CSS unless absolutely necessary. Rely on MkDocs Material native features.
+
+## 5. Header Architecture & Mobile Invariants
+- **Actions Order:** `Search` > `RSS` > `Github logo hsnlabs` > `EN · PT` (editorial interpunct `.lang-switch`) > `Apply for Bootcamp` (or `Inscrever no Bootcamp` in PT).
+- **Navigation Menu:** Contains only editorial items (`All Posts`, `Bootcamp`, `Advisory`, `About Hugo`). No standalone language links in the nav menu.
+- **Mobile Responsive Invariants (<= 640px):**
+  - Navigation menu (`.blog-header-menu`) is hidden (`display: none !important;`).
+  - Desktop-only elements (`.blog-header-cta` and `.header-github-link`) are hidden.
+  - Search, RSS, and `.lang-switch` stay visible in `.blog-header-actions` with `gap: 8px` and 36px icon size, fitting cleanly within 360px without horizontal overflow.
