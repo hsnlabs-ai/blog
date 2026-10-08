@@ -59,26 +59,26 @@
         <!-- Founder Callout Component -->
         <div class="founder-callout-card">
             <div style="display: flex; align-items: center; gap: 14px;">
-                <div class="founder-callout-avatar" data-initial-index="7">
-                    <img src="https://hsnlabs.ai/assets/images/author/pool/hugo_08.jpg" alt="Hugo Soares" width="52" height="52" />
+                <div class="founder-callout-avatar" data-initial-index="0">
+                    <img src="https://hsnlabs.ai/assets/images/author/pool/hugo_01.jpg" alt="Hugo Soares" width="52" height="52" class="founder-avatar-img" />
                 </div>
                 <div>
                     {% if page.file and page.file.src_uri.startswith('pt/') %}
-                    <div class="founder-callout-label">Quer discutir esta arquitetura?</div>
-                    <div class="founder-callout-name">Fale com Hugo Soares, Founder e CPTO</div>
+                    <div class="founder-callout-label">Tem um projeto em mente?</div>
+                    <div class="founder-callout-name">Fale com Hugo S. Nascimento, CPTO</div>
                     {% else %}
-                    <div class="founder-callout-label">Want to discuss this architecture?</div>
-                    <div class="founder-callout-name">Ask Hugo Soares, Founder &amp; CPTO</div>
+                    <div class="founder-callout-label">Have a project in mind?</div>
+                    <div class="founder-callout-name">Talk to Hugo S. Nascimento, CPTO</div>
                     {% endif %}
                 </div>
             </div>
             {% if page.file and page.file.src_uri.startswith('pt/') %}
-            <a href="mailto:hugo@hsnlabs.ai?subject=Consulta%20Blog%20-%20HSN%20Labs" class="founder-callout-btn">
-                Entrar em Contato
+            <a href="https://hsnlabs.ai/pt/#contact" class="founder-callout-btn">
+                Compartilhar Projeto
             </a>
             {% else %}
-            <a href="mailto:hugo@hsnlabs.ai?subject=Blog%20Architecture%20Inquiry%20-%20HSN%20Labs" class="founder-callout-btn">
-                Get in Touch
+            <a href="https://hsnlabs.ai/#contact" class="founder-callout-btn">
+                Share Your Project
             </a>
             {% endif %}
         </div>
