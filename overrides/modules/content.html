@@ -56,6 +56,33 @@
         </div>
 
         {% if not page.is_homepage and page.file.src_uri != 'index.md' and page.file.src_uri != 'pt/index.md' %}
+        <!-- Founder Callout Component -->
+        <div class="founder-callout-card">
+            <div style="display: flex; align-items: center; gap: 14px;">
+                <div class="founder-callout-avatar">
+                    <img src="https://hsnlabs.ai/assets/images/author/hugo-nascimento-square.jpg" alt="Hugo Soares" width="52" height="52" />
+                </div>
+                <div>
+                    {% if page.file and page.file.src_uri.startswith('pt/') %}
+                    <div class="founder-callout-label">Quer discutir esta arquitetura?</div>
+                    <div class="founder-callout-name">Fale com Hugo Soares, Founder e CPTO</div>
+                    {% else %}
+                    <div class="founder-callout-label">Want to discuss this architecture?</div>
+                    <div class="founder-callout-name">Ask Hugo Soares, Founder &amp; CPTO</div>
+                    {% endif %}
+                </div>
+            </div>
+            {% if page.file and page.file.src_uri.startswith('pt/') %}
+            <a href="mailto:hugo@hsnlabs.ai?subject=Consulta%20Blog%20-%20HSN%20Labs" class="founder-callout-btn">
+                Entrar em Contato
+            </a>
+            {% else %}
+            <a href="mailto:hugo@hsnlabs.ai?subject=Blog%20Architecture%20Inquiry%20-%20HSN%20Labs" class="founder-callout-btn">
+                Get in Touch
+            </a>
+            {% endif %}
+        </div>
+
         <div class="article-footer-nav">
             {% if page.file and page.file.src_uri.startswith('pt/') %}
             <a href="{{ 'pt/'|url }}" class="btn btn-outline article-nav-return-btn">

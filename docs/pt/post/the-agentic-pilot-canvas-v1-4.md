@@ -24,11 +24,11 @@ Para resolver esse gargalo metodologico antes de escrever uma unica linha de cod
 
 A versao 1.4, atualizada em outubro de 2026, consolida os aprendizados dos nossos sprints de arquitetura na HSN Labs. O modelo e interativo e roda diretamente no navegador:
 
-👉 **Acesse a ferramenta interativa:** [hsnlabs.ai/canvas](https://hsnlabs.ai/pt/canvas/)
+👉 **Acesse a ferramenta interativa:** <a href="https://hsnlabs.ai/pt/canvas/">hsnlabs.ai/canvas</a>
 
 ---
 
-![The Agentic Pilot Canvas v1.4](../../assets/images/posts/the-agentic-pilot-canvas/cover.png)
+<img src="../../assets/images/posts/the-agentic-pilot-canvas/cover.png" alt="The Agentic Pilot Canvas v1.4" />
 
 ---
 
@@ -103,4 +103,4 @@ O framework e totalmente aberto e funcional:
 * **Modo Preenchido:** Caso benchmark real de atendimento corporativo integrado a sistemas legados de RH.
 * **Recursos:** Persistencia automatica no navegador, lupa de leitura ampliada e exportacao direta para PDF.
 
-Acesse agora em [hsnlabs.ai/canvas](https://hsnlabs.ai/pt/canvas/) e utilize no desenho da sua proxima arquitetura.
+Acesse agora em <a href="https://hsnlabs.ai/pt/canvas/">hsnlabs.ai/canvas</a> e utilize no desenho da sua proxima arquitetura.
