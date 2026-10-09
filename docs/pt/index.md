@@ -7,11 +7,11 @@ description: Posts e notas de campo sobre arquitetura de agentes enterprise, ont
 
 <img src="../assets/images/author/hugo-nascimento.jpg" alt="Hugo S. Nascimento" class="author-photo" width="200" height="250" loading="eager" />
 
-Sou CPTO na Eva People e Fundador da HSN Labs. Fundador de 3 startups investidas por venture capital, engenheiro e investidor.
+Fundador da HSN Labs e CPTO na Eva People. Fundador serial investido por venture capital, investidor anjo e Certified LangChain Engineer.
 
-Meu foco operacional é **Arquitetura de Agentes Enterprise**. Construo arquiteturas multiagente customizadas sobre ontologias de domínio executáveis para operações corporativas de missão crítica. Substituo operações manuais frágeis de BPO e gargalos de TI legada por forças de trabalho digitais autônomas que não alucinam nem falham em produção.
+Conecto economia de balanço e engenharia de software de missão crítica. Com bagagem formada entre contratos corporativos na Philips e dutos de dados distribuídos na Oncase, auxilio lideranças executivas na transição de protótipos frágeis de IA para sistemas agênticos determinísticos e auditáveis integrados aos bancos de dados de registro.
 
-Arquiteturas entregues incluem **Deloitte**, **Santander**, **Softplan**, **Unipar Carbocloro**, **LWSA**, **Turbi**, **Caju**, **Cast Group** e **Insi**.
+Projetos em produção incluem **Deloitte**, **Santander**, **Softplan**, **Unipar Carbocloro**, **LWSA**, **Turbi**, **Caju**, **Cast Group** e **Insi**.
 
 <a href="https://hsnlabs.ai/pt/">HSN Labs Boutique</a> &nbsp;&bull;&nbsp; <a href="https://www.linkedin.com/in/hugosoaresnascimento/">LinkedIn</a> &nbsp;&bull;&nbsp; <a href="https://github.com/hsnlabs-ai/blog">GitHub</a> &nbsp;&bull;&nbsp; <a href="/blog/">English Version</a>
 

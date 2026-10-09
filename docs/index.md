@@ -12,11 +12,11 @@ blog_sidebar:
 
 <img src="assets/images/author/hugo-nascimento.jpg" alt="Hugo S. Nascimento — CPTO Eva People & Founder HSN Labs" class="author-photo" width="200" height="250" loading="eager" />
 
-I am CPTO at Eva People and Founder & Managing Partner at HSN Labs. 3x venture-backed founder, engineer, and investor.
+Founder & Managing Partner at HSN Labs and CPTO at Eva People. 3x venture-backed founder, startup investor, and Certified LangChain Engineer.
 
-My operational focus is **Enterprise Agent Architecture**. I build custom multi-agent architectures on executable domain ontologies for mission-critical enterprise operations. I replace fragile human BPO operations and legacy IT bottlenecks with autonomous digital workforces that do not hallucinate or fail in production.
+I bridge balance-sheet economics and mission-critical software engineering. With a foundation built across enterprise healthcare contracts at Philips and distributed data pipelines at Oncase, I help C-level executives transition from fragile generative AI prototypes to governed, deterministic agentic systems of record.
 
-Delivered client architectures include **Deloitte**, **Santander**, **Softplan**, **Unipar Carbocloro**, **LWSA**, **Turbi**, **Caju**, **Cast Group**, and **Insi**.
+Production footprints include **Deloitte**, **Santander**, **Softplan**, **Unipar Carbocloro**, **LWSA**, **Turbi**, **Caju**, **Cast Group**, and **Insi**.
 
 [HSN Labs Boutique](https://hsnlabs.ai) &nbsp;&bull;&nbsp; [LinkedIn](https://www.linkedin.com/in/hugosoaresnascimento/) &nbsp;&bull;&nbsp; [GitHub](https://github.com/hsnlabs-ai/blog) &nbsp;&bull;&nbsp; [RSS Feed](https://hsnlabs.ai/blog/feed_rss_created.xml)
 
