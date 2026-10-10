@@ -12,7 +12,7 @@ blog_sidebar:
 
 <img src="assets/images/author/hugo-nascimento.jpg" alt="Hugo S. Nascimento — CPTO Eva People & Founder HSN Labs" class="author-photo" width="200" height="250" loading="eager" />
 
-Founder & Managing Partner at HSN Labs and CPTO at Eva People. 3x venture-backed founder, startup investor, and Certified LangChain Engineer.
+Entrepreneur, consultant, and CPTO. Pioneer in deploying agentic systems in production for enterprise clients and benchmark in the field since 2022.
 
 I bridge balance-sheet economics and mission-critical software engineering. With a foundation built across enterprise healthcare contracts at Philips and distributed data pipelines at Oncase, I help C-level executives transition from fragile generative AI prototypes to governed, deterministic agentic systems of record.
 

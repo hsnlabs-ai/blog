@@ -7,7 +7,7 @@ description: Posts e notas de campo sobre arquitetura de agentes enterprise, ont
 
 <img src="../assets/images/author/hugo-nascimento.jpg" alt="Hugo S. Nascimento" class="author-photo" width="200" height="250" loading="eager" />
 
-Fundador da HSN Labs e CPTO na Eva People. Fundador serial investido por venture capital, investidor anjo e Certified LangChain Engineer.
+Empresário, consultor e diretor de tecnologia e produto como CPTO. Pioneiro na implementação de sistemas agênticos em produção para grandes contas e referência na aplicação dessas arquiteturas desde 2022.
 
 Conecto economia de balanço e engenharia de software de missão crítica. Com bagagem formada entre contratos corporativos na Philips e dutos de dados distribuídos na Oncase, auxilio lideranças executivas na transição de protótipos frágeis de IA para sistemas agênticos determinísticos e auditáveis integrados aos bancos de dados de registro.
 
