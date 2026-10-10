@@ -1,0 +1,325 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1240" width="1920" height="1240">
+<rect x="0" y="0" width="1920" height="1240" fill="#F5F5F5"/>
+<line x1="0" y1="0" x2="0" y2="1240" stroke="#EAEAEA" stroke-width="1"/>
+<line x1="120" y1="0" x2="120" y2="1240" stroke="#EAEAEA" stroke-width="1"/>
+<line x1="240" y1="0" x2="240" y2="1240" stroke="#EAEAEA" stroke-width="1"/>
+<line x1="360" y1="0" x2="360" y2="1240" stroke="#EAEAEA" stroke-width="1"/>
+<line x1="480" y1="0" x2="480" y2="1240" stroke="#EAEAEA" stroke-width="1"/>
+<line x1="600" y1="0" x2="600" y2="1240" stroke="#EAEAEA" stroke-width="1"/>
+<line x1="720" y1="0" x2="720" y2="1240" stroke="#EAEAEA" stroke-width="1"/>
+<line x1="840" y1="0" x2="840" y2="1240" stroke="#EAEAEA" stroke-width="1"/>
+<line x1="960" y1="0" x2="960" y2="1240" stroke="#EAEAEA" stroke-width="1"/>
+<line x1="1080" y1="0" x2="1080" y2="1240" stroke="#EAEAEA" stroke-width="1"/>
+<line x1="1200" y1="0" x2="1200" y2="1240" stroke="#EAEAEA" stroke-width="1"/>
+<line x1="1320" y1="0" x2="1320" y2="1240" stroke="#EAEAEA" stroke-width="1"/>
+<line x1="1440" y1="0" x2="1440" y2="1240" stroke="#EAEAEA" stroke-width="1"/>
+<line x1="1560" y1="0" x2="1560" y2="1240" stroke="#EAEAEA" stroke-width="1"/>
+<line x1="1680" y1="0" x2="1680" y2="1240" stroke="#EAEAEA" stroke-width="1"/>
+<line x1="1800" y1="0" x2="1800" y2="1240" stroke="#EAEAEA" stroke-width="1"/>
+<line x1="0" y1="0" x2="1920" y2="0" stroke="#EAEAEA" stroke-width="1"/>
+<line x1="0" y1="120" x2="1920" y2="120" stroke="#EAEAEA" stroke-width="1"/>
+<line x1="0" y1="240" x2="1920" y2="240" stroke="#EAEAEA" stroke-width="1"/>
+<line x1="0" y1="360" x2="1920" y2="360" stroke="#EAEAEA" stroke-width="1"/>
+<line x1="0" y1="480" x2="1920" y2="480" stroke="#EAEAEA" stroke-width="1"/>
+<line x1="0" y1="600" x2="1920" y2="600" stroke="#EAEAEA" stroke-width="1"/>
+<line x1="0" y1="720" x2="1920" y2="720" stroke="#EAEAEA" stroke-width="1"/>
+<line x1="0" y1="840" x2="1920" y2="840" stroke="#EAEAEA" stroke-width="1"/>
+<line x1="0" y1="960" x2="1920" y2="960" stroke="#EAEAEA" stroke-width="1"/>
+<line x1="0" y1="1080" x2="1920" y2="1080" stroke="#EAEAEA" stroke-width="1"/>
+<line x1="0" y1="1200" x2="1920" y2="1200" stroke="#EAEAEA" stroke-width="1"/>
+<rect x="60" y="30" width="1800" height="80" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+<rect x="84" y="48" width="44" height="44" fill="#52B4FD" stroke="#52B4FD" stroke-width="0"/>
+<polygon points="94,58 118,58 118,82 106,70" fill="#FFFFFF"/>
+<text x="144" y="76" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="24" font-weight="800" text-anchor="start">HSN LABS</text>
+<line x1="285" y1="48" x2="285" y2="92" stroke="#E2E8F0" stroke-width="1.5"/>
+<text x="305" y="68" fill="#0284C7" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="16" font-weight="700" text-anchor="start">ENTERPRISE AGENTIC ARCHITECTURE</text>
+<text x="305" y="87" fill="#64748B" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="13" font-weight="400" text-anchor="start">The Open Alternative to Palantir AIP - Production Runtime on Executable Business Ontologies</text>
+<rect x="1420" y="48" width="420" height="44" fill="#F8FAFC" stroke="#52B4FD" stroke-width="1.5"/>
+<rect x="1436" y="64" width="12" height="12" fill="#10B981" stroke="#10B981" stroke-width="0"/>
+<text x="1460" y="75" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="700" text-anchor="start">ENTERPRISE AGENTS THAT DO NOT FAIL IN PRODUCTION</text>
+<rect x="60" y="135" width="880" height="315" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+<rect x="60" y="135" width="880" height="56" fill="#FAFAFA" stroke="#E2E8F0" stroke-width="1"/>
+<rect x="76" y="145" width="44" height="36" fill="#52B4FD" stroke="#52B4FD" stroke-width="0"/>
+<text x="98" y="169" fill="#FFFFFF" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="16" font-weight="800" text-anchor="middle">01</text>
+<path d="M 135 155 L 155 155 L 155 161 L 135 161 Z" fill="#0284C7"/>
+<path d="M 135 163 L 155 163 L 155 169 L 135 169 Z" fill="#0284C7"/>
+<path d="M 135 171 L 155 171 L 155 177 L 135 177 Z" fill="#0284C7"/>
+<text x="170" y="170" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="15" font-weight="700" text-anchor="start">CONTEXT ENGINEERING & LEGACY INGESTION</text>
+<text x="670" y="170" fill="#64748B" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="500" text-anchor="start">Surgical Extraction from Systems of Record</text>
+<rect x="80" y="207" width="260" height="220" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+<rect x="95" y="223" width="8" height="8" fill="#52B4FD" stroke="#52B4FD" stroke-width="0"/>
+<text x="112" y="231" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="700" text-anchor="start">RELATIONAL CORE & ERP</text>
+<text x="95" y="257" fill="#475569" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="400" text-anchor="start">Direct connections to legacy IT:</text>
+<text x="95" y="277" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="600" text-anchor="start">• SAP & Totvs Protheus</text>
+<text x="95" y="297" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="600" text-anchor="start">• PostgreSQL & Oracle SQL</text>
+<text x="95" y="317" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="600" text-anchor="start">• Isolated read replicas</text>
+<text x="95" y="347" fill="#64748B" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="400" text-anchor="start">No data dumps or risky ETL.</text>
+<text x="95" y="365" fill="#64748B" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="400" text-anchor="start">Query live ledgers safely</text>
+<text x="95" y="383" fill="#64748B" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="400" text-anchor="start">under read-only permissions.</text>
+<rect x="95" y="399" width="110" height="18" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1"/>
+<text x="105" y="412" fill="#1D4ED8" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="9" font-weight="700" text-anchor="start">READ REPLICAS</text>
+<rect x="360" y="207" width="260" height="220" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+<rect x="375" y="223" width="8" height="8" fill="#52B4FD" stroke="#52B4FD" stroke-width="0"/>
+<text x="392" y="231" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="700" text-anchor="start">TRANSACTIONAL APIS</text>
+<text x="375" y="257" fill="#475569" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="400" text-anchor="start">Standardized enterprise routes:</text>
+<text x="375" y="277" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="600" text-anchor="start">• REST endpoints & gRPC</text>
+<text x="375" y="297" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="600" text-anchor="start">• Webhook ingest pipelines</text>
+<text x="375" y="317" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="600" text-anchor="start">• GraphQL service mesh</text>
+<text x="375" y="347" fill="#64748B" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="400" text-anchor="start">Two-way integration bridges</text>
+<text x="375" y="365" fill="#64748B" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="400" text-anchor="start">without changing existing</text>
+<text x="375" y="383" fill="#64748B" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="400" text-anchor="start">corporate microservices.</text>
+<rect x="375" y="399" width="110" height="18" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1"/>
+<text x="385" y="412" fill="#1D4ED8" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="9" font-weight="700" text-anchor="start">SECURE MESH</text>
+<rect x="640" y="207" width="280" height="220" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+<rect x="655" y="223" width="8" height="8" fill="#52B4FD" stroke="#52B4FD" stroke-width="0"/>
+<text x="672" y="231" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="700" text-anchor="start">UNSTRUCTURED & CDC</text>
+<text x="655" y="257" fill="#475569" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="400" text-anchor="start">Dynamic documents and streams:</text>
+<text x="655" y="277" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="600" text-anchor="start">• Contracts & PDF policies</text>
+<text x="655" y="297" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="600" text-anchor="start">• Change Data Capture CDC</text>
+<text x="655" y="317" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="600" text-anchor="start">• AWS SQS event stream</text>
+<text x="655" y="347" fill="#64748B" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="400" text-anchor="start">Real-time updates delivered</text>
+<text x="655" y="365" fill="#64748B" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="400" text-anchor="start">directly to agent memory</text>
+<text x="655" y="383" fill="#64748B" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="400" text-anchor="start">under 500 milliseconds.</text>
+<rect x="655" y="399" width="110" height="18" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1"/>
+<text x="665" y="412" fill="#1D4ED8" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="9" font-weight="700" text-anchor="start">EVENT STREAM</text>
+<rect x="60" y="485" width="880" height="315" fill="#FFFFFF" stroke="#52B4FD" stroke-width="2"/>
+<rect x="60" y="485" width="880" height="56" fill="#F0F9FF" stroke="#BAE6FD" stroke-width="1"/>
+<rect x="76" y="495" width="44" height="36" fill="#52B4FD" stroke="#52B4FD" stroke-width="0"/>
+<text x="98" y="519" fill="#FFFFFF" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="16" font-weight="800" text-anchor="middle">02</text>
+<circle cx="135" cy="513" r="5" fill="#0284C7"/>
+<circle cx="155" cy="505" r="5" fill="#0284C7"/>
+<circle cx="155" cy="521" r="5" fill="#0284C7"/>
+<line x1="135" y1="513" x2="155" y2="505" stroke="#0284C7" stroke-width="1.5"/>
+<line x1="135" y1="513" x2="155" y2="521" stroke="#0284C7" stroke-width="1.5"/>
+<text x="170" y="520" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="15" font-weight="800" text-anchor="start">OPEN OPERATIONAL ONTOLOGY ENGINE</text>
+<text x="600" y="520" fill="#0284C7" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="700" text-anchor="start">Palantir Foundry Parity in Open Python</text>
+<rect x="80" y="557" width="260" height="220" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+<rect x="95" y="573" width="8" height="8" fill="#52B4FD" stroke="#52B4FD" stroke-width="0"/>
+<text x="112" y="581" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="700" text-anchor="start">BUSINESS OBJECTS</text>
+<text x="95" y="607" fill="#475569" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="400" text-anchor="start">Pydantic data models:</text>
+<text x="95" y="627" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="600" text-anchor="start">• Digital twin of ERP</text>
+<text x="95" y="647" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="600" text-anchor="start">• Invoices, ledger accounts</text>
+<text x="95" y="667" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="600" text-anchor="start">• Validated schema bounds</text>
+<text x="95" y="697" fill="#64748B" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="400" text-anchor="start">Eliminates database semantic</text>
+<text x="95" y="715" fill="#64748B" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="400" text-anchor="start">drift by enforcing typed</text>
+<text x="95" y="733" fill="#64748B" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="400" text-anchor="start">schemas on every entity.</text>
+<rect x="95" y="749" width="110" height="18" fill="#F0FDF4" stroke="#BBF7D0" stroke-width="1"/>
+<text x="105" y="762" fill="#166534" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="9" font-weight="700" text-anchor="start">TYPED MODELS</text>
+<rect x="360" y="557" width="260" height="220" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+<rect x="375" y="573" width="8" height="8" fill="#52B4FD" stroke="#52B4FD" stroke-width="0"/>
+<text x="392" y="581" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="700" text-anchor="start">TYPED TOOL REGISTRY</text>
+<text x="375" y="607" fill="#475569" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="400" text-anchor="start">Model Context Protocol:</text>
+<text x="375" y="627" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="600" text-anchor="start">• Open MCP tool server</text>
+<text x="375" y="647" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="600" text-anchor="start">• Read perimeters</text>
+<text x="375" y="667" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="600" text-anchor="start">• State mutation actions</text>
+<text x="375" y="697" fill="#64748B" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="400" text-anchor="start">Models never call raw SQL.</text>
+<text x="375" y="715" fill="#64748B" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="400" text-anchor="start">Every invocation targets a</text>
+<text x="375" y="733" fill="#64748B" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="400" text-anchor="start">strictly bounded action.</text>
+<rect x="375" y="749" width="110" height="18" fill="#F0FDF4" stroke="#BBF7D0" stroke-width="1"/>
+<text x="385" y="762" fill="#166534" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="9" font-weight="700" text-anchor="start">MCP STANDARD</text>
+<rect x="640" y="557" width="280" height="220" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+<rect x="655" y="573" width="8" height="8" fill="#52B4FD" stroke="#52B4FD" stroke-width="0"/>
+<text x="672" y="581" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="700" text-anchor="start">BUSINESS INVARIANTS</text>
+<text x="655" y="607" fill="#475569" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="400" text-anchor="start">Deterministic software rules:</text>
+<text x="655" y="627" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="600" text-anchor="start">• Double-entry balancing</text>
+<text x="655" y="647" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="600" text-anchor="start">• Legal compliance checks</text>
+<text x="655" y="667" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="600" text-anchor="start">• Expense authority caps</text>
+<text x="655" y="697" fill="#64748B" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="400" text-anchor="start">Code-level veto overrides</text>
+<text x="655" y="715" fill="#64748B" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="400" text-anchor="start">any hallucinated proposal</text>
+<text x="655" y="733" fill="#64748B" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="400" text-anchor="start">before hitting the ledger.</text>
+<rect x="655" y="749" width="110" height="18" fill="#F0FDF4" stroke="#BBF7D0" stroke-width="1"/>
+<text x="665" y="762" fill="#166534" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="9" font-weight="700" text-anchor="start">CODE VETO GUARD</text>
+<rect x="60" y="835" width="880" height="315" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+<rect x="60" y="835" width="880" height="56" fill="#FAFAFA" stroke="#E2E8F0" stroke-width="1"/>
+<rect x="76" y="845" width="44" height="36" fill="#52B4FD" stroke="#52B4FD" stroke-width="0"/>
+<text x="98" y="869" fill="#FFFFFF" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="16" font-weight="800" text-anchor="middle">03</text>
+<path d="M 145 855 L 155 860 L 155 870 L 145 877 L 135 870 L 135 860 Z" fill="#0284C7"/>
+<text x="170" y="870" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="15" font-weight="700" text-anchor="start">GOVERNANCE & SECURITY MIDDLEWARES</text>
+<text x="650" y="870" fill="#64748B" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="500" text-anchor="start">Zero-Trust Enforcement & Privacy Scrub</text>
+<rect x="80" y="907" width="260" height="220" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+<rect x="95" y="923" width="8" height="8" fill="#52B4FD" stroke="#52B4FD" stroke-width="0"/>
+<text x="112" y="931" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="700" text-anchor="start">AUTHENTICATION & RBAC</text>
+<text x="95" y="957" fill="#475569" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="400" text-anchor="start">Identity and execution bounds:</text>
+<text x="95" y="977" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="600" text-anchor="start">• HMAC signature checks</text>
+<text x="95" y="997" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="600" text-anchor="start">• Token-level agent roles</text>
+<text x="95" y="1017" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="600" text-anchor="start">• mTLS internal service mesh</text>
+<text x="95" y="1047" fill="#64748B" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="400" text-anchor="start">Guarantees that unauthorized</text>
+<text x="95" y="1065" fill="#64748B" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="400" text-anchor="start">triggers cannot execute</text>
+<text x="95" y="1083" fill="#64748B" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="400" text-anchor="start">or forge agent calls.</text>
+<rect x="95" y="1099" width="110" height="18" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1"/>
+<text x="105" y="1112" fill="#1D4ED8" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="9" font-weight="700" text-anchor="start">ZERO TRUST</text>
+<rect x="360" y="907" width="260" height="220" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+<rect x="375" y="923" width="8" height="8" fill="#52B4FD" stroke="#52B4FD" stroke-width="0"/>
+<text x="392" y="931" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="700" text-anchor="start">PII MASKING & PRIVACY</text>
+<text x="375" y="957" fill="#475569" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="400" text-anchor="start">Automated data scrubbing:</text>
+<text x="375" y="977" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="600" text-anchor="start">• Regex & Presidio engine</text>
+<text x="375" y="997" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="600" text-anchor="start">• Anonymizes customer CPF</text>
+<text x="375" y="1017" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="600" text-anchor="start">• Obfuscates bank accounts</text>
+<text x="375" y="1047" fill="#64748B" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="400" text-anchor="start">No plain text PII ever enters</text>
+<text x="375" y="1065" fill="#64748B" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="400" text-anchor="start">foundation model prompts</text>
+<text x="375" y="1083" fill="#64748B" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="400" text-anchor="start">or external logs.</text>
+<rect x="375" y="1099" width="110" height="18" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1"/>
+<text x="385" y="1112" fill="#1D4ED8" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="9" font-weight="700" text-anchor="start">LGPD / GDPR</text>
+<rect x="640" y="907" width="280" height="220" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+<rect x="655" y="923" width="8" height="8" fill="#52B4FD" stroke="#52B4FD" stroke-width="0"/>
+<text x="672" y="931" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="700" text-anchor="start">ASYNCHRONOUS QUEUES</text>
+<text x="655" y="957" fill="#475569" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="400" text-anchor="start">Resilient backend buffers:</text>
+<text x="655" y="977" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="600" text-anchor="start">• AWS SQS decoupler</text>
+<text x="655" y="997" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="600" text-anchor="start">• Redis state cache</text>
+<text x="655" y="1017" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="600" text-anchor="start">• Circuit breaker fault limit</text>
+<text x="655" y="1047" fill="#64748B" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="400" text-anchor="start">Safely bypasses Slack and</text>
+<text x="655" y="1065" fill="#64748B" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="400" text-anchor="start">ERP synchronous timeouts</text>
+<text x="655" y="1083" fill="#64748B" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="400" text-anchor="start">rigidly capped at 3 seconds.</text>
+<rect x="655" y="1099" width="110" height="18" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1"/>
+<text x="665" y="1112" fill="#1D4ED8" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="9" font-weight="700" text-anchor="start">ASYNC BUFFERS</text>
+<rect x="980" y="135" width="880" height="315" fill="#FFFFFF" stroke="#52B4FD" stroke-width="2"/>
+<rect x="980" y="135" width="880" height="56" fill="#F0F9FF" stroke="#BAE6FD" stroke-width="1"/>
+<rect x="996" y="145" width="44" height="36" fill="#52B4FD" stroke="#52B4FD" stroke-width="0"/>
+<text x="1018" y="169" fill="#FFFFFF" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="16" font-weight="800" text-anchor="middle">04</text>
+<circle cx="1065" cy="163" r="8" fill="none" stroke="#0284C7" stroke-width="2"/>
+<circle cx="1065" cy="163" r="3" fill="#0284C7"/>
+<text x="1090" y="170" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="15" font-weight="800" text-anchor="start">AGENT LIFECYCLE & STATE ORCHESTRATION</text>
+<text x="1560" y="170" fill="#0284C7" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="700" text-anchor="start">LangGraph & Aurora Checkpoints</text>
+<rect x="1000" y="207" width="260" height="220" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+<rect x="1015" y="223" width="8" height="8" fill="#52B4FD" stroke="#52B4FD" stroke-width="0"/>
+<text x="1032" y="231" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="700" text-anchor="start">FINITE STATE MACHINE</text>
+<text x="1015" y="257" fill="#475569" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="400" text-anchor="start">Deterministic routing:</text>
+<text x="1015" y="277" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="600" text-anchor="start">• LangGraph StateGraph</text>
+<text x="1015" y="297" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="600" text-anchor="start">• Explicit edge conditions</text>
+<text x="1015" y="317" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="600" text-anchor="start">• Bounded recursion limits</text>
+<text x="1015" y="347" fill="#64748B" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="400" text-anchor="start">No infinite loops or random</text>
+<text x="1015" y="365" fill="#64748B" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="400" text-anchor="start">reasoning drifts. Flow paths</text>
+<text x="1015" y="383" fill="#64748B" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="400" text-anchor="start">are strictly provable.</text>
+<rect x="1015" y="399" width="110" height="18" fill="#F0FDF4" stroke="#BBF7D0" stroke-width="1"/>
+<text x="1025" y="412" fill="#166534" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="9" font-weight="700" text-anchor="start">STATE GRAPH</text>
+<rect x="1280" y="207" width="260" height="220" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+<rect x="1295" y="223" width="8" height="8" fill="#52B4FD" stroke="#52B4FD" stroke-width="0"/>
+<text x="1312" y="231" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="700" text-anchor="start">DURABLE PERSISTENCE</text>
+<text x="1295" y="257" fill="#475569" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="400" text-anchor="start">Aurora state engine:</text>
+<text x="1295" y="277" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="600" text-anchor="start">• Aurora PostgreSQL store</text>
+<text x="1295" y="297" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="600" text-anchor="start">• Replay thread from node</text>
+<text x="1295" y="317" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="600" text-anchor="start">• Snapshot delta diffing</text>
+<text x="1295" y="347" fill="#64748B" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="400" text-anchor="start">If a process crashes or</text>
+<text x="1295" y="365" fill="#64748B" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="400" text-anchor="start">restarts, execution resumes</text>
+<text x="1295" y="383" fill="#64748B" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="400" text-anchor="start">from the exact last node.</text>
+<rect x="1295" y="399" width="110" height="18" fill="#F0FDF4" stroke="#BBF7D0" stroke-width="1"/>
+<text x="1305" y="412" fill="#166534" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="9" font-weight="700" text-anchor="start">CHECKPOINTS</text>
+<rect x="1560" y="207" width="280" height="220" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+<rect x="1575" y="223" width="8" height="8" fill="#52B4FD" stroke="#52B4FD" stroke-width="0"/>
+<text x="1592" y="231" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="700" text-anchor="start">CONTINUOUS EVAL</text>
+<text x="1575" y="257" fill="#475569" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="400" text-anchor="start">Automated regression tests:</text>
+<text x="1575" y="277" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="600" text-anchor="start">• DeepEval & Ragas in CI</text>
+<text x="1575" y="297" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="600" text-anchor="start">• Step-by-step scoring</text>
+<text x="1575" y="317" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="600" text-anchor="start">• Canary shadow testing</text>
+<text x="1575" y="347" fill="#64748B" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="400" text-anchor="start">Catches prompt regressions</text>
+<text x="1575" y="365" fill="#64748B" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="400" text-anchor="start">and tool call anomalies</text>
+<text x="1575" y="383" fill="#64748B" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="400" text-anchor="start">before git merge.</text>
+<rect x="1575" y="399" width="110" height="18" fill="#F0FDF4" stroke="#BBF7D0" stroke-width="1"/>
+<text x="1585" y="412" fill="#166534" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="9" font-weight="700" text-anchor="start">CI REGRESSION</text>
+<rect x="980" y="485" width="880" height="315" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+<rect x="980" y="485" width="880" height="56" fill="#FAFAFA" stroke="#E2E8F0" stroke-width="1"/>
+<rect x="996" y="495" width="44" height="36" fill="#52B4FD" stroke="#52B4FD" stroke-width="0"/>
+<text x="1018" y="519" fill="#FFFFFF" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="16" font-weight="800" text-anchor="middle">05</text>
+<path d="M 1060 517 L 1070 517 L 1075 509 L 1065 505 L 1055 509 Z" fill="#0284C7"/>
+<text x="1090" y="520" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="15" font-weight="700" text-anchor="start">ISOLATED MODEL EXECUTION & GUARDRAILS</text>
+<text x="1580" y="520" fill="#64748B" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="500" text-anchor="start">AWS Bedrock Enclave & Audit Trail</text>
+<rect x="1000" y="557" width="260" height="220" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+<rect x="1015" y="573" width="8" height="8" fill="#52B4FD" stroke="#52B4FD" stroke-width="0"/>
+<text x="1032" y="581" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="700" text-anchor="start">PRIVATE ENCLAVE</text>
+<text x="1015" y="607" fill="#475569" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="400" text-anchor="start">Zero public data leakage:</text>
+<text x="1015" y="627" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="600" text-anchor="start">• AWS Bedrock PrivateLink</text>
+<text x="1015" y="647" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="600" text-anchor="start">• Dedicated private VPC</text>
+<text x="1015" y="667" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="600" text-anchor="start">• Client KMS encryption keys</text>
+<text x="1015" y="697" fill="#64748B" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="400" text-anchor="start">No data retention or vendor</text>
+<text x="1015" y="715" fill="#64748B" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="400" text-anchor="start">model training on client</text>
+<text x="1015" y="733" fill="#64748B" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="400" text-anchor="start">telemetry or payloads.</text>
+<rect x="1015" y="749" width="110" height="18" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1"/>
+<text x="1025" y="762" fill="#1D4ED8" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="9" font-weight="700" text-anchor="start">PRIVATE VPC</text>
+<rect x="1280" y="557" width="260" height="220" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+<rect x="1295" y="573" width="8" height="8" fill="#52B4FD" stroke="#52B4FD" stroke-width="0"/>
+<text x="1312" y="581" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="700" text-anchor="start">TASK-OPTIMIZED ROUTER</text>
+<text x="1295" y="607" fill="#475569" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="400" text-anchor="start">Multi-model orchestration:</text>
+<text x="1295" y="627" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="600" text-anchor="start">• Claude 3.5 Sonnet</text>
+<text x="1295" y="647" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="600" text-anchor="start">• Llama 3 70B & 8B</text>
+<text x="1295" y="667" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="600" text-anchor="start">• Automatic model fallback</text>
+<text x="1295" y="697" fill="#64748B" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="400" text-anchor="start">Selects the exact foundation</text>
+<text x="1295" y="715" fill="#64748B" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="400" text-anchor="start">engine matching task budget</text>
+<text x="1295" y="733" fill="#64748B" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="400" text-anchor="start">and latency objectives.</text>
+<rect x="1295" y="749" width="110" height="18" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1"/>
+<text x="1305" y="762" fill="#1D4ED8" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="9" font-weight="700" text-anchor="start">SMART ROUTING</text>
+<rect x="1560" y="557" width="280" height="220" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+<rect x="1575" y="573" width="8" height="8" fill="#52B4FD" stroke="#52B4FD" stroke-width="0"/>
+<text x="1592" y="581" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="700" text-anchor="start">AUDIT & GUARDRAILS</text>
+<text x="1575" y="607" fill="#475569" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="400" text-anchor="start">Full accountability chain:</text>
+<text x="1575" y="627" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="600" text-anchor="start">• NeMo semantic guardrails</text>
+<text x="1575" y="647" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="600" text-anchor="start">• Hash-chained audit logs</text>
+<text x="1575" y="667" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="600" text-anchor="start">• Token ROI & cost metrics</text>
+<text x="1575" y="697" fill="#64748B" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="400" text-anchor="start">Every agent action carries</text>
+<text x="1575" y="715" fill="#64748B" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="400" text-anchor="start">immutable proof of decision,</text>
+<text x="1575" y="733" fill="#64748B" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="400" text-anchor="start">reasoning, and exact cost.</text>
+<rect x="1575" y="749" width="110" height="18" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1"/>
+<text x="1585" y="762" fill="#1D4ED8" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="9" font-weight="700" text-anchor="start">AUDIT CHAIN</text>
+<rect x="980" y="835" width="880" height="315" fill="#FFFFFF" stroke="#10B981" stroke-width="2"/>
+<rect x="980" y="835" width="880" height="56" fill="#F0FDF4" stroke="#BBF7D0" stroke-width="1"/>
+<rect x="996" y="845" width="44" height="36" fill="#10B981" stroke="#10B981" stroke-width="0"/>
+<text x="1018" y="869" fill="#FFFFFF" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="16" font-weight="800" text-anchor="middle">06</text>
+<circle cx="1065" cy="857" r="5" fill="#15803D"/>
+<path d="M 1055 873 L 1075 873 L 1070 865 L 1060 865 Z" fill="#15803D"/>
+<text x="1090" y="870" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="15" font-weight="800" text-anchor="start">OPERATIONAL TOUCHPOINTS & HUMAN-IN-THE-LOOP</text>
+<text x="1610" y="870" fill="#15803D" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="700" text-anchor="start">Final Control Under Executive Eyes</text>
+<rect x="1000" y="907" width="240" height="220" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+<rect x="1015" y="923" width="8" height="8" fill="#10B981" stroke="#10B981" stroke-width="0"/>
+<text x="1032" y="931" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="700" text-anchor="start">SLACK ENTERPRISE</text>
+<text x="1015" y="957" fill="#475569" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="400" text-anchor="start">Native team interface:</text>
+<text x="1015" y="977" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="600" text-anchor="start">• Instant alert feeds</text>
+<text x="1015" y="997" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="600" text-anchor="start">• Interactive buttons</text>
+<text x="1015" y="1017" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="600" text-anchor="start">• Conversational exceptions</text>
+<text x="1015" y="1047" fill="#64748B" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="400" text-anchor="start">No new software to learn.</text>
+<text x="1015" y="1065" fill="#64748B" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="400" text-anchor="start">Teams supervise agents</text>
+<text x="1015" y="1083" fill="#64748B" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="400" text-anchor="start">inside their active Slack.</text>
+<rect x="1015" y="1099" width="100" height="18" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="1"/>
+<text x="1025" y="1112" fill="#065F46" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="9" font-weight="700" text-anchor="start">SLACK APP</text>
+<rect x="1260" y="907" width="300" height="220" fill="#FEFCE8" stroke="#F59E0B" stroke-width="1.5"/>
+<rect x="1275" y="923" width="8" height="8" fill="#F59E0B" stroke="#F59E0B" stroke-width="0"/>
+<text x="1292" y="931" fill="#92400E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="800" text-anchor="start">CRITICAL HUMAN GATEWAY</text>
+<text x="1275" y="957" fill="#78350F" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="500" text-anchor="start">Mandatory human review for:</text>
+<text x="1275" y="977" fill="#92400E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="700" text-anchor="start">• Transactions exceeding limit</text>
+<text x="1275" y="997" fill="#92400E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="700" text-anchor="start">• Critical vendor contract edits</text>
+<text x="1275" y="1017" fill="#92400E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="700" text-anchor="start">• Schema compliance warnings</text>
+<rect x="1275" y="1042" width="125" height="34" fill="#15803D" stroke="#166534" stroke-width="1"/>
+<text x="1337" y="1063" fill="#FFFFFF" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="700" text-anchor="middle">AUTHORIZE</text>
+<rect x="1415" y="1042" width="125" height="34" fill="#B91C1C" stroke="#991B1B" stroke-width="1"/>
+<text x="1477" y="1063" fill="#FFFFFF" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="700" text-anchor="middle">ROLLBACK</text>
+<text x="1275" y="1102" fill="#B45309" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="10" font-weight="600" text-anchor="start">State unpauses only upon signoff</text>
+<rect x="1580" y="907" width="260" height="220" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+<rect x="1595" y="923" width="8" height="8" fill="#52B4FD" stroke="#52B4FD" stroke-width="0"/>
+<text x="1612" y="931" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="700" text-anchor="start">HSN LABS DELIVERY</text>
+<text x="1595" y="957" fill="#475569" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="400" text-anchor="start">GTM and business impact:</text>
+<text x="1595" y="977" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="600" text-anchor="start">• 1 to 5 Day Bootcamp</text>
+<text x="1595" y="997" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="600" text-anchor="start">• Audited unit ROI proof</text>
+<text x="1595" y="1017" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="600" text-anchor="start">• Direct BPO replacement</text>
+<text x="1595" y="1047" fill="#64748B" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="400" text-anchor="start">Full client ownership of code</text>
+<text x="1595" y="1065" fill="#64748B" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="400" text-anchor="start">and infrastructure without</text>
+<text x="1595" y="1083" fill="#64748B" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="400" text-anchor="start">recurring seat licenses.</text>
+<rect x="1595" y="1099" width="100" height="18" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1"/>
+<text x="1605" y="1112" fill="#1D4ED8" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="9" font-weight="700" text-anchor="start">CLIENT OWNED</text>
+<line x1="500" y1="450" x2="500" y2="485" stroke="#52B4FD" stroke-width="2"/>
+<polygon points="496,483 500,491 504,483" fill="#52B4FD"/>
+<line x1="500" y1="800" x2="500" y2="835" stroke="#52B4FD" stroke-width="2"/>
+<polygon points="496,833 500,841 504,833" fill="#52B4FD"/>
+<line x1="940" y1="295" x2="980" y2="295" stroke="#52B4FD" stroke-width="2.5"/>
+<polygon points="972,290 980,295 972,300" fill="#52B4FD"/>
+<rect x="948" y="279" width="24" height="30" fill="#EFF6FF" stroke="#52B4FD" stroke-width="1"/>
+<text x="960" y="299" fill="#0284C7" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="10" font-weight="800" text-anchor="middle">GO</text>
+<line x1="940" y1="995" x2="980" y2="645" stroke="#52B4FD" stroke-width="2" stroke-dasharray="4,4"/>
+<line x1="1420" y1="450" x2="1420" y2="485" stroke="#52B4FD" stroke-width="2"/>
+<polygon points="1416,483 1420,491 1424,483" fill="#52B4FD"/>
+<line x1="1420" y1="800" x2="1420" y2="835" stroke="#52B4FD" stroke-width="2"/>
+<polygon points="1416,833 1420,841 1424,833" fill="#52B4FD"/>
+<rect x="60" y="1145" width="1800" height="65" fill="#07090E" stroke="#07090E" stroke-width="1"/>
+<text x="90" y="1184" fill="#52B4FD" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="13" font-weight="800" text-anchor="start">HSN LABS ARCHITECTURAL MANIFESTO</text>
+<line x1="375" y1="1162" x2="375" y2="1192" stroke="#222736" stroke-width="1.5"/>
+<text x="395" y="1184" fill="#FFFFFF" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="400" text-anchor="start">Most agents fail when they touch real data and strict rules. We build the full lifecycle: Ontology, Infrastructure, State Machines, Evaluation.</text>
+<rect x="1620" y="1160" width="220" height="34" fill="#121826" stroke="#52B4FD" stroke-width="1"/>
+<text x="1730" y="1182" fill="#52B4FD" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="700" text-anchor="middle">TALK TO OUR ARCHITECTS</text>
+</svg>

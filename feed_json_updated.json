@@ -1,0 +1,435 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "title": "Hugo Nascimento \u2014 Enterprise Agent Architecture",
+    "home_page_url": "https://hsnlabs.ai/blog/",
+    "feed_url": "https://hsnlabs.ai/blog/feed_json_updated.json",
+    "description": "Posts and field notes on deterministic agent architectures, domain ontologies, and avoiding runtime failures in production.",
+    "icon": "https://hsnlabs.ai/blog/assets/brand/symbol/symbol-square-pure-cyan.png",
+    "authors": [
+        {
+            "name": "Hugo S. Nascimento"
+        }
+    ],
+    "language": "en",
+    "items": [
+        {
+            "id": "https://hsnlabs.ai/blog/post/the-agentic-pilot-canvas-v1-4/",
+            "url": "https://hsnlabs.ai/blog/post/the-agentic-pilot-canvas-v1-4/",
+            "title": "The Agentic Pilot Canvas v1.4: The Framework for Enterprise AI Pilots That Survive Production",
+            "content_html": "Open 10-block architecture framework for scoping and deploying enterprise AI pilots before writing production code. Version 1.4 updated in October 2026.",
+            "image": "https://hsnlabs.ai/blog/assets/images/posts/the-agentic-pilot-canvas/cover.png",
+            "date_modified": "2026-10-07T00:00:00+00:00",
+            "date_published": "2026-10-07T00:00:00+00:00",
+            "authors": [
+                {
+                    "name": "Hugo S. Nascimento"
+                }
+            ],
+            "tags": [
+                "Agentic Engineering",
+                "architecture",
+                "canvas",
+                "enterprise-agents",
+                "methodology"
+            ]
+        },
+        {
+            "id": "https://hsnlabs.ai/blog/post/buy-versus-build-b2b-enterprise-crm/",
+            "url": "https://hsnlabs.ai/blog/post/buy-versus-build-b2b-enterprise-crm/",
+            "title": "Buy versus Build: B2B Enterprise CRM, Twenty, and Agentic Stacks",
+            "content_html": "Technical and financial analysis comparing Salesforce seats, Twenty CRM, and custom agentic stacks for enterprise engineering leaders.",
+            "image": "https://hsnlabs.ai/blog/assets/images/posts/buy-versus-build-b2b-enterprise-crm/cover.webp",
+            "date_modified": "2026-09-28T00:00:00+00:00",
+            "date_published": "2026-09-28T00:00:00+00:00",
+            "authors": [
+                {
+                    "name": "Hugo S. Nascimento"
+                }
+            ],
+            "tags": [
+                "Future of Work",
+                "architecture",
+                "bpo",
+                "crm",
+                "model-context-protocol",
+                "saas"
+            ]
+        },
+        {
+            "id": "https://hsnlabs.ai/blog/post/cleveland-clinic-case-study-operational-agents/",
+            "url": "https://hsnlabs.ai/blog/post/cleveland-clinic-case-study-operational-agents/",
+            "title": "Case Study: How Cleveland Clinic Scaled Patient Flow Across 6,600 Hospital Beds",
+            "content_html": "Detailed case study on how Cleveland Clinic eliminated spreadsheet bottlenecks and cut bed capacity calculation time by 75% using operational ontologies.",
+            "image": "https://hsnlabs.ai/blog/assets/images/posts/cleveland-clinic-case-study-operational-agents/cover.webp",
+            "date_modified": "2026-09-28T00:00:00+00:00",
+            "date_published": "2026-09-28T00:00:00+00:00",
+            "authors": [
+                {
+                    "name": "Hugo S. Nascimento"
+                }
+            ],
+            "tags": [
+                "Agentic Engineering",
+                "architecture",
+                "case-studies",
+                "production",
+                "roi"
+            ]
+        },
+        {
+            "id": "https://hsnlabs.ai/blog/post/bpo-replacement-matrix/",
+            "url": "https://hsnlabs.ai/blog/post/bpo-replacement-matrix/",
+            "title": "The BPO Replacement Matrix: Operational and Financial Impact of Production Agents",
+            "content_html": "Quantitative framework analyzing unit economics, operational metrics, and margin impact of replacing legacy BPO contracts with autonomous software agents.",
+            "image": "https://hsnlabs.ai/blog/assets/images/posts/bpo-replacement-matrix/cover.webp",
+            "date_modified": "2026-09-27T00:00:00+00:00",
+            "date_published": "2026-09-27T00:00:00+00:00",
+            "authors": [
+                {
+                    "name": "Hugo S. Nascimento"
+                }
+            ],
+            "tags": [
+                "Future of Work",
+                "bpo",
+                "ebitda",
+                "economics"
+            ]
+        },
+        {
+            "id": "https://hsnlabs.ai/blog/post/how-to-build-an-enterprise-ontology-from-scratch/",
+            "url": "https://hsnlabs.ai/blog/post/how-to-build-an-enterprise-ontology-from-scratch/",
+            "title": "How to Build an Enterprise Ontology from Scratch: The Complete Architectural Blueprint",
+            "content_html": "The complete step-by-step engineering blueprint to build and deploy an operational business ontology for autonomous AI agents in enterprise production.",
+            "image": "https://hsnlabs.ai/blog/assets/images/posts/how-to-build-an-enterprise-ontology-from-scratch/cover.webp",
+            "date_modified": "2026-09-27T00:00:00+00:00",
+            "date_published": "2026-09-27T00:00:00+00:00",
+            "authors": [
+                {
+                    "name": "Hugo S. Nascimento"
+                }
+            ],
+            "tags": [
+                "Agentic Engineering",
+                "architecture",
+                "enterprise",
+                "mcp",
+                "ontology",
+                "python"
+            ]
+        },
+        {
+            "id": "https://hsnlabs.ai/blog/post/ontology-vs-database-schema/",
+            "url": "https://hsnlabs.ai/blog/post/ontology-vs-database-schema/",
+            "title": "Ontology vs. Database Schema: Why Relational Tables and Vector Stores Fall Short for AI",
+            "content_html": "Why raw SQL schemas and vector stores fail autonomous AI agents: the limits of text-to-SQL, semantic ambiguity, and how ontologies provide deterministic operational boundaries.",
+            "image": "https://hsnlabs.ai/blog/assets/images/posts/ontology-vs-database-schema/cover.webp",
+            "date_modified": "2026-09-27T00:00:00+00:00",
+            "date_published": "2026-09-27T00:00:00+00:00",
+            "authors": [
+                {
+                    "name": "Hugo S. Nascimento"
+                }
+            ],
+            "tags": [
+                "Why Agents Fail",
+                "ai-failures",
+                "database",
+                "ontology",
+                "sql",
+                "vector-database"
+            ]
+        },
+        {
+            "id": "https://hsnlabs.ai/blog/post/ontology-vs-knowledge-graph/",
+            "url": "https://hsnlabs.ai/blog/post/ontology-vs-knowledge-graph/",
+            "title": "Ontology vs. Knowledge Graph: Key Differences, Architecture, and Enterprise Applications",
+            "content_html": "The architectural distinction between ontologies and knowledge graphs in enterprise AI systems: schemas versus instances, preventing graph drift, and building hybrid neuro-symbolic stacks.",
+            "image": "https://hsnlabs.ai/blog/assets/images/posts/ontology-vs-knowledge-graph/cover.webp",
+            "date_modified": "2026-09-27T00:00:00+00:00",
+            "date_published": "2026-09-27T00:00:00+00:00",
+            "authors": [
+                {
+                    "name": "Hugo S. Nascimento"
+                }
+            ],
+            "tags": [
+                "Agentic Engineering",
+                "architecture",
+                "data-engineering",
+                "enterprise",
+                "knowledge-graph",
+                "ontology"
+            ]
+        },
+        {
+            "id": "https://hsnlabs.ai/blog/post/the-operational-ontology/",
+            "url": "https://hsnlabs.ai/blog/post/the-operational-ontology/",
+            "title": "The Operational Ontology: How Enterprises Connect Data, Business Rules, and Autonomous Actions",
+            "content_html": "The core architecture of executable business ontologies: moving from static documentation to kinetic action engines, Palantir AIP mechanics, and deploying production MCP harnesses.",
+            "image": "https://hsnlabs.ai/blog/assets/images/posts/the-operational-ontology/cover.webp",
+            "date_modified": "2026-09-27T00:00:00+00:00",
+            "date_published": "2026-09-27T00:00:00+00:00",
+            "authors": [
+                {
+                    "name": "Hugo S. Nascimento"
+                }
+            ],
+            "tags": [
+                "Agentic Engineering",
+                "ai-agents",
+                "architecture",
+                "mcp",
+                "ontology",
+                "operational-ontology"
+            ]
+        },
+        {
+            "id": "https://hsnlabs.ai/blog/post/what-is-an-ontology-for-ai-agents/",
+            "url": "https://hsnlabs.ai/blog/post/what-is-an-ontology-for-ai-agents/",
+            "title": "What Is an Ontology for AI Agents? The Definitive Guide",
+            "content_html": "The complete guide to operational ontologies for enterprise AI agents: why prompt-based systems fail, how to map business invariants into executable code, and how to govern autonomous actions.",
+            "image": "https://hsnlabs.ai/blog/assets/images/posts/what-is-an-ontology-for-ai-agents/cover.webp",
+            "date_modified": "2026-09-27T00:00:00+00:00",
+            "date_published": "2026-09-27T00:00:00+00:00",
+            "authors": [
+                {
+                    "name": "Hugo S. Nascimento"
+                }
+            ],
+            "tags": [
+                "Why Agents Fail",
+                "ai-agents",
+                "architecture",
+                "deterministic-ai",
+                "enterprise",
+                "ontology"
+            ]
+        },
+        {
+            "id": "https://hsnlabs.ai/blog/post/c-suite-margin-protection-playbook/",
+            "url": "https://hsnlabs.ai/blog/post/c-suite-margin-protection-playbook/",
+            "title": "The C-Suite Transition Playbook: Protecting Margins in the Agentic Economy",
+            "content_html": "Executive blueprint for boardrooms and CFOs defending operational margins against legacy IT cost structures in the agentic economy.",
+            "image": "https://hsnlabs.ai/blog/assets/images/posts/c-suite-margin-protection-playbook/cover.webp",
+            "date_modified": "2026-09-25T00:00:00+00:00",
+            "date_published": "2026-09-25T00:00:00+00:00",
+            "authors": [
+                {
+                    "name": "Hugo S. Nascimento"
+                }
+            ],
+            "tags": [
+                "Future of Work",
+                "c-suite",
+                "economics",
+                "margins"
+            ]
+        },
+        {
+            "id": "https://hsnlabs.ai/blog/post/how-to-build-operational-ontology-python-mcp/",
+            "url": "https://hsnlabs.ai/blog/post/how-to-build-operational-ontology-python-mcp/",
+            "title": "How to Build an Operational Business Ontology in Python with Pydantic and MCP",
+            "content_html": "Step-by-step engineering architecture to build an operational business ontology in pure Python using Pydantic schemas and Model Context Protocol actions without proprietary lock-in.",
+            "image": "https://hsnlabs.ai/blog/assets/images/posts/how-to-build-operational-ontology-python-mcp/cover.webp",
+            "date_modified": "2026-09-25T00:00:00+00:00",
+            "date_published": "2026-09-25T00:00:00+00:00",
+            "authors": [
+                {
+                    "name": "Hugo S. Nascimento"
+                }
+            ],
+            "tags": [
+                "Agentic Engineering",
+                "architecture",
+                "data-contracts",
+                "evaluation",
+                "production"
+            ]
+        },
+        {
+            "id": "https://hsnlabs.ai/blog/post/five-day-architecture-sprint/",
+            "url": "https://hsnlabs.ai/blog/post/five-day-architecture-sprint/",
+            "title": "Why Big 4 Slide Decks Fail on Agent Projects",
+            "content_html": "Why traditional Big 4 strategy slide decks fail to deliver working agentic software in complex enterprise production environments.",
+            "image": "https://hsnlabs.ai/blog/assets/images/posts/five-day-architecture-sprint/cover.webp",
+            "date_modified": "2026-09-22T00:00:00+00:00",
+            "date_published": "2026-09-22T00:00:00+00:00",
+            "authors": [
+                {
+                    "name": "Hugo S. Nascimento"
+                }
+            ],
+            "tags": [
+                "Agentic Engineering",
+                "case-studies",
+                "consulting",
+                "sprint"
+            ]
+        },
+        {
+            "id": "https://hsnlabs.ai/blog/post/kafka-metamorfose-ia-futuro-do-trabalho/",
+            "url": "https://hsnlabs.ai/blog/post/kafka-metamorfose-ia-futuro-do-trabalho/",
+            "title": "De 1915 \u00e0 Era da IA: Kafka, utilitarismo e o valor de quem trabalha",
+            "content_html": "Reflex\u00e3o sobre utilitarismo, desvaloriza\u00e7\u00e3o do trabalhador e o impacto de agentes de IA a partir de A Metamorfose de Franz Kafka.",
+            "image": "https://hsnlabs.ai/blog/assets/images/posts/kafka-metamorfose-ia-futuro-do-trabalho/cover.webp",
+            "date_modified": "2026-09-22T00:00:00+00:00",
+            "date_published": "2026-09-22T00:00:00+00:00",
+            "authors": [
+                {
+                    "name": "Hugo S. Nascimento"
+                }
+            ],
+            "tags": [
+                "Future of Work",
+                "artificial-intelligence",
+                "future-of-work",
+                "hr",
+                "philosophy"
+            ]
+        },
+        {
+            "id": "https://hsnlabs.ai/blog/post/autonomous-negotiations-collections-contracts/",
+            "url": "https://hsnlabs.ai/blog/post/autonomous-negotiations-collections-contracts/",
+            "title": "High-Velocity Operations: Autonomous Negotiation, Collections, and Contract Execution",
+            "content_html": "Production architecture for autonomous collections, contract negotiation, and high-velocity commercial execution.",
+            "image": "https://hsnlabs.ai/blog/assets/images/posts/autonomous-negotiations-collections-contracts/cover.webp",
+            "date_modified": "2026-09-18T00:00:00+00:00",
+            "date_published": "2026-09-18T00:00:00+00:00",
+            "authors": [
+                {
+                    "name": "Hugo S. Nascimento"
+                }
+            ],
+            "tags": [
+                "Future of Work",
+                "bpo",
+                "collections",
+                "economics"
+            ]
+        },
+        {
+            "id": "https://hsnlabs.ai/blog/post/palantir-aip-bootcamp-operational-ontology/",
+            "url": "https://hsnlabs.ai/blog/post/palantir-aip-bootcamp-operational-ontology/",
+            "title": "The Architecture of Palantir AIP: Why Enterprise Agents Fail Without an Operational Ontology",
+            "content_html": "How Palantir AIP bootcamps compressed 9-month sales cycles into 5-day deployments by binding LLMs to operational ontologies instead of raw prompts.",
+            "image": "https://hsnlabs.ai/blog/assets/images/posts/palantir-aip-bootcamp-operational-ontology/cover.webp",
+            "date_modified": "2026-09-18T00:00:00+00:00",
+            "date_published": "2026-09-18T00:00:00+00:00",
+            "authors": [
+                {
+                    "name": "Hugo S. Nascimento"
+                }
+            ],
+            "tags": [
+                "Agentic Engineering",
+                "architecture",
+                "case-studies",
+                "production",
+                "roi"
+            ]
+        },
+        {
+            "id": "https://hsnlabs.ai/blog/post/balance-sheet-guard-bpo-extinction/",
+            "url": "https://hsnlabs.ai/blog/post/balance-sheet-guard-bpo-extinction/",
+            "title": "What I Learned Building HR Tech About Dying BPO Contracts",
+            "content_html": "Operational field lessons on the structural collapse of enterprise HR outsourcing contracts and manual workflows.",
+            "image": "https://hsnlabs.ai/blog/assets/images/posts/balance-sheet-guard-bpo-extinction/cover.webp",
+            "date_modified": "2026-09-15T00:00:00+00:00",
+            "date_published": "2026-09-15T00:00:00+00:00",
+            "authors": [
+                {
+                    "name": "Hugo S. Nascimento"
+                }
+            ],
+            "tags": [
+                "Future of Work",
+                "bpo",
+                "economics",
+                "hr-tech"
+            ]
+        },
+        {
+            "id": "https://hsnlabs.ai/blog/post/palantir-pricing-tco-and-open-alternatives/",
+            "url": "https://hsnlabs.ai/blog/post/palantir-pricing-tco-and-open-alternatives/",
+            "title": "The Real TCO of Palantir: The Dollar Barrier and Modern Open Alternatives",
+            "content_html": "Auditing the total cost of ownership behind Palantir contracts, foreign exchange exposure, and how to build open ontologies without 7-figure licensing.",
+            "image": "https://hsnlabs.ai/blog/assets/images/posts/palantir-pricing-tco-and-open-alternatives/cover.webp",
+            "date_modified": "2026-09-14T00:00:00+00:00",
+            "date_published": "2026-09-14T00:00:00+00:00",
+            "authors": [
+                {
+                    "name": "Hugo S. Nascimento"
+                }
+            ],
+            "tags": [
+                "Future of Work",
+                "architecture",
+                "ebitda",
+                "economics",
+                "roi"
+            ]
+        },
+        {
+            "id": "https://hsnlabs.ai/blog/post/palantir-vs-databricks-agent-architecture/",
+            "url": "https://hsnlabs.ai/blog/post/palantir-vs-databricks-agent-architecture/",
+            "title": "Palantir vs Databricks: Why Data Lakes Fail at Agentic Operations",
+            "content_html": "Architectural breakdown comparing analytical lakehouses against operational ontologies for mission-critical enterprise AI agents.",
+            "image": "https://hsnlabs.ai/blog/assets/images/posts/palantir-vs-databricks-agent-architecture/cover.webp",
+            "date_modified": "2026-09-11T00:00:00+00:00",
+            "date_published": "2026-09-11T00:00:00+00:00",
+            "authors": [
+                {
+                    "name": "Hugo S. Nascimento"
+                }
+            ],
+            "tags": [
+                "Why Agents Fail",
+                "ai-failures",
+                "architecture",
+                "data-contracts",
+                "production"
+            ]
+        },
+        {
+            "id": "https://hsnlabs.ai/blog/post/protocol-arbitrage-claims-underwriting/",
+            "url": "https://hsnlabs.ai/blog/post/protocol-arbitrage-claims-underwriting/",
+            "title": "Protocol Arbitrage: Autonomous Multimodal Adjudication in Healthcare and Underwriting",
+            "content_html": "Autonomous multimodal adjudication and real-time protocol arbitrage across complex insurance claims and healthcare underwriting.",
+            "image": "https://hsnlabs.ai/blog/assets/images/posts/protocol-arbitrage-claims-underwriting/cover.webp",
+            "date_modified": "2026-09-11T00:00:00+00:00",
+            "date_published": "2026-09-11T00:00:00+00:00",
+            "authors": [
+                {
+                    "name": "Hugo S. Nascimento"
+                }
+            ],
+            "tags": [
+                "Future of Work",
+                "arbitrage",
+                "case-studies",
+                "insurance"
+            ]
+        },
+        {
+            "id": "https://hsnlabs.ai/blog/post/death-of-tier-1-erp-helpdesk/",
+            "url": "https://hsnlabs.ai/blog/post/death-of-tier-1-erp-helpdesk/",
+            "title": "The Death of Tier-1 Support: Why ERP Consultancies and IT Helpdesks Cannot Defend the Billable Hour",
+            "content_html": "The structural collapse of hourly billable support models across enterprise ERP consultancies and IT helpdesks.",
+            "image": "https://hsnlabs.ai/blog/assets/images/posts/death-of-tier-1-erp-helpdesk/cover.webp",
+            "date_modified": "2026-09-08T00:00:00+00:00",
+            "date_published": "2026-09-08T00:00:00+00:00",
+            "authors": [
+                {
+                    "name": "Hugo S. Nascimento"
+                }
+            ],
+            "tags": [
+                "Future of Work",
+                "economics",
+                "erp-support",
+                "helpdesk"
+            ]
+        }
+    ]
+}
