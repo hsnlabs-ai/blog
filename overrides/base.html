@@ -42,7 +42,11 @@
         {%- set post_image_url = 'https://hsnlabs.ai/blog/' ~ page.meta.image -%}
       {%- endif -%}
     {%- else -%}
-      {%- set post_image_url = 'https://hsnlabs.ai/blog/assets/brand/og-image.png' -%}
+      {%- if page and page.file and page.file.src_uri.startswith('pt/') -%}
+        {%- set post_image_url = 'https://hsnlabs.ai/blog/assets/brand/og-image-pt.png' -%}
+      {%- else -%}
+        {%- set post_image_url = 'https://hsnlabs.ai/blog/assets/brand/og-image.png' -%}
+      {%- endif -%}
     {%- endif -%}
     {%- if page and page.canonical_url -%}
       {%- set page_canonical_url = page.canonical_url -%}
