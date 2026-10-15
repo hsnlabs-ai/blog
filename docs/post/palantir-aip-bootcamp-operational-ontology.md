@@ -83,7 +83,7 @@ In its Form 10-K filings with the SEC, Palantir explicitly documented the strate
 
 > "Beginning in 2023, we introduced AIP bootcamps to the initial stages of our customer acquisition process, which helped to accelerate these discussions and provide an opportunity for our customers to experience our platforms through their own use cases in days."
 
-Traditional enterprise procurement is broken because global systems integrators like Accenture, Deloitte, and PwC charge hundreds of thousands of dollars on time-and-materials contracts just to produce theoretical discovery documentation.
+Traditional enterprise procurement is broken because global systems integrators like Accenture, EY, and PwC charge hundreds of thousands of dollars on time-and-materials contracts just to produce theoretical discovery documentation.
 
 By delivering functional workflows on customer data within 120 hours, the economic buyer evaluates working software rather than consulting promises.
 
@@ -95,7 +95,7 @@ While Palantir proved the 5-day empirical onboarding model, its bootcamp is desi
 
 Here is how the **HSN Labs 5-Day Agentic Architecture Bootcamp** compares against both the **Palantir AIP Bootcamp** and traditional **Big 4 Discovery Studies**:
 
-| Evaluation Criterion | Traditional Big 4 Discovery - Deloitte, Accenture, EY | Palantir AIP Bootcamp | HSN Labs 5-Day Agentic Bootcamp |
+| Evaluation Criterion | Traditional Big 4 Discovery - McKinsey, Accenture, EY | Palantir AIP Bootcamp | HSN Labs 5-Day Agentic Bootcamp |
 | :--- | :--- | :--- | :--- |
 | **Time to Working Proof** | 60 to 90 days of stakeholder interviews — delivers zero working code | 1 to 5 days of intensive engineering over sample or sandbox data | 5 days of Forward Deployed Engineering connected to your isolated staging environment |
 | **Primary Deliverable** | 120-page strategy PowerPoint deck and high-level roadmap | Working prototype locked inside the proprietary Palantir Foundry and AIP platform | Working multi-agent prototype in pure code, audited ROI model, and production ADLC blueprint |

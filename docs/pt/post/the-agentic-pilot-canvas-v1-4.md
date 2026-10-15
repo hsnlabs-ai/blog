@@ -28,7 +28,7 @@ A versao 1.4, atualizada em outubro de 2026, consolida os aprendizados dos nosso
 
 ---
 
-<img src="../../assets/images/posts/the-agentic-pilot-canvas/cover.png" alt="The Agentic Pilot Canvas v1.4" />
+<img src="../../../assets/images/posts/the-agentic-pilot-canvas/cover.png" alt="The Agentic Pilot Canvas v1.4" loading="lazy" />
 
 ---
 

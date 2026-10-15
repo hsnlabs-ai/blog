@@ -75,9 +75,9 @@ Acima de tudo, a ontologia acopla ações estritamente delimitadas a esse objeto
 ### B. A Latência de Consulta Destrói Loops de Raciocínio Agêntico
 Agentes autônomos profundos operam por meio de grafos de raciocínio em múltiplas etapas.
 
-<div style="display: flex; align-items: center; gap: 14px; margin: 20px 0; padding: 14px 18px; background: #0E1017; border: 1px solid #222736;">
-  <img src="../../../assets/stack/deepagents-oss-lockup-dark.svg" alt="Deep Agents OSS" style="height: 28px; width: auto;" loading="lazy">
-  <span style="font-size: 0.85rem; color: #94A3B8; font-family: 'Inter', sans-serif;">Enxames de agentes autônomos profundos orquestrados sobre grafos formais de estado.</span>
+<div style="display: flex; align-items: center; gap: 14px; margin: 20px 0; padding: 14px 18px; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 6px;">
+  <img src="../../../assets/stack/deepagents-oss-lockup.svg" alt="Deep Agents OSS" style="height: 28px; width: auto;" loading="lazy">
+  <span style="font-size: 0.85rem; color: #334155; font-family: 'Inter', sans-serif;">Enxames de agentes autônomos profundos orquestrados sobre grafos formais de estado.</span>
 </div>
 
 Em uma única execução, o agente pode inspecionar uma anomalia, consultar o histórico de estoque, verificar preços contratuais e cruzar acordos de nível de serviço de fornecedores.

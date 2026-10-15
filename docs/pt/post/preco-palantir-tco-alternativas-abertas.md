@@ -70,7 +70,7 @@ Para uma empresa brasileira ou latino-americana com receita em moeda local, soma
 
 Quando um CIO ou CFO avalia como implementar agentes autônomos sobre operações críticas, três modelos arquiteturais e comerciais disputam o orçamento corporativo:
 
-| Vetor de Decisão Executiva | Palantir Foundry e AIP | Consultorias e GSIs - Accenture, Deloitte, Globant | Engenharia Agêntica Aberta - HSN Labs |
+| Vetor de Decisão Executiva | Palantir Foundry e AIP | Consultorias e GSIs - Accenture, Capgemini, Globant | Engenharia Agêntica Aberta - HSN Labs |
 | :--- | :--- | :--- | :--- |
 | **Modelo Comercial e Precificação** | Contratos privados de 1 a 5 anos; na tabela pública UK G-Cloud 14, pilotos partem de 50 mil a 250 mil libras, licença por core a 66 mil libras anuais, licença full a 3 milhões de libras e engenharia FDE a 150 mil libras por trimestre | Faturamento aberto por horas técnicas ou alocação mensal de squads em projetos de 6 a 18 meses | Entrega arquitetural por escopo fechado; zero taxa de licença anual por assento ou núcleo de servidor |
 | **Exposição Cambial e Nuvem** | 100 por cento exposto ao dólar ou libra mais consumo subjacente de infraestrutura AWS ou Azure | Contratos locais inflados por repasse de horas de body shopping e margens sobre nuvem parceira | Engenharia contratada em moeda local executando direto na conta AWS, GCP ou Azure já existente do cliente |
@@ -97,9 +97,9 @@ Utilizamos **PostgreSQL com pgvector** ou **Neo4j** para modelar relacionamentos
 ### 3. Model Context Protocol e Máquinas de Estado
 Padronizamos a execução de ferramentas com o **Model Context Protocol** e motores determinísticos de fluxo como **LangGraph**.
 
-<div style="display: flex; align-items: center; gap: 14px; margin: 20px 0; padding: 14px 18px; background: #0E1017; border: 1px solid #222736;">
-  <img src="../../../assets/stack/langgraph-oss-lockup-dark.svg" alt="Motor LangGraph OSS" style="height: 28px; width: auto;" loading="lazy">
-  <span style="font-size: 0.85rem; color: #94A3B8; font-family: 'Inter', sans-serif;">Motor de grafos de estado para ontologias operacionais determinísticas em produção.</span>
+<div style="display: flex; align-items: center; gap: 14px; margin: 20px 0; padding: 14px 18px; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 6px;">
+  <img src="../../../assets/stack/langgraph-oss-lockup.svg" alt="Motor LangGraph OSS" style="height: 28px; width: auto;" loading="lazy">
+  <span style="font-size: 0.85rem; color: #334155; font-family: 'Inter', sans-serif;">Motor de grafos de estado para ontologias operacionais determinísticas em produção.</span>
 </div>
 
 Quando um agente precisa executar uma transação, ele nunca inventa uma chamada de API. Ele dispara um evento tipado através de um servidor MCP, onde travas em nível de código verificam saldos, alçadas de aprovação e invariantes de conformidade.
@@ -108,7 +108,7 @@ Quando um agente precisa executar uma transação, ele nunca inventa uma chamada
 
 ## 5. O Caminho Pragmático: O Sprint de Arquitetura de 5 Dias
 
-Grandes empresas não precisam assinar contratos plurianuais de sete dígitos em dólar nem financiar noventa dias de apresentações teóricas da McKinsey ou Deloitte para provar que agentes autônomos geram impacto real no EBITDA.
+Grandes empresas não precisam assinar contratos plurianuais de sete dígitos em dólar nem financiar noventa dias de apresentações teóricas da McKinsey ou BCG para provar que agentes autônomos geram impacto real no EBITDA.
 
 Aplicamos a velocidade empírica do Forward Deployed Engineering sem o aprisionamento de plataforma:
 

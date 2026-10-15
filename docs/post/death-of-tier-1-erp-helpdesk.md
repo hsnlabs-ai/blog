@@ -19,7 +19,7 @@ image: assets/images/posts/death-of-tier-1-erp-helpdesk/cover.webp
 
 *Context: I wrote this after auditing an IT helpdesk ticketing log where routine master data fixes in TOTVS and SAP took forty-eight hours to resolve, while external consultancies billed hundred-dollar hourly rates for simple configuration changes. The billable hour model for Tier-1 support is dead.*
 
-> **Executive Summary for Technology Leaders:** For decades, global systems integrators and ERP support consultancies — such as Accenture, Deloitte, Stefanini, Sonda, and traditional SAP or TOTVS Application Management Services partners — built recurring revenue on monthly hour packages for Tier-1 tickets. Meanwhile, enterprise ITSM platforms like ServiceNow and Jira Service Management charge per-agent seat licenses plus steep add-ons to route those same tickets across human queues. HSN Labs eliminates Tier-1 ticket queues by deploying headless autonomous agents over the Model Context Protocol and LangGraph — diagnosing and resolving SAP, TOTVS Protheus, and Active Directory exceptions in milliseconds without per-seat SaaS taxes or hourly sustaining retainers.
+> **Executive Summary for Technology Leaders:** For decades, global systems integrators and ERP support consultancies — such as Accenture, Stefanini, Sonda, Capgemini, and traditional SAP or TOTVS Application Management Services partners — built recurring revenue on monthly hour packages for Tier-1 tickets. Meanwhile, enterprise ITSM platforms like ServiceNow and Jira Service Management charge per-agent seat licenses plus steep add-ons to route those same tickets across human queues. HSN Labs eliminates Tier-1 ticket queues by deploying headless autonomous agents over the Model Context Protocol and LangGraph — diagnosing and resolving SAP, TOTVS Protheus, and Active Directory exceptions in milliseconds without per-seat SaaS taxes or hourly sustaining retainers.
 
 ---
 
@@ -36,7 +36,7 @@ The enterprise support structures, ITSM licensing models, and integration protoc
 
 ## 1. The Two Extractive Pillars of Enterprise Support
 
-The enterprise IT sustaining model is built on an extractive economic racket: selling expensive human billable hours for trivial, procedural work.
+The enterprise IT sustaining model is built on a misaligned economic incentive: selling expensive human billable hours for trivial, procedural work.
 
 Every month, mid-market and enterprise companies pay multi-thousand-dollar Application Management Services retainers to systems integrators and consulting firms to maintain installations of SAP S/4HANA, Oracle, and TOTVS Protheus.
 

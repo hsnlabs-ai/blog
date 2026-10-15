@@ -464,20 +464,20 @@
             <p><em>Reading time: 5 minutes. Author: Hugo S. Nascimento.</em></p>
 <p>Healthcare operations present the ultimate stress test for enterprise software.</p>
 <p>When an autonomous system fails in marketing or social media, a brand posts an embarrassing sentence. When an operational system fails in a hospital network, emergency departments divert ambulances, surgical suites stand empty, and patients wait hours for acute care beds.</p>
-<p>Cleveland Clinic is one of the premier academic medical centers in the world. Their network encompasses 23 hospitals, 275 outpatient locations, over 6,600 acute beds, and 19,000 nurses.[6]</p>
+<p>Cleveland Clinic is one of the premier academic medical centers in the world. Their network encompasses 23 hospitals, 275 outpatient locations, over 6,600 acute beds, and 19,000 nurses.</p>
 <p>Managing patient flow across a healthcare infrastructure of this magnitude is a logistical nightmare. </p>
-<p>Here is an architectural field audit of how Cleveland Clinic moved from spreadsheet friction to an operational ontology, and the quantifiable metrics that resulted from their deployment.[6]</p>
+<p><em>Context: This article is an independent architectural benchmark analysis based on public clinical disclosures from Cleveland Clinic and Palantir Foundry documentation. Here is how Cleveland Clinic moved from spreadsheet friction to an operational ontology, and the quantifiable metrics that resulted from their deployment.</em></p>
 <hr />
 <h2 id="1-the-pre-agent-bottleneck-spreadsheet-chaos">1. The Pre-Agent Bottleneck: Spreadsheet Chaos</h2>
-<p>Before implementing an operational data architecture, patient bed placement and nurse staffing relied on manual human coordination.[6]</p>
+<p>Before implementing an operational data architecture, patient bed placement and nurse staffing relied on manual human coordination.</p>
 <p>Every morning across 23 hospitals:</p>
 <ul>
-<li>Nursing managers spent several hours each shift manually reviewing static spreadsheets.[6]</li>
-<li>Clinical supervisors placed hundreds of phone calls between intensive care units, post-anesthesia wards, and emergency departments to identify departing patients.[6]</li>
+<li>Nursing managers spent several hours each shift manually reviewing static spreadsheets.</li>
+<li>Clinical supervisors placed hundreds of phone calls between intensive care units, post-anesthesia wards, and emergency departments to identify departing patients.</li>
 <li><strong>Discharge projections were fundamentally backward-looking:</strong> staff reacted to bed vacancies hours after patients physically vacated rooms.</li>
 </ul>
 <p>This friction created massive operational delays. </p>
-<p>Patients requiring acute specialized transfers were delayed at regional community hospitals because central coordination could not calculate campus-wide capacity in real time.[6]</p>
+<p>Patients requiring acute specialized transfers were delayed at regional community hospitals because central coordination could not calculate campus-wide capacity in real time.</p>
 <hr />
 <h2 id="2-why-generic-ai-and-pure-rag-fail-in-hospital-operations">2. Why Generic AI and Pure RAG Fail in Hospital Operations</h2>
 <p>Many healthcare systems attempt to solve this operational friction by layering generic LLMs or basic conversational assistants on top of electronic health record databases.</p>
@@ -487,36 +487,36 @@
 <li><strong>Temporal Degradation:</strong> Patient vital signs and discharge statuses change minute by minute. A vector database index updated on an hourly batch cadence provides dangerously stale context.</li>
 <li><strong>The Hallucination Danger:</strong> In healthcare logistics, an unverified guess regarding bed availability triggers regulatory violations and immediate clinical risk.</li>
 </ol>
-<p>Cleveland Clinic did not deploy a chatbot to converse with doctors. They deployed an <strong>Operational Ontology</strong> that binds clinical data directly to automated decisions.[5][6]</p>
+<p>Cleveland Clinic did not deploy a chatbot to converse with doctors. They deployed an <strong>Operational Ontology</strong> that binds clinical data directly to automated decisions.</p>
 <hr />
 <h2 id="3-the-architecture-digital-twin-of-hospital-operations">3. The Architecture: Digital Twin of Hospital Operations</h2>
-<p>The platform constructs an active operational representation of the entire hospital network:[6]</p>
+<p>The platform constructs an active operational representation of the entire hospital network:</p>
 <pre class="mermaid"><code>flowchart TD
     A["Clinical Systems of Record&lt;br&gt;Epic EHR, Kronos Staff Scheduling, Surgical Rosters"] --&gt; B["The Hospital Operational Ontology&lt;br&gt;Clinical Entities, Bed Invariants and Resources"]
     B --&gt; C["Bounded Agent Decision Engines&lt;br&gt;AssignBed, TransferPatient, EscalateStaffing"]
     C --&gt; D["Operational Execution and Real-Time Dashboards&lt;br&gt;Automated Placement Recommendations and Clinical Routing"]</code></pre>
-<p>Instead of asking a generative model to compose free-text clinical instructions, automated reasoning engines execute against strict ontology objects:[5]</p>
+<p>Instead of asking a generative model to compose free-text clinical instructions, automated reasoning engines execute against strict ontology objects:</p>
 <ul>
-<li><strong>Granular Demand Forecasting:</strong> Projecting exact patient census and acuity levels for every hospital unit hours before admissions peak.[6]</li>
-<li><strong>Algorithmic Staff Matching:</strong> Dynamically aligning nurse supply with forecasted clinical demand across acute institutes.[6]</li>
-<li><strong>Automated Placement Routing:</strong> Identifying incoming surgical patients and reserving optimal post-operative recovery beds with zero human phone tag.[6]</li>
+<li><strong>Granular Demand Forecasting:</strong> Projecting exact patient census and acuity levels for every hospital unit hours before admissions peak.</li>
+<li><strong>Algorithmic Staff Matching:</strong> Dynamically aligning nurse supply with forecasted clinical demand across acute institutes.</li>
+<li><strong>Automated Placement Routing:</strong> Identifying incoming surgical patients and reserving optimal post-operative recovery beds with zero human phone tag.</li>
 </ul>
 <hr />
 <blockquote>
 <p><strong>[Agentes] x [a Gente]</strong> — Beyond the hype: how agentic engineering multiplies and leverages human labor capacity. Bi-weekly field notes published in Hugo S. Nascimento's LinkedIn newsletter with over 1,600 subscribers. <a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7397999984089935872">Follow on LinkedIn ↗</a></p>
 </blockquote>
 <h2 id="4-audited-production-impact">4. Audited Production Impact</h2>
-<p>The implementation produced immediate, audited improvements across Cleveland Clinic operations:[6]</p>
+<p>The implementation produced immediate, audited improvements across Cleveland Clinic operations:</p>
 <ul>
-<li><strong>75% reduction in time spent calculating bed capacity:</strong> Clinical teams transitioned from manual multi-hour spreadsheet reconciliations to instant, real-time capacity visibility.[6]</li>
-<li><strong>&gt;10% increase in daily hospital transfers:</strong> Accelerating placement workflows allowed the health system to accept more critical patient transfers from regional facilities without expanding physical footprint.[6]</li>
-<li><strong>Proactive Shift Balancing:</strong> Nursing leadership shifted from reactive crisis management on the morning of a shift to proactive staffing schedules established days and weeks in advance.[3][6]</li>
+<li><strong>75% reduction in time spent calculating bed capacity:</strong> Clinical teams transitioned from manual multi-hour spreadsheet reconciliations to instant, real-time capacity visibility.</li>
+<li><strong>&gt;10% increase in daily hospital transfers:</strong> Accelerating placement workflows allowed the health system to accept more critical patient transfers from regional facilities without expanding physical footprint.</li>
+<li><strong>Proactive Shift Balancing:</strong> Nursing leadership shifted from reactive crisis management on the morning of a shift to proactive staffing schedules established days and weeks in advance.</li>
 </ul>
 <hr />
 <h2 id="5-the-enterprise-takeaway-the-ontology-is-the-asset">5. The Enterprise Takeaway: The Ontology is the Asset</h2>
 <p>The operational success of Cleveland Clinic contains a universal lesson for enterprise technology leaders:</p>
 <p>The commercial value of artificial intelligence is not unlocked by the foundation model. The foundation model is a commodity reasoning engine. </p>
-<p>The real enterprise asset is the <strong>Operational Ontology</strong>—the strongly-typed software model of your company's physical assets, legal constraints, and transactional execution perimeters.[5]</p>
+<p>The real enterprise asset is the <strong>Operational Ontology</strong>—the strongly-typed software model of your company's physical assets, legal constraints, and transactional execution perimeters.</p>
 <p>Whether you manage 6,600 hospital beds, international freight lines, or financial loan books, the formula for production reliability remains unchanged:</p>
 <ul>
 <li>Stop building free-text conversational chatbots.</li>
@@ -525,9 +525,9 @@
 </ul>
 <hr />
 <h2 id="sources">Sources</h2>
-<p>[3] https://www.palantir.com/impact/tampa-general-hospital — Tampa General Hospital Case Study: Infusing Data Throughout the Care Continuum
-[5] https://www.palantir.com/platforms/foundry/ontology — Palantir Foundry: Operational Ontology Overview
-[6] https://www.palantir.com/impact/cleveland-clinic — Cleveland Clinic Impact Study: Enhancing Hospital Operations with Palantir Foundry</p>
+<p>https://www.palantir.com/impact/tampa-general-hospital — Tampa General Hospital Case Study: Infusing Data Throughout the Care Continuum
+ https://www.palantir.com/platforms/foundry/ontology — Palantir Foundry: Operational Ontology Overview
+ https://www.palantir.com/impact/cleveland-clinic — Cleveland Clinic Impact Study: Enhancing Hospital Operations with Palantir Foundry</p>
 <h2 id="strategic-resources-and-related-essays">Strategic Resources and Related Essays</h2>
 <ul>
 <li><a href="../how-to-build-an-enterprise-ontology-from-scratch/">How to Build an Enterprise Ontology from Scratch: Step by Step</a></li>

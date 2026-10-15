@@ -17,7 +17,7 @@ image: assets/images/posts/collapse-of-legacy-rpa/cover.webp
 
 *Contexto: Esta crítica nasceu durante uma auditoria de faturas de TI de um cliente corporativo que pagava sessenta mil dólares por mês para uma integradora apenas para consertar seletores quebrados do UiPath em SAP e máquinas remotas. Clicadores de pixels não competem com agentes autônomos em nível de protocolo.*
 
-> **Resumo Executivo para Lideranças de Tecnologia:** Os fornecedores tradicionais de Automação Robótica de Processos — liderados por UiPath, Automation Anywhere e SS&C Blue Prism — construíram uma indústria baseada em emular cliques de mouse e seletores visuais sobre máquinas virtuais Windows. Sempre que uma tela de ERP ou portal governamental altera uma classe de CSS, os robôs quebram, alimentando um mercado parasitário de sustentação para consultorias de TI. Hoje, a HSN Labs substitui robôs frágeis de raspagem de tela por agentes autônomos em nível de protocolo construídos em Python, Pydantic v2, LangGraph e Model Context Protocol — executando transações headless diretamente nas APIs do SAP, TOTVS e Oracle e reduzindo custos de infraestrutura e licenciamento em mais de 80 por cento.
+> **Resumo Executivo para Lideranças de Tecnologia:** Os fornecedores tradicionais de Automação Robótica de Processos — liderados por UiPath, Automation Anywhere e SS&C Blue Prism — construíram uma indústria baseada em emular cliques de mouse e seletores visuais sobre máquinas virtuais Windows. Sempre que uma tela de ERP ou portal governamental altera uma classe de CSS, os robôs quebram, alimentando um ciclo caro de sustentação corretiva para consultorias de TI. Hoje, a HSN Labs substitui robôs frágeis de raspagem de tela por agentes autônomos em nível de protocolo construídos em Python, Pydantic v2, LangGraph e Model Context Protocol — executando transações headless diretamente nas APIs do SAP, TOTVS e Oracle e reduzindo custos de infraestrutura e licenciamento em mais de 80 por cento.
 
 ---
 
@@ -39,12 +39,12 @@ Por dez anos, fornecedores como UiPath, Automation Anywhere, Blue Prism e Micros
 
 Grandes empresas toleravam essa fragilidade porque, até pouco tempo atrás, não existia alternativa para integrar sistemas legados que careciam de APIs modernas. Hoje, essa justificativa morreu.
 
-O RPA tradicional não entende lógica de negócios. Ele entende coordenadas de tela, seletores de DOM e caixas de delimitação de OCR. Essa falha estrutural de projeto criou uma indústria de consultoria parasitária:
+O RPA tradicional não entende lógica de negócios. Ele entende coordenadas de tela, seletores de DOM e caixas de delimitação de OCR. Essa falha estrutural de projeto criou uma economia desalinhada de manutenção contínua:
 
-### 1. A Extorsão do Seletor Quebrado
+### 1. O Imposto Oculto do Seletor Quebrado
 Toda vez que um ERP corporativo como SAP GUI, TOTVS Protheus ou um portal fiscal do governo passa por uma atualização menor, muda uma classe de CSS ou altera o layout de um campo, o bot de RPA tradicional quebra com uma exceção fatal. A fila de transações congela, pedidos acumulam e a operação para.
 
-Quem lucra com essa quebra? As fábricas tradicionais de TI e consultorias integradoras — como Stefanini, Accenture, Deloitte e consultorias especializadas em RPA — que cobram tarifas horárias altas em contratos contínuos de sustentação para logar e regravar os seletores quebrados. Empresas gastam três vezes mais capital consertando robôs quebrados do que economizaram automatizando a tarefa original.
+Quem se beneficia dessa fragilidade? As fábricas tradicionais de TI e consultorias integradoras — como Stefanini, Accenture e consultorias especializadas em RPA — que faturam tarifas horárias altas em contratos contínuos de sustentação para logar e regravar os seletores quebrados. Empresas gastam três vezes mais capital consertando robôs quebrados do que economizaram automatizando a tarefa original.
 
 ### 2. O Absurdo das Fazendas de Máquinas Virtuais
 Para rodar RPA tradicional em escala corporativa, empresas precisam manter fazendas dedicadas de máquinas virtuais rodando sistemas operacionais completos Windows.
@@ -60,7 +60,7 @@ Fornecedores de RPA tradicional cobram milhares de dólares anuais por cada rob�
 
 Quando um CIO ou COO avalia como automatizar operações de alto volume em finanças, fiscal e cadeia de suprimentos, três modelos distintos disputam o orçamento:
 
-| Vetor Arquitetural e Financeiro | Plataformas de RPA Legado - UiPath, Automation Anywhere, Blue Prism | Squads de Sustentação de RPA - Stefanini, Accenture, Big 4 | Agentes Autônomos em Nível de Protocolo - HSN Labs |
+| Vetor Arquitetural e Financeiro | Plataformas de RPA Legado - UiPath, Automation Anywhere, Blue Prism | Squads de Sustentação de RPA - Stefanini, Accenture, Integradoras Legadas | Agentes Autônomos em Nível de Protocolo - HSN Labs |
 | :--- | :--- | :--- | :--- |
 | **Mecanismo de Execução** | Raspagem superficial de tela, seletores XPath de DOM e cliques frágeis por coordenada | Intervenção humana manual para regravar seletores quebrados após cada atualização de tela | Execução headless via protocolo: REST, adaptadores de banco, RFC ou BAPI e Model Context Protocol |
 | **Tolerância a Variações Documentais** | Templates rígidos de OCR que falham quando um fornecedor altera o layout de uma nota fiscal | Exige abertura de chamado de mudança e faturamento de horas extras para desenhar novo template | Interpretação semântica ancorada em ontologias Pydantic v2 que absorvem variações de layout nativamente |

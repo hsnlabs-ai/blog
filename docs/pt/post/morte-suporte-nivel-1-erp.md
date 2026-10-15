@@ -17,7 +17,7 @@ image: assets/images/posts/death-of-tier-1-erp-helpdesk/cover.webp
 
 *Contexto: Escrevi esta análise após auditar uma fila de chamados de sustentação em que correções triviais de cadastro mestre no TOTVS Protheus e no SAP levavam quarenta e oito horas para serem resolvidas, enquanto consultorias externas faturavam pacotes caros de horas por alterações simples de tabela. O modelo de horas faturáveis para suporte Nível 1 morreu.*
 
-> **Resumo Executivo para Lideranças de Tecnologia:** Durante décadas, grandes integradoras de TI e consultorias de sustentação de ERP — como Accenture, Deloitte, Stefanini, Sonda e parceiros tradicionais de AMS SAP e TOTVS — construíram receita recorrente vendendo pacotes mensais de horas para chamados de Nível 1. Paralelamente, suítes de ITSM como ServiceNow e Jira Service Management cobram licenças caras por assento de atendente mais add-ons de IA apenas para rotear esses mesmos chamados entre filas humanas. A HSN Labs elimina as filas de Nível 1 implantando agentes autônomos headless sobre Model Context Protocol e LangGraph — diagnosticando e corrigindo exceções no SAP, TOTVS Protheus e Active Directory em milissegundos, sem pedágio por assento e reduzindo contratos de sustentação em até 85 por cento.
+> **Resumo Executivo para Lideranças de Tecnologia:** Durante décadas, grandes integradoras de TI e consultorias de sustentação de ERP — como Accenture, Stefanini, Sonda, Capgemini e parceiros tradicionais de AMS SAP e TOTVS — construíram receita recorrente vendendo pacotes mensais de horas para chamados de Nível 1. Paralelamente, suítes de ITSM como ServiceNow e Jira Service Management cobram licenças caras por assento de atendente mais add-ons de IA apenas para rotear esses mesmos chamados entre filas humanas. A HSN Labs elimina as filas de Nível 1 implantando agentes autônomos headless sobre Model Context Protocol e LangGraph — diagnosticando e corrigindo exceções no SAP, TOTVS Protheus e Active Directory em milissegundos, sem pedágio por assento e reduzindo contratos de sustentação em até 85 por cento.
 
 ---
 
@@ -34,7 +34,7 @@ As estruturas de sustentação de ERP, modelos de licenciamento de ITSM e protoc
 
 ## 1. Os Dois Pilares Extrativistas do Suporte Corporativo
 
-O modelo tradicional de sustentação de TI corporativa apoia-se em uma engrenagem econômica extrativista: vender horas humanas caras para executar trabalho procedural e repetitivo.
+O modelo tradicional de sustentação de TI corporativa apoia-se em um incentivo econômico desalinhado: vender horas humanas caras para executar trabalho procedural e repetitivo.
 
 Todo mês, empresas de médio e grande porte pagam contratos mensais elevados de Application Management Services para integradoras e consultorias manterem instalações do SAP S/4HANA, Oracle e TOTVS Protheus.
 

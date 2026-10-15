@@ -17,7 +17,7 @@ image: assets/images/posts/five-day-architecture-sprint/cover.webp
 
 *Contexto: Como fundador e engenheiro que construiu empresas com venture capital, tenho zero paciência para apresentações teóricas de consultoria que não entregam código funcional. Este é o playbook exato de Forward Deployed Engineering que usamos na HSN Labs para substituir estudos de seis meses de consultorias tradicionais e eliminar riscos de produção em cinco dias.*
 
-> **Resumo Executivo para Lideranças de Tecnologia:** Consultorias tradicionais de estratégia e grandes integradoras globais — como McKinsey, BCG, Deloitte, Accenture, EY, PwC e KPMG — vendem estudos de descoberta de vários meses que entregam apresentações estáticas de PowerPoint enquanto ignoram schemas de bancos legados e gargalos reais de latência de API. Quando a engenharia interna tenta implementar esses desenhos conceituais, mais de 80 por cento dos pilotos multiagentes colapsam. A HSN Labs substitui a consultoria de slides por um Sprint de 5 Dias de Forward Deployed Engineering: engenheiros seniores conectam-se diretamente ao ambiente de homologação, codificam regras do SAP e TOTVS em uma ontologia executável em Python e MCP, entregam um protótipo funcional testado sob estresse em 120 horas e abatem 100 por cento do valor do sprint no contrato de produção.
+> **Resumo Executivo para Lideranças de Tecnologia:** Consultorias tradicionais de estratégia e grandes integradoras globais — como McKinsey, BCG, McKinsey, Accenture, EY, PwC e KPMG — vendem estudos de descoberta de vários meses que entregam apresentações estáticas de PowerPoint enquanto ignoram schemas de bancos legados e gargalos reais de latência de API. Quando a engenharia interna tenta implementar esses desenhos conceituais, mais de 80 por cento dos pilotos multiagentes colapsam. A HSN Labs substitui a consultoria de slides por um Sprint de 5 Dias de Forward Deployed Engineering: engenheiros seniores conectam-se diretamente ao ambiente de homologação, codificam regras do SAP e TOTVS em uma ontologia executável em Python e MCP, entregam um protótipo funcional testado sob estresse em 120 horas e abatem 100 por cento do valor do sprint no contrato de produção.
 
 ---
 
@@ -35,14 +35,14 @@ Os indicadores de falha de projetos, padrões arquiteturais e modelos de entrega
 
 Lideranças corporativas não precisam de mais um relatório estratégico prevendo o futuro da inteligência artificial.
 
-Todo mês, consultorias tradicionais de gestão e firmas do grupo Big 4 — Deloitte, PwC, EY, KPMG, Accenture e McKinsey — vendem a diretores de grandes corporações estudos de descoberta de três a seis meses sobre transformação com IA. Elas cobram centenas de milhares de reais, mobilizam dezenas de analistas juniores de negócios e entregam um arquivo de cento e vinte slides de PowerPoint repleto de matrizes genéricas de maturidade.
+Todo mês, consultorias tradicionais de gestão e firmas do grupo Big 4 — McKinsey, BCG, PwC, EY, KPMG e Accenture — vendem a diretores de grandes corporações estudos de descoberta de três a seis meses sobre transformação com IA. Elas cobram centenas de milhares de reais, mobilizam dezenas de analistas juniores de negócios e entregam um arquivo de cento e vinte slides de PowerPoint repleto de matrizes genéricas de maturidade.
 
 Quando a equipe interna de engenharia ou a fábrica de software terceirizada finalmente recebe a apresentação e tenta escrever a primeira linha de código, toda a estratégia colapsa porque ninguém auditou os schemas dos bancos legados nem testou limites reais de latência de rede.
 
 Na HSN Labs, rejeitamos consultoria de apresentação de slides. Estudos longos de descoberta destroem o ritmo executivo e queimam capital com zero retorno operacional:
 
 ### 1. Slides Não Testam Latência de Mainframe e API de ERP
-Um slide da Deloitte ou da Accenture pode afirmar que um agente automatizará sinistros de clientes ou conciliações financeiras. Ele não pode avisar que a BAPI central do SAP ou o webservice do TOTVS Protheus leva oito segundos para responder, ou que a fila de conexões com o banco de dados se esgota sob carga simultânea. Você só descobre o atrito real de infraestrutura quando engenheiros seniores tocam em sistemas reais.
+Um slide da McKinsey ou da Accenture pode afirmar que um agente automatizará sinistros de clientes ou conciliações financeiras. Ele não pode avisar que a BAPI central do SAP ou o webservice do TOTVS Protheus leva oito segundos para responder, ou que a fila de conexões com o banco de dados se esgota sob carga simultânea. Você só descobre o atrito real de infraestrutura quando engenheiros seniores tocam em sistemas reais.
 
 ### 2. Falácia do Custo Afundado e Exaustão Organizacional
 No momento em que uma consultoria tradicional termina uma fase de descoberta de noventa dias, as equipes internas de operações estão exaustas por entrevistas infinitas, e os patrocinadores executivos enfrentam pressão intensa do conselho para justificar o gasto. Empresas acabam aprovando arquiteturas falhas simplesmente porque já queimaram meio milhão de reais estudando o tema.
@@ -56,7 +56,7 @@ Firmas de estratégia fazem recomendações conceituais e vão embora, ou repass
 
 Quando um CIO, CTO ou COO aloca orçamento para sair da tese de IA e entrar em operação real, três modelos estruturalmente distintos disputam a execução no mercado:
 
-| Vetor de Avaliação Executiva | Consultorias de Estratégia e Big 4 - McKinsey, Deloitte, EY, PwC | Fábricas de Software e GSIs - Accenture, Globant, CI&T | Boutique de Engenharia Agêntica - HSN Labs |
+| Vetor de Avaliação Executiva | Consultorias de Estratégia e Big 4 - McKinsey, BCG, EY, PwC | Fábricas de Software e GSIs - Accenture, Globant, CI&T | Boutique de Engenharia Agêntica - HSN Labs |
 | :--- | :--- | :--- | :--- |
 | **Duração e Formato do Discovery** | 60 a 120 dias de entrevistas com gestores e diagnósticos teóricos de maturidade | 30 a 60 dias de levantamento de requisitos para dimensionar squads mensais | Sprint empírico de 5 dias de engenharia conectado diretamente ao ambiente isolado de homologação |
 | **Entregável Principal de Entrada** | Apresentação estática em PowerPoint, framework conceitual de governança e planilha teórica de ROI | Lista de histórias de usuário e proposta comercial de alocação de horas técnicas | Protótipo multiagente funcional processando cargas reais, linha de base de telemetria e especificação ADLC |

@@ -16,11 +16,11 @@ image: assets/images/posts/how-to-build-operational-ontology-python-mcp/cover.we
 
 The defining difference between a toy AI demonstration and a mission-critical enterprise agent is the execution layer.
 
-When an autonomous agent interacts with unstructured vector embeddings, it hallucinates. When it interacts with an **Operational Ontology**—strongly-typed business entities with strict transactional constraints—it executes reliably in production.[5]
+When an autonomous agent interacts with unstructured vector embeddings, it hallucinates. When it interacts with an **Operational Ontology**—strongly-typed business entities with strict transactional constraints—it executes reliably in production.
 
-Palantir built a multi-billion dollar enterprise software business around this exact insight.[1][5] 
+Palantir built a multi-billion dollar enterprise software business around this exact insight. 
 
-However, engineering teams do not need a seven-figure proprietary contract to deploy this architecture. Using modern open-source standards—specifically **Pydantic v2**, the **Model Context Protocol (MCP)**, and typed state machines—you can build a resilient operational ontology directly in Python.[7][8]
+However, engineering teams do not need a seven-figure proprietary contract to deploy this architecture. Using modern open-source standards—specifically **Pydantic v2**, the **Model Context Protocol (MCP)**, and typed state machines—you can build a resilient operational ontology directly in Python.
 
 Here is the exact architectural blueprint.
 
@@ -28,11 +28,11 @@ Here is the exact architectural blueprint.
 
 ## 1. Deconstructing the Operational Ontology
 
-In enterprise operations, data cannot be treated as passive tabular rows. An operational ontology consists of three interconnected software layers:[5]
+In enterprise operations, data cannot be treated as passive tabular rows. An operational ontology consists of three interconnected software layers:
 
-1. **Objects:** Normalized representations of real-world business entities (e.g., Invoices, Purchase Orders, Hospital Beds, Freight Shipments).[5]
-2. **Properties and Links:** Strongly-typed attributes and deterministic relationships connecting entities together (e.g., an `Invoice` links to a `PurchaseOrder` and an approved `VendorAccount`).[5]
-3. **Actions:** Guarded mutations and write-backs that alter system state across external transactional APIs (e.g., `ApprovePayment`, `ReassignBed`, `ReleaseEscrow`).[5]
+1. **Objects:** Normalized representations of real-world business entities (e.g., Invoices, Purchase Orders, Hospital Beds, Freight Shipments).
+2. **Properties and Links:** Strongly-typed attributes and deterministic relationships connecting entities together (e.g., an `Invoice` links to a `PurchaseOrder` and an approved `VendorAccount`).
+3. **Actions:** Guarded mutations and write-backs that alter system state across external transactional APIs (e.g., `ApprovePayment`, `ReassignBed`, `ReleaseEscrow`).
 
 ```mermaid
 flowchart TD
@@ -45,7 +45,7 @@ flowchart TD
 
 ## 2. Layer 1: Defining Objects and Invariants with Typed Contracts
 
-In an enterprise architecture, rather than passing unvalidated dictionaries or raw strings to an LLM, every business entity is defined as an immutable data contract.[8]
+In an enterprise architecture, rather than passing unvalidated dictionaries or raw strings to an LLM, every business entity is defined as an immutable data contract.
 
 In an automated enterprise dispute resolution workflow, the entity contract enforces strict perimeter invariants:
 
@@ -59,7 +59,7 @@ In an automated enterprise dispute resolution workflow, the entity contract enfo
 | `category` | Strict Enum | Restricted to `PRICING_DISCREPANCY`, `DAMAGED_GOODS`, `SHORT_SHIPMENT`. |
 | `reconciliation_threshold` | Boundary Check | Claims exceeding $50,000 USD trigger mandatory executive escalation. |
 
-By wrapping business objects in strict schemas, invalid model inputs are rejected at serialization before reaching execution code.[8]
+By wrapping business objects in strict schemas, invalid model inputs are rejected at serialization before reaching execution code.
 
 ---
 
@@ -67,7 +67,7 @@ By wrapping business objects in strict schemas, invalid model inputs are rejecte
 
 Autonomous agents should never possess raw direct database write access. All state mutations must pass through an action gateway.
 
-The Model Context Protocol (MCP) is an open specification that standardizes how applications provide context and tools to LLMs.[7] MCP operates like a universal port, allowing agents to execute functions across secure infrastructure without bespoke integrations.[7]
+The Model Context Protocol (MCP) is an open specification that standardizes how applications provide context and tools to LLMs. MCP operates like a universal port, allowing agents to execute functions across secure infrastructure without bespoke integrations.
 
 In an atomic dispute settlement workflow (`execute_dispute_settlement`), the MCP gateway enforces three sequential verification gates before committing any change to the enterprise ledger:
 
@@ -87,10 +87,10 @@ Production agents cannot operate in open-ended ReAct loops that iterate indefini
 
 By modeling the agent's workflow as a directed acyclic graph (using **LangGraph** or **Temporal**), every transition between states is auditable:
 
-1. **State: Ingestion:** Ingest raw payload and parse into `InvoiceDispute` model.[8]
+1. **State: Ingestion:** Ingest raw payload and parse into `InvoiceDispute` model.
 2. **State: Context Enrichment:** Hydrate object with ERP purchase order history and vendor scorecards.
 3. **State: Evaluation:** Prompt the model to evaluate liability based strictly on contract terms.
-4. **State: MCP Action Dispatch:** Submit candidate resolution to the MCP action gateway.[7]
+4. **State: MCP Action Dispatch:** Submit candidate resolution to the MCP action gateway.
 5. **State: Final Reconciliation:** Log cryptographic transaction audit trail to PostgreSQL.
 
 If the model encounters an anomalous edge case, the state machine halts and routes the payload to a human operator queue with zero risk of silent failure.
@@ -101,11 +101,11 @@ If the model encounters an anomalous edge case, the state machine halts and rout
 
 | Architecture Layer | Open Python + MCP Stack | Palantir Foundry / AIP |
 |---|---|---|
-| **Data Contracts** | Pydantic v2 (Native Python / JSONSchema)[8] | Proprietary Ontology Object Builder[5] |
-| **Tool Execution** | Model Context Protocol (Open Standard)[7] | AIP Actions & Foundry Functions[5] |
+| **Data Contracts** | Pydantic v2 (Native Python / JSONSchema) | Proprietary Ontology Object Builder |
+| **Tool Execution** | Model Context Protocol (Open Standard) | AIP Actions & Foundry Functions |
 | **State Orchestration** | LangGraph / Temporal / Celery | Foundry Workshop & AIP Automate |
 | **Storage & Graph** | PostgreSQL, pgvector, Neo4j | Palantir Monolith / Titan |
-| **Licensing Cost** | $0 Base Software Licensing | Multi-Million USD Enterprise Contract[1] |
+| **Licensing Cost** | $0 Base Software Licensing | Multi-Million USD Enterprise Contract |
 | **Infrastructure** | Runs inside client AWS/GCP VPC | Dedicated SaaS or Palantir Managed Tenant |
 
 ---
@@ -114,16 +114,16 @@ If the model encounters an anomalous edge case, the state machine halts and rout
 
 Enterprise AI is not a prompt engineering problem; it is a distributed systems engineering problem.
 
-By replacing opaque prompts with strongly-typed Pydantic contracts and routing agent execution through Model Context Protocol gateways, technology leaders gain the operational precision of Palantir without the seven-figure vendor lock-in.[1][5][7][8]
+By replacing opaque prompts with strongly-typed Pydantic contracts and routing agent execution through Model Context Protocol gateways, technology leaders gain the operational precision of Palantir without the seven-figure vendor lock-in.
 
 ---
 
 ## Sources
 
-[1] https://www.sec.gov/Archives/edgar/data/1321655/000132165524000022/pltr-20231231.htm — Palantir Technologies Inc. Form 10-K Annual Report
-[5] https://www.palantir.com/platforms/foundry/ontology — Palantir Foundry: Operational Ontology Overview
-[7] https://modelcontextprotocol.io/introduction — Model Context Protocol Specification and Architecture
-[8] https://docs.pydantic.dev/latest — Pydantic: Fast Data Validation for Python
+ https://www.sec.gov/Archives/edgar/data/1321655/000132165524000022/pltr-20231231.htm — Palantir Technologies Inc. Form 10-K Annual Report
+ https://www.palantir.com/platforms/foundry/ontology — Palantir Foundry: Operational Ontology Overview
+ https://modelcontextprotocol.io/introduction — Model Context Protocol Specification and Architecture
+ https://docs.pydantic.dev/latest — Pydantic: Fast Data Validation for Python
 
 ## Strategic Resources and Related Essays
 - <a href="../how-to-build-an-enterprise-ontology-from-scratch/">How to Build an Enterprise Ontology from Scratch: Step by Step</a>

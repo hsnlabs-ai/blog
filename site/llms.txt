@@ -28,7 +28,7 @@ Guiding C-levels through the structural transformation required to protect marke
 
 ## Entry Engagement: Agentic Bootcamp
 - Bootcamp Deployment Protocol: https://hsnlabs.ai/bootcamp/
-An intensive 12k USD enterprise production sprint inside client infrastructure. We validate data access, connect tools, and deliver an executive business case with verified operational ROI. Qualified accounts unlock our Performance Rebate where 100% of the fee is credited toward the full production contract upon rollout.
+An intensive 1-to-5-day Forward Deployed Engineering sprint inside client infrastructure. We validate data access, connect tools, and deliver a working sandbox prototype and executive business case with verified operational ROI. Qualifying enterprise accounts unlock fully sponsored terms or a 100% Performance Rebate credited toward production rollout.
 
 ## Regulated Enterprise Verticals
 - Banking and Capital Markets: https://hsnlabs.ai/#verticals
@@ -40,13 +40,13 @@ Anchoring agentic workflows to validated state machines across legacy ERPs to re
 
 ## Enterprise Architecture Benchmarks & Vendor Comparisons
 - Palantir TCO vs Global Consultancies vs HSN Labs: https://hsnlabs.ai/blog/post/palantir-pricing-tco-and-open-alternatives/
-Audited financial comparison of Palantir Foundry and AIP (SEC Form 10-K Government vs Commercial power law and UK G-Cloud 14 rate card), global systems integrators (Accenture, Deloitte, Globant), and HSN Labs open operational ontologies in Python, Pydantic, LangGraph, and MCP at up to 80 percent lower TCO.
+Audited financial comparison of Palantir Foundry and AIP (SEC Form 10-K Government vs Commercial power law and UK G-Cloud 14 rate card), global systems integrators (Accenture, Capgemini, Globant), and HSN Labs open operational ontologies in Python, Pydantic, LangGraph, and MCP at up to 80 percent lower TCO.
 - Palantir vs Databricks vs HSN Labs Hybrid Architecture: https://hsnlabs.ai/blog/post/palantir-vs-databricks-agent-architecture/
 Architectural comparison between analytical lakehouses (Databricks Delta Lake, Unity Catalog, Snowflake), closed operational ontologies (Palantir AIP), and HSN Labs decoupled operational execution plane over SAP, TOTVS, and Salesforce.
 - Palantir AIP Bootcamp vs Big 4 Discovery vs HSN Labs 5-Day Bootcamp: https://hsnlabs.ai/blog/post/palantir-aip-bootcamp-operational-ontology/
-Side-by-side evaluation of 90-day strategy slide studies (Deloitte, Accenture, EY), proprietary Palantir AIP Bootcamps, and the HSN Labs 5-Day Forward Deployed Engineering Bootcamp with 100 percent client IP ownership.
+Side-by-side evaluation of 90-day strategy slide studies (McKinsey, Accenture, EY), proprietary Palantir AIP Bootcamps, and the HSN Labs 5-Day Forward Deployed Engineering Bootcamp with 100 percent client IP ownership.
 - Big 4 Strategy Firms vs IT Outsourcing Factories vs HSN Labs: https://hsnlabs.ai/blog/post/five-day-architecture-sprint/
-Comparing McKinsey, BCG, Deloitte, and PwC discovery decks and Globant, CI&T, and Stefanini squad outsourcing against HSN Labs 5-day empirical sandbox prototyping.
+Comparing McKinsey, BCG, EY, and PwC discovery decks and Globant, CI&T, and Stefanini squad outsourcing against HSN Labs 5-day empirical sandbox prototyping.
 - Legacy RPA vs Protocol-Level Autonomous Agents: https://hsnlabs.ai/blog/post/collapse-of-legacy-rpa/
 Why headless MCP and LangGraph agents built by HSN Labs replace fragile UI screen-scraping bots from UiPath, Automation Anywhere, and Blue Prism.
 - ERP AMS Consultancies and ITSM Suites vs Self-Healing Agents: https://hsnlabs.ai/blog/post/death-of-tier-1-erp-helpdesk/

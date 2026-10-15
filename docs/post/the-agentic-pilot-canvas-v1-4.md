@@ -28,7 +28,7 @@ Version 1.4, updated in October 2026, codifies the production lessons from our e
 
 ---
 
-![The Agentic Pilot Canvas v1.4](../assets/images/posts/the-agentic-pilot-canvas/cover.png)
+<img src="../../assets/images/posts/the-agentic-pilot-canvas/cover.png" alt="The Agentic Pilot Canvas v1.4" loading="lazy" />
 
 ---
 

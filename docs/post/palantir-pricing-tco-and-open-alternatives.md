@@ -71,7 +71,7 @@ For an enterprise in Brazil or Latin America earning revenue in local currency, 
 
 When a CIO or CFO evaluates how to deploy autonomous agents over complex enterprise operations, three distinct architectural and commercial models compete for budget allocation:
 
-| Executive Decision Vector | Palantir Foundry and AIP | Global Consultancies and GSIs - Accenture, Deloitte, Globant | Open Agentic Engineering - HSN Labs |
+| Executive Decision Vector | Palantir Foundry and AIP | Global Consultancies and GSIs - Accenture, Capgemini, Globant | Open Agentic Engineering - HSN Labs |
 | :--- | :--- | :--- | :--- |
 | **Commercial and Pricing Model** | Multi-year private contracts of 1 to 5 years; UK G-Cloud 14 public rate card lists £50k to £250k discovery, £66k per core annually, £3M enterprise license, and £150k per FDE per quarter | Time-and-materials billing or monthly squad allocation across 6 to 18-month service contracts | Fixed-scope architectural delivery; zero annual per-seat or per-core proprietary platform licensing fees |
 | **Currency and Cloud Exposure** | 100 percent USD or GBP contract exposure plus underlying AWS or Azure infrastructure consumption | Local currency contracts inflated by hourly body-shopping overhead and cloud partner markups | Local currency engineering deployed directly inside the client's existing AWS, GCP, or Azure tenant |
@@ -98,9 +98,9 @@ We use **PostgreSQL with pgvector** or **Neo4j** to model multi-hop entity relat
 ### 3. Model Context Protocol and State Machines
 We standardize tool execution using the **Model Context Protocol (MCP)** and deterministic workflow engines like **LangGraph**.
 
-<div style="display: flex; align-items: center; gap: 14px; margin: 20px 0; padding: 14px 18px; background: #0E1017; border: 1px solid #222736;">
-  <img src="../../assets/stack/langgraph-oss-lockup-dark.svg" alt="LangGraph OSS Engine" style="height: 28px; width: auto;" loading="lazy">
-  <span style="font-size: 0.85rem; color: #94A3B8; font-family: 'Inter', sans-serif;">Production-tested state graph engine for deterministic operational ontologies.</span>
+<div style="display: flex; align-items: center; gap: 14px; margin: 20px 0; padding: 14px 18px; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 6px;">
+  <img src="../../assets/stack/langgraph-oss-lockup.svg" alt="LangGraph OSS Engine" style="height: 28px; width: auto;" loading="lazy">
+  <span style="font-size: 0.85rem; color: #334155; font-family: 'Inter', sans-serif;">Production-tested state graph engine for deterministic operational ontologies.</span>
 </div>
 
 When an agent executes a transaction, it never invents an API payload. It dispatches a strongly-typed action through an MCP server where code-level guards verify account balances, role authorizations, and compliance invariants.
@@ -109,7 +109,7 @@ When an agent executes a transaction, it never invents an API payload. It dispat
 
 ## 5. The Pragmatic Path: The 5-Day Architecture Sprint
 
-Enterprises do not need to sign seven-figure multi-year software contracts or fund ninety-day McKinsey or Deloitte slide studies to prove that autonomous agents generate real EBITDA impact.
+Enterprises do not need to sign seven-figure multi-year software contracts or fund ninety-day McKinsey or BCG slide studies to prove that autonomous agents generate real EBITDA impact.
 
 We apply the empirical speed of Forward Deployed Engineering without the platform lock-in:
 

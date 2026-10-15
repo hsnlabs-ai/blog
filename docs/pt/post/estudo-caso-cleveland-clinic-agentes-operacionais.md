@@ -15,7 +15,7 @@ image: assets/images/posts/cleveland-clinic-case-study-operational-agents/cover.
 
 <!-- more -->
 
-*Contexto: Operações hospitalares são o ambiente mais complexo e unforgiving para software de automação. Um erro de atribuição de leito ou alocação de equipe afeta vidas humanas. Este estudo disseca a infraestrutura necessária para orquestrar dados críticos em escala massiva.*
+*Contexto: Este artigo é uma análise independente de benchmark arquitetural baseada nas divulgações públicas da Cleveland Clinic sobre sua implementação de ontologia operacional com o Palantir Foundry. Dissecamos aqui a infraestrutura necessária para orquestrar dados clínicos críticos em escala massiva.*
 
 A Cleveland Clinic gerencia mais de seis mil e seiscentos leitos hospitalares espalhados por dezenas de unidades. O desafio diário de coordenar admissões de emergência, altas médicas, preparação de leitos e alocação de equipes de enfermagem gerava atrasos históricos e sobrecarga operacional.
 

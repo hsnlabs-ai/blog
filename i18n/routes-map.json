@@ -396,6 +396,17 @@
       "target_keyword_pt": "comprar ou construir crm vendas b2b agentes",
       "en_path": "/blog/post/buy-versus-build-b2b-enterprise-crm/",
       "pt_path": "/blog/pt/post/comprar-ou-construir-crm-vendas-b2b/"
+    },
+    {
+      "slug_en": "the-agentic-pilot-canvas-v1-4",
+      "slug_pt": "the-agentic-pilot-canvas-v1-4",
+      "title_en": "The Agentic Pilot Canvas v1.4: The Framework for Enterprise AI Pilots That Survive Production",
+      "title_pt": "The Agentic Pilot Canvas v1.4: O Framework para Desenhar Pilotos de IA que Sobrevivem a Producao",
+      "category_en": "Agentic Engineering",
+      "category_pt": "Engenharia Agêntica",
+      "target_keyword_pt": "framework piloto agentes de ia producao",
+      "en_path": "/blog/post/the-agentic-pilot-canvas-v1-4/",
+      "pt_path": "/blog/pt/post/the-agentic-pilot-canvas-v1-4/"
     }
   ]
 }

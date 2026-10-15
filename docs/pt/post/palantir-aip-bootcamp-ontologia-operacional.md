@@ -82,7 +82,7 @@ Em seus relatórios anuais Form 10-K arquivados na SEC, a Palantir documentou ex
 
 > "A partir de 2023, introduzimos os bootcamps do AIP nos estágios iniciais do nosso processo de aquisição de clientes, o que ajudou a acelerar essas discussões e proporcionou uma oportunidade para que nossos clientes experimentassem nossas plataformas em seus próprios casos de uso em questão de dias."
 
-O modelo tradicional de compras corporativas de TI está quebrado porque grandes consultorias como Accenture, Deloitte e PwC cobram centenas de milhares de reais em contratos por hora técnica apenas para produzir diagnósticos teóricos em slides.
+O modelo tradicional de compras corporativas de TI está quebrado porque grandes consultorias como Accenture, EY e PwC cobram centenas de milhares de reais em contratos por hora técnica apenas para produzir diagnósticos teóricos em slides.
 
 Ao entregar fluxos funcionais sobre os dados reais do cliente em 120 horas, o comprador econômico avalia software funcionando em vez de promessas comerciais.
 
@@ -94,7 +94,7 @@ Embora a Palantir tenha comprovado o modelo empírico de 5 dias, seu bootcamp fo
 
 Veja como o **Bootcamp de Arquitetura Agêntica de 5 Dias da HSN Labs** se compara ao **Palantir AIP Bootcamp** e aos **Estudos de Discovery de Big 4**:
 
-| Critério de Avaliação Executiva | Discovery Tradicional de Big 4 - Deloitte, Accenture, EY | Palantir AIP Bootcamp | Bootcamp de Arquitetura Agêntica de 5 Dias - HSN Labs |
+| Critério de Avaliação Executiva | Discovery Tradicional de Big 4 - McKinsey, Accenture, EY | Palantir AIP Bootcamp | Bootcamp de Arquitetura Agêntica de 5 Dias - HSN Labs |
 | :--- | :--- | :--- | :--- |
 | **Tempo até Prova Funcional** | 60 a 90 dias de entrevistas com gestores — entrega zero código executável | 1 a 5 dias de engenharia intensiva sobre dados de amostra ou homologação | 5 dias de Forward Deployed Engineering conectado ao seu ambiente isolado de homologação |
 | **Entregável Principal** | Apresentação de 120 slides de PowerPoint e mapa estratégico teórico | Protótipo funcional fechado dentro da plataforma proprietária Palantir Foundry e AIP | Protótipo multiagente funcional em código puro, modelo auditado de ROI e blueprint de produção ADLC |

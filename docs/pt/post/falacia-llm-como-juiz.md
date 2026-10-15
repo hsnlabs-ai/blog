@@ -56,9 +56,9 @@ Na HSN Labs, rejeitamos notas subjetivas de prompts em esteiras corporativas. Av
 * **Conjuntos Dourados e Imutáveis de Teste:** Cada incidente de produção e caso de borda e transformado em um cenário de teste automatizado imutável. Antes que qualquer grafo de agentes atualizado toque a homologação, ele precisa passar por centenas de testes históricos de regressão.
 * **Telemetria Completa e Capacidade de Repetição:** Rastreamos cada fluxo, monitorando cada token, estado intermediário e chamada de ferramenta.
 
-<div style="display: flex; align-items: center; gap: 14px; margin: 16px 0; padding: 14px 18px; background: #0E1017; border: 1px solid #222736;">
+<div style="display: flex; align-items: center; gap: 14px; margin: 16px 0; padding: 14px 18px; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 6px;">
   <img src="../../../assets/stack/langsmith.svg" alt="Observabilidade LangSmith" style="height: 28px; width: 28px;" loading="lazy">
-  <span style="font-size: 0.85rem; color: #94A3B8; font-family: 'Inter', sans-serif;">Rastreamento de execução de alta fidelidade, telemetria de latência e suites de avaliação determinísticas.</span>
+  <span style="font-size: 0.85rem; color: #334155; font-family: 'Inter', sans-serif;">Rastreamento de execução de alta fidelidade, telemetria de latência e suites de avaliação determinísticas.</span>
 </div> Se um agente produz uma transição inesperada, nossos engenheiros conseguem reproduzir o rastro exato de execução com total fidelidade no ambiente local de desenvolvimento.
 
 Não avalie agentes de produção com prompts opinativos. Avalie com asserções de código verificáveis e comprovações matemáticas.

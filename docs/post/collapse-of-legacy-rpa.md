@@ -40,19 +40,19 @@ For ten years, vendors like UiPath, Automation Anywhere, Blue Prism, and Microso
 
 Enterprises tolerated this fragility because, until recently, there was no alternative for bridging legacy systems that lacked modern APIs. Today, that justification is dead.
 
-Legacy RPA does not understand business logic. It understands screen coordinates, Document Object Model selectors, and optical character recognition bounding boxes. This fundamental design flaw created a parasitic consulting industry:
+Legacy RPA does not understand business logic. It understands screen coordinates, Document Object Model selectors, and optical character recognition bounding boxes. This fundamental design flaw created a misaligned maintenance economy:
 
-### 1. The Broken Selector Extortion
+### 1. The Broken Selector Maintenance Tax
 Every time an enterprise ERP like SAP GUI, TOTVS Protheus, or an external government portal undergoes a minor patch, changes a CSS class, or updates an input layout, the legacy RPA bot crashes with a fatal exception. The transaction queue freezes, orders pile up, and business halts.
 
-Who profits from this breakage? Traditional IT outsourcing firms and RPA integrators — such as Stefanini, Accenture, Deloitte, and specialized RPA shops — who charge hundred-dollar hourly rates on perpetual maintenance retainers to log in and re-record the broken selectors. Companies spend three times more capital fixing broken robots than they ever saved by automating the original task.
+Who benefits from this fragility? Traditional IT outsourcing firms and RPA integrators — such as Stefanini, Accenture, and specialized RPA consultancies — that bill hundred-dollar hourly rates on perpetual maintenance retainers to log in and re-record the broken selectors. Companies spend three times more capital fixing broken robots than they ever saved by automating the original task.
 
 ### 2. The Absurdity of Virtual Machine Farms
 To run legacy RPA at enterprise scale, companies must maintain dedicated farms of virtual machines running full Windows desktop operating systems.
 
 Think about the sheer architectural waste: spinning up a heavy desktop environment, allocating CPU and RAM, and paying Microsoft Windows Server licensing fees just so a UiPath or Blue Prism script can open an ERP screen, click three form fields, and hit enter.
 
-### 3. Seat Licenses for Incompetence
+### 3. Annual Licenses for Idle Bot Runners
 Legacy RPA vendors charge thousands of dollars annually per unattended bot runner. You pay that license fee every twelve months regardless of whether the bot successfully executed a single transaction or spent half the quarter stuck on an unexpected modal dialog.
 
 ---
@@ -61,7 +61,7 @@ Legacy RPA vendors charge thousands of dollars annually per unattended bot runne
 
 When a CIO or COO evaluates how to automate high-volume backoffice workflows across finance, tax, and supply chain, three distinct models compete:
 
-| Architectural and Financial Vector | Legacy RPA Platforms - UiPath, Automation Anywhere, Blue Prism | Outsourced RPA Maintenance Squads - Stefanini, Accenture, Big 4 | Protocol-Level Autonomous Agents - HSN Labs |
+| Architectural and Financial Vector | Legacy RPA Platforms - UiPath, Automation Anywhere, Blue Prism | Outsourced RPA Maintenance Squads - Stefanini, Accenture, Legacy GSIs | Protocol-Level Autonomous Agents - HSN Labs |
 | :--- | :--- | :--- | :--- |
 | **Execution Mechanism** | Surface-level UI screen scraping, DOM XPath selectors, and fragile coordinate clicks | Manual human intervention to re-record broken selectors after every portal or ERP update | Headless protocol execution via REST, database adapters, RFC/BAPI, and Model Context Protocol |
 | **Handling of Document Variance** | Rigid OCR templates that fail when a supplier changes an invoice layout | Requires opening a change request ticket and billing hours to build a new template | Semantic parsing bound to strict Pydantic v2 ontologies that handle layout variance natively |

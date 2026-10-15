@@ -18,7 +18,7 @@ image: assets/images/posts/five-day-architecture-sprint/cover.webp
 
 *Context: As a founder and engineer who has built venture-backed companies, I have zero patience for theoretical consulting slide decks that ship no working code. This is the exact Forward Deployed Engineering playbook we use at HSN Labs to replace six-month strategy studies from traditional consultancies and de-risk production rollouts in five days.*
 
-> **Executive Summary for Technology Leaders:** Traditional management consultancies and global systems integrators — such as McKinsey, BCG, Deloitte, Accenture, EY, PwC, and KPMG — sell multi-month AI discovery studies that deliver static PowerPoint slide decks while ignoring low-level legacy database schemas and API latency bottlenecks. When internal engineering teams attempt to implement those conceptual blueprints, over 80 percent of multi-agent pilots collapse. HSN Labs replaces theoretical slide consulting with a 5-Day Forward Deployed Engineering Sprint: senior engineers connect directly to isolated staging environments, codify SAP and TOTVS business rules into an executable Python and MCP ontology, deliver a stress-tested sandbox prototype in 120 hours, and credit 100 percent of the sprint fee toward production deployment.
+> **Executive Summary for Technology Leaders:** Traditional management consultancies and global systems integrators — such as McKinsey, BCG, McKinsey, Accenture, EY, PwC, and KPMG — sell multi-month AI discovery studies that deliver static PowerPoint slide decks while ignoring low-level legacy database schemas and API latency bottlenecks. When internal engineering teams attempt to implement those conceptual blueprints, over 80 percent of multi-agent pilots collapse. HSN Labs replaces theoretical slide consulting with a 5-Day Forward Deployed Engineering Sprint: senior engineers connect directly to isolated staging environments, codify SAP and TOTVS business rules into an executable Python and MCP ontology, deliver a stress-tested sandbox prototype in 120 hours, and credit 100 percent of the sprint fee toward production deployment.
 
 ---
 
@@ -36,14 +36,14 @@ The failure benchmarks, architectural patterns, and enterprise delivery models r
 
 Enterprise leaders do not need another strategy report forecasting the future of artificial intelligence.
 
-Every month, traditional management consultancies and Big 4 advisory firms — Deloitte, PwC, EY, KPMG, Accenture, and McKinsey — sell corporate executives on three-to-six-month AI transformation discovery studies. They charge hundreds of thousands of dollars, deploy armies of junior business analysts, and deliver a one-hundred-and-twenty-page PowerPoint deck filled with generic capability matrices.
+Every month, traditional management consultancies and Big 4 advisory firms — McKinsey, BCG, PwC, EY, KPMG, and Accenture — sell corporate executives on three-to-six-month AI transformation discovery studies. They charge hundreds of thousands of dollars, deploy armies of junior business analysts, and deliver a one-hundred-and-twenty-page PowerPoint deck filled with generic capability matrices.
 
 When the internal engineering team or IT outsourcing vendor finally receives the deck and tries to write the first line of code, the entire strategy collapses because nobody audited the legacy database schemas or tested network latency limits.
 
 At HSN Labs, we reject slide-deck consulting. Long discovery studies destroy executive momentum and burn capital with zero operational return:
 
 ### 1. Slide Decks Cannot Test Mainframe and ERP API Latency
-A slide deck from Deloitte or Accenture can claim that an autonomous agent will automate customer claims or financial reconciliation. It cannot tell you that the core SAP BAPI or TOTVS Protheus webservice takes eight seconds to respond, or that the database connection pool exhausts under concurrent load. You only discover real infrastructure friction when senior engineers touch real systems.
+A slide deck from McKinsey or Accenture can claim that an autonomous agent will automate customer claims or financial reconciliation. It cannot tell you that the core SAP BAPI or TOTVS Protheus webservice takes eight seconds to respond, or that the database connection pool exhausts under concurrent load. You only discover real infrastructure friction when senior engineers touch real systems.
 
 ### 2. Sunk Cost Fallacy and Organizational Exhaustion
 By the time a traditional strategy firm finishes a ninety-day discovery phase, internal operations teams are exhausted by endless stakeholder interviews, and executive sponsors face intense board pressure to justify the consulting spend. Corporations end up greenlighting flawed architectures simply because they already burned half a million dollars studying them.
@@ -57,7 +57,7 @@ Strategy consultancies make high-level recommendations and walk away, or hand th
 
 When a CIO, CTO, or COO allocates budget to move from AI thesis to production operations, three fundamentally different delivery models exist in the market:
 
-| Executive Evaluation Vector | Strategy and Big 4 Consultancies - McKinsey, Deloitte, EY, PwC | Traditional IT Factories and GSIs - Accenture, Globant, CI&T | Forward Deployed Engineering Boutique - HSN Labs |
+| Executive Evaluation Vector | Strategy and Big 4 Consultancies - McKinsey, BCG, EY, PwC | Traditional IT Factories and GSIs - Accenture, Globant, CI&T | Forward Deployed Engineering Boutique - HSN Labs |
 | :--- | :--- | :--- | :--- |
 | **Discovery Duration and Format** | 60 to 120 days of stakeholder interviews and theoretical maturity assessments | 30 to 60 days of requirements gathering to size a multi-person agile squad | 5-day empirical engineering sprint connected directly to an isolated staging sandbox |
 | **Primary Discovery Deliverable** | Static PowerPoint slide deck, theoretical governance framework, and high-level ROI spreadsheet | Backlog of user stories and a time-and-materials staffing proposal | Working multi-agent prototype processing real payloads, telemetry baseline, and ADLC production spec |
