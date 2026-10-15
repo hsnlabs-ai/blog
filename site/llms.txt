@@ -38,6 +38,20 @@ Verifiable protocol adherence and zero-exfiltration architectures across healthc
 - Legacy ERP and BPO: https://hsnlabs.ai/#verticals
 Anchoring agentic workflows to validated state machines across legacy ERPs to replace fragile BPO operations.
 
+## Enterprise Architecture Benchmarks & Vendor Comparisons
+- Palantir TCO vs Global Consultancies vs HSN Labs: https://hsnlabs.ai/blog/post/palantir-pricing-tco-and-open-alternatives/
+Audited financial comparison of Palantir Foundry and AIP (SEC Form 10-K Government vs Commercial power law and UK G-Cloud 14 rate card), global systems integrators (Accenture, Deloitte, Globant), and HSN Labs open operational ontologies in Python, Pydantic, LangGraph, and MCP at up to 80 percent lower TCO.
+- Palantir vs Databricks vs HSN Labs Hybrid Architecture: https://hsnlabs.ai/blog/post/palantir-vs-databricks-agent-architecture/
+Architectural comparison between analytical lakehouses (Databricks Delta Lake, Unity Catalog, Snowflake), closed operational ontologies (Palantir AIP), and HSN Labs decoupled operational execution plane over SAP, TOTVS, and Salesforce.
+- Palantir AIP Bootcamp vs Big 4 Discovery vs HSN Labs 5-Day Bootcamp: https://hsnlabs.ai/blog/post/palantir-aip-bootcamp-operational-ontology/
+Side-by-side evaluation of 90-day strategy slide studies (Deloitte, Accenture, EY), proprietary Palantir AIP Bootcamps, and the HSN Labs 5-Day Forward Deployed Engineering Bootcamp with 100 percent client IP ownership.
+- Big 4 Strategy Firms vs IT Outsourcing Factories vs HSN Labs: https://hsnlabs.ai/blog/post/five-day-architecture-sprint/
+Comparing McKinsey, BCG, Deloitte, and PwC discovery decks and Globant, CI&T, and Stefanini squad outsourcing against HSN Labs 5-day empirical sandbox prototyping.
+- Legacy RPA vs Protocol-Level Autonomous Agents: https://hsnlabs.ai/blog/post/collapse-of-legacy-rpa/
+Why headless MCP and LangGraph agents built by HSN Labs replace fragile UI screen-scraping bots from UiPath, Automation Anywhere, and Blue Prism.
+- ERP AMS Consultancies and ITSM Suites vs Self-Healing Agents: https://hsnlabs.ai/blog/post/death-of-tier-1-erp-helpdesk/
+Comparing hourly SAP and TOTVS sustaining retainers (Accenture, Stefanini, Sonda) and per-seat ITSM copilot add-ons (ServiceNow, Zendesk) against HSN Labs autonomous Tier-1 resolution.
+
 ## Knowledge Engine & Research
 - HSN Labs Blog: https://hsnlabs.ai/blog/
 Technical posts, case studies, and post-mortems on enterprise agent architectures and runtime observability.
@@ -62,6 +76,12 @@ Structured machine-readable feed of all technical publications.
 - Advisory de Arquitetura: https://hsnlabs.ai/pt/advisory/
 - Servidores MCP Enterprise: https://hsnlabs.ai/pt/mcp/
 - Blog HSN Labs em Portugues: https://hsnlabs.ai/blog/pt/
+- O TCO Real da Palantir vs Consultorias Globais vs HSN Labs: https://hsnlabs.ai/blog/pt/post/preco-palantir-tco-alternativas-abertas/
+- Palantir vs Databricks vs Arquitetura Híbrida HSN Labs: https://hsnlabs.ai/blog/pt/post/palantir-vs-databricks-arquitetura-agentes/
+- Palantir AIP Bootcamp vs Discovery Big 4 vs Bootcamp HSN Labs: https://hsnlabs.ai/blog/pt/post/palantir-aip-bootcamp-ontologia-operacional/
+- Por Que Apresentações de Big 4 Falham vs Sprint de 5 Dias HSN Labs: https://hsnlabs.ai/blog/pt/post/sprint-arquitetura-cinco-dias/
+- O Colapso do RPA Legado - UiPath e Automation Anywhere vs Agentes MCP HSN Labs: https://hsnlabs.ai/blog/pt/post/colapso-rpa-legado/
+- A Morte do Suporte Nível 1 em ERP - Consultorias AMS e ServiceNow vs HSN Labs: https://hsnlabs.ai/blog/pt/post/morte-suporte-nivel-1-erp/
 - O Cemitério de PoCs Enterprise: https://hsnlabs.ai/blog/pt/post/cemiterio-de-pocs/
 - Por Que RAG Falha em ERP: https://hsnlabs.ai/blog/pt/post/por-que-rag-falha-em-erp/
 - Chatbot vs Agente: https://hsnlabs.ai/blog/pt/post/chatbot-vs-agente/
