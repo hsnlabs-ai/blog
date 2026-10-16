@@ -53,7 +53,7 @@ Vector search has no inherent concept of temporal sequence. Unless an engineer m
 
 ## What I Build Instead: Executable Ontologies
 
-At HSN Labs, we do not let language models guess relational SQL or search raw embeddings for financial truth. Here is the exact architecture I enforce instead:
+At hsnlabs, we do not let language models guess relational SQL or search raw embeddings for financial truth. Here is the exact architecture I enforce instead:
 
 * **Pre-Compiled Business Ontologies:** We map the enterprise schema into an explicit knowledge graph that defines verified relationships, valid join paths, and business rules before any query runs.
 * **Strictly Typed Query Generation:** The agent does not generate open-ended SQL strings. It selects parameterized query templates validated against strict Pydantic schemas. Every parameter is checked before it touches the read replica.
@@ -65,4 +65,4 @@ If an architecture cannot guarantee mathematical precision on financial records,
 - <a href="../what-is-an-ontology-for-ai-agents/">What Is an Ontology for AI Agents? The Definitive Guide</a>
 - <a href="../integration-drift/">The Integration Drift: When Prompts Break Production Agents</a>
 - <a href="../llm-as-judge-fallacy/">Why LLM-as-a-Judge Fails in Banking</a>
-- <a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a>
+- <a href="https://hsnlabs.ai/bootcamp">Apply for the hsnlabs Five-Day Architecture Bootcamp</a>

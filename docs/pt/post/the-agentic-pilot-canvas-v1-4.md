@@ -22,7 +22,7 @@ Constroem demonstracoes plasticas sobre system prompts frageis. Quando o agente 
 
 Para resolver esse gargalo metodologico antes de escrever uma unica linha de codigo, criei e disponibilizei sob licenca aberta MIT The Agentic Pilot Canvas.
 
-A versao 1.4, atualizada em outubro de 2026, consolida os aprendizados dos nossos sprints de arquitetura na HSN Labs. O modelo e interativo e roda diretamente no navegador:
+A versao 1.4, atualizada em outubro de 2026, consolida os aprendizados dos nossos sprints de arquitetura na hsnlabs. O modelo e interativo e roda diretamente no navegador:
 
 👉 **Acesse a ferramenta interativa:** <a href="https://hsnlabs.ai/pt/canvas/">hsnlabs.ai/canvas</a>
 

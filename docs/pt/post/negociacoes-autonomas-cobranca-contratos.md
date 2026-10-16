@@ -24,7 +24,7 @@ O modelo tradicional é ineficiente, caro e sujeito a taxas inaceitáveis de err
 
 ## A Arquitetura de Negociação Autônoma
 
-Para automatizar transações de alto risco sem colocar o balanço da empresa em perigo, a HSN Labs emprega uma combinação estrita de três pilares de engenharia:
+Para automatizar transações de alto risco sem colocar o balanço da empresa em perigo, a hsnlabs emprega uma combinação estrita de três pilares de engenharia:
 
 ### 1. Limites Parametricos Definidos por Ontologia
 O agente não decide termos de negociação de forma probabilística. Ele opera sobre uma ontologia que codifica a política de crédito da instituição. Parâmetros como valor do desconto máximo, taxa de juros permitida, prazos de parcelamento e restrições de garantia são consultados em tempo de execução a partir de regras formais.
@@ -56,6 +56,6 @@ Automatizar negociação de contratos não é uma questão de criar prompts pers
 
 ## Recursos Estrategicos e Posts Relacionados
 - <a href="/blog/pt/post/matriz-substituicao-bpo/">A Matriz de Substituicao de BPO: Metricas Operacionais e Financeiras</a>
-- <a href="/blog/pt/post/manifesto/">Por Que Criei a HSN Labs</a>
+- <a href="/blog/pt/post/manifesto/">Por Que Criei a hsnlabs</a>
 - <a href="/blog/pt/post/kafka-metamorfose-ia-futuro-do-trabalho/">De 1915 a Era da IA: Kafka, utilitarismo e o valor do trabalho</a>
-- <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da HSN Labs</a>
+- <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da hsnlabs</a>

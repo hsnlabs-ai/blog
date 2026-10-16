@@ -35,7 +35,7 @@ In markets like Brazil with complex labor codes under CLT, payroll is not a sugg
 
 Every overtime hour, night differential, and union benefit corresponds to a closed formula. Yet, traditional BPO operations still employ rooms full of analysts manually reconciling timecards and preparing government transmissions like eSocial events.
 
-A single human transcription error in an eSocial event triggers automatic federal fines, blocked tax clearances, and immediate labor court claims. At Eva People and HSN Labs, we proved that rule-graphs and schema guards execute these workflows with zero defects, pushing verified data straight to government gateways in seconds.
+A single human transcription error in an eSocial event triggers automatic federal fines, blocked tax clearances, and immediate labor court claims. At Eva People and hsnlabs, we proved that rule-graphs and schema guards execute these workflows with zero defects, pushing verified data straight to government gateways in seconds.
 
 ### 2. General Ledger and Statutory Tax Reporting
 Enterprise monthly close routinely takes corporate finance teams ten to fifteen days.
@@ -76,4 +76,4 @@ When an enterprise replaces billable outsourced headcount with autonomous softwa
 - <a href="../bpo-replacement-matrix/">The BPO Replacement Matrix: Operational and Financial Metrics</a>
 - <a href="../death-of-tier-1-erp-helpdesk/">The Death of Tier-1 Support: Why ERP Consultancies Lose Billable Hours</a>
 - <a href="../buy-versus-build-b2b-enterprise-crm/">Buy versus Build: B2B Enterprise CRM, Twenty, and Agentic Stacks</a>
-- <a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a>
+- <a href="https://hsnlabs.ai/bootcamp">Apply for the hsnlabs Five-Day Architecture Bootcamp</a>

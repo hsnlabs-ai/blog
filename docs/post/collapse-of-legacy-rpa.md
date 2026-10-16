@@ -18,7 +18,7 @@ image: assets/images/posts/collapse-of-legacy-rpa/cover.webp
 
 *Context: This critique was born while auditing IT invoices for an enterprise client paying an external integrator sixty thousand dollars a month just to patch broken UiPath selectors across SAP and remote desktops. Pixel clickers cannot compete with protocol-level autonomous agents.*
 
-> **Executive Summary for Technology Leaders:** Legacy Robotic Process Automation vendors — led by UiPath, Automation Anywhere, and SS&C Blue Prism — built an industry on emulating human mouse clicks and DOM selectors over virtual Windows desktops. Whenever an ERP screen or web portal shifts a CSS class, the bots crash, fueling a parasitic maintenance market for systems integrators. Today, HSN Labs replaces fragile screen-scraping bots with protocol-level autonomous agents built on Python, Pydantic v2, LangGraph, and the Model Context Protocol — executing headless transactions directly against SAP, TOTVS, and Oracle APIs while slashing infrastructure and licensing costs by over 80 percent.
+> **Executive Summary for Technology Leaders:** Legacy Robotic Process Automation vendors — led by UiPath, Automation Anywhere, and SS&C Blue Prism — built an industry on emulating human mouse clicks and DOM selectors over virtual Windows desktops. Whenever an ERP screen or web portal shifts a CSS class, the bots crash, fueling a parasitic maintenance market for systems integrators. Today, hsnlabs replaces fragile screen-scraping bots with protocol-level autonomous agents built on Python, Pydantic v2, LangGraph, and the Model Context Protocol — executing headless transactions directly against SAP, TOTVS, and Oracle APIs while slashing infrastructure and licensing costs by over 80 percent.
 
 ---
 
@@ -57,11 +57,11 @@ Legacy RPA vendors charge thousands of dollars annually per unattended bot runne
 
 ---
 
-## 2. Executive Comparison: Legacy RPA vs RPA Integrators vs HSN Labs Protocol Agents
+## 2. Executive Comparison: Legacy RPA vs RPA Integrators vs hsnlabs Protocol Agents
 
 When a CIO or COO evaluates how to automate high-volume backoffice workflows across finance, tax, and supply chain, three distinct models compete:
 
-| Architectural and Financial Vector | Legacy RPA Platforms - UiPath, Automation Anywhere, Blue Prism | Outsourced RPA Maintenance Squads - Stefanini, Accenture, Legacy GSIs | Protocol-Level Autonomous Agents - HSN Labs |
+| Architectural and Financial Vector | Legacy RPA Platforms - UiPath, Automation Anywhere, Blue Prism | Outsourced RPA Maintenance Squads - Stefanini, Accenture, Legacy GSIs | Protocol-Level Autonomous Agents - hsnlabs |
 | :--- | :--- | :--- | :--- |
 | **Execution Mechanism** | Surface-level UI screen scraping, DOM XPath selectors, and fragile coordinate clicks | Manual human intervention to re-record broken selectors after every portal or ERP update | Headless protocol execution via REST, database adapters, RFC/BAPI, and Model Context Protocol |
 | **Handling of Document Variance** | Rigid OCR templates that fail when a supplier changes an invoice layout | Requires opening a change request ticket and billing hours to build a new template | Semantic parsing bound to strict Pydantic v2 ontologies that handle layout variance natively |
@@ -73,7 +73,7 @@ When a CIO or COO evaluates how to automate high-volume backoffice workflows acr
 
 ## 3. How Protocol-Level Agents Replace Screen Clickers
 
-At HSN Labs, we do not build systems that emulate human eyes and hands on a desktop screen. We deploy autonomous agents that communicate directly with underlying system protocols:
+At hsnlabs, we do not build systems that emulate human eyes and hands on a desktop screen. We deploy autonomous agents that communicate directly with underlying system protocols:
 
 * **Headless Protocol Execution:** An autonomous agent does not search a display for a button labeled Submit Order. It communicates directly with backend services via database adapters, REST endpoints, Model Context Protocol servers, or command line interfaces. A frontend interface redesign has zero impact on system uptime.
 * **Robust Handling of Variance:** When a traditional RPA bot encounters an invoice layout with an extra line item, it crashes. When an autonomous agent encounters document variance, it parses the payload against an explicit ontology, extracts the verified entities, and applies business rules without manual code patches.
@@ -87,4 +87,4 @@ The era of paying millions to maintain fragile screen-scraping bots is finished.
 - <a href="../bpo-replacement-matrix/">The BPO Replacement Matrix: Operational and Financial Metrics</a>
 - <a href="../balance-sheet-guard-bpo-extinction/">What I Learned Building HR Tech About Dying BPO Contracts</a>
 - <a href="../death-of-tier-1-erp-helpdesk/">The Death of Tier-1 Support: Why ERP Consultancies Lose Billable Hours</a>
-- <a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a>
+- <a href="https://hsnlabs.ai/bootcamp">Apply for the hsnlabs Five-Day Architecture Bootcamp</a>

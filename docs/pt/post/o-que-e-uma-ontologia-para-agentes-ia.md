@@ -15,7 +15,7 @@ image: assets/images/posts/what-is-an-ontology-for-ai-agents/cover.webp
 
 <!-- more -->
 
-*Contexto: Escrevi este guia para unificar os conceitos que apresento diariamente em workshops executivos e nas esteiras de engenharia da HSN Labs. Se você precisa entender ontologias para agentes de forma prática e definitiva, este é o ponto de partida.*
+*Contexto: Escrevi este guia para unificar os conceitos que apresento diariamente em workshops executivos e nas esteiras de engenharia da hsnlabs. Se você precisa entender ontologias para agentes de forma prática e definitiva, este é o ponto de partida.*
 
 O entusiasmo em torno de agentes autônomos gerou uma avalanche de demonstrações impressionantes nas redes sociais. No entanto, quando líderes técnicos tentam implantar esses mesmos agentes no ambiente corporativo real, a taxa de sucesso cai drasticamente.
 
@@ -119,4 +119,4 @@ Construir ontologias é o investimento definitivo que separa empresas que apenas
 - <a href="/blog/pt/post/falacia-llm-como-juiz/">Por Que LLM Como Juiz Falha no Setor Bancario</a>
 - <a href="/blog/pt/post/ontologia-vs-schema-banco-dados/">Ontologia vs Schema de Banco de Dados: Por Que Tabelas Relacionais Quebram Agentes</a>
 - <a href="/blog/pt/post/palantir-vs-databricks-arquitetura-agentes/">Palantir vs Databricks: Por Que Data Lakes Falham na Orquestracao de Agentes</a>
-- <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da HSN Labs</a>
+- <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da hsnlabs</a>

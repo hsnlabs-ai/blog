@@ -47,7 +47,7 @@ Quando um agente escreve diretamente em um banco de produção, a auditabilidade
 
 ## As Três Defesas que Usamos para Proteger Bancos Corporativos
 
-Na HSN Labs, nossos engenheiros nunca concedem aos modelos acesso direto de escrita aos bancos primários. Tratamos o modelo como um cliente não confiável e aplicamos proteção em três camadas de arquitetura:
+Na hsnlabs, nossos engenheiros nunca concedem aos modelos acesso direto de escrita aos bancos primários. Tratamos o modelo como um cliente não confiável e aplicamos proteção em três camadas de arquitetura:
 
 ### 1. Replicas Isoladas de Leitura com Mascaramento Dinâmico
 Agentes consultam replicas isoladas de leitura, nunca os bancos centrais de produção. Antes que os dados saiam do perímetro corporativo para entrar na janela de contexto do agente, serviços automatizados de mascaramento anonimizam dados pessoais protegidos, registros tributários e campos financeiros sensíveis.
@@ -64,4 +64,4 @@ Segurança não é um detalhe adicional em engenharia agêntica. O isolamento de
 - <a href="/blog/pt/post/como-construir-ontologia-enterprise-do-zero/">Como Construir uma Ontologia Enterprise do Zero: Passo a Passo</a>
 - <a href="/blog/pt/post/sistemas-legados-motor-execucao/">Sistemas Transacionais Legados Nao Vao Morrer: Eles Sao o Motor</a>
 - <a href="/blog/pt/post/sprint-arquitetura-cinco-dias/">Por Que Apresentacoes de Big 4 Falham em Projetos de Agentes</a>
-- <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da HSN Labs</a>
+- <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da hsnlabs</a>

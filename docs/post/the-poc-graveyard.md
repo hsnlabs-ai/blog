@@ -51,9 +51,9 @@ Every Chief Information Security Officer I talk to on Avenida Faria Lima and Pau
 
 If an autonomous system cannot prove perimeter isolation, read-only boundary separation, and hard cryptographic validation of every mutation, the security review will block it indefinitely. The PoC dies not because the model was dumb, but because the engineering was reckless.
 
-## How HSN Labs Escapes the Graveyard
+## How hsnlabs Escapes the Graveyard
 
-At HSN Labs, we do not build boardroom slide decks or unconstrained sandbox demos. When our Forward Deployed Engineers enter an enterprise client, we enforce three non-negotiable rules:
+At hsnlabs, we do not build boardroom slide decks or unconstrained sandbox demos. When our Forward Deployed Engineers enter an enterprise client, we enforce three non-negotiable rules:
 
 * **Ground Every Step in Explicit Ontologies:** Models never query relational databases directly. They interact with pre-compiled domain graphs that enforce schema invariants before execution.
 * **Bound Execution with Finite State Machines:** Every agentic workflow must operate within mathematically provable state transitions. The model can suggest the path, but code-level software guards enforce the bounds.
@@ -65,4 +65,4 @@ Enterprise value is not measured by chatbots that talk. It is measured by produc
 - <a href="../what-is-an-ontology-for-ai-agents/">What Is an Ontology for AI Agents? The Definitive Guide</a>
 - <a href="../why-rag-breaks-on-erp/">Why I Never Use Normal RAG on Financial ERPs</a>
 - <a href="../integration-drift/">The Integration Drift: When Prompts Break Production Agents</a>
-- <a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a>
+- <a href="https://hsnlabs.ai/bootcamp">Apply for the hsnlabs Five-Day Architecture Bootcamp</a>

@@ -24,7 +24,7 @@ Historicamente, a resposta da diretoria para ganho de eficiência era a renegoci
 ## Os Quatro Movimentos Estratégicos do Playbook
 
 ### 1. Auditoria de Custos de Mesa de Atendimento
-O primeiro passo consiste em identificar onde estoques massivos de trabalho manual estão concentrados. Em noventa por cento dos casos auditados pela HSN Labs, os gargalos estão em:
+O primeiro passo consiste em identificar onde estoques massivos de trabalho manual estão concentrados. Em noventa por cento dos casos auditados pela hsnlabs, os gargalos estão em:
 
 - Conciliação contábil e fiscal entre sistemas divergentes
 - Triagem e validação de pedidos de compras com regras complexas
@@ -37,7 +37,7 @@ Ao contratar um fornecedor tradicional de BPO, a corporação paga mensalmente p
 Com agentes construídos sobre ontologias corporativas, o conhecimento operacional da empresa e codificado em regras executáveis e grafos de domínio. O investimento deixa de ser uma despesa operacional recorrente e se transforma em um ativo tecnológico imutável de propriedade exclusiva da companhia.
 
 ### 3. Eliminação da Fragmentação de Licenças
-Sistemas tradicionais de IA cobram por assento, criando um desincentivo perverso a adoção ampla. A arquitetura da HSN Labs opera sobre pilares de código aberto e padrões de mercado como o Model Context Protocol, desacoplando o cliente de taxas predatórias de fornecedores proprietários.
+Sistemas tradicionais de IA cobram por assento, criando um desincentivo perverso a adoção ampla. A arquitetura da hsnlabs opera sobre pilares de código aberto e padrões de mercado como o Model Context Protocol, desacoplando o cliente de taxas predatórias de fornecedores proprietários.
 
 ### 4. Gestão de Riscos e Integridade de Dados
 Nenhuma iniciativa de redução de custos se sustenta se criar passivos regulatórios ou falhas de conformidade. O playbook exige que todo agente opere dentro de limites de leitura e escrita rigorosamente controlados por software, garantindo compliance total com normativas da LGPD e comitês internos de auditoria.
@@ -50,4 +50,4 @@ A transição para software agêntico não é um projeto experimental de TI. E u
 - <a href="/blog/pt/post/matriz-substituicao-bpo/">A Matriz de Substituicao de BPO: Metricas Operacionais e Financeiras</a>
 - <a href="/blog/pt/post/arbitragem-protocolo-sinistros-subscricao/">Arbitragem de Protocolos: Liquidacao Multimodal Autonoma de Sinistros</a>
 - <a href="/blog/pt/post/custo-ia-ilimitada-ti-legada/">O Custo de IA Sem Limites na TI Legada</a>
-- <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da HSN Labs</a>
+- <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da hsnlabs</a>

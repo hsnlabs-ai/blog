@@ -16,9 +16,9 @@ image: assets/images/posts/palantir-vs-databricks-agent-architecture/cover.webp
 
 <!-- more -->
 
-*Context: Enterprise engineering teams frequently attempt to build transactional AI agents directly on top of analytical platforms like Databricks or Snowflake. Within weeks of production testing, latency spikes and missing write-back guards stall the rollout. Here is why analytical lakehouses fail at operational agent execution, why Palantir built an ontology layer, and how HSN Labs constructs the hybrid architecture in open code.*
+*Context: Enterprise engineering teams frequently attempt to build transactional AI agents directly on top of analytical platforms like Databricks or Snowflake. Within weeks of production testing, latency spikes and missing write-back guards stall the rollout. Here is why analytical lakehouses fail at operational agent execution, why Palantir built an ontology layer, and how hsnlabs constructs the hybrid architecture in open code.*
 
-> **Executive Summary for Technology Leaders:** Databricks and Snowflake are world-class analytical platforms designed for high-throughput batch processing, business intelligence, and model training. However, connecting autonomous agents directly to analytical tables causes high query latency, unbounded cloud compute consumption, and dangerous transactional mutations without rollback guards. Palantir solved this by introducing an Operational Ontology between data and models. For enterprises seeking that exact operational resilience without replacing their Databricks lakehouse or signing seven-figure Palantir contracts, HSN Labs deploys an open Operational Execution Plane using Python, Pydantic, LangGraph, and the Model Context Protocol.
+> **Executive Summary for Technology Leaders:** Databricks and Snowflake are world-class analytical platforms designed for high-throughput batch processing, business intelligence, and model training. However, connecting autonomous agents directly to analytical tables causes high query latency, unbounded cloud compute consumption, and dangerous transactional mutations without rollback guards. Palantir solved this by introducing an Operational Ontology between data and models. For enterprises seeking that exact operational resilience without replacing their Databricks lakehouse or signing seven-figure Palantir contracts, hsnlabs deploys an open Operational Execution Plane using Python, Pydantic, LangGraph, and the Model Context Protocol.
 
 ---
 
@@ -37,7 +37,7 @@ The architectural specifications, governance models, and case metrics referenced
 
 The failure of data-lake-backed agents stems from confusing two completely different architectural planes: passive analytical storage versus stateful operational execution.
 
-| Architectural Vector | Analytical Lakehouse - Databricks and Snowflake | Proprietary Ontology - Palantir Foundry and AIP | Hybrid Open Ontology - HSN Labs |
+| Architectural Vector | Analytical Lakehouse - Databricks and Snowflake | Proprietary Ontology - Palantir Foundry and AIP | Hybrid Open Ontology - hsnlabs |
 | :--- | :--- | :--- | :--- |
 | **Core Architectural Plane** | Analytical Data Plane: batch aggregation, BI reporting, feature engineering, and model training | Closed Operational Plane: end-to-end proprietary data ingestion, object modeling, and workflow apps | Decoupled Operational Execution Plane sitting between existing lakehouses and core ERPs |
 | **Primary Data Asset** | Tables, Parquet and Delta files, analytical views, and vector embeddings | Proprietary object types, semantic links, and kinetic action definitions inside Foundry | Strongly-typed Pydantic v2 data contracts, Neo4j or PostgreSQL graphs, and MCP tool schemas |
@@ -94,7 +94,7 @@ Palantir Foundry and AIP succeed because the ontology is bidirectional: when an 
 
 ---
 
-## 3. The Production Pattern: The HSN Labs Hybrid Architecture
+## 3. The Production Pattern: The hsnlabs Hybrid Architecture
 
 Enterprises do not need to abandon Databricks or Snowflake, nor do they need to pay millions of dollars for Palantir Foundry, to deploy resilient autonomous agents.
 
@@ -102,12 +102,12 @@ The solution is establishing a clean separation of concerns between your analyti
 
 ```mermaid
 flowchart TD
-    A["Analytical Data Plane<br>Databricks Delta Lake and Unity Catalog"] --> B["Operational Execution Plane<br>HSN Labs Ontology Layer, Pydantic Contracts and MCP"]
+    A["Analytical Data Plane<br>Databricks Delta Lake and Unity Catalog"] --> B["Operational Execution Plane<br>hsnlabs Ontology Layer, Pydantic Contracts and MCP"]
     B --> C["Core Systems of Record<br>SAP ERP, Salesforce CRM and Production Postgres"]
 ```
 
 1. **Keep Analytical Heavy Lifting in the Lakehouse:** Continue using Databricks or Snowflake for batch processing, historical feature engineering, and offline BI pipelines.
-2. **Deploy an Open Operational Ontology for Agents:** HSN Labs abstracts your core business entities into strongly-typed Python and Pydantic objects with deterministic execution perimeters in LangGraph.
+2. **Deploy an Open Operational Ontology for Agents:** hsnlabs abstracts your core business entities into strongly-typed Python and Pydantic objects with deterministic execution perimeters in LangGraph.
 3. **Bind Agent Outputs to Audited MCP Actions:** Never allow an LLM to generate arbitrary database writes. Intercept every tool call with schema-validated state machines that write safely back to SAP, TOTVS, or Salesforce.
 
 If you treat a data lake as an operational agent backend, your initiative will stall in pilot purgatory. When you decouple analytical storage from operational execution, autonomous agents run with sub-second latency, zero hallucinations, and full transactional integrity.
@@ -118,4 +118,4 @@ If you treat a data lake as an operational agent backend, your initiative will s
 - <a href="../what-is-an-ontology-for-ai-agents/">What Is an Ontology for AI Agents? The Definitive Guide</a>
 - <a href="../the-poc-graveyard/">Why Agents Fail: The PoC Graveyard</a>
 - <a href="../why-rag-breaks-on-erp/">Why I Never Use Normal RAG on Financial ERPs</a>
-- <a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a>
+- <a href="https://hsnlabs.ai/bootcamp">Apply for the hsnlabs Five-Day Architecture Bootcamp</a>

@@ -15,7 +15,7 @@ image: assets/images/posts/the-operational-ontology/cover.webp
 
 <!-- more -->
 
-*Contexto: Este post estabelece o manifesto conceitual e técnico da HSN Labs. A ontologia operacional é a peça ausente que explica por que noventa por cento dos projetos de agentes corporativos fracassam e como os dez por cento restantes vencem.*
+*Contexto: Este post estabelece o manifesto conceitual e técnico da hsnlabs. A ontologia operacional é a peça ausente que explica por que noventa por cento dos projetos de agentes corporativos fracassam e como os dez por cento restantes vencem.*
 
 A inteligência artificial generativa resolveu o problema da compreensão e geração de linguagem natural. No entanto, linguagem solta não move frotas, não líquida faturas e não renegocia contratos de crédito.
 
@@ -59,7 +59,7 @@ flowchart TD
 ```
 
 <figure class="article-editorial-figure">
-  <img src="../../../assets/diagrams/hsn-agent-architecture.png" alt="Arquitetura de Engenharia Agêntica Enterprise da HSN Labs" loading="lazy">
+  <img src="../../../assets/diagrams/hsn-agent-architecture.png" alt="Arquitetura de Engenharia Agêntica Enterprise da hsnlabs" loading="lazy">
   <figcaption class="editorial-caption">Arquitetura agêntica enterprise de ponta a ponta: ingestão cirúrgica de legados, ontologia operacional aberta, middlewares de governança, ciclo de vida com máquinas de estados e supervisão humana.</figcaption>
 </figure>
 
@@ -108,4 +108,4 @@ O resultado é software de inteligência artificial confiável, rápido e pronto
 - <a href="/blog/pt/post/como-construir-ontologia-enterprise-do-zero/">Como Construir uma Ontologia Enterprise do Zero: Passo a Passo</a>
 - <a href="/blog/pt/post/como-construir-ontologia-operacional-python-mcp/">Como Construir uma Ontologia Operacional de Negocios em Python e MCP</a>
 - <a href="/blog/pt/post/ontologia-vs-grafo-conhecimento/">Ontologia vs Grafo de Conhecimento: Diferencas Chave e Arquitetura</a>
-- <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da HSN Labs</a>
+- <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da hsnlabs</a>

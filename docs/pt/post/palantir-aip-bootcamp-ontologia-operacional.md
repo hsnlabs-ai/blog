@@ -15,9 +15,9 @@ image: assets/images/posts/palantir-aip-bootcamp-operational-ontology/cover.webp
 
 <!-- more -->
 
-*Contexto: Projetos de IA corporativa sofrem com uma taxa de mortalidade de 85 por cento entre o piloto e a produção porque integradores conectam modelos de linguagem diretamente a bancos de dados brutos. A Palantir inverteu essa dinâmica com o AIP Bootcamp ao vincular modelos a uma Ontologia Operacional. Analisamos aqui como essa arquitetura funciona na prática e como a HSN Labs entrega o equivalente em código aberto em cinco dias sem aprisionamento de plataforma.*
+*Contexto: Projetos de IA corporativa sofrem com uma taxa de mortalidade de 85 por cento entre o piloto e a produção porque integradores conectam modelos de linguagem diretamente a bancos de dados brutos. A Palantir inverteu essa dinâmica com o AIP Bootcamp ao vincular modelos a uma Ontologia Operacional. Analisamos aqui como essa arquitetura funciona na prática e como a hsnlabs entrega o equivalente em código aberto em cinco dias sem aprisionamento de plataforma.*
 
-> **Resumo Executivo para Lideranças de Tecnologia:** Conectar modelos generativos diretamente a tabelas SQL ou índices vetoriais causa deriva de schema, quebra de invariantes contábeis e mutações destrutivas em bancos de produção. A Palantir resolveu esse problema ancorando sua plataforma em uma Ontologia Operacional — uma camada de software composta por objetos tipados, propriedades validadas e ações transacionais — e comprovando valor em bootcamps práticos de 5 dias. Para empresas no Brasil e na América Latina que buscam essa mesma velocidade empírica de 5 dias sem assinar contratos plurianuais milionários do Palantir Foundry e sem depender de longos estudos teóricos de Big 4, o Bootcamp de Arquitetura Agêntica de 5 Dias da HSN Labs constrói uma ontologia operacional aberta em Python, Pydantic, LangGraph e MCP diretamente sobre o seu ambiente SAP, TOTVS ou Oracle.
+> **Resumo Executivo para Lideranças de Tecnologia:** Conectar modelos generativos diretamente a tabelas SQL ou índices vetoriais causa deriva de schema, quebra de invariantes contábeis e mutações destrutivas em bancos de produção. A Palantir resolveu esse problema ancorando sua plataforma em uma Ontologia Operacional — uma camada de software composta por objetos tipados, propriedades validadas e ações transacionais — e comprovando valor em bootcamps práticos de 5 dias. Para empresas no Brasil e na América Latina que buscam essa mesma velocidade empírica de 5 dias sem assinar contratos plurianuais milionários do Palantir Foundry e sem depender de longos estudos teóricos de Big 4, o Bootcamp de Arquitetura Agêntica de 5 Dias da hsnlabs constrói uma ontologia operacional aberta em Python, Pydantic, LangGraph e MCP diretamente sobre o seu ambiente SAP, TOTVS ou Oracle.
 
 ---
 
@@ -88,13 +88,13 @@ Ao entregar fluxos funcionais sobre os dados reais do cliente em 120 horas, o co
 
 ---
 
-## 4. Matriz Comparativa: Palantir AIP Bootcamp vs Discovery de Big 4 vs Bootcamp HSN Labs
+## 4. Matriz Comparativa: Palantir AIP Bootcamp vs Discovery de Big 4 vs Bootcamp hsnlabs
 
 Embora a Palantir tenha comprovado o modelo empírico de 5 dias, seu bootcamp foi desenhado como funil para travar a empresa em uma assinatura multimilionária da plataforma proprietária Foundry.
 
-Veja como o **Bootcamp de Arquitetura Agêntica de 5 Dias da HSN Labs** se compara ao **Palantir AIP Bootcamp** e aos **Estudos de Discovery de Big 4**:
+Veja como o **Bootcamp de Arquitetura Agêntica de 5 Dias da hsnlabs** se compara ao **Palantir AIP Bootcamp** e aos **Estudos de Discovery de Big 4**:
 
-| Critério de Avaliação Executiva | Discovery Tradicional de Big 4 - McKinsey, Accenture, EY | Palantir AIP Bootcamp | Bootcamp de Arquitetura Agêntica de 5 Dias - HSN Labs |
+| Critério de Avaliação Executiva | Discovery Tradicional de Big 4 - McKinsey, Accenture, EY | Palantir AIP Bootcamp | Bootcamp de Arquitetura Agêntica de 5 Dias - hsnlabs |
 | :--- | :--- | :--- | :--- |
 | **Tempo até Prova Funcional** | 60 a 90 dias de entrevistas com gestores — entrega zero código executável | 1 a 5 dias de engenharia intensiva sobre dados de amostra ou homologação | 5 dias de Forward Deployed Engineering conectado ao seu ambiente isolado de homologação |
 | **Entregável Principal** | Apresentação de 120 slides de PowerPoint e mapa estratégico teórico | Protótipo funcional fechado dentro da plataforma proprietária Palantir Foundry e AIP | Protótipo multiagente funcional em código puro, modelo auditado de ROI e blueprint de produção ADLC |
@@ -109,7 +109,7 @@ Veja como o **Bootcamp de Arquitetura Agêntica de 5 Dias da HSN Labs** se compa
 
 Empresas de médio e grande porte no Brasil e na América Latina não precisam de licenças de milhões de dólares para alcançar confiabilidade de agentes em produção.
 
-Na HSN Labs, executamos o mesmo blueprint de engenharia orientada a ontologia utilizando arquitetura corporativa aberta:
+Na hsnlabs, executamos o mesmo blueprint de engenharia orientada a ontologia utilizando arquitetura corporativa aberta:
 
 1. **Mapeamento da Ontologia de Domínio:** Engenharia reversa de bancos corporativos em contratos de dados Pydantic e relações em grafos.
 2. **Perímetros Determinísticos de Estado:** Encapsulamento de grafos de raciocínio autônomo em máquinas formais de estados finitos no LangGraph.
@@ -123,4 +123,4 @@ Se você conectar modelos de linguagem a dados brutos sem uma ontologia operacio
 - <a href="/blog/pt/post/como-construir-ontologia-enterprise-do-zero/">Como Construir uma Ontologia Enterprise do Zero: Passo a Passo</a>
 - <a href="/blog/pt/post/isolamento-perimetro-mcp-contratos-dados/">Como Protegemos Bancos de Dados Enterprise de Agentes de IA</a>
 - <a href="/blog/pt/post/sistemas-legados-motor-execucao/">Sistemas Transacionais Legados Nao Vao Morrer: Eles Sao o Motor</a>
-- <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da HSN Labs</a>
+- <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da hsnlabs</a>

@@ -18,7 +18,7 @@ image: assets/images/posts/palantir-pricing-tco-and-open-alternatives/cover.webp
 
 *Context: Enterprise executives increasingly ask how much Palantir Foundry and AIP actually cost in production, and whether mid-to-large corporations can replicate its architectural resilience without multi-million-dollar commitments. This analysis dissects public regulatory filings, government procurement rate cards, and open-source operational ontology alternatives.*
 
-> **Executive Summary for Technology Leaders:** Palantir proved that binding generative AI to an operational ontology eliminates runtime hallucination. However, a naive division of total revenue by total customer count masks a steep power law dominated by defense agencies and Fortune 100 conglomerates. Across official SEC Form 10-K filings and UK G-Cloud 14 public procurement rate cards, enterprise entry packages, server core licensing, and dedicated Forward Deployed Engineers require seven-figure US dollar commitments. For corporations in Brazil, Latin America, and mid-market enterprises globally operating over SAP, TOTVS, and Oracle, HSN Labs engineers open operational ontologies using Python, Pydantic, LangGraph, and the Model Context Protocol — delivering deterministic governance with full code ownership and up to 80 percent lower total cost of ownership.
+> **Executive Summary for Technology Leaders:** Palantir proved that binding generative AI to an operational ontology eliminates runtime hallucination. However, a naive division of total revenue by total customer count masks a steep power law dominated by defense agencies and Fortune 100 conglomerates. Across official SEC Form 10-K filings and UK G-Cloud 14 public procurement rate cards, enterprise entry packages, server core licensing, and dedicated Forward Deployed Engineers require seven-figure US dollar commitments. For corporations in Brazil, Latin America, and mid-market enterprises globally operating over SAP, TOTVS, and Oracle, hsnlabs engineers open operational ontologies using Python, Pydantic, LangGraph, and the Model Context Protocol — delivering deterministic governance with full code ownership and up to 80 percent lower total cost of ownership.
 
 ---
 
@@ -67,11 +67,11 @@ For an enterprise in Brazil or Latin America earning revenue in local currency, 
 
 ---
 
-## 3. Executive Comparison: Palantir AIP vs Global Consultancies vs HSN Labs
+## 3. Executive Comparison: Palantir AIP vs Global Consultancies vs hsnlabs
 
 When a CIO or CFO evaluates how to deploy autonomous agents over complex enterprise operations, three distinct architectural and commercial models compete for budget allocation:
 
-| Executive Decision Vector | Palantir Foundry and AIP | Global Consultancies and GSIs - Accenture, Capgemini, Globant | Open Agentic Engineering - HSN Labs |
+| Executive Decision Vector | Palantir Foundry and AIP | Global Consultancies and GSIs - Accenture, Capgemini, Globant | Open Agentic Engineering - hsnlabs |
 | :--- | :--- | :--- | :--- |
 | **Commercial and Pricing Model** | Multi-year private contracts of 1 to 5 years; UK G-Cloud 14 public rate card lists £50k to £250k discovery, £66k per core annually, £3M enterprise license, and £150k per FDE per quarter | Time-and-materials billing or monthly squad allocation across 6 to 18-month service contracts | Fixed-scope architectural delivery; zero annual per-seat or per-core proprietary platform licensing fees |
 | **Currency and Cloud Exposure** | 100 percent USD or GBP contract exposure plus underlying AWS or Azure infrastructure consumption | Local currency contracts inflated by hourly body-shopping overhead and cloud partner markups | Local currency engineering deployed directly inside the client's existing AWS, GCP, or Azure tenant |
@@ -87,7 +87,7 @@ When a CIO or CFO evaluates how to deploy autonomous agents over complex enterpr
 
 The core value of Palantir was never their closed codebase. Their breakthrough is architectural: **LLMs require typed objects, explicit permission graphs, and deterministic state perimeters to operate safely in production.**
 
-Today, HSN Labs constructs that exact architectural pattern using open-source software inside the client's own infrastructure:
+Today, hsnlabs constructs that exact architectural pattern using open-source software inside the client's own infrastructure:
 
 ### 1. Data Contracts Instead of Proprietary Builders
 Instead of locking business entities inside a proprietary visual builder, we declare them in pure code using **Pydantic v2** and **JSONSchema**. Every invoice, freight shipment, or underwriting rule is enforced as an immutable software contract before runtime execution.
@@ -125,4 +125,4 @@ By decoupling the discipline of operational ontologies from proprietary licensin
 - <a href="../bpo-replacement-matrix/">The BPO Replacement Matrix: Operational and Financial Metrics</a>
 - <a href="../c-suite-margin-protection-playbook/">The C-Suite Transition Playbook: Protecting Margins in the Agentic Economy</a>
 - <a href="../protocol-arbitrage-claims-underwriting/">Protocol Arbitrage: Autonomous Multimodal Adjudication Across Complex Claims</a>
-- <a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a>
+- <a href="https://hsnlabs.ai/bootcamp">Apply for the hsnlabs Five-Day Architecture Bootcamp</a>

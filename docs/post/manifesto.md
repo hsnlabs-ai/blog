@@ -1,12 +1,12 @@
 ---
-title: Why I Built HSN Labs
+title: Why I Built hsnlabs
 date: '2026-07-08'
 category: Future of Work
 tags:
 - case-studies
-- hsn-labs
+- hsnlabs
 - manifesto
-description: 'Foundational thesis of HSN Labs: building production-grade enterprise
+description: 'Foundational thesis of hsnlabs: building production-grade enterprise
   agent architectures on executable domain ontologies.'
 author: Hugo S. Nascimento
 image: assets/images/posts/manifesto/cover.webp
@@ -16,7 +16,7 @@ image: assets/images/posts/manifesto/cover.webp
 
 <!-- more -->
 
-*Context: Over five years building Eva and serving dozens of enterprise clients, I learned how AI agents actually behave in production by failing repeatedly in the trenches. Here is why I decided to stop saying no to advisory projects and launch HSN Labs.*
+*Context: Over five years building Eva and serving dozens of enterprise clients, I learned how AI agents actually behave in production by failing repeatedly in the trenches. Here is why I decided to stop saying no to advisory projects and launch hsnlabs.*
 
 Eva stands for employ virtual agents. 
 
@@ -40,7 +40,7 @@ For years, I gave them the exact same answer: no.
 
 My focus was clear. As a venture-backed SaaS founder, my job was to grow monthly recurring revenue at Eva. Taking on advisory engagements or custom architecture consulting felt like a distraction from building our core software product. Consulting simply was not what I was looking to do at the time.
 
-## The Market Shift and the Launch of HSN Labs
+## The Market Shift and the Launch of hsnlabs
 
 Over the past eighteen months, the enterprise technology landscape shifted violently. 
 
@@ -50,7 +50,7 @@ Enterprises were burning fortunes with traditional strategy firms that delivered
 
 The demand for pragmatic, battle-tested engineering leadership became too large to ignore. I realized that the lessons we learned from years of production failures were precisely what enterprise leaders needed to avoid burning millions of dollars.
 
-That is why I built HSN Labs.
+That is why I built hsnlabs.
 
 ## The Hybrid Workforce Transition
 
@@ -60,10 +60,10 @@ The future is not about replacing human workers with cold automation. The future
 
 That transition cannot be achieved through theoretical presentations or fragile chatbot wrappers. It requires deep systems engineering: complete lifecycle management spanning business ontology design, secure infrastructure, bounded orchestration, and continuous evaluation in production.
 
-HSN Labs is the engineering boutique I built to partner with enterprise leaders who are already actively pursuing this transition and demand production systems that do not break.
+hsnlabs is the engineering boutique I built to partner with enterprise leaders who are already actively pursuing this transition and demand production systems that do not break.
 
 <figure class="article-editorial-figure landscape">
-  <img src="../../assets/images/posts/manifesto/hugo-nascimento-manifesto-mesa.jpg" alt="Hugo S. Nascimento — Founder & Managing Partner at HSN Labs" loading="lazy" width="1200" height="800">
+  <img src="../../assets/images/posts/manifesto/hugo-nascimento-manifesto-mesa.jpg" alt="Hugo S. Nascimento — Founder & Managing Partner at hsnlabs" loading="lazy" width="1200" height="800">
   <figcaption class="editorial-caption">Hugo S. Nascimento: "Building resilient enterprise multi-agent architectures on executable business ontologies for mission-critical operations."</figcaption>
 </figure>
 
@@ -73,10 +73,10 @@ HSN Labs is the engineering boutique I built to partner with enterprise leaders 
 - <a href="../latam-airlines-case-study/">LATAM Airlines: Production Agents in a 3 Percent Margin Business</a>
 - <a href="../unconstrained-agents-finite-state-machines/">Case Study: 42 Calls in a Loop at 2 AM</a>
 - <a href="../autonomous-negotiations-collections-contracts/">High-Velocity Operations: Autonomous Negotiation, Collections, and Contract Execution</a>
-- <a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a>
+- <a href="https://hsnlabs.ai/bootcamp">Apply for the hsnlabs Five-Day Architecture Bootcamp</a>
 
 ## Strategic Resources and Related Essays
 - <a href="../bpo-replacement-matrix/">The BPO Replacement Matrix: Operational and Financial Metrics</a>
 - <a href="../kafka-metamorfose-ia-futuro-do-trabalho/">De 1915 a Era da IA: Kafka, utilitarismo e o valor do trabalho</a>
 - <a href="../collapse-of-legacy-rpa/">The RPA Market Is Collapsing</a>
-- <a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a>
+- <a href="https://hsnlabs.ai/bootcamp">Apply for the hsnlabs Five-Day Architecture Bootcamp</a>

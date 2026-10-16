@@ -49,7 +49,7 @@ TAG_MAP = {
     "guardrails": "guardrails",
     "state-machines": "state-machines",
     "legacy-it": "legacy-it",
-    "hsn-labs": "hsn-labs",
+    "hsnlabs": "hsnlabs",
     "manifesto": "manifesto"
 }
 
@@ -67,7 +67,7 @@ DESCRIPTION_MAP = {
     "latam-airlines-case-study.md": "Field post-mortem on deploying deterministic enterprise agents in low-margin, high-throughput commercial aviation operations.",
     "legacy-core-backing-engine.md": "Why legacy core transaction systems remain the indispensable deterministic foundation powering autonomous enterprise agents.",
     "llm-as-judge-fallacy.md": "Structural vulnerabilities and compliance liabilities of relying on stochastic LLM evaluators to audit critical financial decisions.",
-    "manifesto.md": "Foundational thesis of HSN Labs: building production-grade enterprise agent architectures on executable domain ontologies.",
+    "manifesto.md": "Foundational thesis of hsnlabs: building production-grade enterprise agent architectures on executable domain ontologies.",
     "perimeter-isolation-mcp-data-contracts.md": "Architectural patterns for perimeter isolation, context contracts, and cryptographic access boundaries shielding enterprise data from AI agents.",
     "protocol-arbitrage-claims-underwriting.md": "Autonomous multimodal adjudication and real-time protocol arbitrage across complex insurance claims and healthcare underwriting.",
     "the-poc-graveyard.md": "Root cause post-mortem on why ninety percent of enterprise AI proofs of concept fail before reaching live production.",

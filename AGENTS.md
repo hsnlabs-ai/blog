@@ -1,11 +1,11 @@
 ---
 type: agent_guidelines
-title: "AGENTS - HSN Labs Blog"
+title: "AGENTS - hsnlabs Blog"
 date: 2026-09-13
 status: active
 ---
 
-# Agent Guidelines for HSN Labs Personal Hub
+# Agent Guidelines for hsnlabs Personal Hub
 
 When working in this repository, you must adhere to the following rules:
 

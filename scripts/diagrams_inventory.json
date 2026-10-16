@@ -113,7 +113,7 @@
   },
   {
     "file": "docs/pt/post/comprar-ou-construir-crm-vendas-b2b.md",
-    "heading": "### Arquitetura de Referência sem Telas da HSN Labs",
+    "heading": "### Arquitetura de Referência sem Telas da hsnlabs",
     "lang": "",
     "line_count": 24,
     "full_body": "Canais Reais de Interação Comercial\nEmails Corporativos + Gravações de Chamadas + Calendário\n                         |\n                         v\n              Gateway de Eventos de Venda\n            Captura assíncrona em tempo real\n                         |\n                         v\n          Camada de Extração e Invariantes\n       Validação estruturada de dados com Pydantic\n                         |\n                         v\n         Máquina de Estados Finitos - FSM\n     Controle estrito de transições de estágio\n                         |\n                         v\n      Servidor MCP e Trilha Imutável de Auditoria\n    Métodos fechados de gravação e aprovação humana\n                         |\n      +------------------+------------------+\n      |                                     |\n      v                                     v\nBase Transacional Local            Sistemas Corporativos\nPostgreSQL ou SQLite              ERP SAP, Totvs e Assinaturas"

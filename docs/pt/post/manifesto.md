@@ -1,12 +1,12 @@
 ---
-title: Por Que Criei a HSN Labs
+title: Por Que Criei a hsnlabs
 date: '2026-07-08'
 category: Future of Work
 tags:
 - case-studies
-- hsn-labs
+- hsnlabs
 - manifesto
-description: 'Tese fundadora da HSN Labs: construindo arquiteturas de agentes enterprise sobre ontologias executáveis de domínio.'
+description: 'Tese fundadora da hsnlabs: construindo arquiteturas de agentes enterprise sobre ontologias executáveis de domínio.'
 author: Hugo S. Nascimento
 image: assets/images/posts/manifesto/cover.webp
 ---
@@ -15,7 +15,7 @@ image: assets/images/posts/manifesto/cover.webp
 
 <!-- more -->
 
-*Contexto: Ao longo de cinco anos construindo a Eva e atendendo dezenas de clientes corporativos, aprendi como agentes de IA realmente se comportam em produção falhando repetidamente nas trincheiras. Aqui explico por que decidi parar de recusar projetos de advisory e fundei a HSN Labs.*
+*Contexto: Ao longo de cinco anos construindo a Eva e atendendo dezenas de clientes corporativos, aprendi como agentes de IA realmente se comportam em produção falhando repetidamente nas trincheiras. Aqui explico por que decidi parar de recusar projetos de advisory e fundei a hsnlabs.*
 
 Eva significa employ virtual agents. 
 
@@ -39,7 +39,7 @@ Por anos, dei a eles a mesmissima resposta: não.
 
 Meu foco era claro. Como fundador de SaaS com investimento de risco, meu trabalho era expandir receita recorrente mensal na Eva. Assumir compromissos de advisory ou consultoria customizada de arquitetura parecia uma distração do nosso produto principal. Consultoria simplesmente não era o que eu buscava fazer na época.
 
-## A Mudança de Mercado e o Lançamento da HSN Labs
+## A Mudança de Mercado e o Lançamento da hsnlabs
 
 Nos últimos dezoito meses, o cenário tecnológico corporativo mudou de forma violenta. 
 
@@ -49,7 +49,7 @@ Empresas estavam queimando fortunas com firmas tradicionais de estratégia que e
 
 A demanda por liderança técnica pragmática e forjada em batalha tornou-se grande demais para ignorar. Percebi que as lições aprendidas em anos de falhas em produção eram precisamente o que lideranças empresariais precisavam para evitar queimar milhões de dólares.
 
-Por isso criei a HSN Labs.
+Por isso criei a hsnlabs.
 
 ## A Transição para a Força de Trabalho Hibrida
 
@@ -59,10 +59,10 @@ O futuro não se resume a substituir trabalhadores humanos por automação fria.
 
 Essa transição não pode ser alcançada por meio de apresentações teóricas ou wrappers frágeis de chatbot. Ela exige engenharia profunda de sistemas: gestão completa do ciclo de vida cobrindo design de ontologias de negócio, infraestrutura segura, orquestração delimitada e avaliação contínua em produção.
 
-A HSN Labs é a boutique de engenharia que construí para trabalhar em parceria com líderes empresariais que já estão buscando ativamente essa transição e exigem sistemas em produção que não quebrem.
+A hsnlabs é a boutique de engenharia que construí para trabalhar em parceria com líderes empresariais que já estão buscando ativamente essa transição e exigem sistemas em produção que não quebrem.
 
 <figure class="article-editorial-figure landscape">
-  <img src="../../../assets/images/posts/manifesto/hugo-nascimento-manifesto-mesa.jpg" alt="Hugo S. Nascimento — Fundador da HSN Labs" loading="lazy" width="1200" height="800">
+  <img src="../../../assets/images/posts/manifesto/hugo-nascimento-manifesto-mesa.jpg" alt="Hugo S. Nascimento — Fundador da hsnlabs" loading="lazy" width="1200" height="800">
   <figcaption class="editorial-caption">Hugo S. Nascimento: "Construindo arquiteturas de agentes corporativos sobre ontologias de domínio executáveis para operações de missão crítica."</figcaption>
 </figure>
 
@@ -72,10 +72,10 @@ A HSN Labs é a boutique de engenharia que construí para trabalhar em parceria 
 - <a href="/blog/pt/post/estudo-caso-latam-airlines/">LATAM Airlines: Agentes em Produção com Margem de 3 Por Cento</a>
 - <a href="/blog/pt/post/agentes-ilimitados-maquinas-estados-finitos/">Estudo de Caso: 42 Chamadas em Loop às 2 da Manhã</a>
 - <a href="/blog/pt/post/negociacoes-autonomas-cobranca-contratos/">Operações em Alta Velocidade: Negociação Autônoma, Cobrança e Contratos</a>
-- <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da HSN Labs</a>
+- <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da hsnlabs</a>
 
 ## Recursos Estrategicos e Posts Relacionados
 - <a href="/blog/pt/post/matriz-substituicao-bpo/">A Matriz de Substituicao de BPO: Metricas Operacionais e Financeiras</a>
 - <a href="/blog/pt/post/kafka-metamorfose-ia-futuro-do-trabalho/">De 1915 a Era da IA: Kafka, utilitarismo e o valor do trabalho</a>
 - <a href="/blog/pt/post/colapso-rpa-legado/">O Mercado de RPA Esta em Colapso</a>
-- <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da HSN Labs</a>
+- <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da hsnlabs</a>

@@ -254,13 +254,13 @@ Assign the indicated points for each affirmative response regarding your enterpr
 
 * **0 to 8 points:** Choose Buy. The scale does not justify proprietary engineering. Subscribe to standard commercial tiers and focus organizational energy on commercial execution.
 * **9 to 16 points:** Choose Adapt with Twenty CRM. Software license spend is beginning to stress operational margins. Self-hosting Twenty CRM eliminates per-seat fees and secures data ownership.
-* **17 to 26 points:** Build with HSN Labs. Your organization bears the full weight of the Dual Bleed. Spending hundreds of thousands on manual screens drains capital and wastes valuable selling capacity.
+* **17 to 26 points:** Build with hsnlabs. Your organization bears the full weight of the Dual Bleed. Spending hundreds of thousands on manual screens drains capital and wastes valuable selling capacity.
 
 ---
 
 ## 8. Progressive Replacement Strategy
 
-Decommissioning legacy enterprise CRM platforms should never be executed via sudden cutover. At HSN Labs, we execute the Progressive Replacement methodology across four controlled phases:
+Decommissioning legacy enterprise CRM platforms should never be executed via sudden cutover. At hsnlabs, we execute the Progressive Replacement methodology across four controlled phases:
 
 * **Phase 1:** Passive Listening. Agents connect to communication gateways, mapping accounts and stakeholder graphs in the background without disturbing active sales reps.
 * **Phase 2:** Active Assistance. Agents generate meeting preparation briefs and draft follow-up correspondence, winning rep trust by saving tangible selling time.
@@ -279,4 +279,4 @@ Klarna: deprecated Salesforce CRM and Zendesk enterprise contracts in favor of a
 - <a href="../bpo-replacement-matrix/">The BPO Replacement Matrix: Operational and Financial Metrics</a>
 - <a href="../palantir-pricing-tco-and-open-alternatives/">The Real TCO of Palantir: The Dollar Barrier and Modern Open Alternatives</a>
 - <a href="../c-suite-margin-protection-playbook/">The C-Suite Transition Playbook: Protecting Margins in the Agentic Economy</a>
-- <a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a>
+- <a href="https://hsnlabs.ai/bootcamp">Apply for the hsnlabs Five-Day Architecture Bootcamp</a>

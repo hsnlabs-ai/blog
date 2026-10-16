@@ -45,7 +45,7 @@ In financial services, insurance, and logistics, speed is the ultimate retention
 
 Smart executive leadership does not attempt a risky, big-bang replacement of its entire operational workforce overnight. That invites systemic operational failure.
 
-Instead, at HSN Labs we guide enterprise leadership through an operational strangler pattern:
+Instead, at hsnlabs we guide enterprise leadership through an operational strangler pattern:
 
 ### 1. The High-Friction Transaction Audit
 We audit enterprise workflows to isolate high-volume, repetitive processes governed by exact business rules: three-way invoice matching, supplier compliance verification, tax document reconciliation, and tier-one customer service workflows.
@@ -65,4 +65,4 @@ The agentic transition is not an optional technology experiment. It is a mandato
 - <a href="../bpo-replacement-matrix/">The BPO Replacement Matrix: Operational and Financial Metrics</a>
 - <a href="../protocol-arbitrage-claims-underwriting/">Protocol Arbitrage: Autonomous Multimodal Adjudication Across Complex Claims</a>
 - <a href="../cost-legacy-it/">The Cost of Unbounded AI in Legacy IT</a>
-- <a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a>
+- <a href="https://hsnlabs.ai/bootcamp">Apply for the hsnlabs Five-Day Architecture Bootcamp</a>

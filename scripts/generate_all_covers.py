@@ -21,7 +21,7 @@ if not api_key:
 client = genai.Client(api_key=api_key)
 
 STYLE_BASE = (
-    "Tactile minimalist engineering aesthetic for HSN Labs. "
+    "Tactile minimalist engineering aesthetic for hsnlabs. "
     "Deep dark obsidian background #07090E, charcoal #0E1017, crisp fine hairline cyan lines #52B4FD, "
     "clean geometric 90-degree boxes and architectural lines, subtle slate grey #94A3B8, "
     "no neon glow, no purple, no sci-fi slop, strict high-end engineering visual, 16:9 aspect ratio."

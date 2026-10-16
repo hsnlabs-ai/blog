@@ -34,7 +34,7 @@ O modelo tradicional e ineficiente, caro e sujeito a taxas inaceitaveis de erro 
 
 ## A Arquitetura de Negociacao Autonoma
 
-Para automatizar transacoes de alto risco sem colocar o balanco da empresa em perigo, a HSN Labs emprega uma combinacao estrita de tres pilares de engenharia:
+Para automatizar transacoes de alto risco sem colocar o balanco da empresa em perigo, a hsnlabs emprega uma combinacao estrita de tres pilares de engenharia:
 
 ### 1. Limites Parametricos Definidos por Ontologia
 O agente nao decide termos de negociacao de forma probabilistica. Ele opera sobre uma ontologia que codifica a politica de credito da instituicao. Parametros como valor do desconto maximo, taxa de juros permitida, prazos de parcelamento e restricoes de garantia sao consultados em tempo de execucao a partir de regras formais.
@@ -65,7 +65,7 @@ Automatizar negociacao de contratos nao e uma questao de criar prompts persuasiv
 ## Recursos Estrategicos e Posts Relacionados
 - <a href="/blog/pt/post/chatbot-vs-agente/">Chatbot vs Agente: Por Que Substituir BPOs Exige Ontologias em Producao</a>
 - <a href="/blog/pt/post/colapso-rpa-legado/">O Mercado de RPA Esta em Colapso</a>
-- <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise da HSN Labs</a>
+- <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise da hsnlabs</a>
 """
 
 # 2. playbook-c-suite-protecao-margem
@@ -94,7 +94,7 @@ Historicamente, a resposta da diretoria para ganho de eficiencia era a renegocia
 ## Os Quatro Movimentos Estrategicos do Playbook
 
 ### 1. Auditoria de Custos de Mesa de Atendimento
-O primeiro passo consiste em identificar onde estoques massivos de trabalho manual estao concentrados. Em noventa por cento dos casos auditados pela HSN Labs, os gargalos estao em:
+O primeiro passo consiste em identificar onde estoques massivos de trabalho manual estao concentrados. Em noventa por cento dos casos auditados pela hsnlabs, os gargalos estao em:
 - Conciliacao contabil e fiscal entre sistemas divergentes
 - Triagem e validacao de pedidos de compras com regras complexas
 - Processamento e liquidacao de sinistros em instituicoes seguradoras
@@ -106,7 +106,7 @@ Ao contratar um fornecedor tradicional de BPO, a corporacao paga mensalmente pel
 Com agentes construidos sobre ontologias corporativas, o conhecimento operacional da empresa e codificado em regras executaveis e grafos de dominio. O investimento deixa de ser uma despesa operacional recorrente e se transforma em um ativo tecnologico imutavel de propriedade exclusiva da companhia.
 
 ### 3. Eliminacao da Fragmentacao de Licencas
-Sistemas tradicionais de IA cobram por assento, criando um desincentivo perverso a adocao ampla. A arquitetura da HSN Labs opera sobre pilares de codigo aberto e padroes de mercado como o Model Context Protocol, desacoplando o cliente de taxas predatórias de fornecedores proprietarios.
+Sistemas tradicionais de IA cobram por assento, criando um desincentivo perverso a adocao ampla. A arquitetura da hsnlabs opera sobre pilares de codigo aberto e padroes de mercado como o Model Context Protocol, desacoplando o cliente de taxas predatórias de fornecedores proprietarios.
 
 ### 4. Gestao de Riscos e Integridade de Dados
 Nenhuma iniciativa de reducao de custos se sustenta se criar passivos regulatorios ou falhas de conformidade. O playbook exige que todo agente opere dentro de limites de leitura e escrita rigorosamente controlados por software, garantindo compliance total com normativas da LGPD e comites internos de auditoria.
@@ -118,7 +118,7 @@ A transicao para software agentico nao e um projeto experimental de TI. E uma de
 ## Recursos Estrategicos e Posts Relacionados
 - <a href="/blog/pt/post/bpo-substitution-matrix/">A Matriz de Substituicao de BPO: Metricas Operacionais e Financeiras</a>
 - <a href="/blog/pt/post/cemiterio-de-pocs/">Por Que Agentes Falham: O Cemiterio de PoCs</a>
-- <a href="https://hsnlabs.ai/pt/bootcamp/">Conheca o Agentic Bootcamp da HSN Labs para Liderancas</a>
+- <a href="https://hsnlabs.ai/pt/bootcamp/">Conheca o Agentic Bootcamp da hsnlabs para Liderancas</a>
 """
 
 # 3. estudo-caso-cleveland-clinic-agentes-operacionais
@@ -159,7 +159,7 @@ Se dois pacientes de alta prioridade necessitarem do mesmo tipo de equipamento e
 
 ## Licoes para Lideres de Tecnologia
 
-A experiencia da Cleveland Clinic reforca os principios centrais defendidos pela HSN Labs em contratos corporativos:
+A experiencia da Cleveland Clinic reforca os principios centrais defendidos pela hsnlabs em contratos corporativos:
 - Dashboards passivos estao obsoletos em ambientes de alta velocidade
 - Agentes autonomos precisam de ontologias de dominio estritas para agir com precisao
 - Integracao profunda com sistemas de registro e o unico caminho para criar valor mensuravel
@@ -167,7 +167,7 @@ A experiencia da Cleveland Clinic reforca os principios centrais defendidos pela
 ## Recursos Estrategicos e Posts Relacionados
 - <a href="/blog/pt/post/estudo-caso-latam-airlines/">Estudo de Caso LATAM Airlines: Como Reduzir Custos de BPO com Agentes</a>
 - <a href="/blog/pt/post/the-operational-ontology/">A Ontologia Operacional: Conectando Dados, Regras e Acoes</a>
-- <a href="https://hsnlabs.ai/pt/bootcamp/">Conheca o Bootcamp de Engenharia de Agentes da HSN Labs</a>
+- <a href="https://hsnlabs.ai/pt/bootcamp/">Conheca o Bootcamp de Engenharia de Agentes da hsnlabs</a>
 """
 
 # 4. morte-suporte-nivel-1-erp
@@ -215,7 +215,7 @@ O futuro pertence as consultorias que operam como boutiques de arquitetura, estr
 ## Recursos Estrategicos e Posts Relacionados
 - <a href="/blog/pt/post/colapso-rpa-legado/">O Mercado de RPA Esta em Colapso</a>
 - <a href="/blog/pt/post/cemiterio-de-pocs/">Por Que Agentes Falham: O Cemiterio de PoCs</a>
-- <a href="https://hsnlabs.ai/pt/advisory/">Conheca as Solucoes de Advisory da HSN Labs</a>
+- <a href="https://hsnlabs.ai/pt/advisory/">Conheca as Solucoes de Advisory da hsnlabs</a>
 """
 
 # 5. como-construir-ontologia-enterprise-do-zero
@@ -235,7 +235,7 @@ author: Hugo S. Nascimento
 
 <!-- more -->
 
-*Contexto: Todo projeto de agentes na HSN Labs comeca no mesmo lugar: desenhando a ontologia operacional do cliente. Sem essa fundacao de dados e regras, nenhum modelo de linguagem consegue atuar de forma segura no mundo corporativo.*
+*Contexto: Todo projeto de agentes na hsnlabs comeca no mesmo lugar: desenhando a ontologia operacional do cliente. Sem essa fundacao de dados e regras, nenhum modelo de linguagem consegue atuar de forma segura no mundo corporativo.*
 
 A maioria das iniciativas de IA comeca escolhendo qual modelo de linguagem utilizar ou configurando bancos vetoriais. Essa e a ordem inversa da boa engenharia de software.
 
@@ -279,7 +279,7 @@ Construir uma ontologia corporativa exige rigor analitico e compreensao profunda
 ## Recursos Estrategicos e Posts Relacionados
 - <a href="/blog/pt/post/how-to-build-operational-ontology-python-mcp/">Como Construir uma Ontologia Operacional em Python com Pydantic e MCP</a>
 - <a href="/blog/pt/post/ontology-vs-database-schema/">Ontologia vs Schema de Banco de Dados: As Diferencas Criticas</a>
-- <a href="https://hsnlabs.ai/pt/bootcamp/">Inscreva-se no Agentic Bootcamp da HSN Labs</a>
+- <a href="https://hsnlabs.ai/pt/bootcamp/">Inscreva-se no Agentic Bootcamp da hsnlabs</a>
 """
 
 # 6. como-construir-ontologia-operacional-python-mcp
@@ -299,7 +299,7 @@ author: Hugo S. Nascimento
 
 <!-- more -->
 
-*Contexto: No ecossistema de software corporativo da HSN Labs, Python e a nossa linguagem padrao de fundacao. Este post ensina como transformar conceitos abstratos de ontologia em schemas estritos de Pydantic integrados a servidores MCP.*
+*Contexto: No ecossistema de software corporativo da hsnlabs, Python e a nossa linguagem padrao de fundacao. Este post ensina como transformar conceitos abstratos de ontologia em schemas estritos de Pydantic integrados a servidores MCP.*
 
 Modelos de linguagem precisam de interfaces deterministicas para interagir com o ambiente corporativo. Quando permitimos que agentes gerem chamadas de API sem validacao semantica rigorosa, erros de execucao e corrupcao de dados tornam-se questao de tempo.
 
@@ -326,12 +326,12 @@ Cada ferramenta recebe esquemas JSON gerados automaticamente a partir dos modelo
 - Reducao substancial de tokens consumidos no prompt de instrucao
 - Isolamento total entre a inteligencia probabilistica do modelo e a seguranca do banco legado
 
-A integracao entre Python, Pydantic e MCP e a espinha dorsal tecnologica que permite a HSN Labs colocar agentes em producao em corporacoes reguladas com confiabilidade absoluta.
+A integracao entre Python, Pydantic e MCP e a espinha dorsal tecnologica que permite a hsnlabs colocar agentes em producao em corporacoes reguladas com confiabilidade absoluta.
 
 ## Recursos Estrategicos e Posts Relacionados
 - <a href="/blog/pt/post/how-to-build-an-enterprise-ontology-from-scratch/">Como Construir uma Ontologia Enterprise do Zero</a>
 - <a href="/blog/pt/post/the-operational-ontology/">A Ontologia Operacional: Conectando Dados e Acoes</a>
-- <a href="https://hsnlabs.ai/pt/bootcamp/">Conheca o Agentic Bootcamp da HSN Labs</a>
+- <a href="https://hsnlabs.ai/pt/bootcamp/">Conheca o Agentic Bootcamp da hsnlabs</a>
 """
 
 # 7. kafka-metamorfose-ia-futuro-do-trabalho
@@ -374,7 +374,7 @@ A tecnologia precisa libertar o trabalhador da condicao instrumental descrita po
 ## Recursos Estrategicos e Posts Relacionados
 - <a href="/blog/pt/post/morte-suporte-nivel-1-erp/">A Morte do Suporte Nivel 1 em ERPs</a>
 - <a href="/blog/pt/post/playbook-c-suite-protecao-margem/">Playbook C-Suite: Protecao de Margem na Era Agentica</a>
-- <a href="https://hsnlabs.ai/pt/advisory/">Converse com o Advisory da HSN Labs</a>
+- <a href="https://hsnlabs.ai/pt/advisory/">Converse com o Advisory da hsnlabs</a>
 """
 
 # 8. ontologia-vs-schema-banco-dados
@@ -424,7 +424,7 @@ Uma ontologia operacional atua como a camada de inteligencia e protecao que trad
 ## Recursos Estrategicos e Posts Relacionados
 - <a href="/blog/pt/post/ontology-vs-knowledge-graph/">Ontologia vs Grafo de Conhecimento: Principais Diferencas</a>
 - <a href="/blog/pt/post/what-is-an-ontology-for-ai-agents/">O Que E uma Ontologia para Agentes de IA?</a>
-- <a href="https://hsnlabs.ai/pt/bootcamp/">Inscreva-se no Agentic Bootcamp da HSN Labs</a>
+- <a href="https://hsnlabs.ai/pt/bootcamp/">Inscreva-se no Agentic Bootcamp da hsnlabs</a>
 """
 
 # 9. ontologia-vs-grafo-conhecimento
@@ -467,7 +467,7 @@ Se o grafo de conhecimento e o conjunto de casas, carros e jogadores em um tabul
 
 ## Como os Dois Componentes Trabalham Juntos
 
-Em uma arquitetura moderna da HSN Labs, esses componentes operam em simbiose perfeita:
+Em uma arquitetura moderna da hsnlabs, esses componentes operam em simbiose perfeita:
 - A Ontologia estabelece as definicoes e as travas de seguranca
 - O Grafo de Conhecimento materializa o estado atual das operacoes da companhia
 - Os Agentes de Software consultam o grafo sob a supervisao estrita da ontologia para executar tarefas no mundo real
@@ -477,7 +477,7 @@ Sem ontologia, um grafo de conhecimento torna-se um emaranhado de dados sem gove
 ## Recursos Estrategicos e Posts Relacionados
 - <a href="/blog/pt/post/ontology-vs-database-schema/">Ontologia vs Schema de Banco de Dados</a>
 - <a href="/blog/pt/post/the-operational-ontology/">A Ontologia Operacional na Pratica</a>
-- <a href="https://hsnlabs.ai/pt/bootcamp/">Conheca o Agentic Bootcamp da HSN Labs</a>
+- <a href="https://hsnlabs.ai/pt/bootcamp/">Conheca o Agentic Bootcamp da hsnlabs</a>
 """
 
 # 10. palantir-aip-bootcamp-ontologia-operacional
@@ -518,14 +518,14 @@ Quando um agente do AIP sugere uma decisao, ele nao gera texto solto. Ele instan
 
 ## Como Emular essa Resiliencia com Codigo Aberto
 
-Na HSN Labs, respeitamos a genialidade da arquitetura da Palantir, mas entendemos que os custos proibitivos de suas licencas afastam a imensa maioria das corporacoes. 
+Na hsnlabs, respeitamos a genialidade da arquitetura da Palantir, mas entendemos que os custos proibitivos de suas licencas afastam a imensa maioria das corporacoes. 
 
 Construimos arquiteturas equivalentes utilizando tecnologias de codigo aberto, Pydantic, servidores MCP e bancos analiticos modernos, entregando a mesma robustez ontologica sem o aprisionamento tecnologico e financeiro de plataformas fechadas.
 
 ## Recursos Estrategicos e Posts Relacionados
 - <a href="/blog/pt/post/preco-palantir-tco-alternativas-abertas/">O TCO Real da Palantir e Alternativas Abertas Modernas</a>
 - <a href="/blog/pt/post/palantir-vs-databricks-arquitetura-agentes/">Palantir vs Databricks: Por Que Data Lakes Falham em Agentes</a>
-- <a href="https://hsnlabs.ai/pt/bootcamp/">Participe do Bootcamp de Agentes da HSN Labs</a>
+- <a href="https://hsnlabs.ai/pt/bootcamp/">Participe do Bootcamp de Agentes da hsnlabs</a>
 """
 
 # 11. preco-palantir-tco-alternativas-abertas
@@ -564,7 +564,7 @@ A plataforma e densa e proprietaria. Para colocar casos de uso no ar, o cliente 
 ### 3. Custo Oculto de Aprisionamento Tecnologico
 Uma vez que todos os fluxos e regras de negocio sao codificados dentro dos mecanismos internos da plataforma, a migracao futura para outras ferramentas torna-se inviavel do ponto de vista financeiro e tecnico.
 
-## A Alternativa Aberta Desenvolvida pela HSN Labs
+## A Alternativa Aberta Desenvolvida pela hsnlabs
 
 A combinacao de padroes modernos de software permitiu criar ontologias corporativas de alta performance sem depender de contratos milionarios:
 - Python e Pydantic para modelagem ontologica estrita
@@ -577,7 +577,7 @@ Essa abordagem devolve o controle do codigo para a empresa, reduz o custo total 
 ## Recursos Estrategicos e Posts Relacionados
 - <a href="/blog/pt/post/palantir-aip-bootcamp-ontologia-operacional/">A Arquitetura do Palantir AIP na Pratica</a>
 - <a href="/blog/pt/post/bpo-substitution-matrix/">A Matriz de Substituicao de BPO e Impacto Financeiro</a>
-- <a href="https://hsnlabs.ai/pt/advisory/">Agende uma Sessao Estrategica com o Advisory da HSN Labs</a>
+- <a href="https://hsnlabs.ai/pt/advisory/">Agende uma Sessao Estrategica com o Advisory da hsnlabs</a>
 """
 
 # 12. palantir-vs-databricks-arquitetura-agentes
@@ -616,7 +616,7 @@ O Delta Lake armazena tabelas e particoes. Ele nao sabe o que e uma violacao de 
 ### 3. A Capacidade de Fechar o Ciclo
 Um data lake e somente leitura para quem consome analises. Um agente autonomo precisa ler o estado atual, calcular a decisao ideal e gravar o resultado no banco legado. Sem uma camada ontologica com permissoes e rollback transacional, permitir que agentes escrevam no ambiente corporativo e um risco inaceitavel.
 
-## A Arquitetura Recomendada pela HSN Labs
+## A Arquitetura Recomendada pela hsnlabs
 
 Nao propomos substituir o seu lakehouse existente. Propomos posicionar uma camada ontologica operacional entre o seu ecossistema de dados e os seus agentes de software. 
 
@@ -625,7 +625,7 @@ O data lake continua cuidando do historico e analise profunda, enquanto a ontolo
 ## Recursos Estrategicos e Posts Relacionados
 - <a href="/blog/pt/post/palantir-aip-bootcamp-ontologia-operacional/">A Arquitetura do Palantir AIP Dissecada</a>
 - <a href="/blog/pt/post/ontology-vs-database-schema/">Ontologia vs Schema de Banco de Dados</a>
-- <a href="https://hsnlabs.ai/pt/bootcamp/">Conheca o Agentic Bootcamp da HSN Labs</a>
+- <a href="https://hsnlabs.ai/pt/bootcamp/">Conheca o Agentic Bootcamp da hsnlabs</a>
 """
 
 # 13. arbitragem-protocolo-sinistros-subscricao
@@ -678,7 +678,7 @@ Transformar a regulacao de sinistros em um processo de software em tempo real e 
 ## Recursos Estrategicos e Posts Relacionados
 - <a href="/blog/pt/post/bpo-substitution-matrix/">A Matriz de Substituicao de BPO em Operacoes Corporativas</a>
 - <a href="/blog/pt/post/cleveland-clinic-case-study-operational-agents/">Estudo de Caso Cleveland Clinic em Operacoes Hospitalares</a>
-- <a href="https://hsnlabs.ai/pt/advisory/">Converse com o Advisory da HSN Labs</a>
+- <a href="https://hsnlabs.ai/pt/advisory/">Converse com o Advisory da hsnlabs</a>
 """
 
 # 14. a-ontologia-operacional
@@ -698,7 +698,7 @@ author: Hugo S. Nascimento
 
 <!-- more -->
 
-*Contexto: Este post estabelece o manifesto conceitual e tecnico da HSN Labs. A ontologia operacional e a peca ausente que explica por que noventa por cento dos projetos de agentes corporativos fracassam e como os dez por cento restantes vencem.*
+*Contexto: Este post estabelece o manifesto conceitual e tecnico da hsnlabs. A ontologia operacional e a peca ausente que explica por que noventa por cento dos projetos de agentes corporativos fracassam e como os dez por cento restantes vencem.*
 
 A inteligencia artificial generativa resolveu o problema da compreensao e geracao de linguagem natural. No entanto, linguagem solta nao move frotas, nao liquida faturas e nao renegocia contratos de credito.
 
@@ -728,7 +728,7 @@ O resultado e software de inteligência artificial confiavel, rapido e pronto pa
 ## Recursos Estrategicos e Posts Relacionados
 - <a href="/blog/pt/post/what-is-an-ontology-for-ai-agents/">O Que E uma Ontologia para Agentes de IA?</a>
 - <a href="/blog/pt/post/how-to-build-an-enterprise-ontology-from-scratch/">Como Construir uma Ontologia Enterprise do Zero</a>
-- <a href="https://hsnlabs.ai/pt/bootcamp/">Inscreva-se no Agentic Bootcamp da HSN Labs</a>
+- <a href="https://hsnlabs.ai/pt/bootcamp/">Inscreva-se no Agentic Bootcamp da hsnlabs</a>
 """
 
 # 15. o-que-e-uma-ontologia-para-agentes-ia
@@ -748,7 +748,7 @@ author: Hugo S. Nascimento
 
 <!-- more -->
 
-*Contexto: Escrevi este guia para unificar os conceitos que apresento diariamente em workshops executivos e nas esteiras de engenharia da HSN Labs. Se voce precisa entender ontologias para agentes de forma pratica e definitiva, este e o ponto de partida.*
+*Contexto: Escrevi este guia para unificar os conceitos que apresento diariamente em workshops executivos e nas esteiras de engenharia da hsnlabs. Se voce precisa entender ontologias para agentes de forma pratica e definitiva, este e o ponto de partida.*
 
 O entusiasmo em torno de agentes autonomos gerou uma avalanche de demonstracoes impressionantes nas redes sociais. No entanto, quando lideres tecnicos tentam implantar esses mesmos agentes no ambiente corporativo real, a taxa de sucesso cai drasticamente.
 
@@ -782,7 +782,7 @@ Construir ontologias e o investimento definitivo que separa empresas que apenas 
 ## Recursos Estrategicos e Posts Relacionados
 - <a href="/blog/pt/post/the-operational-ontology/">A Ontologia Operacional: Conectando Dados e Acoes</a>
 - <a href="/blog/pt/post/how-to-build-operational-ontology-python-mcp/">Como Construir Ontologias com Pydantic e MCP</a>
-- <a href="https://hsnlabs.ai/pt/bootcamp/">Participe do Bootcamp de 5 Dias da HSN Labs</a>
+- <a href="https://hsnlabs.ai/pt/bootcamp/">Participe do Bootcamp de 5 Dias da hsnlabs</a>
 """
 
 # Write all 15 files and verify zero parentheses

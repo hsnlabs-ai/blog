@@ -17,9 +17,9 @@ image: assets/images/posts/bpo-replacement-matrix/cover.webp
 
 <!-- more -->
 
-*Context: I compiled this operational benchmark for our HSN Labs advisory partners and economic buyers. It details the exact automation mechanics, unit cost reductions, and compliance risk mitigations across thirteen core enterprise outsourcing verticals.*
+*Context: I compiled this operational benchmark for our hsnlabs advisory partners and economic buyers. It details the exact automation mechanics, unit cost reductions, and compliance risk mitigations across thirteen core enterprise outsourcing verticals.*
 
-To assist executive teams and Chief Financial Officers evaluating business process automation, HSN Labs maintains this operational benchmark.
+To assist executive teams and Chief Financial Officers evaluating business process automation, hsnlabs maintains this operational benchmark.
 
 This matrix analyzes the thirteen core enterprise outsourcing verticals being actively transformed from manual headcount billing to autonomous agent execution.
 
@@ -60,5 +60,5 @@ Replacing third-party outsourcing contracts with autonomous digital workforces r
 - <a href="../protocol-arbitrage-claims-underwriting/">Protocol Arbitrage: Autonomous Multimodal Adjudication Across Complex Claims</a>
 - <a href="../cost-legacy-it/">The Cost of Unbounded AI in Legacy IT</a>
 - <a href="../autonomous-negotiations-collections-contracts/">High-Velocity Operations: Autonomous Negotiation, Collections, and Contract Execution</a>
-- <a href="../manifesto/">Why I Built HSN Labs</a>
-- <a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a>
+- <a href="../manifesto/">Why I Built hsnlabs</a>
+- <a href="https://hsnlabs.ai/bootcamp">Apply for the hsnlabs Five-Day Architecture Bootcamp</a>

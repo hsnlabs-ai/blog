@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap');
 
 /* ==========================================================
-   HSN LABS BRAND DESIGN TOKENS
+   hsnlabs BRAND DESIGN TOKENS
    ========================================================== */
 :root {
   --font-display: 'Cormorant Garamond', Georgia, serif;
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-mono: 'Fira Code', monospace;
 
-  /* HSN Labs Brand Blue / Cyan - Identical to Site */
+  /* hsnlabs Brand Blue / Cyan - Identical to Site */
   --primary: #52B4FD !important;
   --primary-active: #42abfc !important;
   --cyan: #52B4FD;
@@ -872,7 +872,7 @@ td code {
 }
 
 /* ==========================================================
-   BLOG FOOTER - EDITORIAL SITEMAP GRID (CANONICAL HSN LABS TYPOGRAPHY)
+   BLOG FOOTER - EDITORIAL SITEMAP GRID (CANONICAL hsnlabs TYPOGRAPHY)
    ========================================================== */
 .site-footer {
   background: var(--canvas);

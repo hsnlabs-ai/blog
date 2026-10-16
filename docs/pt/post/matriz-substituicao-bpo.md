@@ -15,9 +15,9 @@ image: assets/images/posts/bpo-replacement-matrix/cover.webp
 
 <!-- more -->
 
-*Contexto: Compilei este benchmark operacional para os parceiros de advisory e compradores econômicos da HSN Labs. Ele detalha a mecânica exata de automação, reduções de custo unitário e mitigação de riscos de conformidade em treze verticais centrais de terceirização corporativa.*
+*Contexto: Compilei este benchmark operacional para os parceiros de advisory e compradores econômicos da hsnlabs. Ele detalha a mecânica exata de automação, reduções de custo unitário e mitigação de riscos de conformidade em treze verticais centrais de terceirização corporativa.*
 
-Para auxiliar equipes executivas e CFOs avaliando a automação de processos de negócio, a HSN Labs mantém este benchmark operacional.
+Para auxiliar equipes executivas e CFOs avaliando a automação de processos de negócio, a hsnlabs mantém este benchmark operacional.
 
 Esta matriz analisa as treze verticais centrais de terceirização empresarial que estão sendo ativamente transformadas do faturamento por contagem de pessoas para a execução por agentes autônomos.
 
@@ -58,5 +58,5 @@ Substituir contratos terceirizados por forças de trabalho digitais autônomas e
 - <a href="/blog/pt/post/arbitragem-protocolo-sinistros-subscricao/">Arbitragem de Protocolos: Liquidacao Multimodal Autonoma de Sinistros</a>
 - <a href="/blog/pt/post/custo-ia-ilimitada-ti-legada/">O Custo de IA Sem Limites na TI Legada</a>
 - <a href="/blog/pt/post/negociacoes-autonomas-cobranca-contratos/">Operacoes em Alta Velocidade: Negociacao Autonoma, Cobranca e Contratos</a>
-- <a href="/blog/pt/post/manifesto/">Por Que Criei a HSN Labs</a>
-- <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da HSN Labs</a>
+- <a href="/blog/pt/post/manifesto/">Por Que Criei a hsnlabs</a>
+- <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da hsnlabs</a>

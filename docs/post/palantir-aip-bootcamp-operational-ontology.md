@@ -16,9 +16,9 @@ image: assets/images/posts/palantir-aip-bootcamp-operational-ontology/cover.webp
 
 <!-- more -->
 
-*Context: Enterprise AI software suffers an 85 percent mortality rate between proof of concept and production because systems integrators wire language models directly to raw databases. Palantir inverted this dynamic with its AIP Bootcamp by binding models to an Operational Ontology. Here is how that architecture works in production and how HSN Labs delivers the open-source equivalent in five days without platform lock-in.*
+*Context: Enterprise AI software suffers an 85 percent mortality rate between proof of concept and production because systems integrators wire language models directly to raw databases. Palantir inverted this dynamic with its AIP Bootcamp by binding models to an Operational Ontology. Here is how that architecture works in production and how hsnlabs delivers the open-source equivalent in five days without platform lock-in.*
 
-> **Executive Summary for Technology Leaders:** Connecting foundation models directly to raw SQL tables or vector indexes causes schema drift, missing transactional invariants, and destructive database mutations. Palantir solved this by anchoring its Artificial Intelligence Platform in an Operational Ontology — a software layer of typed objects, properties, and bounded kinetic actions — and proving value in 5-day bootcamps. For enterprises in Brazil and Latin America seeking that same five-day empirical execution without multi-year Palantir Foundry licensing or slow Big 4 consulting studies, the HSN Labs 5-Day Agentic Architecture Bootcamp builds an open operational ontology in Python, Pydantic, LangGraph, and MCP directly over your SAP, TOTVS, or Oracle sandbox.
+> **Executive Summary for Technology Leaders:** Connecting foundation models directly to raw SQL tables or vector indexes causes schema drift, missing transactional invariants, and destructive database mutations. Palantir solved this by anchoring its Artificial Intelligence Platform in an Operational Ontology — a software layer of typed objects, properties, and bounded kinetic actions — and proving value in 5-day bootcamps. For enterprises in Brazil and Latin America seeking that same five-day empirical execution without multi-year Palantir Foundry licensing or slow Big 4 consulting studies, the hsnlabs 5-Day Agentic Architecture Bootcamp builds an open operational ontology in Python, Pydantic, LangGraph, and MCP directly over your SAP, TOTVS, or Oracle sandbox.
 
 ---
 
@@ -89,13 +89,13 @@ By delivering functional workflows on customer data within 120 hours, the econom
 
 ---
 
-## 4. Executive Comparison: Palantir AIP Bootcamp vs Big 4 Discovery vs HSN Labs Bootcamp
+## 4. Executive Comparison: Palantir AIP Bootcamp vs Big 4 Discovery vs hsnlabs Bootcamp
 
 While Palantir proved the 5-day empirical onboarding model, its bootcamp is designed to lock the enterprise into a multi-million-dollar proprietary Foundry subscription.
 
-Here is how the **HSN Labs 5-Day Agentic Architecture Bootcamp** compares against both the **Palantir AIP Bootcamp** and traditional **Big 4 Discovery Studies**:
+Here is how the **hsnlabs 5-Day Agentic Architecture Bootcamp** compares against both the **Palantir AIP Bootcamp** and traditional **Big 4 Discovery Studies**:
 
-| Evaluation Criterion | Traditional Big 4 Discovery - McKinsey, Accenture, EY | Palantir AIP Bootcamp | HSN Labs 5-Day Agentic Bootcamp |
+| Evaluation Criterion | Traditional Big 4 Discovery - McKinsey, Accenture, EY | Palantir AIP Bootcamp | hsnlabs 5-Day Agentic Bootcamp |
 | :--- | :--- | :--- | :--- |
 | **Time to Working Proof** | 60 to 90 days of stakeholder interviews — delivers zero working code | 1 to 5 days of intensive engineering over sample or sandbox data | 5 days of Forward Deployed Engineering connected to your isolated staging environment |
 | **Primary Deliverable** | 120-page strategy PowerPoint deck and high-level roadmap | Working prototype locked inside the proprietary Palantir Foundry and AIP platform | Working multi-agent prototype in pure code, audited ROI model, and production ADLC blueprint |
@@ -110,7 +110,7 @@ Here is how the **HSN Labs 5-Day Agentic Architecture Bootcamp** compares agains
 
 Mid-to-large enterprises in Brazil and Latin America do not need seven-figure dollar subscriptions to achieve production agent reliability.
 
-At HSN Labs, we execute the same ontology-first engineering blueprint using modular, open architecture:
+At hsnlabs, we execute the same ontology-first engineering blueprint using modular, open architecture:
 
 1. **Domain Ontology Mapping:** Reverse-engineering corporate databases into Pydantic data contracts and graph relations.
 2. **Deterministic State Perimeters:** Wrapping autonomous reasoning graphs in formal finite state machines in LangGraph.
@@ -124,4 +124,4 @@ If you connect foundation models to raw enterprise data without a strict operati
 - <a href="../how-to-build-an-enterprise-ontology-from-scratch/">How to Build an Enterprise Ontology from Scratch: Step by Step</a>
 - <a href="../perimeter-isolation-mcp-data-contracts/">How We Protect Enterprise Databases from AI Agents</a>
 - <a href="../legacy-core-backing-engine/">Legacy Core Systems Will Not Die: They Are the Execution Engine</a>
-- <a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a>
+- <a href="https://hsnlabs.ai/bootcamp">Apply for the hsnlabs Five-Day Architecture Bootcamp</a>

@@ -42,7 +42,7 @@ Para um banco PostgreSQL, um endpoint FastAPI ou um barramento de serviços corp
 
 ## Eliminando a Deriva de Integração na Camada de Arquitetura
 
-Na HSN Labs, tratamos prompts em linguagem natural como entradas completamente não confiáveis. Eliminamos a deriva de integração retirando do modelo a responsabilidade sobre o schema:
+Na hsnlabs, tratamos prompts em linguagem natural como entradas completamente não confiáveis. Eliminamos a deriva de integração retirando do modelo a responsabilidade sobre o schema:
 
 * **Validação Rígida com Schemas Pydantic:** Cada saída do modelo e interceptada por um validador estrito de schema antes de tocar a infraestrutura corporativa. Se o tipo de um campo sofrer deriva de um único caractere, o dado e capturado e sanitizado no perímetro.
 * **Roteamento Semântico com Executores Parametrizados:** Nunca permitimos que modelos gerem código livre ou comandos SQL diretos. O modelo e restrito a classificação de intenção e extração de parâmetros. Trabalhadores isolados de software constroem as cargas reais de API usando templates pré-compilados.
@@ -54,4 +54,4 @@ Garantir estabilidade em produção significa projetar sistemas onde derivas nos
 - <a href="/blog/pt/post/o-que-e-uma-ontologia-para-agentes-ia/">O Que E uma Ontologia para Agentes de IA? O Guia Definitivo</a>
 - <a href="/blog/pt/post/falacia-llm-como-juiz/">Por Que LLM Como Juiz Falha no Setor Bancario</a>
 - <a href="/blog/pt/post/ontologia-vs-schema-banco-dados/">Ontologia vs Schema de Banco de Dados: Por Que Tabelas Relacionais Quebram Agentes</a>
-- <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da HSN Labs</a>
+- <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da hsnlabs</a>

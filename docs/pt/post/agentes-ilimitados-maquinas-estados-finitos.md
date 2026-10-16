@@ -50,7 +50,7 @@ Um modelo sem limites não possui noção inerente de causalidade corporativa. E
 
 ## A Solução: Planejamento Estocástico, Execução Delimitada em Código
 
-Na HSN Labs, nunca permitimos loops abertos de ferramentas em produção. Impomos uma separação estrita entre raciocínio e execução por meio de Máquinas de Estados Finitos:
+Na hsnlabs, nunca permitimos loops abertos de ferramentas em produção. Impomos uma separação estrita entre raciocínio e execução por meio de Máquinas de Estados Finitos:
 
 * **Estados Discretos Permitidos:** A cada microssegundo, uma transação corporativa existe em um estado explícito: Rascunho, Validado, Aprovado ou Efetivado. O agente só tem visibilidade e permissão para propor ferramentas que pertencem a esse estado específico. E fisicamente impossível para um agente no estado de Rascunho disparar uma ação de Efetivação.
 * **Funções de Guarda Invariantes:** As transições entre estados não são governadas pelo modelo de linguagem. Elas são governadas por funções de guarda em Python em nível de código. Mesmo que o modelo sugira o cancelamento de um pedido, a guarda em software verifica se a mercadoria já saiu do centro de distribuição. Se a guarda avaliar como falso, a transição e rejeitada no nível da arquitetura.
@@ -62,4 +62,4 @@ Autonomia não significa ausência de regras. Autonomia corporativa é a capacid
 - <a href="/blog/pt/post/como-construir-ontologia-enterprise-do-zero/">Como Construir uma Ontologia Enterprise do Zero: Passo a Passo</a>
 - <a href="/blog/pt/post/a-ontologia-operacional/">A Ontologia Operacional: Como Empresas Conectam LLMs aos Dados Proprietarios</a>
 - <a href="/blog/pt/post/como-construir-ontologia-operacional-python-mcp/">Como Construir uma Ontologia Operacional de Negocios em Python e MCP</a>
-- <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da HSN Labs</a>
+- <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da hsnlabs</a>

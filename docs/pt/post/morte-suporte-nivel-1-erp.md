@@ -17,7 +17,7 @@ image: assets/images/posts/death-of-tier-1-erp-helpdesk/cover.webp
 
 *Contexto: Escrevi esta análise após auditar uma fila de chamados de sustentação em que correções triviais de cadastro mestre no TOTVS Protheus e no SAP levavam quarenta e oito horas para serem resolvidas, enquanto consultorias externas faturavam pacotes caros de horas por alterações simples de tabela. O modelo de horas faturáveis para suporte Nível 1 morreu.*
 
-> **Resumo Executivo para Lideranças de Tecnologia:** Durante décadas, grandes integradoras de TI e consultorias de sustentação de ERP — como Accenture, Stefanini, Sonda, Capgemini e parceiros tradicionais de AMS SAP e TOTVS — construíram receita recorrente vendendo pacotes mensais de horas para chamados de Nível 1. Paralelamente, suítes de ITSM como ServiceNow e Jira Service Management cobram licenças caras por assento de atendente mais add-ons de IA apenas para rotear esses mesmos chamados entre filas humanas. A HSN Labs elimina as filas de Nível 1 implantando agentes autônomos headless sobre Model Context Protocol e LangGraph — diagnosticando e corrigindo exceções no SAP, TOTVS Protheus e Active Directory em milissegundos, sem pedágio por assento e reduzindo contratos de sustentação em até 85 por cento.
+> **Resumo Executivo para Lideranças de Tecnologia:** Durante décadas, grandes integradoras de TI e consultorias de sustentação de ERP — como Accenture, Stefanini, Sonda, Capgemini e parceiros tradicionais de AMS SAP e TOTVS — construíram receita recorrente vendendo pacotes mensais de horas para chamados de Nível 1. Paralelamente, suítes de ITSM como ServiceNow e Jira Service Management cobram licenças caras por assento de atendente mais add-ons de IA apenas para rotear esses mesmos chamados entre filas humanas. A hsnlabs elimina as filas de Nível 1 implantando agentes autônomos headless sobre Model Context Protocol e LangGraph — diagnosticando e corrigindo exceções no SAP, TOTVS Protheus e Active Directory em milissegundos, sem pedágio por assento e reduzindo contratos de sustentação em até 85 por cento.
 
 ---
 
@@ -63,11 +63,11 @@ Técnicos de suporte passam o dia atuando como pontes manuais entre mensagens de
 
 ---
 
-## 2. Matriz Comparativa: Consultorias AMS de ERP vs Suítes ITSM vs Agentes HSN Labs
+## 2. Matriz Comparativa: Consultorias AMS de ERP vs Suítes ITSM vs Agentes hsnlabs
 
 Quando um CIO ou CFO audita os contratos de sustentação de TI, três modelos estruturais disputam o orçamento operacional:
 
-| Vetor Operacional e Financeiro | Consultorias AMS de ERP - Accenture, Stefanini, Sonda | Suítes de ITSM com Copilotos - ServiceNow, Zendesk | Agentes Headless de Autocorreção - HSN Labs |
+| Vetor Operacional e Financeiro | Consultorias AMS de ERP - Accenture, Stefanini, Sonda | Suítes de ITSM com Copilotos - ServiceNow, Zendesk | Agentes Headless de Autocorreção - hsnlabs |
 | :--- | :--- | :--- | :--- |
 | **Mecanismo Central de Resolução** | Analistas juniores lendo chamados manualmente e clicando em telas do SAP ou TOTVS | Chatbots que resumem o chamado no painel para que um humano ainda execute a correção manual | Execução autônoma em nível de protocolo via MCP diretamente no SAP, TOTVS, Oracle e Active Directory |
 | **Tempo Médio de Resolução** | 24 a 72 horas aguardando triagem entre filas de Nível 1 e Nível 2 | Horas aguardando um atendente humano revisar a sugestão e alterar o sistema de origem | 200 milissegundos a 5 segundos via máquinas de estado determinísticas com trava de rollback |
@@ -81,7 +81,7 @@ Quando um CIO ou CFO audita os contratos de sustentação de TI, três modelos e
 
 O objetivo da arquitetura corporativa moderna não é comprar licenças caras de copilotos para que técnicos humanos fechem chamados dez por cento mais rápido. O objetivo é eliminar o conceito de chamado de suporte Nível 1 por completo.
 
-Quando agentes autônomos construídos pela HSN Labs monitoram a telemetria dos sistemas e as exceções operacionais em tempo real, eles validam as invariantes de negócio em Pydantic e LangGraph e resolvem a causa raiz de forma autônoma antes mesmo que um colaborador perceba o erro.
+Quando agentes autônomos construídos pela hsnlabs monitoram a telemetria dos sistemas e as exceções operacionais em tempo real, eles validam as invariantes de negócio em Pydantic e LangGraph e resolvem a causa raiz de forma autônoma antes mesmo que um colaborador perceba o erro.
 
 A consultoria de horas faturáveis precisa que os sistemas quebrem para continuar vendendo horas de conserto. A empresa precisa de sistemas que se autorreparem. A engenharia agêntica determinística torna esse alinhamento econômico realidade.
 
@@ -91,4 +91,4 @@ A consultoria de horas faturáveis precisa que os sistemas quebrem para continua
 - <a href="/blog/pt/post/matriz-substituicao-bpo/">A Matriz de Substituicao de BPO: Metricas Operacionais e Financeiras</a>
 - <a href="/blog/pt/post/comprar-ou-construir-crm-vendas-b2b/">CRM de Vendas B2B: Comprar Salesforce, Adaptar Twenty ou Construir com Agentes</a>
 - <a href="/blog/pt/post/preco-palantir-tco-alternativas-abertas/">O TCO Real da Palantir: A Barreira em Dolar e Alternativas Abertas</a>
-- <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da HSN Labs</a>
+- <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da hsnlabs</a>

@@ -16,9 +16,9 @@ image: assets/images/posts/five-day-architecture-sprint/cover.webp
 
 <!-- more -->
 
-*Context: As a founder and engineer who has built venture-backed companies, I have zero patience for theoretical consulting slide decks that ship no working code. This is the exact Forward Deployed Engineering playbook we use at HSN Labs to replace six-month strategy studies from traditional consultancies and de-risk production rollouts in five days.*
+*Context: As a founder and engineer who has built venture-backed companies, I have zero patience for theoretical consulting slide decks that ship no working code. This is the exact Forward Deployed Engineering playbook we use at hsnlabs to replace six-month strategy studies from traditional consultancies and de-risk production rollouts in five days.*
 
-> **Executive Summary for Technology Leaders:** Traditional management consultancies and global systems integrators — such as McKinsey, BCG, McKinsey, Accenture, EY, PwC, and KPMG — sell multi-month AI discovery studies that deliver static PowerPoint slide decks while ignoring low-level legacy database schemas and API latency bottlenecks. When internal engineering teams attempt to implement those conceptual blueprints, over 80 percent of multi-agent pilots collapse. HSN Labs replaces theoretical slide consulting with a 5-Day Forward Deployed Engineering Sprint: senior engineers connect directly to isolated staging environments, codify SAP and TOTVS business rules into an executable Python and MCP ontology, deliver a stress-tested sandbox prototype in 120 hours, and credit 100 percent of the sprint fee toward production deployment.
+> **Executive Summary for Technology Leaders:** Traditional management consultancies and global systems integrators — such as McKinsey, BCG, McKinsey, Accenture, EY, PwC, and KPMG — sell multi-month AI discovery studies that deliver static PowerPoint slide decks while ignoring low-level legacy database schemas and API latency bottlenecks. When internal engineering teams attempt to implement those conceptual blueprints, over 80 percent of multi-agent pilots collapse. hsnlabs replaces theoretical slide consulting with a 5-Day Forward Deployed Engineering Sprint: senior engineers connect directly to isolated staging environments, codify SAP and TOTVS business rules into an executable Python and MCP ontology, deliver a stress-tested sandbox prototype in 120 hours, and credit 100 percent of the sprint fee toward production deployment.
 
 ---
 
@@ -40,7 +40,7 @@ Every month, traditional management consultancies and Big 4 advisory firms — M
 
 When the internal engineering team or IT outsourcing vendor finally receives the deck and tries to write the first line of code, the entire strategy collapses because nobody audited the legacy database schemas or tested network latency limits.
 
-At HSN Labs, we reject slide-deck consulting. Long discovery studies destroy executive momentum and burn capital with zero operational return:
+At hsnlabs, we reject slide-deck consulting. Long discovery studies destroy executive momentum and burn capital with zero operational return:
 
 ### 1. Slide Decks Cannot Test Mainframe and ERP API Latency
 A slide deck from McKinsey or Accenture can claim that an autonomous agent will automate customer claims or financial reconciliation. It cannot tell you that the core SAP BAPI or TOTVS Protheus webservice takes eight seconds to respond, or that the database connection pool exhausts under concurrent load. You only discover real infrastructure friction when senior engineers touch real systems.
@@ -53,11 +53,11 @@ Strategy consultancies make high-level recommendations and walk away, or hand th
 
 ---
 
-## 2. Executive Comparison: Strategy Firms vs IT Outsourcing vs HSN Labs
+## 2. Executive Comparison: Strategy Firms vs IT Outsourcing vs hsnlabs
 
 When a CIO, CTO, or COO allocates budget to move from AI thesis to production operations, three fundamentally different delivery models exist in the market:
 
-| Executive Evaluation Vector | Strategy and Big 4 Consultancies - McKinsey, BCG, EY, PwC | Traditional IT Factories and GSIs - Accenture, Globant, CI&T | Forward Deployed Engineering Boutique - HSN Labs |
+| Executive Evaluation Vector | Strategy and Big 4 Consultancies - McKinsey, BCG, EY, PwC | Traditional IT Factories and GSIs - Accenture, Globant, CI&T | Forward Deployed Engineering Boutique - hsnlabs |
 | :--- | :--- | :--- | :--- |
 | **Discovery Duration and Format** | 60 to 120 days of stakeholder interviews and theoretical maturity assessments | 30 to 60 days of requirements gathering to size a multi-person agile squad | 5-day empirical engineering sprint connected directly to an isolated staging sandbox |
 | **Primary Discovery Deliverable** | Static PowerPoint slide deck, theoretical governance framework, and high-level ROI spreadsheet | Backlog of user stories and a time-and-materials staffing proposal | Working multi-agent prototype processing real payloads, telemetry baseline, and ADLC production spec |
@@ -105,4 +105,4 @@ Stop paying for slide decks. Demand working software in five days.
 - <a href="../how-to-build-an-enterprise-ontology-from-scratch/">How to Build an Enterprise Ontology from Scratch: Step by Step</a>
 - <a href="../chatbot-vs-agent/">Chatbot vs Agent: Why Replacing BPOs Requires Production Ontologies</a>
 - <a href="../latam-airlines-case-study/">LATAM Airlines: Production Agents in a 3 Percent Margin Business</a>
-- <a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a>
+- <a href="https://hsnlabs.ai/bootcamp">Apply for the hsnlabs Five-Day Architecture Bootcamp</a>

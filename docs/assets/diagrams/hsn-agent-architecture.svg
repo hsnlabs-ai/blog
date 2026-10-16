@@ -30,7 +30,7 @@
 <rect x="60" y="30" width="1800" height="80" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
 <rect x="84" y="48" width="44" height="44" fill="#52B4FD" stroke="#52B4FD" stroke-width="0"/>
 <polygon points="94,58 118,58 118,82 106,70" fill="#FFFFFF"/>
-<text x="144" y="76" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="24" font-weight="800" text-anchor="start">HSN LABS</text>
+<text x="144" y="76" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="24" font-weight="800" text-anchor="start">hsnlabs</text>
 <line x1="285" y1="48" x2="285" y2="92" stroke="#E2E8F0" stroke-width="1.5"/>
 <text x="305" y="68" fill="#0284C7" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="16" font-weight="700" text-anchor="start">ENTERPRISE AGENTIC ARCHITECTURE</text>
 <text x="305" y="87" fill="#64748B" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="13" font-weight="400" text-anchor="start">The Open Alternative to Palantir AIP - Production Runtime on Executable Business Ontologies</text>
@@ -293,7 +293,7 @@
 <text x="1275" y="1102" fill="#B45309" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="10" font-weight="600" text-anchor="start">State unpauses only upon signoff</text>
 <rect x="1580" y="907" width="260" height="220" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
 <rect x="1595" y="923" width="8" height="8" fill="#52B4FD" stroke="#52B4FD" stroke-width="0"/>
-<text x="1612" y="931" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="700" text-anchor="start">HSN LABS DELIVERY</text>
+<text x="1612" y="931" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="700" text-anchor="start">hsnlabs DELIVERY</text>
 <text x="1595" y="957" fill="#475569" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="400" text-anchor="start">GTM and business impact:</text>
 <text x="1595" y="977" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="600" text-anchor="start">• 1 to 5 Day Bootcamp</text>
 <text x="1595" y="997" fill="#07090E" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="600" text-anchor="start">• Audited unit ROI proof</text>
@@ -317,7 +317,7 @@
 <line x1="1420" y1="800" x2="1420" y2="835" stroke="#52B4FD" stroke-width="2"/>
 <polygon points="1416,833 1420,841 1424,833" fill="#52B4FD"/>
 <rect x="60" y="1145" width="1800" height="65" fill="#07090E" stroke="#07090E" stroke-width="1"/>
-<text x="90" y="1184" fill="#52B4FD" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="13" font-weight="800" text-anchor="start">HSN LABS ARCHITECTURAL MANIFESTO</text>
+<text x="90" y="1184" fill="#52B4FD" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="13" font-weight="800" text-anchor="start">hsnlabs ARCHITECTURAL MANIFESTO</text>
 <line x1="375" y1="1162" x2="375" y2="1192" stroke="#222736" stroke-width="1.5"/>
 <text x="395" y="1184" fill="#FFFFFF" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="400" text-anchor="start">Most agents fail when they touch real data and strict rules. We build the full lifecycle: Ontology, Infrastructure, State Machines, Evaluation.</text>
 <rect x="1620" y="1160" width="220" height="34" fill="#121826" stroke="#52B4FD" stroke-width="1"/>

@@ -31,7 +31,7 @@ CATEGORY_MAP = {
     # Linha de Frente e Estudos de Caso
     "five-day-architecture-sprint.md": ("Linha de Frente e Estudos de Caso", ["estudos-de-caso", "consultoria", "sprint"]),
     "latam-airlines-case-study.md": ("Linha de Frente e Estudos de Caso", ["estudos-de-caso", "latam-airlines", "producao"]),
-    "manifesto.md": ("Linha de Frente e Estudos de Caso", ["estudos-de-caso", "hsn-labs", "manifesto"]),
+    "manifesto.md": ("Linha de Frente e Estudos de Caso", ["estudos-de-caso", "hsnlabs", "manifesto"]),
     "protocol-arbitrage-claims-underwriting.md": ("Linha de Frente e Estudos de Caso", ["estudos-de-caso", "seguros", "arbitragem"]),
     "the-poc-graveyard.md": ("Linha de Frente e Estudos de Caso", ["estudos-de-caso", "poc", "falhas-de-ia"]),
     "unconstrained-agents-finite-state-machines.md": ("Linha de Frente e Estudos de Caso", ["estudos-de-caso", "producao", "loop-api"]),
@@ -53,7 +53,7 @@ DESCRIPTIONS = {
     "death-of-tier-1-erp-helpdesk.md": "O colapso inevitavel do modelo de suporte tecnico faturado por hora em implementacoes de ERP.",
     "five-day-architecture-sprint.md": "Por que apresentacoes genericas de consultorias tradicionais falham em resolver problemas agenticos em producao.",
     "latam-airlines-case-study.md": "Estudo de caso pratico de implementacao de agentes em ambiente de alta volumetria e margem apertada.",
-    "manifesto.md": "A tese fundadora da boutique HSN Labs e o compromisso com arquitetura agêntica enterprise para grandes empresas.",
+    "manifesto.md": "A tese fundadora da boutique hsnlabs e o compromisso com arquitetura agêntica enterprise para grandes empresas.",
     "protocol-arbitrage-claims-underwriting.md": "Uso de arbitragem multimodais autonoma para liquidacao de sinistros complexos em saude e seguros.",
     "the-poc-graveyard.md": "As razoes estruturais pelas quais prototipos de IA corporativa morrem antes de alcancar a producao real.",
     "unconstrained-agents-finite-state-machines.md": "Auditoria de emergencia detalhando a correcao de loops infinitos de chamadas em agentes de producao.",

@@ -1,4 +1,4 @@
-# HSN Labs Personal Hub
+# hsnlabs Personal Hub
 
 Personal engineering and consulting hub for Hugo S. Nascimento, built with MkDocs and Material for MkDocs.
 
@@ -9,7 +9,7 @@ The goal is to convert technical authority into high-ticket enterprise consultin
 ## Architecture
 - **Generator:** MkDocs
 - **Theme:** Material for MkDocs (`mkdocs-material`)
-- **Hosting:** GitHub Pages (Subdirectory routing via `hsn-labs.github.io/blog` or similar).
+- **Hosting:** GitHub Pages (Subdirectory routing via `hsnlabs.github.io/blog` or similar).
 
 ## Local Development
 ```bash

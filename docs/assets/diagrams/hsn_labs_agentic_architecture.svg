@@ -616,7 +616,7 @@
       <rect x="0" y="0" width="46" height="46" rx="3" fill="#f5f5f4" stroke="#a8a29e" stroke-width="1.2"/>
       <path d="M 12 15 L 34 15 M 12 23 L 34 23 M 12 31 L 26 31" stroke="#44403c" stroke-width="2.5"/>
     </g>
-    <text x="82" y="44" font-size="16" font-weight="800" fill="#0c0a09">HSN Labs Model Catalog</text>
+    <text x="82" y="44" font-size="16" font-weight="800" fill="#0c0a09">hsnlabs Model Catalog</text>
     <text x="82" y="62" font-size="12" font-weight="600" fill="#78716c">Unified ChatModels Gateway and LiteLLM Proxy</text>
   </g>
 
@@ -851,7 +851,7 @@
           <path d="M49.7646 21.816H24.729V64.0228C24.729 71.817 30.7399 76.6658 40.4175 76.6658H73.7482V45.8297H49.7646V21.816Z" fill="#7FC8FF"/>
         </g>
       </g>
-      <text x="195" y="24" font-size="15" font-weight="800" fill="#0c0a09">HSN Labs Knowledge Hub and Multi-Agent Swarms</text>
+      <text x="195" y="24" font-size="15" font-weight="800" fill="#0c0a09">hsnlabs Knowledge Hub and Multi-Agent Swarms</text>
       <text x="195" y="44" font-size="12.5" font-weight="500" fill="#78716c">Shared Prompt Registry, Deep Agents, CrewAI, AutoGen Integration</text>
       <text x="195" y="64" font-size="12" font-weight="500" fill="#78716c">Data Pipelining with Airflow and dbt, Semantic Graphs with Neo4j</text>
       <text x="195" y="84" font-size="12" font-weight="500" fill="#78716c">Continuous Autonomous Improvement and Memory Stores</text>

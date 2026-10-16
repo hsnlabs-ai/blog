@@ -64,7 +64,7 @@ def on_page_markdown(markdown, page, config, files):
 
 ---
 
-*Article originally published on [HSN Labs]({canonical_url}). Author: [Hugo S. Nascimento](https://hsnlabs.ai).*
+*Article originally published on [hsnlabs]({canonical_url}). Author: [Hugo S. Nascimento](https://hsnlabs.ai).*
 """
             markdown = markdown + attribution
         return insert_newsletter_interstitial(markdown, is_pt=False)
@@ -75,7 +75,7 @@ def on_page_markdown(markdown, page, config, files):
 
 ---
 
-*Artigo publicado originalmente em [HSN Labs]({canonical_url}). Autor: [Hugo S. Nascimento](https://hsnlabs.ai).*
+*Artigo publicado originalmente em [hsnlabs]({canonical_url}). Autor: [Hugo S. Nascimento](https://hsnlabs.ai).*
 """
             markdown = markdown + attribution
         return insert_newsletter_interstitial(markdown, is_pt=True)
@@ -143,7 +143,7 @@ def on_page_content(html, page, config, files):
             },
             "publisher": {
                 "@type": "Organization",
-                "name": "HSN Labs",
+                "name": "hsnlabs",
                 "url": "https://hsnlabs.ai",
                 "logo": {
                     "@type": "ImageObject",

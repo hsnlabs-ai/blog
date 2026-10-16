@@ -15,9 +15,9 @@ image: assets/images/posts/palantir-vs-databricks-agent-architecture/cover.webp
 
 <!-- more -->
 
-*Contexto: No mercado de dados, a Databricks e a Snowflake dominam o armazenamento e o treinamento analítico em escala. Mas quando corporações tentam usar Lakehouses diretamente para alimentar agentes que executam ações transacionais no mundo real, o modelo entra em colapso. Analisamos aqui as causas técnicas dessa falha, por que a Palantir construiu uma ontologia operacional e como a HSN Labs implementa a arquitetura híbrida em código aberto.*
+*Contexto: No mercado de dados, a Databricks e a Snowflake dominam o armazenamento e o treinamento analítico em escala. Mas quando corporações tentam usar Lakehouses diretamente para alimentar agentes que executam ações transacionais no mundo real, o modelo entra em colapso. Analisamos aqui as causas técnicas dessa falha, por que a Palantir construiu uma ontologia operacional e como a hsnlabs implementa a arquitetura híbrida em código aberto.*
 
-> **Resumo Executivo para Lideranças de Tecnologia:** Plataformas como Databricks e Snowflake são líderes indiscutíveis em processamento analítico em lote, Business Intelligence e treinamento de modelos. Contudo, conectar agentes autônomos diretamente a tabelas de um Data Lake gera alta latência de resposta, explosão no consumo de unidades computacionais e risco grave de mutações sem trava transacional nos sistemas de origem. A Palantir resolveu essa lacuna criando uma Ontologia Operacional entre os dados e os modelos. Para empresas que buscam essa mesma resiliência operacional sem substituir seu Lakehouse atual e sem arcar com contratos milionários da Palantir, a HSN Labs constrói um Plano de Execução Operacional aberto utilizando Python, Pydantic, LangGraph e Model Context Protocol.
+> **Resumo Executivo para Lideranças de Tecnologia:** Plataformas como Databricks e Snowflake são líderes indiscutíveis em processamento analítico em lote, Business Intelligence e treinamento de modelos. Contudo, conectar agentes autônomos diretamente a tabelas de um Data Lake gera alta latência de resposta, explosão no consumo de unidades computacionais e risco grave de mutações sem trava transacional nos sistemas de origem. A Palantir resolveu essa lacuna criando uma Ontologia Operacional entre os dados e os modelos. Para empresas que buscam essa mesma resiliência operacional sem substituir seu Lakehouse atual e sem arcar com contratos milionários da Palantir, a hsnlabs constrói um Plano de Execução Operacional aberto utilizando Python, Pydantic, LangGraph e Model Context Protocol.
 
 ---
 
@@ -36,7 +36,7 @@ As especificações arquiteturais, modelos de governança e métricas de casos r
 
 O fracasso de agentes conectados diretamente a Data Lakes nasce da confusão entre dois planos arquiteturais com requisitos opostos: o armazenamento analítico passivo e a execução operacional com estado.
 
-| Vetor Arquitetural | Lakehouse Analítico - Databricks e Snowflake | Ontologia Proprietária - Palantir Foundry e AIP | Ontologia Híbrida Aberta - HSN Labs |
+| Vetor Arquitetural | Lakehouse Analítico - Databricks e Snowflake | Ontologia Proprietária - Palantir Foundry e AIP | Ontologia Híbrida Aberta - hsnlabs |
 | :--- | :--- | :--- | :--- |
 | **Plano Arquitetural Central** | Plano de Dados Analíticos: agregação em lote, relatórios de BI, engenharia de atributos e treino de modelos | Plano Operacional Fechado: ingestão proprietária de ponta a ponta, modelagem de objetos e aplicativos internos | Plano de Execução Operacional desacoplado, posicionado entre o Lakehouse existente e os ERPs |
 | **Ativo Primário de Dados** | Tabelas relacionais, arquivos Parquet e Delta, visões analíticas e vetores | Objetos proprietários, vínculos semânticos e definições de ações dentro do Foundry | Contratos de dados fortemente tipados em Pydantic v2, grafos em PostgreSQL ou Neo4j e schemas MCP |
@@ -93,7 +93,7 @@ O Palantir Foundry e o AIP funcionam porque sua ontologia é bidirecional: quand
 
 ---
 
-## 3. O Padrão de Produção: A Arquitetura Híbrida da HSN Labs
+## 3. O Padrão de Produção: A Arquitetura Híbrida da hsnlabs
 
 As empresas não precisam descartar seus investimentos em Databricks ou Snowflake, nem assinar contratos milionários com a Palantir, para colocar agentes autônomos resilientes em produção.
 
@@ -101,12 +101,12 @@ A solução consiste em estabelecer uma separação clara de responsabilidades e
 
 ```mermaid
 flowchart TD
-    A["Plano de Dados Analíticos<br>Databricks Delta Lake e Unity Catalog"] --> B["Plano de Execução Operacional<br>Camada de Ontologia HSN Labs, Contratos Pydantic e MCP"]
+    A["Plano de Dados Analíticos<br>Databricks Delta Lake e Unity Catalog"] --> B["Plano de Execução Operacional<br>Camada de Ontologia hsnlabs, Contratos Pydantic e MCP"]
     B --> C["Sistemas Transacionais de Registro<br>SAP ERP, Salesforce CRM e PostgreSQL de Produção"]
 ```
 
 1. **Mantenha o Processamento Analítico Pesado no Lakehouse:** Continue utilizando Databricks ou Snowflake para cargas em lote, geração de embeddings, relatórios históricos e modelos preditivos.
-2. **Implante uma Ontologia Operacional Aberta para os Agentes:** A HSN Labs modela as entidades centrais do seu negócio em contratos de código Python e Pydantic orquestrados por máquinas de estado em LangGraph.
+2. **Implante uma Ontologia Operacional Aberta para os Agentes:** A hsnlabs modela as entidades centrais do seu negócio em contratos de código Python e Pydantic orquestrados por máquinas de estado em LangGraph.
 3. **Vincule as Saídas dos Agentes a Ações Auditadas via MCP:** Nunca permita que um LLM gere gravações diretas em bancos de dados. Intercepte cada chamada de ferramenta com servidores Model Context Protocol que validam regras de negócio antes de atualizar o SAP, TOTVS ou Salesforce.
 
 Tratar um Data Lake como backend operacional de agentes condena o projeto ao cemitério de provas de conceito. Ao desacoplar o armazenamento analítico da execução operacional, seus agentes passam a operar em milissegundos, com zero alucinação e integridade transacional absoluta.
@@ -117,4 +117,4 @@ Tratar um Data Lake como backend operacional de agentes condena o projeto ao cem
 - <a href="/blog/pt/post/o-que-e-uma-ontologia-para-agentes-ia/">O Que E uma Ontologia para Agentes de IA? O Guia Definitivo</a>
 - <a href="/blog/pt/post/cemiterio-de-pocs/">Por Que Agentes Falham: O Cemiterio de PoCs</a>
 - <a href="/blog/pt/post/por-que-rag-falha-em-erp/">Por Que RAG Tradicional Falha em ERPs Financeiros</a>
-- <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da HSN Labs</a>
+- <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da hsnlabs</a>

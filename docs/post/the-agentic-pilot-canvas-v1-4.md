@@ -22,7 +22,7 @@ Teams build brittle demos powered by free-form system prompts. Once the agent me
 
 To solve this architectural gap before committing code, I designed and released The Agentic Pilot Canvas under the open MIT License.
 
-Version 1.4, updated in October 2026, codifies the production lessons from our engineering sprints at HSN Labs. The framework runs natively in the browser:
+Version 1.4, updated in October 2026, codifies the production lessons from our engineering sprints at hsnlabs. The framework runs natively in the browser:
 
 👉 **Launch interactive canvas:** [hsnlabs.ai/canvas](https://hsnlabs.ai/canvas/)
 

@@ -206,7 +206,7 @@ The LLM is now operating inside a **deterministic sandbox**. It can reason about
 
 Enterprise leadership often assumes building an operational ontology requires eighteen months of Big 4 consulting.
 
-At HSN Labs, we build and deploy production operational ontologies in a **5-Day Forward Deployed Sprint**:
+At hsnlabs, we build and deploy production operational ontologies in a **5-Day Forward Deployed Sprint**:
 
 - **Day 1: Semantic Discovery:** Map the 3 core entities, their mathematical invariants, and their finite state machine lifecycle.
 - **Day 2: Ontology Code Generation:** Scaffold strongly typed Pydantic models, custom validators, and state machine guards in Python.
@@ -228,7 +228,7 @@ Build the rules. Compile the invariants. Gate the actions. Once the harness exis
 
 ---
 
-*At HSN Labs, we design and deploy bespoke operational ontologies and resilient multi-agent architectures for mid-to-large enterprises. If your organization is ready to transition from fragile AI demos to mission-critical production execution, apply for our on-site [Agentic Architecture Bootcamp](https://hsnlabs.ai/bootcamp).*
+*At hsnlabs, we design and deploy bespoke operational ontologies and resilient multi-agent architectures for mid-to-large enterprises. If your organization is ready to transition from fragile AI demos to mission-critical production execution, apply for our on-site [Agentic Architecture Bootcamp](https://hsnlabs.ai/bootcamp).*
 
 ## Related Field Notes and Technical Spokes
 - <a href="../the-operational-ontology/">The Operational Ontology: How Enterprises Connect LLMs to Proprietary State</a>
@@ -242,4 +242,4 @@ Build the rules. Compile the invariants. Gate the actions. Once the harness exis
 - <a href="../latam-airlines-case-study/">LATAM Airlines: Production Agents in a 3 Percent Margin Business</a>
 - <a href="../cleveland-clinic-case-study-operational-agents/">Case Study: How Cleveland Clinic Scaled Patient Flow with Operational Agents</a>
 - <a href="../unconstrained-agents-finite-state-machines/">Case Study: 42 Calls in a Loop at 2 AM</a>
-- <a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a>
+- <a href="https://hsnlabs.ai/bootcamp">Apply for the hsnlabs Five-Day Architecture Bootcamp</a>

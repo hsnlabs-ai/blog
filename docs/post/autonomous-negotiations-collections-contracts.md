@@ -62,6 +62,6 @@ By replacing manual human queues with autonomous negotiation pipelines, enterpri
 
 ## Strategic Resources and Related Essays
 - <a href="../bpo-replacement-matrix/">The BPO Replacement Matrix: Operational and Financial Metrics</a>
-- <a href="../manifesto/">Why I Built HSN Labs</a>
+- <a href="../manifesto/">Why I Built hsnlabs</a>
 - <a href="../kafka-metamorfose-ia-futuro-do-trabalho/">De 1915 a Era da IA: Kafka, utilitarismo e o valor do trabalho</a>
-- <a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a>
+- <a href="https://hsnlabs.ai/bootcamp">Apply for the hsnlabs Five-Day Architecture Bootcamp</a>

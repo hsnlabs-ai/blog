@@ -51,7 +51,7 @@ An unconstrained model has no inherent concept of enterprise causality. In an op
 
 ## The Solution: Stochastic Planning, Bounded Code Execution
 
-At HSN Labs, we never permit open-ended tool loops in production. We enforce a strict separation between reasoning and execution through Finite State Machines:
+At hsnlabs, we never permit open-ended tool loops in production. We enforce a strict separation between reasoning and execution through Finite State Machines:
 
 * **Discrete Permissible States:** At any given microsecond, an enterprise transaction exists in an explicit state: Draft, Validated, Approved, or Committed. The agent is only allowed to see and propose tools that belong to that specific state. It is physically impossible for an agent in Draft state to trigger a Commit action.
 * **Invariant Guard Functions:** Transitions between states are not governed by the language model. They are governed by code-level Python guard functions. Even if a model suggests an order cancellation, the software guard checks whether goods have already left the fulfillment center. If the guard evaluates to false, the transition is rejected at the architecture level.
@@ -63,4 +63,4 @@ Autonomy is not the absence of rules. Enterprise autonomy is the ability of soft
 - <a href="../how-to-build-an-enterprise-ontology-from-scratch/">How to Build an Enterprise Ontology from Scratch: Step by Step</a>
 - <a href="../the-operational-ontology/">The Operational Ontology: How Enterprises Connect LLMs to Proprietary State</a>
 - <a href="../how-to-build-operational-ontology-python-mcp/">How to Build an Operational Business Ontology in Python and MCP</a>
-- <a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a>
+- <a href="https://hsnlabs.ai/bootcamp">Apply for the hsnlabs Five-Day Architecture Bootcamp</a>

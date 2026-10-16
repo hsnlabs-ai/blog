@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="rss.xsl"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
     
-    <title>Hugo Nascimento — Enterprise Agent Architecture</title>
+    <title>Hugo Nascimento · Enterprise Agent Architecture</title>
     <description>Posts and field notes on deterministic agent architectures, domain ontologies, and avoiding runtime failures in production.</description>
     <link>https://hsnlabs.ai/blog/</link>
     <atom:link href="https://hsnlabs.ai/blog/feed_rss_updated.xml" rel="self" type="application/rss+xml" /> <atom:link href="https://pubsubhubbub.appspot.com/" rel="hub" type="application/rss+xml"/>
@@ -13,8 +13,8 @@
     <language>en</language>
 
     
-    <pubDate>Thu, 15 Oct 2026 13:53:36 -0000</pubDate>
-    <lastBuildDate>Thu, 15 Oct 2026 13:53:36 -0000</lastBuildDate>
+    <pubDate>Fri, 16 Oct 2026 11:48:12 -0000</pubDate>
+    <lastBuildDate>Fri, 16 Oct 2026 11:48:12 -0000</lastBuildDate>
     <ttl>1440</ttl>
 
     
@@ -24,7 +24,7 @@
     
     <image>
       <url>https://hsnlabs.ai/blog/assets/brand/symbol/symbol-square-pure-cyan.png</url>
-      <title>Hugo Nascimento — Enterprise Agent Architecture</title>
+      <title>Hugo Nascimento · Enterprise Agent Architecture</title>
       <link>https://hsnlabs.ai/blog/</link>
     </image>
     
@@ -56,7 +56,7 @@
       <description>Open 10-block architecture framework for scoping and deploying enterprise AI pilots before writing production code. Version 1.4 updated in October 2026.</description>
       <link>https://hsnlabs.ai/blog/post/the-agentic-pilot-canvas-v1-4/</link>
       <pubDate>Wed, 07 Oct 2026 00:00:00 +0000</pubDate>
-      <source url="https://hsnlabs.ai/blog/feed_rss_updated.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
+      <source url="https://hsnlabs.ai/blog/feed_rss_updated.xml">Hugo Nascimento · Enterprise Agent Architecture</source>
       
       <guid isPermaLink="true">https://hsnlabs.ai/blog/post/the-agentic-pilot-canvas-v1-4/</guid>
       
@@ -91,7 +91,7 @@
       <description>Technical and financial analysis comparing Salesforce seats, Twenty CRM, and custom agentic stacks for enterprise engineering leaders.</description>
       <link>https://hsnlabs.ai/blog/post/buy-versus-build-b2b-enterprise-crm/</link>
       <pubDate>Mon, 28 Sep 2026 00:00:00 +0000</pubDate>
-      <source url="https://hsnlabs.ai/blog/feed_rss_updated.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
+      <source url="https://hsnlabs.ai/blog/feed_rss_updated.xml">Hugo Nascimento · Enterprise Agent Architecture</source>
       
       <guid isPermaLink="true">https://hsnlabs.ai/blog/post/buy-versus-build-b2b-enterprise-crm/</guid>
       
@@ -124,7 +124,7 @@
       <description>Detailed case study on how Cleveland Clinic eliminated spreadsheet bottlenecks and cut bed capacity calculation time by 75% using operational ontologies.</description>
       <link>https://hsnlabs.ai/blog/post/cleveland-clinic-case-study-operational-agents/</link>
       <pubDate>Mon, 28 Sep 2026 00:00:00 +0000</pubDate>
-      <source url="https://hsnlabs.ai/blog/feed_rss_updated.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
+      <source url="https://hsnlabs.ai/blog/feed_rss_updated.xml">Hugo Nascimento · Enterprise Agent Architecture</source>
       
       <guid isPermaLink="true">https://hsnlabs.ai/blog/post/cleveland-clinic-case-study-operational-agents/</guid>
       
@@ -155,7 +155,7 @@
       <description>Quantitative framework analyzing unit economics, operational metrics, and margin impact of replacing legacy BPO contracts with autonomous software agents.</description>
       <link>https://hsnlabs.ai/blog/post/bpo-replacement-matrix/</link>
       <pubDate>Sun, 27 Sep 2026 00:00:00 +0000</pubDate>
-      <source url="https://hsnlabs.ai/blog/feed_rss_updated.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
+      <source url="https://hsnlabs.ai/blog/feed_rss_updated.xml">Hugo Nascimento · Enterprise Agent Architecture</source>
       
       <guid isPermaLink="true">https://hsnlabs.ai/blog/post/bpo-replacement-matrix/</guid>
       
@@ -190,7 +190,7 @@
       <description>The complete step-by-step engineering blueprint to build and deploy an operational business ontology for autonomous AI agents in enterprise production.</description>
       <link>https://hsnlabs.ai/blog/post/how-to-build-an-enterprise-ontology-from-scratch/</link>
       <pubDate>Sun, 27 Sep 2026 00:00:00 +0000</pubDate>
-      <source url="https://hsnlabs.ai/blog/feed_rss_updated.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
+      <source url="https://hsnlabs.ai/blog/feed_rss_updated.xml">Hugo Nascimento · Enterprise Agent Architecture</source>
       
       <guid isPermaLink="true">https://hsnlabs.ai/blog/post/how-to-build-an-enterprise-ontology-from-scratch/</guid>
       
@@ -225,7 +225,7 @@
       <description>Why raw SQL schemas and vector stores fail autonomous AI agents: the limits of text-to-SQL, semantic ambiguity, and how ontologies provide deterministic operational boundaries.</description>
       <link>https://hsnlabs.ai/blog/post/ontology-vs-database-schema/</link>
       <pubDate>Sun, 27 Sep 2026 00:00:00 +0000</pubDate>
-      <source url="https://hsnlabs.ai/blog/feed_rss_updated.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
+      <source url="https://hsnlabs.ai/blog/feed_rss_updated.xml">Hugo Nascimento · Enterprise Agent Architecture</source>
       
       <guid isPermaLink="true">https://hsnlabs.ai/blog/post/ontology-vs-database-schema/</guid>
       
@@ -260,7 +260,7 @@
       <description>The architectural distinction between ontologies and knowledge graphs in enterprise AI systems: schemas versus instances, preventing graph drift, and building hybrid neuro-symbolic stacks.</description>
       <link>https://hsnlabs.ai/blog/post/ontology-vs-knowledge-graph/</link>
       <pubDate>Sun, 27 Sep 2026 00:00:00 +0000</pubDate>
-      <source url="https://hsnlabs.ai/blog/feed_rss_updated.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
+      <source url="https://hsnlabs.ai/blog/feed_rss_updated.xml">Hugo Nascimento · Enterprise Agent Architecture</source>
       
       <guid isPermaLink="true">https://hsnlabs.ai/blog/post/ontology-vs-knowledge-graph/</guid>
       
@@ -295,7 +295,7 @@
       <description>The core architecture of executable business ontologies: moving from static documentation to kinetic action engines, Palantir AIP mechanics, and deploying production MCP harnesses.</description>
       <link>https://hsnlabs.ai/blog/post/the-operational-ontology/</link>
       <pubDate>Sun, 27 Sep 2026 00:00:00 +0000</pubDate>
-      <source url="https://hsnlabs.ai/blog/feed_rss_updated.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
+      <source url="https://hsnlabs.ai/blog/feed_rss_updated.xml">Hugo Nascimento · Enterprise Agent Architecture</source>
       
       <guid isPermaLink="true">https://hsnlabs.ai/blog/post/the-operational-ontology/</guid>
       
@@ -330,7 +330,7 @@
       <description>The complete guide to operational ontologies for enterprise AI agents: why prompt-based systems fail, how to map business invariants into executable code, and how to govern autonomous actions.</description>
       <link>https://hsnlabs.ai/blog/post/what-is-an-ontology-for-ai-agents/</link>
       <pubDate>Sun, 27 Sep 2026 00:00:00 +0000</pubDate>
-      <source url="https://hsnlabs.ai/blog/feed_rss_updated.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
+      <source url="https://hsnlabs.ai/blog/feed_rss_updated.xml">Hugo Nascimento · Enterprise Agent Architecture</source>
       
       <guid isPermaLink="true">https://hsnlabs.ai/blog/post/what-is-an-ontology-for-ai-agents/</guid>
       
@@ -361,7 +361,7 @@
       <description>Executive blueprint for boardrooms and CFOs defending operational margins against legacy IT cost structures in the agentic economy.</description>
       <link>https://hsnlabs.ai/blog/post/c-suite-margin-protection-playbook/</link>
       <pubDate>Fri, 25 Sep 2026 00:00:00 +0000</pubDate>
-      <source url="https://hsnlabs.ai/blog/feed_rss_updated.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
+      <source url="https://hsnlabs.ai/blog/feed_rss_updated.xml">Hugo Nascimento · Enterprise Agent Architecture</source>
       
       <guid isPermaLink="true">https://hsnlabs.ai/blog/post/c-suite-margin-protection-playbook/</guid>
       
@@ -394,7 +394,7 @@
       <description>Step-by-step engineering architecture to build an operational business ontology in pure Python using Pydantic schemas and Model Context Protocol actions without proprietary lock-in.</description>
       <link>https://hsnlabs.ai/blog/post/how-to-build-operational-ontology-python-mcp/</link>
       <pubDate>Fri, 25 Sep 2026 00:00:00 +0000</pubDate>
-      <source url="https://hsnlabs.ai/blog/feed_rss_updated.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
+      <source url="https://hsnlabs.ai/blog/feed_rss_updated.xml">Hugo Nascimento · Enterprise Agent Architecture</source>
       
       <guid isPermaLink="true">https://hsnlabs.ai/blog/post/how-to-build-operational-ontology-python-mcp/</guid>
       
@@ -425,7 +425,7 @@
       <description>Why traditional Big 4 strategy slide decks fail to deliver working agentic software in complex enterprise production environments.</description>
       <link>https://hsnlabs.ai/blog/post/five-day-architecture-sprint/</link>
       <pubDate>Tue, 22 Sep 2026 00:00:00 +0000</pubDate>
-      <source url="https://hsnlabs.ai/blog/feed_rss_updated.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
+      <source url="https://hsnlabs.ai/blog/feed_rss_updated.xml">Hugo Nascimento · Enterprise Agent Architecture</source>
       
       <guid isPermaLink="true">https://hsnlabs.ai/blog/post/five-day-architecture-sprint/</guid>
       
@@ -458,7 +458,7 @@
       <description>Reflexão sobre utilitarismo, desvalorização do trabalhador e o impacto de agentes de IA a partir de A Metamorfose de Franz Kafka.</description>
       <link>https://hsnlabs.ai/blog/post/kafka-metamorfose-ia-futuro-do-trabalho/</link>
       <pubDate>Tue, 22 Sep 2026 00:00:00 +0000</pubDate>
-      <source url="https://hsnlabs.ai/blog/feed_rss_updated.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
+      <source url="https://hsnlabs.ai/blog/feed_rss_updated.xml">Hugo Nascimento · Enterprise Agent Architecture</source>
       
       <guid isPermaLink="true">https://hsnlabs.ai/blog/post/kafka-metamorfose-ia-futuro-do-trabalho/</guid>
       
@@ -489,7 +489,7 @@
       <description>Production architecture for autonomous collections, contract negotiation, and high-velocity commercial execution.</description>
       <link>https://hsnlabs.ai/blog/post/autonomous-negotiations-collections-contracts/</link>
       <pubDate>Fri, 18 Sep 2026 00:00:00 +0000</pubDate>
-      <source url="https://hsnlabs.ai/blog/feed_rss_updated.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
+      <source url="https://hsnlabs.ai/blog/feed_rss_updated.xml">Hugo Nascimento · Enterprise Agent Architecture</source>
       
       <guid isPermaLink="true">https://hsnlabs.ai/blog/post/autonomous-negotiations-collections-contracts/</guid>
       
@@ -522,7 +522,7 @@
       <description>How Palantir AIP bootcamps compressed 9-month sales cycles into 5-day deployments by binding LLMs to operational ontologies instead of raw prompts.</description>
       <link>https://hsnlabs.ai/blog/post/palantir-aip-bootcamp-operational-ontology/</link>
       <pubDate>Fri, 18 Sep 2026 00:00:00 +0000</pubDate>
-      <source url="https://hsnlabs.ai/blog/feed_rss_updated.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
+      <source url="https://hsnlabs.ai/blog/feed_rss_updated.xml">Hugo Nascimento · Enterprise Agent Architecture</source>
       
       <guid isPermaLink="true">https://hsnlabs.ai/blog/post/palantir-aip-bootcamp-operational-ontology/</guid>
       
@@ -553,7 +553,7 @@
       <description>Operational field lessons on the structural collapse of enterprise HR outsourcing contracts and manual workflows.</description>
       <link>https://hsnlabs.ai/blog/post/balance-sheet-guard-bpo-extinction/</link>
       <pubDate>Tue, 15 Sep 2026 00:00:00 +0000</pubDate>
-      <source url="https://hsnlabs.ai/blog/feed_rss_updated.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
+      <source url="https://hsnlabs.ai/blog/feed_rss_updated.xml">Hugo Nascimento · Enterprise Agent Architecture</source>
       
       <guid isPermaLink="true">https://hsnlabs.ai/blog/post/balance-sheet-guard-bpo-extinction/</guid>
       
@@ -586,7 +586,7 @@
       <description>Auditing the total cost of ownership behind Palantir contracts, foreign exchange exposure, and how to build open ontologies without 7-figure licensing.</description>
       <link>https://hsnlabs.ai/blog/post/palantir-pricing-tco-and-open-alternatives/</link>
       <pubDate>Mon, 14 Sep 2026 00:00:00 +0000</pubDate>
-      <source url="https://hsnlabs.ai/blog/feed_rss_updated.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
+      <source url="https://hsnlabs.ai/blog/feed_rss_updated.xml">Hugo Nascimento · Enterprise Agent Architecture</source>
       
       <guid isPermaLink="true">https://hsnlabs.ai/blog/post/palantir-pricing-tco-and-open-alternatives/</guid>
       
@@ -619,7 +619,7 @@
       <description>Architectural breakdown comparing analytical lakehouses against operational ontologies for mission-critical enterprise AI agents.</description>
       <link>https://hsnlabs.ai/blog/post/palantir-vs-databricks-agent-architecture/</link>
       <pubDate>Fri, 11 Sep 2026 00:00:00 +0000</pubDate>
-      <source url="https://hsnlabs.ai/blog/feed_rss_updated.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
+      <source url="https://hsnlabs.ai/blog/feed_rss_updated.xml">Hugo Nascimento · Enterprise Agent Architecture</source>
       
       <guid isPermaLink="true">https://hsnlabs.ai/blog/post/palantir-vs-databricks-agent-architecture/</guid>
       
@@ -650,7 +650,7 @@
       <description>Autonomous multimodal adjudication and real-time protocol arbitrage across complex insurance claims and healthcare underwriting.</description>
       <link>https://hsnlabs.ai/blog/post/protocol-arbitrage-claims-underwriting/</link>
       <pubDate>Fri, 11 Sep 2026 00:00:00 +0000</pubDate>
-      <source url="https://hsnlabs.ai/blog/feed_rss_updated.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
+      <source url="https://hsnlabs.ai/blog/feed_rss_updated.xml">Hugo Nascimento · Enterprise Agent Architecture</source>
       
       <guid isPermaLink="true">https://hsnlabs.ai/blog/post/protocol-arbitrage-claims-underwriting/</guid>
       
@@ -681,7 +681,7 @@
       <description>The structural collapse of hourly billable support models across enterprise ERP consultancies and IT helpdesks.</description>
       <link>https://hsnlabs.ai/blog/post/death-of-tier-1-erp-helpdesk/</link>
       <pubDate>Tue, 08 Sep 2026 00:00:00 +0000</pubDate>
-      <source url="https://hsnlabs.ai/blog/feed_rss_updated.xml">Hugo Nascimento — Enterprise Agent Architecture</source>
+      <source url="https://hsnlabs.ai/blog/feed_rss_updated.xml">Hugo Nascimento · Enterprise Agent Architecture</source>
       
       <guid isPermaLink="true">https://hsnlabs.ai/blog/post/death-of-tier-1-erp-helpdesk/</guid>
       

@@ -48,7 +48,7 @@ When an agent writes directly to a production database, auditability evaporates.
 
 ## The Three Defenses We Use to Protect Enterprise Databases
 
-At HSN Labs, our Forward Deployed Engineers never give models direct write access to primary databases. We treat the model as an untrusted client and enforce database protection through three architectural layers:
+At hsnlabs, our Forward Deployed Engineers never give models direct write access to primary databases. We treat the model as an untrusted client and enforce database protection through three architectural layers:
 
 ### 1. Isolated Read Replicas with Dynamic Masking
 Agents query isolated read replicas, never primary production databases. Before data leaves the corporate perimeter to enter the agent context window, automated data masking services tokenize personally identifiable information, tax IDs, and sensitive financial fields.
@@ -65,4 +65,4 @@ Security is not an afterthought in agentic engineering. Perimeter isolation is t
 - <a href="../how-to-build-an-enterprise-ontology-from-scratch/">How to Build an Enterprise Ontology from Scratch: Step by Step</a>
 - <a href="../legacy-core-backing-engine/">Legacy Core Systems Will Not Die: They Are the Execution Engine</a>
 - <a href="../five-day-architecture-sprint/">Why Big 4 Slide Decks Fail on Agent Projects</a>
-- <a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a>
+- <a href="https://hsnlabs.ai/bootcamp">Apply for the hsnlabs Five-Day Architecture Bootcamp</a>

@@ -164,12 +164,12 @@ def test_d10_replicated_footer():
     with open(index_file, "r", encoding="utf-8") as f:
         html = f.read()
     assert 'class="site-footer"' in html, "ERRO: site-footer ausente no HTML"
-    assert 'São Paulo' in html and 'WeWork' in html, "ERRO: Informacoes de localizacao ausentes no footer"
+    assert 'São Paulo' in html and 'Pinheiros' in html, "ERRO: Informacoes de localizacao ausentes no footer"
     assert 'Why Agents Fail' in html, "ERRO: Pilar Why Agents Fail ausente no footer"
     assert 'Agentic Engineering' in html, "ERRO: Pilar Agentic Engineering ausente no footer"
     assert 'Future of Work' in html, "ERRO: Pilar Future of Work ausente no footer"
     assert 'llms.txt for LLMs & Agents' in html or 'llms.txt for LLMs &amp; Agents' in html, "ERRO: Link llms.txt ausente no footer"
-    assert '2026 HSN Labs' in html, "ERRO: Copyright ausente no footer"
+    assert '2026 hsnlabs' in html, "ERRO: Copyright ausente no footer"
     print("PASS: Gate D10 Footer minimalista com pilares de indexacao e SEO validado")
 
 def test_d11_brand_typography_and_colors():
@@ -180,7 +180,7 @@ def test_d11_brand_typography_and_colors():
     assert 'Cormorant Garamond' in css, "ERRO: Tipografia Cormorant Garamond ausente no CSS"
     assert 'Inter' in css, "ERRO: Tipografia Inter ausente no CSS"
     assert '--cyan: #52B4FD' in css or '--cyan:' in css, "ERRO: Token de cor Brand Cyan ausente"
-    print("PASS: Gate D11 Cores e tipografia institucionais HSN Labs ativas")
+    print("PASS: Gate D11 Cores e tipografia institucionais hsnlabs ativas")
 
 def test_d12_geo_indexnow_and_websub():
     indexnow_file = SITE_DIR / "fb6d944d28fc4484bd669f6d9c4d3292.txt"

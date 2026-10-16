@@ -34,7 +34,7 @@ Em mercados com legislação trabalhista complexa sob a CLT, folha de pagamento 
 
 Cada hora extra, adicional noturno e benefício sindical corresponde a uma formula fechada. Ainda assim, operações tradicionais de BPO continuam empregando salas cheias de analistas conciliando manualmente cartões de ponto e preparando envios governamentais como eventos do eSocial.
 
-Um único erro humano de digitação em um evento do eSocial dispara multas federais automáticas, trava certidões negativas de débito e gera ações trabalhistas imediatas. Na Eva People e na HSN Labs, provamos que grafos de regras e travas de schema executam esses fluxos com zero defeito, enviando dados verificados direto para as pontes governamentais em segundos.
+Um único erro humano de digitação em um evento do eSocial dispara multas federais automáticas, trava certidões negativas de débito e gera ações trabalhistas imediatas. Na Eva People e na hsnlabs, provamos que grafos de regras e travas de schema executam esses fluxos com zero defeito, enviando dados verificados direto para as pontes governamentais em segundos.
 
 ### 2. Livro Razão e Relatórios Fiscais Estatutários
 O fechamento mensal corporativo costuma levar de dez a quinze dias nas equipes financeiras.
@@ -75,4 +75,4 @@ Quando uma empresa substitui mão de obra terceirizada por trabalhadores digitai
 - <a href="/blog/pt/post/matriz-substituicao-bpo/">A Matriz de Substituicao de BPO: Metricas Operacionais e Financeiras</a>
 - <a href="/blog/pt/post/morte-suporte-nivel-1-erp/">A Morte do Suporte Nivel 1: Por Que Consultorias de ERP Perdem Horas Faturaveis</a>
 - <a href="/blog/pt/post/comprar-ou-construir-crm-vendas-b2b/">CRM de Vendas B2B: Comprar Salesforce, Adaptar Twenty ou Construir com Agentes</a>
-- <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da HSN Labs</a>
+- <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da hsnlabs</a>

@@ -15,7 +15,7 @@ image: assets/images/posts/how-to-build-an-enterprise-ontology-from-scratch/cove
 
 <!-- more -->
 
-*Contexto: Todo projeto de agentes na HSN Labs começa no mesmo lugar: desenhando a ontologia operacional do cliente. Sem essa fundação de dados e regras, nenhum modelo de linguagem consegue atuar de forma segura no mundo corporativo.*
+*Contexto: Todo projeto de agentes na hsnlabs começa no mesmo lugar: desenhando a ontologia operacional do cliente. Sem essa fundação de dados e regras, nenhum modelo de linguagem consegue atuar de forma segura no mundo corporativo.*
 
 A maioria das iniciativas de IA começa escolhendo qual modelo de linguagem utilizar ou configurando bancos vetoriais. Essa é a ordem inversa da boa engenharia de software.
 
@@ -136,4 +136,4 @@ Construir uma ontologia corporativa exige rigor analítico e compreensão profun
 - <a href="/blog/pt/post/estudo-caso-latam-airlines/">LATAM Airlines: Agentes em Producao com Margem de 3 Por Cento</a>
 - <a href="/blog/pt/post/estudo-caso-cleveland-clinic-agentes-operacionais/">Estudo de Caso: Como a Cleveland Clinic Escalou Fluxo de Pacientes</a>
 - <a href="/blog/pt/post/agentes-ilimitados-maquinas-estados-finitos/">Estudo de Caso: 42 Chamadas em Loop as 2 da Manha</a>
-- <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da HSN Labs</a>
+- <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da hsnlabs</a>

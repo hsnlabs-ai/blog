@@ -50,9 +50,9 @@ Todo Chief Information Security Officer com quem converso na Faria Lima e na Pau
 
 Se um sistema autônomo não puder provar isolamento de perímetro, separação estrita de limites somente leitura e validação criptográfica rígida em cada mutação, a equipe de segurança bloqueara o projeto por tempo indeterminado. A PoC morre não porque o modelo e burro, mas porque a engenharia foi irresponsável.
 
-## Como a HSN Labs Escapa do Cemitério
+## Como a hsnlabs Escapa do Cemitério
 
-Na HSN Labs, não construímos apresentações de slides para conselhos nem demos frágeis de sandbox. Quando nossos engenheiros entram em um cliente corporativo, aplicamos três regras inegociáveis:
+Na hsnlabs, não construímos apresentações de slides para conselhos nem demos frágeis de sandbox. Quando nossos engenheiros entram em um cliente corporativo, aplicamos três regras inegociáveis:
 
 * **Ancorar Cada Passo em Ontologias Explícitas:** Modelos nunca consultam bancos relacionais diretamente. Eles interagem com grafos de domínio pré-compilados que impõem invariantes de esquema antes de qualquer execução.
 * **Delimitar a Execução com Máquinas de Estados Finitos:** Cada fluxo de trabalho agêntico precisa operar dentro de transições de estado matematicamente comprováveis. O modelo pode sugerir o caminho, mas travas de software em nível de código impõem os limites.
@@ -64,4 +64,4 @@ O valor corporativo não é medido por chatbots conversadores. Ele é medido por
 - <a href="/blog/pt/post/o-que-e-uma-ontologia-para-agentes-ia/">O Que E uma Ontologia para Agentes de IA? O Guia Definitivo</a>
 - <a href="/blog/pt/post/por-que-rag-falha-em-erp/">Por Que RAG Tradicional Falha em ERPs Financeiros</a>
 - <a href="/blog/pt/post/deriva-de-integracao/">A Deriva de Integracao: Quando Prompts Quebram Agentes em Producao</a>
-- <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da HSN Labs</a>
+- <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da hsnlabs</a>

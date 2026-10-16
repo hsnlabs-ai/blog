@@ -9,15 +9,31 @@ description: Posts e notas de campo sobre arquitetura de agentes enterprise, ont
 
 Empresário, consultor e diretor de tecnologia e produto como CPTO. Pioneiro na implementação de sistemas agênticos em produção para grandes contas e referência na aplicação dessas arquiteturas desde 2022.
 
-Conecto economia de balanço e engenharia de software de missão crítica. Com bagagem formada entre contratos corporativos na Philips e dutos de dados distribuídos na Oncase, auxilio lideranças executivas na transição de protótipos frágeis de IA para sistemas agênticos determinísticos e auditáveis integrados aos bancos de dados de registro.
+Meu foco operacional é **Arquitetura de Agentes Enterprise**. Construo arquiteturas multiagente customizadas sobre ontologias de domínio executáveis para operações corporativas de missão crítica. Substituo operações manuais frágeis de BPO e gargalos de TI legada por forças de trabalho digitais autônomas que não alucinam nem falham em produção.
 
-Projetos em produção incluem **Deloitte**, **Santander**, **Softplan**, **Unipar Carbocloro**, **LWSA**, **Turbi**, **Caju**, **Cast Group** e **Insi**.
+Arquiteturas entregues incluem **Deloitte**, **Santander**, **Softplan**, **Unipar Carbocloro**, **LWSA**, **Turbi**, **Caju**, **Cast Group** e **Insi**.
 
-<a href="https://hsnlabs.ai/pt/">HSN Labs Boutique</a> &nbsp;&bull;&nbsp; <a href="https://www.linkedin.com/in/hugosoaresnascimento/">LinkedIn</a> &nbsp;&bull;&nbsp; <a href="https://github.com/hsnlabs-ai/blog">GitHub</a> &nbsp;&bull;&nbsp; <a href="/blog/">English Version</a>
+<a href="https://hsnlabs.ai/pt/">hsnlabs Boutique</a> &nbsp;&bull;&nbsp; <a href="https://www.linkedin.com/in/hugosoaresnascimento/">LinkedIn</a> &nbsp;&bull;&nbsp; <a href="https://github.com/hsnlabs-ai/blog">GitHub</a> &nbsp;&bull;&nbsp; <a href="/blog/">English Version</a>
 
 ---
 
 <div class="blog-list" id="component-blog-list">
+  <article class="blog-row blog-post-item">
+    <a class="blog-row-thumb" href="/blog/pt/post/the-agentic-pilot-canvas-v1-4/">
+      <img src="../assets/images/posts/the-agentic-pilot-canvas/cover.png" alt="The Agentic Pilot Canvas v1.4: O Framework para Desenhar Pilotos de IA que Sobrevivem a Producao" loading="lazy">
+    </a>
+    <div class="blog-row-body">
+      <div class="blog-row-byline">
+        <img class="blog-row-avatar" src="../assets/images/author/hugo-nascimento.jpg" alt="Hugo S. Nascimento" loading="lazy">
+        <h2 class="blog-row-title">
+          <a href="/blog/pt/post/the-agentic-pilot-canvas-v1-4/">The Agentic Pilot Canvas v1.4: O Framework para Desenhar Pilotos de IA que Sobrevivem a Producao</a>
+        </h2>
+      </div>
+      <p class="blog-row-meta">2026-10-07 &bull; Agentic Engineering &bull; Hugo S. Nascimento</p>
+      <p class="blog-row-description">Framework aberto de arquitetura em 10 blocos para desenhar pilotos de IA corporativa antes de escrever codigo. Versao 1.4 atualizada em outubro de 2026.</p>
+      <a class="blog-row-cta" href="/blog/pt/post/the-agentic-pilot-canvas-v1-4/">Ler Post &rarr;</a>
+    </div>
+  </article>
   <article class="blog-row blog-post-item">
     <a class="blog-row-thumb" href="/blog/pt/post/comprar-ou-construir-crm-vendas-b2b/">
       <img src="../assets/images/posts/buy-versus-build-b2b-enterprise-crm/cover.webp" alt="CRM de Vendas B2B: Comprar Salesforce, Adaptar Twenty ou Construir com Agentes" loading="lazy">
@@ -500,17 +516,17 @@ Projetos em produção incluem **Deloitte**, **Santander**, **Softplan**, **Unip
   </article>
   <article class="blog-row blog-post-item">
     <a class="blog-row-thumb" href="/blog/pt/post/manifesto/">
-      <img src="../assets/images/posts/manifesto/cover.webp" alt="Por Que Criei a HSN Labs" loading="lazy">
+      <img src="../assets/images/posts/manifesto/cover.webp" alt="Por Que Criei a hsnlabs" loading="lazy">
     </a>
     <div class="blog-row-body">
       <div class="blog-row-byline">
         <img class="blog-row-avatar" src="../assets/images/author/hugo-nascimento.jpg" alt="Hugo S. Nascimento" loading="lazy">
         <h2 class="blog-row-title">
-          <a href="/blog/pt/post/manifesto/">Por Que Criei a HSN Labs</a>
+          <a href="/blog/pt/post/manifesto/">Por Que Criei a hsnlabs</a>
         </h2>
       </div>
       <p class="blog-row-meta">2026-07-08 &bull; Future of Work &bull; Hugo S. Nascimento</p>
-      <p class="blog-row-description">Tese fundadora da HSN Labs: construindo arquiteturas de agentes enterprise sobre ontologias executáveis de domínio.</p>
+      <p class="blog-row-description">Tese fundadora da hsnlabs: construindo arquiteturas de agentes enterprise sobre ontologias executáveis de domínio.</p>
       <a class="blog-row-cta" href="/blog/pt/post/manifesto/">Ler Post &rarr;</a>
     </div>
   </article>

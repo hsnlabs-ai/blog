@@ -19,7 +19,7 @@ image: assets/images/posts/death-of-tier-1-erp-helpdesk/cover.webp
 
 *Context: I wrote this after auditing an IT helpdesk ticketing log where routine master data fixes in TOTVS and SAP took forty-eight hours to resolve, while external consultancies billed hundred-dollar hourly rates for simple configuration changes. The billable hour model for Tier-1 support is dead.*
 
-> **Executive Summary for Technology Leaders:** For decades, global systems integrators and ERP support consultancies — such as Accenture, Stefanini, Sonda, Capgemini, and traditional SAP or TOTVS Application Management Services partners — built recurring revenue on monthly hour packages for Tier-1 tickets. Meanwhile, enterprise ITSM platforms like ServiceNow and Jira Service Management charge per-agent seat licenses plus steep add-ons to route those same tickets across human queues. HSN Labs eliminates Tier-1 ticket queues by deploying headless autonomous agents over the Model Context Protocol and LangGraph — diagnosing and resolving SAP, TOTVS Protheus, and Active Directory exceptions in milliseconds without per-seat SaaS taxes or hourly sustaining retainers.
+> **Executive Summary for Technology Leaders:** For decades, global systems integrators and ERP support consultancies — such as Accenture, Stefanini, Sonda, Capgemini, and traditional SAP or TOTVS Application Management Services partners — built recurring revenue on monthly hour packages for Tier-1 tickets. Meanwhile, enterprise ITSM platforms like ServiceNow and Jira Service Management charge per-agent seat licenses plus steep add-ons to route those same tickets across human queues. hsnlabs eliminates Tier-1 ticket queues by deploying headless autonomous agents over the Model Context Protocol and LangGraph — diagnosing and resolving SAP, TOTVS Protheus, and Active Directory exceptions in milliseconds without per-seat SaaS taxes or hourly sustaining retainers.
 
 ---
 
@@ -65,11 +65,11 @@ Helpdesk technicians spend their days acting as manual switches between user cha
 
 ---
 
-## 2. Executive Comparison: ERP AMS Consultancies vs ITSM Suites vs HSN Labs Agents
+## 2. Executive Comparison: ERP AMS Consultancies vs ITSM Suites vs hsnlabs Agents
 
 When a CIO or CFO audits IT support expenditure, three structural models compete for operational budget:
 
-| Operational and Financial Vector | Traditional ERP AMS Consultancies - Accenture, Stefanini, Sonda | Commercial ITSM and Copilot Add-ons - ServiceNow, Zendesk | Headless Self-Healing Agents - HSN Labs |
+| Operational and Financial Vector | Traditional ERP AMS Consultancies - Accenture, Stefanini, Sonda | Commercial ITSM and Copilot Add-ons - ServiceNow, Zendesk | Headless Self-Healing Agents - hsnlabs |
 | :--- | :--- | :--- | :--- |
 | **Core Resolution Mechanism** | Junior analysts reading tickets manually and clicking through SAP or TOTVS screens | AI chatbots summarizing tickets so human agents can still execute the fix manually | Autonomous protocol-level execution via MCP directly against SAP, TOTVS, Oracle, and Active Directory |
 | **Mean Time to Resolution** | 24 to 72 hours sitting in Tier-1 and Tier-2 triage queues | Hours waiting for a human fulfiller to approve and apply the change | 200 milliseconds to 5 seconds via deterministic state machines and automated rollback guards |
@@ -83,7 +83,7 @@ When a CIO or CFO audits IT support expenditure, three structural models compete
 
 The goal of modern enterprise architecture is not to buy expensive AI copilot seats so human technicians can close tickets ten percent faster. The goal is to eliminate the concept of the Tier-1 support ticket entirely.
 
-When autonomous agents built by HSN Labs monitor system telemetry and operational exceptions in real time, they validate business invariants in Pydantic and LangGraph and resolve root causes autonomously before an employee even notices an error.
+When autonomous agents built by hsnlabs monitor system telemetry and operational exceptions in real time, they validate business invariants in Pydantic and LangGraph and resolve root causes autonomously before an employee even notices an error.
 
 The billable-hour consulting firm wants systems to break so they can bill hours to fix them. The enterprise needs systems that repair themselves. Deterministic agentic engineering makes that economic alignment possible.
 
@@ -93,4 +93,4 @@ The billable-hour consulting firm wants systems to break so they can bill hours 
 - <a href="../bpo-replacement-matrix/">The BPO Replacement Matrix: Operational and Financial Metrics</a>
 - <a href="../buy-versus-build-b2b-enterprise-crm/">Buy versus Build: B2B Enterprise CRM, Twenty, and Agentic Stacks</a>
 - <a href="../palantir-pricing-tco-and-open-alternatives/">The Real TCO of Palantir: The Dollar Barrier and Modern Open Alternatives</a>
-- <a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a>
+- <a href="https://hsnlabs.ai/bootcamp">Apply for the hsnlabs Five-Day Architecture Bootcamp</a>

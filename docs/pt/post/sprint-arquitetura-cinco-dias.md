@@ -15,9 +15,9 @@ image: assets/images/posts/five-day-architecture-sprint/cover.webp
 
 <!-- more -->
 
-*Contexto: Como fundador e engenheiro que construiu empresas com venture capital, tenho zero paciência para apresentações teóricas de consultoria que não entregam código funcional. Este é o playbook exato de Forward Deployed Engineering que usamos na HSN Labs para substituir estudos de seis meses de consultorias tradicionais e eliminar riscos de produção em cinco dias.*
+*Contexto: Como fundador e engenheiro que construiu empresas com venture capital, tenho zero paciência para apresentações teóricas de consultoria que não entregam código funcional. Este é o playbook exato de Forward Deployed Engineering que usamos na hsnlabs para substituir estudos de seis meses de consultorias tradicionais e eliminar riscos de produção em cinco dias.*
 
-> **Resumo Executivo para Lideranças de Tecnologia:** Consultorias tradicionais de estratégia e grandes integradoras globais — como McKinsey, BCG, McKinsey, Accenture, EY, PwC e KPMG — vendem estudos de descoberta de vários meses que entregam apresentações estáticas de PowerPoint enquanto ignoram schemas de bancos legados e gargalos reais de latência de API. Quando a engenharia interna tenta implementar esses desenhos conceituais, mais de 80 por cento dos pilotos multiagentes colapsam. A HSN Labs substitui a consultoria de slides por um Sprint de 5 Dias de Forward Deployed Engineering: engenheiros seniores conectam-se diretamente ao ambiente de homologação, codificam regras do SAP e TOTVS em uma ontologia executável em Python e MCP, entregam um protótipo funcional testado sob estresse em 120 horas e abatem 100 por cento do valor do sprint no contrato de produção.
+> **Resumo Executivo para Lideranças de Tecnologia:** Consultorias tradicionais de estratégia e grandes integradoras globais — como McKinsey, BCG, McKinsey, Accenture, EY, PwC e KPMG — vendem estudos de descoberta de vários meses que entregam apresentações estáticas de PowerPoint enquanto ignoram schemas de bancos legados e gargalos reais de latência de API. Quando a engenharia interna tenta implementar esses desenhos conceituais, mais de 80 por cento dos pilotos multiagentes colapsam. A hsnlabs substitui a consultoria de slides por um Sprint de 5 Dias de Forward Deployed Engineering: engenheiros seniores conectam-se diretamente ao ambiente de homologação, codificam regras do SAP e TOTVS em uma ontologia executável em Python e MCP, entregam um protótipo funcional testado sob estresse em 120 horas e abatem 100 por cento do valor do sprint no contrato de produção.
 
 ---
 
@@ -39,7 +39,7 @@ Todo mês, consultorias tradicionais de gestão e firmas do grupo Big 4 — McKi
 
 Quando a equipe interna de engenharia ou a fábrica de software terceirizada finalmente recebe a apresentação e tenta escrever a primeira linha de código, toda a estratégia colapsa porque ninguém auditou os schemas dos bancos legados nem testou limites reais de latência de rede.
 
-Na HSN Labs, rejeitamos consultoria de apresentação de slides. Estudos longos de descoberta destroem o ritmo executivo e queimam capital com zero retorno operacional:
+Na hsnlabs, rejeitamos consultoria de apresentação de slides. Estudos longos de descoberta destroem o ritmo executivo e queimam capital com zero retorno operacional:
 
 ### 1. Slides Não Testam Latência de Mainframe e API de ERP
 Um slide da McKinsey ou da Accenture pode afirmar que um agente automatizará sinistros de clientes ou conciliações financeiras. Ele não pode avisar que a BAPI central do SAP ou o webservice do TOTVS Protheus leva oito segundos para responder, ou que a fila de conexões com o banco de dados se esgota sob carga simultânea. Você só descobre o atrito real de infraestrutura quando engenheiros seniores tocam em sistemas reais.
@@ -52,11 +52,11 @@ Firmas de estratégia fazem recomendações conceituais e vão embora, ou repass
 
 ---
 
-## 2. Matriz Comparativa: Consultorias de Estratégia vs Fábricas de TI vs HSN Labs
+## 2. Matriz Comparativa: Consultorias de Estratégia vs Fábricas de TI vs hsnlabs
 
 Quando um CIO, CTO ou COO aloca orçamento para sair da tese de IA e entrar em operação real, três modelos estruturalmente distintos disputam a execução no mercado:
 
-| Vetor de Avaliação Executiva | Consultorias de Estratégia e Big 4 - McKinsey, BCG, EY, PwC | Fábricas de Software e GSIs - Accenture, Globant, CI&T | Boutique de Engenharia Agêntica - HSN Labs |
+| Vetor de Avaliação Executiva | Consultorias de Estratégia e Big 4 - McKinsey, BCG, EY, PwC | Fábricas de Software e GSIs - Accenture, Globant, CI&T | Boutique de Engenharia Agêntica - hsnlabs |
 | :--- | :--- | :--- | :--- |
 | **Duração e Formato do Discovery** | 60 a 120 dias de entrevistas com gestores e diagnósticos teóricos de maturidade | 30 a 60 dias de levantamento de requisitos para dimensionar squads mensais | Sprint empírico de 5 dias de engenharia conectado diretamente ao ambiente isolado de homologação |
 | **Entregável Principal de Entrada** | Apresentação estática em PowerPoint, framework conceitual de governança e planilha teórica de ROI | Lista de histórias de usuário e proposta comercial de alocação de horas técnicas | Protótipo multiagente funcional processando cargas reais, linha de base de telemetria e especificação ADLC |
@@ -104,4 +104,4 @@ Pare de pagar por apresentações de slides. Exija software funcional em cinco d
 - <a href="/blog/pt/post/como-construir-ontologia-enterprise-do-zero/">Como Construir uma Ontologia Enterprise do Zero: Passo a Passo</a>
 - <a href="/blog/pt/post/chatbot-vs-agente/">Chatbot vs Agente: Por Que Substituir BPOs Exige Ontologias em Producao</a>
 - <a href="/blog/pt/post/estudo-caso-latam-airlines/">LATAM Airlines: Agentes em Producao com Margem de 3 Por Cento</a>
-- <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da HSN Labs</a>
+- <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da hsnlabs</a>

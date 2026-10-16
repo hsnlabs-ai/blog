@@ -160,7 +160,7 @@ O ecossistema de software de código aberto em 2026 viu o nascimento de projetos
 * **Tese Central:** CRM de código aberto desenhado para operação por agentes de pesquisa autônoma executado sobre infraestrutura em nuvem integrada.
 * **Livro-Razão de Evidências:** agentes de enriquecimento investigam empresas e contatos, registrando fatos acompanhados de suas fontes originais e rejeitando dados deduzidos por mera suposição probabilística.
 
-### Arquitetura de Referência sem Telas da HSN Labs
+### Arquitetura de Referência sem Telas da hsnlabs
 
 ```mermaid
 flowchart TD
@@ -254,13 +254,13 @@ Atribua a pontuação correspondente para cada resposta afirmativa da sua empres
 
 * **De 0 a 8 pontos:** Adote a Opção Buy. O tamanho da operação não justifica esforço de engenharia. Contrate planos básicos de suítes comerciais e mantenha foco no fechamento de negócios.
 * **De 9 a 16 pontos:** Adote a Opção Adapt com Twenty CRM. O volume financeiro de licenças começou a pressionar o fluxo de caixa. A auto-hospedagem de Twenty CRM reduz custos diretos e coloca o banco de dados sob governança própria.
-* **De 17 a 26 pontos:** Desenvolva Arquitetura Agêntica com a HSN Labs. Sua operação sofre integralmente os custos do Dual Bleed. Manter softwares tradicionais com preenchimento manual consome capital valioso de margem e reduz a produtividade da sua equipe.
+* **De 17 a 26 pontos:** Desenvolva Arquitetura Agêntica com a hsnlabs. Sua operação sofre integralmente os custos do Dual Bleed. Manter softwares tradicionais com preenchimento manual consome capital valioso de margem e reduz a produtividade da sua equipe.
 
 ---
 
 ## 8. Estratégia de Substituição Progressiva
 
-A migração de um sistema crítico de CRM não deve ser realizada com desligamento abrupto da plataforma antiga. Na HSN Labs, aplicamos o método de Substituição Progressiva em quatro etapas:
+A migração de um sistema crítico de CRM não deve ser realizada com desligamento abrupto da plataforma antiga. Na hsnlabs, aplicamos o método de Substituição Progressiva em quatro etapas:
 
 * **Fase 1:** Escuta Passiva. Os agentes conectam-se às caixas postais e calendários dos vendedores, construindo o grafo de contas e decisores em segundo plano sem alterar a rotina de trabalho existente.
 * **Fase 2:** Assistência Ativa. Os agentes passam a redigir briefings de preparação de reuniões e minutas de follow-up, conquistando a adesão dos vendedores ao economizar tempo útil de trabalho.
@@ -279,4 +279,4 @@ Klarna: descontinuou contratos enterprise de Salesforce e Zendesk em favor de st
 - <a href="/blog/pt/post/matriz-substituicao-bpo/">A Matriz de Substituicao de BPO: Metricas Operacionais e Financeiras</a>
 - <a href="/blog/pt/post/preco-palantir-tco-alternativas-abertas/">O TCO Real da Palantir: A Barreira em Dolar e Alternativas Abertas</a>
 - <a href="/blog/pt/post/playbook-c-suite-protecao-margem/">O Playbook de Transicao da Diretoria: Protegendo Margens na Era Agentica</a>
-- <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da HSN Labs</a>
+- <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da hsnlabs</a>

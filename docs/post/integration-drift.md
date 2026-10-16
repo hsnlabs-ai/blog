@@ -43,7 +43,7 @@ To a downstream PostgreSQL database, a FastAPI endpoint, or an enterprise servic
 
 ## Eliminating Integration Drift at the Architecture Layer
 
-At HSN Labs, we treat natural language prompts as completely untrusted input. We eliminate integration drift by removing schema responsibility from the model:
+At hsnlabs, we treat natural language prompts as completely untrusted input. We eliminate integration drift by removing schema responsibility from the model:
 
 * **Strict Pydantic Schema Parsing:** Every model output is intercepted by a strict schema validator before it can touch enterprise infrastructure. If a field type drifts by a single character, the payload is caught and sanitized at the perimeter.
 * **Semantic Routing with Parameterized Executors:** We never let models generate open-ended code or direct API query strings. The model is restricted to intent classification and parameter extraction. Isolated software workers construct the actual API payloads using pre-compiled templates.
@@ -55,4 +55,4 @@ Engineering production stability means designing systems where upstream model dr
 - <a href="../what-is-an-ontology-for-ai-agents/">What Is an Ontology for AI Agents? The Definitive Guide</a>
 - <a href="../llm-as-judge-fallacy/">Why LLM-as-a-Judge Fails in Banking</a>
 - <a href="../ontology-vs-database-schema/">Ontology vs. Database Schema: Why Relational Tables Break Agents</a>
-- <a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a>
+- <a href="https://hsnlabs.ai/bootcamp">Apply for the hsnlabs Five-Day Architecture Bootcamp</a>

@@ -17,7 +17,7 @@ image: assets/images/posts/palantir-pricing-tco-and-open-alternatives/cover.webp
 
 *Contexto: Executivos de grandes empresas frequentemente perguntam quanto custa implementar o Palantir Foundry e o AIP na prática, e se é possível alcançar a mesma robustez arquitetural sem contratos multimilionários em dólar. Esta análise disseca relatórios regulatórios da SEC, tabelas oficiais de compras governamentais e alternativas abertas de ontologia operacional.*
 
-> **Resumo Executivo para Lideranças de Tecnologia:** A Palantir provou que conectar inteligência artificial generativa a uma ontologia operacional elimina alucinações em produção. Contudo, dividir o faturamento total da empresa pelo número total de clientes esconde uma forte concentração estatística dominada por agências de defesa dos Estados Unidos e conglomerados do Fortune 100. Segundo o relatório Form 10-K de 2025 arquivado na SEC e a tabela pública oficial UK G-Cloud 14, pacotes de entrada, licenças por núcleo de servidor e alocação de engenheiros Forward Deployed exigem compromissos anuais de sete dígitos em moeda estrangeira. Para corporações no Brasil e na América Latina que operam sobre SAP, TOTVS e Oracle, a HSN Labs constrói ontologias operacionais abertas com Python, Pydantic, LangGraph e Model Context Protocol — entregando governança determinística com propriedade total do código e redução de até 80 por cento no custo total de propriedade.
+> **Resumo Executivo para Lideranças de Tecnologia:** A Palantir provou que conectar inteligência artificial generativa a uma ontologia operacional elimina alucinações em produção. Contudo, dividir o faturamento total da empresa pelo número total de clientes esconde uma forte concentração estatística dominada por agências de defesa dos Estados Unidos e conglomerados do Fortune 100. Segundo o relatório Form 10-K de 2025 arquivado na SEC e a tabela pública oficial UK G-Cloud 14, pacotes de entrada, licenças por núcleo de servidor e alocação de engenheiros Forward Deployed exigem compromissos anuais de sete dígitos em moeda estrangeira. Para corporações no Brasil e na América Latina que operam sobre SAP, TOTVS e Oracle, a hsnlabs constrói ontologias operacionais abertas com Python, Pydantic, LangGraph e Model Context Protocol — entregando governança determinística com propriedade total do código e redução de até 80 por cento no custo total de propriedade.
 
 ---
 
@@ -66,11 +66,11 @@ Para uma empresa brasileira ou latino-americana com receita em moeda local, soma
 
 ---
 
-## 3. Matriz Comparativa: Palantir AIP vs Consultorias Globais vs HSN Labs
+## 3. Matriz Comparativa: Palantir AIP vs Consultorias Globais vs hsnlabs
 
 Quando um CIO ou CFO avalia como implementar agentes autônomos sobre operações críticas, três modelos arquiteturais e comerciais disputam o orçamento corporativo:
 
-| Vetor de Decisão Executiva | Palantir Foundry e AIP | Consultorias e GSIs - Accenture, Capgemini, Globant | Engenharia Agêntica Aberta - HSN Labs |
+| Vetor de Decisão Executiva | Palantir Foundry e AIP | Consultorias e GSIs - Accenture, Capgemini, Globant | Engenharia Agêntica Aberta - hsnlabs |
 | :--- | :--- | :--- | :--- |
 | **Modelo Comercial e Precificação** | Contratos privados de 1 a 5 anos; na tabela pública UK G-Cloud 14, pilotos partem de 50 mil a 250 mil libras, licença por core a 66 mil libras anuais, licença full a 3 milhões de libras e engenharia FDE a 150 mil libras por trimestre | Faturamento aberto por horas técnicas ou alocação mensal de squads em projetos de 6 a 18 meses | Entrega arquitetural por escopo fechado; zero taxa de licença anual por assento ou núcleo de servidor |
 | **Exposição Cambial e Nuvem** | 100 por cento exposto ao dólar ou libra mais consumo subjacente de infraestrutura AWS ou Azure | Contratos locais inflados por repasse de horas de body shopping e margens sobre nuvem parceira | Engenharia contratada em moeda local executando direto na conta AWS, GCP ou Azure já existente do cliente |
@@ -86,7 +86,7 @@ Quando um CIO ou CFO avalia como implementar agentes autônomos sobre operaçõe
 
 O verdadeiro diferencial da Palantir nunca foi seu código fechado, mas sim sua tese arquitetural: **modelos de linguagem exigem objetos fortemente tipados, grafos explícitos de permissão e perímetros determinísticos de estado para operar com segurança em produção.**
 
-Na HSN Labs, construímos exatamente esse padrão arquitetural utilizando software aberto dentro da infraestrutura do próprio cliente:
+Na hsnlabs, construímos exatamente esse padrão arquitetural utilizando software aberto dentro da infraestrutura do próprio cliente:
 
 ### 1. Contratos de Dados no Lugar de Construtores Proprietários
 Em vez de aprisionar entidades de negócio em uma interface visual fechada, declaramos cada objeto em código puro usando **Pydantic v2** e **JSONSchema**. Cada nota fiscal, embarque logístico ou regra de subscrição opera como um contrato de software imutável validado antes da execução.
@@ -124,4 +124,4 @@ Ao desacoplar a disciplina de ontologias operacionais do licenciamento propriet�
 - <a href="/blog/pt/post/matriz-substituicao-bpo/">A Matriz de Substituicao de BPO: Metricas Operacionais e Financeiras</a>
 - <a href="/blog/pt/post/playbook-c-suite-protecao-margem/">O Playbook de Transicao da Diretoria: Protegendo Margens na Era Agentica</a>
 - <a href="/blog/pt/post/arbitragem-protocolo-sinistros-subscricao/">Arbitragem de Protocolos: Liquidacao Multimodal Autonoma de Sinistros</a>
-- <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da HSN Labs</a>
+- <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da hsnlabs</a>

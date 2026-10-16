@@ -83,7 +83,7 @@ def test_gate_e5_zero_parentheses():
     print("PASS: Gate E5 Invariante Zero Parenteses auditado e validado em 100% dos textos PT")
 
 if __name__ == "__main__":
-    print("=== INICIANDO EXECUCAO DA SUITE ECOSSISTEMA HSN LABS ===")
+    print("=== INICIANDO EXECUCAO DA SUITE ECOSSISTEMA hsnlabs ===")
     test_gate_e1_cross_navigation()
     test_gate_e2_essay_term_extinction()
     test_gate_e3_lgpd_banner()

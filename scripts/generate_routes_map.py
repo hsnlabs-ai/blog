@@ -8,8 +8,8 @@ routes_data = {
             "id": "site_home",
             "en_path": "/",
             "pt_path": "/pt/",
-            "title_en": "HSN Labs — AI Agents That Don't Fail in Production",
-            "title_pt": "HSN Labs — Agentes de IA que Nao Falham em Producao",
+            "title_en": "hsnlabs — AI Agents That Don't Fail in Production",
+            "title_pt": "hsnlabs — Agentes de IA que Nao Falham em Producao",
             "description_en": "Boutique building resilient multi-agent architectures on business ontologies.",
             "description_pt": "Boutique de engenharia construindo arquiteturas multiagente resilientes em ontologias de negocios."
         },
@@ -17,8 +17,8 @@ routes_data = {
             "id": "site_bootcamp",
             "en_path": "/bootcamp/",
             "pt_path": "/pt/bootcamp/",
-            "title_en": "5-Day Enterprise Agent Bootcamp | HSN Labs",
-            "title_pt": "Bootcamp de Agentes Enterprise de 5 Dias | HSN Labs",
+            "title_en": "5-Day Enterprise Agent Bootcamp | hsnlabs",
+            "title_pt": "Bootcamp de Agentes Enterprise de 5 Dias | hsnlabs",
             "description_en": "Five-day intensive sprint replacing manual BPO workflows with deterministic AI agents.",
             "description_pt": "Sprint intensivo de cinco dias substituindo fluxos manuais de BPO por agentes de IA determinísticos."
         },
@@ -35,8 +35,8 @@ routes_data = {
             "id": "site_privacy_policy",
             "en_path": "/privacy-policy/",
             "pt_path": "/pt/privacy-policy/",
-            "title_en": "Privacy Policy | HSN Labs",
-            "title_pt": "Politica de Privacidade | HSN Labs",
+            "title_en": "Privacy Policy | hsnlabs",
+            "title_pt": "Politica de Privacidade | hsnlabs",
             "description_en": "Privacy policy and data governance terms.",
             "description_pt": "Politica de privacidade e governanca de dados."
         },
@@ -44,8 +44,8 @@ routes_data = {
             "id": "site_modern_slavery",
             "en_path": "/modern-slavery-statement/",
             "pt_path": "/pt/modern-slavery-statement/",
-            "title_en": "Modern Slavery Statement | HSN Labs",
-            "title_pt": "Declaracao de Escravidao Moderna | HSN Labs",
+            "title_en": "Modern Slavery Statement | hsnlabs",
+            "title_pt": "Declaracao de Escravidao Moderna | hsnlabs",
             "description_en": "Ethics and compliance statement.",
             "description_pt": "Declaracao de etica e conformidade corporativa."
         },
@@ -216,11 +216,11 @@ routes_data = {
         {
             "slug_en": "manifesto",
             "slug_pt": "manifesto",
-            "title_en": "Why I Built HSN Labs",
-            "title_pt": "Por Que Criei a HSN Labs",
+            "title_en": "Why I Built hsnlabs",
+            "title_pt": "Por Que Criei a hsnlabs",
             "category_en": "Future of Work",
             "category_pt": "O Futuro do Trabalho",
-            "target_keyword_pt": "manifesto hsn labs consultoria agentes ia"
+            "target_keyword_pt": "manifesto hsnlabs consultoria agentes ia"
         },
         {
             "slug_en": "ontology-vs-database-schema",

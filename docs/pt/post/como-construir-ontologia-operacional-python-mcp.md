@@ -15,7 +15,7 @@ image: assets/images/posts/how-to-build-operational-ontology-python-mcp/cover.we
 
 <!-- more -->
 
-*Contexto: No ecossistema de software corporativo da HSN Labs, Python é a nossa linguagem padrão de fundação. Este post ensina como transformar conceitos abstratos de ontologia em schemas estritos de Pydantic integrados a servidores MCP.*
+*Contexto: No ecossistema de software corporativo da hsnlabs, Python é a nossa linguagem padrão de fundação. Este post ensina como transformar conceitos abstratos de ontologia em schemas estritos de Pydantic integrados a servidores MCP.*
 
 Modelos de linguagem precisam de interfaces determinísticas para interagir com o ambiente corporativo. Quando permitimos que agentes gerem chamadas de API sem validação semântica rigorosa, erros de execução e corrupção de dados tornam-se questão de tempo.
 
@@ -100,4 +100,4 @@ Ao substituir prompts vagos por contratos fortemente tipados e rotear comandos a
 - <a href="/blog/pt/post/como-construir-ontologia-enterprise-do-zero/">Como Construir uma Ontologia Enterprise do Zero: Passo a Passo</a>
 - <a href="/blog/pt/post/ontologia-vs-grafo-conhecimento/">Ontologia vs Grafo de Conhecimento: Diferencas Chave e Arquitetura</a>
 - <a href="/blog/pt/post/palantir-aip-bootcamp-ontologia-operacional/">A Arquitetura do Palantir AIP: Por Que Agentes Exigem Ontologia Operacional</a>
-- <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da HSN Labs</a>
+- <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da hsnlabs</a>

@@ -91,7 +91,7 @@ Em vez de permitir queries brutas no grafo, as escritas são governadas por um c
 
 ## Como os Dois Componentes Trabalham Juntos
 
-Em uma arquitetura moderna da HSN Labs, esses componentes operam em simbiose perfeita:
+Em uma arquitetura moderna da hsnlabs, esses componentes operam em simbiose perfeita:
 
 - A Ontologia estabelece as definições e as travas de segurança
 - O Grafo de Conhecimento materializa o estado atual das operações da companhia
@@ -103,4 +103,4 @@ Sem ontologia, um grafo de conhecimento torna-se um emaranhado de dados sem gove
 - <a href="/blog/pt/post/como-construir-ontologia-enterprise-do-zero/">Como Construir uma Ontologia Enterprise do Zero: Passo a Passo</a>
 - <a href="/blog/pt/post/palantir-aip-bootcamp-ontologia-operacional/">A Arquitetura do Palantir AIP: Por Que Agentes Exigem Ontologia Operacional</a>
 - <a href="/blog/pt/post/isolamento-perimetro-mcp-contratos-dados/">Como Protegemos Bancos de Dados Enterprise de Agentes de IA</a>
-- <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da HSN Labs</a>
+- <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da hsnlabs</a>

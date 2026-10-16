@@ -1,6 +1,6 @@
 {
     "version": "https://jsonfeed.org/version/1.1",
-    "title": "Hugo Nascimento \u2014 Enterprise Agent Architecture",
+    "title": "Hugo Nascimento \u00b7 Enterprise Agent Architecture",
     "home_page_url": "https://hsnlabs.ai/blog/",
     "feed_url": "https://hsnlabs.ai/blog/feed_json_updated.json",
     "description": "Posts and field notes on deterministic agent architectures, domain ontologies, and avoiding runtime failures in production.",

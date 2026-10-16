@@ -77,7 +77,7 @@ def update_spoke_en(slug, hub_slug, siblings):
         f'- <a href="../{hub_slug}/">{hub_info["title_en"]}</a>\n'
         f'- <a href="../{siblings[0]}/">{sib1_info["title_en"]}</a>\n'
         f'- <a href="../{siblings[1]}/">{sib2_info["title_en"]}</a>\n'
-        '- <a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a>'
+        '- <a href="https://hsnlabs.ai/bootcamp">Apply for the hsnlabs Five-Day Architecture Bootcamp</a>'
     )
     
     pattern = r"## Strategic Resources and Related (?:Essays|Posts)[\s\S]*?(?=\n## |\Z)"
@@ -114,7 +114,7 @@ def update_spoke_pt(slug, hub_slug, siblings):
         f'- <a href="/blog/pt/post/{hub_info["slug_pt"]}/">{hub_title}</a>\n'
         f'- <a href="/blog/pt/post/{sib1_info["slug_pt"]}/">{sib1_title}</a>\n'
         f'- <a href="/blog/pt/post/{sib2_info["slug_pt"]}/">{sib2_title}</a>\n'
-        '- <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da HSN Labs</a>'
+        '- <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da hsnlabs</a>'
     )
     
     pattern = r"## Recursos Estrat[eé]gicos e Posts Relacionados[\s\S]*?(?=\n## |\Z)"
@@ -137,7 +137,7 @@ def update_hub_en(hub_slug, spokes):
     for sp in spokes:
         sp_info = posts_map[sp]
         lines.append(f'- <a href="../{sp}/">{sp_info["title_en"]}</a>')
-    lines.append('- <a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a>')
+    lines.append('- <a href="https://hsnlabs.ai/bootcamp">Apply for the hsnlabs Five-Day Architecture Bootcamp</a>')
     new_section = "\n".join(lines)
     
     pattern = r"## (?:Related Field Notes and Technical Spokes|Strategic Resources and Related Essays)[\s\S]*?(?=\n## |\Z)"
@@ -161,7 +161,7 @@ def update_hub_pt(hub_slug, spokes):
         sp_info = posts_map[sp]
         sp_title = clean_title_for_pt(sp_info["title_pt"])
         lines.append(f'- <a href="/blog/pt/post/{sp_info["slug_pt"]}/">{sp_title}</a>')
-    lines.append('- <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da HSN Labs</a>')
+    lines.append('- <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da hsnlabs</a>')
     new_section = "\n".join(lines)
     
     pattern = r"## (?:Notas de Campo e Artigos Relacionados|Recursos Estrat[eé]gicos e Posts Relacionados)[\s\S]*?(?=\n## |\Z)"

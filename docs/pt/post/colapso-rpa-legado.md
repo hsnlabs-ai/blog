@@ -17,7 +17,7 @@ image: assets/images/posts/collapse-of-legacy-rpa/cover.webp
 
 *Contexto: Esta crítica nasceu durante uma auditoria de faturas de TI de um cliente corporativo que pagava sessenta mil dólares por mês para uma integradora apenas para consertar seletores quebrados do UiPath em SAP e máquinas remotas. Clicadores de pixels não competem com agentes autônomos em nível de protocolo.*
 
-> **Resumo Executivo para Lideranças de Tecnologia:** Os fornecedores tradicionais de Automação Robótica de Processos — liderados por UiPath, Automation Anywhere e SS&C Blue Prism — construíram uma indústria baseada em emular cliques de mouse e seletores visuais sobre máquinas virtuais Windows. Sempre que uma tela de ERP ou portal governamental altera uma classe de CSS, os robôs quebram, alimentando um ciclo caro de sustentação corretiva para consultorias de TI. Hoje, a HSN Labs substitui robôs frágeis de raspagem de tela por agentes autônomos em nível de protocolo construídos em Python, Pydantic v2, LangGraph e Model Context Protocol — executando transações headless diretamente nas APIs do SAP, TOTVS e Oracle e reduzindo custos de infraestrutura e licenciamento em mais de 80 por cento.
+> **Resumo Executivo para Lideranças de Tecnologia:** Os fornecedores tradicionais de Automação Robótica de Processos — liderados por UiPath, Automation Anywhere e SS&C Blue Prism — construíram uma indústria baseada em emular cliques de mouse e seletores visuais sobre máquinas virtuais Windows. Sempre que uma tela de ERP ou portal governamental altera uma classe de CSS, os robôs quebram, alimentando um ciclo caro de sustentação corretiva para consultorias de TI. Hoje, a hsnlabs substitui robôs frágeis de raspagem de tela por agentes autônomos em nível de protocolo construídos em Python, Pydantic v2, LangGraph e Model Context Protocol — executando transações headless diretamente nas APIs do SAP, TOTVS e Oracle e reduzindo custos de infraestrutura e licenciamento em mais de 80 por cento.
 
 ---
 
@@ -56,11 +56,11 @@ Fornecedores de RPA tradicional cobram milhares de dólares anuais por cada rob�
 
 ---
 
-## 2. Matriz Comparativa: RPA Legado vs Sustentação Terceirizada vs Agentes HSN Labs
+## 2. Matriz Comparativa: RPA Legado vs Sustentação Terceirizada vs Agentes hsnlabs
 
 Quando um CIO ou COO avalia como automatizar operações de alto volume em finanças, fiscal e cadeia de suprimentos, três modelos distintos disputam o orçamento:
 
-| Vetor Arquitetural e Financeiro | Plataformas de RPA Legado - UiPath, Automation Anywhere, Blue Prism | Squads de Sustentação de RPA - Stefanini, Accenture, Integradoras Legadas | Agentes Autônomos em Nível de Protocolo - HSN Labs |
+| Vetor Arquitetural e Financeiro | Plataformas de RPA Legado - UiPath, Automation Anywhere, Blue Prism | Squads de Sustentação de RPA - Stefanini, Accenture, Integradoras Legadas | Agentes Autônomos em Nível de Protocolo - hsnlabs |
 | :--- | :--- | :--- | :--- |
 | **Mecanismo de Execução** | Raspagem superficial de tela, seletores XPath de DOM e cliques frágeis por coordenada | Intervenção humana manual para regravar seletores quebrados após cada atualização de tela | Execução headless via protocolo: REST, adaptadores de banco, RFC ou BAPI e Model Context Protocol |
 | **Tolerância a Variações Documentais** | Templates rígidos de OCR que falham quando um fornecedor altera o layout de uma nota fiscal | Exige abertura de chamado de mudança e faturamento de horas extras para desenhar novo template | Interpretação semântica ancorada em ontologias Pydantic v2 que absorvem variações de layout nativamente |
@@ -72,7 +72,7 @@ Quando um CIO ou COO avalia como automatizar operações de alto volume em finan
 
 ## 3. Como Agentes em Nível de Protocolo Substituem Clicadores de Tela
 
-Na HSN Labs, não construímos sistemas que emulam olhos e mãos humanas em uma tela de desktop. Implantamos agentes autônomos que se comunicam diretamente com os protocolos fundamentais dos sistemas:
+Na hsnlabs, não construímos sistemas que emulam olhos e mãos humanas em uma tela de desktop. Implantamos agentes autônomos que se comunicam diretamente com os protocolos fundamentais dos sistemas:
 
 * **Execução de Protocolo Headless:** Um agente autônomo não procura na tela por um botão com o rótulo Enviar Pedido. Ele se comunica diretamente com serviços de backend por adaptadores de banco de dados, endpoints REST, servidores de Model Context Protocol ou interfaces de linha de comando. A reformulação visual de uma interface frontend tem zero impacto na disponibilidade da operação.
 * **Tratamento Robusto de Variações:** Quando um bot tradicional de RPA encontra um layout de fatura com uma linha adicional, ele quebra. Quando um agente autônomo encontra variação documental, ele processa a carga contra uma ontologia explícita, extrai entidades verificadas e aplica regras de negócio sem correções manuais de código.
@@ -86,4 +86,4 @@ A era de pagar milhões para manter bots frágeis de raspagem de tela acabou. Op
 - <a href="/blog/pt/post/matriz-substituicao-bpo/">A Matriz de Substituicao de BPO: Metricas Operacionais e Financeiras</a>
 - <a href="/blog/pt/post/guarda-do-balanco-extincao-bpo/">O Que Aprendi Construindo HR Tech Sobre a Morte do BPO</a>
 - <a href="/blog/pt/post/morte-suporte-nivel-1-erp/">A Morte do Suporte Nivel 1: Por Que Consultorias de ERP Perdem Horas Faturaveis</a>
-- <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da HSN Labs</a>
+- <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da hsnlabs</a>

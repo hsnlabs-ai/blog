@@ -1,4 +1,4 @@
-# HSN Labs Blog — Project Guidelines & Editorial Rules
+# hsnlabs Blog — Project Guidelines & Editorial Rules
 
 ## 1. Language Policy: 100% English Only
 - All published content, engineering essays, and technical documentation must be written strictly in native, high-grade professional English.
@@ -34,7 +34,7 @@ Every essay belongs to one of five canonical English pillars:
 2. `Agent Development Life Cycle`: Perimeter isolation, MCP protocols, finite state machines, legacy core integration, and architecture sprints.
 3. `Future of Work`: Extinction of manual BPO contracts, collapse of legacy RPA, and death of Tier-1 IT helpdesk.
 4. `Agentic Economics`: Unit economics, EBITDA margin protection, BPO replacement matrix, and protocol arbitrage.
-5. `Case Studies`: Empirical field deployments, incident post-mortems, autonomous debt collection, and HSN Labs founding thesis.
+5. `Case Studies`: Empirical field deployments, incident post-mortems, autonomous debt collection, and hsnlabs founding thesis.
 
 ## 5. Machine Endpoints & SEO Infrastructure
 - AI Crawler Index: `https://hsnlabs.ai/blog/llms.txt`

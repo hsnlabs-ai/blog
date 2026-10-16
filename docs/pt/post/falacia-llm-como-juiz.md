@@ -48,9 +48,9 @@ Um modelo avaliador que concede uma nota media de quatro vírgula oito de cinco 
 
 O que essa media esconde e que em duas de cada cem transações, o modelo efetuou uma transferência ilegal de fundos ou vazou dados protegidos de clientes. Em setores regulados, notas medias não protegem a empresa contra multas pesadas ou sanções criminais. Uma única falha de cauda pode paralisar sua operação inteira.
 
-## Como Avaliamos Agentes Enterprise na HSN Labs
+## Como Avaliamos Agentes Enterprise na hsnlabs
 
-Na HSN Labs, rejeitamos notas subjetivas de prompts em esteiras corporativas. Avaliamos sistemas autônomos usando os mesmos padrões rigorosos de engenharia aplicados a software crítico financeiro e aeroespacial:
+Na hsnlabs, rejeitamos notas subjetivas de prompts em esteiras corporativas. Avaliamos sistemas autônomos usando os mesmos padrões rigorosos de engenharia aplicados a software crítico financeiro e aeroespacial:
 
 * **Asserções Binárias de Invariantes:** Escrevemos funções estritas de asserção de código em Python. O JSON de saída atendeu rigorosamente ao schema Pydantic? As partidas dobradas de débito e crédito fecharam em zero exato? A resposta omitiu dados protegidos e números restritos de contas? Esses testes retornam aprovação ou reprovação binária, não uma opinião subjetiva.
 * **Conjuntos Dourados e Imutáveis de Teste:** Cada incidente de produção e caso de borda e transformado em um cenário de teste automatizado imutável. Antes que qualquer grafo de agentes atualizado toque a homologação, ele precisa passar por centenas de testes históricos de regressão.
@@ -67,4 +67,4 @@ Não avalie agentes de produção com prompts opinativos. Avalie com asserções
 - <a href="/blog/pt/post/o-que-e-uma-ontologia-para-agentes-ia/">O Que E uma Ontologia para Agentes de IA? O Guia Definitivo</a>
 - <a href="/blog/pt/post/ontologia-vs-schema-banco-dados/">Ontologia vs Schema de Banco de Dados: Por Que Tabelas Relacionais Quebram Agentes</a>
 - <a href="/blog/pt/post/palantir-vs-databricks-arquitetura-agentes/">Palantir vs Databricks: Por Que Data Lakes Falham na Orquestracao de Agentes</a>
-- <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da HSN Labs</a>
+- <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da hsnlabs</a>

@@ -10,7 +10,7 @@ Entrepreneur, consultant, and Chief Product & Technology Officer (CPTO), Hugo Na
 December 2024 to Present
 Leading B2B SaaS enterprise onboarding platform. Replacing synchronous manual training with measurable digital ramp-up systems. Stack: Google Cloud Platform, Python.
 
-### HSN Labs — Founder & Managing Partner
+### hsnlabs — Founder & Managing Partner
 November 2020 to Present
 Forward Deployed Engineering boutique building resilient multi-agent architectures on executable business ontologies for mission-critical enterprise operations.
 Portfolio of delivered engagements includes Deloitte, Santander, Softplan, Unipar Carbocloro, LWSA, Turbi, Caju, Cast Group, and Insi.

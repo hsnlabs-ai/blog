@@ -21,7 +21,7 @@ if not api_key:
 client = genai.Client(api_key=api_key)
 
 STYLE_BASE = (
-    "A high-end editorial conceptual photograph for HSN Labs, perfectly matching the visual brand aesthetic of https://hsnlabs.ai/. "
+    "A high-end editorial conceptual photograph for hsnlabs, perfectly matching the visual brand aesthetic of https://hsnlabs.ai/. "
     "Tactile physical white origami paper sculptures with crisp geometric folds and visible paper fiber texture, "
     "contrasted with clean geometric architectural elements and the iconic pure vibrant sky blue (#52B4FD) acrylic or water square. "
     "Clean, pristine studio lighting, soft natural contact shadows, neutral off-white to subtle gradient background. "
@@ -115,7 +115,7 @@ PROMPTS = {
         "pure sky blue (#52B4FD) square block on a minimalist paper canvas."
     ),
     "manifesto": (
-        f"{STYLE_BASE} Subject: The HSN Labs Manifesto. A single, magnificent white origami carp leaping with dynamic kinetic grace directly out of "
+        f"{STYLE_BASE} Subject: The hsnlabs Manifesto. A single, magnificent white origami carp leaping with dynamic kinetic grace directly out of "
         "a vibrant sky blue (#52B4FD) acrylic water cube, soaring upward."
     ),
     "palantir-pricing-tco-and-open-alternatives": (

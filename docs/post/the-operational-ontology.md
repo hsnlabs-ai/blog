@@ -72,8 +72,8 @@ The strategic realization for the enterprise C-suite in 2026 is that **you do no
 By leveraging modern open protocols—specifically Python, Pydantic, PostgreSQL, and FastMCP—enterprises can build modular, fully owned operational ontologies tailored to their exact business mechanics.
 
 <figure class="article-editorial-figure">
-  <img src="../../assets/diagrams/hsn-agent-architecture.png" alt="HSN Labs Enterprise Agentic Architecture - The Open Alternative to Palantir AIP" loading="lazy">
-  <figcaption class="editorial-caption">HSN Labs enterprise agentic architecture: an open alternative to Palantir AIP running production multi-agent workflows on executable business ontologies.</figcaption>
+  <img src="../../assets/diagrams/hsn-agent-architecture.png" alt="hsnlabs Enterprise Agentic Architecture - The Open Alternative to Palantir AIP" loading="lazy">
+  <figcaption class="editorial-caption">hsnlabs enterprise agentic architecture: an open alternative to Palantir AIP running production multi-agent workflows on executable business ontologies.</figcaption>
 </figure>
 
 ---
@@ -206,10 +206,10 @@ If that code does not exist, your AI agents cannot safely operate. Build the ont
 
 ---
 
-*At HSN Labs, we design and deploy bespoke operational ontologies and resilient multi-agent systems for mid-to-large enterprises. To map your enterprise state machines and launch a production pilot in five days, explore our on-site [Agentic Architecture Bootcamp](https://hsnlabs.ai/bootcamp).*
+*At hsnlabs, we design and deploy bespoke operational ontologies and resilient multi-agent systems for mid-to-large enterprises. To map your enterprise state machines and launch a production pilot in five days, explore our on-site [Agentic Architecture Bootcamp](https://hsnlabs.ai/bootcamp).*
 
 ## Strategic Resources and Related Essays
 - <a href="../how-to-build-an-enterprise-ontology-from-scratch/">How to Build an Enterprise Ontology from Scratch: Step by Step</a>
 - <a href="../how-to-build-operational-ontology-python-mcp/">How to Build an Operational Business Ontology in Python and MCP</a>
 - <a href="../ontology-vs-knowledge-graph/">Ontology vs. Knowledge Graph: Key Differences, Architecture, and Agent Reliability</a>
-- <a href="https://hsnlabs.ai/bootcamp">Apply for the HSN Labs Five-Day Architecture Bootcamp</a>
+- <a href="https://hsnlabs.ai/bootcamp">Apply for the hsnlabs Five-Day Architecture Bootcamp</a>
