@@ -19,6 +19,22 @@ Arquiteturas entregues incluem **Deloitte**, **Santander**, **Softplan**, **Unip
 
 <div class="blog-list" id="component-blog-list">
   <article class="blog-row blog-post-item">
+    <a class="blog-row-thumb" href="/blog/pt/post/arquitetura-agentes-snowflake-ai-data-cloud-langgraph/">
+      <img src="../assets/images/posts/snowflake-ai-data-cloud-langgraph-agent-architecture/cover.webp" alt="Snowflake AI Data Cloud e LangGraph: Conectando Máquinas de Estado aos Dados Corporativos" loading="lazy">
+    </a>
+    <div class="blog-row-body">
+      <div class="blog-row-byline">
+        <img class="blog-row-avatar" src="../assets/images/author/hugo-nascimento.jpg" alt="Hugo S. Nascimento" loading="lazy">
+        <h2 class="blog-row-title">
+          <a href="/blog/pt/post/arquitetura-agentes-snowflake-ai-data-cloud-langgraph/">Snowflake AI Data Cloud e LangGraph: Conectando Máquinas de Estado aos Dados Corporativos</a>
+        </h2>
+      </div>
+      <p class="blog-row-meta">2026-10-16 &bull; Agentic Engineering &bull; Hugo S. Nascimento</p>
+      <p class="blog-row-description">Por que agentes autônomos falham ao receber acesso SQL direto e como vincular máquinas de estado em LangGraph e ontologias executáveis à Snowflake AI Data Cloud.</p>
+      <a class="blog-row-cta" href="/blog/pt/post/arquitetura-agentes-snowflake-ai-data-cloud-langgraph/">Ler Post &rarr;</a>
+    </div>
+  </article>
+  <article class="blog-row blog-post-item">
     <a class="blog-row-thumb" href="/blog/pt/post/the-agentic-pilot-canvas-v1-4/">
       <img src="../assets/images/posts/the-agentic-pilot-canvas/cover.png" alt="The Agentic Pilot Canvas v1.4: O Framework para Desenhar Pilotos de IA que Sobrevivem a Producao" loading="lazy">
     </a>

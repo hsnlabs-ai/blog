@@ -13,6 +13,28 @@
     "language": "en",
     "items": [
         {
+            "id": "https://hsnlabs.ai/blog/post/snowflake-ai-data-cloud-langgraph-agent-architecture/",
+            "url": "https://hsnlabs.ai/blog/post/snowflake-ai-data-cloud-langgraph-agent-architecture/",
+            "title": "Snowflake AI Data Cloud & LangGraph: Binding State Machines to Enterprise Data",
+            "content_html": "Why autonomous agents fail when given raw SQL access, and how to bind LangGraph state machines and executable ontologies to the Snowflake AI Data Cloud.",
+            "image": "https://hsnlabs.ai/blog/assets/images/posts/snowflake-ai-data-cloud-langgraph-agent-architecture/cover.webp",
+            "date_modified": "2026-10-16T00:00:00+00:00",
+            "date_published": "2026-10-16T00:00:00+00:00",
+            "authors": [
+                {
+                    "name": "Hugo S. Nascimento"
+                }
+            ],
+            "tags": [
+                "Agentic Engineering",
+                "architecture",
+                "data-contracts",
+                "langgraph",
+                "production",
+                "snowflake"
+            ]
+        },
+        {
             "id": "https://hsnlabs.ai/blog/post/the-agentic-pilot-canvas-v1-4/",
             "url": "https://hsnlabs.ai/blog/post/the-agentic-pilot-canvas-v1-4/",
             "title": "The Agentic Pilot Canvas v1.4: The Framework for Enterprise AI Pilots That Survive Production",
@@ -409,26 +431,6 @@
                 "arbitrage",
                 "case-studies",
                 "insurance"
-            ]
-        },
-        {
-            "id": "https://hsnlabs.ai/blog/post/death-of-tier-1-erp-helpdesk/",
-            "url": "https://hsnlabs.ai/blog/post/death-of-tier-1-erp-helpdesk/",
-            "title": "The Death of Tier-1 Support: Why ERP Consultancies and IT Helpdesks Cannot Defend the Billable Hour",
-            "content_html": "The structural collapse of hourly billable support models across enterprise ERP consultancies and IT helpdesks.",
-            "image": "https://hsnlabs.ai/blog/assets/images/posts/death-of-tier-1-erp-helpdesk/cover.webp",
-            "date_modified": "2026-09-08T00:00:00+00:00",
-            "date_published": "2026-09-08T00:00:00+00:00",
-            "authors": [
-                {
-                    "name": "Hugo S. Nascimento"
-                }
-            ],
-            "tags": [
-                "Future of Work",
-                "economics",
-                "erp-support",
-                "helpdesk"
             ]
         }
     ]

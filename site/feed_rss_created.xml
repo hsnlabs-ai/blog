@@ -13,8 +13,8 @@
     <language>en</language>
 
     
-    <pubDate>Fri, 16 Oct 2026 11:48:12 -0000</pubDate>
-    <lastBuildDate>Fri, 16 Oct 2026 11:48:12 -0000</lastBuildDate>
+    <pubDate>Fri, 16 Oct 2026 12:57:47 -0000</pubDate>
+    <lastBuildDate>Fri, 16 Oct 2026 12:57:47 -0000</lastBuildDate>
     <ttl>1440</ttl>
 
     
@@ -30,6 +30,41 @@
     
 
     
+    
+    <item>
+      <title>Snowflake AI Data Cloud &amp; LangGraph: Binding State Machines to Enterprise Data</title>
+      
+      
+        
+      <author>Hugo S. Nascimento</author>
+        
+      
+      
+      
+        
+      <category>Agentic Engineering</category>
+        
+      <category>architecture</category>
+        
+      <category>data-contracts</category>
+        
+      <category>langgraph</category>
+        
+      <category>production</category>
+        
+      <category>snowflake</category>
+        
+      
+      <description>Why autonomous agents fail when given raw SQL access, and how to bind LangGraph state machines and executable ontologies to the Snowflake AI Data Cloud.</description>
+      <link>https://hsnlabs.ai/blog/post/snowflake-ai-data-cloud-langgraph-agent-architecture/</link>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 +0000</pubDate>
+      <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento · Enterprise Agent Architecture</source>
+      
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/post/snowflake-ai-data-cloud-langgraph-agent-architecture/</guid>
+      
+      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/snowflake-ai-data-cloud-langgraph-agent-architecture/cover.webp" type="image/webp" length="None" />
+      
+    </item>
     
     <item>
       <title>The Agentic Pilot Canvas v1.4: The Framework for Enterprise AI Pilots That Survive Production</title>
@@ -655,37 +690,6 @@
       <guid isPermaLink="true">https://hsnlabs.ai/blog/post/protocol-arbitrage-claims-underwriting/</guid>
       
       <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/protocol-arbitrage-claims-underwriting/cover.webp" type="image/webp" length="None" />
-      
-    </item>
-    
-    <item>
-      <title>The Death of Tier-1 Support: Why ERP Consultancies and IT Helpdesks Cannot Defend the Billable Hour</title>
-      
-      
-        
-      <author>Hugo S. Nascimento</author>
-        
-      
-      
-      
-        
-      <category>Future of Work</category>
-        
-      <category>economics</category>
-        
-      <category>erp-support</category>
-        
-      <category>helpdesk</category>
-        
-      
-      <description>The structural collapse of hourly billable support models across enterprise ERP consultancies and IT helpdesks.</description>
-      <link>https://hsnlabs.ai/blog/post/death-of-tier-1-erp-helpdesk/</link>
-      <pubDate>Tue, 08 Sep 2026 00:00:00 +0000</pubDate>
-      <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento · Enterprise Agent Architecture</source>
-      
-      <guid isPermaLink="true">https://hsnlabs.ai/blog/post/death-of-tier-1-erp-helpdesk/</guid>
-      
-      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/death-of-tier-1-erp-helpdesk/cover.webp" type="image/webp" length="None" />
       
     </item>
     

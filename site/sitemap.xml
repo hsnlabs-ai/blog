@@ -113,6 +113,10 @@
          <lastmod>2026-10-16</lastmod>
     </url>
     <url>
+         <loc>https://hsnlabs.ai/blog/post/snowflake-ai-data-cloud-langgraph-agent-architecture/</loc>
+         <lastmod>2026-10-16</lastmod>
+    </url>
+    <url>
          <loc>https://hsnlabs.ai/blog/post/the-agentic-pilot-canvas-v1-4/</loc>
          <lastmod>2026-10-16</lastmod>
     </url>
@@ -150,6 +154,10 @@
     </url>
     <url>
          <loc>https://hsnlabs.ai/blog/pt/post/arbitragem-protocolo-sinistros-subscricao/</loc>
+         <lastmod>2026-10-16</lastmod>
+    </url>
+    <url>
+         <loc>https://hsnlabs.ai/blog/pt/post/arquitetura-agentes-snowflake-ai-data-cloud-langgraph/</loc>
          <lastmod>2026-10-16</lastmod>
     </url>
     <url>
@@ -281,11 +289,27 @@
          <lastmod>2026-10-16</lastmod>
     </url>
     <url>
-         <loc>https://hsnlabs.ai/blog/tag/canvas/</loc>
+         <loc>https://hsnlabs.ai/blog/tag/snowflake/</loc>
+         <lastmod>2026-10-16</lastmod>
+    </url>
+    <url>
+         <loc>https://hsnlabs.ai/blog/tag/langgraph/</loc>
          <lastmod>2026-10-16</lastmod>
     </url>
     <url>
          <loc>https://hsnlabs.ai/blog/tag/architecture/</loc>
+         <lastmod>2026-10-16</lastmod>
+    </url>
+    <url>
+         <loc>https://hsnlabs.ai/blog/tag/data-contracts/</loc>
+         <lastmod>2026-10-16</lastmod>
+    </url>
+    <url>
+         <loc>https://hsnlabs.ai/blog/tag/production/</loc>
+         <lastmod>2026-10-16</lastmod>
+    </url>
+    <url>
+         <loc>https://hsnlabs.ai/blog/tag/canvas/</loc>
          <lastmod>2026-10-16</lastmod>
     </url>
     <url>
@@ -314,10 +338,6 @@
     </url>
     <url>
          <loc>https://hsnlabs.ai/blog/tag/case-studies/</loc>
-         <lastmod>2026-10-16</lastmod>
-    </url>
-    <url>
-         <loc>https://hsnlabs.ai/blog/tag/production/</loc>
          <lastmod>2026-10-16</lastmod>
     </url>
     <url>
@@ -390,10 +410,6 @@
     </url>
     <url>
          <loc>https://hsnlabs.ai/blog/tag/margins/</loc>
-         <lastmod>2026-10-16</lastmod>
-    </url>
-    <url>
-         <loc>https://hsnlabs.ai/blog/tag/data-contracts/</loc>
          <lastmod>2026-10-16</lastmod>
     </url>
     <url>

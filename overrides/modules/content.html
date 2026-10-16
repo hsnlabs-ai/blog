@@ -58,7 +58,7 @@
         {% if not page.is_homepage and page.file.src_uri != 'index.md' and page.file.src_uri != 'pt/index.md' %}
         <!-- Founder Callout Component -->
         <div class="founder-callout-card">
-            <div style="display: flex; align-items: center; gap: 14px;">
+            <div style="display: flex; align-items: center; gap: 14px; flex-shrink: 0;">
                 <div class="founder-callout-avatar" data-initial-index="0">
                     <img src="https://hsnlabs.ai/assets/images/author/pool/hugo_01.jpg" alt="Hugo S. Nascimento" width="52" height="52" class="founder-avatar-img" />
                 </div>
@@ -66,22 +66,35 @@
                     {% if page.file and page.file.src_uri.startswith('pt/') %}
                     <div class="founder-callout-label">Tem um projeto em mente?</div>
                     <div class="founder-callout-name">Compartilhe com Hugo, CPTO</div>
-                    <a href="https://hsnlabs.ai/pt/langchain" class="founder-cred-link" title="LangChain Certified Engineer">
-                        <img src="https://hsnlabs.ai/assets/brand/langchain/lc-lockup-black.svg" alt="LangChain" class="founder-cred-logo">
-                        <span class="founder-cred-text">Certified Engineer</span>
-                        <span class="founder-cred-arrow">↗</span>
-                    </a>
                     {% else %}
                     <div class="founder-callout-label">Have a project in mind?</div>
                     <div class="founder-callout-name">Share it with Hugo, CPTO</div>
-                    <a href="https://hsnlabs.ai/langchain" class="founder-cred-link" title="LangChain Certified Engineer">
-                        <img src="https://hsnlabs.ai/assets/brand/langchain/lc-lockup-black.svg" alt="LangChain" class="founder-cred-logo">
-                        <span class="founder-cred-text">Certified Engineer</span>
-                        <span class="founder-cred-arrow">↗</span>
-                    </a>
                     {% endif %}
                 </div>
             </div>
+
+            <div class="founder-cred-group">
+                {% if page.file and page.file.src_uri.startswith('pt/') %}
+                <a href="https://hsnlabs.ai/pt/langchain/" class="founder-cred-item" title="LangChain Certified Engineer">
+                    <img src="https://hsnlabs.ai/assets/brand/langchain/lc-lockup-black.svg" alt="LangChain" class="founder-cred-logo">
+                    <span class="founder-cred-sub">Certified <span class="founder-cred-arrow">↗</span></span>
+                </a>
+                <a href="https://hsnlabs.ai/pt/snowflake/" class="founder-cred-item" title="Snowflake AI Data Cloud Partner">
+                    <img src="https://hsnlabs.ai/assets/brand/snowflake/snowflake-lockup-blue.svg" alt="Snowflake" class="founder-cred-logo">
+                    <span class="founder-cred-sub">Partner <span class="founder-cred-arrow">↗</span></span>
+                </a>
+                {% else %}
+                <a href="https://hsnlabs.ai/langchain/" class="founder-cred-item" title="LangChain Certified Engineer">
+                    <img src="https://hsnlabs.ai/assets/brand/langchain/lc-lockup-black.svg" alt="LangChain" class="founder-cred-logo">
+                    <span class="founder-cred-sub">Certified <span class="founder-cred-arrow">↗</span></span>
+                </a>
+                <a href="https://hsnlabs.ai/snowflake/" class="founder-cred-item" title="Snowflake AI Data Cloud Partner">
+                    <img src="https://hsnlabs.ai/assets/brand/snowflake/snowflake-lockup-blue.svg" alt="Snowflake" class="founder-cred-logo">
+                    <span class="founder-cred-sub">Partner <span class="founder-cred-arrow">↗</span></span>
+                </a>
+                {% endif %}
+            </div>
+
             {% if page.file and page.file.src_uri.startswith('pt/') %}
             <a href="https://hsnlabs.ai/pt/#contact" class="founder-callout-btn" style="white-space: nowrap; flex-shrink: 0;">
                 Iniciar Conversa

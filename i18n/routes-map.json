@@ -57,6 +57,17 @@
   ],
   "blog_posts": [
     {
+      "slug_en": "snowflake-ai-data-cloud-langgraph-agent-architecture",
+      "slug_pt": "arquitetura-agentes-snowflake-ai-data-cloud-langgraph",
+      "title_en": "Snowflake AI Data Cloud & LangGraph: Binding State Machines to Enterprise Data",
+      "title_pt": "Snowflake AI Data Cloud e LangGraph: Conectando Maquinas de Estado aos Dados Corporativos",
+      "category_en": "Agentic Engineering",
+      "category_pt": "Engenharia Agentica",
+      "target_keyword_pt": "snowflake ai data cloud langgraph agentes de ia arquitetura",
+      "en_path": "/blog/post/snowflake-ai-data-cloud-langgraph-agent-architecture/",
+      "pt_path": "/blog/pt/post/arquitetura-agentes-snowflake-ai-data-cloud-langgraph/"
+    },
+    {
       "slug_en": "autonomous-negotiations-collections-contracts",
       "slug_pt": "negociacoes-autonomas-cobranca-contratos",
       "title_en": "High-Velocity Operations: Autonomous Negotiation, Collections, and Contract Execution",
