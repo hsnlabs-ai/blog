@@ -279,4 +279,4 @@ Klarna: descontinuou contratos enterprise de Salesforce e Zendesk em favor de st
 - <a href="/blog/pt/post/matriz-substituicao-bpo/">A Matriz de Substituicao de BPO: Metricas Operacionais e Financeiras</a>
 - <a href="/blog/pt/post/preco-palantir-tco-alternativas-abertas/">O TCO Real da Palantir: A Barreira em Dolar e Alternativas Abertas</a>
 - <a href="/blog/pt/post/playbook-c-suite-protecao-margem/">O Playbook de Transicao da Diretoria: Protegendo Margens na Era Agentica</a>
-- <a href="https://hsnlabs.ai/pt/bootcamp/">Aplicar para o Bootcamp de Agentes Enterprise de 5 Dias da hsnlabs</a>
+- <a href="https://hsnlabs.ai/bootcamp/">Conhecer o Agentic Bootcamp da hsnlabs</a>

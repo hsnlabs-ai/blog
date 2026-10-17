@@ -75,19 +75,6 @@
 
             <div class="founder-cred-group">
                 {% if page.file and page.file.src_uri.startswith('pt/') %}
-                <a href="https://hsnlabs.ai/pt/langchain/" class="founder-cred-item" title="LangChain Certified Engineer">
-                    <img src="https://hsnlabs.ai/assets/brand/langchain/lc-lockup-black.svg" alt="LangChain" class="founder-cred-logo">
-                    <span class="founder-cred-sub">Certified <span class="founder-cred-arrow">↗</span></span>
-                </a>
-                <a href="https://hsnlabs.ai/pt/snowflake/" class="founder-cred-item" title="Snowflake AI Data Cloud Partner">
-                    <img src="https://hsnlabs.ai/assets/brand/snowflake/snowflake-lockup-blue.svg" alt="Snowflake" class="founder-cred-logo">
-                    <span class="founder-cred-sub">Partner <span class="founder-cred-arrow">↗</span></span>
-                </a>
-                <a href="https://hsnlabs.ai/pt/braintrust/" class="founder-cred-item" title="Braintrust AI Observability &amp; Evals Partner">
-                    <img src="https://hsnlabs.ai/assets/brand/braintrust/braintrust-lockup-blue.svg" alt="Braintrust" class="founder-cred-logo">
-                    <span class="founder-cred-sub">Partner <span class="founder-cred-arrow">↗</span></span>
-                </a>
-                {% else %}
                 <a href="https://hsnlabs.ai/langchain/" class="founder-cred-item" title="LangChain Certified Engineer">
                     <img src="https://hsnlabs.ai/assets/brand/langchain/lc-lockup-black.svg" alt="LangChain" class="founder-cred-logo">
                     <span class="founder-cred-sub">Certified <span class="founder-cred-arrow">↗</span></span>
@@ -100,15 +87,28 @@
                     <img src="https://hsnlabs.ai/assets/brand/braintrust/braintrust-lockup-blue.svg" alt="Braintrust" class="founder-cred-logo">
                     <span class="founder-cred-sub">Partner <span class="founder-cred-arrow">↗</span></span>
                 </a>
+                {% else %}
+                <a href="https://hsnlabs.ai/en/langchain/" class="founder-cred-item" title="LangChain Certified Engineer">
+                    <img src="https://hsnlabs.ai/assets/brand/langchain/lc-lockup-black.svg" alt="LangChain" class="founder-cred-logo">
+                    <span class="founder-cred-sub">Certified <span class="founder-cred-arrow">↗</span></span>
+                </a>
+                <a href="https://hsnlabs.ai/en/snowflake/" class="founder-cred-item" title="Snowflake AI Data Cloud Partner">
+                    <img src="https://hsnlabs.ai/assets/brand/snowflake/snowflake-lockup-blue.svg" alt="Snowflake" class="founder-cred-logo">
+                    <span class="founder-cred-sub">Partner <span class="founder-cred-arrow">↗</span></span>
+                </a>
+                <a href="https://hsnlabs.ai/en/braintrust/" class="founder-cred-item" title="Braintrust AI Observability &amp; Evals Partner">
+                    <img src="https://hsnlabs.ai/assets/brand/braintrust/braintrust-lockup-blue.svg" alt="Braintrust" class="founder-cred-logo">
+                    <span class="founder-cred-sub">Partner <span class="founder-cred-arrow">↗</span></span>
+                </a>
                 {% endif %}
             </div>
 
             {% if page.file and page.file.src_uri.startswith('pt/') %}
-            <a href="https://hsnlabs.ai/pt/#contact" class="founder-callout-btn" style="white-space: nowrap; flex-shrink: 0;">
+            <a href="https://hsnlabs.ai/#contact" class="founder-callout-btn" style="white-space: nowrap; flex-shrink: 0;">
                 Iniciar Conversa
             </a>
             {% else %}
-            <a href="https://hsnlabs.ai/#contact" class="founder-callout-btn" style="white-space: nowrap; flex-shrink: 0;">
+            <a href="https://hsnlabs.ai/en/#contact" class="founder-callout-btn" style="white-space: nowrap; flex-shrink: 0;">
                 Start a Conversation
             </a>
             {% endif %}
@@ -123,8 +123,8 @@
                 </svg>
                 Voltar para Todos os Posts
             </a>
-            <a href="https://hsnlabs.ai/pt/bootcamp" class="btn btn-primary article-nav-cta-btn">
-                Aplicar para o Bootcamp →
+            <a href="https://hsnlabs.ai/bootcamp/" class="btn btn-primary article-nav-cta-btn">
+                Conhecer o Agentic Bootcamp →
             </a>
             {% else %}
             <a href="{{ ''|url }}" class="btn btn-outline article-nav-return-btn">
@@ -134,8 +134,8 @@
                 </svg>
                 Back to All Posts
             </a>
-            <a href="https://hsnlabs.ai/bootcamp" class="btn btn-primary article-nav-cta-btn">
-                Apply for Bootcamp →
+            <a href="https://hsnlabs.ai/en/bootcamp/" class="btn btn-primary article-nav-cta-btn">
+                Explore Agentic Bootcamp →
             </a>
             {% endif %}
         </div>
