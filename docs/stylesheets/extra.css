@@ -1383,7 +1383,8 @@ td code {
 
 /* CANONICAL 3-COLUMN FOUNDER CALLOUT & MOBILE 50/50 BENTO SPLIT (OPTION 1) */
 .founder-callout-card {
-  max-width: 850px !important;
+  max-width: 960px !important;
+  width: 100% !important;
 }
 .founder-cred-group {
   display: flex;
@@ -1419,7 +1420,7 @@ td code {
   line-height: 1;
   white-space: nowrap;
 }
-@media (max-width: 768px) {
+@media (max-width: 920px) {
   .founder-callout-card {
     flex-direction: column !important;
     align-items: stretch !important;
