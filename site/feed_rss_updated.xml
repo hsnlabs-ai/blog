@@ -13,8 +13,8 @@
     <language>en</language>
 
     
-    <pubDate>Fri, 16 Oct 2026 12:57:47 -0000</pubDate>
-    <lastBuildDate>Fri, 16 Oct 2026 12:57:47 -0000</lastBuildDate>
+    <pubDate>Sat, 17 Oct 2026 12:03:39 -0000</pubDate>
+    <lastBuildDate>Sat, 17 Oct 2026 12:03:39 -0000</lastBuildDate>
     <ttl>1440</ttl>
 
     
@@ -30,6 +30,41 @@
     
 
     
+    
+    <item>
+      <title>Braintrust Evals &amp; LangGraph: Replacing Vibe Checks with Deterministic CI/CD</title>
+      
+      
+        
+      <author>Hugo S. Nascimento</author>
+        
+      
+      
+      
+        
+      <category>Agentic Engineering</category>
+        
+      <category>architecture</category>
+        
+      <category>evaluation</category>
+        
+      <category>guardrails</category>
+        
+      <category>langgraph</category>
+        
+      <category>production</category>
+        
+      
+      <description>Why manual prompt testing fails in enterprise production, and how to wire Braintrust evaluation suites and CI/CD regression gates into LangGraph agents.</description>
+      <link>https://hsnlabs.ai/blog/post/braintrust-evals-cicd-langgraph-agent-architecture/</link>
+      <pubDate>Sat, 17 Oct 2026 00:00:00 +0000</pubDate>
+      <source url="https://hsnlabs.ai/blog/feed_rss_updated.xml">Hugo Nascimento · Enterprise Agent Architecture</source>
+      
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/post/braintrust-evals-cicd-langgraph-agent-architecture/</guid>
+      
+      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/braintrust-evals-cicd-langgraph-agent-architecture/cover.webp" type="image/webp" length="None" />
+      
+    </item>
     
     <item>
       <title>Snowflake AI Data Cloud &amp; LangGraph: Binding State Machines to Enterprise Data</title>
@@ -659,37 +694,6 @@
       <guid isPermaLink="true">https://hsnlabs.ai/blog/post/palantir-vs-databricks-agent-architecture/</guid>
       
       <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/palantir-vs-databricks-agent-architecture/cover.webp" type="image/webp" length="None" />
-      
-    </item>
-    
-    <item>
-      <title>Protocol Arbitrage: Autonomous Multimodal Adjudication in Healthcare and Underwriting</title>
-      
-      
-        
-      <author>Hugo S. Nascimento</author>
-        
-      
-      
-      
-        
-      <category>Future of Work</category>
-        
-      <category>arbitrage</category>
-        
-      <category>case-studies</category>
-        
-      <category>insurance</category>
-        
-      
-      <description>Autonomous multimodal adjudication and real-time protocol arbitrage across complex insurance claims and healthcare underwriting.</description>
-      <link>https://hsnlabs.ai/blog/post/protocol-arbitrage-claims-underwriting/</link>
-      <pubDate>Fri, 11 Sep 2026 00:00:00 +0000</pubDate>
-      <source url="https://hsnlabs.ai/blog/feed_rss_updated.xml">Hugo Nascimento · Enterprise Agent Architecture</source>
-      
-      <guid isPermaLink="true">https://hsnlabs.ai/blog/post/protocol-arbitrage-claims-underwriting/</guid>
-      
-      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/protocol-arbitrage-claims-underwriting/cover.webp" type="image/webp" length="None" />
       
     </item>
     

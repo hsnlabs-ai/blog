@@ -19,6 +19,22 @@ Arquiteturas entregues incluem **Deloitte**, **Santander**, **Softplan**, **Unip
 
 <div class="blog-list" id="component-blog-list">
   <article class="blog-row blog-post-item">
+    <a class="blog-row-thumb" href="/blog/pt/post/arquitetura-agentes-braintrust-evals-cicd-langgraph/">
+      <img src="../assets/images/posts/braintrust-evals-cicd-langgraph-agent-architecture/cover.webp" alt="Braintrust Evals e LangGraph: Substituindo Testes Manuais por CI/CD Determinístico" loading="lazy">
+    </a>
+    <div class="blog-row-body">
+      <div class="blog-row-byline">
+        <img class="blog-row-avatar" src="../assets/images/author/hugo-nascimento.jpg" alt="Hugo S. Nascimento" loading="lazy">
+        <h2 class="blog-row-title">
+          <a href="/blog/pt/post/arquitetura-agentes-braintrust-evals-cicd-langgraph/">Braintrust Evals e LangGraph: Substituindo Testes Manuais por CI/CD Determinístico</a>
+        </h2>
+      </div>
+      <p class="blog-row-meta">2026-10-17 &bull; Agentic Engineering &bull; Hugo S. Nascimento</p>
+      <p class="blog-row-description">Por que testes manuais de prompt falham na produção corporativa e como integrar suítes de avaliação do Braintrust e travas de CI/CD em agentes LangGraph.</p>
+      <a class="blog-row-cta" href="/blog/pt/post/arquitetura-agentes-braintrust-evals-cicd-langgraph/">Ler Post &rarr;</a>
+    </div>
+  </article>
+  <article class="blog-row blog-post-item">
     <a class="blog-row-thumb" href="/blog/pt/post/arquitetura-agentes-snowflake-ai-data-cloud-langgraph/">
       <img src="../assets/images/posts/snowflake-ai-data-cloud-langgraph-agent-architecture/cover.webp" alt="Snowflake AI Data Cloud e LangGraph: Conectando Máquinas de Estado aos Dados Corporativos" loading="lazy">
     </a>

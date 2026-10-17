@@ -53,9 +53,27 @@
       "title_pt": "Hugo S. Nascimento — Arquitetura de Agentes Enterprise",
       "description_en": "Essays and field notes on enterprise AI architectures and business ontologies.",
       "description_pt": "Ensaios e notas de campo sobre arquiteturas de agentes enterprise e ontologias."
+    },
+    {
+      "id": "braintrust",
+      "en_path": "/braintrust/",
+      "pt_path": "/pt/braintrust/",
+      "title_en": "Braintrust Evals & CI/CD · Agent Architecture · hsnlabs",
+      "title_pt": "Braintrust Evals e CI/CD · Arquitetura de Agentes · hsnlabs"
     }
   ],
   "blog_posts": [
+    {
+      "slug_en": "braintrust-evals-cicd-langgraph-agent-architecture",
+      "slug_pt": "arquitetura-agentes-braintrust-evals-cicd-langgraph",
+      "title_en": "Braintrust Evals & LangGraph: Replacing Vibe Checks with Deterministic CI/CD",
+      "title_pt": "Braintrust Evals e LangGraph: Substituindo Testes Manuais por CI/CD Deterministico",
+      "category_en": "Agentic Engineering",
+      "category_pt": "Engenharia Agentica",
+      "target_keyword_pt": "braintrust evals langgraph ci cd agentes de ia producao",
+      "en_path": "/blog/post/braintrust-evals-cicd-langgraph-agent-architecture/",
+      "pt_path": "/blog/pt/post/arquitetura-agentes-braintrust-evals-cicd-langgraph/"
+    },
     {
       "slug_en": "snowflake-ai-data-cloud-langgraph-agent-architecture",
       "slug_pt": "arquitetura-agentes-snowflake-ai-data-cloud-langgraph",
