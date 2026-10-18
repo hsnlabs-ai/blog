@@ -89,7 +89,7 @@
     },
     {
       img: assetBase + 'hugo_05.jpg',
-      label: 'Precisa de ajuda para comecar?',
+      label: 'Precisa de ajuda para começar?',
       title: 'Compartilhe com Hugo, CPTO',
       btn: 'Iniciar Conversa'
     }
@@ -169,7 +169,7 @@
           if (label) label.textContent = next.label;
           if (name) name.textContent = next.title;
           if (btn) {
-            btn.textContent = next.btn;
+            btn.innerHTML = '<span>' + next.btn + '</span>';
             btn.href = contactBase;
           }
 
