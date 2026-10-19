@@ -2,48 +2,102 @@
   "site_pages": [
     {
       "id": "site_home",
-      "en_path": "/",
-      "pt_path": "/pt/",
-      "title_en": "hsnlabs — AI Agents That Don't Fail in Production",
-      "title_pt": "hsnlabs — Agentes de IA que Nao Falham em Producao",
-      "description_en": "Boutique building resilient multi-agent architectures on business ontologies.",
-      "description_pt": "Boutique de engenharia construindo arquiteturas multiagente resilientes em ontologias de negocios."
+      "en_path": "/en/",
+      "pt_path": "/",
+      "title_en": "Agentic Engineering Adoption | hsnlabs",
+      "title_pt": "Adoção de Engenharia Agêntica | hsnlabs",
+      "description_en": "Your enterprise AI transformation partner. We implement autonomous agents over legacy systems, starting with our Agentic Bootcamp backed by $5,000 in cloud, AI tokens, and tooling.",
+      "description_pt": "Seu parceiro de transformação em IA corporativa. Implementamos agentes autônomos sobre sistemas legados, começando pelo nosso Agentic Bootcamp com cerca de US$ 5.000 em nuvem, tokens de IA e ferramentas."
     },
     {
       "id": "site_bootcamp",
-      "en_path": "/bootcamp/",
-      "pt_path": "/pt/bootcamp/",
-      "title_en": "5-Day Enterprise Agent Bootcamp | hsnlabs",
-      "title_pt": "Agentic Bootcamp | hsnlabs",
-      "description_en": "Five-day intensive sprint replacing manual BPO workflows with deterministic AI agents.",
-      "description_pt": "Sprint intensivo de cinco dias substituindo fluxos manuais de BPO por agentes de IA determinísticos."
+      "en_path": "/en/bootcamp/",
+      "pt_path": "/bootcamp/",
+      "title_en": "Agentic Bootcamp · hsnlabs",
+      "title_pt": "Agentic Bootcamp · hsnlabs",
+      "description_en": "We embed senior Forward Deployed Engineers with your team to build AI agents that survive production. 100% credited toward production rollout for qualified accounts.",
+      "description_pt": "Alocamos Engenheiros Forward Deployed seniores junto à sua equipe para construir agentes de IA que operam em produção. Cem por cento creditado para o contrato de implantação em contas qualificadas."
     },
     {
       "id": "site_advisory",
-      "en_path": "/advisory/",
-      "pt_path": "/pt/advisory/",
-      "title_en": "Architecture Advisory | Hugo S. Nascimento",
-      "title_pt": "Advisory de Arquitetura | Hugo S. Nascimento",
-      "description_en": "Strategic architecture advisory for C-level executives on agent transition.",
-      "description_pt": "Advisory estrategico de arquitetura para executivos C-level na transicao agentica."
+      "en_path": "/en/advisory/",
+      "pt_path": "/advisory/",
+      "title_en": "Agentic AI Advisory · hsnlabs",
+      "title_pt": "Conselho Executivo de IA & Advisory · hsnlabs",
+      "description_en": "Agentic AI advisory for C-levels facing autonomous disruption. Modernize operating models, defend unit margins, and deploy production guardrails and system boundaries.",
+      "description_pt": "Conselho executivo de IA e advisory para C-levels e founders enfrentando a disrupção autônoma. Transição de arquitetura, defesa de margem e engenharia agêntica em produção com Hugo Nascimento."
+    },
+    {
+      "id": "site_canvas",
+      "en_path": "/en/canvas/",
+      "pt_path": "/canvas/",
+      "title_en": "The Agentic Pilot Canvas v1.4 · hsnlabs",
+      "title_pt": "The Agentic Pilot Canvas v1.4 · hsnlabs",
+      "description_en": "Open MIT architecture framework for designing enterprise agentic AI pilots: legacy data ontologies, deterministic guards, eval harnesses, and governance.",
+      "description_pt": "Framework aberto sob licença MIT para desenhar pilotos de IA agêntica enterprise: ontologias sobre dados legados, determinismo e governança em produção."
+    },
+    {
+      "id": "site_mcp",
+      "en_path": "/en/mcp/",
+      "pt_path": "/mcp/",
+      "title_en": "Enterprise MCP Servers · hsnlabs",
+      "title_pt": "Servidores MCP Enterprise · hsnlabs",
+      "description_en": "We build private, secure Model Context Protocol servers inside your enterprise infrastructure. Connect autonomous agents to core ERPs and databases under zero-trust governance.",
+      "description_pt": "Construímos servidores privados e seguros de Model Context Protocol dentro da sua infraestrutura corporativa. Conecte agentes autônomos aos seus ERPs e bancos de dados sob governança zero-trust."
+    },
+    {
+      "id": "site_langchain",
+      "en_path": "/en/langchain/",
+      "pt_path": "/langchain/",
+      "title_en": "LangChain & LangGraph · In Production Since 2022 · hsnlabs",
+      "title_pt": "LangChain & LangGraph · Em Produção desde 2022 · hsnlabs",
+      "description_en": "Independent agentic engineering with LangChain & LangGraph since 2022. Architecting deterministic state machines and LangSmith observability for mission-critical systems.",
+      "description_pt": "Engenharia agêntica independente com LangChain & LangGraph desde 2022. Desenhamos máquinas de estado determinísticas e suítes LangSmith para sistemas de missão crítica."
+    },
+    {
+      "id": "site_snowflake",
+      "en_path": "/en/snowflake/",
+      "pt_path": "/snowflake/",
+      "title_en": "Snowflake AI Data Cloud · Agent Architecture · hsnlabs",
+      "title_pt": "Snowflake AI Data Cloud · Arquitetura de Agentes · hsnlabs",
+      "description_en": "Operationalize deterministic LangGraph agents and executable business ontologies directly over the Snowflake AI Data Cloud with zero-copy governance.",
+      "description_pt": "Operacionalizamos agentes determinísticos em LangGraph e ontologias executáveis diretamente sobre a Snowflake AI Data Cloud com governança sem cópias."
+    },
+    {
+      "id": "site_databricks",
+      "en_path": "/en/databricks/",
+      "pt_path": "/databricks/",
+      "title_en": "Databricks Lakehouse · Agent Architecture · hsnlabs",
+      "title_pt": "Databricks Lakehouse · Arquitetura de Agentes · hsnlabs",
+      "description_en": "Operationalize deterministic LangGraph agents and executable business ontologies over the Databricks Lakehouse, Unity Catalog, and Mosaic AI.",
+      "description_pt": "Operacionalizamos agentes determinísticos em LangGraph e ontologias executáveis sobre Databricks Lakehouse, Unity Catalog e Mosaic AI em produção."
+    },
+    {
+      "id": "site_braintrust",
+      "en_path": "/en/braintrust/",
+      "pt_path": "/braintrust/",
+      "title_en": "Braintrust Evals & CI/CD · Agent Architecture · hsnlabs",
+      "title_pt": "Braintrust Evals e CI/CD · Arquitetura de Agentes · hsnlabs",
+      "description_en": "Eliminate stochastic prompt failures in production with Braintrust continuous evaluation suites, CI/CD regression gates, and trace observability.",
+      "description_pt": "Eliminamos falhas probabilísticas em produção com suítes de avaliação contínua no Braintrust, travas de regressão em CI/CD e observabilidade de agentes."
     },
     {
       "id": "site_privacy_policy",
-      "en_path": "/privacy-policy/",
-      "pt_path": "/pt/privacy-policy/",
-      "title_en": "Privacy Policy | hsnlabs",
-      "title_pt": "Politica de Privacidade | hsnlabs",
-      "description_en": "Privacy policy and data governance terms.",
-      "description_pt": "Politica de privacidade e governanca de dados."
+      "en_path": "/en/privacy-policy/",
+      "pt_path": "/privacy-policy/",
+      "title_en": "Privacy Policy · hsnlabs",
+      "title_pt": "Política de Privacidade · hsnlabs",
+      "description_en": "Privacy Policy for hsnlabs. Learn how we handle, process, and safeguard enterprise data in compliance with LGPD and international privacy frameworks.",
+      "description_pt": "Política de Privacidade da hsnlabs. Saiba como tratamos, processamos e protegemos dados corporativos em conformidade com a LGPD e padrões internacionais de privacidade."
     },
     {
       "id": "site_modern_slavery",
-      "en_path": "/modern-slavery-statement/",
-      "pt_path": "/pt/modern-slavery-statement/",
-      "title_en": "Modern Slavery Statement | hsnlabs",
-      "title_pt": "Declaracao de Escravidao Moderna | hsnlabs",
-      "description_en": "Ethics and compliance statement.",
-      "description_pt": "Declaracao de etica e conformidade corporativa."
+      "en_path": "/en/modern-slavery-statement/",
+      "pt_path": "/modern-slavery-statement/",
+      "title_en": "Modern Slavery Statement · hsnlabs",
+      "title_pt": "Declaração de Conformidade e Ética · hsnlabs",
+      "description_en": "Modern Slavery Statement for hsnlabs pursuant to Section 54 of the UK Modern Slavery Act 2015 and international ethical supply chain standards.",
+      "description_pt": "Declaração de Conformidade e Ética da hsnlabs nos termos da Seção 54 do UK Modern Slavery Act 2015 e dos padrões internacionais de integridade na cadeia de suprimentos."
     },
     {
       "id": "blog_home",
@@ -53,16 +107,15 @@
       "title_pt": "Hugo S. Nascimento — Arquitetura de Agentes Enterprise",
       "description_en": "Essays and field notes on enterprise AI architectures and business ontologies.",
       "description_pt": "Ensaios e notas de campo sobre arquiteturas de agentes enterprise e ontologias."
-    },
-    {
-      "id": "braintrust",
-      "en_path": "/braintrust/",
-      "pt_path": "/pt/braintrust/",
-      "title_en": "Braintrust Evals & CI/CD · Agent Architecture · hsnlabs",
-      "title_pt": "Braintrust Evals e CI/CD · Arquitetura de Agentes · hsnlabs"
     }
   ],
   "blog_posts": [
+    {
+      "slug_en": "databricks-lakehouse-unity-catalog-langgraph-agent-architecture",
+      "slug_pt": "arquitetura-agentes-databricks-lakehouse-unity-catalog-langgraph",
+      "title_en": "Databricks Lakehouse and LangGraph: Binding Unity Catalog and Mosaic AI to Operational State Machines",
+      "title_pt": "Databricks Lakehouse e LangGraph: Conectando Unity Catalog e Mosaic AI a Máquinas de Estado Operacionais"
+    },
     {
       "slug_en": "braintrust-evals-cicd-langgraph-agent-architecture",
       "slug_pt": "arquitetura-agentes-braintrust-evals-cicd-langgraph",
@@ -433,7 +486,7 @@
       "title_pt": "The Agentic Pilot Canvas v1.4: O Framework para Desenhar Pilotos de IA que Sobrevivem a Producao",
       "category_en": "Agentic Engineering",
       "category_pt": "Engenharia Agêntica",
-      "target_keyword_pt": "framework piloto agentes de ia producao",
+      "target_keyword_pt": "the agentic pilot canvas v1 4 framework ia",
       "en_path": "/blog/post/the-agentic-pilot-canvas-v1-4/",
       "pt_path": "/blog/pt/post/the-agentic-pilot-canvas-v1-4/"
     }

@@ -13,6 +13,28 @@
     "language": "en",
     "items": [
         {
+            "id": "https://hsnlabs.ai/blog/post/databricks-lakehouse-unity-catalog-langgraph-agent-architecture/",
+            "url": "https://hsnlabs.ai/blog/post/databricks-lakehouse-unity-catalog-langgraph-agent-architecture/",
+            "title": "Databricks Lakehouse & LangGraph: Binding Unity Catalog and Mosaic AI to Operational State Machines",
+            "content_html": "Why autonomous agents fail when given unconstrained SQL over Delta tables, and how to bind LangGraph state machines and executable ontologies to Databricks Unity Catalog and Mosaic AI.",
+            "image": "https://hsnlabs.ai/blog/assets/images/posts/databricks-lakehouse-unity-catalog-langgraph-agent-architecture/cover.webp",
+            "date_modified": "2026-10-19T00:00:00+00:00",
+            "date_published": "2026-10-19T00:00:00+00:00",
+            "authors": [
+                {
+                    "name": "Hugo S. Nascimento"
+                }
+            ],
+            "tags": [
+                "Agentic Engineering",
+                "architecture",
+                "data-contracts",
+                "databricks",
+                "langgraph",
+                "production"
+            ]
+        },
+        {
             "id": "https://hsnlabs.ai/blog/post/braintrust-evals-cicd-langgraph-agent-architecture/",
             "url": "https://hsnlabs.ai/blog/post/braintrust-evals-cicd-langgraph-agent-architecture/",
             "title": "Braintrust Evals & LangGraph: Replacing Vibe Checks with Deterministic CI/CD",
@@ -412,27 +434,6 @@
                 "ebitda",
                 "economics",
                 "roi"
-            ]
-        },
-        {
-            "id": "https://hsnlabs.ai/blog/post/palantir-vs-databricks-agent-architecture/",
-            "url": "https://hsnlabs.ai/blog/post/palantir-vs-databricks-agent-architecture/",
-            "title": "Palantir vs Databricks: Why Data Lakes Fail at Agentic Operations",
-            "content_html": "Architectural breakdown comparing analytical lakehouses against operational ontologies for mission-critical enterprise AI agents.",
-            "image": "https://hsnlabs.ai/blog/assets/images/posts/palantir-vs-databricks-agent-architecture/cover.webp",
-            "date_modified": "2026-09-11T00:00:00+00:00",
-            "date_published": "2026-09-11T00:00:00+00:00",
-            "authors": [
-                {
-                    "name": "Hugo S. Nascimento"
-                }
-            ],
-            "tags": [
-                "Why Agents Fail",
-                "ai-failures",
-                "architecture",
-                "data-contracts",
-                "production"
             ]
         }
     ]

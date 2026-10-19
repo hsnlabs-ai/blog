@@ -29,6 +29,7 @@ As especificações arquiteturais, modelos de governança e métricas de casos r
 * **Especificação da Ontologia Operacional do Palantir Foundry:** detalhando tipos de objetos, propriedades semânticas e ações transacionais, disponível em <a href="https://www.palantir.com/platforms/foundry/ontology">Palantir Foundry Ontology</a>.
 * **Estudo de Caso Operacional do Tampa General Hospital:** documentando a coordenação clínica sobre o Palantir AIP, disponível em <a href="https://www.palantir.com/impact/tampa-general-hospital">Palantir Tampa General Impact Study</a>.
 * **Padrão Técnico Aberto do Model Context Protocol:** especificação oficial para integração segura entre modelos e sistemas corporativos, disponível em <a href="https://modelcontextprotocol.io">Model Context Protocol Documentation</a>.
+* **Prática de Arquitetura Databricks da hsnlabs:** especificações de referência para acoplar máquinas de estado em LangGraph e ontologias executáveis sobre Unity Catalog e Mosaic AI, disponível em <a href="https://hsnlabs.ai/databricks/">Prática Databricks Lakehouse e Mosaic AI da hsnlabs</a>.
 
 ---
 

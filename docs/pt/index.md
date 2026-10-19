@@ -19,6 +19,22 @@ Arquiteturas entregues incluem **Deloitte**, **Santander**, **Softplan**, **Unip
 
 <div class="blog-list" id="component-blog-list">
   <article class="blog-row blog-post-item">
+    <a class="blog-row-thumb" href="/blog/pt/post/arquitetura-agentes-databricks-lakehouse-unity-catalog-langgraph/">
+      <img src="../assets/images/posts/databricks-lakehouse-unity-catalog-langgraph-agent-architecture/cover.webp" alt="Databricks Lakehouse e LangGraph: Conectando Unity Catalog e Mosaic AI a Máquinas de Estado Operacionais" loading="lazy">
+    </a>
+    <div class="blog-row-body">
+      <div class="blog-row-byline">
+        <img class="blog-row-avatar" src="../assets/images/author/hugo-nascimento.jpg" alt="Hugo S. Nascimento" loading="lazy">
+        <h2 class="blog-row-title">
+          <a href="/blog/pt/post/arquitetura-agentes-databricks-lakehouse-unity-catalog-langgraph/">Databricks Lakehouse e LangGraph: Conectando Unity Catalog e Mosaic AI a Máquinas de Estado Operacionais</a>
+        </h2>
+      </div>
+      <p class="blog-row-meta">2026-10-19 &bull; Agentic Engineering &bull; Hugo S. Nascimento</p>
+      <p class="blog-row-description">Por que agentes autônomos falham ao receber acesso SQL livre sobre tabelas Delta e como vincular máquinas de estado em LangGraph e ontologias executáveis ao Databricks Unity Catalog e Mosaic AI.</p>
+      <a class="blog-row-cta" href="/blog/pt/post/arquitetura-agentes-databricks-lakehouse-unity-catalog-langgraph/">Ler Post &rarr;</a>
+    </div>
+  </article>
+  <article class="blog-row blog-post-item">
     <a class="blog-row-thumb" href="/blog/pt/post/arquitetura-agentes-braintrust-evals-cicd-langgraph/">
       <img src="../assets/images/posts/braintrust-evals-cicd-langgraph-agent-architecture/cover.webp" alt="Braintrust Evals e LangGraph: Substituindo Testes Manuais por CI/CD Determinístico" loading="lazy">
     </a>

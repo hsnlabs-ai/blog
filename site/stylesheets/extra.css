@@ -1383,14 +1383,14 @@ td code {
 
 /* CANONICAL 3-COLUMN FOUNDER CALLOUT & MOBILE 50/50 BENTO SPLIT (OPTION 1) */
 .founder-callout-card {
-  max-width: 960px !important;
+  max-width: 1080px !important;
   width: 100% !important;
 }
 .founder-cred-group {
   display: flex;
   align-items: center;
-  gap: 22px;
-  padding: 0 18px;
+  gap: 18px;
+  padding: 0 16px;
   border-left: 1px solid var(--hairline);
   border-right: 1px solid var(--hairline);
   flex-shrink: 0;
@@ -1428,7 +1428,7 @@ td code {
   }
   .founder-cred-group {
     display: grid !important;
-    grid-template-columns: repeat(3, 1fr) !important;
+    grid-template-columns: repeat(2, 1fr) !important;
     gap: 0 !important;
     padding: 0 !important;
     width: 100% !important;
@@ -1443,7 +1443,13 @@ td code {
     gap: 5px !important;
   }
   .founder-cred-item:not(:last-child) {
+    border-right: none !important;
+  }
+  .founder-cred-item:nth-child(odd) {
     border-right: 1px solid var(--hairline) !important;
+  }
+  .founder-cred-item:nth-child(-n+2) {
+    border-bottom: 1px solid var(--hairline) !important;
   }
   .founder-cred-item .founder-cred-logo {
     height: 14px !important;
