@@ -41,7 +41,7 @@ lines.append("Meu foco operacional é **Arquitetura de Agentes Enterprise**. Con
 lines.append("")
 lines.append("Arquiteturas entregues incluem **Deloitte**, **Santander**, **Softplan**, **Unipar Carbocloro**, **LWSA**, **Turbi**, **Caju**, **Cast Group** e **Insi**.")
 lines.append("")
-lines.append('<a href="https://hsnlabs.ai/pt/">hsnlabs Boutique</a> &nbsp;&bull;&nbsp; <a href="https://www.linkedin.com/in/hugosoaresnascimento/">LinkedIn</a> &nbsp;&bull;&nbsp; <a href="https://github.com/hsnlabs-ai/blog">GitHub</a> &nbsp;&bull;&nbsp; <a href="/blog/">English Version</a>')
+lines.append('<a href="https://hsnlabs.ai/">hsnlabs Boutique</a> &nbsp;&bull;&nbsp; <a href="https://www.linkedin.com/in/hugosoaresnascimento/">LinkedIn</a> &nbsp;&bull;&nbsp; <a href="https://github.com/hsnlabs-ai/blog">GitHub</a> &nbsp;&bull;&nbsp; <a href="/blog/">English Version</a>')
 lines.append("")
 lines.append("---")
 lines.append("")

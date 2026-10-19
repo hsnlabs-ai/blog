@@ -29,7 +29,7 @@ Os padrões arquiteturais e fluxos de avaliação contínua detalhados neste pos
 
 * **Plataforma de Avaliação e Observabilidade de IA Braintrust:** detalhando versionamento de conjuntos de dados, avaliadores determinísticos e baseados em rubricas, travas de CI/CD e rastreamento em produção, disponível em <a href="https://www.braintrust.dev/docs">Braintrust Technical Documentation</a>.
 * **Especificação de Orquestração com Estado no LangGraph:** detalhando grafos cíclicos de estado, inspeção granular por nó e persistência durável de checkpoints, disponível em <a href="https://langchain-ai.github.io/langgraph/">LangGraph Technical Documentation</a>.
-* **Prática de Arquitetura Braintrust Evals da hsnlabs:** especificações de referência e metodologia de implantação, disponível em <a href="https://hsnlabs.ai/pt/braintrust/">Prática Braintrust Evals e CI/CD da hsnlabs</a>.
+* **Prática de Arquitetura Braintrust Evals da hsnlabs:** especificações de referência e metodologia de implantação, disponível em <a href="https://hsnlabs.ai/braintrust/">Prática Braintrust Evals e CI/CD da hsnlabs</a>.
 
 ---
 
@@ -92,8 +92,8 @@ Na hsnlabs, implantamos dutos de avaliação contínua com Braintrust diretament
 ---
 
 ## Recursos Estratégicos e Leituras Relacionadas
-- <a href="https://hsnlabs.ai/pt/braintrust/">Prática de Arquitetura Braintrust Evals e CI/CD da hsnlabs</a>
-- <a href="https://hsnlabs.ai/pt/langchain/">Engenharia de Produção LangChain e LangGraph da hsnlabs</a>
-- <a href="https://hsnlabs.ai/pt/snowflake/">Prática de Arquitetura Snowflake AI Data Cloud da hsnlabs</a>
+- <a href="https://hsnlabs.ai/braintrust/">Prática de Arquitetura Braintrust Evals e CI/CD da hsnlabs</a>
+- <a href="https://hsnlabs.ai/langchain/">Engenharia de Produção LangChain e LangGraph da hsnlabs</a>
+- <a href="https://hsnlabs.ai/snowflake/">Prática de Arquitetura Snowflake AI Data Cloud da hsnlabs</a>
 - <a href="/blog/pt/post/falacia-llm-como-juiz/">A Falácia do LLM como Juiz: Por Que Avaliadores Probabilísticos Falham em Operações Reguladas</a>
 - <a href="/blog/pt/post/cemiterio-de-pocs/">O Cemitério de PoCs: Por Que 90% dos Pilotos Corporativos Colapsam em Dados Sujos</a>

@@ -18,7 +18,7 @@ I bridge balance-sheet economics and mission-critical software engineering. With
 
 Production footprints include **Deloitte**, **Santander**, **Softplan**, **Unipar Carbocloro**, **LWSA**, **Turbi**, **Caju**, **Cast Group**, and **Insi**.
 
-[hsnlabs Boutique](https://hsnlabs.ai) &nbsp;&bull;&nbsp; [LinkedIn](https://www.linkedin.com/in/hugosoaresnascimento/) &nbsp;&bull;&nbsp; [GitHub](https://github.com/hsnlabs-ai/blog) &nbsp;&bull;&nbsp; [RSS Feed](https://hsnlabs.ai/blog/feed_rss_created.xml)
+[hsnlabs Boutique](https://hsnlabs.ai/en/) &nbsp;&bull;&nbsp; [LinkedIn](https://www.linkedin.com/in/hugosoaresnascimento/) &nbsp;&bull;&nbsp; [GitHub](https://github.com/hsnlabs-ai/blog) &nbsp;&bull;&nbsp; [RSS Feed](https://hsnlabs.ai/blog/feed_rss_created.xml)
 
 ---
 

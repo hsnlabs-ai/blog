@@ -9,7 +9,7 @@ tags:
 - methodology
 description: "Open 10-block architecture framework for scoping and deploying enterprise AI pilots before writing production code. Version 1.4 updated in October 2026."
 author: "Hugo S. Nascimento"
-image: "assets/images/posts/the-agentic-pilot-canvas/cover.png"
+image: "assets/images/posts/the-agentic-pilot-canvas-v1-4/cover.webp"
 ---
 
 *Reading time: 5 minutes. Author: Hugo S. Nascimento.*
@@ -24,11 +24,11 @@ To solve this architectural gap before committing code, I designed and released 
 
 Version 1.4, updated in October 2026, codifies the production lessons from our engineering sprints at hsnlabs. The framework runs natively in the browser:
 
-👉 **Launch interactive canvas:** [hsnlabs.ai/canvas](https://hsnlabs.ai/canvas/)
+👉 **Launch interactive canvas:** [hsnlabs.ai/canvas](https://hsnlabs.ai/en/canvas/)
 
 ---
 
-<img src="../../assets/images/posts/the-agentic-pilot-canvas/cover.png" alt="The Agentic Pilot Canvas v1.4" loading="lazy" />
+<img src="../../assets/images/posts/the-agentic-pilot-canvas-v1-4/cover.webp" alt="The Agentic Pilot Canvas v1.4" loading="lazy" />
 
 ---
 
@@ -74,4 +74,4 @@ The framework includes:
 * **Filled Benchmark:** Production case study integrated into legacy enterprise systems.
 * **Tooling:** Local browser persistence, presentation loupe, and one-click PDF export.
 
-Open the tool at [hsnlabs.ai/canvas](https://hsnlabs.ai/canvas/) to architect your next production agent.
+Open the tool at [hsnlabs.ai/canvas](https://hsnlabs.ai/en/canvas/) to architect your next production agent.

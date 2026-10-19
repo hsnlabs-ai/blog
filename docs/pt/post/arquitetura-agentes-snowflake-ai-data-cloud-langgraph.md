@@ -30,7 +30,7 @@ Os padrões arquiteturais e capacidades de plataforma detalhados neste post segu
 * **Arquitetura Snowflake AI Data Cloud e Cortex:** detalhando governança de dados corporativos, busca vetorial híbrida via Cortex Search e modelos semânticos via Cortex Analyst, disponível em <a href="https://docs.snowflake.com/en/user-guide/snowflake-cortex">Snowflake Cortex Documentation</a>.
 * **Controle de Acesso Baseado em Função e Políticas de Acesso por Linha na Snowflake:** detalhando fronteiras de segurança impostas nativamente na plataforma, disponível em <a href="https://docs.snowflake.com/en/user-guide/security-access-control-overview">Snowflake Access Control Documentation</a>.
 * **Especificação de Orquestração com Estado no LangGraph:** detalhando grafos cíclicos de estado, persistência durável de checkpoints e interrupções supervisionadas por humanos, disponível em <a href="https://langchain-ai.github.io/langgraph/">LangGraph Technical Documentation</a>.
-* **Prática de Arquitetura Snowflake da hsnlabs:** especificações de referência e metodologia de implantação, disponível em <a href="https://hsnlabs.ai/pt/snowflake/">Prática Snowflake AI Data Cloud da hsnlabs</a>.
+* **Prática de Arquitetura Snowflake da hsnlabs:** especificações de referência e metodologia de implantação, disponível em <a href="https://hsnlabs.ai/snowflake/">Prática Snowflake AI Data Cloud da hsnlabs</a>.
 
 ---
 
@@ -105,8 +105,8 @@ A Snowflake torna a IA corporativa fácil, eficiente e confiável. Milhares de e
 ---
 
 ## Recursos Estratégicos e Leituras Relacionadas
-- <a href="https://hsnlabs.ai/pt/snowflake/">Prática de Arquitetura Snowflake AI Data Cloud da hsnlabs</a>
-- <a href="https://hsnlabs.ai/pt/langchain/">Engenharia de Produção LangChain e LangGraph da hsnlabs</a>
+- <a href="https://hsnlabs.ai/snowflake/">Prática de Arquitetura Snowflake AI Data Cloud da hsnlabs</a>
+- <a href="https://hsnlabs.ai/langchain/">Engenharia de Produção LangChain e LangGraph da hsnlabs</a>
 - <a href="/blog/pt/post/o-que-e-uma-ontologia-para-agentes-ia/">O Que É uma Ontologia para Agentes de IA? O Guia Definitivo</a>
 - <a href="/blog/pt/post/ontologia-vs-schema-banco-dados/">Ontologia versus Schema de Banco de Dados: Por Que Tabelas Não Definem Transições de Negócio</a>
 - <a href="/blog/pt/post/cemiterio-de-pocs/">O Cemitério de PoCs: Por Que 90% dos Pilotos Corporativos Colapsam em Dados Sujos</a>

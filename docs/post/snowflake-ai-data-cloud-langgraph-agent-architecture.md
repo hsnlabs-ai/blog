@@ -30,7 +30,7 @@ The architectural patterns and platform capabilities detailed in this post align
 * **Snowflake AI Data Cloud and Cortex Architecture:** detailing governed enterprise data, hybrid vector search via Cortex Search, and semantic models via Cortex Analyst, available at <a href="https://docs.snowflake.com/en/user-guide/snowflake-cortex">Snowflake Cortex Documentation</a>.
 * **Snowflake Role-Based Access Control and Row Access Policies:** detailing fine-grained security boundaries enforced at the platform level, available at <a href="https://docs.snowflake.com/en/user-guide/security-access-control-overview">Snowflake Access Control Documentation</a>.
 * **LangGraph Stateful Orchestration Specification:** detailing cyclic state graphs, durable checkpointing, and human-in-the-loop interrupts, available at <a href="https://langchain-ai.github.io/langgraph/">LangGraph Technical Documentation</a>.
-* **hsnlabs Snowflake Architecture Practice:** reference specifications and deployment methodology, available at <a href="https://hsnlabs.ai/snowflake/">hsnlabs Snowflake AI Data Cloud Practice</a>.
+* **hsnlabs Snowflake Architecture Practice:** reference specifications and deployment methodology, available at <a href="https://hsnlabs.ai/en/snowflake/">hsnlabs Snowflake AI Data Cloud Practice</a>.
 
 ---
 
@@ -105,8 +105,8 @@ Snowflake makes enterprise AI easy, efficient and trusted. Thousands of companie
 ---
 
 ## Strategic Resources and Related Reading
-- <a href="https://hsnlabs.ai/snowflake/">hsnlabs Snowflake AI Data Cloud Architecture Practice</a>
-- <a href="https://hsnlabs.ai/langchain/">hsnlabs LangChain & LangGraph Production Engineering</a>
+- <a href="https://hsnlabs.ai/en/snowflake/">hsnlabs Snowflake AI Data Cloud Architecture Practice</a>
+- <a href="https://hsnlabs.ai/en/langchain/">hsnlabs LangChain & LangGraph Production Engineering</a>
 - <a href="../what-is-an-ontology-for-ai-agents/">What Is an Ontology for AI Agents? The Definitive Guide</a>
 - <a href="../ontology-vs-database-schema/">Ontology versus Database Schema: Why Tables Alone Cannot Define Business Transitions</a>
 - <a href="../the-poc-graveyard/">The PoC Graveyard: Why 90% of Enterprise Pilots Collapse Under Dirty Data</a>

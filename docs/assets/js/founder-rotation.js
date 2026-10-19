@@ -20,8 +20,8 @@
                window.location.pathname.includes('/blog/');
 
   var contactBase = isBlog
-    ? (isPt ? 'https://hsnlabs.ai/pt/#contact' : 'https://hsnlabs.ai/#contact')
-    : (isPt ? '/pt/#contact' : '/#contact');
+    ? (isPt ? 'https://hsnlabs.ai/#contact' : 'https://hsnlabs.ai/en/#contact')
+    : (isPt ? '/#contact' : '/en/#contact');
 
   var assetBase = '/assets/images/author/pool/';
   if (isBlog && window.location.hostname === 'localhost') {

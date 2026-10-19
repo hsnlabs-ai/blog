@@ -29,7 +29,7 @@ The architectural patterns and evaluation workflows detailed in this post align 
 
 * **Braintrust AI Evaluation and Observability Platform:** detailing dataset versioning, deterministic and rubric-based scorers, CI/CD pull-request gates, and production trace logging, available at <a href="https://www.braintrust.dev/docs">Braintrust Technical Documentation</a>.
 * **LangGraph Stateful Orchestration Specification:** detailing cyclic state graphs, node-level state inspection, and durable checkpointing, available at <a href="https://langchain-ai.github.io/langgraph/">LangGraph Technical Documentation</a>.
-* **hsnlabs Braintrust Evals Practice:** reference specifications and deployment methodology, available at <a href="https://hsnlabs.ai/braintrust/">hsnlabs Braintrust Evals & CI/CD Practice</a>.
+* **hsnlabs Braintrust Evals Practice:** reference specifications and deployment methodology, available at <a href="https://hsnlabs.ai/en/braintrust/">hsnlabs Braintrust Evals & CI/CD Practice</a>.
 
 ---
 
@@ -92,8 +92,8 @@ At hsnlabs, we embed Braintrust evaluation pipelines directly into our clients' 
 ---
 
 ## Strategic Resources and Related Reading
-- <a href="https://hsnlabs.ai/braintrust/">hsnlabs Braintrust Evals & CI/CD Architecture Practice</a>
-- <a href="https://hsnlabs.ai/langchain/">hsnlabs LangChain & LangGraph Production Engineering</a>
-- <a href="https://hsnlabs.ai/snowflake/">hsnlabs Snowflake AI Data Cloud Architecture Practice</a>
+- <a href="https://hsnlabs.ai/en/braintrust/">hsnlabs Braintrust Evals & CI/CD Architecture Practice</a>
+- <a href="https://hsnlabs.ai/en/langchain/">hsnlabs LangChain & LangGraph Production Engineering</a>
+- <a href="https://hsnlabs.ai/en/snowflake/">hsnlabs Snowflake AI Data Cloud Architecture Practice</a>
 - <a href="../llm-as-judge-fallacy/">The LLM-as-a-Judge Fallacy: Why Probabilistic Evaluators Fail in Regulated Operations</a>
 - <a href="../the-poc-graveyard/">The PoC Graveyard: Why 90% of Enterprise Pilots Collapse Under Dirty Data</a>

@@ -1,5 +1,5 @@
 ---
-title: "The Agentic Pilot Canvas v1.4: O Framework para Desenhar Pilotos de IA que Sobrevivem a Producao"
+title: "The Agentic Pilot Canvas v1.4: O Framework para Desenhar Pilotos de IA que Sobrevivem à Produção"
 date: "2026-10-07"
 category: "Agentic Engineering"
 tags:
@@ -7,9 +7,9 @@ tags:
 - architecture
 - enterprise-agents
 - methodology
-description: "Framework aberto de arquitetura em 10 blocos para desenhar pilotos de IA corporativa antes de escrever codigo. Versao 1.4 atualizada em outubro de 2026."
+description: "Framework aberto de arquitetura em 10 blocos para desenhar pilotos de IA corporativa antes de escrever código. Versão 1.4 atualizada em outubro de 2026."
 author: "Hugo S. Nascimento"
-image: "assets/images/posts/the-agentic-pilot-canvas/cover.png"
+image: "assets/images/posts/the-agentic-pilot-canvas-v1-4/cover.webp"
 ---
 
 *Tempo de leitura: 5 minutos. Autor: Hugo S. Nascimento.*
@@ -24,11 +24,11 @@ Para resolver esse gargalo metodologico antes de escrever uma unica linha de cod
 
 A versao 1.4, atualizada em outubro de 2026, consolida os aprendizados dos nossos sprints de arquitetura na hsnlabs. O modelo e interativo e roda diretamente no navegador:
 
-👉 **Acesse a ferramenta interativa:** <a href="https://hsnlabs.ai/pt/canvas/">hsnlabs.ai/canvas</a>
+👉 **Acesse a ferramenta interativa:** <a href="https://hsnlabs.ai/canvas/">hsnlabs.ai/canvas</a>
 
 ---
 
-<img src="../../../assets/images/posts/the-agentic-pilot-canvas/cover.png" alt="The Agentic Pilot Canvas v1.4" loading="lazy" />
+<img src="../../../assets/images/posts/the-agentic-pilot-canvas-v1-4/cover.webp" alt="The Agentic Pilot Canvas v1.4" loading="lazy" />
 
 ---
 
@@ -103,4 +103,4 @@ O framework e totalmente aberto e funcional:
 * **Modo Preenchido:** Caso benchmark real de atendimento corporativo integrado a sistemas legados de RH.
 * **Recursos:** Persistencia automatica no navegador, lupa de leitura ampliada e exportacao direta para PDF.
 
-Acesse agora em <a href="https://hsnlabs.ai/pt/canvas/">hsnlabs.ai/canvas</a> e utilize no desenho da sua proxima arquitetura.
+Acesse agora em <a href="https://hsnlabs.ai/canvas/">hsnlabs.ai/canvas</a> e utilize no desenho da sua proxima arquitetura.
