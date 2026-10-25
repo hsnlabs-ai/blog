@@ -142,4 +142,4 @@ flowchart TD
 - <a href="/blog/pt/post/o-que-e-uma-ontologia-para-agentes-ia/">O Que E uma Ontologia para Agentes de IA? O Guia Definitivo</a>
 - <a href="/blog/pt/post/palantir-vs-databricks-arquitetura-agentes/">Palantir vs Databricks: Por Que Data Lakes Falham na Orquestracao de Agentes</a>
 - <a href="/blog/pt/post/cemiterio-de-pocs/">Por Que Agentes Falham: O Cemiterio de PoCs</a>
-- <a href="https://hsnlabs.ai/bootcamp/">Conhecer o Agentic Bootcamp da hsnlabs</a>
+- <a href="https://hsnlabs.ai/bootcamp/">Conhecer o Agentic Bootcamp™ da hsnlabs</a>

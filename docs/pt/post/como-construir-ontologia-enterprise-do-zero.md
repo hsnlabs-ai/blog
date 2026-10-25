@@ -136,4 +136,4 @@ Construir uma ontologia corporativa exige rigor analítico e compreensão profun
 - <a href="/blog/pt/post/estudo-caso-latam-airlines/">LATAM Airlines: Agentes em Producao com Margem de 3 Por Cento</a>
 - <a href="/blog/pt/post/estudo-caso-cleveland-clinic-agentes-operacionais/">Estudo de Caso: Como a Cleveland Clinic Escalou Fluxo de Pacientes</a>
 - <a href="/blog/pt/post/agentes-ilimitados-maquinas-estados-finitos/">Estudo de Caso: 42 Chamadas em Loop as 2 da Manha</a>
-- <a href="https://hsnlabs.ai/bootcamp/">Conhecer o Agentic Bootcamp da hsnlabs</a>
+- <a href="https://hsnlabs.ai/bootcamp/">Conhecer o Agentic Bootcamp™ da hsnlabs</a>

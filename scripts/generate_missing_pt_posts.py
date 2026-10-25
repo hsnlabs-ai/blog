@@ -118,7 +118,7 @@ A transicao para software agentico nao e um projeto experimental de TI. E uma de
 ## Recursos Estrategicos e Posts Relacionados
 - <a href="/blog/pt/post/bpo-substitution-matrix/">A Matriz de Substituicao de BPO: Metricas Operacionais e Financeiras</a>
 - <a href="/blog/pt/post/cemiterio-de-pocs/">Por Que Agentes Falham: O Cemiterio de PoCs</a>
-- <a href="https://hsnlabs.ai/pt/bootcamp/">Conheca o Agentic Bootcamp da hsnlabs para Liderancas</a>
+- <a href="https://hsnlabs.ai/pt/bootcamp/">Conheca o Agentic Bootcamp™ da hsnlabs para Liderancas</a>
 """
 
 # 3. estudo-caso-cleveland-clinic-agentes-operacionais
@@ -279,7 +279,7 @@ Construir uma ontologia corporativa exige rigor analitico e compreensao profunda
 ## Recursos Estrategicos e Posts Relacionados
 - <a href="/blog/pt/post/how-to-build-operational-ontology-python-mcp/">Como Construir uma Ontologia Operacional em Python com Pydantic e MCP</a>
 - <a href="/blog/pt/post/ontology-vs-database-schema/">Ontologia vs Schema de Banco de Dados: As Diferencas Criticas</a>
-- <a href="https://hsnlabs.ai/pt/bootcamp/">Inscreva-se no Agentic Bootcamp da hsnlabs</a>
+- <a href="https://hsnlabs.ai/pt/bootcamp/">Inscreva-se no Agentic Bootcamp™ da hsnlabs</a>
 """
 
 # 6. como-construir-ontologia-operacional-python-mcp
@@ -331,7 +331,7 @@ A integracao entre Python, Pydantic e MCP e a espinha dorsal tecnologica que per
 ## Recursos Estrategicos e Posts Relacionados
 - <a href="/blog/pt/post/how-to-build-an-enterprise-ontology-from-scratch/">Como Construir uma Ontologia Enterprise do Zero</a>
 - <a href="/blog/pt/post/the-operational-ontology/">A Ontologia Operacional: Conectando Dados e Acoes</a>
-- <a href="https://hsnlabs.ai/pt/bootcamp/">Conheca o Agentic Bootcamp da hsnlabs</a>
+- <a href="https://hsnlabs.ai/pt/bootcamp/">Conheca o Agentic Bootcamp™ da hsnlabs</a>
 """
 
 # 7. kafka-metamorfose-ia-futuro-do-trabalho
@@ -424,7 +424,7 @@ Uma ontologia operacional atua como a camada de inteligencia e protecao que trad
 ## Recursos Estrategicos e Posts Relacionados
 - <a href="/blog/pt/post/ontology-vs-knowledge-graph/">Ontologia vs Grafo de Conhecimento: Principais Diferencas</a>
 - <a href="/blog/pt/post/what-is-an-ontology-for-ai-agents/">O Que E uma Ontologia para Agentes de IA?</a>
-- <a href="https://hsnlabs.ai/pt/bootcamp/">Inscreva-se no Agentic Bootcamp da hsnlabs</a>
+- <a href="https://hsnlabs.ai/pt/bootcamp/">Inscreva-se no Agentic Bootcamp™ da hsnlabs</a>
 """
 
 # 9. ontologia-vs-grafo-conhecimento
@@ -477,7 +477,7 @@ Sem ontologia, um grafo de conhecimento torna-se um emaranhado de dados sem gove
 ## Recursos Estrategicos e Posts Relacionados
 - <a href="/blog/pt/post/ontology-vs-database-schema/">Ontologia vs Schema de Banco de Dados</a>
 - <a href="/blog/pt/post/the-operational-ontology/">A Ontologia Operacional na Pratica</a>
-- <a href="https://hsnlabs.ai/pt/bootcamp/">Conheca o Agentic Bootcamp da hsnlabs</a>
+- <a href="https://hsnlabs.ai/pt/bootcamp/">Conheca o Agentic Bootcamp™ da hsnlabs</a>
 """
 
 # 10. palantir-aip-bootcamp-ontologia-operacional
@@ -625,7 +625,7 @@ O data lake continua cuidando do historico e analise profunda, enquanto a ontolo
 ## Recursos Estrategicos e Posts Relacionados
 - <a href="/blog/pt/post/palantir-aip-bootcamp-ontologia-operacional/">A Arquitetura do Palantir AIP Dissecada</a>
 - <a href="/blog/pt/post/ontology-vs-database-schema/">Ontologia vs Schema de Banco de Dados</a>
-- <a href="https://hsnlabs.ai/pt/bootcamp/">Conheca o Agentic Bootcamp da hsnlabs</a>
+- <a href="https://hsnlabs.ai/pt/bootcamp/">Conheca o Agentic Bootcamp™ da hsnlabs</a>
 """
 
 # 13. arbitragem-protocolo-sinistros-subscricao
@@ -728,7 +728,7 @@ O resultado e software de inteligência artificial confiavel, rapido e pronto pa
 ## Recursos Estrategicos e Posts Relacionados
 - <a href="/blog/pt/post/what-is-an-ontology-for-ai-agents/">O Que E uma Ontologia para Agentes de IA?</a>
 - <a href="/blog/pt/post/how-to-build-an-enterprise-ontology-from-scratch/">Como Construir uma Ontologia Enterprise do Zero</a>
-- <a href="https://hsnlabs.ai/pt/bootcamp/">Inscreva-se no Agentic Bootcamp da hsnlabs</a>
+- <a href="https://hsnlabs.ai/pt/bootcamp/">Inscreva-se no Agentic Bootcamp™ da hsnlabs</a>
 """
 
 # 15. o-que-e-uma-ontologia-para-agentes-ia

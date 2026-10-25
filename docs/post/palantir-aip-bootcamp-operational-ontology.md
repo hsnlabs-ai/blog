@@ -95,7 +95,7 @@ While Palantir proved the 5-day empirical onboarding model, its bootcamp is desi
 
 Here is how the **hsnlabs 5-Day Agentic Architecture Bootcamp** compares against both the **Palantir AIP Bootcamp** and traditional **Big 4 Discovery Studies**:
 
-| Evaluation Criterion | Traditional Big 4 Discovery - McKinsey, Accenture, EY | Palantir AIP Bootcamp | hsnlabs 5-Day Agentic Bootcamp |
+| Evaluation Criterion | Traditional Big 4 Discovery - McKinsey, Accenture, EY | Palantir AIP Bootcamp | hsnlabs 5-Day Agentic Bootcamp™ |
 | :--- | :--- | :--- | :--- |
 | **Time to Working Proof** | 60 to 90 days of stakeholder interviews — delivers zero working code | 1 to 5 days of intensive engineering over sample or sandbox data | 5 days of Forward Deployed Engineering connected to your isolated staging environment |
 | **Primary Deliverable** | 120-page strategy PowerPoint deck and high-level roadmap | Working prototype locked inside the proprietary Palantir Foundry and AIP platform | Working multi-agent prototype in pure code, audited ROI model, and production ADLC blueprint |

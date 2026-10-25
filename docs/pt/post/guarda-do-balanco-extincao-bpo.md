@@ -75,4 +75,4 @@ Quando uma empresa substitui mão de obra terceirizada por trabalhadores digitai
 - <a href="/blog/pt/post/matriz-substituicao-bpo/">A Matriz de Substituicao de BPO: Metricas Operacionais e Financeiras</a>
 - <a href="/blog/pt/post/morte-suporte-nivel-1-erp/">A Morte do Suporte Nivel 1: Por Que Consultorias de ERP Perdem Horas Faturaveis</a>
 - <a href="/blog/pt/post/comprar-ou-construir-crm-vendas-b2b/">CRM de Vendas B2B: Comprar Salesforce, Adaptar Twenty ou Construir com Agentes</a>
-- <a href="https://hsnlabs.ai/bootcamp/">Conhecer o Agentic Bootcamp da hsnlabs</a>
+- <a href="https://hsnlabs.ai/bootcamp/">Conhecer o Agentic Bootcamp™ da hsnlabs</a>

@@ -18,7 +18,7 @@ def test_gate_e1_cross_navigation():
     assert "pt/post/cemiterio-de-pocs/" in footer_html, "Pilares do footer PT no blog devem apontar para pt/post/"
 
     site_pt_index = (SITE_DIR / "index.html").read_text(encoding="utf-8")
-    assert '<li><a href="/bootcamp/">Agentic Bootcamp</a></li>' in site_pt_index
+    assert '<li><a href="/bootcamp/">Agentic Bootcamp™</a></li>' in site_pt_index
     assert '<li><a href="/advisory/">Advisory</a></li>' in site_pt_index
     assert '<li><a href="/blog/pt/">Blog</a></li>' in site_pt_index
     assert '<a href="/privacy-policy/">Política de Privacidade</a>' in site_pt_index

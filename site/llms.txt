@@ -26,7 +26,7 @@ Governing the complete Agent Development Lifecycle using market standards like L
 - Agentic AI Advisory: https://hsnlabs.ai/advisory/
 Guiding C-levels through the structural transformation required to protect market share, defend unit margins, and deploy autonomous workflows safely. Core pillars: Operating Models, Margin Defense, Progressive Migration, and Executive Governance.
 
-## Entry Engagement: Agentic Bootcamp
+## Entry Engagement: Agentic Bootcamp™
 - Bootcamp Deployment Protocol: https://hsnlabs.ai/bootcamp/
 An intensive 1-to-5-day Forward Deployed Engineering sprint inside client infrastructure. We validate data access, connect tools, and deliver a working sandbox prototype and executive business case with verified operational ROI. Qualifying enterprise accounts unlock fully sponsored terms or a 100% Performance Rebate credited toward production rollout.
 

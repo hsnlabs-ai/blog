@@ -124,4 +124,4 @@ Ao desacoplar a disciplina de ontologias operacionais do licenciamento propriet√
 - <a href="/blog/pt/post/matriz-substituicao-bpo/">A Matriz de Substituicao de BPO: Metricas Operacionais e Financeiras</a>
 - <a href="/blog/pt/post/playbook-c-suite-protecao-margem/">O Playbook de Transicao da Diretoria: Protegendo Margens na Era Agentica</a>
 - <a href="/blog/pt/post/arbitragem-protocolo-sinistros-subscricao/">Arbitragem de Protocolos: Liquidacao Multimodal Autonoma de Sinistros</a>
-- <a href="https://hsnlabs.ai/bootcamp/">Conhecer o Agentic Bootcamp da hsnlabs</a>
+- <a href="https://hsnlabs.ai/bootcamp/">Conhecer o Agentic Bootcamp‚Ñ¢ da hsnlabs</a>
