@@ -1428,7 +1428,7 @@ td code {
   }
   .founder-cred-group {
     display: grid !important;
-    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-columns: repeat(3, 1fr) !important;
     gap: 0 !important;
     padding: 0 !important;
     width: 100% !important;
@@ -1436,23 +1436,19 @@ td code {
     background: rgba(250, 250, 250, 0.75) !important;
   }
   .founder-cred-item {
-    padding: 10px 12px !important;
+    padding: 10px 4px !important;
     align-items: center !important;
     justify-content: center !important;
     text-align: center !important;
     gap: 5px !important;
+    min-width: 0 !important;
   }
   .founder-cred-item:not(:last-child) {
-    border-right: none !important;
-  }
-  .founder-cred-item:nth-child(odd) {
     border-right: 1px solid var(--hairline) !important;
   }
-  .founder-cred-item:nth-child(-n+2) {
-    border-bottom: 1px solid var(--hairline) !important;
-  }
   .founder-cred-item .founder-cred-logo {
-    height: 14px !important;
+    height: 12px !important;
+    max-width: 100% !important;
   }
   .founder-cred-sub {
     font-size: 0.70rem !important;
