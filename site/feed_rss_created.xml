@@ -13,8 +13,8 @@
     <language>en</language>
 
     
-    <pubDate>Sun, 25 Oct 2026 12:31:00 -0000</pubDate>
-    <lastBuildDate>Sun, 25 Oct 2026 12:31:00 -0000</lastBuildDate>
+    <pubDate>Sun, 25 Oct 2026 18:50:55 -0000</pubDate>
+    <lastBuildDate>Sun, 25 Oct 2026 18:50:55 -0000</lastBuildDate>
     <ttl>1440</ttl>
 
     
@@ -137,7 +137,7 @@
     </item>
     
     <item>
-      <title>The Agentic Pilot Canvas v1.4: The Framework for Enterprise AI Pilots That Survive Production</title>
+      <title>The Agentic Canvas™: The Framework for Enterprise AI Systems That Survive Production</title>
       
       
         
@@ -158,7 +158,7 @@
       <category>methodology</category>
         
       
-      <description>Open 10-block architecture framework for scoping and deploying enterprise AI pilots before writing production code. Version 1.4 updated in October 2026.</description>
+      <description>10-block architecture framework for scoping and deploying enterprise AI systems before writing production code. Updated in October 2026.</description>
       <link>https://hsnlabs.ai/blog/post/the-agentic-pilot-canvas-v1-4/</link>
       <pubDate>Wed, 07 Oct 2026 00:00:00 +0000</pubDate>
       <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento · Enterprise Agent Architecture</source>

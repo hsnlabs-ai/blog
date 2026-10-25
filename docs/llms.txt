@@ -52,6 +52,10 @@ Why headless MCP and LangGraph agents built by hsnlabs replace fragile UI screen
 - ERP AMS Consultancies and ITSM Suites vs Self-Healing Agents: https://hsnlabs.ai/blog/post/death-of-tier-1-erp-helpdesk/
 Comparing hourly SAP and TOTVS sustaining retainers (Accenture, Stefanini, Sonda) and per-seat ITSM copilot add-ons (ServiceNow, Zendesk) against hsnlabs autonomous Tier-1 resolution.
 
+## Open Architecture Frameworks
+- The Agentic Canvas™: https://hsnlabs.ai/en/canvas/
+10-block architecture framework by hsnlabs for structuring and certifying enterprise agentic systems across two tracks — Agentic Products and Agentic Employees — covering legacy data ontologies, deterministic guardrails, evaluation harnesses, and human-in-the-loop governance.
+
 ## Knowledge Engine & Research
 - hsnlabs Blog: https://hsnlabs.ai/blog/
 Technical posts, case studies, and post-mortems on enterprise agent architectures and runtime observability.
@@ -72,6 +76,7 @@ Structured machine-readable feed of all technical publications.
 
 ## Documentação e Recursos em Português
 - Visao Geral em Portugues: https://hsnlabs.ai/pt/
+- The Agentic Canvas™: https://hsnlabs.ai/canvas/
 - Bootcamp de Agentes: https://hsnlabs.ai/pt/bootcamp/
 - Advisory de Arquitetura: https://hsnlabs.ai/pt/advisory/
 - Servidores MCP Enterprise: https://hsnlabs.ai/pt/mcp/

@@ -1,5 +1,5 @@
 ---
-title: "The Agentic Pilot Canvas v1.4: O Framework para Desenhar Pilotos de IA que Sobrevivem à Produção"
+title: "The Agentic Canvas™: O Framework para Desenhar Sistemas de IA que Sobrevivem à Produção"
 date: "2026-10-07"
 category: "Agentic Engineering"
 tags:
@@ -7,7 +7,7 @@ tags:
 - architecture
 - enterprise-agents
 - methodology
-description: "Framework aberto de arquitetura em 10 blocos para desenhar pilotos de IA corporativa antes de escrever código. Versão 1.4 atualizada em outubro de 2026."
+description: "Framework de arquitetura em 10 blocos para desenhar sistemas de IA corporativa antes de escrever código. Atualizado em outubro de 2026."
 author: "Hugo S. Nascimento"
 image: "assets/images/posts/the-agentic-pilot-canvas-v1-4/cover.webp"
 ---
@@ -20,15 +20,15 @@ A maioria dos pilotos de IA em grandes empresas morre antes do deploy. Nao por c
 
 Constroem demonstracoes plasticas sobre system prompts frageis. Quando o agente entra em contato com bancos de dados relacionais legados, regras fiscais sem tolerancia a falhas e politicas internas nao documentadas, a operacao trava.
 
-Para resolver esse gargalo metodologico antes de escrever uma unica linha de codigo, criei e disponibilizei sob licenca aberta MIT The Agentic Pilot Canvas.
+Para resolver esse gargalo metodologico antes de escrever uma unica linha de codigo, criei e disponibilizei The Agentic Canvas™.
 
-A versao 1.4, atualizada em outubro de 2026, consolida os aprendizados dos nossos sprints de arquitetura na hsnlabs. O modelo e interativo e roda diretamente no navegador:
+A versao 1.5, atualizada em outubro de 2026, consolida os aprendizados dos nossos sprints de arquitetura na hsnlabs. O modelo e interativo e roda diretamente no navegador:
 
 👉 **Acesse a ferramenta interativa:** <a href="https://hsnlabs.ai/canvas/">hsnlabs.ai/canvas</a>
 
 ---
 
-<img src="../../../assets/images/posts/the-agentic-pilot-canvas-v1-4/cover.webp" alt="The Agentic Pilot Canvas v1.4" loading="lazy" />
+<img src="../../../assets/images/posts/the-agentic-pilot-canvas-v1-4/cover.webp" alt="The Agentic Canvas™" loading="lazy" />
 
 ---
 

@@ -31,10 +31,10 @@
       "id": "site_canvas",
       "en_path": "/en/canvas/",
       "pt_path": "/canvas/",
-      "title_en": "The Agentic Pilot Canvas v1.4 · hsnlabs",
-      "title_pt": "The Agentic Pilot Canvas v1.4 · hsnlabs",
-      "description_en": "Open MIT architecture framework for designing enterprise agentic AI pilots: legacy data ontologies, deterministic guards, eval harnesses, and governance.",
-      "description_pt": "Framework aberto sob licença MIT para desenhar pilotos de IA agêntica enterprise: ontologias sobre dados legados, determinismo e governança em produção."
+      "title_en": "The Agentic Canvas™ · hsnlabs",
+      "title_pt": "The Agentic Canvas™ · hsnlabs",
+      "description_en": "Architecture framework by hsnlabs for designing and certifying enterprise agentic systems across two tracks: Agentic Products and Agentic Employees.",
+      "description_pt": "Framework de arquitetura da hsnlabs para desenhar e homologar sistemas agênticos corporativos em duas vertentes: Agentic Products e Agentic Employees."
     },
     {
       "id": "site_mcp",
@@ -482,11 +482,11 @@
     {
       "slug_en": "the-agentic-pilot-canvas-v1-4",
       "slug_pt": "the-agentic-pilot-canvas-v1-4",
-      "title_en": "The Agentic Pilot Canvas v1.4: The Framework for Enterprise AI Pilots That Survive Production",
-      "title_pt": "The Agentic Pilot Canvas v1.4: O Framework para Desenhar Pilotos de IA que Sobrevivem a Producao",
+      "title_en": "The Agentic Canvas™: The Framework for Enterprise AI Systems That Survive Production",
+      "title_pt": "The Agentic Canvas™: O Framework para Desenhar Sistemas de IA que Sobrevivem à Produção",
       "category_en": "Agentic Engineering",
       "category_pt": "Engenharia Agêntica",
-      "target_keyword_pt": "the agentic pilot canvas v1 4 framework ia",
+      "target_keyword_pt": "the agentic canvas framework ia",
       "en_path": "/blog/post/the-agentic-pilot-canvas-v1-4/",
       "pt_path": "/blog/pt/post/the-agentic-pilot-canvas-v1-4/"
     }

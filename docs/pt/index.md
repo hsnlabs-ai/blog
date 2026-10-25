@@ -68,17 +68,17 @@ Arquiteturas entregues incluem **Deloitte**, **Santander**, **Softplan**, **Unip
   </article>
   <article class="blog-row blog-post-item">
     <a class="blog-row-thumb" href="/blog/pt/post/the-agentic-pilot-canvas-v1-4/">
-      <img src="../assets/images/posts/the-agentic-pilot-canvas-v1-4/cover.webp" alt="The Agentic Pilot Canvas v1.4: O Framework para Desenhar Pilotos de IA que Sobrevivem à Produção" loading="lazy">
+      <img src="../assets/images/posts/the-agentic-pilot-canvas-v1-4/cover.webp" alt="The Agentic Canvas™: O Framework para Desenhar Sistemas de IA que Sobrevivem à Produção" loading="lazy">
     </a>
     <div class="blog-row-body">
       <div class="blog-row-byline">
         <img class="blog-row-avatar" src="../assets/images/author/hugo-nascimento.jpg" alt="Hugo S. Nascimento" loading="lazy">
         <h2 class="blog-row-title">
-          <a href="/blog/pt/post/the-agentic-pilot-canvas-v1-4/">The Agentic Pilot Canvas v1.4: O Framework para Desenhar Pilotos de IA que Sobrevivem à Produção</a>
+          <a href="/blog/pt/post/the-agentic-pilot-canvas-v1-4/">The Agentic Canvas™: O Framework para Desenhar Sistemas de IA que Sobrevivem à Produção</a>
         </h2>
       </div>
       <p class="blog-row-meta">2026-10-07 &bull; Agentic Engineering &bull; Hugo S. Nascimento</p>
-      <p class="blog-row-description">Framework aberto de arquitetura em 10 blocos para desenhar pilotos de IA corporativa antes de escrever código. Versão 1.4 atualizada em outubro de 2026.</p>
+      <p class="blog-row-description">Framework de arquitetura em 10 blocos para desenhar sistemas de IA corporativa antes de escrever código. Atualizado em outubro de 2026.</p>
       <a class="blog-row-cta" href="/blog/pt/post/the-agentic-pilot-canvas-v1-4/">Ler Post &rarr;</a>
     </div>
   </article>

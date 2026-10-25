@@ -1,5 +1,5 @@
 ---
-title: "The Agentic Pilot Canvas v1.4: The Framework for Enterprise AI Pilots That Survive Production"
+title: "The Agentic Canvas™: The Framework for Enterprise AI Systems That Survive Production"
 date: "2026-10-07"
 category: "Agentic Engineering"
 tags:
@@ -7,7 +7,7 @@ tags:
 - architecture
 - enterprise-agents
 - methodology
-description: "Open 10-block architecture framework for scoping and deploying enterprise AI pilots before writing production code. Version 1.4 updated in October 2026."
+description: "10-block architecture framework for scoping and deploying enterprise AI systems before writing production code. Updated in October 2026."
 author: "Hugo S. Nascimento"
 image: "assets/images/posts/the-agentic-pilot-canvas-v1-4/cover.webp"
 ---
@@ -20,15 +20,15 @@ Most enterprise AI pilots collapse before production. Not because foundation mod
 
 Teams build brittle demos powered by free-form system prompts. Once the agent meets legacy relational databases, zero-tolerance financial workflows, and undocumented enterprise policies, the deployment fails.
 
-To solve this architectural gap before committing code, I designed and released The Agentic Pilot Canvas under the open MIT License.
+To solve this architectural gap before committing code, I designed and released The Agentic Canvas™.
 
-Version 1.4, updated in October 2026, codifies the production lessons from our engineering sprints at hsnlabs. The framework runs natively in the browser:
+Version 1.5, updated in October 2026, codifies the production lessons from our engineering sprints at hsnlabs. The framework runs natively in the browser:
 
 👉 **Launch interactive canvas:** [hsnlabs.ai/canvas](https://hsnlabs.ai/en/canvas/)
 
 ---
 
-<img src="../../assets/images/posts/the-agentic-pilot-canvas-v1-4/cover.webp" alt="The Agentic Pilot Canvas v1.4" loading="lazy" />
+<img src="../../assets/images/posts/the-agentic-pilot-canvas-v1-4/cover.webp" alt="The Agentic Canvas™" loading="lazy" />
 
 ---
 
