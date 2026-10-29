@@ -19,6 +19,22 @@ Arquiteturas entregues incluem **Deloitte**, **Santander**, **Softplan**, **Unip
 
 <div class="blog-list" id="component-blog-list">
   <article class="blog-row blog-post-item">
+    <a class="blog-row-thumb" href="/blog/pt/post/o-fenomeno-high-ic/">
+      <img src="../assets/images/posts/the-high-ic-phenomenon/cover.webp" alt="O Fenômeno High IC: Produtividade e Equipes Enxutas" loading="lazy">
+    </a>
+    <div class="blog-row-body">
+      <div class="blog-row-byline">
+        <img class="blog-row-avatar" src="../assets/images/author/hugo-nascimento.jpg" alt="Hugo S. Nascimento" loading="lazy">
+        <h2 class="blog-row-title">
+          <a href="/blog/pt/post/o-fenomeno-high-ic/">O Fenômeno High IC: Produtividade e Equipes Enxutas</a>
+        </h2>
+      </div>
+      <p class="blog-row-meta">2026-10-20 &bull; Future of Work &bull; Hugo S. Nascimento</p>
+      <p class="blog-row-description">Por que medir capacidade operacional pelo tamanho da equipe perdeu o sentido com a chegada dos agentes de inteligência artificial corporativos.</p>
+      <a class="blog-row-cta" href="/blog/pt/post/o-fenomeno-high-ic/">Ler Post &rarr;</a>
+    </div>
+  </article>
+  <article class="blog-row blog-post-item">
     <a class="blog-row-thumb" href="/blog/pt/post/arquitetura-agentes-databricks-lakehouse-unity-catalog-langgraph/">
       <img src="../assets/images/posts/databricks-lakehouse-unity-catalog-langgraph-agent-architecture/cover.webp" alt="Databricks Lakehouse e LangGraph: Conectando Unity Catalog e Mosaic AI a Máquinas de Estado Operacionais" loading="lazy">
     </a>

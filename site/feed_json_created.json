@@ -13,6 +13,27 @@
     "language": "en",
     "items": [
         {
+            "id": "https://hsnlabs.ai/blog/post/the-high-ic-phenomenon/",
+            "url": "https://hsnlabs.ai/blog/post/the-high-ic-phenomenon/",
+            "title": "The High IC Phenomenon: Why Team Size No Longer Measures Productivity",
+            "content_html": "Why measuring organizational capacity by headcount is obsolete as autonomous enterprise AI agents unlock the era of high-impact individual contributors.",
+            "image": "https://hsnlabs.ai/blog/assets/images/posts/the-high-ic-phenomenon/cover.webp",
+            "date_modified": "2026-10-20T00:00:00+00:00",
+            "date_published": "2026-10-20T00:00:00+00:00",
+            "authors": [
+                {
+                    "name": "Hugo S. Nascimento"
+                }
+            ],
+            "tags": [
+                "Future of Work",
+                "ai-agents",
+                "c-suite",
+                "economics",
+                "future-of-work"
+            ]
+        },
+        {
             "id": "https://hsnlabs.ai/blog/post/databricks-lakehouse-unity-catalog-langgraph-agent-architecture/",
             "url": "https://hsnlabs.ai/blog/post/databricks-lakehouse-unity-catalog-langgraph-agent-architecture/",
             "title": "Databricks Lakehouse & LangGraph: Binding Unity Catalog and Mosaic AI to Operational State Machines",
@@ -413,27 +434,6 @@
                 "bpo",
                 "economics",
                 "hr-tech"
-            ]
-        },
-        {
-            "id": "https://hsnlabs.ai/blog/post/palantir-pricing-tco-and-open-alternatives/",
-            "url": "https://hsnlabs.ai/blog/post/palantir-pricing-tco-and-open-alternatives/",
-            "title": "The Real TCO of Palantir: The Dollar Barrier and Modern Open Alternatives",
-            "content_html": "Auditing the total cost of ownership behind Palantir contracts, foreign exchange exposure, and how to build open ontologies without 7-figure licensing.",
-            "image": "https://hsnlabs.ai/blog/assets/images/posts/palantir-pricing-tco-and-open-alternatives/cover.webp",
-            "date_modified": "2026-09-14T00:00:00+00:00",
-            "date_published": "2026-09-14T00:00:00+00:00",
-            "authors": [
-                {
-                    "name": "Hugo S. Nascimento"
-                }
-            ],
-            "tags": [
-                "Future of Work",
-                "architecture",
-                "ebitda",
-                "economics",
-                "roi"
             ]
         }
     ]

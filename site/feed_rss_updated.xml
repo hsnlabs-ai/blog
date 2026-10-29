@@ -13,8 +13,8 @@
     <language>en</language>
 
     
-    <pubDate>Sun, 25 Oct 2026 19:12:52 -0000</pubDate>
-    <lastBuildDate>Sun, 25 Oct 2026 19:12:52 -0000</lastBuildDate>
+    <pubDate>Thu, 29 Oct 2026 12:48:20 -0000</pubDate>
+    <lastBuildDate>Thu, 29 Oct 2026 12:48:20 -0000</lastBuildDate>
     <ttl>1440</ttl>
 
     
@@ -30,6 +30,39 @@
     
 
     
+    
+    <item>
+      <title>The High IC Phenomenon: Why Team Size No Longer Measures Productivity</title>
+      
+      
+        
+      <author>Hugo S. Nascimento</author>
+        
+      
+      
+      
+        
+      <category>Future of Work</category>
+        
+      <category>ai-agents</category>
+        
+      <category>c-suite</category>
+        
+      <category>economics</category>
+        
+      <category>future-of-work</category>
+        
+      
+      <description>Why measuring organizational capacity by headcount is obsolete as autonomous enterprise AI agents unlock the era of high-impact individual contributors.</description>
+      <link>https://hsnlabs.ai/blog/post/the-high-ic-phenomenon/</link>
+      <pubDate>Tue, 20 Oct 2026 00:00:00 +0000</pubDate>
+      <source url="https://hsnlabs.ai/blog/feed_rss_updated.xml">Hugo Nascimento · Enterprise Agent Architecture</source>
+      
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/post/the-high-ic-phenomenon/</guid>
+      
+      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/the-high-ic-phenomenon/cover.webp" type="image/webp" length="None" />
+      
+    </item>
     
     <item>
       <title>Databricks Lakehouse &amp; LangGraph: Binding Unity Catalog and Mosaic AI to Operational State Machines</title>
@@ -663,39 +696,6 @@
       <guid isPermaLink="true">https://hsnlabs.ai/blog/post/balance-sheet-guard-bpo-extinction/</guid>
       
       <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/balance-sheet-guard-bpo-extinction/cover.webp" type="image/webp" length="None" />
-      
-    </item>
-    
-    <item>
-      <title>The Real TCO of Palantir: The Dollar Barrier and Modern Open Alternatives</title>
-      
-      
-        
-      <author>Hugo S. Nascimento</author>
-        
-      
-      
-      
-        
-      <category>Future of Work</category>
-        
-      <category>architecture</category>
-        
-      <category>ebitda</category>
-        
-      <category>economics</category>
-        
-      <category>roi</category>
-        
-      
-      <description>Auditing the total cost of ownership behind Palantir contracts, foreign exchange exposure, and how to build open ontologies without 7-figure licensing.</description>
-      <link>https://hsnlabs.ai/blog/post/palantir-pricing-tco-and-open-alternatives/</link>
-      <pubDate>Mon, 14 Sep 2026 00:00:00 +0000</pubDate>
-      <source url="https://hsnlabs.ai/blog/feed_rss_updated.xml">Hugo Nascimento · Enterprise Agent Architecture</source>
-      
-      <guid isPermaLink="true">https://hsnlabs.ai/blog/post/palantir-pricing-tco-and-open-alternatives/</guid>
-      
-      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/palantir-pricing-tco-and-open-alternatives/cover.webp" type="image/webp" length="None" />
       
     </item>
     
