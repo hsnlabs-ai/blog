@@ -1,0 +1,810 @@
+<!doctype html>
+<html data-bs-theme="">
+
+<head>
+    <title>Braintrust Evals & LangGraph: Replacing Vibe Checks with Deterministic CI/CD - Hugo S. Nascimento
+    </title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="../../assets/brand/favicons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/brand/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/brand/favicons/favicon-16x16.png">
+    <meta name="theme-color" content="#52B4FD"><link rel="canonical" href="https://hsnlabs.ai/blog/post/braintrust-evals-cicd-langgraph-agent-architecture/">
+    <meta name="title" content="Braintrust Evals & LangGraph: Replacing Vibe Checks with Deterministic CI/CD">
+    <meta name="description" content="Why manual prompt testing fails in enterprise production, and how to wire Braintrust evaluation suites and CI/CD regression gates into LangGraph agents.">
+
+    <!-- OpenGraph Metadata -->
+    <meta property="og:site_name" content="hsnlabs">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Braintrust Evals & LangGraph: Replacing Vibe Checks with Deterministic CI/CD">
+    <meta property="og:description" content="Why manual prompt testing fails in enterprise production, and how to wire Braintrust evaluation suites and CI/CD regression gates into LangGraph agents.">
+    <meta property="og:url" content="https://hsnlabs.ai/blog/post/braintrust-evals-cicd-langgraph-agent-architecture/">
+    <meta property="og:image" content="https://hsnlabs.ai/blog/assets/images/posts/braintrust-evals-cicd-langgraph-agent-architecture/cover.webp">
+    <meta property="og:image:secure_url" content="https://hsnlabs.ai/blog/assets/images/posts/braintrust-evals-cicd-langgraph-agent-architecture/cover.webp">
+    <meta property="og:image:alt" content="Braintrust Evals & LangGraph: Replacing Vibe Checks with Deterministic CI/CD"><meta property="og:image:type" content="image/webp"><!-- Twitter Card Metadata -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@hsnlabs">
+    <meta name="twitter:creator" content="@hugo_nasc">
+    <meta name="twitter:title" content="Braintrust Evals & LangGraph: Replacing Vibe Checks with Deterministic CI/CD">
+    <meta name="twitter:description" content="Why manual prompt testing fails in enterprise production, and how to wire Braintrust evaluation suites and CI/CD regression gates into LangGraph agents.">
+    <meta name="twitter:image" content="https://hsnlabs.ai/blog/assets/images/posts/braintrust-evals-cicd-langgraph-agent-architecture/cover.webp"><meta name="author" content="Hugo S. Nascimento"><meta name="date" content="2026-10-17">
+      <meta property="article:published_time" content="2026-10-17"><meta property="article:section" content="Agentic Engineering">
+
+    <script>var base_url = '../..';</script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/css/root.min.css">
+    <link rel="stylesheet" href="../../assets/css/main.min.css">
+    <link rel="stylesheet" href="../../assets/css/media.min.css">
+    <link rel="stylesheet" href="../../assets/css/mkdocstrings.min.css">
+    <link href="../../stylesheets/extra.css" rel="stylesheet">
+    <link href="../../assets/css/pagination.css" rel="stylesheet">
+    <!-- Feeds and Crawlers -->
+<link rel="alternate" type="application/rss+xml" title="RSS Feed - Hugo S. Nascimento" href="../../feed_rss_created.xml">
+<link rel="alternate" type="application/json" title="JSON Feed - Hugo S. Nascimento" href="../../feed_json_created.json">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+<!-- Search Engine Verification -->
+<meta name="msvalidate.01" content="fb6d944d28fc4484bd669f6d9c4d3292">
+<meta name="google-site-verification" content="G-GMK24ECXMF">
+
+<!-- GEO and Local SEO -->
+<meta name="geo.region" content="BR-SP">
+<meta name="geo.placename" content="São Paulo">
+<meta name="geo.position" content="-23.561684;-46.655981">
+<meta name="ICBM" content="-23.561684, -46.655981">
+
+<!-- Typography: Cormorant Garamond & Inter -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- Google Analytics (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GMK24ECXMF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-GMK24ECXMF');
+</script>
+
+<!-- Structured Data -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Braintrust Evals & LangGraph: Replacing Vibe Checks with Deterministic CI/CD",
+  "description": "Why manual prompt testing fails in enterprise production, and how to wire Braintrust evaluation suites and CI/CD regression gates into LangGraph agents.",
+  "datePublished": "2026-10-17",
+  "inLanguage": "en",
+  "author": {
+    "@type": "Person",
+    "name": "Hugo S. Nascimento",
+    "url": "https://hsnlabs.ai"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "hsnlabs",
+    "url": "https://hsnlabs.ai",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://hsnlabs.ai/assets/brand/lockups/hsnlabs-lockup-horizontal-light.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://hsnlabs.ai/blog/post/braintrust-evals-cicd-langgraph-agent-architecture/"
+  }
+}
+</script>
+
+</head>
+
+<body>
+    <!-- FIXED / STICKY HEADER -->
+    <header class="header-nav" id="component-header">
+        <div class="container header-container">
+            <!-- block header -->
+<div class="blog-header-inner">
+  <div class="blog-header-brand-group">
+    
+    <a href="https://hsnlabs.ai/en/" class="blog-brand-link" title="hsnlabs Main Site">
+      <img src="../../assets/brand/lockups/hsnlabs-lockup-horizontal-light.png" alt="hsnlabs" class="blog-brand-logo">
+    </a>
+    <span class="blog-brand-sep" aria-hidden="true">/</span>
+    <a href="../.." class="blog-badge-link" title="hsnlabs Blog">
+      <span class="blog-badge-text">Blog</span>
+    </a>
+    
+  </div>
+
+  <nav class="blog-header-menu" aria-label="Main Navigation">
+    
+    <a href="../.." class="blog-nav-link ">All Posts</a>
+    <a href="https://hsnlabs.ai/en/bootcamp/" class="blog-nav-link">Agentic Bootcamp™</a>
+    <a href="https://hsnlabs.ai/en/advisory/" class="blog-nav-link">Advisory</a>
+    <a href="../../about/resume/" class="blog-nav-link ">About Hugo</a>
+    
+  </nav>
+
+  <div class="blog-header-actions">
+    <button class="blog-action-icon blog-search-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" title="Search posts" aria-label="Search posts">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="11" cy="11" r="8"></circle>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+      </svg>
+    </button>
+    
+    <a href="../../feed_rss_created.xml" class="blog-action-icon blog-rss-link" title="RSS Feed 2.0" target="_blank" rel="noopener" aria-label="RSS Feed">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M6.18 15.64a2.18 2.18 0 0 1 2.18 2.18C8.36 19 7.38 20 6.18 20C5 20 4 19 4 17.82a2.18 2.18 0 0 1 2.18-2.18M4 4.44A15.56 15.56 0 0 1 19.56 20h-2.83A12.73 12.73 0 0 0 4 7.27V4.44m0 5.66a9.9 9.9 0 0 1 9.9 9.9h-2.83A7.07 7.07 0 0 0 4 12.93v-2.83z"/>
+      </svg>
+    </a>
+
+    <a href="https://github.com/hsnlabs-ai" class="header-github-link" target="_blank" rel="noopener" title="View GitHub">
+      <svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.161 22 16.416 22 12c0-5.523-4.477-10-10-10z"/></svg>
+      <span>hsnlabs</span>
+    </a>
+
+    
+    <div class="lang-switch">
+      <span class="lang-item active">EN</span>
+      <span class="lang-sep">·</span>
+      <a href="../../pt/" class="lang-item">PT</a>
+    </div>
+    <a href="https://hsnlabs.ai/en/bootcamp/" class="btn btn-primary blog-header-cta">Explore Agentic Bootcamp™</a>
+    
+  </div>
+</div>
+<!-- endblock -->
+        </div>
+    </header>
+
+    <div class="blog-body-wrapper">
+        <main class="blog-main-content">
+            <div class="container search-container-wrap"><!-- block search -->
+<div class="collapse" id="collapseExample">
+    <div role="search" class="search-box">
+        <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+            <input type="text" name="q" class="search-query"
+            placeholder="Search docs" title="Type search term here" />
+        </form>
+    </div>
+</div>
+<!-- endblock -->
+            </div>
+
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 d-none d-md-block" id="component-sidebar">
+                        <!-- block sidebar -->
+<div class="navbar-expand-md" role="complementary">
+    
+    
+</div>
+
+<!-- block blog_sidebar -->
+
+
+
+<div class="blog-sidebar" id="component-blog-sidebar">
+
+    <div class="blog-sidebar-widget" style="background: var(--surface-card); border: 1px solid var(--hairline); padding: 18px 16px; margin-bottom: 24px; position: relative; overflow: hidden; isolation: isolate; box-shadow: 0 1px 4px rgba(0,0,0,0.02);">
+        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
+            <div class="founder-callout-avatar" data-initial-index="0" style="width: 44px; height: 44px; border: 1px solid var(--hairline); flex-shrink: 0; overflow: hidden; background: #f0efed;">
+                <img src="https://hsnlabs.ai/assets/images/author/pool/hugo_01.jpg" alt="Hugo S. Nascimento" width="44" height="44" style="display: block; width: 100%; height: 100%; object-fit: cover;" />
+            </div>
+            <div>
+                <div style="font-size: 0.72rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted);">Technical Leadership</div>
+                <div style="font-size: 0.88rem; font-weight: 500; color: var(--ink); line-height: 1.2;">Share it with Hugo, CPTO</div>
+            </div>
+        </div>
+        <a href="https://hsnlabs.ai/en/#contact" style="display: block; text-align: center; background: #ffffff; color: var(--ink); border: 1px solid var(--hairline-strong); padding: 7px 12px; font-size: 0.8rem; font-weight: 500; text-decoration: none; transition: all 0.15s ease; white-space: nowrap;">
+            Start a Conversation
+        </a>
+    </div>
+
+    
+    <div class="blog-sidebar-widget">
+        <h3 class="blog-sidebar-widget-title">Recent Posts</h3>
+        <ul class="blog-sidebar-list">
+            
+            <li>
+                <a href="../the-high-ic-phenomenon/">The High IC Phenomenon: Why Team Size No Longer Measures Productivity</a>
+                
+                <div class="blog-sidebar-post-meta">
+                    <span class="blog-sidebar-date" data-date="2026-10-20">9 days ago</span>
+                </div>
+                
+            </li>
+            
+            <li>
+                <a href="../databricks-lakehouse-unity-catalog-langgraph-agent-architecture/">Databricks Lakehouse & LangGraph: Binding Unity Catalog and Mosaic AI to Operational State Machines</a>
+                
+                <div class="blog-sidebar-post-meta">
+                    <span class="blog-sidebar-date" data-date="2026-10-19">10 days ago</span>
+                </div>
+                
+            </li>
+            
+            <li>
+                <a href="./">Braintrust Evals & LangGraph: Replacing Vibe Checks with Deterministic CI/CD</a>
+                
+                <div class="blog-sidebar-post-meta">
+                    <span class="blog-sidebar-date" data-date="2026-10-17">12 days ago</span>
+                </div>
+                
+            </li>
+            
+            <li>
+                <a href="../snowflake-ai-data-cloud-langgraph-agent-architecture/">Snowflake AI Data Cloud & LangGraph: Binding State Machines to Enterprise Data</a>
+                
+                <div class="blog-sidebar-post-meta">
+                    <span class="blog-sidebar-date" data-date="2026-10-16">13 days ago</span>
+                </div>
+                
+            </li>
+            
+            <li>
+                <a href="../the-agentic-pilot-canvas-v1-4/">The Agentic Canvas™: The Framework for Enterprise AI Systems That Survive Production</a>
+                
+                <div class="blog-sidebar-post-meta">
+                    <span class="blog-sidebar-date" data-date="2026-10-07">22 days ago</span>
+                </div>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    
+    <div class="blog-sidebar-widget">
+        <h3 class="blog-sidebar-widget-title">Categories</h3>
+        <ul class="blog-sidebar-list">
+            
+            <li><a href="../../category/future-of-work/">Future of Work</a></li>
+            
+            <li><a href="../../category/agentic-engineering/">Agentic Engineering</a></li>
+            
+            <li><a href="../../category/why-agents-fail/">Why Agents Fail</a></li>
+            
+        </ul>
+    </div>
+    
+
+    
+    <div class="blog-sidebar-widget">
+        <h3 class="blog-sidebar-widget-title">Tags</h3>
+        <div class="blog-sidebar-tags">
+            
+            <a class="blog-sidebar-tag" href="../../tag/future-of-work/">future-of-work</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/economics/">economics</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/c-suite/">c-suite</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/ai-agents/">ai-agents</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/databricks/">databricks</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/langgraph/">langgraph</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/architecture/">architecture</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/data-contracts/">data-contracts</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/production/">production</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/evaluation/">evaluation</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/guardrails/">guardrails</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/snowflake/">snowflake</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/canvas/">canvas</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/enterprise-agents/">enterprise-agents</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/methodology/">methodology</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/crm/">crm</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/model-context-protocol/">model-context-protocol</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/saas/">saas</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/bpo/">bpo</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/case-studies/">case-studies</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/roi/">roi</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/ebitda/">ebitda</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/ontology/">ontology</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/enterprise/">enterprise</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/mcp/">mcp</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/python/">python</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/database/">database</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/sql/">sql</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/vector-database/">vector-database</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/ai-failures/">ai-failures</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/knowledge-graph/">knowledge-graph</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/data-engineering/">data-engineering</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/operational-ontology/">operational-ontology</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/deterministic-ai/">deterministic-ai</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/margins/">margins</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/consulting/">consulting</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/sprint/">sprint</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/artificial-intelligence/">artificial-intelligence</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/philosophy/">philosophy</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/hr/">hr</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/collections/">collections</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/hr-tech/">hr-tech</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/insurance/">insurance</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/arbitrage/">arbitrage</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/erp-support/">erp-support</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/helpdesk/">helpdesk</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/rpa/">rpa</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/automation/">automation</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/poc/">poc</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/latam-airlines/">latam-airlines</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/llm-judge/">llm-judge</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/audit/">audit</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/api-loops/">api-loops</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/rag/">rag</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/erp/">erp</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/legacy-core/">legacy-core</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/mainframe/">mainframe</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/schema-drift/">schema-drift</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/state-machines/">state-machines</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/legacy-it/">legacy-it</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/reliability/">reliability</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/hsnlabs/">hsnlabs</a>
+            
+            <a class="blog-sidebar-tag" href="../../tag/manifesto/">manifesto</a>
+            
+        </div>
+    </div>
+    
+
+</div>
+
+<!-- endblock -->
+
+<!-- endblock -->
+                    </div>
+                    <div class="col-md-9 col-12" id="component-content">
+                        <!-- block content -->
+<section class="container post" id="component-content">
+    <article>
+        
+        <nav class="article-breadcrumb-nav" aria-label="Breadcrumb">
+            
+            <a href="../.." class="article-breadcrumb-back">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+                All Posts
+            </a>
+            
+            
+            <span class="article-breadcrumb-sep">/</span>
+            
+            <span class="article-breadcrumb-category">Agentic Engineering</span>
+            
+            
+        </nav>
+
+        <header>
+            
+                <h1 class=" title" id="component-title">Braintrust Evals & LangGraph: Replacing Vibe Checks with Deterministic CI/CD</h1>
+            
+        </header>
+        
+        
+        
+        <p class="page-dates">
+            
+                Created on 2026-10-17
+                 — updated on October 29, 2026
+            
+        </p>
+        
+        <hr class="page-dates-divider">
+        
+        
+        
+
+        
+        <figure class="article-hero-figure">
+            <img src="../../assets/images/posts/braintrust-evals-cicd-langgraph-agent-architecture/cover.webp" alt="Braintrust Evals & LangGraph: Replacing Vibe Checks with Deterministic CI/CD" loading="eager" />
+        </figure>
+        
+
+        <div class="article-content-body">
+            <p><em>Reading time: 8 minutes. Author: Hugo S. Nascimento.</em></p>
+<!-- more -->
+
+<p><em>Context: Enterprise engineering teams spend months connecting autonomous agents to corporate ERPs, CRMs, and data platforms. Yet when it comes time to update a system prompt, swap a foundation model, or add a new tool schema, ninety percent of teams still rely on manual vibe checks: typing five sample questions into a chat window and hoping nothing broke. Within days of deployment, silent regressions corrupt downstream records. Here is the reference architecture we deploy at hsnlabs to bind Braintrust evaluation suites and automated CI/CD gates directly to LangGraph state machines.</em></p>
+<blockquote>
+<p><strong>Executive Summary for Technology Leaders:</strong> Probabilistic models cannot be governed by manual spot-checking. Every prompt adjustment, model upgrade, or retrieval change alters the probability distribution of agent trajectories across hundreds of edge cases. By integrating Braintrust as the continuous evaluation and observability layer over LangGraph state machines and Pydantic v2 data contracts, engineering leaders turn subjective AI testing into deterministic software CI/CD: blocking regressions before code merges and converting production anomalies into permanent golden test cases.</p>
+</blockquote>
+<hr />
+<h2 id="diligence-note-and-technical-specifications">Diligence Note and Technical Specifications</h2>
+<p>The architectural patterns and evaluation workflows detailed in this post align with official technical documentation and open engineering standards:</p>
+<ul>
+<li><strong>Braintrust AI Evaluation and Observability Platform:</strong> detailing dataset versioning, deterministic and rubric-based scorers, CI/CD pull-request gates, and production trace logging, available at <a href="https://www.braintrust.dev/docs">Braintrust Technical Documentation</a>.</li>
+<li><strong>LangGraph Stateful Orchestration Specification:</strong> detailing cyclic state graphs, node-level state inspection, and durable checkpointing, available at <a href="https://langchain-ai.github.io/langgraph/">LangGraph Technical Documentation</a>.</li>
+<li><strong>hsnlabs Braintrust Evals Practice:</strong> reference specifications and deployment methodology, available at <a href="https://hsnlabs.ai/en/braintrust/">hsnlabs Braintrust Evals &amp; CI/CD Practice</a>.</li>
+</ul>
+<hr />
+<h2 id="1-why-manual-vibe-checks-collapse-in-enterprise-production">1. Why Manual "Vibe Checks" Collapse in Enterprise Production</h2>
+<p>In traditional deterministic software, a unit test asserts that input <code>X</code> produces output <code>Y</code>. In agentic systems, a single user request can trigger multi-hop tool calls, schema parsing, and conditional state transitions.</p>
+<p>When teams rely on ad-hoc manual testing or naive single-prompt LLM-as-a-Judge scripts, deployments fail across four predictable vectors:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Failure Vector</th>
+<th style="text-align: left;">Manual "Vibe Checks" &amp; Ad-Hoc Scripts</th>
+<th style="text-align: left;">Governed ADLC with Braintrust Evals &amp; LangGraph</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Regression Blindness</strong></td>
+<td style="text-align: left;">Fixing a prompt for one edge case silently breaks three previously working workflows</td>
+<td style="text-align: left;">Runs every pull request against hundreds of versioned golden dataset scenarios before merge</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Trajectory Opacity</strong></td>
+<td style="text-align: left;">Evaluates only the final text string, missing invalid intermediate tool calls or redundant loops</td>
+<td style="text-align: left;">Scores individual LangGraph node transitions, tool arguments, and Pydantic schema compliance</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Subjective Scoring Drift</strong></td>
+<td style="text-align: left;">Uncalibrated LLM judges give inconsistent 1-to-5 scores across identical runs</td>
+<td style="text-align: left;">Combines deterministic Python code assertions with binary rubric scorers anchored to ground truth</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Production Disconnect</strong></td>
+<td style="text-align: left;">Test datasets stay static and synthetic while real user traffic evolves</td>
+<td style="text-align: left;">Converts failed production traces into permanent golden test cases in a single workflow loop</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p><strong>[Agentes] x [a Gente]</strong> — Beyond the hype: how agentic engineering multiplies and leverages human labor capacity. Bi-weekly field notes published in Hugo S. Nascimento's LinkedIn newsletter with over 1,600 subscribers. <a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7397999984089935872">Follow on LinkedIn ↗</a></p>
+</blockquote>
+<h2 id="2-the-three-layer-evaluation-architecture-braintrust-langgraph-adlc">2. The Three-Layer Evaluation Architecture: Braintrust + LangGraph + ADLC</h2>
+<p>To achieve production reliability, evaluation cannot be an afterthought bolted onto the UI. It must operate as a continuous loop spanning <strong>Dataset Curation</strong>, <strong>Node-Level Scoring</strong>, and <strong>Automated CI/CD Gates</strong>.</p>
+<pre class="mermaid"><code>flowchart TD
+    A["1. Golden Datasets &amp; Production Traces&lt;br&gt;Braintrust Versioned Datasets, Real Edge Cases &amp; PII-Sanitized Logs"] --&gt; B["2. Stateful Trajectory Execution&lt;br&gt;LangGraph State Core, Pydantic v2 Contracts &amp; MCP Tool Calls"]
+    B --&gt; C["3. Hybrid Scoring &amp; CI/CD Gates&lt;br&gt;Deterministic Python Assertions, Calibrated Rubrics &amp; PR Blocking"]
+    C --&gt; D["Audited Production Rollout&lt;br&gt;Zero-Regression Deployment with Live Latency &amp; Cost Telemetry"]</code></pre>
+<h3 id="layer-1-versioned-golden-datasets-from-real-operations">Layer 1: Versioned Golden Datasets from Real Operations</h3>
+<p>Synthetic test questions invented by developers rarely reflect how enterprise operations fail.</p>
+<ul>
+<li><strong>Bootstrapping from Historical Tickets &amp; ERP Logs:</strong> During our initial architecture sprint, we extract real historical transactions, edge-case exceptions, and compliance boundaries to form the baseline golden dataset in Braintrust.</li>
+<li><strong>Continuous Trace Harvesting:</strong> When a live agent encounters an unexpected schema state or triggers a Human-in-the-Loop escalation in production, the exact trace is sanitized and appended to the Braintrust dataset so the system never repeats the same mistake twice.</li>
+</ul>
+<h3 id="layer-2-node-level-inspection-over-langgraph-state-machines">Layer 2: Node-Level Inspection Over LangGraph State Machines</h3>
+<p>Evaluating an agent as a black box hides architectural rot. Because hsnlabs builds agents as explicit <strong>LangGraph</strong> state machines, every intermediate state is exposed to Braintrust:</p>
+<ol>
+<li><strong>Router &amp; Intent Precision:</strong> Deterministic scorers verify that the entry node classifies the business intent and selects the exact required MCP toolset with 100% precision.</li>
+<li><strong>Schema &amp; Argument Fidelity:</strong> Before any tool executes against Snowflake, Databricks, or SAP, Python assertion scorers validate that the generated payload strictly matches the expected Pydantic v2 contract.</li>
+<li><strong>Invariant &amp; Guardrail Compliance:</strong> Negative test suites verify that unauthorized requests, prompt injections, or out-of-bounds financial amounts reliably trigger the deterministic error boundary rather than hallucinating a bypass.</li>
+</ol>
+<h3 id="layer-3-automated-cicd-pull-request-gates">Layer 3: Automated CI/CD Pull-Request Gates</h3>
+<p>Every modification to a prompt template, model version, or state graph edge triggers an automated evaluation run in CI/CD:</p>
+<ul>
+<li><strong>Diff-Based Scorecards:</strong> Engineers see immediately in their pull request whether accuracy, tool-calling precision, token cost, or p95 latency regressed on any subset of the golden dataset.</li>
+<li><strong>Hard Deployment Thresholds:</strong> If critical compliance or schema-validity scorers drop below 100%, the deployment pipeline halts automatically.</li>
+</ul>
+<hr />
+<h2 id="3-from-poc-to-production-in-4-steps">3. From PoC to Production in 4 Steps</h2>
+<p>At hsnlabs, we embed Braintrust evaluation pipelines directly into our clients' engineering workflows with full code and IP handover:</p>
+<ol>
+<li><strong>Step 01 · Failure Mode Audit:</strong> We map your target business workflow, identify high-risk operational failure modes, and define hard acceptance thresholds before writing agent code.</li>
+<li><strong>Step 02 · Golden Dataset &amp; Scorer Engineering:</strong> We curate real enterprise edge cases into versioned Braintrust datasets and write deterministic Python scorers paired with calibrated domain rubrics.</li>
+<li><strong>Step 03 · CI/CD &amp; Telemetry Integration:</strong> We wire Braintrust into your LangGraph state machines and GitHub Actions pipelines, establishing live production tracing for latency, token burn, and accuracy.</li>
+<li><strong>Step 04 · Team Handover:</strong> We deliver the complete evaluation harness, golden datasets, and operational playbooks so your internal engineering team can iterate on models and prompts with mathematical confidence.</li>
+</ol>
+<hr />
+<h2 id="strategic-resources-and-related-reading">Strategic Resources and Related Reading</h2>
+<ul>
+<li><a href="https://hsnlabs.ai/en/braintrust/">hsnlabs Braintrust Evals &amp; CI/CD Architecture Practice</a></li>
+<li><a href="https://hsnlabs.ai/en/langchain/">hsnlabs LangChain &amp; LangGraph Production Engineering</a></li>
+<li><a href="https://hsnlabs.ai/en/snowflake/">hsnlabs Snowflake AI Data Cloud Architecture Practice</a></li>
+<li><a href="../llm-as-judge-fallacy/">The LLM-as-a-Judge Fallacy: Why Probabilistic Evaluators Fail in Regulated Operations</a></li>
+<li><a href="../the-poc-graveyard/">The PoC Graveyard: Why 90% of Enterprise Pilots Collapse Under Dirty Data</a></li>
+</ul>
+<hr />
+<p><em>Article originally published on <a href="https://hsnlabs.ai/blog/post/braintrust-evals-cicd-langgraph-agent-architecture/">hsnlabs</a>. Author: <a href="https://hsnlabs.ai">Hugo S. Nascimento</a>.</em></p>
+<link rel="alternate" hreflang="en" href="https://hsnlabs.ai/blog/post/braintrust-evals-cicd-langgraph-agent-architecture/">
+<link rel="alternate" hreflang="pt-BR" href="https://hsnlabs.ai/blog/pt/post/arquitetura-agentes-braintrust-evals-cicd-langgraph/">
+<link rel="alternate" hreflang="x-default" href="https://hsnlabs.ai/blog/post/braintrust-evals-cicd-langgraph-agent-architecture/">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "Braintrust Evals & LangGraph: Replacing Vibe Checks with Deterministic CI/CD",
+  "url": "https://hsnlabs.ai/blog/post/braintrust-evals-cicd-langgraph-agent-architecture/",
+  "description": "Why manual prompt testing fails in enterprise production, and how to wire Braintrust evaluation suites and CI/CD regression gates into LangGraph agents.",
+  "inLanguage": "en",
+  "author": {
+    "@type": "Person",
+    "name": "Hugo S. Nascimento",
+    "url": "https://hsnlabs.ai"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "hsnlabs",
+    "url": "https://hsnlabs.ai",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://hsnlabs.ai/assets/brand/lockups/hsnlabs-lockup-horizontal-light.png"
+    }
+  },
+  "datePublished": "2026-10-17"
+}
+</script>
+
+        </div>
+
+        
+        <!-- Founder Callout Component -->
+        <div class="founder-callout-card">
+            <div style="display: flex; align-items: center; gap: 14px; flex-shrink: 0;">
+                <div class="founder-callout-avatar" data-initial-index="0">
+                    <img src="https://hsnlabs.ai/assets/images/author/pool/hugo_01.jpg" alt="Hugo S. Nascimento" width="52" height="52" class="founder-avatar-img" />
+                </div>
+                <div>
+                    
+                    <div class="founder-callout-label">Have a project in mind?</div>
+                    <div class="founder-callout-name">Share it with Hugo, CPTO</div>
+                    
+                </div>
+            </div>
+
+            <div class="founder-cred-group">
+                
+                <a href="https://hsnlabs.ai/en/langchain/" class="founder-cred-item" title="LangChain Certified Engineer">
+                    <img src="https://hsnlabs.ai/assets/brand/langchain/lc-lockup-black.svg" alt="LangChain" class="founder-cred-logo">
+                    <span class="founder-cred-sub">Certified <span class="founder-cred-arrow">↗</span></span>
+                </a>
+                <a href="https://hsnlabs.ai/en/snowflake/" class="founder-cred-item" title="Snowflake AI Data Cloud Partner">
+                    <img src="https://hsnlabs.ai/assets/brand/snowflake/snowflake-lockup-blue.svg" alt="Snowflake" class="founder-cred-logo">
+                    <span class="founder-cred-sub">Partner <span class="founder-cred-arrow">↗</span></span>
+                </a>
+                <a href="https://hsnlabs.ai/en/databricks/" class="founder-cred-item" title="Databricks Lakehouse &amp; Mosaic AI Partner">
+                    <img src="https://hsnlabs.ai/assets/brand/databricks/databricks-lockup-color.svg" alt="Databricks" class="founder-cred-logo">
+                    <span class="founder-cred-sub">Partner <span class="founder-cred-arrow">↗</span></span>
+                </a>
+                
+            </div>
+
+            
+            <a href="https://hsnlabs.ai/en/#contact" class="founder-callout-btn" style="white-space: nowrap; flex-shrink: 0;">
+                Start a Conversation
+            </a>
+            
+        </div>
+
+        <div class="article-footer-nav">
+            
+            <a href="../.." class="btn btn-outline article-nav-return-btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+                Back to All Posts
+            </a>
+            <a href="https://hsnlabs.ai/en/bootcamp/" class="btn btn-primary article-nav-cta-btn">
+                Explore Agentic Bootcamp™ →
+            </a>
+            
+        </div>
+        
+    </article>
+
+    
+</section>
+<!-- endblock -->
+                    </div>
+                </div>
+            </div>
+            
+        </main>
+
+        
+        <!-- block preview -->
+<!-- endblock -->
+        
+
+        
+        <!-- block footer -->
+<footer class="site-footer" id="component-footer">
+  <div class="container footer-container">
+    
+    <!-- Editorial & SEO Sitemap Grid -->
+    <div class="footer-seo-grid">
+      
+      
+      <!-- Brand & Positioning Column (EN) -->
+      <div class="footer-seo-col brand-col">
+        <a href="https://hsnlabs.ai/en/" class="footer-brand-link" title="hsnlabs">
+          <img src="../../assets/brand/lockups/hsnlabs-lockup-horizontal-light.png" alt="hsnlabs" class="footer-brand-logo">
+        </a>
+        <p class="footer-brand-tagline">
+          hsnlabs is your enterprise AI transformation partner, operationalizing autonomous agents over legacy systems.
+        </p>
+        <p class="footer-brand-meta">
+          AI Architecture Boutique<br>
+          São Paulo, Brazil · Rua Pais Leme, 215, Pinheiros<br>
+          <a href="mailto:hugo@hsnlabs.ai" class="footer-link-subtle">hugo@hsnlabs.ai</a>
+        </p>
+        <div class="footer-badges-row">
+          <a href="../../feed_rss_created.xml" class="footer-rss-chip" target="_blank" rel="noopener">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" style="display:inline-block;vertical-align:-1px;margin-right:4px;"><path d="M6.18 15.64a2.18 2.18 0 0 1 2.18 2.18C8.36 19 7.38 20 6.18 20C5 20 4 19 4 17.82a2.18 2.18 0 0 1 2.18-2.18M4 4.44A15.56 15.56 0 0 1 19.56 20h-2.83A12.73 12.73 0 0 0 4 7.27V4.44m0 5.66a9.9 9.9 0 0 1 9.9 9.9h-2.83A7.07 7.07 0 0 0 4 12.93V10.1z"/></svg>RSS Feed 2.0
+          </a>
+          <a href="../../llms.txt" class="footer-llms-chip">llms.txt for LLMs &amp; Agents</a>
+        </div>
+      </div>
+
+      <!-- Pillar 1: Why Agents Fail (EN) -->
+      <div class="footer-seo-col">
+        <div class="footer-col-header">Why Agents Fail</div>
+        <ul class="footer-link-list">
+          <li><a href="../what-is-an-ontology-for-ai-agents/">What Is an Ontology for AI Agents</a></li>
+          <li><a href="../the-poc-graveyard/">The Enterprise PoC Graveyard</a></li>
+          <li><a href="../integration-drift/">Integration Drift in Production</a></li>
+          <li><a href="../why-rag-breaks-on-erp/">Why RAG Breaks on Financial ERPs</a></li>
+          <li><a href="../llm-as-judge-fallacy/">LLM-as-a-Judge Fallacy in Banking</a></li>
+        </ul>
+      </div>
+
+      <!-- Pillar 2: Agentic Engineering (EN) -->
+      <div class="footer-seo-col">
+        <div class="footer-col-header">Agentic Engineering</div>
+        <ul class="footer-link-list">
+          <li><a href="../how-to-build-an-enterprise-ontology-from-scratch/">Building Enterprise Ontologies from Scratch</a></li>
+          <li><a href="../perimeter-isolation-mcp-data-contracts/">Perimeter Isolation and MCP</a></li>
+          <li><a href="../legacy-core-backing-engine/">Legacy Core as Agentic Engine</a></li>
+          <li><a href="../latam-airlines-case-study/">LATAM Airlines: 3% Margin Engine</a></li>
+          <li><a href="../unconstrained-agents-finite-state-machines/">State Machines vs API Loops</a></li>
+          <li><a href="../databricks-lakehouse-unity-catalog-langgraph-agent-architecture/">Databricks Lakehouse &amp; LangGraph</a></li>
+          <li><a href="https://hsnlabs.ai/en/canvas/" target="_blank" rel="noopener">The Agentic Canvas™ ↗</a></li>
+        </ul>
+      </div>
+
+      <!-- Pillar 3: Future of Work (EN) -->
+      <div class="footer-seo-col">
+        <div class="footer-col-header">Future of Work</div>
+        <ul class="footer-link-list">
+          <li><a href="../bpo-replacement-matrix/">BPO Replacement Matrix</a></li>
+          <li><a href="../balance-sheet-guard-bpo-extinction/">Extinction of HR Outsourcing</a></li>
+          <li><a href="../collapse-of-legacy-rpa/">Collapse of Legacy RPA</a></li>
+          <li><a href="../c-suite-margin-protection-playbook/">C-Suite Margin Playbook</a></li>
+          <li><a href="../cost-legacy-it/">Cost of Unbounded AI in Legacy IT</a></li>
+          <li><a href="../manifesto/">Why I Built hsnlabs</a></li>
+          <li style="margin-top: 14px; padding-top: 10px; border-top: 1px solid var(--hairline);">
+            <div style="font-size: 11px; font-family: var(--font-mono); color: var(--cyan-text); text-transform: uppercase; margin-bottom: 6px;">Newsletter</div>
+            <div style="display: flex; gap: 10px; align-items: center; justify-content: space-between; flex-wrap: wrap;">
+              <div style="display: flex; gap: 10px; align-items: center; min-width: 145px; flex: 1 1 auto;">
+                <img src="../../assets/brand/newsletter/agentes-x-gente.png" alt="[Agentes] x [a Gente]" style="width: 36px; height: 36px; border: 1px solid var(--hairline-strong); flex-shrink: 0; display: block; border-radius: 0;">
+                <div style="min-width: 0;">
+                  <div style="font-weight: 600; font-size: 13px; color: var(--ink); line-height: 1.2;">[Agentes] x [a Gente]</div>
+                  <div style="font-size: 10.5px; color: var(--muted); margin-top: 2px;">1,600+ subscribers</div>
+                </div>
+              </div>
+              <a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7397999984089935872" target="_blank" rel="noopener" aria-label="Assinar [Agentes] x [a Gente] no LinkedIn" style="background: #ffffff; border: 1px solid var(--hairline-strong); color: var(--ink); padding: 5px 10px; font-size: 11px; font-weight: 500; border-radius: 0; text-decoration: none; display: inline-flex; align-items: center; gap: 5px; flex-shrink: 0; transition: all 0.15s ease; box-shadow: 0 1px 2px rgba(0,0,0,0.03);">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="#0A66C2" aria-hidden="true"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+                <span>LinkedIn</span>
+              </a>
+            </div>
+            <div style="font-size: 10.5px; color: var(--muted); margin-top: 6px; line-height: 1.35;">
+              Beyond the hype: how agentic engineering multiplies and leverages human labor capacity.
+            </div>
+          </li>
+        </ul>
+      </div>
+      
+
+    </div>
+
+    <!-- Minimalist Bottom Line -->
+    <div class="footer-bottom-bar">
+      <div class="footer-bottom-copy">
+        
+        2026 hsnlabs. Agentic Engineering Adoption.
+        
+      </div>
+      <div class="footer-bottom-nav">
+        <a href="https://github.com/hsnlabs-ai" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/company/hsnlabs" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://x.com/hsnlabs" target="_blank" rel="noopener">X</a>
+        <a href="../../feed_rss_created.xml">RSS Feed</a>
+        <a href="../../feed_json_created.json">JSON Feed</a>
+        <a href="../../sitemap.xml">Sitemap</a>
+        
+        <a href="https://hsnlabs.ai/en/canvas/">The Agentic Canvas™</a>
+        <a href="https://hsnlabs.ai/en/bootcamp/">Bootcamp</a>
+        <a href="https://hsnlabs.ai/en/advisory/">Advisory</a>
+        <a href="https://hsnlabs.ai/en/langchain/">LangChain</a>
+        <a href="https://hsnlabs.ai/en/snowflake/">Snowflake</a>
+        <a href="https://hsnlabs.ai/en/databricks/">Databricks</a>
+        <a href="https://hsnlabs.ai/en/braintrust/">Braintrust</a>
+        <a href="https://hsnlabs.ai/en/privacy-policy/">Privacy Policy</a>
+        <a href="https://hsnlabs.ai/en/modern-slavery-statement/">Compliance</a>
+        
+      </div>
+    </div>
+
+  </div>
+</footer>
+<!-- endblock -->
+        
+    </div>
+    <script src="../../assets/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/js/main.min.js"></script>
+    <script src="../../assets/js/pagination.js" defer></script>
+    <script src="../../assets/js/relative_dates.js" defer></script>
+    <script src="../../assets/js/mermaid_init.js" defer></script>
+    <script src="../../assets/js/founder-rotation.js" defer></script>
+    <script src="../../search/main.js" defer></script>
+
+</body>
+
+</html>
