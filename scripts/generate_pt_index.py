@@ -25,6 +25,12 @@ if PT_POSTS_DIR.exists():
 # Sort posts by date descending
 posts.sort(key=lambda x: x["date"], reverse=True)
 
+CAT_MAP = {
+    "Future of Work": "O Futuro do Trabalho",
+    "Agentic Engineering": "Engenharia Agêntica",
+    "Why Agents Fail": "Por Que Agentes Falham"
+}
+
 lines = []
 lines.append("---")
 lines.append("title: Hugo S. Nascimento")
@@ -59,7 +65,8 @@ for p in posts:
     lines.append(f'          <a href="/blog/pt/post/{p["slug"]}/">{p["title"]}</a>')
     lines.append('        </h2>')
     lines.append('      </div>')
-    lines.append(f'      <p class="blog-row-meta">{p["date"]} &bull; {p["category"]} &bull; Hugo S. Nascimento</p>')
+    cat_label = CAT_MAP.get(p["category"], p["category"])
+    lines.append(f'      <p class="blog-row-meta">{p["date"]} &bull; {cat_label} &bull; Hugo S. Nascimento</p>')
     lines.append(f'      <p class="blog-row-description">{p["description"]}</p>')
     lines.append(f'      <a class="blog-row-cta" href="/blog/pt/post/{p["slug"]}/">Ler Post &rarr;</a>')
     lines.append('    </div>')

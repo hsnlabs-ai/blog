@@ -22,7 +22,19 @@
             {% endif %}
             {% if page.meta and page.meta.category %}
             <span class="article-breadcrumb-sep">/</span>
+            {% if page.file and page.file.src_uri.startswith('pt/') %}
+                {% if page.meta.category == 'Future of Work' %}
+                <span class="article-breadcrumb-category">O Futuro do Trabalho</span>
+                {% elif page.meta.category == 'Agentic Engineering' %}
+                <span class="article-breadcrumb-category">Engenharia Agêntica</span>
+                {% elif page.meta.category == 'Why Agents Fail' %}
+                <span class="article-breadcrumb-category">Por Que Agentes Falham</span>
+                {% else %}
+                <span class="article-breadcrumb-category">{{ page.meta.category }}</span>
+                {% endif %}
+            {% else %}
             <span class="article-breadcrumb-category">{{ page.meta.category }}</span>
+            {% endif %}
             {% endif %}
         </nav>
 
@@ -36,8 +48,12 @@
         {% set updated = ((fmt_date(page.meta.updated) if fmt_date is defined else page.meta.updated) if page.meta.updated else page.meta.git_revision_date_localized) if page else None %}
         {% if (created or updated) and not (config.theme.components and config.theme.components.page_dates == False) %}
         <p class="page-dates">
-            {% if created %}Created on {{ created }}{% endif %}
-            {% if updated and updated != created %} — updated on {{ updated }}{% endif %}
+            {% if page.file and page.file.src_uri.startswith('pt/') %}
+                {% if created %}Publicado em {{ created }}{% endif %}
+            {% else %}
+                {% if created %}Created on {{ created }}{% endif %}
+                {% if updated and updated != created %} — updated on {{ updated }}{% endif %}
+            {% endif %}
         </p>
         {% if page.content and page.content.strip() %}
         <hr class="page-dates-divider">
