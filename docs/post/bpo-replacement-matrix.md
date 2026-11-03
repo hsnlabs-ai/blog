@@ -61,4 +61,4 @@ Replacing third-party outsourcing contracts with autonomous digital workforces r
 - <a href="../cost-legacy-it/">The Cost of Unbounded AI in Legacy IT</a>
 - <a href="../autonomous-negotiations-collections-contracts/">High-Velocity Operations: Autonomous Negotiation, Collections, and Contract Execution</a>
 - <a href="../manifesto/">Why I Built hsnlabs</a>
-- <a href="https://hsnlabs.ai/bootcamp">Apply for the hsnlabs Five-Day Architecture Bootcamp</a>
+- <a href="https://hsnlabs.ai/bootcamp/">Apply for the hsnlabs Five-Day Architecture Bootcamp</a>

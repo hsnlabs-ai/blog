@@ -125,4 +125,4 @@ By decoupling the discipline of operational ontologies from proprietary licensin
 - <a href="../bpo-replacement-matrix/">The BPO Replacement Matrix: Operational and Financial Metrics</a>
 - <a href="../c-suite-margin-protection-playbook/">The C-Suite Transition Playbook: Protecting Margins in the Agentic Economy</a>
 - <a href="../protocol-arbitrage-claims-underwriting/">Protocol Arbitrage: Autonomous Multimodal Adjudication Across Complex Claims</a>
-- <a href="https://hsnlabs.ai/bootcamp">Apply for the hsnlabs Five-Day Architecture Bootcamp</a>
+- <a href="https://hsnlabs.ai/bootcamp/">Apply for the hsnlabs Five-Day Architecture Bootcamp</a>

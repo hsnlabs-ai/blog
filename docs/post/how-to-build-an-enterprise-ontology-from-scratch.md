@@ -228,7 +228,7 @@ Build the rules. Compile the invariants. Gate the actions. Once the harness exis
 
 ---
 
-*At hsnlabs, we design and deploy bespoke operational ontologies and resilient multi-agent architectures for mid-to-large enterprises. If your organization is ready to transition from fragile AI demos to mission-critical production execution, apply for our on-site [Agentic Architecture Bootcamp](https://hsnlabs.ai/bootcamp).*
+*At hsnlabs, we design and deploy bespoke operational ontologies and resilient multi-agent architectures for mid-to-large enterprises. If your organization is ready to transition from fragile AI demos to mission-critical production execution, apply for our on-site [Agentic Architecture Bootcamp](https://hsnlabs.ai/bootcamp/).*
 
 ## Related Field Notes and Technical Spokes
 - <a href="../the-operational-ontology/">The Operational Ontology: How Enterprises Connect LLMs to Proprietary State</a>
@@ -242,4 +242,4 @@ Build the rules. Compile the invariants. Gate the actions. Once the harness exis
 - <a href="../latam-airlines-case-study/">LATAM Airlines: Production Agents in a 3 Percent Margin Business</a>
 - <a href="../cleveland-clinic-case-study-operational-agents/">Case Study: How Cleveland Clinic Scaled Patient Flow with Operational Agents</a>
 - <a href="../unconstrained-agents-finite-state-machines/">Case Study: 42 Calls in a Loop at 2 AM</a>
-- <a href="https://hsnlabs.ai/bootcamp">Apply for the hsnlabs Five-Day Architecture Bootcamp</a>
+- <a href="https://hsnlabs.ai/bootcamp/">Apply for the hsnlabs Five-Day Architecture Bootcamp</a>

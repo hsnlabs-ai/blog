@@ -75,11 +75,11 @@ Technical and financial analysis comparing Salesforce seats, Twenty CRM, and zer
 Structured machine-readable feed of all technical publications.
 
 ## Documentação e Recursos em Português
-- Visao Geral em Portugues: https://hsnlabs.ai/pt/
+- Visao Geral em Portugues: https://hsnlabs.ai/
 - The Agentic Canvas™: https://hsnlabs.ai/canvas/
-- Bootcamp de Agentes: https://hsnlabs.ai/pt/bootcamp/
-- Advisory de Arquitetura: https://hsnlabs.ai/pt/advisory/
-- Servidores MCP Enterprise: https://hsnlabs.ai/pt/mcp/
+- Bootcamp de Agentes: https://hsnlabs.ai/bootcamp/
+- Advisory de Arquitetura: https://hsnlabs.ai/advisory/
+- Servidores MCP Enterprise: https://hsnlabs.ai/mcp/
 - Blog hsnlabs em Portugues: https://hsnlabs.ai/blog/pt/
 - O TCO Real da Palantir vs Consultorias Globais vs hsnlabs: https://hsnlabs.ai/blog/pt/post/preco-palantir-tco-alternativas-abertas/
 - Palantir vs Databricks vs Arquitetura Híbrida hsnlabs: https://hsnlabs.ai/blog/pt/post/palantir-vs-databricks-arquitetura-agentes/

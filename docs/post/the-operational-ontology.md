@@ -206,10 +206,10 @@ If that code does not exist, your AI agents cannot safely operate. Build the ont
 
 ---
 
-*At hsnlabs, we design and deploy bespoke operational ontologies and resilient multi-agent systems for mid-to-large enterprises. To map your enterprise state machines and launch a production pilot in five days, explore our on-site [Agentic Architecture Bootcamp](https://hsnlabs.ai/bootcamp).*
+*At hsnlabs, we design and deploy bespoke operational ontologies and resilient multi-agent systems for mid-to-large enterprises. To map your enterprise state machines and launch a production pilot in five days, explore our on-site [Agentic Architecture Bootcamp](https://hsnlabs.ai/bootcamp/).*
 
 ## Strategic Resources and Related Essays
 - <a href="../how-to-build-an-enterprise-ontology-from-scratch/">How to Build an Enterprise Ontology from Scratch: Step by Step</a>
 - <a href="../how-to-build-operational-ontology-python-mcp/">How to Build an Operational Business Ontology in Python and MCP</a>
 - <a href="../ontology-vs-knowledge-graph/">Ontology vs. Knowledge Graph: Key Differences, Architecture, and Agent Reliability</a>
-- <a href="https://hsnlabs.ai/bootcamp">Apply for the hsnlabs Five-Day Architecture Bootcamp</a>
+- <a href="https://hsnlabs.ai/bootcamp/">Apply for the hsnlabs Five-Day Architecture Bootcamp</a>

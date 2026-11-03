@@ -12,15 +12,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 def build_url_list():
     urls = [
         "https://hsnlabs.ai/",
-        "https://hsnlabs.ai/pt/",
         "https://hsnlabs.ai/bootcamp/",
-        "https://hsnlabs.ai/pt/bootcamp/",
         "https://hsnlabs.ai/advisory/",
-        "https://hsnlabs.ai/pt/advisory/",
         "https://hsnlabs.ai/mcp/",
-        "https://hsnlabs.ai/pt/mcp/",
         "https://hsnlabs.ai/canvas/",
-        "https://hsnlabs.ai/pt/canvas/",
         "https://hsnlabs.ai/llms.txt",
         "https://hsnlabs.ai/sitemap.xml",
         "https://hsnlabs.ai/blog/",

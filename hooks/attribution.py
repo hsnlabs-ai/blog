@@ -204,3 +204,69 @@ def on_post_build(config):
                     content
                 )
             rss_path.write_text(content, encoding="utf-8")
+
+    # 1. Generate clean canonical redirect stubs for legacy /blog/writing/<slug>/ URLs
+    writing_dir = site_dir / "writing"
+    writing_dir.mkdir(parents=True, exist_ok=True)
+    writing_root_html = """<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting... | hsnlabs</title>
+  <link rel="canonical" href="https://hsnlabs.ai/blog/">
+  <meta http-equiv="refresh" content="0; url=/blog/">
+  <script>window.location.replace("/blog/" + window.location.search + window.location.hash);</script>
+</head>
+<body>
+  <p>Redirecting to <a href="/blog/">/blog/</a>...</p>
+</body>
+</html>"""
+    (writing_dir / "index.html").write_text(writing_root_html, encoding="utf-8")
+
+    for post_md in sorted((BASE_DIR / "docs" / "post").glob("*.md")):
+        slug = post_md.stem
+        stub_dir = writing_dir / slug
+        stub_dir.mkdir(parents=True, exist_ok=True)
+        target_url = f"https://hsnlabs.ai/blog/post/{slug}/"
+        target_rel = f"/blog/post/{slug}/"
+        stub_html = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting... | hsnlabs</title>
+  <link rel="canonical" href="{target_url}">
+  <meta http-equiv="refresh" content="0; url={target_rel}">
+  <script>window.location.replace("{target_rel}" + window.location.search + window.location.hash);</script>
+</head>
+<body>
+  <p>Redirecting to <a href="{target_rel}">{target_rel}</a>...</p>
+</body>
+</html>"""
+        (stub_dir / "index.html").write_text(stub_html, encoding="utf-8")
+
+    # 2. Clean site/sitemap.xml so only canonical /blog/, /blog/pt/, /blog/post/*, and /blog/pt/post/* are listed
+    sitemap_path = site_dir / "sitemap.xml"
+    if sitemap_path.exists():
+        sm_text = sitemap_path.read_text(encoding="utf-8")
+        allowed_pattern = re.compile(
+            r"^https://hsnlabs\.ai/blog/(?:pt/|post/[a-z0-9\-]+/|pt/post/[a-z0-9\-]+/)?$"
+        )
+        url_blocks = re.findall(r"<url>.*?</url>", sm_text, flags=re.DOTALL)
+        kept_blocks = []
+        for blk in url_blocks:
+            m_loc = re.search(r"<loc>(.*?)</loc>", blk)
+            if m_loc and allowed_pattern.match(m_loc.group(1).strip()):
+                kept_blocks.append("    " + blk.strip())
+        clean_sm = (
+            '<?xml version="1.0" encoding="UTF-8"?>\n'
+            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+            + "\n".join(kept_blocks)
+            + "\n</urlset>\n"
+        )
+        sitemap_path.write_text(clean_sm, encoding="utf-8")
+        sitemap_gz = site_dir / "sitemap.xml.gz"
+        if sitemap_gz.exists():
+            import gzip
+            with gzip.open(sitemap_gz, "wb") as gz_f:
+                gz_f.write(clean_sm.encode("utf-8"))
+
