@@ -32,7 +32,7 @@
     <meta name="twitter:title" content="How We Protect Enterprise Databases from AI Agents">
     <meta name="twitter:description" content="Architectural patterns for perimeter isolation, context contracts, and cryptographic access boundaries shielding enterprise data from AI agents.">
     <meta name="twitter:image" content="https://hsnlabs.ai/blog/assets/images/posts/perimeter-isolation-mcp-data-contracts/cover.webp"><meta name="author" content="Hugo S. Nascimento"><meta name="date" content="2026-08-26">
-      <meta property="article:published_time" content="2026-08-26"><meta property="article:section" content="Agentic Engineering">
+      <meta property="article:published_time" content="2026-08-26"><meta property="article:section" content="Agentic AI">
 
     <script>var base_url = '../..';</script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -220,7 +220,7 @@
                 <a href="../the-high-ic-phenomenon/">The High IC Phenomenon: Why Team Size No Longer Measures Productivity</a>
                 
                 <div class="blog-sidebar-post-meta">
-                    <span class="blog-sidebar-date" data-date="2026-10-20">14 days ago</span>
+                    <span class="blog-sidebar-date" data-date="2026-10-20">25 days ago</span>
                 </div>
                 
             </li>
@@ -229,7 +229,7 @@
                 <a href="../databricks-lakehouse-unity-catalog-langgraph-agent-architecture/">Databricks Lakehouse & LangGraph: Binding Unity Catalog and Mosaic AI to Operational State Machines</a>
                 
                 <div class="blog-sidebar-post-meta">
-                    <span class="blog-sidebar-date" data-date="2026-10-19">15 days ago</span>
+                    <span class="blog-sidebar-date" data-date="2026-10-19">26 days ago</span>
                 </div>
                 
             </li>
@@ -238,7 +238,7 @@
                 <a href="../braintrust-evals-cicd-langgraph-agent-architecture/">Braintrust Evals & LangGraph: Replacing Vibe Checks with Deterministic CI/CD</a>
                 
                 <div class="blog-sidebar-post-meta">
-                    <span class="blog-sidebar-date" data-date="2026-10-17">17 days ago</span>
+                    <span class="blog-sidebar-date" data-date="2026-10-17">28 days ago</span>
                 </div>
                 
             </li>
@@ -247,7 +247,7 @@
                 <a href="../snowflake-ai-data-cloud-langgraph-agent-architecture/">Snowflake AI Data Cloud & LangGraph: Binding State Machines to Enterprise Data</a>
                 
                 <div class="blog-sidebar-post-meta">
-                    <span class="blog-sidebar-date" data-date="2026-10-16">18 days ago</span>
+                    <span class="blog-sidebar-date" data-date="2026-10-16">29 days ago</span>
                 </div>
                 
             </li>
@@ -256,7 +256,7 @@
                 <a href="../the-agentic-pilot-canvas-v1-4/">The Agentic Canvas™: The Framework for Enterprise AI Systems That Survive Production</a>
                 
                 <div class="blog-sidebar-post-meta">
-                    <span class="blog-sidebar-date" data-date="2026-10-07">27 days ago</span>
+                    <span class="blog-sidebar-date" data-date="2026-10-07">38 days ago</span>
                 </div>
                 
             </li>
@@ -272,7 +272,7 @@
             
             <li><a href="../../category/future-of-work/">Future of Work</a></li>
             
-            <li><a href="../../category/agentic-engineering/">Agentic Engineering</a></li>
+            <li><a href="../../category/agentic-ai/">Agentic AI</a></li>
             
             <li><a href="../../category/why-agents-fail/">Why Agents Fail</a></li>
             
@@ -439,7 +439,7 @@
             
             <span class="article-breadcrumb-sep">/</span>
             
-            <span class="article-breadcrumb-category">Agentic Engineering</span>
+            <span class="article-breadcrumb-category">Agentic AI</span>
             
             
         </nav>
@@ -455,7 +455,7 @@
         <p class="page-dates">
             
                 Created on 2026-08-26
-                 — updated on October 16, 2026
+                 — updated on November 3, 2026
             
         </p>
         
@@ -494,7 +494,7 @@
 <h3 id="3-untraceable-state-mutations">3. Untraceable State Mutations</h3>
 <p>When an agent writes directly to a production database, auditability evaporates. When an auditor asks why a customer discount was applied or why an account status changed, traditional teams cannot prove whether the mutation came from legitimate business logic or a stochastic hallucination.</p>
 <blockquote>
-<p><strong>[Agentes] x [a Gente]</strong> — Beyond the hype: how agentic engineering multiplies and leverages human labor capacity. Bi-weekly field notes published in Hugo S. Nascimento's LinkedIn newsletter with over 1,600 subscribers. <a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7397999984089935872">Follow on LinkedIn ↗</a></p>
+<p><strong>[Agentes] x [a Gente]</strong> — Beyond the hype: how Agentic AI multiplies and leverages human labor capacity. Bi-weekly field notes published in Hugo S. Nascimento's LinkedIn newsletter with over 1,600 subscribers. <a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7397999984089935872">Follow on LinkedIn ↗</a></p>
 </blockquote>
 <h2 id="the-three-defenses-we-use-to-protect-enterprise-databases">The Three Defenses We Use to Protect Enterprise Databases</h2>
 <p>At hsnlabs, our Forward Deployed Engineers never give models direct write access to primary databases. We treat the model as an untrusted client and enforce database protection through three architectural layers:</p>
@@ -504,7 +504,7 @@
 <p>We mediate all tool interactions through Model Context Protocol servers. The agent never executes arbitrary queries; it invokes discrete, auditable tools governed by strict JSON schemas. Every parameter is strictly typed, parsed, and validated by strict schema validation software before entering the enterprise perimeter.</p>
 <h3 id="3-asymmetric-asynchronous-write-queues">3. Asymmetric Asynchronous Write Queues</h3>
 <p>Agents never mutate production state synchronously. When an agent decides an invoice is ready for payment, it does not call the payment API. It pushes a structured mutation proposal to an isolated transaction queue. An isolated validation worker verifies business invariants, checks approvals, and executes the database commit.</p>
-<p>Security is not an afterthought in agentic engineering. Perimeter isolation is the non-negotiable price of admission to enterprise production.</p>
+<p>Security is not an afterthought in Agentic AI. Perimeter isolation is the non-negotiable price of admission to enterprise production.</p>
 <h2 id="strategic-resources-and-related-essays">Strategic Resources and Related Essays</h2>
 <ul>
 <li><a href="../how-to-build-an-enterprise-ontology-from-scratch/">How to Build an Enterprise Ontology from Scratch: Step by Step</a></li>
@@ -658,9 +658,9 @@
         </ul>
       </div>
 
-      <!-- Pillar 2: Agentic Engineering (EN) -->
+      <!-- Pillar 2: Agentic AI (EN) -->
       <div class="footer-seo-col">
-        <div class="footer-col-header">Agentic Engineering</div>
+        <div class="footer-col-header">Agentic AI</div>
         <ul class="footer-link-list">
           <li><a href="../how-to-build-an-enterprise-ontology-from-scratch/">Building Enterprise Ontologies from Scratch</a></li>
           <li><a href="./">Perimeter Isolation and MCP</a></li>
@@ -698,7 +698,7 @@
               </a>
             </div>
             <div style="font-size: 10.5px; color: var(--muted); margin-top: 6px; line-height: 1.35;">
-              Beyond the hype: how agentic engineering multiplies and leverages human labor capacity.
+              Beyond the hype: how Agentic AI multiplies and leverages human labor capacity.
             </div>
           </li>
         </ul>
@@ -711,7 +711,7 @@
     <div class="footer-bottom-bar">
       <div class="footer-bottom-copy">
         
-        2026 hsnlabs. Agentic Engineering Adoption.
+        2026 hsnlabs. Agentic AI Adoption.
         
       </div>
       <div class="footer-bottom-nav">

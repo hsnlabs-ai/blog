@@ -71,7 +71,7 @@ For an enterprise in Brazil or Latin America earning revenue in local currency, 
 
 When a CIO or CFO evaluates how to deploy autonomous agents over complex enterprise operations, three distinct architectural and commercial models compete for budget allocation:
 
-| Executive Decision Vector | Palantir Foundry and AIP | Global Consultancies and GSIs - Accenture, Capgemini, Globant | Open Agentic Engineering - hsnlabs |
+| Executive Decision Vector | Palantir Foundry and AIP | Global Consultancies and GSIs - Accenture, Capgemini, Globant | Open Agentic AI - hsnlabs |
 | :--- | :--- | :--- | :--- |
 | **Commercial and Pricing Model** | Multi-year private contracts of 1 to 5 years; UK G-Cloud 14 public rate card lists £50k to £250k discovery, £66k per core annually, £3M enterprise license, and £150k per FDE per quarter | Time-and-materials billing or monthly squad allocation across 6 to 18-month service contracts | Fixed-scope architectural delivery; zero annual per-seat or per-core proprietary platform licensing fees |
 | **Currency and Cloud Exposure** | 100 percent USD or GBP contract exposure plus underlying AWS or Azure infrastructure consumption | Local currency contracts inflated by hourly body-shopping overhead and cloud partner markups | Local currency engineering deployed directly inside the client's existing AWS, GCP, or Azure tenant |

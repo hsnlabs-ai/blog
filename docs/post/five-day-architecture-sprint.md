@@ -1,7 +1,7 @@
 ---
 title: Why Big 4 Slide Decks Fail on Agent Projects
 date: '2026-09-22'
-category: Agentic Engineering
+category: Agentic AI
 tags:
 - case-studies
 - consulting

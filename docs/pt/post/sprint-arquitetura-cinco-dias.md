@@ -1,7 +1,7 @@
 ---
 title: Por Que Apresentações de Big 4 Falham em Projetos de Agentes
 date: '2026-09-22'
-category: Agentic Engineering
+category: Agentic AI
 tags:
 - case-studies
 - consulting
@@ -56,7 +56,7 @@ Firmas de estratégia fazem recomendações conceituais e vão embora, ou repass
 
 Quando um CIO, CTO ou COO aloca orçamento para sair da tese de IA e entrar em operação real, três modelos estruturalmente distintos disputam a execução no mercado:
 
-| Vetor de Avaliação Executiva | Consultorias de Estratégia e Big 4 - McKinsey, BCG, EY, PwC | Fábricas de Software e GSIs - Accenture, Globant, CI&T | Boutique de Engenharia Agêntica - hsnlabs |
+| Vetor de Avaliação Executiva | Consultorias de Estratégia e Big 4 - McKinsey, BCG, EY, PwC | Fábricas de Software e GSIs - Accenture, Globant, CI&T | Boutique de Agentic AI - hsnlabs |
 | :--- | :--- | :--- | :--- |
 | **Duração e Formato do Discovery** | 60 a 120 dias de entrevistas com gestores e diagnósticos teóricos de maturidade | 30 a 60 dias de levantamento de requisitos para dimensionar squads mensais | Sprint empírico de 5 dias de engenharia conectado diretamente ao ambiente isolado de homologação |
 | **Entregável Principal de Entrada** | Apresentação estática em PowerPoint, framework conceitual de governança e planilha teórica de ROI | Lista de histórias de usuário e proposta comercial de alocação de horas técnicas | Protótipo multiagente funcional processando cargas reais, linha de base de telemetria e especificação ADLC |

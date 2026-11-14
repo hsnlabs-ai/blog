@@ -1,7 +1,7 @@
 ---
 title: "Snowflake AI Data Cloud & LangGraph: Binding State Machines to Enterprise Data"
 date: "2026-10-16"
-category: Agentic Engineering
+category: Agentic AI
 tags:
 - snowflake
 - langgraph

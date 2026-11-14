@@ -127,7 +127,7 @@ The shift toward agent-leveraged corporate structures raises critical questions 
 * Backoffice Contraction: Which operational support departments will experience initial headcount consolidation across enterprise markets?
 * Senior Pipeline: Without routine foundational tasks to train junior staff, how will enterprises develop the next generation of senior domain authorities?
 
-Explore ongoing operational analyses on agentic engineering and autonomous workforce design by subscribing to <a href="https://www.linkedin.com/newsletters/agentes-x-a-gente-7397999984089935872">[Agentes] x [a Gente]</a> on LinkedIn, authored by <a href="https://www.linkedin.com/in/hugosoaresnascimento/">Hugo S. Nascimento</a>.
+Explore ongoing operational analyses on Agentic AI and autonomous workforce design by subscribing to <a href="https://www.linkedin.com/newsletters/agentes-x-a-gente-7397999984089935872">[Agentes] x [a Gente]</a> on LinkedIn, authored by <a href="https://www.linkedin.com/in/hugosoaresnascimento/">Hugo S. Nascimento</a>.
 
 ## Related Field Notes & Strategic Resources
 - <a href="/blog/post/bpo-replacement-matrix/">The BPO Replacement Matrix: Operational and Financial Benchmarks</a>

@@ -1,7 +1,7 @@
 ---
 title: 'A Ontologia Operacional: Como Empresas Conectam Dados, Regras de Negócio e Ações Autônomas'
 date: '2026-09-27'
-category: Agentic Engineering
+category: Agentic AI
 tags:
 - ontology
 - foundation
@@ -59,7 +59,7 @@ flowchart TD
 ```
 
 <figure class="article-editorial-figure">
-  <img src="../../../assets/diagrams/hsn-agent-architecture.png" alt="Arquitetura de Engenharia Agêntica Enterprise da hsnlabs" loading="lazy">
+  <img src="../../../assets/diagrams/hsn-agent-architecture.png" alt="Arquitetura de Agentic AI Enterprise da hsnlabs" loading="lazy">
   <figcaption class="editorial-caption">Arquitetura agêntica enterprise de ponta a ponta: ingestão cirúrgica de legados, ontologia operacional aberta, middlewares de governança, ciclo de vida com máquinas de estados e supervisão humana.</figcaption>
 </figure>
 

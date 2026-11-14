@@ -1,7 +1,7 @@
 ---
 title: 'Estudo de Caso: Como a Cleveland Clinic Escalou o Fluxo de Pacientes em 6.600 Leitos Hospitalares'
 date: '2026-09-28'
-category: Agentic Engineering
+category: Agentic AI
 tags:
 - healthcare
 - ontologies

@@ -1,7 +1,7 @@
 ---
 title: 'Legacy Core Systems Will Not Die: They Are the Engine Behind Autonomous Agents'
 date: '2026-08-04'
-category: Agentic Engineering
+category: Agentic AI
 tags:
 - architecture
 - legacy-core

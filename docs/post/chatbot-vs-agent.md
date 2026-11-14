@@ -1,7 +1,7 @@
 ---
 title: 'Chatbot vs Agent: Why Replacing BPOs Requires Production Guardrails'
 date: '2026-07-22'
-category: Agentic Engineering
+category: Agentic AI
 tags:
 - architecture
 - guardrails

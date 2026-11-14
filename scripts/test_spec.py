@@ -15,7 +15,7 @@ SITE_DIR = BASE_DIR / "site"
 
 CANONICAL_CATEGORIES = {
     "Why Agents Fail",
-    "Agentic Engineering",
+    "Agentic AI",
     "Future of Work"
 }
 
@@ -166,7 +166,7 @@ def test_d10_replicated_footer():
     assert 'class="site-footer"' in html, "ERRO: site-footer ausente no HTML"
     assert 'São Paulo' in html and 'Pinheiros' in html, "ERRO: Informacoes de localizacao ausentes no footer"
     assert 'Why Agents Fail' in html, "ERRO: Pilar Why Agents Fail ausente no footer"
-    assert 'Agentic Engineering' in html, "ERRO: Pilar Agentic Engineering ausente no footer"
+    assert 'Agentic AI' in html, "ERRO: Pilar Agentic AI ausente no footer"
     assert 'Future of Work' in html, "ERRO: Pilar Future of Work ausente no footer"
     assert 'llms.txt for LLMs & Agents' in html or 'llms.txt for LLMs &amp; Agents' in html, "ERRO: Link llms.txt ausente no footer"
     assert '2026 hsnlabs' in html, "ERRO: Copyright ausente no footer"

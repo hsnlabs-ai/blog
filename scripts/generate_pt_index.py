@@ -27,7 +27,7 @@ posts.sort(key=lambda x: x["date"], reverse=True)
 
 CAT_MAP = {
     "Future of Work": "O Futuro do Trabalho",
-    "Agentic Engineering": "Engenharia Agêntica",
+    "Agentic AI": "Agentic AI",
     "Why Agents Fail": "Por Que Agentes Falham"
 }
 

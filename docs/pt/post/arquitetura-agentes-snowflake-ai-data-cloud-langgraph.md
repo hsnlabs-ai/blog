@@ -1,7 +1,7 @@
 ---
 title: "Snowflake AI Data Cloud e LangGraph: Conectando Máquinas de Estado aos Dados Corporativos"
 date: "2026-10-16"
-category: Agentic Engineering
+category: Agentic AI
 tags:
 - snowflake
 - langgraph

@@ -1,7 +1,7 @@
 ---
 title: "The Architecture of Palantir AIP: Why Enterprise Agents Fail Without an Operational Ontology"
 date: "2026-09-18"
-category: Agentic Engineering
+category: Agentic AI
 tags:
 - architecture
 - production

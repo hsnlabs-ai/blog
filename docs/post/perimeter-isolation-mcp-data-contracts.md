@@ -1,7 +1,7 @@
 ---
 title: How We Protect Enterprise Databases from AI Agents
 date: '2026-08-26'
-category: Agentic Engineering
+category: Agentic AI
 tags:
 - architecture
 - mcp
@@ -59,7 +59,7 @@ We mediate all tool interactions through Model Context Protocol servers. The age
 ### 3. Asymmetric Asynchronous Write Queues
 Agents never mutate production state synchronously. When an agent decides an invoice is ready for payment, it does not call the payment API. It pushes a structured mutation proposal to an isolated transaction queue. An isolated validation worker verifies business invariants, checks approvals, and executes the database commit.
 
-Security is not an afterthought in agentic engineering. Perimeter isolation is the non-negotiable price of admission to enterprise production.
+Security is not an afterthought in Agentic AI. Perimeter isolation is the non-negotiable price of admission to enterprise production.
 
 ## Strategic Resources and Related Essays
 - <a href="../how-to-build-an-enterprise-ontology-from-scratch/">How to Build an Enterprise Ontology from Scratch: Step by Step</a>

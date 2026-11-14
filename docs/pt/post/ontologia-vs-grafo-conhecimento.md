@@ -1,7 +1,7 @@
 ---
 title: 'Ontologia vs Grafo de Conhecimento: Diferenças Centrais, Arquitetura e Aplicações Enterprise'
 date: '2026-09-27'
-category: Agentic Engineering
+category: Agentic AI
 tags:
 - ontology
 - knowledge-graph

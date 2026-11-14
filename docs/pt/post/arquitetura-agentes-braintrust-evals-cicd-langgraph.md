@@ -1,7 +1,7 @@
 ---
 title: "Braintrust Evals e LangGraph: Substituindo Testes Manuais por CI/CD Determinístico"
 date: "2026-10-17"
-category: Agentic Engineering
+category: Agentic AI
 tags:
 - evaluation
 - langgraph

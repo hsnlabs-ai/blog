@@ -1,7 +1,7 @@
 ---
 title: 'LATAM Airlines: Agentes em Produção com Margem de 3 Por Cento'
 date: '2026-08-21'
-category: Agentic Engineering
+category: Agentic AI
 tags:
 - case-studies
 - latam-airlines
@@ -21,7 +21,7 @@ Companhias aéreas operam com margens de três por cento. Trinta e um por cento 
 
 Se um agente de IA não gera valor imediato ou corta custos, ele é cancelado.
 
-Analisei a implantação de agentes de experiência do cliente da LATAM Airlines em produção. Eles processam milhões de interações. Aprenderam três lições duras sobre engenharia agêntica em escala.
+Analisei a implantação de agentes de experiência do cliente da LATAM Airlines em produção. Eles processam milhões de interações. Aprenderam três lições duras sobre Agentic AI em escala.
 
 ## 1. Descentralização Semântica Queima Capital
 A LATAM inicialmente construiu agentes especialistas para voos, hotéis e seguros. Cada agente raciocinava e gerava saídas estruturadas finais de forma independente.

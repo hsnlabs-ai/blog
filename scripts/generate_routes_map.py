@@ -101,8 +101,8 @@ routes_data = {
             "slug_pt": "chatbot-vs-agente",
             "title_en": "Chatbot vs Agent: Why Replacing BPOs Requires Production Ontologies",
             "title_pt": "Chatbot vs Agente: Por Que Substituir BPOs Exige Ontologias em Producao",
-            "category_en": "Agentic Engineering",
-            "category_pt": "Engenharia Agêntica",
+            "category_en": "Agentic AI",
+            "category_pt": "Agentic AI",
             "target_keyword_pt": "diferenca entre chatbot e agente de ia"
         },
         {
@@ -110,8 +110,8 @@ routes_data = {
             "slug_pt": "estudo-caso-cleveland-clinic-agentes-operacionais",
             "title_en": "Case Study: How Cleveland Clinic Scaled Patient Flow with Operational Agents",
             "title_pt": "Estudo de Caso: Como a Cleveland Clinic Escalou Fluxo de Pacientes",
-            "category_en": "Agentic Engineering",
-            "category_pt": "Engenharia Agêntica",
+            "category_en": "Agentic AI",
+            "category_pt": "Agentic AI",
             "target_keyword_pt": "estudo de caso agentes ia saude operacao"
         },
         {
@@ -146,8 +146,8 @@ routes_data = {
             "slug_pt": "sprint-arquitetura-cinco-dias",
             "title_en": "Why Big 4 Slide Decks Fail on Agent Projects",
             "title_pt": "Por Que Apresentacoes de Big 4 Falham em Projetos de Agentes",
-            "category_en": "Agentic Engineering",
-            "category_pt": "Engenharia Agêntica",
+            "category_en": "Agentic AI",
+            "category_pt": "Agentic AI",
             "target_keyword_pt": "sprint arquitetura agentes enterprise"
         },
         {
@@ -155,8 +155,8 @@ routes_data = {
             "slug_pt": "como-construir-ontologia-enterprise-do-zero",
             "title_en": "How to Build an Enterprise Ontology from Scratch: Step by Step",
             "title_pt": "Como Construir uma Ontologia Enterprise do Zero: Passo a Passo",
-            "category_en": "Agentic Engineering",
-            "category_pt": "Engenharia Agêntica",
+            "category_en": "Agentic AI",
+            "category_pt": "Agentic AI",
             "target_keyword_pt": "como construir ontologia de dados empresarial"
         },
         {
@@ -164,8 +164,8 @@ routes_data = {
             "slug_pt": "como-construir-ontologia-operacional-python-mcp",
             "title_en": "How to Build an Operational Business Ontology in Python and MCP",
             "title_pt": "Como Construir uma Ontologia Operacional de Negocios em Python e MCP",
-            "category_en": "Agentic Engineering",
-            "category_pt": "Engenharia Agêntica",
+            "category_en": "Agentic AI",
+            "category_pt": "Agentic AI",
             "target_keyword_pt": "ontologia operacional python mcp modelo"
         },
         {
@@ -191,8 +191,8 @@ routes_data = {
             "slug_pt": "estudo-caso-latam-airlines",
             "title_en": "LATAM Airlines: Production Agents in a 3 Percent Margin Business",
             "title_pt": "LATAM Airlines: Agentes em Producao com Margem de 3 Por Cento",
-            "category_en": "Agentic Engineering",
-            "category_pt": "Engenharia Agêntica",
+            "category_en": "Agentic AI",
+            "category_pt": "Agentic AI",
             "target_keyword_pt": "estudo caso latam airlines agentes automacao"
         },
         {
@@ -200,8 +200,8 @@ routes_data = {
             "slug_pt": "sistemas-legados-motor-execucao",
             "title_en": "Legacy Core Systems Will Not Die: They Are the Execution Engine",
             "title_pt": "Sistemas Transacionais Legados Nao Vao Morrer: Eles Sao o Motor",
-            "category_en": "Agentic Engineering",
-            "category_pt": "Engenharia Agêntica",
+            "category_en": "Agentic AI",
+            "category_pt": "Agentic AI",
             "target_keyword_pt": "integracao sistemas legados agentes ia mainframe"
         },
         {
@@ -236,8 +236,8 @@ routes_data = {
             "slug_pt": "ontologia-vs-grafo-conhecimento",
             "title_en": "Ontology vs. Knowledge Graph: Key Differences, Architecture, and Agent Reliability",
             "title_pt": "Ontologia vs Grafo de Conhecimento: Diferencas Chave e Arquitetura",
-            "category_en": "Agentic Engineering",
-            "category_pt": "Engenharia Agêntica",
+            "category_en": "Agentic AI",
+            "category_pt": "Agentic AI",
             "target_keyword_pt": "diferenca ontologia e grafo de conhecimento"
         },
         {
@@ -245,8 +245,8 @@ routes_data = {
             "slug_pt": "palantir-aip-bootcamp-ontologia-operacional",
             "title_en": "The Architecture of Palantir AIP: Why Enterprise Agents Require an Operational Ontology",
             "title_pt": "A Arquitetura do Palantir AIP: Por Que Agentes Exigem Ontologia Operacional",
-            "category_en": "Agentic Engineering",
-            "category_pt": "Engenharia Agêntica",
+            "category_en": "Agentic AI",
+            "category_pt": "Agentic AI",
             "target_keyword_pt": "arquitetura palantir aip ontologia analise"
         },
         {
@@ -272,8 +272,8 @@ routes_data = {
             "slug_pt": "isolamento-perimetro-mcp-contratos-dados",
             "title_en": "How We Protect Enterprise Databases from AI Agents",
             "title_pt": "Como Protegemos Bancos de Dados Enterprise de Agentes de IA",
-            "category_en": "Agentic Engineering",
-            "category_pt": "Engenharia Agêntica",
+            "category_en": "Agentic AI",
+            "category_pt": "Agentic AI",
             "target_keyword_pt": "seguranca bancos de dados mcp isolamento perimetro"
         },
         {
@@ -290,8 +290,8 @@ routes_data = {
             "slug_pt": "a-ontologia-operacional",
             "title_en": "The Operational Ontology: How Enterprises Connect LLMs to Proprietary State",
             "title_pt": "A Ontologia Operacional: Como Empresas Conectam LLMs aos Dados Proprietarios",
-            "category_en": "Agentic Engineering",
-            "category_pt": "Engenharia Agêntica",
+            "category_en": "Agentic AI",
+            "category_pt": "Agentic AI",
             "target_keyword_pt": "ontologia operacional definicao arquitetura"
         },
         {
@@ -308,8 +308,8 @@ routes_data = {
             "slug_pt": "agentes-ilimitados-maquinas-estados-finitos",
             "title_en": "Case Study: 42 Calls in a Loop at 2 AM",
             "title_pt": "Estudo de Caso: 42 Chamadas em Loop as 2 da Manha",
-            "category_en": "Agentic Engineering",
-            "category_pt": "Engenharia Agêntica",
+            "category_en": "Agentic AI",
+            "category_pt": "Agentic AI",
             "target_keyword_pt": "loops infinitos agentes ia maquina estados finitos"
         },
         {

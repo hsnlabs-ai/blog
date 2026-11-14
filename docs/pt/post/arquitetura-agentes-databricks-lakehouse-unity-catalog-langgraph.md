@@ -1,7 +1,7 @@
 ---
 title: "Databricks Lakehouse e LangGraph: Conectando Unity Catalog e Mosaic AI a Máquinas de Estado Operacionais"
 date: "2026-10-19"
-category: Agentic Engineering
+category: Agentic AI
 tags:
 - databricks
 - langgraph

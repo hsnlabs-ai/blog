@@ -1,7 +1,7 @@
 ---
 title: "How to Build an Operational Business Ontology in Python with Pydantic and MCP"
 date: "2026-09-25"
-category: Agentic Engineering
+category: Agentic AI
 tags:
 - architecture
 - production
