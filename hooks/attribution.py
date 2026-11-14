@@ -23,6 +23,73 @@ for post in ROUTES_MAP.get("blog_posts", []):
         EN_TO_PT_MAP[s_en] = s_pt
         PT_TO_EN_MAP[s_pt] = s_en
 
+CANVAS_BANNER_EN_SLUGS = {
+    "autonomous-negotiations-collections-contracts",
+    "balance-sheet-guard-bpo-extinction",
+    "bpo-replacement-matrix",
+    "braintrust-evals-cicd-langgraph-agent-architecture",
+    "buy-versus-build-b2b-enterprise-crm",
+    "c-suite-margin-protection-playbook",
+    "chatbot-vs-agent",
+    "cleveland-clinic-case-study-operational-agents",
+    "collapse-of-legacy-rpa",
+    "cost-legacy-it",
+    "databricks-lakehouse-unity-catalog-langgraph-agent-architecture",
+    "death-of-tier-1-erp-helpdesk",
+    "five-day-architecture-sprint",
+    "how-to-build-an-enterprise-ontology-from-scratch",
+    "how-to-build-operational-ontology-python-mcp",
+    "integration-drift",
+    "llm-as-judge-fallacy",
+    "ontology-vs-database-schema",
+    "ontology-vs-knowledge-graph",
+    "palantir-aip-bootcamp-operational-ontology",
+}
+CANVAS_BANNER_PT_SLUGS = {
+    EN_TO_PT_MAP[s] for s in CANVAS_BANNER_EN_SLUGS if s in EN_TO_PT_MAP
+}
+
+def inject_canvas_banner(html, is_pt, slug):
+    if 'class="hsn-canvas-banner"' in html:
+        return html
+    if is_pt:
+        dest_url = "https://hsnlabs.ai/canvas/"
+        thumb_src = "../../../assets/diagrams/canvas_processos_thumb.png"
+        title = "Mapeie seu próximo agente antes da primeira linha de código"
+        body = "Estruture ontologia operacional, limites de autonomia e retorno na DRE em dez blocos no The Agentic Canvas™ direto no navegador."
+        cta_label = "Abrir The Agentic Canvas™ →"
+        lang_attr = "pt-BR"
+    else:
+        dest_url = "https://hsnlabs.ai/en/canvas/"
+        thumb_src = "../../assets/diagrams/canvas_processos_thumb.png"
+        title = "Map your next agent before writing a single line of code"
+        body = "Define operational ontology, autonomy boundaries, and P&amp;L return across ten structured blocks in The Agentic Canvas™ directly in your browser."
+        cta_label = "Open The Agentic Canvas™ →"
+        lang_attr = "en"
+
+    banner_html = (
+        f'\n<aside class="hsn-canvas-banner" aria-label="The Agentic Canvas">\n'
+        f'  <div class="hsn-canvas-banner-copy">\n'
+        f'    <h3 class="hsn-canvas-banner-title">{title}</h3>\n'
+        f'    <p class="hsn-canvas-banner-desc">{body}</p>\n'
+        f'    <a href="{dest_url}" class="hsn-canvas-banner-cta" data-canvas-cta="banner_modelo_1" data-article-slug="{slug}" data-page-lang="{lang_attr}">{cta_label}</a>\n'
+        f'  </div>\n'
+        f'  <div class="hsn-canvas-banner-thumb">\n'
+        f'    <img src="{thumb_src}" alt="The Agentic Canvas" loading="lazy">\n'
+        f'  </div>\n'
+        f'</aside>\n'
+    )
+
+    h2_matches = list(re.finditer(r'<h2\b', html))
+    if h2_matches:
+        pos = h2_matches[-1].start()
+        return html[:pos] + banner_html + html[pos:]
+    hr_matches = list(re.finditer(r'<hr\b', html))
+    if hr_matches:
+        pos = hr_matches[-1].start()
+        return html[:pos] + banner_html + html[pos:]
+    return html + banner_html
+
 def insert_newsletter_interstitial(markdown, is_pt=False):
     if ("Agentes [×] Gente" in markdown or "[Agentes] x [a Gente]" in markdown) and "newsletter-follow" in markdown:
         return markdown
@@ -96,6 +163,8 @@ def on_page_content(html, page, config, files):
 
     if src_uri.startswith("post/"):
         slug = Path(src_uri).stem
+        if slug in CANVAS_BANNER_EN_SLUGS:
+            html = inject_canvas_banner(html, is_pt=False, slug=slug)
         slug_pt = EN_TO_PT_MAP.get(slug)
         hreflang_tags.append(f'<link rel="alternate" hreflang="en" href="{canonical_url}">')
         if slug_pt:
@@ -106,6 +175,8 @@ def on_page_content(html, page, config, files):
     elif src_uri.startswith("pt/post/"):
         lang = "pt-BR"
         slug_pt = Path(src_uri).stem
+        if slug_pt in CANVAS_BANNER_PT_SLUGS:
+            html = inject_canvas_banner(html, is_pt=True, slug=slug_pt)
         slug_en = PT_TO_EN_MAP.get(slug_pt)
         if slug_en:
             en_url = f"https://hsnlabs.ai/blog/post/{slug_en}/"

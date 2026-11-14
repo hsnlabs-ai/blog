@@ -15,7 +15,7 @@
 - Text Cyan / High Contrast: `#0284c7`.
 - Hover Accent: `#42abfc`.
 - Border Accent: `#3fa5f3`.
-- Geometry: Strict 90-degree sharp corners across all buttons, containers, cards, and inputs (`border-radius: 0 !important`). Rounded corners or pill shapes are prohibited.
+- Geometry: Strict 90-degree sharp corners across all buttons, containers, cards, and inputs (`border-radius: 0 !important`). Rounded corners, pill shapes, status chips, and uppercase eyebrow/kicker tags above card or banner titles are strictly prohibited as AI slop. Inline article banners must carry zero pills/kickers and strictly a single primary CTA.
 - Typography:
   - Editorial & Display Titles: `Cormorant Garamond`
   - Body & Interface: `Inter`
