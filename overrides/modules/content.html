@@ -1,7 +1,7 @@
 <!-- block content -->
 <section class="container post" id="component-content">
     <article>
-        {% if not page.is_homepage and page.file.src_uri != 'index.md' and page.file.src_uri != 'pt/index.md' %}
+        {% if page and page.file and not page.is_homepage and page.file.src_uri != 'index.md' and page.file.src_uri != 'pt/index.md' %}
         <nav class="article-breadcrumb-nav" aria-label="Breadcrumb">
             {% if page.file and page.file.src_uri.startswith('pt/') %}
             <a href="{{ 'pt/'|url }}" class="article-breadcrumb-back">
@@ -61,17 +61,17 @@
         {% endif %}
         {% endif %}
 
-        {% if page.meta and page.meta.image %}
+        {% if page and page.meta and page.meta.image %}
         <figure class="article-hero-figure">
             <img src="{{ page.meta.image|url }}" alt="{{ page.title }}" loading="eager" />
         </figure>
         {% endif %}
 
         <div class="article-content-body">
-            {{ page.content }}
+            {% if page %}{{ page.content }}{% endif %}
         </div>
 
-        {% if not page.is_homepage and page.file.src_uri != 'index.md' and page.file.src_uri != 'pt/index.md' %}
+        {% if page and page.file and not page.is_homepage and page.file.src_uri != 'index.md' and page.file.src_uri != 'pt/index.md' %}
         <!-- Founder Callout Component -->
         <div class="founder-callout-card">
             <div style="display: flex; align-items: center; gap: 14px; flex-shrink: 0;">
