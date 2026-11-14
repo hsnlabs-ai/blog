@@ -1,7 +1,7 @@
 ---
 title: 'Chatbot vs Agente: Por Que Substituir BPOs Exige Ontologias em Produção'
 date: '2026-07-22'
-category: Agentic Engineering
+category: Agentic AI
 tags:
 - architecture
 - guardrails

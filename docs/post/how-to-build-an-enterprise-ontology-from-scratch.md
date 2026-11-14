@@ -1,7 +1,7 @@
 ---
 title: "How to Build an Enterprise Ontology from Scratch: The Complete Architectural Blueprint"
 date: '2026-09-27'
-category: Agentic Engineering
+category: Agentic AI
 tags:
 - ontology
 - architecture

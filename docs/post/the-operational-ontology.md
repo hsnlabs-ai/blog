@@ -1,7 +1,7 @@
 ---
 title: "The Operational Ontology: How Enterprises Connect Data, Business Rules, and Autonomous Actions"
 date: '2026-09-27'
-category: Agentic Engineering
+category: Agentic AI
 tags:
 - ontology
 - operational-ontology

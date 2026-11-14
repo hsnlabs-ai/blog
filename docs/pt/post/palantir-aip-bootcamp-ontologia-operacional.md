@@ -1,7 +1,7 @@
 ---
 title: 'A Arquitetura do Palantir AIP: Por Que Agentes Corporativos Falham sem uma Ontologia Operacional'
 date: '2026-09-18'
-category: Agentic Engineering
+category: Agentic AI
 tags:
 - palantir
 - ontology

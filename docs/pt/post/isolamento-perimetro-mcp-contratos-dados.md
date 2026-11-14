@@ -1,7 +1,7 @@
 ---
 title: 'Como Protegemos Bancos de Dados Enterprise de Agentes de IA'
 date: '2026-08-26'
-category: Agentic Engineering
+category: Agentic AI
 tags:
 - architecture
 - mcp
@@ -58,7 +58,7 @@ Intermediamos todas as interações com ferramentas por meio de servidores de Mo
 ### 3. Filas Assimétricas e Assíncronas de Gravação
 Agentes nunca alteram o estado de produção de forma síncrona. Quando um agente conclui que uma fatura está pronta para pagamento, ele não chama a API de pagamento diretamente. Ele pública uma proposta estruturada de mutação em uma fila isolada de transações. Um executor independente de validação verifica as regras de negócio, checa aprovações e executa a gravação no banco.
 
-Segurança não é um detalhe adicional em engenharia agêntica. O isolamento de perímetro é o preço inegociável de entrada para a produção corporativa.
+Segurança não é um detalhe adicional em Agentic AI. O isolamento de perímetro é o preço inegociável de entrada para a produção corporativa.
 
 ## Recursos Estrategicos e Posts Relacionados
 - <a href="/blog/pt/post/como-construir-ontologia-enterprise-do-zero/">Como Construir uma Ontologia Enterprise do Zero: Passo a Passo</a>

@@ -1,7 +1,7 @@
 ---
 title: 'Como Construir uma Ontologia Enterprise do Zero: Blueprint Arquitetural Completo'
 date: '2026-09-27'
-category: Agentic Engineering
+category: Agentic AI
 tags:
 - ontology
 - architecture

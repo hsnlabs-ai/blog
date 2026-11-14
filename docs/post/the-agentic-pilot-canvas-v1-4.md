@@ -1,7 +1,7 @@
 ---
 title: "The Agentic Canvas™: The Framework for Enterprise AI Systems That Survive Production"
 date: "2026-10-07"
-category: "Agentic Engineering"
+category: "Agentic AI"
 tags:
 - canvas
 - architecture

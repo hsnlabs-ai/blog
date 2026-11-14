@@ -1,7 +1,7 @@
 ---
 title: 'LATAM Airlines: Production Agents in a 3% Margin Business'
 date: '2026-08-21'
-category: Agentic Engineering
+category: Agentic AI
 tags:
 - case-studies
 - latam-airlines
@@ -22,7 +22,7 @@ Airlines run on 3% margins. 31% of their operating cost is jet fuel. There is no
 
 If an AI agent does not create immediate value or cut costs, it dies.
 
-I analyzed LATAM Airlines' deployment of customer experience agents in production. They process millions of interactions. They learned three hard lessons about agentic engineering at scale.
+I analyzed LATAM Airlines' deployment of customer experience agents in production. They process millions of interactions. They learned three hard lessons about Agentic AI at scale.
 
 ## 1. Semantic Decentralization Burns Money
 LATAM initially built specialist agents for flights, hotels, and insurance. Each agent reasoned and generated final structured outputs.

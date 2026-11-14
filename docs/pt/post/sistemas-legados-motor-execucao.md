@@ -1,7 +1,7 @@
 ---
 title: 'Sistemas Transacionais Legados Não Vão Morrer: Eles São o Motor'
 date: '2026-08-04'
-category: Agentic Engineering
+category: Agentic AI
 tags:
 - architecture
 - legacy-core

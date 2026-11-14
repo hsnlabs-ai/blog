@@ -1,7 +1,7 @@
 ---
 title: "Case Study: How Cleveland Clinic Scaled Patient Flow Across 6,600 Hospital Beds"
 date: "2026-09-28"
-category: Agentic Engineering
+category: Agentic AI
 tags:
 - case-studies
 - production

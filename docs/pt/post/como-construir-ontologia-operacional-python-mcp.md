@@ -1,7 +1,7 @@
 ---
 title: 'Como Construir uma Ontologia Operacional de Negócios em Python com Pydantic e MCP'
 date: '2026-09-25'
-category: Agentic Engineering
+category: Agentic AI
 tags:
 - python
 - mcp

@@ -1,7 +1,7 @@
 ---
 title: "Ontology vs. Knowledge Graph: Key Differences, Architecture, and Enterprise Applications"
 date: '2026-09-27'
-category: Agentic Engineering
+category: Agentic AI
 tags:
 - ontology
 - knowledge-graph

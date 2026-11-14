@@ -1,7 +1,7 @@
 ---
 title: "Braintrust Evals & LangGraph: Replacing Vibe Checks with Deterministic CI/CD"
 date: "2026-10-17"
-category: Agentic Engineering
+category: Agentic AI
 tags:
 - evaluation
 - langgraph

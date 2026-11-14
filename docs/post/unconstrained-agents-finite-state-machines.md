@@ -1,7 +1,7 @@
 ---
 title: 'Case Study: 42 Calls in a Loop at 2 AM'
 date: '2026-08-12'
-category: Agentic Engineering
+category: Agentic AI
 tags:
 - case-studies
 - production

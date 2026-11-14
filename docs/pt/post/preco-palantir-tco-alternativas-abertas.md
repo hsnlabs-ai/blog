@@ -70,7 +70,7 @@ Para uma empresa brasileira ou latino-americana com receita em moeda local, soma
 
 Quando um CIO ou CFO avalia como implementar agentes autônomos sobre operações críticas, três modelos arquiteturais e comerciais disputam o orçamento corporativo:
 
-| Vetor de Decisão Executiva | Palantir Foundry e AIP | Consultorias e GSIs - Accenture, Capgemini, Globant | Engenharia Agêntica Aberta - hsnlabs |
+| Vetor de Decisão Executiva | Palantir Foundry e AIP | Consultorias e GSIs - Accenture, Capgemini, Globant | Agentic AI Aberta - hsnlabs |
 | :--- | :--- | :--- | :--- |
 | **Modelo Comercial e Precificação** | Contratos privados de 1 a 5 anos; na tabela pública UK G-Cloud 14, pilotos partem de 50 mil a 250 mil libras, licença por core a 66 mil libras anuais, licença full a 3 milhões de libras e engenharia FDE a 150 mil libras por trimestre | Faturamento aberto por horas técnicas ou alocação mensal de squads em projetos de 6 a 18 meses | Entrega arquitetural por escopo fechado; zero taxa de licença anual por assento ou núcleo de servidor |
 | **Exposição Cambial e Nuvem** | 100 por cento exposto ao dólar ou libra mais consumo subjacente de infraestrutura AWS ou Azure | Contratos locais inflados por repasse de horas de body shopping e margens sobre nuvem parceira | Engenharia contratada em moeda local executando direto na conta AWS, GCP ou Azure já existente do cliente |
