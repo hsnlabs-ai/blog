@@ -11,6 +11,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: 3.x
@@ -22,7 +24,8 @@ jobs:
           restore-keys: |
             mkdocs-material-
       - run: pip install -r requirements.txt
-      - run: mkdocs gh-deploy --force
+      - run: python scripts/test_spec.py
+      - run: mkdocs gh-deploy --force --strict
       - name: Ping WebSub Hub and IndexNow
         run: |
           curl -s -X POST "https://pubsubhubbub.appspot.com/" \

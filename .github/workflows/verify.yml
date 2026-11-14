@@ -1,0 +1,27 @@
+name: verify
+on:
+  pull_request:
+    branches:
+      - main
+      - master
+  push:
+    branches-ignore:
+      - main
+      - master
+      - gh-pages
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: 3.x
+      - run: pip install -r requirements.txt
+      - run: python scripts/test_spec.py

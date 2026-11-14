@@ -8,7 +8,7 @@ import subprocess
 import urllib.parse
 from pathlib import Path
 
-BASE_DIR = Path("/Users/hugosoares/blog_hsn_labs")
+BASE_DIR = Path(__file__).resolve().parent.parent
 DOCS_DIR = BASE_DIR / "docs"
 POSTS_DIR = DOCS_DIR / "post"
 SITE_DIR = BASE_DIR / "site"
@@ -61,7 +61,7 @@ def test_d2_forbidden_pages_purged():
     print("PASS: Gate D2 Paginas Proibidas Eliminadas")
 
 def test_d3_mkdocs_strict_build():
-    cmd = ["uv", "run", "mkdocs", "build", "--strict"]
+    cmd = [sys.executable, "-m", "mkdocs", "build", "--strict"]
     res = subprocess.run(cmd, cwd=BASE_DIR, capture_output=True, text=True)
     assert res.returncode == 0, f"Build falhou com codigo {res.returncode}:\n{res.stderr}\n{res.stdout}"
     print("PASS: Gate D3 Build Estrito Concluido sem erros")

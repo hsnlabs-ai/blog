@@ -55,7 +55,7 @@
                 {% if updated and updated != created %} — updated on {{ updated }}{% endif %}
             {% endif %}
         </p>
-        {% if page.content and page.content.strip() %}
+        {% if page and page.content and page.content.strip() %}
         <hr class="page-dates-divider">
         {% endif %}
         {% endif %}
@@ -158,7 +158,7 @@
         {% endif %}
     </article>
 
-    {% if (page and page.meta.blog_list) or (config.theme.components and config.theme.components.blog_list) %}
+    {% if (page and page.meta and page.meta.blog_list) or (config.theme.components and config.theme.components.blog_list) %}
     {% include "modules/blog_list.html" %}
     {% endif %}
 </section>
