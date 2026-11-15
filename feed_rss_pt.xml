@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo Nascimento · Arquitetura de Agentes Enterprise PT-BR</title>
+    <link>https://hsnlabs.ai/blog/pt/</link>
+    <description>Posts e notas de campo sobre arquitetura de agentes enterprise, ontologias de domínio e execução em produção.</description>
+    <language>pt-br</language>
+    <atom:link href="https://hsnlabs.ai/blog/feed_rss_pt.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="https://pubsubhubbub.appspot.com/" rel="hub" type="application/rss+xml"/>
+    <image>
+      <url>https://hsnlabs.ai/blog/assets/brand/symbol/symbol-square-pure-cyan.png</url>
+      <title>Hugo Nascimento · Arquitetura de Agentes Enterprise PT-BR</title>
+      <link>https://hsnlabs.ai/blog/pt/</link>
+    </image>
+    <item>
+      <title>LangSmith e evals em produção: como medir agentes antes do erro</title>
+      <link>https://hsnlabs.ai/blog/pt/post/langsmith-evals-producao-agentes/</link>
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/pt/post/langsmith-evals-producao-agentes/</guid>
+      <pubDate>Sun, 15 Nov 2026 00:00:00 -0000</pubDate>
+      <description>Como usar LangSmith, evals de trajetória e métricas de eficiência para medir agentes de IA antes que falhas cheguem ao usuário em produção.</description>
+      <category>Why Agents Fail</category><category>langsmith</category><category>evaluation</category><category>deep-agents</category><category>observability</category><category>production</category>
+      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/langsmith-evals-production-agents/cover.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
+      <title>Loop Engineering: como controlar agentes de IA sem estourar custos</title>
+      <link>https://hsnlabs.ai/blog/pt/post/loop-engineering-controle-custos-agentes/</link>
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/pt/post/loop-engineering-controle-custos-agentes/</guid>
+      <pubDate>Sat, 14 Nov 2026 00:00:00 -0000</pubDate>
+      <description>Como aplicar loop engineering em quatro camadas com LangGraph e LangSmith para conter custos em dólar, latência e falhas silenciosas de agentes em produção.</description>
+      <category>Why Agents Fail</category><category>loop-engineering</category><category>langgraph</category><category>langsmith</category><category>guardrails</category><category>production</category>
+      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/loop-engineering-controlling-agent-costs/cover.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
+      <title>Context Engineering: engenharia de contexto para agentes em produção</title>
+      <link>https://hsnlabs.ai/blog/pt/post/context-engineering-engenharia-de-contexto-agentes/</link>
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/pt/post/context-engineering-engenharia-de-contexto-agentes/</guid>
+      <pubDate>Fri, 13 Nov 2026 00:00:00 -0000</pubDate>
+      <description>Como context engineering em LangGraph aplica escrever, selecionar, comprimir e isolar contexto em ERPs brasileiros para cortar desperdício de tokens em USD e proteger dados sob LGPD.</description>
+      <category>Agentic AI</category><category>context-engineering</category><category>langgraph</category><category>agent-memory</category><category>rag</category><category>production</category>
+      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/context-engineering-enterprise-agents/cover.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
+      <title>O que são agentes de IA na prática corporativa além de chatbots</title>
+      <link>https://hsnlabs.ai/blog/pt/post/o-que-sao-agentes-de-ia-producao/</link>
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/pt/post/o-que-sao-agentes-de-ia-producao/</guid>
+      <pubDate>Thu, 12 Nov 2026 00:00:00 -0000</pubDate>
+      <description>Entenda o que são agentes de IA além de chatbots, os seis níveis de autonomia até máquinas de estado em LangGraph e a infraestrutura do LangSmith em produção.</description>
+      <category>Agentic AI</category><category>ai-agents</category><category>langchain</category><category>langgraph</category><category>enterprise</category><category>architecture</category>
+      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/what-are-ai-agents-enterprise-production/cover.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
+      <title>LangChain vs LangGraph vs Deep Agents: quando usar cada um em produção</title>
+      <link>https://hsnlabs.ai/blog/pt/post/langchain-vs-langgraph-vs-deep-agents/</link>
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/pt/post/langchain-vs-langgraph-vs-deep-agents/</guid>
+      <pubDate>Wed, 11 Nov 2026 00:00:00 -0000</pubDate>
+      <description>Comparativo técnico de LangChain vs LangGraph e Deep Agents em produção: entenda quando usar runtime determinístico, middleware ou harness completo.</description>
+      <category>Agentic AI</category><category>langchain</category><category>langgraph</category><category>deep-agents</category><category>architecture</category><category>comparison</category>
+      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/langchain-vs-langgraph-vs-deep-agents/cover.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
+      <title>O que é Agent Harness e por que agentes quebram sem ele</title>
+      <link>https://hsnlabs.ai/blog/pt/post/o-que-e-agent-harness-producao/</link>
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/pt/post/o-que-e-agent-harness-producao/</guid>
+      <pubDate>Tue, 10 Nov 2026 00:00:00 -0000</pubDate>
+      <description>O que é agent harness, por que modelos isolados falham na produção corporativa e como Deep Agents e LangGraph resolvem context rot e loops longos.</description>
+      <category>Why Agents Fail</category><category>agent-harness</category><category>deep-agents</category><category>langgraph</category><category>architecture</category><category>production</category>
+      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/what-is-agent-harness-production/cover.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
+      <title>O Fenômeno High IC: Produtividade e Equipes Enxutas</title>
+      <link>https://hsnlabs.ai/blog/pt/post/o-fenomeno-high-ic/</link>
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/pt/post/o-fenomeno-high-ic/</guid>
+      <pubDate>Tue, 20 Oct 2026 00:00:00 -0000</pubDate>
+      <description>Por que medir capacidade operacional pelo tamanho da equipe perdeu o sentido com a chegada dos agentes de inteligência artificial corporativos.</description>
+      <category>Future of Work</category><category>future-of-work</category><category>economics</category><category>c-suite</category><category>ai-agents</category>
+      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/the-high-ic-phenomenon/cover.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
+      <title>Databricks Lakehouse e LangGraph: Conectando Unity Catalog e Mosaic AI a Máquinas de Estado Operacionais</title>
+      <link>https://hsnlabs.ai/blog/pt/post/arquitetura-agentes-databricks-lakehouse-unity-catalog-langgraph/</link>
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/pt/post/arquitetura-agentes-databricks-lakehouse-unity-catalog-langgraph/</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 -0000</pubDate>
+      <description>Por que agentes autônomos falham ao receber acesso SQL livre sobre tabelas Delta e como vincular máquinas de estado em LangGraph e ontologias executáveis ao Databricks Unity Catalog e Mosaic AI.</description>
+      <category>Agentic AI</category><category>databricks</category><category>langgraph</category><category>architecture</category><category>data-contracts</category><category>production</category>
+      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/databricks-lakehouse-unity-catalog-langgraph-agent-architecture/cover.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
+      <title>Braintrust Evals e LangGraph: Substituindo Testes Manuais por CI/CD Determinístico</title>
+      <link>https://hsnlabs.ai/blog/pt/post/arquitetura-agentes-braintrust-evals-cicd-langgraph/</link>
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/pt/post/arquitetura-agentes-braintrust-evals-cicd-langgraph/</guid>
+      <pubDate>Sat, 17 Oct 2026 00:00:00 -0000</pubDate>
+      <description>Por que testes manuais de prompt falham na produção corporativa e como integrar suítes de avaliação do Braintrust e travas de CI/CD em agentes LangGraph.</description>
+      <category>Agentic AI</category><category>evaluation</category><category>langgraph</category><category>architecture</category><category>production</category><category>guardrails</category>
+      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/braintrust-evals-cicd-langgraph-agent-architecture/cover.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
+      <title>Snowflake AI Data Cloud e LangGraph: Conectando Máquinas de Estado aos Dados Corporativos</title>
+      <link>https://hsnlabs.ai/blog/pt/post/arquitetura-agentes-snowflake-ai-data-cloud-langgraph/</link>
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/pt/post/arquitetura-agentes-snowflake-ai-data-cloud-langgraph/</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 -0000</pubDate>
+      <description>Por que agentes autônomos falham ao receber acesso SQL direto e como vincular máquinas de estado em LangGraph e ontologias executáveis à Snowflake AI Data Cloud.</description>
+      <category>Agentic AI</category><category>snowflake</category><category>langgraph</category><category>architecture</category><category>data-contracts</category><category>production</category>
+      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/snowflake-ai-data-cloud-langgraph-agent-architecture/cover.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
+      <title>The Agentic Canvas™: O Framework para Desenhar Sistemas de IA que Sobrevivem à Produção</title>
+      <link>https://hsnlabs.ai/blog/pt/post/the-agentic-pilot-canvas-v1-4/</link>
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/pt/post/the-agentic-pilot-canvas-v1-4/</guid>
+      <pubDate>Wed, 07 Oct 2026 00:00:00 -0000</pubDate>
+      <description>Framework de arquitetura em 10 blocos para desenhar sistemas de IA corporativa antes de escrever código. Atualizado em outubro de 2026.</description>
+      <category>Agentic AI</category><category>canvas</category><category>architecture</category><category>enterprise-agents</category><category>methodology</category>
+      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/the-agentic-pilot-canvas-v1-4/cover.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
+      <title>CRM de Vendas B2B: Comprar Salesforce, Adaptar Twenty ou Construir com Agentes</title>
+      <link>https://hsnlabs.ai/blog/pt/post/comprar-ou-construir-crm-vendas-b2b/</link>
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/pt/post/comprar-ou-construir-crm-vendas-b2b/</guid>
+      <pubDate>Mon, 28 Sep 2026 00:00:00 -0000</pubDate>
+      <description>Análise técnica e econômica entre assentos de Salesforce, Twenty CRM e stacks agênticas proprietárias para líderes de tecnologia.</description>
+      <category>Future of Work</category><category>crm</category><category>model-context-protocol</category><category>saas</category><category>bpo</category><category>arquitetura</category>
+      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/buy-versus-build-b2b-enterprise-crm/cover.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
+      <title>Estudo de Caso: Como a Cleveland Clinic Escalou o Fluxo de Pacientes em 6.600 Leitos Hospitalares</title>
+      <link>https://hsnlabs.ai/blog/pt/post/estudo-caso-cleveland-clinic-agentes-operacionais/</link>
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/pt/post/estudo-caso-cleveland-clinic-agentes-operacionais/</guid>
+      <pubDate>Mon, 28 Sep 2026 00:00:00 -0000</pubDate>
+      <description>Análise arquitetural de como uma das maiores instituições de saúde do mundo orquestra leitos e fluxos críticos com agentes operacionais.</description>
+      <category>Agentic AI</category><category>healthcare</category><category>ontologies</category><category>operations</category>
+      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/cleveland-clinic-case-study-operational-agents/cover.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
+      <title>A Ontologia Operacional: Como Empresas Conectam Dados, Regras de Negócio e Ações Autônomas</title>
+      <link>https://hsnlabs.ai/blog/pt/post/a-ontologia-operacional/</link>
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/pt/post/a-ontologia-operacional/</guid>
+      <pubDate>Sun, 27 Sep 2026 00:00:00 -0000</pubDate>
+      <description>O guia definitivo sobre como estruturar a camada ontológica que permite a agentes de software operar em produção corporativa sem falhas.</description>
+      <category>Agentic AI</category><category>ontology</category><category>foundation</category><category>enterprise</category>
+      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/the-operational-ontology/cover.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
+      <title>Como Construir uma Ontologia Enterprise do Zero: Blueprint Arquitetural Completo</title>
+      <link>https://hsnlabs.ai/blog/pt/post/como-construir-ontologia-enterprise-do-zero/</link>
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/pt/post/como-construir-ontologia-enterprise-do-zero/</guid>
+      <pubDate>Sun, 27 Sep 2026 00:00:00 -0000</pubDate>
+      <description>Passo a passo detalhado para desenhar, modelar e implantar ontologias corporativas funcionais para sistemas multiagente em produção.</description>
+      <category>Agentic AI</category><category>ontology</category><category>architecture</category><category>enterprise</category>
+      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/how-to-build-an-enterprise-ontology-from-scratch/cover.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
+      <title>A Matriz de Substituição de BPO: Métricas Operacionais e Financeiras</title>
+      <link>https://hsnlabs.ai/blog/pt/post/matriz-substituicao-bpo/</link>
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/pt/post/matriz-substituicao-bpo/</guid>
+      <pubDate>Sun, 27 Sep 2026 00:00:00 -0000</pubDate>
+      <description>Framework quantitativo analisando economia unitária, métricas operacionais e impacto na margem ao substituir contratos de BPO por agentes de software.</description>
+      <category>Future of Work</category><category>economics</category><category>ebitda</category><category>bpo</category>
+      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/bpo-replacement-matrix/cover.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
+      <title>O Que É uma Ontologia para Agentes de IA? O Guia Definitivo para Engenharia Corporativa</title>
+      <link>https://hsnlabs.ai/blog/pt/post/o-que-e-uma-ontologia-para-agentes-ia/</link>
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/pt/post/o-que-e-uma-ontologia-para-agentes-ia/</guid>
+      <pubDate>Sun, 27 Sep 2026 00:00:00 -0000</pubDate>
+      <description>Tudo o que engenheiros e líderes de tecnologia precisam saber sobre ontologias operacionais para construir agentes que funcionam em produção.</description>
+      <category>Why Agents Fail</category><category>ontology</category><category>definitive-guide</category><category>engineering</category>
+      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/what-is-an-ontology-for-ai-agents/cover.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
+      <title>Ontologia vs Grafo de Conhecimento: Diferenças Centrais, Arquitetura e Aplicações Enterprise</title>
+      <link>https://hsnlabs.ai/blog/pt/post/ontologia-vs-grafo-conhecimento/</link>
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/pt/post/ontologia-vs-grafo-conhecimento/</guid>
+      <pubDate>Sun, 27 Sep 2026 00:00:00 -0000</pubDate>
+      <description>Desmistificando os conceitos de ontologia e grafo de conhecimento em projetos corporativos de inteligência artificial e agentes autônomos.</description>
+      <category>Agentic AI</category><category>ontology</category><category>knowledge-graph</category><category>architecture</category>
+      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/ontology-vs-knowledge-graph/cover.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
+      <title>Ontologia vs Schema de Banco de Dados: Por Que Tabelas Relacionais e Vetores Não Bastam para IA</title>
+      <link>https://hsnlabs.ai/blog/pt/post/ontologia-vs-schema-banco-dados/</link>
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/pt/post/ontologia-vs-schema-banco-dados/</guid>
+      <pubDate>Sun, 27 Sep 2026 00:00:00 -0000</pubDate>
+      <description>Análise técnica das diferenças estruturais entre schemas de bancos de dados relacionais e ontologias operacionais para agentes autônomos.</description>
+      <category>Why Agents Fail</category><category>ontology</category><category>database</category><category>vector-stores</category>
+      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/ontology-vs-database-schema/cover.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
+      <title>Como Construir uma Ontologia Operacional de Negócios em Python com Pydantic e MCP</title>
+      <link>https://hsnlabs.ai/blog/pt/post/como-construir-ontologia-operacional-python-mcp/</link>
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/pt/post/como-construir-ontologia-operacional-python-mcp/</guid>
+      <pubDate>Fri, 25 Sep 2026 00:00:00 -0000</pubDate>
+      <description>Implementação prática em Python utilizando Pydantic e servidores Model Context Protocol para criar ontologias executáveis para agentes.</description>
+      <category>Agentic AI</category><category>python</category><category>mcp</category><category>pydantic</category>
+      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/how-to-build-operational-ontology-python-mcp/cover.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
+      <title>Playbook C-Suite: Proteção de Margem e Redução de Custos com Software Agêntico</title>
+      <link>https://hsnlabs.ai/blog/pt/post/playbook-c-suite-protecao-margem/</link>
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/pt/post/playbook-c-suite-protecao-margem/</guid>
+      <pubDate>Fri, 25 Sep 2026 00:00:00 -0000</pubDate>
+      <description>Guia executivo para CEOs, CFOs e CIOs sobre como proteger margens operacionais substituindo custos fixos de BPO por software agêntico.</description>
+      <category>Future of Work</category><category>c-suite</category><category>margins</category><category>unit-economics</category>
+      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/c-suite-margin-protection-playbook/cover.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
+      <title>De 1915 a Era da IA: Kafka, Utilitarismo e o Valor de Quem Trabalha</title>
+      <link>https://hsnlabs.ai/blog/pt/post/kafka-metamorfose-ia-futuro-do-trabalho/</link>
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/pt/post/kafka-metamorfose-ia-futuro-do-trabalho/</guid>
+      <pubDate>Tue, 22 Sep 2026 00:00:00 -0000</pubDate>
+      <description>Reflexão filosófica e econômica sobre a mercantilização do trabalho humano a luz da obra A Metamorfose e o avanço da automação por IA.</description>
+      <category>Future of Work</category><category>philosophy</category><category>future-of-work</category><category>society</category>
+      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/kafka-metamorfose-ia-futuro-do-trabalho/cover.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
+      <title>Por Que Apresentações de Big 4 Falham em Projetos de Agentes</title>
+      <link>https://hsnlabs.ai/blog/pt/post/sprint-arquitetura-cinco-dias/</link>
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/pt/post/sprint-arquitetura-cinco-dias/</guid>
+      <pubDate>Tue, 22 Sep 2026 00:00:00 -0000</pubDate>
+      <description>Por que decks genéricos de estratégia de consultorias tradicionais falham em entregar software agêntico em ambientes corporativos complexos.</description>
+      <category>Agentic AI</category><category>case-studies</category><category>consulting</category><category>sprint</category>
+      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/five-day-architecture-sprint/cover.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
+      <title>Operações em Alta Velocidade: Negociação Autônoma, Cobrança e Execução Contratual</title>
+      <link>https://hsnlabs.ai/blog/pt/post/negociacoes-autonomas-cobranca-contratos/</link>
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/pt/post/negociacoes-autonomas-cobranca-contratos/</guid>
+      <pubDate>Fri, 18 Sep 2026 00:00:00 -0000</pubDate>
+      <description>Como agentes operacionais com ontologia e máquinas de estados finitos automatizam negociação de cobrança e aditamentos contratuais sem erro.</description>
+      <category>Future of Work</category><category>bpo</category><category>collections</category><category>contracts</category><category>fsm</category>
+      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/autonomous-negotiations-collections-contracts/cover.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
+      <title>A Arquitetura do Palantir AIP: Por Que Agentes Corporativos Falham sem uma Ontologia Operacional</title>
+      <link>https://hsnlabs.ai/blog/pt/post/palantir-aip-bootcamp-ontologia-operacional/</link>
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/pt/post/palantir-aip-bootcamp-ontologia-operacional/</guid>
+      <pubDate>Fri, 18 Sep 2026 00:00:00 -0000</pubDate>
+      <description>Estudo aprofundado dos princípios de arquitetura do Palantir AIP e por que sua abordagem ontológica é a única que sobrevive em produção corporativa.</description>
+      <category>Agentic AI</category><category>palantir</category><category>ontology</category><category>enterprise</category>
+      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/palantir-aip-bootcamp-operational-ontology/cover.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
+      <title>O Que Aprendi Construindo HR Tech Sobre a Morte do BPO</title>
+      <link>https://hsnlabs.ai/blog/pt/post/guarda-do-balanco-extincao-bpo/</link>
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/pt/post/guarda-do-balanco-extincao-bpo/</guid>
+      <pubDate>Tue, 15 Sep 2026 00:00:00 -0000</pubDate>
+      <description>Lições operacionais sobre o colapso estrutural de contratos de terceirização de RH e fluxos de trabalho manuais em grandes empresas.</description>
+      <category>Future of Work</category><category>economics</category><category>bpo</category><category>hr-tech</category>
+      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/balance-sheet-guard-bpo-extinction/cover.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
+      <title>O TCO Real da Palantir: A Barreira dos Milhões de Dólares e Alternativas Abertas Modernas</title>
+      <link>https://hsnlabs.ai/blog/pt/post/preco-palantir-tco-alternativas-abertas/</link>
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/pt/post/preco-palantir-tco-alternativas-abertas/</guid>
+      <pubDate>Mon, 14 Sep 2026 00:00:00 -0000</pubDate>
+      <description>Dissecando o custo total de propriedade da Palantir e como construir ontologias operacionais comparáveis com software de código aberto.</description>
+      <category>Future of Work</category><category>palantir</category><category>tco</category><category>pricing</category>
+      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/palantir-pricing-tco-and-open-alternatives/cover.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
+      <title>Arbitragem de Protocolo: Liquidação Multimodal Autônoma em Seguros e Saúde</title>
+      <link>https://hsnlabs.ai/blog/pt/post/arbitragem-protocolo-sinistros-subscricao/</link>
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/pt/post/arbitragem-protocolo-sinistros-subscricao/</guid>
+      <pubDate>Fri, 11 Sep 2026 00:00:00 -0000</pubDate>
+      <description>Como o processamento multimodal e protocolos de validação automatizam análise de sinistros e subscrição de apólices sem intermediação humana.</description>
+      <category>Future of Work</category><category>insurance</category><category>healthcare</category><category>underwriting</category>
+      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/protocol-arbitrage-claims-underwriting/cover.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
+      <title>Palantir vs Databricks: Por Que Data Lakes Falham em Operações com Agentes Autônomos</title>
+      <link>https://hsnlabs.ai/blog/pt/post/palantir-vs-databricks-arquitetura-agentes/</link>
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/pt/post/palantir-vs-databricks-arquitetura-agentes/</guid>
+      <pubDate>Fri, 11 Sep 2026 00:00:00 -0000</pubDate>
+      <description>Comparativo arquitetural entre a abordagem de lakehouse e a ontologia operacional em projetos corporativos de software agêntico.</description>
+      <category>Why Agents Fail</category><category>palantir</category><category>databricks</category><category>architecture</category>
+      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/palantir-vs-databricks-agent-architecture/cover.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
+      <title>A Morte do Suporte Nível 1: Por Que Consultorias de ERP Não Sustentarão o Modelo de Horas Faturáveis</title>
+      <link>https://hsnlabs.ai/blog/pt/post/morte-suporte-nivel-1-erp/</link>
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/pt/post/morte-suporte-nivel-1-erp/</guid>
+      <pubDate>Tue, 08 Sep 2026 00:00:00 -0000</pubDate>
+      <description>Como agentes operacionais com compreensão de regras de negócio estão tornando obsoletas as mesas terceirizadas de atendimento de ERP.</description>
+      <category>Future of Work</category><category>erp</category><category>support</category><category>consulting</category>
+      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/death-of-tier-1-erp-helpdesk/cover.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
+      <title>O Mercado de RPA Está em Colapso</title>
+      <link>https://hsnlabs.ai/blog/pt/post/colapso-rpa-legado/</link>
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/pt/post/colapso-rpa-legado/</guid>
+      <pubDate>Fri, 04 Sep 2026 00:00:00 -0000</pubDate>
+      <description>Por que bots frágeis de gravação de tela estão em colapso em ambientes corporativos e como agentes em produção os substituem.</description>
+      <category>Future of Work</category><category>economics</category><category>rpa</category><category>automation</category>
+      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/collapse-of-legacy-rpa/cover.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
+      <title>Por Que Agentes Falham: O Cemitério de PoCs</title>
+      <link>https://hsnlabs.ai/blog/pt/post/cemiterio-de-pocs/</link>
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/pt/post/cemiterio-de-pocs/</guid>
+      <pubDate>Tue, 01 Sep 2026 00:00:00 -0000</pubDate>
+      <description>Post-mortem sobre a causa raiz de noventa por cento das provas de conceito de IA falharem antes da produção.</description>
+      <category>Why Agents Fail</category><category>case-studies</category><category>poc</category><category>ai-failures</category>
+      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/the-poc-graveyard/cover.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
+      <title>Como Protegemos Bancos de Dados Enterprise de Agentes de IA</title>
+      <link>https://hsnlabs.ai/blog/pt/post/isolamento-perimetro-mcp-contratos-dados/</link>
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/pt/post/isolamento-perimetro-mcp-contratos-dados/</guid>
+      <pubDate>Wed, 26 Aug 2026 00:00:00 -0000</pubDate>
+      <description>Padrões de arquitetura para isolamento de perímetro, contratos de contexto e limites de acesso blindando dados corporativos contra agentes de IA.</description>
+      <category>Agentic AI</category><category>architecture</category><category>mcp</category><category>data-contracts</category>
+      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/perimeter-isolation-mcp-data-contracts/cover.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
+      <title>LATAM Airlines: Agentes em Produção com Margem de 3 Por Cento</title>
+      <link>https://hsnlabs.ai/blog/pt/post/estudo-caso-latam-airlines/</link>
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/pt/post/estudo-caso-latam-airlines/</guid>
+      <pubDate>Fri, 21 Aug 2026 00:00:00 -0000</pubDate>
+      <description>Estudo de caso operacional sobre a implantação de agentes corporativos em aviação comercial com margens apertadas e alta volumetria.</description>
+      <category>Agentic AI</category><category>case-studies</category><category>latam-airlines</category><category>production</category>
+      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/latam-airlines-case-study/cover.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
+      <title>Por Que LLM Como Juiz Falha no Setor Bancário</title>
+      <link>https://hsnlabs.ai/blog/pt/post/falacia-llm-como-juiz/</link>
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/pt/post/falacia-llm-como-juiz/</guid>
+      <pubDate>Tue, 18 Aug 2026 00:00:00 -0000</pubDate>
+      <description>Vulnerabilidades estruturais e riscos de conformidade ao confiar em avaliadores estocásticos de LLM para auditar decisões financeiras.</description>
+      <category>Why Agents Fail</category><category>architecture</category><category>llm-judge</category><category>audit</category>
+      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/llm-as-judge-fallacy/cover.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
+      <title>Estudo de Caso: 42 Chamadas em Loop às 2 da Manhã</title>
+      <link>https://hsnlabs.ai/blog/pt/post/agentes-ilimitados-maquinas-estados-finitos/</link>
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/pt/post/agentes-ilimitados-maquinas-estados-finitos/</guid>
+      <pubDate>Wed, 12 Aug 2026 00:00:00 -0000</pubDate>
+      <description>Auditoria de incidente de emergência e remédio de arquitetura para loops infinitos de chamadas em agentes por máquinas de estados finitos.</description>
+      <category>Agentic AI</category><category>case-studies</category><category>production</category><category>api-loops</category>
+      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/unconstrained-agents-finite-state-machines/cover.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
+      <title>Por Que RAG Tradicional Falha em ERPs Financeiros</title>
+      <link>https://hsnlabs.ai/blog/pt/post/por-que-rag-falha-em-erp/</link>
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/pt/post/por-que-rag-falha-em-erp/</guid>
+      <pubDate>Fri, 07 Aug 2026 00:00:00 -0000</pubDate>
+      <description>Por que a busca vetorial por similaridade corrompe a precisão aritmética e a integridade de livros contábeis em ERPs.</description>
+      <category>Why Agents Fail</category><category>architecture</category><category>rag</category><category>erp</category>
+      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/why-rag-breaks-on-erp/cover.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
+      <title>Sistemas Transacionais Legados Não Vão Morrer: Eles São o Motor</title>
+      <link>https://hsnlabs.ai/blog/pt/post/sistemas-legados-motor-execucao/</link>
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/pt/post/sistemas-legados-motor-execucao/</guid>
+      <pubDate>Tue, 04 Aug 2026 00:00:00 -0000</pubDate>
+      <description>Por que sistemas transacionais legados continuam sendo a fundação indispensável para agentes enterprise autônomos.</description>
+      <category>Agentic AI</category><category>architecture</category><category>legacy-core</category><category>mainframe</category>
+      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/legacy-core-backing-engine/cover.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
+      <title>A Deriva de Integração: Quando Prompts Quebram Agentes em Produção</title>
+      <link>https://hsnlabs.ai/blog/pt/post/deriva-de-integracao/</link>
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/pt/post/deriva-de-integracao/</guid>
+      <pubDate>Wed, 29 Jul 2026 00:00:00 -0000</pubDate>
+      <description>Como detectar e blindar fluxos de agentes em produção contra quebras silenciosas provocadas por desvios de schemas e APIs.</description>
+      <category>Why Agents Fail</category><category>architecture</category><category>schema-drift</category><category>mcp</category>
+      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/integration-drift/cover.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
+      <title>Chatbot vs Agente: Por Que Substituir BPOs Exige Ontologias em Produção</title>
+      <link>https://hsnlabs.ai/blog/pt/post/chatbot-vs-agente/</link>
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/pt/post/chatbot-vs-agente/</guid>
+      <pubDate>Wed, 22 Jul 2026 00:00:00 -0000</pubDate>
+      <description>Diferenças críticas de arquitetura entre chatbots conversacionais e agentes corporativos em produção que alteram o estado de ERPs.</description>
+      <category>Agentic AI</category><category>architecture</category><category>guardrails</category><category>state-machines</category>
+      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/chatbot-vs-agent/cover.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
+      <title>O Custo de IA Sem Limites na TI Legada</title>
+      <link>https://hsnlabs.ai/blog/pt/post/custo-ia-ilimitada-ti-legada/</link>
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/pt/post/custo-ia-ilimitada-ti-legada/</guid>
+      <pubDate>Wed, 15 Jul 2026 00:00:00 -0000</pubDate>
+      <description>Auditoria econômica e técnica sobre custos descontrolados e riscos operacionais causados por IA estocástica na infraestrutura legada.</description>
+      <category>Future of Work</category><category>architecture</category><category>legacy-it</category><category>reliability</category>
+      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/cost-legacy-it/cover.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
+      <title>Por Que Criei a hsnlabs</title>
+      <link>https://hsnlabs.ai/blog/pt/post/manifesto/</link>
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/pt/post/manifesto/</guid>
+      <pubDate>Wed, 08 Jul 2026 00:00:00 -0000</pubDate>
+      <description>Tese fundadora da hsnlabs: construindo arquiteturas de agentes enterprise sobre ontologias executáveis de domínio.</description>
+      <category>Future of Work</category><category>case-studies</category><category>hsnlabs</category><category>manifesto</category>
+      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/manifesto/cover.webp" type="image/webp" length="0"/>
+    </item>
+  </channel>
+</rss>

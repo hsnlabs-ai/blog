@@ -38,20 +38,6 @@ Verifiable protocol adherence and zero-exfiltration architectures across healthc
 - Legacy ERP and BPO: https://hsnlabs.ai/#verticals
 Anchoring agentic workflows to validated state machines across legacy ERPs to replace fragile BPO operations.
 
-## Enterprise Architecture Benchmarks & Vendor Comparisons
-- Palantir TCO vs Global Consultancies vs hsnlabs: https://hsnlabs.ai/blog/post/palantir-pricing-tco-and-open-alternatives/
-Audited financial comparison of Palantir Foundry and AIP (SEC Form 10-K Government vs Commercial power law and UK G-Cloud 14 rate card), global systems integrators (Accenture, Capgemini, Globant), and hsnlabs open operational ontologies in Python, Pydantic, LangGraph, and MCP at up to 80 percent lower TCO.
-- Palantir vs Databricks vs hsnlabs Hybrid Architecture: https://hsnlabs.ai/blog/post/palantir-vs-databricks-agent-architecture/
-Architectural comparison between analytical lakehouses (Databricks Delta Lake, Unity Catalog, Snowflake), closed operational ontologies (Palantir AIP), and hsnlabs decoupled operational execution plane over SAP, TOTVS, and Salesforce.
-- Palantir AIP Bootcamp vs Big 4 Discovery vs hsnlabs 5-Day Bootcamp: https://hsnlabs.ai/blog/post/palantir-aip-bootcamp-operational-ontology/
-Side-by-side evaluation of 90-day strategy slide studies (McKinsey, Accenture, EY), proprietary Palantir AIP Bootcamps, and the hsnlabs 5-Day Forward Deployed Engineering Bootcamp with 100 percent client IP ownership.
-- Big 4 Strategy Firms vs IT Outsourcing Factories vs hsnlabs: https://hsnlabs.ai/blog/post/five-day-architecture-sprint/
-Comparing McKinsey, BCG, EY, and PwC discovery decks and Globant, CI&T, and Stefanini squad outsourcing against hsnlabs 5-day empirical sandbox prototyping.
-- Legacy RPA vs Protocol-Level Autonomous Agents: https://hsnlabs.ai/blog/post/collapse-of-legacy-rpa/
-Why headless MCP and LangGraph agents built by hsnlabs replace fragile UI screen-scraping bots from UiPath, Automation Anywhere, and Blue Prism.
-- ERP AMS Consultancies and ITSM Suites vs Self-Healing Agents: https://hsnlabs.ai/blog/post/death-of-tier-1-erp-helpdesk/
-Comparing hourly SAP and TOTVS sustaining retainers (Accenture, Stefanini, Sonda) and per-seat ITSM copilot add-ons (ServiceNow, Zendesk) against hsnlabs autonomous Tier-1 resolution.
-
 ## Open Architecture Frameworks
 - The Agentic Canvas™: https://hsnlabs.ai/en/canvas/
 10-block architecture framework by hsnlabs for structuring and certifying enterprise agentic systems across two tracks — Agentic Products and Agentic Employees — covering legacy data ontologies, deterministic guardrails, evaluation harnesses, and human-in-the-loop governance.
@@ -59,51 +45,186 @@ Comparing hourly SAP and TOTVS sustaining retainers (Accenture, Stefanini, Sonda
 ## Knowledge Engine & Research
 - hsnlabs Blog: https://hsnlabs.ai/blog/
 Technical posts, case studies, and post-mortems on enterprise agent architectures and runtime observability.
-- The Solution - Enterprise Agent Architecture: https://hsnlabs.ai/blog/post/manifesto/
-Why enterprise AI proofs of concept fail in production and how to solve runtime failures.
-- Chatbot vs Agent: https://hsnlabs.ai/blog/post/chatbot-vs-agent/
-Why replacing enterprise BPO contracts requires structured state machines and finite guardrails.
-- The Cost of Unbounded AI in Legacy IT: https://hsnlabs.ai/blog/post/cost-legacy-it/
-Analyzing hidden costs of probabilistic variance across SAP, Oracle, and legacy core mainframes.
-- The Integration Drift: https://hsnlabs.ai/blog/post/integration-drift/
-How natural language prompts drift over time and break production database schemas.
-- LATAM Airlines Case Study: https://hsnlabs.ai/blog/post/latam-airlines-case-study/
-Lessons from deploying customer experience agents in a three percent margin business.
-- Buy vs Build - Enterprise B2B CRM: https://hsnlabs.ai/blog/post/buy-versus-build-b2b-enterprise-crm/
-Technical and financial analysis comparing Salesforce seats, Twenty CRM, and zero-UI agentic stacks.
-- What Is an Agent Harness and Why Production Agents Fail Without It: https://hsnlabs.ai/blog/post/what-is-agent-harness-production/
-- LangChain vs LangGraph vs Deep Agents: https://hsnlabs.ai/blog/post/langchain-vs-langgraph-vs-deep-agents/
-- What Are AI Agents in Enterprise Production Beyond Chatbots: https://hsnlabs.ai/blog/post/what-are-ai-agents-enterprise-production/
+- RSS Feed EN: https://hsnlabs.ai/blog/feed_rss_created.xml
+- JSON Feed EN: https://hsnlabs.ai/blog/feed_json_created.json
+- LangSmith and Production Evals: Measuring Agents Before Failures Hit Users: https://hsnlabs.ai/blog/post/langsmith-evals-production-agents/
+  How LangSmith observability, targeted trajectory evals, and efficiency ratios catch Deep Agents failures before they hit enterprise users.
+- Loop Engineering: Controlling Production AI Agents Without Runaway Costs: https://hsnlabs.ai/blog/post/loop-engineering-controlling-agent-costs/
+  How to stack the four loops of loop engineering with LangGraph and LangSmith to prevent runaway token burn, verify outputs, and compound reliability in production.
 - Context Engineering for Production Enterprise AI Agents: https://hsnlabs.ai/blog/post/context-engineering-enterprise-agents/
-- Loop Engineering - Controlling Production AI Agents Without Runaway Costs: https://hsnlabs.ai/blog/post/loop-engineering-controlling-agent-costs/
-- LangSmith and Production Evals: https://hsnlabs.ai/blog/post/langsmith-evals-production-agents/
-- RSS Feed: https://hsnlabs.ai/blog/feed_rss_created.xml
-Structured machine-readable feed of all technical publications.
+  Why long-running enterprise agents fail from bloated context windows, and how write, select, compress, and isolate strategies in LangGraph control cost and accuracy.
+- What Are AI Agents in Enterprise Production Beyond Chatbots: https://hsnlabs.ai/blog/post/what-are-ai-agents-enterprise-production/
+  Why an AI agent is defined by LLM-owned control flow, the six autonomy levels from chains to state machines, and what LangSmith observability requires in production.
+- LangChain vs LangGraph vs Deep Agents: Choosing the Right Production Layer: https://hsnlabs.ai/blog/post/langchain-vs-langgraph-vs-deep-agents/
+  Compare LangChain, LangGraph, and Deep Agents in production. Learn when to choose runtime determinism, middleware loops, or an opinionated agent harness.
+- What Is an Agent Harness and Why Production Agents Fail Without It: https://hsnlabs.ai/blog/post/what-is-agent-harness-production/
+  What an agent harness is, why raw LLMs fail in enterprise production without harness engineering, and how Deep Agents and LangGraph solve context rot and long-horizon loops.
+- The High IC Phenomenon: Why Team Size No Longer Measures Productivity: https://hsnlabs.ai/blog/post/the-high-ic-phenomenon/
+  Why measuring organizational capacity by headcount is obsolete as autonomous enterprise AI agents unlock the era of high-impact individual contributors.
+- Databricks Lakehouse & LangGraph: Binding Unity Catalog and Mosaic AI to Operational State Machines: https://hsnlabs.ai/blog/post/databricks-lakehouse-unity-catalog-langgraph-agent-architecture/
+  Why autonomous agents fail when given unconstrained SQL over Delta tables, and how to bind LangGraph state machines and executable ontologies to Databricks Unity Catalog and Mosaic AI.
+- Braintrust Evals & LangGraph: Replacing Vibe Checks with Deterministic CI/CD: https://hsnlabs.ai/blog/post/braintrust-evals-cicd-langgraph-agent-architecture/
+  Why manual prompt testing fails in enterprise production, and how to wire Braintrust evaluation suites and CI/CD regression gates into LangGraph agents.
+- Snowflake AI Data Cloud & LangGraph: Binding State Machines to Enterprise Data: https://hsnlabs.ai/blog/post/snowflake-ai-data-cloud-langgraph-agent-architecture/
+  Why autonomous agents fail when given raw SQL access, and how to bind LangGraph state machines and executable ontologies to the Snowflake AI Data Cloud.
+- The Agentic Canvas™: The Framework for Enterprise AI Systems That Survive Production: https://hsnlabs.ai/blog/post/the-agentic-pilot-canvas-v1-4/
+  10-block architecture framework for scoping and deploying enterprise AI systems before writing production code. Updated in October 2026.
+- Case Study: How Cleveland Clinic Scaled Patient Flow Across 6,600 Hospital Beds: https://hsnlabs.ai/blog/post/cleveland-clinic-case-study-operational-agents/
+  Detailed case study on how Cleveland Clinic eliminated spreadsheet bottlenecks and cut bed capacity calculation time by 75% using operational ontologies.
+- Buy versus Build: B2B Enterprise CRM, Twenty, and Agentic Stacks: https://hsnlabs.ai/blog/post/buy-versus-build-b2b-enterprise-crm/
+  Technical and financial analysis comparing Salesforce seats, Twenty CRM, and custom agentic stacks for enterprise engineering leaders.
+- The BPO Replacement Matrix: Operational and Financial Impact of Production Agents: https://hsnlabs.ai/blog/post/bpo-replacement-matrix/
+  Quantitative framework analyzing unit economics, operational metrics, and margin impact of replacing legacy BPO contracts with autonomous software agents.
+- How to Build an Enterprise Ontology from Scratch: The Complete Architectural Blueprint: https://hsnlabs.ai/blog/post/how-to-build-an-enterprise-ontology-from-scratch/
+  The complete step-by-step engineering blueprint to build and deploy an operational business ontology for autonomous AI agents in enterprise production.
+- Ontology vs. Database Schema: Why Relational Tables and Vector Stores Fall Short for AI: https://hsnlabs.ai/blog/post/ontology-vs-database-schema/
+  Why raw SQL schemas and vector stores fail autonomous AI agents: the limits of text-to-SQL, semantic ambiguity, and how ontologies provide deterministic operational boundaries.
+- Ontology vs. Knowledge Graph: Key Differences, Architecture, and Enterprise Applications: https://hsnlabs.ai/blog/post/ontology-vs-knowledge-graph/
+  The architectural distinction between ontologies and knowledge graphs in enterprise AI systems: schemas versus instances, preventing graph drift, and building hybrid neuro-symbolic stacks.
+- The Operational Ontology: How Enterprises Connect Data, Business Rules, and Autonomous Actions: https://hsnlabs.ai/blog/post/the-operational-ontology/
+  The core architecture of executable business ontologies: moving from static documentation to kinetic action engines, Palantir AIP mechanics, and deploying production MCP harnesses.
+- What Is an Ontology for AI Agents? The Definitive Guide: https://hsnlabs.ai/blog/post/what-is-an-ontology-for-ai-agents/
+  The complete guide to operational ontologies for enterprise AI agents: why prompt-based systems fail, how to map business invariants into executable code, and how to govern autonomous actions.
+- The C-Suite Transition Playbook: Protecting Margins in the Agentic Economy: https://hsnlabs.ai/blog/post/c-suite-margin-protection-playbook/
+  Executive blueprint for boardrooms and CFOs defending operational margins against legacy IT cost structures in the agentic economy.
+- How to Build an Operational Business Ontology in Python with Pydantic and MCP: https://hsnlabs.ai/blog/post/how-to-build-operational-ontology-python-mcp/
+  Step-by-step engineering architecture to build an operational business ontology in pure Python using Pydantic schemas and Model Context Protocol actions without proprietary lock-in.
+- Why Big 4 Slide Decks Fail on Agent Projects: https://hsnlabs.ai/blog/post/five-day-architecture-sprint/
+  Why traditional Big 4 strategy slide decks fail to deliver working agentic software in complex enterprise production environments.
+- De 1915 à Era da IA: Kafka, utilitarismo e o valor de quem trabalha: https://hsnlabs.ai/blog/post/kafka-metamorfose-ia-futuro-do-trabalho/
+  Reflexão sobre utilitarismo, desvalorização do trabalhador e o impacto de agentes de IA a partir de A Metamorfose de Franz Kafka.
+- High-Velocity Operations: Autonomous Negotiation, Collections, and Contract Execution: https://hsnlabs.ai/blog/post/autonomous-negotiations-collections-contracts/
+  Production architecture for autonomous collections, contract negotiation, and high-velocity commercial execution.
+- The Architecture of Palantir AIP: Why Enterprise Agents Fail Without an Operational Ontology: https://hsnlabs.ai/blog/post/palantir-aip-bootcamp-operational-ontology/
+  How Palantir AIP bootcamps compressed 9-month sales cycles into 5-day deployments by binding LLMs to operational ontologies instead of raw prompts.
+- What I Learned Building HR Tech About Dying BPO Contracts: https://hsnlabs.ai/blog/post/balance-sheet-guard-bpo-extinction/
+  Operational field lessons on the structural collapse of enterprise HR outsourcing contracts and manual workflows.
+- The Real TCO of Palantir: The Dollar Barrier and Modern Open Alternatives: https://hsnlabs.ai/blog/post/palantir-pricing-tco-and-open-alternatives/
+  Auditing the total cost of ownership behind Palantir contracts, foreign exchange exposure, and how to build open ontologies without 7-figure licensing.
+- Palantir vs Databricks: Why Data Lakes Fail at Agentic Operations: https://hsnlabs.ai/blog/post/palantir-vs-databricks-agent-architecture/
+  Architectural breakdown comparing analytical lakehouses against operational ontologies for mission-critical enterprise AI agents.
+- Protocol Arbitrage: Autonomous Multimodal Adjudication in Healthcare and Underwriting: https://hsnlabs.ai/blog/post/protocol-arbitrage-claims-underwriting/
+  Autonomous multimodal adjudication and real-time protocol arbitrage across complex insurance claims and healthcare underwriting.
+- The Death of Tier-1 Support: Why ERP Consultancies and IT Helpdesks Cannot Defend the Billable Hour: https://hsnlabs.ai/blog/post/death-of-tier-1-erp-helpdesk/
+  The structural collapse of hourly billable support models across enterprise ERP consultancies and IT helpdesks.
+- The RPA Market Is Collapsing: https://hsnlabs.ai/blog/post/collapse-of-legacy-rpa/
+  Why brittle screen-recording bots are collapsing in enterprise environments and how production agent architectures replace them.
+- Why Agents Fail: The PoC Graveyard: https://hsnlabs.ai/blog/post/the-poc-graveyard/
+  Root cause post-mortem on why ninety percent of enterprise AI proofs of concept fail before reaching live production.
+- How We Protect Enterprise Databases from AI Agents: https://hsnlabs.ai/blog/post/perimeter-isolation-mcp-data-contracts/
+  Architectural patterns for perimeter isolation, context contracts, and cryptographic access boundaries shielding enterprise data from AI agents.
+- LATAM Airlines: Production Agents in a 3% Margin Business: https://hsnlabs.ai/blog/post/latam-airlines-case-study/
+  Field post-mortem on deploying resilient enterprise agents in low-margin, high-throughput commercial aviation operations.
+- Why LLM-as-a-Judge Fails in Banking: https://hsnlabs.ai/blog/post/llm-as-judge-fallacy/
+  Structural vulnerabilities and compliance liabilities of relying on stochastic LLM evaluators to audit critical financial decisions.
+- Case Study: 42 Calls in a Loop at 2 AM: https://hsnlabs.ai/blog/post/unconstrained-agents-finite-state-machines/
+  Emergency incident audit and architectural remedy for unbounded agent API loops through finite state machines.
+- Why I Never Use Normal RAG on Financial ERPs: https://hsnlabs.ai/blog/post/why-rag-breaks-on-erp/
+  Why vector similarity retrieval corrupts arithmetic precision and ledger integrity in enterprise financial ERPs.
+- Legacy Core Systems Will Not Die: They Are the Engine Behind Autonomous Agents: https://hsnlabs.ai/blog/post/legacy-core-backing-engine/
+  Why legacy core transaction systems remain the indispensable foundation powering autonomous enterprise agents.
+- The Integration Drift: When Prompts Break Production: https://hsnlabs.ai/blog/post/integration-drift/
+  How to detect and guard production agent workflows against silent runtime breaks caused by upstream schema and API drift.
+- Chatbot vs Agent: Why Replacing BPOs Requires Production Guardrails: https://hsnlabs.ai/blog/post/chatbot-vs-agent/
+  Critical architectural differences between conversational chatbots and production enterprise agents mutating live ERP state.
+- The Cost of Unbounded AI in Legacy IT: https://hsnlabs.ai/blog/post/cost-legacy-it/
+  Economic and technical audit of runaway costs and execution risks caused by unbounded stochastic AI on legacy enterprise infrastructure.
+- Why I Built hsnlabs: https://hsnlabs.ai/blog/post/manifesto/
+  Foundational thesis of hsnlabs: building production-grade enterprise agent architectures on executable domain ontologies.
 
 ## Documentação e Recursos em Português
-- Visao Geral em Portugues: https://hsnlabs.ai/
+- Visão Geral em Português: https://hsnlabs.ai/
 - The Agentic Canvas™: https://hsnlabs.ai/canvas/
 - Bootcamp de Agentes: https://hsnlabs.ai/bootcamp/
 - Advisory de Arquitetura: https://hsnlabs.ai/advisory/
 - Servidores MCP Enterprise: https://hsnlabs.ai/mcp/
-- Blog hsnlabs em Portugues: https://hsnlabs.ai/blog/pt/
-- O TCO Real da Palantir vs Consultorias Globais vs hsnlabs: https://hsnlabs.ai/blog/pt/post/preco-palantir-tco-alternativas-abertas/
-- Palantir vs Databricks vs Arquitetura Híbrida hsnlabs: https://hsnlabs.ai/blog/pt/post/palantir-vs-databricks-arquitetura-agentes/
-- Palantir AIP Bootcamp vs Discovery Big 4 vs Bootcamp hsnlabs: https://hsnlabs.ai/blog/pt/post/palantir-aip-bootcamp-ontologia-operacional/
-- Por Que Apresentações de Big 4 Falham vs Sprint de 5 Dias hsnlabs: https://hsnlabs.ai/blog/pt/post/sprint-arquitetura-cinco-dias/
-- O Colapso do RPA Legado - UiPath e Automation Anywhere vs Agentes MCP hsnlabs: https://hsnlabs.ai/blog/pt/post/colapso-rpa-legado/
-- A Morte do Suporte Nível 1 em ERP - Consultorias AMS e ServiceNow vs hsnlabs: https://hsnlabs.ai/blog/pt/post/morte-suporte-nivel-1-erp/
-- O Cemitério de PoCs Enterprise: https://hsnlabs.ai/blog/pt/post/cemiterio-de-pocs/
-- Por Que RAG Falha em ERP: https://hsnlabs.ai/blog/pt/post/por-que-rag-falha-em-erp/
-- Chatbot vs Agente: https://hsnlabs.ai/blog/pt/post/chatbot-vs-agente/
-- Isolamento de Perímetro e MCP: https://hsnlabs.ai/blog/pt/post/isolamento-perimetro-mcp-contratos-dados/
-- Comprar ou Construir CRM de Vendas B2B: https://hsnlabs.ai/blog/pt/post/comprar-ou-construir-crm-vendas-b2b/
-- O que é Agent Harness e por que agentes quebram sem ele: https://hsnlabs.ai/blog/pt/post/o-que-e-agent-harness-producao/
-- LangChain vs LangGraph vs Deep Agents em produção: https://hsnlabs.ai/blog/pt/post/langchain-vs-langgraph-vs-deep-agents/
+- Blog hsnlabs em Português: https://hsnlabs.ai/blog/pt/
+- Feed RSS em Português: https://hsnlabs.ai/blog/feed_rss_pt.xml
+- Feed JSON em Português: https://hsnlabs.ai/blog/feed_json_pt.json
+- LangSmith e evals em produção: como medir agentes antes do erro: https://hsnlabs.ai/blog/pt/post/langsmith-evals-producao-agentes/
+  Como usar LangSmith, evals de trajetória e métricas de eficiência para medir agentes de IA antes que falhas cheguem ao usuário em produção.
+- Loop Engineering: como controlar agentes de IA sem estourar custos: https://hsnlabs.ai/blog/pt/post/loop-engineering-controle-custos-agentes/
+  Como aplicar loop engineering em quatro camadas com LangGraph e LangSmith para conter custos em dólar, latência e falhas silenciosas de agentes em produção.
+- Context Engineering: engenharia de contexto para agentes em produção: https://hsnlabs.ai/blog/pt/post/context-engineering-engenharia-de-contexto-agentes/
+  Como context engineering em LangGraph aplica escrever, selecionar, comprimir e isolar contexto em ERPs brasileiros para cortar desperdício de tokens em USD e proteger dados sob LGPD.
 - O que são agentes de IA na prática corporativa além de chatbots: https://hsnlabs.ai/blog/pt/post/o-que-sao-agentes-de-ia-producao/
-- Context Engineering para agentes em produção: https://hsnlabs.ai/blog/pt/post/context-engineering-engenharia-de-contexto-agentes/
-- Loop Engineering para controlar custos de agentes: https://hsnlabs.ai/blog/pt/post/loop-engineering-controle-custos-agentes/
-- LangSmith e evals em produção: https://hsnlabs.ai/blog/pt/post/langsmith-evals-producao-agentes/
+  Entenda o que são agentes de IA além de chatbots, os seis níveis de autonomia até máquinas de estado em LangGraph e a infraestrutura do LangSmith em produção.
+- LangChain vs LangGraph vs Deep Agents: quando usar cada um em produção: https://hsnlabs.ai/blog/pt/post/langchain-vs-langgraph-vs-deep-agents/
+  Comparativo técnico de LangChain vs LangGraph e Deep Agents em produção: entenda quando usar runtime determinístico, middleware ou harness completo.
+- O que é Agent Harness e por que agentes quebram sem ele: https://hsnlabs.ai/blog/pt/post/o-que-e-agent-harness-producao/
+  O que é agent harness, por que modelos isolados falham na produção corporativa e como Deep Agents e LangGraph resolvem context rot e loops longos.
+- O Fenômeno High IC: Produtividade e Equipes Enxutas: https://hsnlabs.ai/blog/pt/post/o-fenomeno-high-ic/
+  Por que medir capacidade operacional pelo tamanho da equipe perdeu o sentido com a chegada dos agentes de inteligência artificial corporativos.
+- Databricks Lakehouse e LangGraph: Conectando Unity Catalog e Mosaic AI a Máquinas de Estado Operacionais: https://hsnlabs.ai/blog/pt/post/arquitetura-agentes-databricks-lakehouse-unity-catalog-langgraph/
+  Por que agentes autônomos falham ao receber acesso SQL livre sobre tabelas Delta e como vincular máquinas de estado em LangGraph e ontologias executáveis ao Databricks Unity Catalog e Mosaic AI.
+- Braintrust Evals e LangGraph: Substituindo Testes Manuais por CI/CD Determinístico: https://hsnlabs.ai/blog/pt/post/arquitetura-agentes-braintrust-evals-cicd-langgraph/
+  Por que testes manuais de prompt falham na produção corporativa e como integrar suítes de avaliação do Braintrust e travas de CI/CD em agentes LangGraph.
+- Snowflake AI Data Cloud e LangGraph: Conectando Máquinas de Estado aos Dados Corporativos: https://hsnlabs.ai/blog/pt/post/arquitetura-agentes-snowflake-ai-data-cloud-langgraph/
+  Por que agentes autônomos falham ao receber acesso SQL direto e como vincular máquinas de estado em LangGraph e ontologias executáveis à Snowflake AI Data Cloud.
+- The Agentic Canvas™: O Framework para Desenhar Sistemas de IA que Sobrevivem à Produção: https://hsnlabs.ai/blog/pt/post/the-agentic-pilot-canvas-v1-4/
+  Framework de arquitetura em 10 blocos para desenhar sistemas de IA corporativa antes de escrever código. Atualizado em outubro de 2026.
+- Estudo de Caso: Como a Cleveland Clinic Escalou o Fluxo de Pacientes em 6.600 Leitos Hospitalares: https://hsnlabs.ai/blog/pt/post/estudo-caso-cleveland-clinic-agentes-operacionais/
+  Análise arquitetural de como uma das maiores instituições de saúde do mundo orquestra leitos e fluxos críticos com agentes operacionais.
+- CRM de Vendas B2B: Comprar Salesforce, Adaptar Twenty ou Construir com Agentes: https://hsnlabs.ai/blog/pt/post/comprar-ou-construir-crm-vendas-b2b/
+  Análise técnica e econômica entre assentos de Salesforce, Twenty CRM e stacks agênticas proprietárias para líderes de tecnologia.
+- A Matriz de Substituição de BPO: Métricas Operacionais e Financeiras: https://hsnlabs.ai/blog/pt/post/matriz-substituicao-bpo/
+  Framework quantitativo analisando economia unitária, métricas operacionais e impacto na margem ao substituir contratos de BPO por agentes de software.
+- Como Construir uma Ontologia Enterprise do Zero: Blueprint Arquitetural Completo: https://hsnlabs.ai/blog/pt/post/como-construir-ontologia-enterprise-do-zero/
+  Passo a passo detalhado para desenhar, modelar e implantar ontologias corporativas funcionais para sistemas multiagente em produção.
+- Ontologia vs Schema de Banco de Dados: Por Que Tabelas Relacionais e Vetores Não Bastam para IA: https://hsnlabs.ai/blog/pt/post/ontologia-vs-schema-banco-dados/
+  Análise técnica das diferenças estruturais entre schemas de bancos de dados relacionais e ontologias operacionais para agentes autônomos.
+- Ontologia vs Grafo de Conhecimento: Diferenças Centrais, Arquitetura e Aplicações Enterprise: https://hsnlabs.ai/blog/pt/post/ontologia-vs-grafo-conhecimento/
+  Desmistificando os conceitos de ontologia e grafo de conhecimento em projetos corporativos de inteligência artificial e agentes autônomos.
+- A Ontologia Operacional: Como Empresas Conectam Dados, Regras de Negócio e Ações Autônomas: https://hsnlabs.ai/blog/pt/post/a-ontologia-operacional/
+  O guia definitivo sobre como estruturar a camada ontológica que permite a agentes de software operar em produção corporativa sem falhas.
+- O Que É uma Ontologia para Agentes de IA? O Guia Definitivo para Engenharia Corporativa: https://hsnlabs.ai/blog/pt/post/o-que-e-uma-ontologia-para-agentes-ia/
+  Tudo o que engenheiros e líderes de tecnologia precisam saber sobre ontologias operacionais para construir agentes que funcionam em produção.
+- Playbook C-Suite: Proteção de Margem e Redução de Custos com Software Agêntico: https://hsnlabs.ai/blog/pt/post/playbook-c-suite-protecao-margem/
+  Guia executivo para CEOs, CFOs e CIOs sobre como proteger margens operacionais substituindo custos fixos de BPO por software agêntico.
+- Como Construir uma Ontologia Operacional de Negócios em Python com Pydantic e MCP: https://hsnlabs.ai/blog/pt/post/como-construir-ontologia-operacional-python-mcp/
+  Implementação prática em Python utilizando Pydantic e servidores Model Context Protocol para criar ontologias executáveis para agentes.
+- Por Que Apresentações de Big 4 Falham em Projetos de Agentes: https://hsnlabs.ai/blog/pt/post/sprint-arquitetura-cinco-dias/
+  Por que decks genéricos de estratégia de consultorias tradicionais falham em entregar software agêntico em ambientes corporativos complexos.
+- De 1915 a Era da IA: Kafka, Utilitarismo e o Valor de Quem Trabalha: https://hsnlabs.ai/blog/pt/post/kafka-metamorfose-ia-futuro-do-trabalho/
+  Reflexão filosófica e econômica sobre a mercantilização do trabalho humano a luz da obra A Metamorfose e o avanço da automação por IA.
+- Operações em Alta Velocidade: Negociação Autônoma, Cobrança e Execução Contratual: https://hsnlabs.ai/blog/pt/post/negociacoes-autonomas-cobranca-contratos/
+  Como agentes operacionais com ontologia e máquinas de estados finitos automatizam negociação de cobrança e aditamentos contratuais sem erro.
+- A Arquitetura do Palantir AIP: Por Que Agentes Corporativos Falham sem uma Ontologia Operacional: https://hsnlabs.ai/blog/pt/post/palantir-aip-bootcamp-ontologia-operacional/
+  Estudo aprofundado dos princípios de arquitetura do Palantir AIP e por que sua abordagem ontológica é a única que sobrevive em produção corporativa.
+- O Que Aprendi Construindo HR Tech Sobre a Morte do BPO: https://hsnlabs.ai/blog/pt/post/guarda-do-balanco-extincao-bpo/
+  Lições operacionais sobre o colapso estrutural de contratos de terceirização de RH e fluxos de trabalho manuais em grandes empresas.
+- O TCO Real da Palantir: A Barreira dos Milhões de Dólares e Alternativas Abertas Modernas: https://hsnlabs.ai/blog/pt/post/preco-palantir-tco-alternativas-abertas/
+  Dissecando o custo total de propriedade da Palantir e como construir ontologias operacionais comparáveis com software de código aberto.
+- Palantir vs Databricks: Por Que Data Lakes Falham em Operações com Agentes Autônomos: https://hsnlabs.ai/blog/pt/post/palantir-vs-databricks-arquitetura-agentes/
+  Comparativo arquitetural entre a abordagem de lakehouse e a ontologia operacional em projetos corporativos de software agêntico.
+- Arbitragem de Protocolo: Liquidação Multimodal Autônoma em Seguros e Saúde: https://hsnlabs.ai/blog/pt/post/arbitragem-protocolo-sinistros-subscricao/
+  Como o processamento multimodal e protocolos de validação automatizam análise de sinistros e subscrição de apólices sem intermediação humana.
+- A Morte do Suporte Nível 1: Por Que Consultorias de ERP Não Sustentarão o Modelo de Horas Faturáveis: https://hsnlabs.ai/blog/pt/post/morte-suporte-nivel-1-erp/
+  Como agentes operacionais com compreensão de regras de negócio estão tornando obsoletas as mesas terceirizadas de atendimento de ERP.
+- O Mercado de RPA Está em Colapso: https://hsnlabs.ai/blog/pt/post/colapso-rpa-legado/
+  Por que bots frágeis de gravação de tela estão em colapso em ambientes corporativos e como agentes em produção os substituem.
+- Por Que Agentes Falham: O Cemitério de PoCs: https://hsnlabs.ai/blog/pt/post/cemiterio-de-pocs/
+  Post-mortem sobre a causa raiz de noventa por cento das provas de conceito de IA falharem antes da produção.
+- Como Protegemos Bancos de Dados Enterprise de Agentes de IA: https://hsnlabs.ai/blog/pt/post/isolamento-perimetro-mcp-contratos-dados/
+  Padrões de arquitetura para isolamento de perímetro, contratos de contexto e limites de acesso blindando dados corporativos contra agentes de IA.
+- LATAM Airlines: Agentes em Produção com Margem de 3 Por Cento: https://hsnlabs.ai/blog/pt/post/estudo-caso-latam-airlines/
+  Estudo de caso operacional sobre a implantação de agentes corporativos em aviação comercial com margens apertadas e alta volumetria.
+- Por Que LLM Como Juiz Falha no Setor Bancário: https://hsnlabs.ai/blog/pt/post/falacia-llm-como-juiz/
+  Vulnerabilidades estruturais e riscos de conformidade ao confiar em avaliadores estocásticos de LLM para auditar decisões financeiras.
+- Estudo de Caso: 42 Chamadas em Loop às 2 da Manhã: https://hsnlabs.ai/blog/pt/post/agentes-ilimitados-maquinas-estados-finitos/
+  Auditoria de incidente de emergência e remédio de arquitetura para loops infinitos de chamadas em agentes por máquinas de estados finitos.
+- Por Que RAG Tradicional Falha em ERPs Financeiros: https://hsnlabs.ai/blog/pt/post/por-que-rag-falha-em-erp/
+  Por que a busca vetorial por similaridade corrompe a precisão aritmética e a integridade de livros contábeis em ERPs.
+- Sistemas Transacionais Legados Não Vão Morrer: Eles São o Motor: https://hsnlabs.ai/blog/pt/post/sistemas-legados-motor-execucao/
+  Por que sistemas transacionais legados continuam sendo a fundação indispensável para agentes enterprise autônomos.
+- A Deriva de Integração: Quando Prompts Quebram Agentes em Produção: https://hsnlabs.ai/blog/pt/post/deriva-de-integracao/
+  Como detectar e blindar fluxos de agentes em produção contra quebras silenciosas provocadas por desvios de schemas e APIs.
+- Chatbot vs Agente: Por Que Substituir BPOs Exige Ontologias em Produção: https://hsnlabs.ai/blog/pt/post/chatbot-vs-agente/
+  Diferenças críticas de arquitetura entre chatbots conversacionais e agentes corporativos em produção que alteram o estado de ERPs.
+- O Custo de IA Sem Limites na TI Legada: https://hsnlabs.ai/blog/pt/post/custo-ia-ilimitada-ti-legada/
+  Auditoria econômica e técnica sobre custos descontrolados e riscos operacionais causados por IA estocástica na infraestrutura legada.
+- Por Que Criei a hsnlabs: https://hsnlabs.ai/blog/pt/post/manifesto/
+  Tese fundadora da hsnlabs: construindo arquiteturas de agentes enterprise sobre ontologias executáveis de domínio.
 
 ## Open Source Ecosystem
 - hsnlabs GitHub: https://github.com/hsnlabs-ai
