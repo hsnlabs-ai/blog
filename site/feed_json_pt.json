@@ -1,0 +1,915 @@
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "Hugo Nascimento · Arquitetura de Agentes Enterprise PT-BR",
+  "home_page_url": "https://hsnlabs.ai/blog/pt/",
+  "feed_url": "https://hsnlabs.ai/blog/feed_json_pt.json",
+  "language": "pt-BR",
+  "icon": "https://hsnlabs.ai/blog/assets/brand/symbol/symbol-square-pure-cyan.png",
+  "items": [
+    {
+      "id": "https://hsnlabs.ai/blog/pt/post/langsmith-evals-producao-agentes/",
+      "url": "https://hsnlabs.ai/blog/pt/post/langsmith-evals-producao-agentes/",
+      "title": "LangSmith e evals em produção: como medir agentes antes do erro",
+      "summary": "Como usar LangSmith, evals de trajetória e métricas de eficiência para medir agentes de IA antes que falhas cheguem ao usuário em produção.",
+      "image": "https://hsnlabs.ai/blog/assets/images/posts/langsmith-evals-production-agents/cover.webp",
+      "date_published": "2026-11-15T00:00:00+00:00",
+      "language": "pt-BR",
+      "tags": [
+        "Why Agents Fail",
+        "langsmith",
+        "evaluation",
+        "deep-agents",
+        "observability",
+        "production"
+      ],
+      "authors": [
+        {
+          "name": "Hugo S. Nascimento",
+          "url": "https://hsnlabs.ai"
+        }
+      ]
+    },
+    {
+      "id": "https://hsnlabs.ai/blog/pt/post/loop-engineering-controle-custos-agentes/",
+      "url": "https://hsnlabs.ai/blog/pt/post/loop-engineering-controle-custos-agentes/",
+      "title": "Loop Engineering: como controlar agentes de IA sem estourar custos",
+      "summary": "Como aplicar loop engineering em quatro camadas com LangGraph e LangSmith para conter custos em dólar, latência e falhas silenciosas de agentes em produção.",
+      "image": "https://hsnlabs.ai/blog/assets/images/posts/loop-engineering-controlling-agent-costs/cover.webp",
+      "date_published": "2026-11-14T00:00:00+00:00",
+      "language": "pt-BR",
+      "tags": [
+        "Why Agents Fail",
+        "loop-engineering",
+        "langgraph",
+        "langsmith",
+        "guardrails",
+        "production"
+      ],
+      "authors": [
+        {
+          "name": "Hugo S. Nascimento",
+          "url": "https://hsnlabs.ai"
+        }
+      ]
+    },
+    {
+      "id": "https://hsnlabs.ai/blog/pt/post/context-engineering-engenharia-de-contexto-agentes/",
+      "url": "https://hsnlabs.ai/blog/pt/post/context-engineering-engenharia-de-contexto-agentes/",
+      "title": "Context Engineering: engenharia de contexto para agentes em produção",
+      "summary": "Como context engineering em LangGraph aplica escrever, selecionar, comprimir e isolar contexto em ERPs brasileiros para cortar desperdício de tokens em USD e proteger dados sob LGPD.",
+      "image": "https://hsnlabs.ai/blog/assets/images/posts/context-engineering-enterprise-agents/cover.webp",
+      "date_published": "2026-11-13T00:00:00+00:00",
+      "language": "pt-BR",
+      "tags": [
+        "Agentic AI",
+        "context-engineering",
+        "langgraph",
+        "agent-memory",
+        "rag",
+        "production"
+      ],
+      "authors": [
+        {
+          "name": "Hugo S. Nascimento",
+          "url": "https://hsnlabs.ai"
+        }
+      ]
+    },
+    {
+      "id": "https://hsnlabs.ai/blog/pt/post/o-que-sao-agentes-de-ia-producao/",
+      "url": "https://hsnlabs.ai/blog/pt/post/o-que-sao-agentes-de-ia-producao/",
+      "title": "O que são agentes de IA na prática corporativa além de chatbots",
+      "summary": "Entenda o que são agentes de IA além de chatbots, os seis níveis de autonomia até máquinas de estado em LangGraph e a infraestrutura do LangSmith em produção.",
+      "image": "https://hsnlabs.ai/blog/assets/images/posts/what-are-ai-agents-enterprise-production/cover.webp",
+      "date_published": "2026-11-12T00:00:00+00:00",
+      "language": "pt-BR",
+      "tags": [
+        "Agentic AI",
+        "ai-agents",
+        "langchain",
+        "langgraph",
+        "enterprise",
+        "architecture"
+      ],
+      "authors": [
+        {
+          "name": "Hugo S. Nascimento",
+          "url": "https://hsnlabs.ai"
+        }
+      ]
+    },
+    {
+      "id": "https://hsnlabs.ai/blog/pt/post/langchain-vs-langgraph-vs-deep-agents/",
+      "url": "https://hsnlabs.ai/blog/pt/post/langchain-vs-langgraph-vs-deep-agents/",
+      "title": "LangChain vs LangGraph vs Deep Agents: quando usar cada um em produção",
+      "summary": "Comparativo técnico de LangChain vs LangGraph e Deep Agents em produção: entenda quando usar runtime determinístico, middleware ou harness completo.",
+      "image": "https://hsnlabs.ai/blog/assets/images/posts/langchain-vs-langgraph-vs-deep-agents/cover.webp",
+      "date_published": "2026-11-11T00:00:00+00:00",
+      "language": "pt-BR",
+      "tags": [
+        "Agentic AI",
+        "langchain",
+        "langgraph",
+        "deep-agents",
+        "architecture",
+        "comparison"
+      ],
+      "authors": [
+        {
+          "name": "Hugo S. Nascimento",
+          "url": "https://hsnlabs.ai"
+        }
+      ]
+    },
+    {
+      "id": "https://hsnlabs.ai/blog/pt/post/o-que-e-agent-harness-producao/",
+      "url": "https://hsnlabs.ai/blog/pt/post/o-que-e-agent-harness-producao/",
+      "title": "O que é Agent Harness e por que agentes quebram sem ele",
+      "summary": "O que é agent harness, por que modelos isolados falham na produção corporativa e como Deep Agents e LangGraph resolvem context rot e loops longos.",
+      "image": "https://hsnlabs.ai/blog/assets/images/posts/what-is-agent-harness-production/cover.webp",
+      "date_published": "2026-11-10T00:00:00+00:00",
+      "language": "pt-BR",
+      "tags": [
+        "Why Agents Fail",
+        "agent-harness",
+        "deep-agents",
+        "langgraph",
+        "architecture",
+        "production"
+      ],
+      "authors": [
+        {
+          "name": "Hugo S. Nascimento",
+          "url": "https://hsnlabs.ai"
+        }
+      ]
+    },
+    {
+      "id": "https://hsnlabs.ai/blog/pt/post/o-fenomeno-high-ic/",
+      "url": "https://hsnlabs.ai/blog/pt/post/o-fenomeno-high-ic/",
+      "title": "O Fenômeno High IC: Produtividade e Equipes Enxutas",
+      "summary": "Por que medir capacidade operacional pelo tamanho da equipe perdeu o sentido com a chegada dos agentes de inteligência artificial corporativos.",
+      "image": "https://hsnlabs.ai/blog/assets/images/posts/the-high-ic-phenomenon/cover.webp",
+      "date_published": "2026-10-20T00:00:00+00:00",
+      "language": "pt-BR",
+      "tags": [
+        "Future of Work",
+        "future-of-work",
+        "economics",
+        "c-suite",
+        "ai-agents"
+      ],
+      "authors": [
+        {
+          "name": "Hugo S. Nascimento",
+          "url": "https://hsnlabs.ai"
+        }
+      ]
+    },
+    {
+      "id": "https://hsnlabs.ai/blog/pt/post/arquitetura-agentes-databricks-lakehouse-unity-catalog-langgraph/",
+      "url": "https://hsnlabs.ai/blog/pt/post/arquitetura-agentes-databricks-lakehouse-unity-catalog-langgraph/",
+      "title": "Databricks Lakehouse e LangGraph: Conectando Unity Catalog e Mosaic AI a Máquinas de Estado Operacionais",
+      "summary": "Por que agentes autônomos falham ao receber acesso SQL livre sobre tabelas Delta e como vincular máquinas de estado em LangGraph e ontologias executáveis ao Databricks Unity Catalog e Mosaic AI.",
+      "image": "https://hsnlabs.ai/blog/assets/images/posts/databricks-lakehouse-unity-catalog-langgraph-agent-architecture/cover.webp",
+      "date_published": "2026-10-19T00:00:00+00:00",
+      "language": "pt-BR",
+      "tags": [
+        "Agentic AI",
+        "databricks",
+        "langgraph",
+        "architecture",
+        "data-contracts",
+        "production"
+      ],
+      "authors": [
+        {
+          "name": "Hugo S. Nascimento",
+          "url": "https://hsnlabs.ai"
+        }
+      ]
+    },
+    {
+      "id": "https://hsnlabs.ai/blog/pt/post/arquitetura-agentes-braintrust-evals-cicd-langgraph/",
+      "url": "https://hsnlabs.ai/blog/pt/post/arquitetura-agentes-braintrust-evals-cicd-langgraph/",
+      "title": "Braintrust Evals e LangGraph: Substituindo Testes Manuais por CI/CD Determinístico",
+      "summary": "Por que testes manuais de prompt falham na produção corporativa e como integrar suítes de avaliação do Braintrust e travas de CI/CD em agentes LangGraph.",
+      "image": "https://hsnlabs.ai/blog/assets/images/posts/braintrust-evals-cicd-langgraph-agent-architecture/cover.webp",
+      "date_published": "2026-10-17T00:00:00+00:00",
+      "language": "pt-BR",
+      "tags": [
+        "Agentic AI",
+        "evaluation",
+        "langgraph",
+        "architecture",
+        "production",
+        "guardrails"
+      ],
+      "authors": [
+        {
+          "name": "Hugo S. Nascimento",
+          "url": "https://hsnlabs.ai"
+        }
+      ]
+    },
+    {
+      "id": "https://hsnlabs.ai/blog/pt/post/arquitetura-agentes-snowflake-ai-data-cloud-langgraph/",
+      "url": "https://hsnlabs.ai/blog/pt/post/arquitetura-agentes-snowflake-ai-data-cloud-langgraph/",
+      "title": "Snowflake AI Data Cloud e LangGraph: Conectando Máquinas de Estado aos Dados Corporativos",
+      "summary": "Por que agentes autônomos falham ao receber acesso SQL direto e como vincular máquinas de estado em LangGraph e ontologias executáveis à Snowflake AI Data Cloud.",
+      "image": "https://hsnlabs.ai/blog/assets/images/posts/snowflake-ai-data-cloud-langgraph-agent-architecture/cover.webp",
+      "date_published": "2026-10-16T00:00:00+00:00",
+      "language": "pt-BR",
+      "tags": [
+        "Agentic AI",
+        "snowflake",
+        "langgraph",
+        "architecture",
+        "data-contracts",
+        "production"
+      ],
+      "authors": [
+        {
+          "name": "Hugo S. Nascimento",
+          "url": "https://hsnlabs.ai"
+        }
+      ]
+    },
+    {
+      "id": "https://hsnlabs.ai/blog/pt/post/the-agentic-pilot-canvas-v1-4/",
+      "url": "https://hsnlabs.ai/blog/pt/post/the-agentic-pilot-canvas-v1-4/",
+      "title": "The Agentic Canvas™: O Framework para Desenhar Sistemas de IA que Sobrevivem à Produção",
+      "summary": "Framework de arquitetura em 10 blocos para desenhar sistemas de IA corporativa antes de escrever código. Atualizado em outubro de 2026.",
+      "image": "https://hsnlabs.ai/blog/assets/images/posts/the-agentic-pilot-canvas-v1-4/cover.webp",
+      "date_published": "2026-10-07T00:00:00+00:00",
+      "language": "pt-BR",
+      "tags": [
+        "Agentic AI",
+        "canvas",
+        "architecture",
+        "enterprise-agents",
+        "methodology"
+      ],
+      "authors": [
+        {
+          "name": "Hugo S. Nascimento",
+          "url": "https://hsnlabs.ai"
+        }
+      ]
+    },
+    {
+      "id": "https://hsnlabs.ai/blog/pt/post/comprar-ou-construir-crm-vendas-b2b/",
+      "url": "https://hsnlabs.ai/blog/pt/post/comprar-ou-construir-crm-vendas-b2b/",
+      "title": "CRM de Vendas B2B: Comprar Salesforce, Adaptar Twenty ou Construir com Agentes",
+      "summary": "Análise técnica e econômica entre assentos de Salesforce, Twenty CRM e stacks agênticas proprietárias para líderes de tecnologia.",
+      "image": "https://hsnlabs.ai/blog/assets/images/posts/buy-versus-build-b2b-enterprise-crm/cover.webp",
+      "date_published": "2026-09-28T00:00:00+00:00",
+      "language": "pt-BR",
+      "tags": [
+        "Future of Work",
+        "crm",
+        "model-context-protocol",
+        "saas",
+        "bpo",
+        "arquitetura"
+      ],
+      "authors": [
+        {
+          "name": "Hugo S. Nascimento",
+          "url": "https://hsnlabs.ai"
+        }
+      ]
+    },
+    {
+      "id": "https://hsnlabs.ai/blog/pt/post/estudo-caso-cleveland-clinic-agentes-operacionais/",
+      "url": "https://hsnlabs.ai/blog/pt/post/estudo-caso-cleveland-clinic-agentes-operacionais/",
+      "title": "Estudo de Caso: Como a Cleveland Clinic Escalou o Fluxo de Pacientes em 6.600 Leitos Hospitalares",
+      "summary": "Análise arquitetural de como uma das maiores instituições de saúde do mundo orquestra leitos e fluxos críticos com agentes operacionais.",
+      "image": "https://hsnlabs.ai/blog/assets/images/posts/cleveland-clinic-case-study-operational-agents/cover.webp",
+      "date_published": "2026-09-28T00:00:00+00:00",
+      "language": "pt-BR",
+      "tags": [
+        "Agentic AI",
+        "healthcare",
+        "ontologies",
+        "operations"
+      ],
+      "authors": [
+        {
+          "name": "Hugo S. Nascimento",
+          "url": "https://hsnlabs.ai"
+        }
+      ]
+    },
+    {
+      "id": "https://hsnlabs.ai/blog/pt/post/a-ontologia-operacional/",
+      "url": "https://hsnlabs.ai/blog/pt/post/a-ontologia-operacional/",
+      "title": "A Ontologia Operacional: Como Empresas Conectam Dados, Regras de Negócio e Ações Autônomas",
+      "summary": "O guia definitivo sobre como estruturar a camada ontológica que permite a agentes de software operar em produção corporativa sem falhas.",
+      "image": "https://hsnlabs.ai/blog/assets/images/posts/the-operational-ontology/cover.webp",
+      "date_published": "2026-09-27T00:00:00+00:00",
+      "language": "pt-BR",
+      "tags": [
+        "Agentic AI",
+        "ontology",
+        "foundation",
+        "enterprise"
+      ],
+      "authors": [
+        {
+          "name": "Hugo S. Nascimento",
+          "url": "https://hsnlabs.ai"
+        }
+      ]
+    },
+    {
+      "id": "https://hsnlabs.ai/blog/pt/post/como-construir-ontologia-enterprise-do-zero/",
+      "url": "https://hsnlabs.ai/blog/pt/post/como-construir-ontologia-enterprise-do-zero/",
+      "title": "Como Construir uma Ontologia Enterprise do Zero: Blueprint Arquitetural Completo",
+      "summary": "Passo a passo detalhado para desenhar, modelar e implantar ontologias corporativas funcionais para sistemas multiagente em produção.",
+      "image": "https://hsnlabs.ai/blog/assets/images/posts/how-to-build-an-enterprise-ontology-from-scratch/cover.webp",
+      "date_published": "2026-09-27T00:00:00+00:00",
+      "language": "pt-BR",
+      "tags": [
+        "Agentic AI",
+        "ontology",
+        "architecture",
+        "enterprise"
+      ],
+      "authors": [
+        {
+          "name": "Hugo S. Nascimento",
+          "url": "https://hsnlabs.ai"
+        }
+      ]
+    },
+    {
+      "id": "https://hsnlabs.ai/blog/pt/post/matriz-substituicao-bpo/",
+      "url": "https://hsnlabs.ai/blog/pt/post/matriz-substituicao-bpo/",
+      "title": "A Matriz de Substituição de BPO: Métricas Operacionais e Financeiras",
+      "summary": "Framework quantitativo analisando economia unitária, métricas operacionais e impacto na margem ao substituir contratos de BPO por agentes de software.",
+      "image": "https://hsnlabs.ai/blog/assets/images/posts/bpo-replacement-matrix/cover.webp",
+      "date_published": "2026-09-27T00:00:00+00:00",
+      "language": "pt-BR",
+      "tags": [
+        "Future of Work",
+        "economics",
+        "ebitda",
+        "bpo"
+      ],
+      "authors": [
+        {
+          "name": "Hugo S. Nascimento",
+          "url": "https://hsnlabs.ai"
+        }
+      ]
+    },
+    {
+      "id": "https://hsnlabs.ai/blog/pt/post/o-que-e-uma-ontologia-para-agentes-ia/",
+      "url": "https://hsnlabs.ai/blog/pt/post/o-que-e-uma-ontologia-para-agentes-ia/",
+      "title": "O Que É uma Ontologia para Agentes de IA? O Guia Definitivo para Engenharia Corporativa",
+      "summary": "Tudo o que engenheiros e líderes de tecnologia precisam saber sobre ontologias operacionais para construir agentes que funcionam em produção.",
+      "image": "https://hsnlabs.ai/blog/assets/images/posts/what-is-an-ontology-for-ai-agents/cover.webp",
+      "date_published": "2026-09-27T00:00:00+00:00",
+      "language": "pt-BR",
+      "tags": [
+        "Why Agents Fail",
+        "ontology",
+        "definitive-guide",
+        "engineering"
+      ],
+      "authors": [
+        {
+          "name": "Hugo S. Nascimento",
+          "url": "https://hsnlabs.ai"
+        }
+      ]
+    },
+    {
+      "id": "https://hsnlabs.ai/blog/pt/post/ontologia-vs-grafo-conhecimento/",
+      "url": "https://hsnlabs.ai/blog/pt/post/ontologia-vs-grafo-conhecimento/",
+      "title": "Ontologia vs Grafo de Conhecimento: Diferenças Centrais, Arquitetura e Aplicações Enterprise",
+      "summary": "Desmistificando os conceitos de ontologia e grafo de conhecimento em projetos corporativos de inteligência artificial e agentes autônomos.",
+      "image": "https://hsnlabs.ai/blog/assets/images/posts/ontology-vs-knowledge-graph/cover.webp",
+      "date_published": "2026-09-27T00:00:00+00:00",
+      "language": "pt-BR",
+      "tags": [
+        "Agentic AI",
+        "ontology",
+        "knowledge-graph",
+        "architecture"
+      ],
+      "authors": [
+        {
+          "name": "Hugo S. Nascimento",
+          "url": "https://hsnlabs.ai"
+        }
+      ]
+    },
+    {
+      "id": "https://hsnlabs.ai/blog/pt/post/ontologia-vs-schema-banco-dados/",
+      "url": "https://hsnlabs.ai/blog/pt/post/ontologia-vs-schema-banco-dados/",
+      "title": "Ontologia vs Schema de Banco de Dados: Por Que Tabelas Relacionais e Vetores Não Bastam para IA",
+      "summary": "Análise técnica das diferenças estruturais entre schemas de bancos de dados relacionais e ontologias operacionais para agentes autônomos.",
+      "image": "https://hsnlabs.ai/blog/assets/images/posts/ontology-vs-database-schema/cover.webp",
+      "date_published": "2026-09-27T00:00:00+00:00",
+      "language": "pt-BR",
+      "tags": [
+        "Why Agents Fail",
+        "ontology",
+        "database",
+        "vector-stores"
+      ],
+      "authors": [
+        {
+          "name": "Hugo S. Nascimento",
+          "url": "https://hsnlabs.ai"
+        }
+      ]
+    },
+    {
+      "id": "https://hsnlabs.ai/blog/pt/post/como-construir-ontologia-operacional-python-mcp/",
+      "url": "https://hsnlabs.ai/blog/pt/post/como-construir-ontologia-operacional-python-mcp/",
+      "title": "Como Construir uma Ontologia Operacional de Negócios em Python com Pydantic e MCP",
+      "summary": "Implementação prática em Python utilizando Pydantic e servidores Model Context Protocol para criar ontologias executáveis para agentes.",
+      "image": "https://hsnlabs.ai/blog/assets/images/posts/how-to-build-operational-ontology-python-mcp/cover.webp",
+      "date_published": "2026-09-25T00:00:00+00:00",
+      "language": "pt-BR",
+      "tags": [
+        "Agentic AI",
+        "python",
+        "mcp",
+        "pydantic"
+      ],
+      "authors": [
+        {
+          "name": "Hugo S. Nascimento",
+          "url": "https://hsnlabs.ai"
+        }
+      ]
+    },
+    {
+      "id": "https://hsnlabs.ai/blog/pt/post/playbook-c-suite-protecao-margem/",
+      "url": "https://hsnlabs.ai/blog/pt/post/playbook-c-suite-protecao-margem/",
+      "title": "Playbook C-Suite: Proteção de Margem e Redução de Custos com Software Agêntico",
+      "summary": "Guia executivo para CEOs, CFOs e CIOs sobre como proteger margens operacionais substituindo custos fixos de BPO por software agêntico.",
+      "image": "https://hsnlabs.ai/blog/assets/images/posts/c-suite-margin-protection-playbook/cover.webp",
+      "date_published": "2026-09-25T00:00:00+00:00",
+      "language": "pt-BR",
+      "tags": [
+        "Future of Work",
+        "c-suite",
+        "margins",
+        "unit-economics"
+      ],
+      "authors": [
+        {
+          "name": "Hugo S. Nascimento",
+          "url": "https://hsnlabs.ai"
+        }
+      ]
+    },
+    {
+      "id": "https://hsnlabs.ai/blog/pt/post/kafka-metamorfose-ia-futuro-do-trabalho/",
+      "url": "https://hsnlabs.ai/blog/pt/post/kafka-metamorfose-ia-futuro-do-trabalho/",
+      "title": "De 1915 a Era da IA: Kafka, Utilitarismo e o Valor de Quem Trabalha",
+      "summary": "Reflexão filosófica e econômica sobre a mercantilização do trabalho humano a luz da obra A Metamorfose e o avanço da automação por IA.",
+      "image": "https://hsnlabs.ai/blog/assets/images/posts/kafka-metamorfose-ia-futuro-do-trabalho/cover.webp",
+      "date_published": "2026-09-22T00:00:00+00:00",
+      "language": "pt-BR",
+      "tags": [
+        "Future of Work",
+        "philosophy",
+        "future-of-work",
+        "society"
+      ],
+      "authors": [
+        {
+          "name": "Hugo S. Nascimento",
+          "url": "https://hsnlabs.ai"
+        }
+      ]
+    },
+    {
+      "id": "https://hsnlabs.ai/blog/pt/post/sprint-arquitetura-cinco-dias/",
+      "url": "https://hsnlabs.ai/blog/pt/post/sprint-arquitetura-cinco-dias/",
+      "title": "Por Que Apresentações de Big 4 Falham em Projetos de Agentes",
+      "summary": "Por que decks genéricos de estratégia de consultorias tradicionais falham em entregar software agêntico em ambientes corporativos complexos.",
+      "image": "https://hsnlabs.ai/blog/assets/images/posts/five-day-architecture-sprint/cover.webp",
+      "date_published": "2026-09-22T00:00:00+00:00",
+      "language": "pt-BR",
+      "tags": [
+        "Agentic AI",
+        "case-studies",
+        "consulting",
+        "sprint"
+      ],
+      "authors": [
+        {
+          "name": "Hugo S. Nascimento",
+          "url": "https://hsnlabs.ai"
+        }
+      ]
+    },
+    {
+      "id": "https://hsnlabs.ai/blog/pt/post/negociacoes-autonomas-cobranca-contratos/",
+      "url": "https://hsnlabs.ai/blog/pt/post/negociacoes-autonomas-cobranca-contratos/",
+      "title": "Operações em Alta Velocidade: Negociação Autônoma, Cobrança e Execução Contratual",
+      "summary": "Como agentes operacionais com ontologia e máquinas de estados finitos automatizam negociação de cobrança e aditamentos contratuais sem erro.",
+      "image": "https://hsnlabs.ai/blog/assets/images/posts/autonomous-negotiations-collections-contracts/cover.webp",
+      "date_published": "2026-09-18T00:00:00+00:00",
+      "language": "pt-BR",
+      "tags": [
+        "Future of Work",
+        "bpo",
+        "collections",
+        "contracts",
+        "fsm"
+      ],
+      "authors": [
+        {
+          "name": "Hugo S. Nascimento",
+          "url": "https://hsnlabs.ai"
+        }
+      ]
+    },
+    {
+      "id": "https://hsnlabs.ai/blog/pt/post/palantir-aip-bootcamp-ontologia-operacional/",
+      "url": "https://hsnlabs.ai/blog/pt/post/palantir-aip-bootcamp-ontologia-operacional/",
+      "title": "A Arquitetura do Palantir AIP: Por Que Agentes Corporativos Falham sem uma Ontologia Operacional",
+      "summary": "Estudo aprofundado dos princípios de arquitetura do Palantir AIP e por que sua abordagem ontológica é a única que sobrevive em produção corporativa.",
+      "image": "https://hsnlabs.ai/blog/assets/images/posts/palantir-aip-bootcamp-operational-ontology/cover.webp",
+      "date_published": "2026-09-18T00:00:00+00:00",
+      "language": "pt-BR",
+      "tags": [
+        "Agentic AI",
+        "palantir",
+        "ontology",
+        "enterprise"
+      ],
+      "authors": [
+        {
+          "name": "Hugo S. Nascimento",
+          "url": "https://hsnlabs.ai"
+        }
+      ]
+    },
+    {
+      "id": "https://hsnlabs.ai/blog/pt/post/guarda-do-balanco-extincao-bpo/",
+      "url": "https://hsnlabs.ai/blog/pt/post/guarda-do-balanco-extincao-bpo/",
+      "title": "O Que Aprendi Construindo HR Tech Sobre a Morte do BPO",
+      "summary": "Lições operacionais sobre o colapso estrutural de contratos de terceirização de RH e fluxos de trabalho manuais em grandes empresas.",
+      "image": "https://hsnlabs.ai/blog/assets/images/posts/balance-sheet-guard-bpo-extinction/cover.webp",
+      "date_published": "2026-09-15T00:00:00+00:00",
+      "language": "pt-BR",
+      "tags": [
+        "Future of Work",
+        "economics",
+        "bpo",
+        "hr-tech"
+      ],
+      "authors": [
+        {
+          "name": "Hugo S. Nascimento",
+          "url": "https://hsnlabs.ai"
+        }
+      ]
+    },
+    {
+      "id": "https://hsnlabs.ai/blog/pt/post/preco-palantir-tco-alternativas-abertas/",
+      "url": "https://hsnlabs.ai/blog/pt/post/preco-palantir-tco-alternativas-abertas/",
+      "title": "O TCO Real da Palantir: A Barreira dos Milhões de Dólares e Alternativas Abertas Modernas",
+      "summary": "Dissecando o custo total de propriedade da Palantir e como construir ontologias operacionais comparáveis com software de código aberto.",
+      "image": "https://hsnlabs.ai/blog/assets/images/posts/palantir-pricing-tco-and-open-alternatives/cover.webp",
+      "date_published": "2026-09-14T00:00:00+00:00",
+      "language": "pt-BR",
+      "tags": [
+        "Future of Work",
+        "palantir",
+        "tco",
+        "pricing"
+      ],
+      "authors": [
+        {
+          "name": "Hugo S. Nascimento",
+          "url": "https://hsnlabs.ai"
+        }
+      ]
+    },
+    {
+      "id": "https://hsnlabs.ai/blog/pt/post/arbitragem-protocolo-sinistros-subscricao/",
+      "url": "https://hsnlabs.ai/blog/pt/post/arbitragem-protocolo-sinistros-subscricao/",
+      "title": "Arbitragem de Protocolo: Liquidação Multimodal Autônoma em Seguros e Saúde",
+      "summary": "Como o processamento multimodal e protocolos de validação automatizam análise de sinistros e subscrição de apólices sem intermediação humana.",
+      "image": "https://hsnlabs.ai/blog/assets/images/posts/protocol-arbitrage-claims-underwriting/cover.webp",
+      "date_published": "2026-09-11T00:00:00+00:00",
+      "language": "pt-BR",
+      "tags": [
+        "Future of Work",
+        "insurance",
+        "healthcare",
+        "underwriting"
+      ],
+      "authors": [
+        {
+          "name": "Hugo S. Nascimento",
+          "url": "https://hsnlabs.ai"
+        }
+      ]
+    },
+    {
+      "id": "https://hsnlabs.ai/blog/pt/post/palantir-vs-databricks-arquitetura-agentes/",
+      "url": "https://hsnlabs.ai/blog/pt/post/palantir-vs-databricks-arquitetura-agentes/",
+      "title": "Palantir vs Databricks: Por Que Data Lakes Falham em Operações com Agentes Autônomos",
+      "summary": "Comparativo arquitetural entre a abordagem de lakehouse e a ontologia operacional em projetos corporativos de software agêntico.",
+      "image": "https://hsnlabs.ai/blog/assets/images/posts/palantir-vs-databricks-agent-architecture/cover.webp",
+      "date_published": "2026-09-11T00:00:00+00:00",
+      "language": "pt-BR",
+      "tags": [
+        "Why Agents Fail",
+        "palantir",
+        "databricks",
+        "architecture"
+      ],
+      "authors": [
+        {
+          "name": "Hugo S. Nascimento",
+          "url": "https://hsnlabs.ai"
+        }
+      ]
+    },
+    {
+      "id": "https://hsnlabs.ai/blog/pt/post/morte-suporte-nivel-1-erp/",
+      "url": "https://hsnlabs.ai/blog/pt/post/morte-suporte-nivel-1-erp/",
+      "title": "A Morte do Suporte Nível 1: Por Que Consultorias de ERP Não Sustentarão o Modelo de Horas Faturáveis",
+      "summary": "Como agentes operacionais com compreensão de regras de negócio estão tornando obsoletas as mesas terceirizadas de atendimento de ERP.",
+      "image": "https://hsnlabs.ai/blog/assets/images/posts/death-of-tier-1-erp-helpdesk/cover.webp",
+      "date_published": "2026-09-08T00:00:00+00:00",
+      "language": "pt-BR",
+      "tags": [
+        "Future of Work",
+        "erp",
+        "support",
+        "consulting"
+      ],
+      "authors": [
+        {
+          "name": "Hugo S. Nascimento",
+          "url": "https://hsnlabs.ai"
+        }
+      ]
+    },
+    {
+      "id": "https://hsnlabs.ai/blog/pt/post/colapso-rpa-legado/",
+      "url": "https://hsnlabs.ai/blog/pt/post/colapso-rpa-legado/",
+      "title": "O Mercado de RPA Está em Colapso",
+      "summary": "Por que bots frágeis de gravação de tela estão em colapso em ambientes corporativos e como agentes em produção os substituem.",
+      "image": "https://hsnlabs.ai/blog/assets/images/posts/collapse-of-legacy-rpa/cover.webp",
+      "date_published": "2026-09-04T00:00:00+00:00",
+      "language": "pt-BR",
+      "tags": [
+        "Future of Work",
+        "economics",
+        "rpa",
+        "automation"
+      ],
+      "authors": [
+        {
+          "name": "Hugo S. Nascimento",
+          "url": "https://hsnlabs.ai"
+        }
+      ]
+    },
+    {
+      "id": "https://hsnlabs.ai/blog/pt/post/cemiterio-de-pocs/",
+      "url": "https://hsnlabs.ai/blog/pt/post/cemiterio-de-pocs/",
+      "title": "Por Que Agentes Falham: O Cemitério de PoCs",
+      "summary": "Post-mortem sobre a causa raiz de noventa por cento das provas de conceito de IA falharem antes da produção.",
+      "image": "https://hsnlabs.ai/blog/assets/images/posts/the-poc-graveyard/cover.webp",
+      "date_published": "2026-09-01T00:00:00+00:00",
+      "language": "pt-BR",
+      "tags": [
+        "Why Agents Fail",
+        "case-studies",
+        "poc",
+        "ai-failures"
+      ],
+      "authors": [
+        {
+          "name": "Hugo S. Nascimento",
+          "url": "https://hsnlabs.ai"
+        }
+      ]
+    },
+    {
+      "id": "https://hsnlabs.ai/blog/pt/post/isolamento-perimetro-mcp-contratos-dados/",
+      "url": "https://hsnlabs.ai/blog/pt/post/isolamento-perimetro-mcp-contratos-dados/",
+      "title": "Como Protegemos Bancos de Dados Enterprise de Agentes de IA",
+      "summary": "Padrões de arquitetura para isolamento de perímetro, contratos de contexto e limites de acesso blindando dados corporativos contra agentes de IA.",
+      "image": "https://hsnlabs.ai/blog/assets/images/posts/perimeter-isolation-mcp-data-contracts/cover.webp",
+      "date_published": "2026-08-26T00:00:00+00:00",
+      "language": "pt-BR",
+      "tags": [
+        "Agentic AI",
+        "architecture",
+        "mcp",
+        "data-contracts"
+      ],
+      "authors": [
+        {
+          "name": "Hugo S. Nascimento",
+          "url": "https://hsnlabs.ai"
+        }
+      ]
+    },
+    {
+      "id": "https://hsnlabs.ai/blog/pt/post/estudo-caso-latam-airlines/",
+      "url": "https://hsnlabs.ai/blog/pt/post/estudo-caso-latam-airlines/",
+      "title": "LATAM Airlines: Agentes em Produção com Margem de 3 Por Cento",
+      "summary": "Estudo de caso operacional sobre a implantação de agentes corporativos em aviação comercial com margens apertadas e alta volumetria.",
+      "image": "https://hsnlabs.ai/blog/assets/images/posts/latam-airlines-case-study/cover.webp",
+      "date_published": "2026-08-21T00:00:00+00:00",
+      "language": "pt-BR",
+      "tags": [
+        "Agentic AI",
+        "case-studies",
+        "latam-airlines",
+        "production"
+      ],
+      "authors": [
+        {
+          "name": "Hugo S. Nascimento",
+          "url": "https://hsnlabs.ai"
+        }
+      ]
+    },
+    {
+      "id": "https://hsnlabs.ai/blog/pt/post/falacia-llm-como-juiz/",
+      "url": "https://hsnlabs.ai/blog/pt/post/falacia-llm-como-juiz/",
+      "title": "Por Que LLM Como Juiz Falha no Setor Bancário",
+      "summary": "Vulnerabilidades estruturais e riscos de conformidade ao confiar em avaliadores estocásticos de LLM para auditar decisões financeiras.",
+      "image": "https://hsnlabs.ai/blog/assets/images/posts/llm-as-judge-fallacy/cover.webp",
+      "date_published": "2026-08-18T00:00:00+00:00",
+      "language": "pt-BR",
+      "tags": [
+        "Why Agents Fail",
+        "architecture",
+        "llm-judge",
+        "audit"
+      ],
+      "authors": [
+        {
+          "name": "Hugo S. Nascimento",
+          "url": "https://hsnlabs.ai"
+        }
+      ]
+    },
+    {
+      "id": "https://hsnlabs.ai/blog/pt/post/agentes-ilimitados-maquinas-estados-finitos/",
+      "url": "https://hsnlabs.ai/blog/pt/post/agentes-ilimitados-maquinas-estados-finitos/",
+      "title": "Estudo de Caso: 42 Chamadas em Loop às 2 da Manhã",
+      "summary": "Auditoria de incidente de emergência e remédio de arquitetura para loops infinitos de chamadas em agentes por máquinas de estados finitos.",
+      "image": "https://hsnlabs.ai/blog/assets/images/posts/unconstrained-agents-finite-state-machines/cover.webp",
+      "date_published": "2026-08-12T00:00:00+00:00",
+      "language": "pt-BR",
+      "tags": [
+        "Agentic AI",
+        "case-studies",
+        "production",
+        "api-loops"
+      ],
+      "authors": [
+        {
+          "name": "Hugo S. Nascimento",
+          "url": "https://hsnlabs.ai"
+        }
+      ]
+    },
+    {
+      "id": "https://hsnlabs.ai/blog/pt/post/por-que-rag-falha-em-erp/",
+      "url": "https://hsnlabs.ai/blog/pt/post/por-que-rag-falha-em-erp/",
+      "title": "Por Que RAG Tradicional Falha em ERPs Financeiros",
+      "summary": "Por que a busca vetorial por similaridade corrompe a precisão aritmética e a integridade de livros contábeis em ERPs.",
+      "image": "https://hsnlabs.ai/blog/assets/images/posts/why-rag-breaks-on-erp/cover.webp",
+      "date_published": "2026-08-07T00:00:00+00:00",
+      "language": "pt-BR",
+      "tags": [
+        "Why Agents Fail",
+        "architecture",
+        "rag",
+        "erp"
+      ],
+      "authors": [
+        {
+          "name": "Hugo S. Nascimento",
+          "url": "https://hsnlabs.ai"
+        }
+      ]
+    },
+    {
+      "id": "https://hsnlabs.ai/blog/pt/post/sistemas-legados-motor-execucao/",
+      "url": "https://hsnlabs.ai/blog/pt/post/sistemas-legados-motor-execucao/",
+      "title": "Sistemas Transacionais Legados Não Vão Morrer: Eles São o Motor",
+      "summary": "Por que sistemas transacionais legados continuam sendo a fundação indispensável para agentes enterprise autônomos.",
+      "image": "https://hsnlabs.ai/blog/assets/images/posts/legacy-core-backing-engine/cover.webp",
+      "date_published": "2026-08-04T00:00:00+00:00",
+      "language": "pt-BR",
+      "tags": [
+        "Agentic AI",
+        "architecture",
+        "legacy-core",
+        "mainframe"
+      ],
+      "authors": [
+        {
+          "name": "Hugo S. Nascimento",
+          "url": "https://hsnlabs.ai"
+        }
+      ]
+    },
+    {
+      "id": "https://hsnlabs.ai/blog/pt/post/deriva-de-integracao/",
+      "url": "https://hsnlabs.ai/blog/pt/post/deriva-de-integracao/",
+      "title": "A Deriva de Integração: Quando Prompts Quebram Agentes em Produção",
+      "summary": "Como detectar e blindar fluxos de agentes em produção contra quebras silenciosas provocadas por desvios de schemas e APIs.",
+      "image": "https://hsnlabs.ai/blog/assets/images/posts/integration-drift/cover.webp",
+      "date_published": "2026-07-29T00:00:00+00:00",
+      "language": "pt-BR",
+      "tags": [
+        "Why Agents Fail",
+        "architecture",
+        "schema-drift",
+        "mcp"
+      ],
+      "authors": [
+        {
+          "name": "Hugo S. Nascimento",
+          "url": "https://hsnlabs.ai"
+        }
+      ]
+    },
+    {
+      "id": "https://hsnlabs.ai/blog/pt/post/chatbot-vs-agente/",
+      "url": "https://hsnlabs.ai/blog/pt/post/chatbot-vs-agente/",
+      "title": "Chatbot vs Agente: Por Que Substituir BPOs Exige Ontologias em Produção",
+      "summary": "Diferenças críticas de arquitetura entre chatbots conversacionais e agentes corporativos em produção que alteram o estado de ERPs.",
+      "image": "https://hsnlabs.ai/blog/assets/images/posts/chatbot-vs-agent/cover.webp",
+      "date_published": "2026-07-22T00:00:00+00:00",
+      "language": "pt-BR",
+      "tags": [
+        "Agentic AI",
+        "architecture",
+        "guardrails",
+        "state-machines"
+      ],
+      "authors": [
+        {
+          "name": "Hugo S. Nascimento",
+          "url": "https://hsnlabs.ai"
+        }
+      ]
+    },
+    {
+      "id": "https://hsnlabs.ai/blog/pt/post/custo-ia-ilimitada-ti-legada/",
+      "url": "https://hsnlabs.ai/blog/pt/post/custo-ia-ilimitada-ti-legada/",
+      "title": "O Custo de IA Sem Limites na TI Legada",
+      "summary": "Auditoria econômica e técnica sobre custos descontrolados e riscos operacionais causados por IA estocástica na infraestrutura legada.",
+      "image": "https://hsnlabs.ai/blog/assets/images/posts/cost-legacy-it/cover.webp",
+      "date_published": "2026-07-15T00:00:00+00:00",
+      "language": "pt-BR",
+      "tags": [
+        "Future of Work",
+        "architecture",
+        "legacy-it",
+        "reliability"
+      ],
+      "authors": [
+        {
+          "name": "Hugo S. Nascimento",
+          "url": "https://hsnlabs.ai"
+        }
+      ]
+    },
+    {
+      "id": "https://hsnlabs.ai/blog/pt/post/manifesto/",
+      "url": "https://hsnlabs.ai/blog/pt/post/manifesto/",
+      "title": "Por Que Criei a hsnlabs",
+      "summary": "Tese fundadora da hsnlabs: construindo arquiteturas de agentes enterprise sobre ontologias executáveis de domínio.",
+      "image": "https://hsnlabs.ai/blog/assets/images/posts/manifesto/cover.webp",
+      "date_published": "2026-07-08T00:00:00+00:00",
+      "language": "pt-BR",
+      "tags": [
+        "Future of Work",
+        "case-studies",
+        "hsnlabs",
+        "manifesto"
+      ],
+      "authors": [
+        {
+          "name": "Hugo S. Nascimento",
+          "url": "https://hsnlabs.ai"
+        }
+      ]
+    }
+  ]
+}

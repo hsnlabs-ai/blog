@@ -44,6 +44,12 @@ CANVAS_BANNER_EN_SLUGS = {
     "ontology-vs-database-schema",
     "ontology-vs-knowledge-graph",
     "palantir-aip-bootcamp-operational-ontology",
+    "what-is-agent-harness-production",
+    "langchain-vs-langgraph-vs-deep-agents",
+    "what-are-ai-agents-enterprise-production",
+    "context-engineering-enterprise-agents",
+    "loop-engineering-controlling-agent-costs",
+    "langsmith-evals-production-agents",
 }
 CANVAS_BANNER_PT_SLUGS = {
     EN_TO_PT_MAP[s] for s in CANVAS_BANNER_EN_SLUGS if s in EN_TO_PT_MAP
@@ -163,7 +169,7 @@ def on_page_content(html, page, config, files):
 
     if src_uri.startswith("post/"):
         slug = Path(src_uri).stem
-        if slug in CANVAS_BANNER_EN_SLUGS:
+        if slug in CANVAS_BANNER_EN_SLUGS or page.meta.get("canvas_banner"):
             html = inject_canvas_banner(html, is_pt=False, slug=slug)
         slug_pt = EN_TO_PT_MAP.get(slug)
         hreflang_tags.append(f'<link rel="alternate" hreflang="en" href="{canonical_url}">')
@@ -175,7 +181,7 @@ def on_page_content(html, page, config, files):
     elif src_uri.startswith("pt/post/"):
         lang = "pt-BR"
         slug_pt = Path(src_uri).stem
-        if slug_pt in CANVAS_BANNER_PT_SLUGS:
+        if slug_pt in CANVAS_BANNER_PT_SLUGS or page.meta.get("canvas_banner"):
             html = inject_canvas_banner(html, is_pt=True, slug=slug_pt)
         slug_en = PT_TO_EN_MAP.get(slug_pt)
         if slug_en:
@@ -200,6 +206,12 @@ def on_page_content(html, page, config, files):
         injected_meta = "\n" + "\n".join(hreflang_tags) + "\n"
 
     if src_uri.startswith("post/") or src_uri.startswith("pt/post/"):
+        img_meta = page.meta.get("image")
+        if img_meta:
+            img_url = img_meta if str(img_meta).startswith("http") else f"https://hsnlabs.ai/blog/{str(img_meta).lstrip('/')}"
+        else:
+            img_url = "https://hsnlabs.ai/blog/assets/brand/og-image.png"
+
         schema_data = {
             "@context": "https://schema.org",
             "@type": "TechArticle",
@@ -207,10 +219,16 @@ def on_page_content(html, page, config, files):
             "url": canonical_url,
             "description": page.meta.get("description", page.title),
             "inLanguage": lang,
+            "image": [img_url],
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": canonical_url
+            },
             "author": {
                 "@type": "Person",
-                "name": "Hugo S. Nascimento",
-                "url": "https://hsnlabs.ai"
+                "name": page.meta.get("author", "Hugo S. Nascimento"),
+                "url": "https://hsnlabs.ai",
+                "jobTitle": "Founder & CPTO"
             },
             "publisher": {
                 "@type": "Organization",
@@ -223,9 +241,15 @@ def on_page_content(html, page, config, files):
             }
         }
         if page.meta.get("date"):
-            schema_data["datePublished"] = str(page.meta["date"])
+            pub_date = str(page.meta["date"])
+            schema_data["datePublished"] = pub_date
+            schema_data["dateModified"] = str(page.meta.get("updated") or pub_date)
+        if page.meta.get("category"):
+            schema_data["articleSection"] = str(page.meta["category"])
+        if page.meta.get("tags"):
+            schema_data["keywords"] = ", ".join(str(t) for t in page.meta["tags"])
 
-        json_ld = f'\n<script type="application/ld+json">\n{json.dumps(schema_data, indent=2)}\n</script>\n'
+        json_ld = f'\n<script type="application/ld+json">\n{json.dumps(schema_data, ensure_ascii=False, indent=2)}\n</script>\n'
         return html + injected_meta + json_ld
 
     return html + injected_meta
@@ -256,6 +280,48 @@ def on_env(env, config, files):
         except Exception:
             return ""
     env.filters["days_ago"] = days_ago
+
+    def alt_lang_url(page):
+        if not page or not getattr(page, "file", None):
+            return ""
+        src_uri = page.file.src_uri
+        if src_uri.startswith("pt/post/"):
+            slug_pt = Path(src_uri).stem
+            slug_en = PT_TO_EN_MAP.get(slug_pt)
+            return f"post/{slug_en}/" if slug_en else ""
+        if src_uri.startswith("post/"):
+            slug_en = Path(src_uri).stem
+            slug_pt = EN_TO_PT_MAP.get(slug_en)
+            return f"pt/post/{slug_pt}/" if slug_pt else "pt/"
+        if src_uri.startswith("pt/"):
+            return ""
+        return "pt/"
+
+    env.globals["alt_lang_url"] = alt_lang_url
+
+    import yaml
+    pt_posts_meta = []
+    pt_dir = BASE_DIR / "docs" / "pt" / "post"
+    if pt_dir.exists():
+        for f in sorted(pt_dir.glob("*.md")):
+            try:
+                parts = f.read_text(encoding="utf-8").split("---")
+                if len(parts) >= 3:
+                    m = yaml.safe_load(parts[1]) or {}
+                    pt_posts_meta.append({
+                        "title": m.get("title", f.stem),
+                        "date": str(m.get("date", "")),
+                        "url": f"pt/post/{f.stem}/",
+                    })
+            except Exception:
+                pass
+    pt_posts_meta.sort(key=lambda x: x["date"], reverse=True)
+    env.globals["pt_recent_posts"] = pt_posts_meta
+    env.globals["pt_categories"] = [
+        {"key": "Agentic AI", "label": "Agentic AI"},
+        {"key": "Why Agents Fail", "label": "Por Que Agentes Falham"},
+        {"key": "Future of Work", "label": "O Futuro do Trabalho"},
+    ]
     return env
 
 def on_post_build(config):
@@ -340,4 +406,97 @@ def on_post_build(config):
             import gzip
             with gzip.open(sitemap_gz, "wb") as gz_f:
                 gz_f.write(clean_sm.encode("utf-8"))
+
+    # 3. Generate complete Portuguese RSS 2.0 & JSON Feed 1.1 feeds
+    import yaml
+    from xml.sax.saxutils import escape as xml_escape
+    from email.utils import format_datetime
+    pt_feed_items = []
+    pt_posts_dir = BASE_DIR / "docs" / "pt" / "post"
+    if pt_posts_dir.exists():
+        for f in sorted(pt_posts_dir.glob("*.md")):
+            try:
+                parts = f.read_text(encoding="utf-8").split("---")
+                if len(parts) >= 3:
+                    m = yaml.safe_load(parts[1]) or {}
+                    pt_feed_items.append({
+                        "slug": f.stem,
+                        "title": str(m.get("title", f.stem)),
+                        "date": str(m.get("date", "2026-01-01"))[:10],
+                        "category": str(m.get("category", "")),
+                        "tags": [str(t) for t in (m.get("tags") or [])],
+                        "description": str(m.get("description", "")),
+                        "image": str(m.get("image", "")),
+                        "url": f"https://hsnlabs.ai/blog/pt/post/{f.stem}/",
+                    })
+            except Exception:
+                pass
+    pt_feed_items.sort(key=lambda x: x["date"], reverse=True)
+
+    rss_pt_items_xml = []
+    json_pt_items = []
+    for item in pt_feed_items:
+        try:
+            dt = datetime.strptime(item["date"], "%Y-%m-%d")
+            pub_rfc822 = format_datetime(dt)
+            pub_iso = f"{item['date']}T00:00:00+00:00"
+        except Exception:
+            pub_rfc822 = item["date"]
+            pub_iso = item["date"]
+        img_full = f"https://hsnlabs.ai/blog/{item['image'].lstrip('/')}" if item["image"] else "https://hsnlabs.ai/blog/assets/brand/og-image-pt.png"
+        cats_xml = "".join(f"<category>{xml_escape(c)}</category>" for c in ([item["category"]] + item["tags"]) if c)
+        rss_pt_items_xml.append(
+            f"    <item>\n"
+            f"      <title>{xml_escape(item['title'])}</title>\n"
+            f"      <link>{item['url']}</link>\n"
+            f"      <guid isPermaLink=\"true\">{item['url']}</guid>\n"
+            f"      <pubDate>{pub_rfc822}</pubDate>\n"
+            f"      <description>{xml_escape(item['description'])}</description>\n"
+            f"      {cats_xml}\n"
+            f"      <enclosure url=\"{img_full}\" type=\"image/webp\" length=\"0\"/>\n"
+            f"    </item>"
+        )
+        json_pt_items.append({
+            "id": item["url"],
+            "url": item["url"],
+            "title": item["title"],
+            "summary": item["description"],
+            "image": img_full,
+            "date_published": pub_iso,
+            "language": "pt-BR",
+            "tags": [c for c in ([item["category"]] + item["tags"]) if c],
+            "authors": [{"name": "Hugo S. Nascimento", "url": "https://hsnlabs.ai"}],
+        })
+
+    rss_pt_xml = (
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">\n'
+        '  <channel>\n'
+        '    <title>Hugo Nascimento · Arquitetura de Agentes Enterprise PT-BR</title>\n'
+        '    <link>https://hsnlabs.ai/blog/pt/</link>\n'
+        '    <description>Posts e notas de campo sobre arquitetura de agentes enterprise, ontologias de domínio e execução em produção.</description>\n'
+        '    <language>pt-br</language>\n'
+        '    <atom:link href="https://hsnlabs.ai/blog/feed_rss_pt.xml" rel="self" type="application/rss+xml"/>\n'
+        f'    {hub_tag}\n'
+        '    <image>\n'
+        '      <url>https://hsnlabs.ai/blog/assets/brand/symbol/symbol-square-pure-cyan.png</url>\n'
+        '      <title>Hugo Nascimento · Arquitetura de Agentes Enterprise PT-BR</title>\n'
+        '      <link>https://hsnlabs.ai/blog/pt/</link>\n'
+        '    </image>\n'
+        + "\n".join(rss_pt_items_xml)
+        + "\n  </channel>\n</rss>\n"
+    )
+    (site_dir / "feed_rss_pt.xml").write_text(rss_pt_xml, encoding="utf-8")
+
+    json_pt_feed = {
+        "version": "https://jsonfeed.org/version/1.1",
+        "title": "Hugo Nascimento · Arquitetura de Agentes Enterprise PT-BR",
+        "home_page_url": "https://hsnlabs.ai/blog/pt/",
+        "feed_url": "https://hsnlabs.ai/blog/feed_json_pt.json",
+        "language": "pt-BR",
+        "icon": "https://hsnlabs.ai/blog/assets/brand/symbol/symbol-square-pure-cyan.png",
+        "items": json_pt_items,
+    }
+    (site_dir / "feed_json_pt.json").write_text(json.dumps(json_pt_feed, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
 

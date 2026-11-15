@@ -19,11 +19,12 @@
         </a>
     </div>
 
-    {% if bs.recent_posts and blog_posts %}
+    {% if bs.recent_posts and (pt_recent_posts if is_pt else blog_posts) %}
     <div class="blog-sidebar-widget">
         <h3 class="blog-sidebar-widget-title">{% if is_pt %}Posts Recentes{% else %}Recent Posts{% endif %}</h3>
         <ul class="blog-sidebar-list">
-            {% for post in blog_posts[:(bs.recent_count or 5)] %}
+            {% set sidebar_posts = pt_recent_posts if is_pt else blog_posts %}
+            {% for post in sidebar_posts[:(bs.recent_count or 5)] %}
             <li>
                 <a href="{{ post.url|url }}">{{ post.title }}</a>
                 {% if post.date %}
@@ -37,13 +38,19 @@
     </div>
     {% endif %}
 
-    {% if bs.categories and blog_categories %}
+    {% if bs.categories and (pt_categories if is_pt else blog_categories) %}
     <div class="blog-sidebar-widget">
         <h3 class="blog-sidebar-widget-title">{% if is_pt %}Categorias{% else %}Categories{% endif %}</h3>
         <ul class="blog-sidebar-list">
-            {% for name, url in blog_categories.items() %}
-            <li><a href="{{ url|url }}">{{ name }}</a></li>
-            {% endfor %}
+            {% if is_pt %}
+                {% for item in pt_categories %}
+                <li><a href="{{ 'pt/'|url }}?cat={{ item.key|urlencode }}">{{ item.label }}</a></li>
+                {% endfor %}
+            {% else %}
+                {% for name, url in blog_categories.items() %}
+                <li><a href="{{ url|url }}">{{ name }}</a></li>
+                {% endfor %}
+            {% endif %}
         </ul>
     </div>
     {% endif %}
@@ -52,9 +59,15 @@
     <div class="blog-sidebar-widget">
         <h3 class="blog-sidebar-widget-title">Tags</h3>
         <div class="blog-sidebar-tags">
-            {% for name, url in blog_tags.items() %}
-            <a class="blog-sidebar-tag" href="{{ url|url }}">{{ name }}</a>
-            {% endfor %}
+            {% if is_pt %}
+                {% for name, url in blog_tags.items() %}
+                <a class="blog-sidebar-tag" href="{{ 'pt/'|url }}?tag={{ name|urlencode }}">{{ name }}</a>
+                {% endfor %}
+            {% else %}
+                {% for name, url in blog_tags.items() %}
+                <a class="blog-sidebar-tag" href="{{ url|url }}">{{ name }}</a>
+                {% endfor %}
+            {% endif %}
         </div>
     </div>
     {% endif %}

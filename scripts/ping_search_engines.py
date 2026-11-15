@@ -22,6 +22,8 @@ def build_url_list():
         "https://hsnlabs.ai/blog/pt/",
         "https://hsnlabs.ai/blog/feed_rss_created.xml",
         "https://hsnlabs.ai/blog/feed_json_created.json",
+        "https://hsnlabs.ai/blog/feed_rss_pt.xml",
+        "https://hsnlabs.ai/blog/feed_json_pt.json",
         "https://hsnlabs.ai/blog/sitemap.xml",
         "https://hsnlabs.ai/blog/llms.txt"
     ]
@@ -57,7 +59,8 @@ def ping_websub():
     hub_url = "https://pubsubhubbub.appspot.com/"
     for feed_url in [
         "https://hsnlabs.ai/blog/feed_rss_created.xml",
-        "https://hsnlabs.ai/blog/feed_rss_updated.xml"
+        "https://hsnlabs.ai/blog/feed_rss_updated.xml",
+        "https://hsnlabs.ai/blog/feed_rss_pt.xml"
     ]:
         params = urllib.parse.urlencode({
             "hub.mode": "publish",

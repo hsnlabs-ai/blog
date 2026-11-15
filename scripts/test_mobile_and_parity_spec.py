@@ -36,15 +36,20 @@ def test_gate_m4_responsive_tables_css():
     print("PASS: Gate M4 Responsividade de Tabelas validada no CSS")
 
 def test_gate_m5_sitemaps_parity():
+    blog_sitemap = (BLOG_DIR / "site" / "sitemap.xml").read_text(encoding="utf-8")
     site_sitemap = (SITE_DIR / "sitemap.xml").read_text(encoding="utf-8")
     routes_data = json.loads((BLOG_DIR / "i18n" / "routes-map.json").read_text(encoding="utf-8"))
-    
+
+    assert "https://hsnlabs.ai/" in site_sitemap, "Home ausente no sitemap principal"
+    assert "https://hsnlabs.ai/blog/" in blog_sitemap, "Blog root EN ausente no sitemap do blog"
+    assert "https://hsnlabs.ai/blog/pt/" in blog_sitemap, "Blog root PT ausente no sitemap do blog"
+
     for item in routes_data["blog_posts"]:
         slug_en = item["slug_en"]
         slug_pt = item["slug_pt"]
-        assert f"https://hsnlabs.ai/blog/post/{slug_en}/" in site_sitemap, f"Faltando EN no sitemap: {slug_en}"
-        assert f"https://hsnlabs.ai/blog/pt/post/{slug_pt}/" in site_sitemap, f"Faltando PT no sitemap: {slug_pt}"
-    print(f"PASS: Gate M5 Paridade de Sitemaps: todos os {len(routes_data['blog_posts'])} posts constam no sitemap central")
+        assert f"https://hsnlabs.ai/blog/post/{slug_en}/" in blog_sitemap, f"Faltando EN no blog sitemap: {slug_en}"
+        assert f"https://hsnlabs.ai/blog/pt/post/{slug_pt}/" in blog_sitemap, f"Faltando PT no blog sitemap: {slug_pt}"
+    print(f"PASS: Gate M5 Paridade de Sitemaps: todos os {len(routes_data['blog_posts'])} pares constam no sitemap do blog")
 
 def test_gate_m6_structural_parity():
     routes_data = json.loads((BLOG_DIR / "i18n" / "routes-map.json").read_text(encoding="utf-8"))

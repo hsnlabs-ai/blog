@@ -1,6 +1,14 @@
+{% set is_pt = page and page.file and page.file.src_uri.startswith('pt/') %}
+{% set is_pt_home = page and page.file and page.file.src_uri == 'pt/index.md' %}
+{% set is_post = page and page.file and (page.file.src_uri.startswith('post/') or page.file.src_uri.startswith('pt/post/')) %}
 <!-- Feeds and Crawlers -->
+{% if is_pt %}
+<link rel="alternate" type="application/rss+xml" title="RSS Feed PT-BR - Hugo S. Nascimento" href="{{ 'feed_rss_pt.xml'|url }}">
+<link rel="alternate" type="application/json" title="JSON Feed PT-BR - Hugo S. Nascimento" href="{{ 'feed_json_pt.json'|url }}">
+{% else %}
 <link rel="alternate" type="application/rss+xml" title="RSS Feed - Hugo S. Nascimento" href="{{ 'feed_rss_created.xml'|url }}">
 <link rel="alternate" type="application/json" title="JSON Feed - Hugo S. Nascimento" href="{{ 'feed_json_created.json'|url }}">
+{% endif %}
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
 <!-- Search Engine Verification -->
@@ -28,20 +36,20 @@
 </script>
 
 <!-- Structured Data -->
-{% if page and page.is_homepage %}
+{% if (page and page.is_homepage) or is_pt_home %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Blog",
-  "name": "Hugo S. Nascimento — Enterprise Agent Architecture",
-  "url": "https://hsnlabs.ai/blog/",
-  "description": "{{ config.site_description }}",
-  "inLanguage": "en",
+  "name": "{{ 'Hugo S. Nascimento — Arquitetura de Agentes Enterprise' if is_pt_home else 'Hugo S. Nascimento — Enterprise Agent Architecture' }}",
+  "url": "{{ 'https://hsnlabs.ai/blog/pt/' if is_pt_home else 'https://hsnlabs.ai/blog/' }}",
+  "description": {{ (page.meta.description if (page and page.meta and page.meta.description) else config.site_description)|tojson }},
+  "inLanguage": "{{ 'pt-BR' if is_pt_home else 'en' }}",
   "author": {
     "@type": "Person",
     "name": "Hugo S. Nascimento",
     "url": "https://hsnlabs.ai",
-    "jobTitle": "CPTO & Founder",
+    "jobTitle": "Founder & CPTO",
     "sameAs": [
       "https://www.linkedin.com/in/hugosoaresnascimento/",
       "https://github.com/hugonotnice",
@@ -66,32 +74,19 @@
   }
 }
 </script>
-{% elif page and page.meta and page.meta.title %}
+{% elif not is_post and page and page.title %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "{{ page.meta.title }}",
-  "description": "{{ page.meta.description }}",
-  "datePublished": "{{ page.meta.date }}",
-  "inLanguage": "en",
-  "author": {
-    "@type": "Person",
-    "name": "{{ page.meta.author or 'Hugo S. Nascimento' }}",
-    "url": "https://hsnlabs.ai"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "hsnlabs",
-    "url": "https://hsnlabs.ai",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://hsnlabs.ai/assets/brand/lockups/hsnlabs-lockup-horizontal-light.png"
-    }
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "{{ page.canonical_url }}"
+  "@type": "CollectionPage",
+  "name": {{ page.title|tojson }},
+  "url": {{ (page.canonical_url or ('https://hsnlabs.ai/blog/' ~ page.url))|tojson }},
+  "description": {{ (page.meta.description if (page and page.meta and page.meta.description) else config.site_description)|tojson }},
+  "inLanguage": "{{ 'pt-BR' if is_pt else 'en' }}",
+  "isPartOf": {
+    "@type": "Blog",
+    "name": "hsnlabs Blog",
+    "url": "https://hsnlabs.ai/blog/"
   }
 }
 </script>

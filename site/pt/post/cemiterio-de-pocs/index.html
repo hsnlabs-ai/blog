@@ -1,9 +1,10 @@
+
+
 <!doctype html>
-<html data-bs-theme="">
+<html lang="pt-BR" data-bs-theme="">
 
 <head>
-    <title>Por Que Agentes Falham: O Cemitério de PoCs - Hugo S. Nascimento
-    </title>
+    <title>Por Que Agentes Falham: O Cemitério de PoCs - Hugo S. Nascimento</title>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,6 +20,8 @@
 
     <!-- OpenGraph Metadata -->
     <meta property="og:site_name" content="hsnlabs">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:locale:alternate" content="en_US">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Por Que Agentes Falham: O Cemitério de PoCs">
     <meta property="og:description" content="Post-mortem sobre a causa raiz de noventa por cento das provas de conceito de IA falharem antes da produção.">
@@ -44,9 +47,14 @@
     <link rel="stylesheet" href="../../../assets/css/mkdocstrings.min.css">
     <link href="../../../stylesheets/extra.css" rel="stylesheet">
     <link href="../../../assets/css/pagination.css" rel="stylesheet">
-    <!-- Feeds and Crawlers -->
-<link rel="alternate" type="application/rss+xml" title="RSS Feed - Hugo S. Nascimento" href="../../../feed_rss_created.xml">
-<link rel="alternate" type="application/json" title="JSON Feed - Hugo S. Nascimento" href="../../../feed_json_created.json">
+    
+
+
+<!-- Feeds and Crawlers -->
+
+<link rel="alternate" type="application/rss+xml" title="RSS Feed PT-BR - Hugo S. Nascimento" href="../../../feed_rss_pt.xml">
+<link rel="alternate" type="application/json" title="JSON Feed PT-BR - Hugo S. Nascimento" href="../../../feed_json_pt.json">
+
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
 <!-- Search Engine Verification -->
@@ -74,35 +82,6 @@
 </script>
 
 <!-- Structured Data -->
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Por Que Agentes Falham: O Cemitério de PoCs",
-  "description": "Post-mortem sobre a causa raiz de noventa por cento das provas de conceito de IA falharem antes da produção.",
-  "datePublished": "2026-09-01",
-  "inLanguage": "en",
-  "author": {
-    "@type": "Person",
-    "name": "Hugo S. Nascimento",
-    "url": "https://hsnlabs.ai"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "hsnlabs",
-    "url": "https://hsnlabs.ai",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://hsnlabs.ai/assets/brand/lockups/hsnlabs-lockup-horizontal-light.png"
-    }
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://hsnlabs.ai/blog/pt/post/cemiterio-de-pocs/"
-  }
-}
-</script>
 
 </head>
 
@@ -153,7 +132,7 @@
 
     
     <div class="lang-switch">
-      <a href="../../.." class="lang-item">EN</a>
+      <a href="../../../post/the-poc-graveyard/" class="lang-item">EN</a>
       <span class="lang-sep">·</span>
       <span class="lang-item active">PT</span>
     </div>
@@ -215,8 +194,9 @@
         <h3 class="blog-sidebar-widget-title">Posts Recentes</h3>
         <ul class="blog-sidebar-list">
             
+            
             <li>
-                <a href="../../../post/langsmith-evals-production-agents/">LangSmith and Production Evals: Measuring Agents Before Failures Hit Users</a>
+                <a href="../langsmith-evals-producao-agentes/">LangSmith e evals em produção: como medir agentes antes do erro</a>
                 
                 <div class="blog-sidebar-post-meta">
                     <span class="blog-sidebar-date" data-date="2026-11-15">postado hoje</span>
@@ -225,7 +205,7 @@
             </li>
             
             <li>
-                <a href="../../../post/loop-engineering-controlling-agent-costs/">Loop Engineering: Controlling Production AI Agents Without Runaway Costs</a>
+                <a href="../loop-engineering-controle-custos-agentes/">Loop Engineering: como controlar agentes de IA sem estourar custos</a>
                 
                 <div class="blog-sidebar-post-meta">
                     <span class="blog-sidebar-date" data-date="2026-11-14">há 1 dia</span>
@@ -234,7 +214,7 @@
             </li>
             
             <li>
-                <a href="../../../post/context-engineering-enterprise-agents/">Context Engineering for Production Enterprise AI Agents</a>
+                <a href="../context-engineering-engenharia-de-contexto-agentes/">Context Engineering: engenharia de contexto para agentes em produção</a>
                 
                 <div class="blog-sidebar-post-meta">
                     <span class="blog-sidebar-date" data-date="2026-11-13">há 2 dias</span>
@@ -243,7 +223,7 @@
             </li>
             
             <li>
-                <a href="../../../post/what-are-ai-agents-enterprise-production/">What Are AI Agents in Enterprise Production Beyond Chatbots</a>
+                <a href="../o-que-sao-agentes-de-ia-producao/">O que são agentes de IA na prática corporativa além de chatbots</a>
                 
                 <div class="blog-sidebar-post-meta">
                     <span class="blog-sidebar-date" data-date="2026-11-12">há 3 dias</span>
@@ -252,7 +232,7 @@
             </li>
             
             <li>
-                <a href="../../../post/langchain-vs-langgraph-vs-deep-agents/">LangChain vs LangGraph vs Deep Agents: Choosing the Right Production Layer</a>
+                <a href="../langchain-vs-langgraph-vs-deep-agents/">LangChain vs LangGraph vs Deep Agents: quando usar cada um em produção</a>
                 
                 <div class="blog-sidebar-post-meta">
                     <span class="blog-sidebar-date" data-date="2026-11-11">há 4 dias</span>
@@ -269,11 +249,13 @@
         <h3 class="blog-sidebar-widget-title">Categorias</h3>
         <ul class="blog-sidebar-list">
             
-            <li><a href="../../../category/why-agents-fail/">Why Agents Fail</a></li>
-            
-            <li><a href="../../../category/agentic-ai/">Agentic AI</a></li>
-            
-            <li><a href="../../../category/future-of-work/">Future of Work</a></li>
+                
+                <li><a href="../../?cat=Agentic%20AI">Agentic AI</a></li>
+                
+                <li><a href="../../?cat=Why%20Agents%20Fail">Por Que Agentes Falham</a></li>
+                
+                <li><a href="../../?cat=Future%20of%20Work">O Futuro do Trabalho</a></li>
+                
             
         </ul>
     </div>
@@ -284,149 +266,151 @@
         <h3 class="blog-sidebar-widget-title">Tags</h3>
         <div class="blog-sidebar-tags">
             
-            <a class="blog-sidebar-tag" href="../../../tag/langsmith/">langsmith</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/evaluation/">evaluation</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/deep-agents/">deep-agents</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/observability/">observability</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/production/">production</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/loop-engineering/">loop-engineering</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/langgraph/">langgraph</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/guardrails/">guardrails</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/context-engineering/">context-engineering</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/agent-memory/">agent-memory</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/rag/">rag</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/ai-agents/">ai-agents</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/langchain/">langchain</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/enterprise/">enterprise</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/architecture/">architecture</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/comparison/">comparison</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/agent-harness/">agent-harness</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/future-of-work/">future-of-work</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/economics/">economics</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/c-suite/">c-suite</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/databricks/">databricks</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/data-contracts/">data-contracts</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/snowflake/">snowflake</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/canvas/">canvas</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/enterprise-agents/">enterprise-agents</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/methodology/">methodology</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/crm/">crm</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/model-context-protocol/">model-context-protocol</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/saas/">saas</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/bpo/">bpo</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/case-studies/">case-studies</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/roi/">roi</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/ebitda/">ebitda</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/ontology/">ontology</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/mcp/">mcp</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/python/">python</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/database/">database</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/sql/">sql</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/vector-database/">vector-database</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/ai-failures/">ai-failures</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/knowledge-graph/">knowledge-graph</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/data-engineering/">data-engineering</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/operational-ontology/">operational-ontology</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/deterministic-ai/">deterministic-ai</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/margins/">margins</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/consulting/">consulting</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/sprint/">sprint</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/artificial-intelligence/">artificial-intelligence</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/philosophy/">philosophy</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/hr/">hr</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/collections/">collections</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/hr-tech/">hr-tech</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/insurance/">insurance</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/arbitrage/">arbitrage</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/erp-support/">erp-support</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/helpdesk/">helpdesk</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/rpa/">rpa</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/automation/">automation</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/poc/">poc</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/latam-airlines/">latam-airlines</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/llm-judge/">llm-judge</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/audit/">audit</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/api-loops/">api-loops</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/erp/">erp</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/legacy-core/">legacy-core</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/mainframe/">mainframe</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/schema-drift/">schema-drift</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/state-machines/">state-machines</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/legacy-it/">legacy-it</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/reliability/">reliability</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/hsnlabs/">hsnlabs</a>
-            
-            <a class="blog-sidebar-tag" href="../../../tag/manifesto/">manifesto</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=langsmith">langsmith</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=evaluation">evaluation</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=deep-agents">deep-agents</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=observability">observability</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=production">production</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=loop-engineering">loop-engineering</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=langgraph">langgraph</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=guardrails">guardrails</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=context-engineering">context-engineering</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=agent-memory">agent-memory</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=rag">rag</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=ai-agents">ai-agents</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=langchain">langchain</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=enterprise">enterprise</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=architecture">architecture</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=comparison">comparison</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=agent-harness">agent-harness</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=future-of-work">future-of-work</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=economics">economics</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=c-suite">c-suite</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=databricks">databricks</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=data-contracts">data-contracts</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=snowflake">snowflake</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=canvas">canvas</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=enterprise-agents">enterprise-agents</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=methodology">methodology</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=crm">crm</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=model-context-protocol">model-context-protocol</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=saas">saas</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=bpo">bpo</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=case-studies">case-studies</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=roi">roi</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=ebitda">ebitda</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=ontology">ontology</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=mcp">mcp</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=python">python</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=database">database</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=sql">sql</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=vector-database">vector-database</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=ai-failures">ai-failures</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=knowledge-graph">knowledge-graph</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=data-engineering">data-engineering</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=operational-ontology">operational-ontology</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=deterministic-ai">deterministic-ai</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=margins">margins</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=consulting">consulting</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=sprint">sprint</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=artificial-intelligence">artificial-intelligence</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=philosophy">philosophy</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=hr">hr</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=collections">collections</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=hr-tech">hr-tech</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=insurance">insurance</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=arbitrage">arbitrage</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=erp-support">erp-support</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=helpdesk">helpdesk</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=rpa">rpa</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=automation">automation</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=poc">poc</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=latam-airlines">latam-airlines</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=llm-judge">llm-judge</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=audit">audit</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=api-loops">api-loops</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=erp">erp</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=legacy-core">legacy-core</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=mainframe">mainframe</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=schema-drift">schema-drift</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=state-machines">state-machines</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=legacy-it">legacy-it</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=reliability">reliability</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=hsnlabs">hsnlabs</a>
+                
+                <a class="blog-sidebar-tag" href="../../?tag=manifesto">manifesto</a>
+                
             
         </div>
     </div>
@@ -539,14 +523,22 @@
 {
   "@context": "https://schema.org",
   "@type": "TechArticle",
-  "headline": "Por Que Agentes Falham: O Cemit\u00e9rio de PoCs",
+  "headline": "Por Que Agentes Falham: O Cemitério de PoCs",
   "url": "https://hsnlabs.ai/blog/pt/post/cemiterio-de-pocs/",
-  "description": "Post-mortem sobre a causa raiz de noventa por cento das provas de conceito de IA falharem antes da produ\u00e7\u00e3o.",
+  "description": "Post-mortem sobre a causa raiz de noventa por cento das provas de conceito de IA falharem antes da produção.",
   "inLanguage": "pt-BR",
+  "image": [
+    "https://hsnlabs.ai/blog/assets/images/posts/the-poc-graveyard/cover.webp"
+  ],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://hsnlabs.ai/blog/pt/post/cemiterio-de-pocs/"
+  },
   "author": {
     "@type": "Person",
     "name": "Hugo S. Nascimento",
-    "url": "https://hsnlabs.ai"
+    "url": "https://hsnlabs.ai",
+    "jobTitle": "Founder & CPTO"
   },
   "publisher": {
     "@type": "Organization",
@@ -557,7 +549,10 @@
       "url": "https://hsnlabs.ai/assets/brand/lockups/hsnlabs-lockup-horizontal-light.png"
     }
   },
-  "datePublished": "2026-09-01"
+  "datePublished": "2026-09-01",
+  "dateModified": "2026-09-01",
+  "articleSection": "Why Agents Fail",
+  "keywords": "case-studies, poc, ai-failures"
 }
 </script>
 

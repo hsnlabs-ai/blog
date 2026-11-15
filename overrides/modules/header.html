@@ -54,7 +54,7 @@
 
     {% if page and page.file and page.file.src_uri.startswith('pt/') %}
     <div class="lang-switch">
-      <a href="{{ ''|url }}" class="lang-item">EN</a>
+      <a href="{{ alt_lang_url(page)|url }}" class="lang-item">EN</a>
       <span class="lang-sep">·</span>
       <span class="lang-item active">PT</span>
     </div>
@@ -63,7 +63,7 @@
     <div class="lang-switch">
       <span class="lang-item active">EN</span>
       <span class="lang-sep">·</span>
-      <a href="{{ 'pt/'|url }}" class="lang-item">PT</a>
+      <a href="{{ alt_lang_url(page)|url }}" class="lang-item">PT</a>
     </div>
     <a href="https://hsnlabs.ai/en/bootcamp/" class="btn btn-primary blog-header-cta">Explore Agentic Bootcamp™</a>
     {% endif %}
