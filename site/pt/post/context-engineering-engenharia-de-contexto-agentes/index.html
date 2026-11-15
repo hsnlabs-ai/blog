@@ -1,0 +1,904 @@
+<!doctype html>
+<html data-bs-theme="">
+
+<head>
+    <title>Context Engineering: engenharia de contexto para agentes em produção - Hugo S. Nascimento
+    </title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="../../../assets/brand/favicons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../assets/brand/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../assets/brand/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../../assets/brand/favicons/favicon-16x16.png">
+    <meta name="theme-color" content="#52B4FD"><link rel="canonical" href="https://hsnlabs.ai/blog/pt/post/context-engineering-engenharia-de-contexto-agentes/">
+    <meta name="title" content="Context Engineering: engenharia de contexto para agentes em produção">
+    <meta name="description" content="Como context engineering em LangGraph aplica escrever, selecionar, comprimir e isolar contexto em ERPs brasileiros para cortar desperdício de tokens em USD e proteger dados sob LGPD.">
+
+    <!-- OpenGraph Metadata -->
+    <meta property="og:site_name" content="hsnlabs">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Context Engineering: engenharia de contexto para agentes em produção">
+    <meta property="og:description" content="Como context engineering em LangGraph aplica escrever, selecionar, comprimir e isolar contexto em ERPs brasileiros para cortar desperdício de tokens em USD e proteger dados sob LGPD.">
+    <meta property="og:url" content="https://hsnlabs.ai/blog/pt/post/context-engineering-engenharia-de-contexto-agentes/">
+    <meta property="og:image" content="https://hsnlabs.ai/blog/assets/images/posts/context-engineering-enterprise-agents/cover.webp">
+    <meta property="og:image:secure_url" content="https://hsnlabs.ai/blog/assets/images/posts/context-engineering-enterprise-agents/cover.webp">
+    <meta property="og:image:alt" content="Context Engineering: engenharia de contexto para agentes em produção"><meta property="og:image:type" content="image/webp"><!-- Twitter Card Metadata -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@hsnlabs">
+    <meta name="twitter:creator" content="@hugo_nasc">
+    <meta name="twitter:title" content="Context Engineering: engenharia de contexto para agentes em produção">
+    <meta name="twitter:description" content="Como context engineering em LangGraph aplica escrever, selecionar, comprimir e isolar contexto em ERPs brasileiros para cortar desperdício de tokens em USD e proteger dados sob LGPD.">
+    <meta name="twitter:image" content="https://hsnlabs.ai/blog/assets/images/posts/context-engineering-enterprise-agents/cover.webp"><meta name="author" content="Hugo S. Nascimento"><meta name="date" content="2026-11-13">
+      <meta property="article:published_time" content="2026-11-13"><meta property="article:section" content="Agentic AI">
+
+    <script>var base_url = '../../..';</script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="../../../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../assets/css/root.min.css">
+    <link rel="stylesheet" href="../../../assets/css/main.min.css">
+    <link rel="stylesheet" href="../../../assets/css/media.min.css">
+    <link rel="stylesheet" href="../../../assets/css/mkdocstrings.min.css">
+    <link href="../../../stylesheets/extra.css" rel="stylesheet">
+    <link href="../../../assets/css/pagination.css" rel="stylesheet">
+    <!-- Feeds and Crawlers -->
+<link rel="alternate" type="application/rss+xml" title="RSS Feed - Hugo S. Nascimento" href="../../../feed_rss_created.xml">
+<link rel="alternate" type="application/json" title="JSON Feed - Hugo S. Nascimento" href="../../../feed_json_created.json">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+<!-- Search Engine Verification -->
+<meta name="msvalidate.01" content="fb6d944d28fc4484bd669f6d9c4d3292">
+<meta name="google-site-verification" content="G-GMK24ECXMF">
+
+<!-- GEO and Local SEO -->
+<meta name="geo.region" content="BR-SP">
+<meta name="geo.placename" content="São Paulo">
+<meta name="geo.position" content="-23.561684;-46.655981">
+<meta name="ICBM" content="-23.561684, -46.655981">
+
+<!-- Typography: Cormorant Garamond & Inter -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- Google Analytics (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GMK24ECXMF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-GMK24ECXMF');
+</script>
+
+<!-- Structured Data -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Context Engineering: engenharia de contexto para agentes em produção",
+  "description": "Como context engineering em LangGraph aplica escrever, selecionar, comprimir e isolar contexto em ERPs brasileiros para cortar desperdício de tokens em USD e proteger dados sob LGPD.",
+  "datePublished": "2026-11-13",
+  "inLanguage": "en",
+  "author": {
+    "@type": "Person",
+    "name": "Hugo S. Nascimento",
+    "url": "https://hsnlabs.ai"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "hsnlabs",
+    "url": "https://hsnlabs.ai",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://hsnlabs.ai/assets/brand/lockups/hsnlabs-lockup-horizontal-light.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://hsnlabs.ai/blog/pt/post/context-engineering-engenharia-de-contexto-agentes/"
+  }
+}
+</script>
+
+</head>
+
+<body>
+    <!-- FIXED / STICKY HEADER -->
+    <header class="header-nav" id="component-header">
+        <div class="container header-container">
+            <!-- block header -->
+<div class="blog-header-inner">
+  <div class="blog-header-brand-group">
+    
+    <a href="https://hsnlabs.ai/" class="blog-brand-link" title="hsnlabs">
+      <img src="../../../assets/brand/lockups/hsnlabs-lockup-horizontal-light.png" alt="hsnlabs" class="blog-brand-logo">
+    </a>
+    <span class="blog-brand-sep" aria-hidden="true">/</span>
+    <a href="../../" class="blog-badge-link" title="hsnlabs Blog">
+      <span class="blog-badge-text">Blog</span>
+    </a>
+    
+  </div>
+
+  <nav class="blog-header-menu" aria-label="Main Navigation">
+    
+    <a href="../../" class="blog-nav-link ">Posts</a>
+    <a href="https://hsnlabs.ai/bootcamp/" class="blog-nav-link">Agentic Bootcamp™</a>
+    <a href="https://hsnlabs.ai/advisory/" class="blog-nav-link">Advisory</a>
+    
+  </nav>
+
+  <div class="blog-header-actions">
+    <button class="blog-action-icon blog-search-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" title="Buscar posts" aria-label="Buscar posts">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="11" cy="11" r="8"></circle>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+      </svg>
+    </button>
+    
+    <a href="../../../feed_rss_created.xml" class="blog-action-icon blog-rss-link" title="RSS Feed 2.0" target="_blank" rel="noopener" aria-label="RSS Feed">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M6.18 15.64a2.18 2.18 0 0 1 2.18 2.18C8.36 19 7.38 20 6.18 20C5 20 4 19 4 17.82a2.18 2.18 0 0 1 2.18-2.18M4 4.44A15.56 15.56 0 0 1 19.56 20h-2.83A12.73 12.73 0 0 0 4 7.27V4.44m0 5.66a9.9 9.9 0 0 1 9.9 9.9h-2.83A7.07 7.07 0 0 0 4 12.93v-2.83z"/>
+      </svg>
+    </a>
+
+    <a href="https://github.com/hsnlabs-ai" class="header-github-link" target="_blank" rel="noopener" title="View GitHub">
+      <svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.161 22 16.416 22 12c0-5.523-4.477-10-10-10z"/></svg>
+      <span>hsnlabs</span>
+    </a>
+
+    
+    <div class="lang-switch">
+      <a href="../../.." class="lang-item">EN</a>
+      <span class="lang-sep">·</span>
+      <span class="lang-item active">PT</span>
+    </div>
+    <a href="https://hsnlabs.ai/bootcamp/" class="btn btn-primary blog-header-cta">Conhecer o Agentic Bootcamp™</a>
+    
+  </div>
+</div>
+<!-- endblock -->
+        </div>
+    </header>
+
+    <div class="blog-body-wrapper">
+        <main class="blog-main-content">
+            <div class="container search-container-wrap"><!-- block search -->
+<div class="collapse" id="collapseExample">
+    <div role="search" class="search-box">
+        <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+            <input type="text" name="q" class="search-query"
+            placeholder="Search docs" title="Type search term here" />
+        </form>
+    </div>
+</div>
+<!-- endblock -->
+            </div>
+
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 d-none d-md-block" id="component-sidebar">
+                        <!-- block sidebar -->
+<div class="navbar-expand-md" role="complementary">
+    
+    
+</div>
+
+<!-- block blog_sidebar -->
+
+
+
+<div class="blog-sidebar" id="component-blog-sidebar">
+
+    <div class="blog-sidebar-widget" style="background: var(--surface-card); border: 1px solid var(--hairline); padding: 18px 16px; margin-bottom: 24px; position: relative; overflow: hidden; isolation: isolate; box-shadow: 0 1px 4px rgba(0,0,0,0.02);">
+        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
+            <div class="founder-callout-avatar" data-initial-index="0" style="width: 44px; height: 44px; border: 1px solid var(--hairline); flex-shrink: 0; overflow: hidden; background: #f0efed;">
+                <img src="https://hsnlabs.ai/assets/images/author/pool/hugo_01.jpg" alt="Hugo S. Nascimento" width="44" height="44" style="display: block; width: 100%; height: 100%; object-fit: cover;" />
+            </div>
+            <div>
+                <div style="font-size: 0.72rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted);">Liderança Técnica</div>
+                <div style="font-size: 0.88rem; font-weight: 500; color: var(--ink); line-height: 1.2;">Compartilhe com Hugo, CPTO</div>
+            </div>
+        </div>
+        <a href="https://hsnlabs.ai/#contact" style="display: block; text-align: center; background: #ffffff; color: var(--ink); border: 1px solid var(--hairline-strong); padding: 7px 12px; font-size: 0.8rem; font-weight: 500; text-decoration: none; transition: all 0.15s ease; white-space: nowrap;">
+            Iniciar Conversa
+        </a>
+    </div>
+
+    
+    <div class="blog-sidebar-widget">
+        <h3 class="blog-sidebar-widget-title">Posts Recentes</h3>
+        <ul class="blog-sidebar-list">
+            
+            <li>
+                <a href="../../../post/langsmith-evals-production-agents/">LangSmith and Production Evals: Measuring Agents Before Failures Hit Users</a>
+                
+                <div class="blog-sidebar-post-meta">
+                    <span class="blog-sidebar-date" data-date="2026-11-15">postado hoje</span>
+                </div>
+                
+            </li>
+            
+            <li>
+                <a href="../../../post/loop-engineering-controlling-agent-costs/">Loop Engineering: Controlling Production AI Agents Without Runaway Costs</a>
+                
+                <div class="blog-sidebar-post-meta">
+                    <span class="blog-sidebar-date" data-date="2026-11-14">há 1 dia</span>
+                </div>
+                
+            </li>
+            
+            <li>
+                <a href="../../../post/context-engineering-enterprise-agents/">Context Engineering for Production Enterprise AI Agents</a>
+                
+                <div class="blog-sidebar-post-meta">
+                    <span class="blog-sidebar-date" data-date="2026-11-13">há 2 dias</span>
+                </div>
+                
+            </li>
+            
+            <li>
+                <a href="../../../post/what-are-ai-agents-enterprise-production/">What Are AI Agents in Enterprise Production Beyond Chatbots</a>
+                
+                <div class="blog-sidebar-post-meta">
+                    <span class="blog-sidebar-date" data-date="2026-11-12">há 3 dias</span>
+                </div>
+                
+            </li>
+            
+            <li>
+                <a href="../../../post/langchain-vs-langgraph-vs-deep-agents/">LangChain vs LangGraph vs Deep Agents: Choosing the Right Production Layer</a>
+                
+                <div class="blog-sidebar-post-meta">
+                    <span class="blog-sidebar-date" data-date="2026-11-11">há 4 dias</span>
+                </div>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    
+    <div class="blog-sidebar-widget">
+        <h3 class="blog-sidebar-widget-title">Categorias</h3>
+        <ul class="blog-sidebar-list">
+            
+            <li><a href="../../../category/why-agents-fail/">Why Agents Fail</a></li>
+            
+            <li><a href="../../../category/agentic-ai/">Agentic AI</a></li>
+            
+            <li><a href="../../../category/future-of-work/">Future of Work</a></li>
+            
+        </ul>
+    </div>
+    
+
+    
+    <div class="blog-sidebar-widget">
+        <h3 class="blog-sidebar-widget-title">Tags</h3>
+        <div class="blog-sidebar-tags">
+            
+            <a class="blog-sidebar-tag" href="../../../tag/langsmith/">langsmith</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/evaluation/">evaluation</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/deep-agents/">deep-agents</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/observability/">observability</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/production/">production</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/loop-engineering/">loop-engineering</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/langgraph/">langgraph</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/guardrails/">guardrails</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/context-engineering/">context-engineering</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/agent-memory/">agent-memory</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/rag/">rag</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/ai-agents/">ai-agents</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/langchain/">langchain</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/enterprise/">enterprise</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/architecture/">architecture</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/comparison/">comparison</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/agent-harness/">agent-harness</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/future-of-work/">future-of-work</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/economics/">economics</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/c-suite/">c-suite</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/databricks/">databricks</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/data-contracts/">data-contracts</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/snowflake/">snowflake</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/canvas/">canvas</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/enterprise-agents/">enterprise-agents</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/methodology/">methodology</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/crm/">crm</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/model-context-protocol/">model-context-protocol</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/saas/">saas</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/bpo/">bpo</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/case-studies/">case-studies</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/roi/">roi</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/ebitda/">ebitda</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/ontology/">ontology</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/mcp/">mcp</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/python/">python</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/database/">database</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/sql/">sql</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/vector-database/">vector-database</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/ai-failures/">ai-failures</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/knowledge-graph/">knowledge-graph</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/data-engineering/">data-engineering</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/operational-ontology/">operational-ontology</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/deterministic-ai/">deterministic-ai</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/margins/">margins</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/consulting/">consulting</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/sprint/">sprint</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/artificial-intelligence/">artificial-intelligence</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/philosophy/">philosophy</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/hr/">hr</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/collections/">collections</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/hr-tech/">hr-tech</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/insurance/">insurance</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/arbitrage/">arbitrage</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/erp-support/">erp-support</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/helpdesk/">helpdesk</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/rpa/">rpa</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/automation/">automation</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/poc/">poc</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/latam-airlines/">latam-airlines</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/llm-judge/">llm-judge</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/audit/">audit</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/api-loops/">api-loops</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/erp/">erp</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/legacy-core/">legacy-core</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/mainframe/">mainframe</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/schema-drift/">schema-drift</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/state-machines/">state-machines</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/legacy-it/">legacy-it</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/reliability/">reliability</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/hsnlabs/">hsnlabs</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/manifesto/">manifesto</a>
+            
+        </div>
+    </div>
+    
+
+</div>
+
+<!-- endblock -->
+
+<!-- endblock -->
+                    </div>
+                    <div class="col-md-9 col-12" id="component-content">
+                        <!-- block content -->
+<section class="container post" id="component-content">
+    <article>
+        
+        <nav class="article-breadcrumb-nav" aria-label="Breadcrumb">
+            
+            <a href="../../" class="article-breadcrumb-back">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+                Todos os Posts
+            </a>
+            
+            
+            <span class="article-breadcrumb-sep">/</span>
+            
+                
+                <span class="article-breadcrumb-category">Agentic AI</span>
+                
+            
+            
+        </nav>
+
+        <header>
+            
+                <h1 class=" title" id="component-title">Context Engineering: engenharia de contexto para agentes em produção</h1>
+            
+        </header>
+        
+        
+        
+        <p class="page-dates">
+            
+                Publicado em 2026-11-13
+            
+        </p>
+        
+        <hr class="page-dates-divider">
+        
+        
+        
+
+        
+        <figure class="article-hero-figure">
+            <img src="../../../assets/images/posts/context-engineering-enterprise-agents/cover.webp" alt="Context Engineering: engenharia de contexto para agentes em produção" loading="eager" />
+        </figure>
+        
+
+        <div class="article-content-body">
+            <p><em>Tempo de leitura: 8 minutos. Autor: Hugo S. Nascimento.</em></p>
+<!-- more -->
+
+<p><em>Contexto: A maioria dos pilotos corporativos de IA funciona bem no primeiro turno e colapsa por volta do décimo segundo. Quando agentes autônomos consultam APIs de ERP em português, leem tabelas fiscais e acumulam retornos extensos de ferramentas, a janela de contexto inchada dispara a latência, queima orçamento de tokens em USD e gera alucinações silenciosas. Partindo do estudo original da LangChain sobre context engineering para agentes, detalho como estruturamos arquiteturas de contexto em LangGraph na hsnlabs para operações brasileiras.</em></p>
+<blockquote>
+<p><strong>Resumo executivo para lideranças de tecnologia:</strong> Um LLM opera como uma CPU cuja memória de trabalho é a janela de contexto. Quando equipes de engenharia despejam instruções sem curadoria, trechos extensos de busca vetorial e cargas brutas de API dentro dessa janela finita, a acurácia cai mesmo nos modelos de fronteira. Ao governar o contexto como recurso de execução em quatro frentes, escrever, selecionar, comprimir e isolar, com implementação nativa em <strong>LangGraph</strong> e auditoria em <strong>LangSmith</strong>, empresas reduzem o desperdício em USD, aplicam mascaramento de dados para conformidade com a LGPD e estabilizam fluxos autônomos.</p>
+</blockquote>
+<hr />
+<h2 id="nota-de-diligencia-e-especificacoes-tecnicas">Nota de diligência e especificações técnicas</h2>
+<p>Os padrões arquiteturais e estratégias de <strong>context engineering</strong> detalhados neste post têm como base pesquisa primária de mercado e especificações oficiais de engenharia:</p>
+<ul>
+<li><strong>Estudo original da LangChain sobre context engineering:</strong> taxonomia das estratégias de escrever, selecionar, comprimir e isolar contexto em agentes de produção e pesquisa, publicada em <a href="https://www.langchain.com/blog/context-engineering-for-agents">Context Engineering for Agents pela LangChain</a>.</li>
+<li><strong>Especificação de orquestração com estado no LangGraph:</strong> checkpoints de curto prazo, armazenamentos persistentes entre sessões e isolamento multiagente, documentados em <a href="https://langchain-ai.github.io/langgraph/">LangGraph Technical Documentation</a>.</li>
+<li><strong>Plataforma de observabilidade e avaliação LangSmith:</strong> rastreamento granular de tokens e avaliação de regressões após ajustes de contexto, documentados em <a href="https://docs.smith.langchain.com/">LangSmith Technical Documentation</a>.</li>
+<li><strong>Prática de engenharia LangChain e LangGraph da hsnlabs:</strong> padrões de arquitetura corporativa e metodologia de implantação, disponíveis em <a href="https://hsnlabs.ai/langchain/">Engenharia de Produção LangChain e LangGraph da hsnlabs</a>.</li>
+</ul>
+<hr />
+<h2 id="1-por-que-a-janela-de-contexto-e-o-gargalo-de-producao-em-agentes-corporativos">1. Por que a janela de contexto é o gargalo de produção em agentes corporativos</h2>
+<p>Andrej Karpathy comparou LLMs modernos a um novo tipo de sistema operacional: o modelo funciona como a CPU e a janela de contexto equivale à memória RAM, atuando como memória de trabalho finita. Assim como o kernel de um sistema operacional decide o que permanece na RAM e o que sai para disco, <strong>context engineering</strong> é a disciplina de preencher a janela de contexto exclusivamente com a informação necessária para o próximo passo de execução.</p>
+<p>Em aplicações corporativas, essa memória de trabalho disputa espaço entre três categorias de dados:</p>
+<ul>
+<li><strong>Instructions:</strong> prompts de sistema, regras de alçada, exemplos de comportamento e schemas de ferramentas.</li>
+<li><strong>Knowledge:</strong> fatos verificados do negócio, políticas internas, tabelas tributárias e registros operacionais recuperados.</li>
+<li><strong>Tools:</strong> parâmetros intermediários e retornos brutos devolvidos por APIs externas e bancos de dados.</li>
+</ul>
+<figure class="article-editorial-figure">
+  <img src="../../../assets/diagrams/langchain/ctx_1.png" alt="Tipos de contexto que entram na janela de contexto do LLM: Instructions, Knowledge e Tools" loading="lazy">
+  <figcaption class="editorial-caption">Taxonomia de contexto publicada pela LangChain: Instructions, Knowledge e Tools disputam espaço finito na memória de trabalho do LLM.</figcaption>
+</figure>
+
+<p>Interfaces simples de chat escondem essa restrição. Agentes autônomos, ao contrário, executam ciclos contínuos que alternam raciocínio do modelo e chamadas a sistemas externos, acumulando cada retorno JSON e consulta SQL dentro da trajetória ativa.</p>
+<figure class="article-editorial-figure">
+  <img src="../../../assets/diagrams/langchain/ctx_2.png" alt="Ciclo de execução do agente alternando chamadas de LLM, tool calls e feedback de ferramentas" loading="lazy">
+  <figcaption class="editorial-caption">Ciclo de execução de agentes publicado pela LangChain: cada chamada de ferramenta injeta feedback bruto de volta na janela de contexto nos turnos seguintes.</figcaption>
+</figure>
+
+<p>Quando fluxos financeiros ou fiscais avançam por dezenas de turnos, o acúmulo sem curadoria destrói a confiabilidade em quatro modos de falha descritos por Drew Breunig e recorrentes em auditorias no Brasil:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Modo de falha</th>
+<th style="text-align: left;">Mecanismo dentro da janela de contexto</th>
+<th style="text-align: left;">Impacto na operação corporativa brasileira</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Context Poisoning</strong></td>
+<td style="text-align: left;">Uma alucinação inicial ou erro de retorno entra na memória de trabalho e persiste nos turnos seguintes</td>
+<td style="text-align: left;">Lançamentos em ERPs como SAP ou Totvs Protheus propagam o dado errado para contas a pagar e conciliações</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Context Distraction</strong></td>
+<td style="text-align: left;">Histórico excessivo sufoca os padrões aprendidos de raciocínio do modelo</td>
+<td style="text-align: left;">O agente ignora travas de alçada definidas no início do prompt e repete consultas redundantes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Context Confusion</strong></td>
+<td style="text-align: left;">Schemas supérfluos de ferramentas ou trechos irrelevantes enviesam a próxima decisão</td>
+<td style="text-align: left;">Modelos acionam endpoints errados de mutação ou misturam regras de filiais distintas em uma mesma resposta</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Context Clash</strong></td>
+<td style="text-align: left;">Fatos contraditórios de buscas diferentes ou turnos antigos coexistem no mesmo prompt</td>
+<td style="text-align: left;">Agentes de aprovação recebem limites de crédito divergentes e travam em laços sem convergência</td>
+</tr>
+</tbody>
+</table>
+<p>Por esse motivo, despejar notas fiscais ou extrações brutas de banco em um repositório vetorial colapsa em produção, padrão analisado em <a href="/blog/pt/post/por-que-rag-falha-em-erp/">Por Que RAG Tradicional Falha em ERPs Financeiros</a>. Janelas maiores não corrigem falta de curadoria, apenas multiplicam a fatura em USD a cada turno.</p>
+<hr />
+<h2 id="2-as-quatro-estrategias-de-context-engineering-escrever-selecionar-comprimir-e-isolar">2. As quatro estratégias de context engineering: escrever, selecionar, comprimir e isolar</h2>
+<p>Para impedir que janelas infladas degradem a precisão e o custo operacional, equipes de engenharia organizam o <strong>context engineering</strong> em quatro operações complementares em torno de um estado persistente.</p>
+<pre class="mermaid"><code>flowchart TD
+    S["Estado de Execução em LangGraph&lt;br&gt;Checkpoints de Memória, Schema Tipado e Telemetria de Tokens"]
+    W["1. Escrever Contexto&lt;br&gt;Persistir scratchpads e memórias entre sessões fora da janela ativa"]
+    L["2. Selecionar Contexto&lt;br&gt;Recuperar ferramentas, regras e dados verificados por etapa"]
+    C["3. Comprimir Contexto&lt;br&gt;Sumarizar trajetórias e podar retornos extensos de APIs"]
+    I["4. Isolar Contexto&lt;br&gt;Separar cargas em subagentes, sandboxes e campos de estado"]
+    W --&gt; S
+    S --&gt; L
+    L --&gt; C
+    C --&gt; I
+    I --&gt; S</code></pre>
+<h3 id="escrever-contexto-fora-da-janela-com-scratchpads-e-memorias">Escrever contexto fora da janela com scratchpads e memórias</h3>
+<p>Escrever contexto significa salvar registros intermediários fora da janela do modelo para que o LLM não carregue todo o histórico na memória ativa:</p>
+<ul>
+<li><strong>Scratchpads de sessão:</strong> durante uma apuração fiscal ou conferência de pedidos em português, o agente grava planos de trabalho, chaves de notas e totalizadores em arquivo ou campo dedicado do estado. No pesquisador multiagente da Anthropic, o coordenador grava seu plano em memória logo no início para evitar perda de rumo caso a janela ultrapasse duzentos mil tokens.</li>
+<li><strong>Memórias entre sessões com governança LGPD:</strong> seguindo referências como Reflexion e Generative Agents, produtos como ChatGPT, Cursor e Windsurf sintetizam memórias duráveis a partir de interações passadas. Em ambientes corporativos brasileiros, antes de persistir memórias de longo prazo, o fluxo precisa aplicar mascaramento de dados pessoais como CPF, CNPJ de sócios, e-mail e telefone para atender à LGPD sem contaminar sessões futuras.</li>
+</ul>
+<h3 id="selecionar-contexto-relevante-sem-sobrecarregar-ferramentas-ou-rag">Selecionar contexto relevante sem sobrecarregar ferramentas ou RAG</h3>
+<p>Gravar contexto só gera ganho quando o agente recupera apenas o recorte necessário em cada nó da execução:</p>
+<ul>
+<li><strong>Leitura granular do scratchpad:</strong> quando o scratchpad reside em um objeto tipado de estado e não em texto corrido, a engenharia define com precisão quais campos ficam visíveis ao modelo em cada etapa.</li>
+<li><strong>Seleção de memórias procedurais, episódicas e semânticas:</strong> agentes de código usam arquivos objetivos como <code>CLAUDE.md</code> ou arquivos de regras do Cursor e Windsurf para instruções procedurais, enquanto fatos amplos exigem índices vetoriais ou grafos de conhecimento. Seleção mal calibrada quebra a confiança do usuário, como mostrou Simon Willison ao relatar que o ChatGPT puxou sua localização salva da memória para injetá-la em uma imagem sem pedido explícito.</li>
+<li><strong>RAG sobre descrições de ferramentas:</strong> entregar dezenas de ferramentas de ERP com descrições sobrepostas confunde o modelo. Aplicar busca semântica sobre descrições de ferramentas para expor apenas o subconjunto relevante triplicou a precisão de escolha de ferramentas em estudos recentes.</li>
+<li><strong>Além do RAG genérico em consultas brasileiras:</strong> como destacou Varun da Windsurf, indexar código ou documentos corporativos não equivale a recuperar contexto útil. Em escala, similaridade pura por embeddings perde confiabilidade e precisa combinar análise estrutural, busca exata por palavras-chave, grafos de conhecimento e reordenamento por relevância, mesma arquitetura aplicada em <a href="/blog/pt/post/como-construir-ontologia-operacional-python-mcp/">Como Construir uma Ontologia Operacional de Negócios em Python com Pydantic e MCP</a>.</li>
+</ul>
+<h3 id="comprimir-contexto-com-sumarizacao-e-poda-deterministica">Comprimir contexto com sumarização e poda determinística</h3>
+<p>Consultas extensas a ERPs e integrações de estoque devolvem dezenas de colunas inúteis para a decisão. Comprimir mantém apenas o sinal indispensável e reduz o gasto em USD por transação:</p>
+<ul>
+<li><strong>Sumarização de trajetória e fronteiras:</strong> ferramentas como o Claude Code executam compactação automática ao atingir noventa e cinco por cento da janela de contexto, resumindo a conversa acumulada. Também é eficaz aplicar sumarização na saída de ferramentas pesadas ou na passagem entre agentes, técnica na qual a Cognition treina modelos específicos para preservar decisões críticas sem descartar exceções.</li>
+<li><strong>Poda determinística de histórico:</strong> diferente da sumarização por LLM, a poda filtra mensagens antigas, cabeçalhos redundantes e campos fiscais inertes por regras fixas ou modelos podadores como o Provence, cortando latência e custo sem chamada extra de inferência.</li>
+</ul>
+<h3 id="isolar-contexto-entre-subagentes-sandboxes-e-schema-de-estado">Isolar contexto entre subagentes, sandboxes e schema de estado</h3>
+<p>Isolar contexto separa fisicamente grandes volumes de dados para que ruídos operacionais não disputem atenção no prompt principal:</p>
+<ul>
+<li><strong>Especialização multiagente:</strong> bibliotecas como OpenAI Swarm e o pesquisador paralelo da Anthropic atribuem a cada subagente suas próprias ferramentas, instruções e janela privada. A Anthropic observou ganho de qualidade sobre agentes únicos, com a ressalva de que ramificações paralelas exigem coordenação rigorosa e podem consumir até quinze vezes mais tokens do que um fluxo simples.</li>
+<li><strong>Isolamento em sandboxes de execução:</strong> o CodeAgent da HuggingFace executa código gerado em um sandbox isolado e devolve ao LLM apenas o valor resumido de retorno, mantendo tabelas extensas, planilhas ou arquivos binários em variáveis de ambiente fora do prompt.</li>
+<li><strong>Particionamento por schema de estado:</strong> mesmo em grafos com um único agente, um schema estruturado permite expor apenas mensagens sintetizadas ao modelo enquanto cargas completas de pedidos, tokens de auditoria e registros mascarados para LGPD trafegam isolados em campos específicos do estado.</li>
+</ul>
+<hr />
+<blockquote>
+<p><strong>[Agentes] x [a Gente]</strong> — Fora do hype, discutimos como Agentic AI multiplica e alavanca a capacidade laboral humana. Análises quinzenais publicadas na newsletter de Hugo S. Nascimento no LinkedIn com mais de 1.600 assinantes. <a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7397999984089935872">Acompanhar no LinkedIn ↗</a></p>
+</blockquote>
+<h2 id="3-como-implementar-context-engineering-com-langgraph-e-langsmith">3. Como implementar context engineering com LangGraph e LangSmith</h2>
+<div style="display: flex; align-items: center; gap: 14px; margin: 20px 0; padding: 14px 18px; background: #0E1017; border: 1px solid #222736;">
+  <img src="../../../assets/stack/langgraph-oss-lockup-dark.svg" alt="Motor LangGraph OSS" style="height: 28px; width: auto;" loading="lazy">
+  <span style="font-size: 0.85rem; color: #94A3B8; font-family: 'Inter', sans-serif;">Orquestração de baixo nível com estado para controlar escrita, seleção, compressão e isolamento de contexto.</span>
+</div>
+
+<p>Ajustar prompts às cegas não funciona quando não há visibilidade sobre onde os tokens estão sendo queimados. Antes de otimizar janelas, a equipe precisa de duas bases no <strong>LangSmith</strong>: rastreamento de consumo de tokens por nó para localizar gargalos de custo em USD, e suítes de avaliação para comprovar que comprimir ou podar contexto não introduziu regressões silenciosas.</p>
+<p>Como o <strong>LangGraph</strong> estrutura agentes como grafos cíclicos explícitos que trafegam um objeto de estado tipado entre nós, cada estratégia de <strong>context engineering</strong> se traduz diretamente em recursos nativos da arquitetura:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Estratégia</th>
+<th style="text-align: left;">Recurso no LangGraph e ecossistema</th>
+<th style="text-align: left;">Efeito prático em produção no Brasil</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Escrever</strong></td>
+<td style="text-align: left;">Checkpoints por sessão para scratchpads; Store entre sessões e <strong>LangMem</strong> para memória durável</td>
+<td style="text-align: left;">Salva planos de consulta e aprendizados após mascaramento LGPD sem poluir o prompt ativo</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Selecionar</strong></td>
+<td style="text-align: left;">Projeção seletiva de estado por nó; busca em Store e filtragem semântica <strong>LangGraph Bigtool</strong></td>
+<td style="text-align: left;">Entrega ao modelo apenas as regras tributárias, campos e ferramentas MCP necessários na etapa atual</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Comprimir</strong></td>
+<td style="text-align: left;">Utilitários nativos de poda de mensagens, nós de sumarização e pós-processadores de saída</td>
+<td style="text-align: left;">Enxuga retornos extensos de ERPs em português antes que inflem a janela e a fatura em USD</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Isolar</strong></td>
+<td style="text-align: left;">Particionamento de campos no schema de estado, sandboxes E2B ou Pyodide e subgrafos Supervisor ou Swarm</td>
+<td style="text-align: left;">Mantém anexos, extratos brutos e sub-rotinas de pesquisa isolados da janela principal de decisão</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="4-da-auditoria-de-tokens-a-producao-em-4-etapas">4. Da auditoria de tokens à produção em 4 etapas</h2>
+<p>Na hsnlabs, implantamos pipelines de <strong>context engineering</strong> para que lideranças de engenharia reduzam custos em dólar e aumentem a previsibilidade operacional sem reescrever sistemas legados:</p>
+<ol>
+<li><strong>Etapa 01 · Auditoria de tokens e trajetórias:</strong> instrumentamos rastros reais no LangSmith para medir quanto do orçamento em USD vai para instruções, buscas vetoriais e retornos de ERP, identificando pontos de distração e conflito.</li>
+<li><strong>Etapa 02 · Desenho de schema de estado e isolamento:</strong> segregamos cargas pesadas e dados sensíveis sob LGPD em campos isolados de estado no LangGraph e em sandboxes de execução, mantendo o histórico do LLM enxuto.</li>
+<li><strong>Etapa 03 · Portões de seleção e compressão:</strong> ativamos filtragem semântica de ferramentas, busca híbrida apoiada em ontologia e regras determinísticas de poda ou sumarização nas fronteiras de integração.</li>
+<li><strong>Etapa 04 · Entrega validada por avaliações contínuas:</strong> validamos cada ajuste de contexto contra conjuntos de regressão em CI/CD antes da publicação, entregando grafos, políticas de memória e painéis de telemetria à equipe interna.</li>
+</ol>
+<hr />
+<h2 id="recursos-estrategicos-e-leituras-relacionadas">Recursos estratégicos e leituras relacionadas</h2>
+<ul>
+<li><a href="https://hsnlabs.ai/langchain/">Engenharia de Produção LangChain e LangGraph da hsnlabs</a></li>
+<li><a href="https://www.langchain.com/blog/context-engineering-for-agents">Context Engineering for Agents: estudo original da LangChain</a></li>
+<li><a href="/blog/pt/post/arquitetura-agentes-braintrust-evals-cicd-langgraph/">Braintrust Evals e LangGraph: Substituindo Testes Manuais por CI/CD Determinístico</a></li>
+<li><a href="/blog/pt/post/por-que-rag-falha-em-erp/">Por Que RAG Tradicional Falha em ERPs Financeiros</a></li>
+<li><a href="/blog/pt/post/como-construir-ontologia-operacional-python-mcp/">Como Construir uma Ontologia Operacional de Negócios em Python com Pydantic e MCP</a></li>
+</ul>
+<hr />
+<p><em>Artigo publicado originalmente em <a href="https://hsnlabs.ai/blog/pt/post/context-engineering-engenharia-de-contexto-agentes/">hsnlabs</a>. Autor: <a href="https://hsnlabs.ai">Hugo S. Nascimento</a>.</em></p>
+<link rel="alternate" hreflang="en" href="https://hsnlabs.ai/blog/post/context-engineering-enterprise-agents/">
+<link rel="alternate" hreflang="x-default" href="https://hsnlabs.ai/blog/post/context-engineering-enterprise-agents/">
+<link rel="alternate" hreflang="pt-BR" href="https://hsnlabs.ai/blog/pt/post/context-engineering-engenharia-de-contexto-agentes/">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "Context Engineering: engenharia de contexto para agentes em produ\u00e7\u00e3o",
+  "url": "https://hsnlabs.ai/blog/pt/post/context-engineering-engenharia-de-contexto-agentes/",
+  "description": "Como context engineering em LangGraph aplica escrever, selecionar, comprimir e isolar contexto em ERPs brasileiros para cortar desperd\u00edcio de tokens em USD e proteger dados sob LGPD.",
+  "inLanguage": "pt-BR",
+  "author": {
+    "@type": "Person",
+    "name": "Hugo S. Nascimento",
+    "url": "https://hsnlabs.ai"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "hsnlabs",
+    "url": "https://hsnlabs.ai",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://hsnlabs.ai/assets/brand/lockups/hsnlabs-lockup-horizontal-light.png"
+    }
+  },
+  "datePublished": "2026-11-13"
+}
+</script>
+
+        </div>
+
+        
+        <!-- Founder Callout Component -->
+        <div class="founder-callout-card">
+            <div style="display: flex; align-items: center; gap: 14px; flex-shrink: 0;">
+                <div class="founder-callout-avatar" data-initial-index="0">
+                    <img src="https://hsnlabs.ai/assets/images/author/pool/hugo_01.jpg" alt="Hugo S. Nascimento" width="52" height="52" class="founder-avatar-img" />
+                </div>
+                <div>
+                    
+                    <div class="founder-callout-label">Tem um projeto em mente?</div>
+                    <div class="founder-callout-name">Compartilhe com Hugo, CPTO</div>
+                    
+                </div>
+            </div>
+
+            <div class="founder-cred-group">
+                
+                <a href="https://hsnlabs.ai/langchain/" class="founder-cred-item" title="LangChain Certified Engineer">
+                    <img src="https://hsnlabs.ai/assets/brand/langchain/lc-lockup-black.svg" alt="LangChain" class="founder-cred-logo">
+                    <span class="founder-cred-sub">Certificado <span class="founder-cred-arrow">↗</span></span>
+                </a>
+                <a href="https://hsnlabs.ai/snowflake/" class="founder-cred-item" title="Snowflake AI Data Cloud Partner">
+                    <img src="https://hsnlabs.ai/assets/brand/snowflake/snowflake-lockup-blue.svg" alt="Snowflake" class="founder-cred-logo">
+                    <span class="founder-cred-sub">Parceiro <span class="founder-cred-arrow">↗</span></span>
+                </a>
+                <a href="https://hsnlabs.ai/databricks/" class="founder-cred-item" title="Databricks Lakehouse &amp; Mosaic AI Partner">
+                    <img src="https://hsnlabs.ai/assets/brand/databricks/databricks-lockup-color.svg" alt="Databricks" class="founder-cred-logo">
+                    <span class="founder-cred-sub">Parceiro <span class="founder-cred-arrow">↗</span></span>
+                </a>
+                
+            </div>
+
+            
+            <a href="https://hsnlabs.ai/#contact" class="founder-callout-btn" style="white-space: nowrap; flex-shrink: 0;">
+                Iniciar Conversa
+            </a>
+            
+        </div>
+
+        <div class="article-footer-nav">
+            
+            <a href="../../" class="btn btn-outline article-nav-return-btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+                Voltar para Todos os Posts
+            </a>
+            <a href="https://hsnlabs.ai/bootcamp/" class="btn btn-primary article-nav-cta-btn">
+                Conhecer o Agentic Bootcamp™ →
+            </a>
+            
+        </div>
+        
+    </article>
+
+    
+</section>
+<!-- endblock -->
+                    </div>
+                </div>
+            </div>
+            
+        </main>
+
+        
+        <!-- block preview -->
+<!-- endblock -->
+        
+
+        
+        <!-- block footer -->
+<footer class="site-footer" id="component-footer">
+  <div class="container footer-container">
+    
+    <!-- Editorial & SEO Sitemap Grid -->
+    <div class="footer-seo-grid">
+      
+      
+      <!-- Brand & Positioning Column (PT) -->
+      <div class="footer-seo-col brand-col">
+        <a href="https://hsnlabs.ai/" class="footer-brand-link" title="hsnlabs">
+          <img src="../../../assets/brand/lockups/hsnlabs-lockup-horizontal-light.png" alt="hsnlabs" class="footer-brand-logo">
+        </a>
+        <p class="footer-brand-tagline">
+          A hsnlabs é o seu parceiro de transformação em IA corporativa, operacionalizando agentes autônomos sobre sistemas legados.
+        </p>
+        <p class="footer-brand-meta">
+          Boutique de Arquitetura de IA<br>
+          São Paulo, Brasil · Rua Pais Leme, 215, Pinheiros<br>
+          <a href="mailto:hugo@hsnlabs.ai" class="footer-link-subtle">hugo@hsnlabs.ai</a>
+        </p>
+        <div class="footer-badges-row">
+          <a href="../../../feed_rss_created.xml" class="footer-rss-chip" target="_blank" rel="noopener">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" style="display:inline-block;vertical-align:-1px;margin-right:4px;"><path d="M6.18 15.64a2.18 2.18 0 0 1 2.18 2.18C8.36 19 7.38 20 6.18 20C5 20 4 19 4 17.82a2.18 2.18 0 0 1 2.18-2.18M4 4.44A15.56 15.56 0 0 1 19.56 20h-2.83A12.73 12.73 0 0 0 4 7.27V4.44m0 5.66a9.9 9.9 0 0 1 9.9 9.9h-2.83A7.07 7.07 0 0 0 4 12.93V10.1z"/></svg>RSS Feed 2.0
+          </a>
+          <a href="../../../llms.txt" class="footer-llms-chip">llms.txt para LLMs e Agentes</a>
+        </div>
+      </div>
+
+      <!-- Pillar 1: Why Agents Fail (PT) -->
+      <div class="footer-seo-col">
+        <div class="footer-col-header">Por Que Agentes Falham</div>
+        <ul class="footer-link-list">
+          <li><a href="../o-que-e-uma-ontologia-para-agentes-ia/">O Que É uma Ontologia para Agentes de IA</a></li>
+          <li><a href="../cemiterio-de-pocs/">O Cemitério de PoCs Enterprise</a></li>
+          <li><a href="../deriva-de-integracao/">Deriva de Integração em Produção</a></li>
+          <li><a href="../por-que-rag-falha-em-erp/">Por Que RAG Falha em ERPs Financeiros</a></li>
+          <li><a href="../falacia-llm-como-juiz/">A Falácia do LLM como Juiz no Setor Bancário</a></li>
+        </ul>
+      </div>
+
+      <!-- Pillar 2: Agentic AI (PT) -->
+      <div class="footer-seo-col">
+        <div class="footer-col-header">Agentic AI</div>
+        <ul class="footer-link-list">
+          <li><a href="../como-construir-ontologia-enterprise-do-zero/">Como Construir uma Ontologia Enterprise do Zero</a></li>
+          <li><a href="../isolamento-perimetro-mcp-contratos-dados/">Isolamento de Perímetro e MCP</a></li>
+          <li><a href="../sistemas-legados-motor-execucao/">Sistemas Legados como Motor de Execução</a></li>
+          <li><a href="../estudo-caso-latam-airlines/">LATAM Airlines: Motor de Margem a 3%</a></li>
+          <li><a href="../agentes-ilimitados-maquinas-estados-finitos/">Máquinas de Estados vs Loops de API</a></li>
+          <li><a href="../arquitetura-agentes-databricks-lakehouse-unity-catalog-langgraph/">Databricks Lakehouse e LangGraph</a></li>
+          <li><a href="https://hsnlabs.ai/canvas/" target="_blank" rel="noopener">The Agentic Canvas™ ↗</a></li>
+        </ul>
+      </div>
+
+      <!-- Pillar 3: Future of Work (PT) -->
+      <div class="footer-seo-col">
+        <div class="footer-col-header">Futuro do Trabalho</div>
+        <ul class="footer-link-list">
+          <li><a href="../matriz-substituicao-bpo/">Matriz de Substituição de BPO</a></li>
+          <li><a href="../guarda-do-balanco-extincao-bpo/">Extinção do BPO de Recursos Humanos</a></li>
+          <li><a href="../colapso-rpa-legado/">O Colapso do RPA Legado</a></li>
+          <li><a href="../playbook-c-suite-protecao-margem/">O Playbook de Transicao da Diretoria</a></li>
+          <li><a href="../custo-ia-ilimitada-ti-legada/">O Custo da IA Ilimitada na TI Legada</a></li>
+          <li><a href="../manifesto/">Por Que Construí a hsnlabs</a></li>
+          <li style="margin-top: 14px; padding-top: 10px; border-top: 1px solid var(--hairline);">
+            <div style="font-size: 11px; font-family: var(--font-mono); color: var(--cyan-text); text-transform: uppercase; margin-bottom: 6px;">Newsletter</div>
+            <div style="display: flex; gap: 10px; align-items: center; justify-content: space-between; flex-wrap: wrap;">
+              <div style="display: flex; gap: 10px; align-items: center; min-width: 145px; flex: 1 1 auto;">
+                <img src="../../../assets/brand/newsletter/agentes-x-gente.png" alt="[Agentes] x [a Gente]" style="width: 36px; height: 36px; border: 1px solid var(--hairline-strong); flex-shrink: 0; display: block; border-radius: 0;">
+                <div style="min-width: 0;">
+                  <div style="font-weight: 600; font-size: 13px; color: var(--ink); line-height: 1.2;">[Agentes] x [a Gente]</div>
+                  <div style="font-size: 10.5px; color: var(--muted); margin-top: 2px;">1.600+ assinantes</div>
+                </div>
+              </div>
+              <a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7397999984089935872" target="_blank" rel="noopener" aria-label="Assinar [Agentes] x [a Gente] no LinkedIn" style="background: #ffffff; border: 1px solid var(--hairline-strong); color: var(--ink); padding: 5px 10px; font-size: 11px; font-weight: 500; border-radius: 0; text-decoration: none; display: inline-flex; align-items: center; gap: 5px; flex-shrink: 0; transition: all 0.15s ease; box-shadow: 0 1px 2px rgba(0,0,0,0.03);">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="#0A66C2" aria-hidden="true"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+                <span>LinkedIn</span>
+              </a>
+            </div>
+            <div style="font-size: 10.5px; color: var(--muted); margin-top: 6px; line-height: 1.35;">
+              Fora do hype, discutimos como Agentic AI multiplica e alavanca a capacidade laboral humana.
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      
+
+    </div>
+
+    <!-- Minimalist Bottom Line -->
+    <div class="footer-bottom-bar">
+      <div class="footer-bottom-copy">
+        
+        2026 hsnlabs. Adoção de Agentic AI.
+        
+      </div>
+      <div class="footer-bottom-nav">
+        <a href="https://github.com/hsnlabs-ai" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/company/hsnlabs" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://x.com/hsnlabs" target="_blank" rel="noopener">X</a>
+        <a href="../../../feed_rss_created.xml">RSS Feed</a>
+        <a href="../../../feed_json_created.json">JSON Feed</a>
+        <a href="../../../sitemap.xml">Sitemap</a>
+        
+        <a href="https://hsnlabs.ai/canvas/">The Agentic Canvas™</a>
+        <a href="https://hsnlabs.ai/bootcamp/">Bootcamp</a>
+        <a href="https://hsnlabs.ai/advisory/">Advisory</a>
+        <a href="https://hsnlabs.ai/langchain/">LangChain</a>
+        <a href="https://hsnlabs.ai/snowflake/">Snowflake</a>
+        <a href="https://hsnlabs.ai/databricks/">Databricks</a>
+        <a href="https://hsnlabs.ai/braintrust/">Braintrust</a>
+        <a href="https://hsnlabs.ai/privacy-policy/">Política de Privacidade</a>
+        <a href="https://hsnlabs.ai/modern-slavery-statement/">Conformidade</a>
+        
+      </div>
+    </div>
+
+  </div>
+</footer>
+<!-- endblock -->
+        
+    </div>
+    <script src="../../../assets/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="../../../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../../../assets/js/main.min.js"></script>
+    <script src="../../../assets/js/pagination.js" defer></script>
+    <script src="../../../assets/js/relative_dates.js" defer></script>
+    <script src="../../../assets/js/mermaid_init.js" defer></script>
+    <script src="../../../assets/js/founder-rotation.js" defer></script>
+    <script src="../../../assets/js/canvas_cta_tracking.js" defer></script>
+    <script src="../../../search/main.js" defer></script>
+
+</body>
+
+</html>

@@ -13,6 +13,138 @@
     "language": "en",
     "items": [
         {
+            "id": "https://hsnlabs.ai/blog/post/langsmith-evals-production-agents/",
+            "url": "https://hsnlabs.ai/blog/post/langsmith-evals-production-agents/",
+            "title": "LangSmith and Production Evals: Measuring Agents Before Failures Hit Users",
+            "content_html": "How LangSmith observability, targeted trajectory evals, and efficiency ratios catch Deep Agents failures before they hit enterprise users.",
+            "image": "https://hsnlabs.ai/blog/assets/images/posts/langsmith-evals-production-agents/cover.webp",
+            "date_modified": "2026-11-15T00:00:00+00:00",
+            "date_published": "2026-11-15T00:00:00+00:00",
+            "authors": [
+                {
+                    "name": "Hugo S. Nascimento"
+                }
+            ],
+            "tags": [
+                "Why Agents Fail",
+                "deep-agents",
+                "evaluation",
+                "langsmith",
+                "observability",
+                "production"
+            ]
+        },
+        {
+            "id": "https://hsnlabs.ai/blog/post/loop-engineering-controlling-agent-costs/",
+            "url": "https://hsnlabs.ai/blog/post/loop-engineering-controlling-agent-costs/",
+            "title": "Loop Engineering: Controlling Production AI Agents Without Runaway Costs",
+            "content_html": "How to stack the four loops of loop engineering with LangGraph and LangSmith to prevent runaway token burn, verify outputs, and compound reliability in production.",
+            "image": "https://hsnlabs.ai/blog/assets/images/posts/loop-engineering-controlling-agent-costs/cover.webp",
+            "date_modified": "2026-11-14T00:00:00+00:00",
+            "date_published": "2026-11-14T00:00:00+00:00",
+            "authors": [
+                {
+                    "name": "Hugo S. Nascimento"
+                }
+            ],
+            "tags": [
+                "Why Agents Fail",
+                "guardrails",
+                "langgraph",
+                "langsmith",
+                "loop-engineering",
+                "production"
+            ]
+        },
+        {
+            "id": "https://hsnlabs.ai/blog/post/context-engineering-enterprise-agents/",
+            "url": "https://hsnlabs.ai/blog/post/context-engineering-enterprise-agents/",
+            "title": "Context Engineering for Production Enterprise AI Agents",
+            "content_html": "Why long-running enterprise agents fail from bloated context windows, and how write, select, compress, and isolate strategies in LangGraph control cost and accuracy.",
+            "image": "https://hsnlabs.ai/blog/assets/images/posts/context-engineering-enterprise-agents/cover.webp",
+            "date_modified": "2026-11-13T00:00:00+00:00",
+            "date_published": "2026-11-13T00:00:00+00:00",
+            "authors": [
+                {
+                    "name": "Hugo S. Nascimento"
+                }
+            ],
+            "tags": [
+                "Agentic AI",
+                "agent-memory",
+                "context-engineering",
+                "langgraph",
+                "production",
+                "rag"
+            ]
+        },
+        {
+            "id": "https://hsnlabs.ai/blog/post/what-are-ai-agents-enterprise-production/",
+            "url": "https://hsnlabs.ai/blog/post/what-are-ai-agents-enterprise-production/",
+            "title": "What Are AI Agents in Enterprise Production Beyond Chatbots",
+            "content_html": "Why an AI agent is defined by LLM-owned control flow, the six autonomy levels from chains to state machines, and what LangSmith observability requires in production.",
+            "image": "https://hsnlabs.ai/blog/assets/images/posts/what-are-ai-agents-enterprise-production/cover.webp",
+            "date_modified": "2026-11-12T00:00:00+00:00",
+            "date_published": "2026-11-12T00:00:00+00:00",
+            "authors": [
+                {
+                    "name": "Hugo S. Nascimento"
+                }
+            ],
+            "tags": [
+                "Agentic AI",
+                "ai-agents",
+                "architecture",
+                "enterprise",
+                "langchain",
+                "langgraph"
+            ]
+        },
+        {
+            "id": "https://hsnlabs.ai/blog/post/langchain-vs-langgraph-vs-deep-agents/",
+            "url": "https://hsnlabs.ai/blog/post/langchain-vs-langgraph-vs-deep-agents/",
+            "title": "LangChain vs LangGraph vs Deep Agents: Choosing the Right Production Layer",
+            "content_html": "Compare LangChain, LangGraph, and Deep Agents in production. Learn when to choose runtime determinism, middleware loops, or an opinionated agent harness.",
+            "image": "https://hsnlabs.ai/blog/assets/images/posts/langchain-vs-langgraph-vs-deep-agents/cover.webp",
+            "date_modified": "2026-11-11T00:00:00+00:00",
+            "date_published": "2026-11-11T00:00:00+00:00",
+            "authors": [
+                {
+                    "name": "Hugo S. Nascimento"
+                }
+            ],
+            "tags": [
+                "Agentic AI",
+                "architecture",
+                "comparison",
+                "deep-agents",
+                "langchain",
+                "langgraph"
+            ]
+        },
+        {
+            "id": "https://hsnlabs.ai/blog/post/what-is-agent-harness-production/",
+            "url": "https://hsnlabs.ai/blog/post/what-is-agent-harness-production/",
+            "title": "What Is an Agent Harness and Why Production Agents Fail Without It",
+            "content_html": "What an agent harness is, why raw LLMs fail in enterprise production without harness engineering, and how Deep Agents and LangGraph solve context rot and long-horizon loops.",
+            "image": "https://hsnlabs.ai/blog/assets/images/posts/what-is-agent-harness-production/cover.webp",
+            "date_modified": "2026-11-10T00:00:00+00:00",
+            "date_published": "2026-11-10T00:00:00+00:00",
+            "authors": [
+                {
+                    "name": "Hugo S. Nascimento"
+                }
+            ],
+            "tags": [
+                "Why Agents Fail",
+                "agent-harness",
+                "architecture",
+                "deep-agents",
+                "langgraph",
+                "production"
+            ]
+        },
+        {
             "id": "https://hsnlabs.ai/blog/post/the-high-ic-phenomenon/",
             "url": "https://hsnlabs.ai/blog/post/the-high-ic-phenomenon/",
             "title": "The High IC Phenomenon: Why Team Size No Longer Measures Productivity",
@@ -311,129 +443,6 @@
                 "c-suite",
                 "economics",
                 "margins"
-            ]
-        },
-        {
-            "id": "https://hsnlabs.ai/blog/post/how-to-build-operational-ontology-python-mcp/",
-            "url": "https://hsnlabs.ai/blog/post/how-to-build-operational-ontology-python-mcp/",
-            "title": "How to Build an Operational Business Ontology in Python with Pydantic and MCP",
-            "content_html": "Step-by-step engineering architecture to build an operational business ontology in pure Python using Pydantic schemas and Model Context Protocol actions without proprietary lock-in.",
-            "image": "https://hsnlabs.ai/blog/assets/images/posts/how-to-build-operational-ontology-python-mcp/cover.webp",
-            "date_modified": "2026-09-25T00:00:00+00:00",
-            "date_published": "2026-09-25T00:00:00+00:00",
-            "authors": [
-                {
-                    "name": "Hugo S. Nascimento"
-                }
-            ],
-            "tags": [
-                "Agentic AI",
-                "architecture",
-                "data-contracts",
-                "evaluation",
-                "production"
-            ]
-        },
-        {
-            "id": "https://hsnlabs.ai/blog/post/five-day-architecture-sprint/",
-            "url": "https://hsnlabs.ai/blog/post/five-day-architecture-sprint/",
-            "title": "Why Big 4 Slide Decks Fail on Agent Projects",
-            "content_html": "Why traditional Big 4 strategy slide decks fail to deliver working agentic software in complex enterprise production environments.",
-            "image": "https://hsnlabs.ai/blog/assets/images/posts/five-day-architecture-sprint/cover.webp",
-            "date_modified": "2026-09-22T00:00:00+00:00",
-            "date_published": "2026-09-22T00:00:00+00:00",
-            "authors": [
-                {
-                    "name": "Hugo S. Nascimento"
-                }
-            ],
-            "tags": [
-                "Agentic AI",
-                "case-studies",
-                "consulting",
-                "sprint"
-            ]
-        },
-        {
-            "id": "https://hsnlabs.ai/blog/post/kafka-metamorfose-ia-futuro-do-trabalho/",
-            "url": "https://hsnlabs.ai/blog/post/kafka-metamorfose-ia-futuro-do-trabalho/",
-            "title": "De 1915 \u00e0 Era da IA: Kafka, utilitarismo e o valor de quem trabalha",
-            "content_html": "Reflex\u00e3o sobre utilitarismo, desvaloriza\u00e7\u00e3o do trabalhador e o impacto de agentes de IA a partir de A Metamorfose de Franz Kafka.",
-            "image": "https://hsnlabs.ai/blog/assets/images/posts/kafka-metamorfose-ia-futuro-do-trabalho/cover.webp",
-            "date_modified": "2026-09-22T00:00:00+00:00",
-            "date_published": "2026-09-22T00:00:00+00:00",
-            "authors": [
-                {
-                    "name": "Hugo S. Nascimento"
-                }
-            ],
-            "tags": [
-                "Future of Work",
-                "artificial-intelligence",
-                "future-of-work",
-                "hr",
-                "philosophy"
-            ]
-        },
-        {
-            "id": "https://hsnlabs.ai/blog/post/autonomous-negotiations-collections-contracts/",
-            "url": "https://hsnlabs.ai/blog/post/autonomous-negotiations-collections-contracts/",
-            "title": "High-Velocity Operations: Autonomous Negotiation, Collections, and Contract Execution",
-            "content_html": "Production architecture for autonomous collections, contract negotiation, and high-velocity commercial execution.",
-            "image": "https://hsnlabs.ai/blog/assets/images/posts/autonomous-negotiations-collections-contracts/cover.webp",
-            "date_modified": "2026-09-18T00:00:00+00:00",
-            "date_published": "2026-09-18T00:00:00+00:00",
-            "authors": [
-                {
-                    "name": "Hugo S. Nascimento"
-                }
-            ],
-            "tags": [
-                "Future of Work",
-                "bpo",
-                "collections",
-                "economics"
-            ]
-        },
-        {
-            "id": "https://hsnlabs.ai/blog/post/palantir-aip-bootcamp-operational-ontology/",
-            "url": "https://hsnlabs.ai/blog/post/palantir-aip-bootcamp-operational-ontology/",
-            "title": "The Architecture of Palantir AIP: Why Enterprise Agents Fail Without an Operational Ontology",
-            "content_html": "How Palantir AIP bootcamps compressed 9-month sales cycles into 5-day deployments by binding LLMs to operational ontologies instead of raw prompts.",
-            "image": "https://hsnlabs.ai/blog/assets/images/posts/palantir-aip-bootcamp-operational-ontology/cover.webp",
-            "date_modified": "2026-09-18T00:00:00+00:00",
-            "date_published": "2026-09-18T00:00:00+00:00",
-            "authors": [
-                {
-                    "name": "Hugo S. Nascimento"
-                }
-            ],
-            "tags": [
-                "Agentic AI",
-                "architecture",
-                "case-studies",
-                "production",
-                "roi"
-            ]
-        },
-        {
-            "id": "https://hsnlabs.ai/blog/post/balance-sheet-guard-bpo-extinction/",
-            "url": "https://hsnlabs.ai/blog/post/balance-sheet-guard-bpo-extinction/",
-            "title": "What I Learned Building HR Tech About Dying BPO Contracts",
-            "content_html": "Operational field lessons on the structural collapse of enterprise HR outsourcing contracts and manual workflows.",
-            "image": "https://hsnlabs.ai/blog/assets/images/posts/balance-sheet-guard-bpo-extinction/cover.webp",
-            "date_modified": "2026-09-15T00:00:00+00:00",
-            "date_published": "2026-09-15T00:00:00+00:00",
-            "authors": [
-                {
-                    "name": "Hugo S. Nascimento"
-                }
-            ],
-            "tags": [
-                "Future of Work",
-                "bpo",
-                "economics",
-                "hr-tech"
             ]
         }
     ]

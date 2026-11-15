@@ -500,6 +500,72 @@
       "target_keyword_pt": "high ic produtividade agentes de ia equipes enxutas",
       "en_path": "/blog/post/the-high-ic-phenomenon/",
       "pt_path": "/blog/pt/post/o-fenomeno-high-ic/"
+    },
+    {
+      "slug_en": "what-is-agent-harness-production",
+      "slug_pt": "o-que-e-agent-harness-producao",
+      "title_en": "What Is an Agent Harness and Why Production Agents Fail Without It",
+      "title_pt": "O que é Agent Harness e por que agentes quebram sem ele",
+      "category_en": "Why Agents Fail",
+      "category_pt": "Por Que Agentes Falham",
+      "target_keyword_pt": "agent harness",
+      "en_path": "/blog/post/what-is-agent-harness-production/",
+      "pt_path": "/blog/pt/post/o-que-e-agent-harness-producao/"
+    },
+    {
+      "slug_en": "langchain-vs-langgraph-vs-deep-agents",
+      "slug_pt": "langchain-vs-langgraph-vs-deep-agents",
+      "title_en": "LangChain vs LangGraph vs Deep Agents: Choosing the Right Production Layer",
+      "title_pt": "LangChain vs LangGraph vs Deep Agents: quando usar cada um em produção",
+      "category_en": "Agentic AI",
+      "category_pt": "Agentic AI",
+      "target_keyword_pt": "langchain vs langgraph",
+      "en_path": "/blog/post/langchain-vs-langgraph-vs-deep-agents/",
+      "pt_path": "/blog/pt/post/langchain-vs-langgraph-vs-deep-agents/"
+    },
+    {
+      "slug_en": "what-are-ai-agents-enterprise-production",
+      "slug_pt": "o-que-sao-agentes-de-ia-producao",
+      "title_en": "What Are AI Agents in Enterprise Production Beyond Chatbots",
+      "title_pt": "O que são agentes de IA na prática corporativa além de chatbots",
+      "category_en": "Agentic AI",
+      "category_pt": "Agentic AI",
+      "target_keyword_pt": "o que sao agentes de ia",
+      "en_path": "/blog/post/what-are-ai-agents-enterprise-production/",
+      "pt_path": "/blog/pt/post/o-que-sao-agentes-de-ia-producao/"
+    },
+    {
+      "slug_en": "context-engineering-enterprise-agents",
+      "slug_pt": "context-engineering-engenharia-de-contexto-agentes",
+      "title_en": "Context Engineering for Production Enterprise AI Agents",
+      "title_pt": "Context Engineering: engenharia de contexto para agentes em produção",
+      "category_en": "Agentic AI",
+      "category_pt": "Agentic AI",
+      "target_keyword_pt": "context engineering",
+      "en_path": "/blog/post/context-engineering-enterprise-agents/",
+      "pt_path": "/blog/pt/post/context-engineering-engenharia-de-contexto-agentes/"
+    },
+    {
+      "slug_en": "loop-engineering-controlling-agent-costs",
+      "slug_pt": "loop-engineering-controle-custos-agentes",
+      "title_en": "Loop Engineering: Controlling Production AI Agents Without Runaway Costs",
+      "title_pt": "Loop Engineering: como controlar agentes de IA sem estourar custos",
+      "category_en": "Why Agents Fail",
+      "category_pt": "Por Que Agentes Falham",
+      "target_keyword_pt": "loop engineering",
+      "en_path": "/blog/post/loop-engineering-controlling-agent-costs/",
+      "pt_path": "/blog/pt/post/loop-engineering-controle-custos-agentes/"
+    },
+    {
+      "slug_en": "langsmith-evals-production-agents",
+      "slug_pt": "langsmith-evals-producao-agentes",
+      "title_en": "LangSmith and Production Evals: Measuring Agents Before Failures Hit Users",
+      "title_pt": "LangSmith e evals em produção: como medir agentes antes do erro",
+      "category_en": "Why Agents Fail",
+      "category_pt": "Por Que Agentes Falham",
+      "target_keyword_pt": "langsmith",
+      "en_path": "/blog/post/langsmith-evals-production-agents/",
+      "pt_path": "/blog/pt/post/langsmith-evals-producao-agentes/"
     }
   ]
 }

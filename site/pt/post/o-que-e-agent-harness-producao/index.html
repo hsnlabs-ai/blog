@@ -1,0 +1,897 @@
+<!doctype html>
+<html data-bs-theme="">
+
+<head>
+    <title>O que é Agent Harness e por que agentes quebram sem ele - Hugo S. Nascimento
+    </title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="../../../assets/brand/favicons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../assets/brand/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../assets/brand/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../../assets/brand/favicons/favicon-16x16.png">
+    <meta name="theme-color" content="#52B4FD"><link rel="canonical" href="https://hsnlabs.ai/blog/pt/post/o-que-e-agent-harness-producao/">
+    <meta name="title" content="O que é Agent Harness e por que agentes quebram sem ele">
+    <meta name="description" content="O que é agent harness, por que modelos isolados falham na produção corporativa e como Deep Agents e LangGraph resolvem context rot e loops longos.">
+
+    <!-- OpenGraph Metadata -->
+    <meta property="og:site_name" content="hsnlabs">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="O que é Agent Harness e por que agentes quebram sem ele">
+    <meta property="og:description" content="O que é agent harness, por que modelos isolados falham na produção corporativa e como Deep Agents e LangGraph resolvem context rot e loops longos.">
+    <meta property="og:url" content="https://hsnlabs.ai/blog/pt/post/o-que-e-agent-harness-producao/">
+    <meta property="og:image" content="https://hsnlabs.ai/blog/assets/images/posts/what-is-agent-harness-production/cover.webp">
+    <meta property="og:image:secure_url" content="https://hsnlabs.ai/blog/assets/images/posts/what-is-agent-harness-production/cover.webp">
+    <meta property="og:image:alt" content="O que é Agent Harness e por que agentes quebram sem ele"><meta property="og:image:type" content="image/webp"><!-- Twitter Card Metadata -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@hsnlabs">
+    <meta name="twitter:creator" content="@hugo_nasc">
+    <meta name="twitter:title" content="O que é Agent Harness e por que agentes quebram sem ele">
+    <meta name="twitter:description" content="O que é agent harness, por que modelos isolados falham na produção corporativa e como Deep Agents e LangGraph resolvem context rot e loops longos.">
+    <meta name="twitter:image" content="https://hsnlabs.ai/blog/assets/images/posts/what-is-agent-harness-production/cover.webp"><meta name="author" content="Hugo S. Nascimento"><meta name="date" content="2026-11-10">
+      <meta property="article:published_time" content="2026-11-10"><meta property="article:section" content="Why Agents Fail">
+
+    <script>var base_url = '../../..';</script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="../../../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../assets/css/root.min.css">
+    <link rel="stylesheet" href="../../../assets/css/main.min.css">
+    <link rel="stylesheet" href="../../../assets/css/media.min.css">
+    <link rel="stylesheet" href="../../../assets/css/mkdocstrings.min.css">
+    <link href="../../../stylesheets/extra.css" rel="stylesheet">
+    <link href="../../../assets/css/pagination.css" rel="stylesheet">
+    <!-- Feeds and Crawlers -->
+<link rel="alternate" type="application/rss+xml" title="RSS Feed - Hugo S. Nascimento" href="../../../feed_rss_created.xml">
+<link rel="alternate" type="application/json" title="JSON Feed - Hugo S. Nascimento" href="../../../feed_json_created.json">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+<!-- Search Engine Verification -->
+<meta name="msvalidate.01" content="fb6d944d28fc4484bd669f6d9c4d3292">
+<meta name="google-site-verification" content="G-GMK24ECXMF">
+
+<!-- GEO and Local SEO -->
+<meta name="geo.region" content="BR-SP">
+<meta name="geo.placename" content="São Paulo">
+<meta name="geo.position" content="-23.561684;-46.655981">
+<meta name="ICBM" content="-23.561684, -46.655981">
+
+<!-- Typography: Cormorant Garamond & Inter -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- Google Analytics (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GMK24ECXMF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-GMK24ECXMF');
+</script>
+
+<!-- Structured Data -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "O que é Agent Harness e por que agentes quebram sem ele",
+  "description": "O que é agent harness, por que modelos isolados falham na produção corporativa e como Deep Agents e LangGraph resolvem context rot e loops longos.",
+  "datePublished": "2026-11-10",
+  "inLanguage": "en",
+  "author": {
+    "@type": "Person",
+    "name": "Hugo S. Nascimento",
+    "url": "https://hsnlabs.ai"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "hsnlabs",
+    "url": "https://hsnlabs.ai",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://hsnlabs.ai/assets/brand/lockups/hsnlabs-lockup-horizontal-light.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://hsnlabs.ai/blog/pt/post/o-que-e-agent-harness-producao/"
+  }
+}
+</script>
+
+</head>
+
+<body>
+    <!-- FIXED / STICKY HEADER -->
+    <header class="header-nav" id="component-header">
+        <div class="container header-container">
+            <!-- block header -->
+<div class="blog-header-inner">
+  <div class="blog-header-brand-group">
+    
+    <a href="https://hsnlabs.ai/" class="blog-brand-link" title="hsnlabs">
+      <img src="../../../assets/brand/lockups/hsnlabs-lockup-horizontal-light.png" alt="hsnlabs" class="blog-brand-logo">
+    </a>
+    <span class="blog-brand-sep" aria-hidden="true">/</span>
+    <a href="../../" class="blog-badge-link" title="hsnlabs Blog">
+      <span class="blog-badge-text">Blog</span>
+    </a>
+    
+  </div>
+
+  <nav class="blog-header-menu" aria-label="Main Navigation">
+    
+    <a href="../../" class="blog-nav-link ">Posts</a>
+    <a href="https://hsnlabs.ai/bootcamp/" class="blog-nav-link">Agentic Bootcamp™</a>
+    <a href="https://hsnlabs.ai/advisory/" class="blog-nav-link">Advisory</a>
+    
+  </nav>
+
+  <div class="blog-header-actions">
+    <button class="blog-action-icon blog-search-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" title="Buscar posts" aria-label="Buscar posts">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="11" cy="11" r="8"></circle>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+      </svg>
+    </button>
+    
+    <a href="../../../feed_rss_created.xml" class="blog-action-icon blog-rss-link" title="RSS Feed 2.0" target="_blank" rel="noopener" aria-label="RSS Feed">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M6.18 15.64a2.18 2.18 0 0 1 2.18 2.18C8.36 19 7.38 20 6.18 20C5 20 4 19 4 17.82a2.18 2.18 0 0 1 2.18-2.18M4 4.44A15.56 15.56 0 0 1 19.56 20h-2.83A12.73 12.73 0 0 0 4 7.27V4.44m0 5.66a9.9 9.9 0 0 1 9.9 9.9h-2.83A7.07 7.07 0 0 0 4 12.93v-2.83z"/>
+      </svg>
+    </a>
+
+    <a href="https://github.com/hsnlabs-ai" class="header-github-link" target="_blank" rel="noopener" title="View GitHub">
+      <svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.161 22 16.416 22 12c0-5.523-4.477-10-10-10z"/></svg>
+      <span>hsnlabs</span>
+    </a>
+
+    
+    <div class="lang-switch">
+      <a href="../../.." class="lang-item">EN</a>
+      <span class="lang-sep">·</span>
+      <span class="lang-item active">PT</span>
+    </div>
+    <a href="https://hsnlabs.ai/bootcamp/" class="btn btn-primary blog-header-cta">Conhecer o Agentic Bootcamp™</a>
+    
+  </div>
+</div>
+<!-- endblock -->
+        </div>
+    </header>
+
+    <div class="blog-body-wrapper">
+        <main class="blog-main-content">
+            <div class="container search-container-wrap"><!-- block search -->
+<div class="collapse" id="collapseExample">
+    <div role="search" class="search-box">
+        <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+            <input type="text" name="q" class="search-query"
+            placeholder="Search docs" title="Type search term here" />
+        </form>
+    </div>
+</div>
+<!-- endblock -->
+            </div>
+
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 d-none d-md-block" id="component-sidebar">
+                        <!-- block sidebar -->
+<div class="navbar-expand-md" role="complementary">
+    
+    
+</div>
+
+<!-- block blog_sidebar -->
+
+
+
+<div class="blog-sidebar" id="component-blog-sidebar">
+
+    <div class="blog-sidebar-widget" style="background: var(--surface-card); border: 1px solid var(--hairline); padding: 18px 16px; margin-bottom: 24px; position: relative; overflow: hidden; isolation: isolate; box-shadow: 0 1px 4px rgba(0,0,0,0.02);">
+        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
+            <div class="founder-callout-avatar" data-initial-index="0" style="width: 44px; height: 44px; border: 1px solid var(--hairline); flex-shrink: 0; overflow: hidden; background: #f0efed;">
+                <img src="https://hsnlabs.ai/assets/images/author/pool/hugo_01.jpg" alt="Hugo S. Nascimento" width="44" height="44" style="display: block; width: 100%; height: 100%; object-fit: cover;" />
+            </div>
+            <div>
+                <div style="font-size: 0.72rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted);">Liderança Técnica</div>
+                <div style="font-size: 0.88rem; font-weight: 500; color: var(--ink); line-height: 1.2;">Compartilhe com Hugo, CPTO</div>
+            </div>
+        </div>
+        <a href="https://hsnlabs.ai/#contact" style="display: block; text-align: center; background: #ffffff; color: var(--ink); border: 1px solid var(--hairline-strong); padding: 7px 12px; font-size: 0.8rem; font-weight: 500; text-decoration: none; transition: all 0.15s ease; white-space: nowrap;">
+            Iniciar Conversa
+        </a>
+    </div>
+
+    
+    <div class="blog-sidebar-widget">
+        <h3 class="blog-sidebar-widget-title">Posts Recentes</h3>
+        <ul class="blog-sidebar-list">
+            
+            <li>
+                <a href="../../../post/langsmith-evals-production-agents/">LangSmith and Production Evals: Measuring Agents Before Failures Hit Users</a>
+                
+                <div class="blog-sidebar-post-meta">
+                    <span class="blog-sidebar-date" data-date="2026-11-15">postado hoje</span>
+                </div>
+                
+            </li>
+            
+            <li>
+                <a href="../../../post/loop-engineering-controlling-agent-costs/">Loop Engineering: Controlling Production AI Agents Without Runaway Costs</a>
+                
+                <div class="blog-sidebar-post-meta">
+                    <span class="blog-sidebar-date" data-date="2026-11-14">há 1 dia</span>
+                </div>
+                
+            </li>
+            
+            <li>
+                <a href="../../../post/context-engineering-enterprise-agents/">Context Engineering for Production Enterprise AI Agents</a>
+                
+                <div class="blog-sidebar-post-meta">
+                    <span class="blog-sidebar-date" data-date="2026-11-13">há 2 dias</span>
+                </div>
+                
+            </li>
+            
+            <li>
+                <a href="../../../post/what-are-ai-agents-enterprise-production/">What Are AI Agents in Enterprise Production Beyond Chatbots</a>
+                
+                <div class="blog-sidebar-post-meta">
+                    <span class="blog-sidebar-date" data-date="2026-11-12">há 3 dias</span>
+                </div>
+                
+            </li>
+            
+            <li>
+                <a href="../../../post/langchain-vs-langgraph-vs-deep-agents/">LangChain vs LangGraph vs Deep Agents: Choosing the Right Production Layer</a>
+                
+                <div class="blog-sidebar-post-meta">
+                    <span class="blog-sidebar-date" data-date="2026-11-11">há 4 dias</span>
+                </div>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    
+    <div class="blog-sidebar-widget">
+        <h3 class="blog-sidebar-widget-title">Categorias</h3>
+        <ul class="blog-sidebar-list">
+            
+            <li><a href="../../../category/why-agents-fail/">Why Agents Fail</a></li>
+            
+            <li><a href="../../../category/agentic-ai/">Agentic AI</a></li>
+            
+            <li><a href="../../../category/future-of-work/">Future of Work</a></li>
+            
+        </ul>
+    </div>
+    
+
+    
+    <div class="blog-sidebar-widget">
+        <h3 class="blog-sidebar-widget-title">Tags</h3>
+        <div class="blog-sidebar-tags">
+            
+            <a class="blog-sidebar-tag" href="../../../tag/langsmith/">langsmith</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/evaluation/">evaluation</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/deep-agents/">deep-agents</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/observability/">observability</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/production/">production</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/loop-engineering/">loop-engineering</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/langgraph/">langgraph</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/guardrails/">guardrails</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/context-engineering/">context-engineering</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/agent-memory/">agent-memory</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/rag/">rag</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/ai-agents/">ai-agents</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/langchain/">langchain</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/enterprise/">enterprise</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/architecture/">architecture</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/comparison/">comparison</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/agent-harness/">agent-harness</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/future-of-work/">future-of-work</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/economics/">economics</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/c-suite/">c-suite</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/databricks/">databricks</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/data-contracts/">data-contracts</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/snowflake/">snowflake</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/canvas/">canvas</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/enterprise-agents/">enterprise-agents</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/methodology/">methodology</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/crm/">crm</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/model-context-protocol/">model-context-protocol</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/saas/">saas</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/bpo/">bpo</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/case-studies/">case-studies</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/roi/">roi</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/ebitda/">ebitda</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/ontology/">ontology</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/mcp/">mcp</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/python/">python</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/database/">database</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/sql/">sql</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/vector-database/">vector-database</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/ai-failures/">ai-failures</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/knowledge-graph/">knowledge-graph</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/data-engineering/">data-engineering</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/operational-ontology/">operational-ontology</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/deterministic-ai/">deterministic-ai</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/margins/">margins</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/consulting/">consulting</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/sprint/">sprint</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/artificial-intelligence/">artificial-intelligence</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/philosophy/">philosophy</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/hr/">hr</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/collections/">collections</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/hr-tech/">hr-tech</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/insurance/">insurance</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/arbitrage/">arbitrage</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/erp-support/">erp-support</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/helpdesk/">helpdesk</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/rpa/">rpa</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/automation/">automation</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/poc/">poc</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/latam-airlines/">latam-airlines</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/llm-judge/">llm-judge</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/audit/">audit</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/api-loops/">api-loops</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/erp/">erp</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/legacy-core/">legacy-core</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/mainframe/">mainframe</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/schema-drift/">schema-drift</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/state-machines/">state-machines</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/legacy-it/">legacy-it</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/reliability/">reliability</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/hsnlabs/">hsnlabs</a>
+            
+            <a class="blog-sidebar-tag" href="../../../tag/manifesto/">manifesto</a>
+            
+        </div>
+    </div>
+    
+
+</div>
+
+<!-- endblock -->
+
+<!-- endblock -->
+                    </div>
+                    <div class="col-md-9 col-12" id="component-content">
+                        <!-- block content -->
+<section class="container post" id="component-content">
+    <article>
+        
+        <nav class="article-breadcrumb-nav" aria-label="Breadcrumb">
+            
+            <a href="../../" class="article-breadcrumb-back">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+                Todos os Posts
+            </a>
+            
+            
+            <span class="article-breadcrumb-sep">/</span>
+            
+                
+                <span class="article-breadcrumb-category">Por Que Agentes Falham</span>
+                
+            
+            
+        </nav>
+
+        <header>
+            
+                <h1 class=" title" id="component-title">O que é Agent Harness e por que agentes quebram sem ele</h1>
+            
+        </header>
+        
+        
+        
+        <p class="page-dates">
+            
+                Publicado em 2026-11-10
+            
+        </p>
+        
+        <hr class="page-dates-divider">
+        
+        
+        
+
+        
+        <figure class="article-hero-figure">
+            <img src="../../../assets/images/posts/what-is-agent-harness-production/cover.webp" alt="O que é Agent Harness e por que agentes quebram sem ele" loading="eager" />
+        </figure>
+        
+
+        <div class="article-content-body">
+            <p><em>Tempo de leitura: 9 minutos. Autor: Hugo S. Nascimento.</em></p>
+<!-- more -->
+
+<p><em>Contexto: A maior parte dos times de engenharia corporativa gasta noventa por cento da energia discutindo qual modelo de fronteira contratar e menos de dez por cento projetando o ambiente de execução que o envolve. Quando um piloto trava na homologação ou estoura o orçamento em dólar na produção, raramente a culpa é do modelo base. A peça ausente é o Agent Harness. Com base na análise arquitetural publicada pela LangChain e na nossa prática em produção na hsnlabs, este material detalha por que modelos puros falham sozinhos e como primitivas de harness transformam previsores de texto em motores confiáveis de trabalho.</em></p>
+<blockquote>
+<p><strong>Resumo executivo para lideranças de tecnologia:</strong> Um agente autônomo nunca é apenas um modelo de linguagem. Conforme formalizado pela LangChain, a equação real é Agente igual a Modelo mais Harness. O modelo entrega inteligência de raciocínio, enquanto o harness fornece todo o sistema determinístico ao redor: prompts, contratos de ferramentas, sistema de arquivos durável, sandboxes isoladas, compactação de contexto e travas de verificação. Trocar os pesos do modelo não corrige um harness frágil. No benchmark Terminal Bench 2.0, alterar apenas o harness elevou o mesmo modelo do Top 30 para o Top 5. Para CTOs e arquitetos corporativos, a engenharia de harness é a alavanca decisiva que separa pilotos estagnados de retorno real em produção.</p>
+</blockquote>
+<hr />
+<h2 id="nota-de-diligencia-e-especificacoes-tecnicas">Nota de diligência e especificações técnicas</h2>
+<p>O modelo arquitetural, as primitivas comportamentais e as evidências de benchmark discutidos nesta análise seguem publicações técnicas primárias e especificações abertas de engenharia:</p>
+<ul>
+<li><strong>Estudo original da LangChain sobre Agent Harness:</strong> taxonomia conceitual e derivação de primitivas detalhando a relação entre modelo e harness, combate ao context rot, Ralph Loops e resultados no Terminal Bench 2.0, disponível em <a href="https://www.langchain.com/blog/the-anatomy-of-an-agent-harness">The Anatomy of an Agent Harness no LangChain Blog</a>.</li>
+<li><strong>Biblioteca open-source Deep Agents:</strong> implementação de referência construída sobre LangGraph com backends de filesystem, isolamento de subagentes, planejamento e compactação de contexto, disponível em <a href="https://github.com/langchain-ai/deepagents">Deep Agents no GitHub</a>.</li>
+<li><strong>Especificação de execução com estado em LangGraph:</strong> grafos cíclicos duráveis, persistência de checkpoints e fluxo de controle determinístico, disponível em <a href="https://langchain-ai.github.io/langgraph/">LangGraph Technical Documentation</a>.</li>
+<li><strong>Prática de produção corporativa da hsnlabs:</strong> especificações de referência para encapsular modelos fundacionais em máquinas de estado governadas e perímetros MCP, disponível em <a href="https://hsnlabs.ai/langchain/">Engenharia de produção LangChain e LangGraph da hsnlabs</a>.</li>
+</ul>
+<hr />
+<h2 id="1-o-que-e-um-agent-harness-e-por-que-modelos-puros-falham">1. O que é um Agent Harness e por que modelos puros falham</h2>
+<p>Em estado bruto, um modelo fundacional não é um agente. Ele funciona como uma função sem memória que recebe entradas em texto ou mídia e devolve texto. Sozinho, um modelo puro não consegue manter estado durável entre sessões, executar código contra uma API, consultar um banco corporativo em tempo real ou preparar um ambiente para testar a própria resposta.</p>
+<p>Tudo o que existe em um sistema agêntico além dos pesos treinados do modelo faz parte do <strong>harness</strong>. Na prática de engenharia, o harness reúne cinco camadas operacionais:</p>
+<ol>
+<li><strong>Prompts de sistema e políticas de entrada:</strong> instruções de base, limites operacionais e regras de negócio injetadas antes da interação do usuário.</li>
+<li><strong>Ferramentas, skills e contratos MCP:</strong> schemas tipados de funções, servidores Model Context Protocol e descrições enxutas que definem como o modelo acessa sistemas externos.</li>
+<li><strong>Infraestrutura embarcada de execução:</strong> sistema de arquivos durável, sandboxes isoladas, acesso a shell e navegadores automatizados.</li>
+<li><strong>Lógica de orquestração e roteamento:</strong> criação de subagentes, roteamento entre modelos, transições de estado e protocolos de passagem de controle.</li>
+<li><strong>Hooks determinísticos e middleware:</strong> gatilhos automáticos de compactação, travas de continuação, checagens de lint e suítes de autoverificação.</li>
+</ol>
+<figure class="article-editorial-figure landscape">
+  <img src="../../../assets/diagrams/langchain/harness_1.png" alt="Anatomia de um Agent Harness mostrando o modelo cercado por injeção de contexto, controle, persistência, ação e verificação" loading="lazy">
+  <figcaption class="editorial-caption">Anatomia de referência da LangChain: o modelo opera dentro do perímetro do harness, recebendo injeção de contexto e sinais de controle enquanto persiste estado, dispara ações em bash ou MCP e verifica logs e capturas de tela.</figcaption>
+</figure>
+
+<p>Quando equipes corporativas ignoram a engenharia de harness e plugam um modelo diretamente em trinta funções dentro de um loop aberto, a falha em produção é estrutural. É exatamente essa lacuna que explica por que tantos projetos acabam enterrados no <a href="/blog/pt/post/cemiterio-de-pocs/">Cemitério de PoCs</a> ou disparam incidentes noturnos como <a href="/blog/pt/post/agentes-ilimitados-maquinas-estados-finitos/">quarenta e duas chamadas desgovernadas em loop às 2 da manhã</a>.</p>
+<hr />
+<h2 id="2-engenharia-reversa-do-comportamento-desejado-as-primitivas">2. Engenharia reversa do comportamento desejado às primitivas</h2>
+<p>Uma boa arquitetura de harness nasce do comportamento operacional exigido pelo negócio, nunca do modismo de frameworks. Como demonstra o estudo da LangChain, cada primitiva de harness existe porque um modelo isolado não entrega determinada capacidade em produção.</p>
+<figure class="article-editorial-figure landscape">
+  <img src="../../../assets/diagrams/langchain/harness_2.png" alt="Mapeamento entre o comportamento desejado do agente à esquerda e o que o harness adiciona à direita em seis camadas" loading="lazy">
+  <figcaption class="editorial-caption">Engenharia reversa do comportamento desejado até as primitivas do harness, com base no estudo da LangChain: cada capacidade ausente no modelo puro exige infraestrutura durável.</figcaption>
+</figure>
+
+<p>A tabela a seguir traduz a derivação comportamental da LangChain para os desafios reais da engenharia corporativa no Brasil:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Comportamento desejado do agente</th>
+<th style="text-align: left;">Primitiva adicionada pelo harness</th>
+<th style="text-align: left;">Risco corporativo mitigado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Operar dados reais com durabilidade</strong></td>
+<td style="text-align: left;">Abstração de filesystem e versionamento em Git</td>
+<td style="text-align: left;">Elimina perda de histórico entre sessões e garante trilha de auditoria com reversão</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Escrever e executar lógica sob demanda</strong></td>
+<td style="text-align: left;">Shell bash e execução de código</td>
+<td style="text-align: left;">Evita criar centenas de conectores rígidos e frágeis para cada tarefa operacional</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Executar com segurança e ferramentas padrão</strong></td>
+<td style="text-align: left;">Sandboxes isoladas, listas de permissão e bloqueio de rede</td>
+<td style="text-align: left;">Protege ERPs como TOTVS e SAP contra código não validado e vazamento sob a LGPD</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Lembrar regras e buscar dados atuais</strong></td>
+<td style="text-align: left;">Arquivos de memória como AGENTS.md, busca web e MCPs</td>
+<td style="text-align: left;">Supera a data de corte do treino e preserva aprendizados entre atendimentos</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Manter precisão em contextos extensos</strong></td>
+<td style="text-align: left;">Compactação de histórico, offloading de ferramentas e skills</td>
+<td style="text-align: left;">Contém o context rot em longos fluxos de webhooks do WhatsApp e faturas extensas</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Concluir missões de longo horizonte</strong></td>
+<td style="text-align: left;">Ralph Loops, planos persistentes e hooks de teste</td>
+<td style="text-align: left;">Impede encerramento precoce e evita desperdício de tokens em USD sobre receita em BRL</td>
+</tr>
+</tbody>
+</table>
+<h3 id="filesystem-e-git-como-memoria-duravel-de-trabalho">Filesystem e Git como memória durável de trabalho</h3>
+<p>Modelos só raciocinam sobre os tokens que cabem na janela de contexto ativa. Antes de o filesystem virar primitiva de primeira classe, engenheiros concatenavam documentos inteiros e respostas brutas no histórico do chat, estourando limites da API e multiplicando o custo por requisição.</p>
+<p>Como os grandes modelos de linguagem foram treinados sobre bilhões de tokens de repositórios e fluxos em linha de comando, o filesystem funciona como uma superfície natural de trabalho. O agente lê especificações, descarrega resultados intermediários pesados fora do contexto principal, coordena tarefas paralelas com outros subagentes via arquivos compartilhados e usa o Git para versionar avanços ou reverter alterações inválidas.</p>
+<h3 id="bash-execucao-de-codigo-e-sandboxes-em-erps">Bash, execução de código e sandboxes em ERPs</h3>
+<p>Codificar manualmente um conector REST para cada microvariação operacional cria dívida técnica imediata. Entregar bash e execução de código dentro de uma <strong>sandbox isolada</strong> permite que o agente escreva scripts temporários para cruzar planilhas fiscais, validar notas ou formatar cargas de integração.</p>
+<p>Em operações corporativas com TOTVS, SAP ou bases financeiras, o isolamento é inegociável. Rodar código gerado por IA diretamente no servidor da aplicação expõe credenciais, variáveis de ambiente e dados pessoais protegidos pela LGPD. Um harness maduro sobe contêineres efêmeros com runtimes pré-instalados, comandos restritos em lista branca e isolamento de rede, destruindo o ambiente logo após a verificação.</p>
+<h3 id="memoria-persistente-busca-e-combate-ao-context-rot">Memória persistente, busca e combate ao context rot</h3>
+<p>Os pesos de um modelo congelam na data em que o treinamento termina. Para ensinar políticas internas sem retreinar pesos, o harness injeta arquivos padrão de memória como <code>AGENTS.md</code> na inicialização da sessão, combinados com busca web e servidores MCP atualizados.</p>
+<p>Mesmo em janelas amplas, o <strong>context rot</strong> degrada a capacidade de decisão conforme o histórico acumula ruído. Em operações brasileiras que recebem longas sequências de webhooks do WhatsApp ou retornos extensos de APIs legadas, a janela enche rápido e a acurácia despenca enquanto a fatura em dólar sobe contra margens em real. O harness combate essa degradação com três defesas determinísticas:</p>
+<ol>
+<li><strong>Compactação de contexto:</strong> resume turnos antigos e descarrega memória histórica antes de a janela atingir saturação ou erro de API.</li>
+<li><strong>Offloading de saídas de ferramentas:</strong> mantém apenas o início e o fim de respostas volumosas no contexto ativo e grava o conteúdo completo no filesystem para consulta pontual.</li>
+<li><strong>Carregamento progressivo de skills:</strong> injeta apenas metadados leves na partida em vez de carregar dezenas de schemas MCP completos logo no primeiro passo.</li>
+</ol>
+<h3 id="execucao-de-longo-horizonte-e-ralph-loops">Execução de longo horizonte e Ralph Loops</h3>
+<p>Tarefas extensas revelam duas falhas crônicas dos modelos atuais: a <strong>parada precoce</strong>, quando o modelo declara conclusão na metade do trabalho, e a <strong>perda de coerência</strong> quando a execução cruza múltiplas janelas de contexto.</p>
+<p>A LangChain destaca o padrão <strong>Ralph Loop</strong> como mecanismo central para missões longas. Um hook do harness intercepta a tentativa de saída do modelo, verifica o critério objetivo de término e reinjeta o objetivo original em uma janela limpa, lendo o progresso gravado no filesystem e no Git. Somado a arquivos explícitos de planejamento e suítes automáticas de teste, o agente só encerra o ciclo quando a verificação determinística confirma o resultado.</p>
+<hr />
+<blockquote>
+<p><strong>[Agentes] x [a Gente]</strong> — Fora do hype, discutimos como Agentic AI multiplica e alavanca a capacidade laboral humana. Análises quinzenais publicadas na newsletter de Hugo S. Nascimento no LinkedIn com mais de 1.600 assinantes. <a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7397999984089935872">Acompanhar no LinkedIn ↗</a></p>
+</blockquote>
+<h2 id="3-co-evolucao-com-modelos-e-por-que-o-harness-vence-benchmarks">3. Co-evolução com modelos e por que o harness vence benchmarks</h2>
+<p>Produtos modernos de engenharia como Claude Code e Codex passam por pós-treinamento com o próprio harness dentro do laço de aprendizado. Essa co-evolução ensina os modelos a operar filesystems, executar bash, seguir planos e delegar trabalho a subagentes em paralelo.</p>
+<p>Esse acoplamento, porém, gera um efeito colateral curioso: o <strong>sobreajuste ao harness</strong>. Alterar uma convenção simples de ferramenta, como o formato do comando de edição de arquivos descrito nos guias do Codex-5.3, pode derrubar o desempenho prático mesmo mantendo o mesmo modelo base.</p>
+<p>Na prática, o harness padrão do fornecedor raramente é o melhor para o seu caso corporativo. No ranking público <strong>Terminal Bench 2.0</strong>, exatamente os mesmos pesos do Opus 4.6 obtiveram pontuações muito distantes conforme o harness ao redor. A própria LangChain demonstrou como subiu seu agente de codificação do <strong>Top 30 para o Top 5</strong> no Terminal Bench 2.0 alterando exclusivamente a arquitetura do harness, sem tocar nos pesos do modelo.</p>
+<div style="display: flex; align-items: center; gap: 14px; margin: 20px 0; padding: 14px 18px; background: #0E1017; border: 1px solid #222736;">
+  <img src="../../../assets/stack/deepagents-oss-lockup-dark.svg" alt="Deep Agents OSS Harness Library" style="height: 28px; width: auto;" loading="lazy">
+  <span style="font-size: 0.85rem; color: #94A3B8; font-family: 'Inter', sans-serif;">Biblioteca open-source de harness sobre LangGraph para planejamento durável, estado em filesystem, isolamento de subagentes e compactação de contexto.</span>
+</div>
+
+<p>A pesquisa atual da LangChain na biblioteca aberta <strong>Deep Agents</strong>, construída sobre <strong>LangGraph</strong>, avança sobre três frentes críticas: orquestrar centenas de agentes em paralelo sobre a mesma base de código, criar agentes que auditam seus próprios rastros de execução para corrigir falhas do harness e montar ferramentas e contexto sob demanda no exato instante da tarefa.</p>
+<hr />
+<h2 id="4-implantando-um-agent-harness-corporativo-em-4-camadas">4. Implantando um Agent Harness corporativo em 4 camadas</h2>
+<p>Com a evolução dos modelos fundacionais, parte das rotinas básicas de planejamento e autocorreção tende a ser absorvida pelos próprios pesos. Ainda assim, sistemas empresariais continuarão exigindo perímetros rígidos de engenharia. Nenhuma operação financeira ou de atendimento pode depender da boa vontade probabilística de um loop solto de prompt.</p>
+<pre class="mermaid"><code>flowchart TD
+    A["1. Injeção de contexto e memória&lt;br&gt;Prompts de sistema, AGENTS.md, skills sob demanda e dados sanitizados"] --&gt; B["2. Núcleo de raciocínio e controle&lt;br&gt;Decisão do modelo, trava de compactação e continuação em Ralph Loop"]
+    B --&gt; C["3. Execução isolada e estado durável&lt;br&gt;Sandbox em bash, contratos MCP, filesystem e histórico em Git"]
+    C --&gt; D["4. Autoverificação e auditoria&lt;br&gt;Execução de testes, logs de erro, checagem em navegador e telemetria de custo"]
+    D --&gt; B</code></pre>
+<p>Na hsnlabs, estruturamos o harness de produção sobre máquinas de estado em LangGraph dividindo responsabilidades em quatro camadas verificáveis:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Camada do harness</th>
+<th style="text-align: left;">Responsabilidade determinística</th>
+<th style="text-align: left;">Garantia operacional em produção</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Perímetro de contexto</strong></td>
+<td style="text-align: left;">Carregamento progressivo de skills, arquivo <code>AGENTS.md</code> e sanitização para LGPD</td>
+<td style="text-align: left;">Controla o consumo de tokens em dólar e evita poluição inicial de prompt</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Controle de estado</strong></td>
+<td style="text-align: left;">Máquinas de estado finito em LangGraph, gatilhos de compactação e Ralph Loops</td>
+<td style="text-align: left;">Bloqueia encerramentos prematuros e trava espirais infinitas de retentativas</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Sandbox de execução</strong></td>
+<td style="text-align: left;">Contêineres efêmeros, shell restrito e contratos MCP validados em Pydantic v2</td>
+<td style="text-align: left;">Protege bancos de ERP como TOTVS e SAP contra mutações fora de esquema</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Laço de verificação</strong></td>
+<td style="text-align: left;">Suítes automáticas de teste, checagem de logs, capturas visuais e rastros no LangSmith</td>
+<td style="text-align: left;">Converte propostas estocásticas em ações auditadas e reversíveis</td>
+</tr>
+</tbody>
+</table>
+<p>Se a sua equipe de tecnologia ainda culpa o modelo de linguagem por falhas intermitentes em produção, a auditoria precisa começar pela camada de contorno. O modelo carrega a inteligência bruta; o Agent Harness é o sistema de engenharia que torna essa inteligência previsível, auditável e economicamente viável.</p>
+<hr />
+<h2 id="recursos-estrategicos-e-leituras-relacionadas">Recursos estratégicos e leituras relacionadas</h2>
+<ul>
+<li><a href="https://hsnlabs.ai/langchain/">Engenharia de produção LangChain e LangGraph da hsnlabs</a></li>
+<li><a href="https://www.langchain.com/blog/the-anatomy-of-an-agent-harness">LangChain: The Anatomy of an Agent Harness</a></li>
+<li><a href="/blog/pt/post/cemiterio-de-pocs/">O Cemitério de PoCs: por que 90% dos pilotos corporativos colapsam em dados sujos</a></li>
+<li><a href="/blog/pt/post/agentes-ilimitados-maquinas-estados-finitos/">Estudo de caso: 42 chamadas em loop às 2 da manhã e máquinas de estados finitos</a></li>
+<li><a href="/blog/pt/post/arquitetura-agentes-braintrust-evals-cicd-langgraph/">Braintrust Evals e LangGraph: substituindo testes manuais por CI/CD determinístico</a></li>
+</ul>
+<hr />
+<p><em>Artigo publicado originalmente em <a href="https://hsnlabs.ai/blog/pt/post/o-que-e-agent-harness-producao/">hsnlabs</a>. Autor: <a href="https://hsnlabs.ai">Hugo S. Nascimento</a>.</em></p>
+<link rel="alternate" hreflang="en" href="https://hsnlabs.ai/blog/post/what-is-agent-harness-production/">
+<link rel="alternate" hreflang="x-default" href="https://hsnlabs.ai/blog/post/what-is-agent-harness-production/">
+<link rel="alternate" hreflang="pt-BR" href="https://hsnlabs.ai/blog/pt/post/o-que-e-agent-harness-producao/">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "O que \u00e9 Agent Harness e por que agentes quebram sem ele",
+  "url": "https://hsnlabs.ai/blog/pt/post/o-que-e-agent-harness-producao/",
+  "description": "O que \u00e9 agent harness, por que modelos isolados falham na produ\u00e7\u00e3o corporativa e como Deep Agents e LangGraph resolvem context rot e loops longos.",
+  "inLanguage": "pt-BR",
+  "author": {
+    "@type": "Person",
+    "name": "Hugo S. Nascimento",
+    "url": "https://hsnlabs.ai"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "hsnlabs",
+    "url": "https://hsnlabs.ai",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://hsnlabs.ai/assets/brand/lockups/hsnlabs-lockup-horizontal-light.png"
+    }
+  },
+  "datePublished": "2026-11-10"
+}
+</script>
+
+        </div>
+
+        
+        <!-- Founder Callout Component -->
+        <div class="founder-callout-card">
+            <div style="display: flex; align-items: center; gap: 14px; flex-shrink: 0;">
+                <div class="founder-callout-avatar" data-initial-index="0">
+                    <img src="https://hsnlabs.ai/assets/images/author/pool/hugo_01.jpg" alt="Hugo S. Nascimento" width="52" height="52" class="founder-avatar-img" />
+                </div>
+                <div>
+                    
+                    <div class="founder-callout-label">Tem um projeto em mente?</div>
+                    <div class="founder-callout-name">Compartilhe com Hugo, CPTO</div>
+                    
+                </div>
+            </div>
+
+            <div class="founder-cred-group">
+                
+                <a href="https://hsnlabs.ai/langchain/" class="founder-cred-item" title="LangChain Certified Engineer">
+                    <img src="https://hsnlabs.ai/assets/brand/langchain/lc-lockup-black.svg" alt="LangChain" class="founder-cred-logo">
+                    <span class="founder-cred-sub">Certificado <span class="founder-cred-arrow">↗</span></span>
+                </a>
+                <a href="https://hsnlabs.ai/snowflake/" class="founder-cred-item" title="Snowflake AI Data Cloud Partner">
+                    <img src="https://hsnlabs.ai/assets/brand/snowflake/snowflake-lockup-blue.svg" alt="Snowflake" class="founder-cred-logo">
+                    <span class="founder-cred-sub">Parceiro <span class="founder-cred-arrow">↗</span></span>
+                </a>
+                <a href="https://hsnlabs.ai/databricks/" class="founder-cred-item" title="Databricks Lakehouse &amp; Mosaic AI Partner">
+                    <img src="https://hsnlabs.ai/assets/brand/databricks/databricks-lockup-color.svg" alt="Databricks" class="founder-cred-logo">
+                    <span class="founder-cred-sub">Parceiro <span class="founder-cred-arrow">↗</span></span>
+                </a>
+                
+            </div>
+
+            
+            <a href="https://hsnlabs.ai/#contact" class="founder-callout-btn" style="white-space: nowrap; flex-shrink: 0;">
+                Iniciar Conversa
+            </a>
+            
+        </div>
+
+        <div class="article-footer-nav">
+            
+            <a href="../../" class="btn btn-outline article-nav-return-btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+                Voltar para Todos os Posts
+            </a>
+            <a href="https://hsnlabs.ai/bootcamp/" class="btn btn-primary article-nav-cta-btn">
+                Conhecer o Agentic Bootcamp™ →
+            </a>
+            
+        </div>
+        
+    </article>
+
+    
+</section>
+<!-- endblock -->
+                    </div>
+                </div>
+            </div>
+            
+        </main>
+
+        
+        <!-- block preview -->
+<!-- endblock -->
+        
+
+        
+        <!-- block footer -->
+<footer class="site-footer" id="component-footer">
+  <div class="container footer-container">
+    
+    <!-- Editorial & SEO Sitemap Grid -->
+    <div class="footer-seo-grid">
+      
+      
+      <!-- Brand & Positioning Column (PT) -->
+      <div class="footer-seo-col brand-col">
+        <a href="https://hsnlabs.ai/" class="footer-brand-link" title="hsnlabs">
+          <img src="../../../assets/brand/lockups/hsnlabs-lockup-horizontal-light.png" alt="hsnlabs" class="footer-brand-logo">
+        </a>
+        <p class="footer-brand-tagline">
+          A hsnlabs é o seu parceiro de transformação em IA corporativa, operacionalizando agentes autônomos sobre sistemas legados.
+        </p>
+        <p class="footer-brand-meta">
+          Boutique de Arquitetura de IA<br>
+          São Paulo, Brasil · Rua Pais Leme, 215, Pinheiros<br>
+          <a href="mailto:hugo@hsnlabs.ai" class="footer-link-subtle">hugo@hsnlabs.ai</a>
+        </p>
+        <div class="footer-badges-row">
+          <a href="../../../feed_rss_created.xml" class="footer-rss-chip" target="_blank" rel="noopener">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" style="display:inline-block;vertical-align:-1px;margin-right:4px;"><path d="M6.18 15.64a2.18 2.18 0 0 1 2.18 2.18C8.36 19 7.38 20 6.18 20C5 20 4 19 4 17.82a2.18 2.18 0 0 1 2.18-2.18M4 4.44A15.56 15.56 0 0 1 19.56 20h-2.83A12.73 12.73 0 0 0 4 7.27V4.44m0 5.66a9.9 9.9 0 0 1 9.9 9.9h-2.83A7.07 7.07 0 0 0 4 12.93V10.1z"/></svg>RSS Feed 2.0
+          </a>
+          <a href="../../../llms.txt" class="footer-llms-chip">llms.txt para LLMs e Agentes</a>
+        </div>
+      </div>
+
+      <!-- Pillar 1: Why Agents Fail (PT) -->
+      <div class="footer-seo-col">
+        <div class="footer-col-header">Por Que Agentes Falham</div>
+        <ul class="footer-link-list">
+          <li><a href="../o-que-e-uma-ontologia-para-agentes-ia/">O Que É uma Ontologia para Agentes de IA</a></li>
+          <li><a href="../cemiterio-de-pocs/">O Cemitério de PoCs Enterprise</a></li>
+          <li><a href="../deriva-de-integracao/">Deriva de Integração em Produção</a></li>
+          <li><a href="../por-que-rag-falha-em-erp/">Por Que RAG Falha em ERPs Financeiros</a></li>
+          <li><a href="../falacia-llm-como-juiz/">A Falácia do LLM como Juiz no Setor Bancário</a></li>
+        </ul>
+      </div>
+
+      <!-- Pillar 2: Agentic AI (PT) -->
+      <div class="footer-seo-col">
+        <div class="footer-col-header">Agentic AI</div>
+        <ul class="footer-link-list">
+          <li><a href="../como-construir-ontologia-enterprise-do-zero/">Como Construir uma Ontologia Enterprise do Zero</a></li>
+          <li><a href="../isolamento-perimetro-mcp-contratos-dados/">Isolamento de Perímetro e MCP</a></li>
+          <li><a href="../sistemas-legados-motor-execucao/">Sistemas Legados como Motor de Execução</a></li>
+          <li><a href="../estudo-caso-latam-airlines/">LATAM Airlines: Motor de Margem a 3%</a></li>
+          <li><a href="../agentes-ilimitados-maquinas-estados-finitos/">Máquinas de Estados vs Loops de API</a></li>
+          <li><a href="../arquitetura-agentes-databricks-lakehouse-unity-catalog-langgraph/">Databricks Lakehouse e LangGraph</a></li>
+          <li><a href="https://hsnlabs.ai/canvas/" target="_blank" rel="noopener">The Agentic Canvas™ ↗</a></li>
+        </ul>
+      </div>
+
+      <!-- Pillar 3: Future of Work (PT) -->
+      <div class="footer-seo-col">
+        <div class="footer-col-header">Futuro do Trabalho</div>
+        <ul class="footer-link-list">
+          <li><a href="../matriz-substituicao-bpo/">Matriz de Substituição de BPO</a></li>
+          <li><a href="../guarda-do-balanco-extincao-bpo/">Extinção do BPO de Recursos Humanos</a></li>
+          <li><a href="../colapso-rpa-legado/">O Colapso do RPA Legado</a></li>
+          <li><a href="../playbook-c-suite-protecao-margem/">O Playbook de Transicao da Diretoria</a></li>
+          <li><a href="../custo-ia-ilimitada-ti-legada/">O Custo da IA Ilimitada na TI Legada</a></li>
+          <li><a href="../manifesto/">Por Que Construí a hsnlabs</a></li>
+          <li style="margin-top: 14px; padding-top: 10px; border-top: 1px solid var(--hairline);">
+            <div style="font-size: 11px; font-family: var(--font-mono); color: var(--cyan-text); text-transform: uppercase; margin-bottom: 6px;">Newsletter</div>
+            <div style="display: flex; gap: 10px; align-items: center; justify-content: space-between; flex-wrap: wrap;">
+              <div style="display: flex; gap: 10px; align-items: center; min-width: 145px; flex: 1 1 auto;">
+                <img src="../../../assets/brand/newsletter/agentes-x-gente.png" alt="[Agentes] x [a Gente]" style="width: 36px; height: 36px; border: 1px solid var(--hairline-strong); flex-shrink: 0; display: block; border-radius: 0;">
+                <div style="min-width: 0;">
+                  <div style="font-weight: 600; font-size: 13px; color: var(--ink); line-height: 1.2;">[Agentes] x [a Gente]</div>
+                  <div style="font-size: 10.5px; color: var(--muted); margin-top: 2px;">1.600+ assinantes</div>
+                </div>
+              </div>
+              <a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7397999984089935872" target="_blank" rel="noopener" aria-label="Assinar [Agentes] x [a Gente] no LinkedIn" style="background: #ffffff; border: 1px solid var(--hairline-strong); color: var(--ink); padding: 5px 10px; font-size: 11px; font-weight: 500; border-radius: 0; text-decoration: none; display: inline-flex; align-items: center; gap: 5px; flex-shrink: 0; transition: all 0.15s ease; box-shadow: 0 1px 2px rgba(0,0,0,0.03);">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="#0A66C2" aria-hidden="true"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+                <span>LinkedIn</span>
+              </a>
+            </div>
+            <div style="font-size: 10.5px; color: var(--muted); margin-top: 6px; line-height: 1.35;">
+              Fora do hype, discutimos como Agentic AI multiplica e alavanca a capacidade laboral humana.
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      
+
+    </div>
+
+    <!-- Minimalist Bottom Line -->
+    <div class="footer-bottom-bar">
+      <div class="footer-bottom-copy">
+        
+        2026 hsnlabs. Adoção de Agentic AI.
+        
+      </div>
+      <div class="footer-bottom-nav">
+        <a href="https://github.com/hsnlabs-ai" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/company/hsnlabs" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://x.com/hsnlabs" target="_blank" rel="noopener">X</a>
+        <a href="../../../feed_rss_created.xml">RSS Feed</a>
+        <a href="../../../feed_json_created.json">JSON Feed</a>
+        <a href="../../../sitemap.xml">Sitemap</a>
+        
+        <a href="https://hsnlabs.ai/canvas/">The Agentic Canvas™</a>
+        <a href="https://hsnlabs.ai/bootcamp/">Bootcamp</a>
+        <a href="https://hsnlabs.ai/advisory/">Advisory</a>
+        <a href="https://hsnlabs.ai/langchain/">LangChain</a>
+        <a href="https://hsnlabs.ai/snowflake/">Snowflake</a>
+        <a href="https://hsnlabs.ai/databricks/">Databricks</a>
+        <a href="https://hsnlabs.ai/braintrust/">Braintrust</a>
+        <a href="https://hsnlabs.ai/privacy-policy/">Política de Privacidade</a>
+        <a href="https://hsnlabs.ai/modern-slavery-statement/">Conformidade</a>
+        
+      </div>
+    </div>
+
+  </div>
+</footer>
+<!-- endblock -->
+        
+    </div>
+    <script src="../../../assets/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="../../../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../../../assets/js/main.min.js"></script>
+    <script src="../../../assets/js/pagination.js" defer></script>
+    <script src="../../../assets/js/relative_dates.js" defer></script>
+    <script src="../../../assets/js/mermaid_init.js" defer></script>
+    <script src="../../../assets/js/founder-rotation.js" defer></script>
+    <script src="../../../assets/js/canvas_cta_tracking.js" defer></script>
+    <script src="../../../search/main.js" defer></script>
+
+</body>
+
+</html>

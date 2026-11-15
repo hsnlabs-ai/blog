@@ -19,6 +19,102 @@ Arquiteturas entregues incluem **Deloitte**, **Santander**, **Softplan**, **Unip
 
 <div class="blog-list" id="component-blog-list">
   <article class="blog-row blog-post-item">
+    <a class="blog-row-thumb" href="/blog/pt/post/langsmith-evals-producao-agentes/">
+      <img src="../assets/images/posts/langsmith-evals-production-agents/cover.webp" alt="LangSmith e evals em produção: como medir agentes antes do erro" loading="lazy">
+    </a>
+    <div class="blog-row-body">
+      <div class="blog-row-byline">
+        <img class="blog-row-avatar" src="../assets/images/author/hugo-nascimento.jpg" alt="Hugo S. Nascimento" loading="lazy">
+        <h2 class="blog-row-title">
+          <a href="/blog/pt/post/langsmith-evals-producao-agentes/">LangSmith e evals em produção: como medir agentes antes do erro</a>
+        </h2>
+      </div>
+      <p class="blog-row-meta">2026-11-15 &bull; Por Que Agentes Falham &bull; Hugo S. Nascimento</p>
+      <p class="blog-row-description">Como usar LangSmith, evals de trajetória e métricas de eficiência para medir agentes de IA antes que falhas cheguem ao usuário em produção.</p>
+      <a class="blog-row-cta" href="/blog/pt/post/langsmith-evals-producao-agentes/">Ler Post &rarr;</a>
+    </div>
+  </article>
+  <article class="blog-row blog-post-item">
+    <a class="blog-row-thumb" href="/blog/pt/post/loop-engineering-controle-custos-agentes/">
+      <img src="../assets/images/posts/loop-engineering-controlling-agent-costs/cover.webp" alt="Loop Engineering: como controlar agentes de IA sem estourar custos" loading="lazy">
+    </a>
+    <div class="blog-row-body">
+      <div class="blog-row-byline">
+        <img class="blog-row-avatar" src="../assets/images/author/hugo-nascimento.jpg" alt="Hugo S. Nascimento" loading="lazy">
+        <h2 class="blog-row-title">
+          <a href="/blog/pt/post/loop-engineering-controle-custos-agentes/">Loop Engineering: como controlar agentes de IA sem estourar custos</a>
+        </h2>
+      </div>
+      <p class="blog-row-meta">2026-11-14 &bull; Por Que Agentes Falham &bull; Hugo S. Nascimento</p>
+      <p class="blog-row-description">Como aplicar loop engineering em quatro camadas com LangGraph e LangSmith para conter custos em dólar, latência e falhas silenciosas de agentes em produção.</p>
+      <a class="blog-row-cta" href="/blog/pt/post/loop-engineering-controle-custos-agentes/">Ler Post &rarr;</a>
+    </div>
+  </article>
+  <article class="blog-row blog-post-item">
+    <a class="blog-row-thumb" href="/blog/pt/post/context-engineering-engenharia-de-contexto-agentes/">
+      <img src="../assets/images/posts/context-engineering-enterprise-agents/cover.webp" alt="Context Engineering: engenharia de contexto para agentes em produção" loading="lazy">
+    </a>
+    <div class="blog-row-body">
+      <div class="blog-row-byline">
+        <img class="blog-row-avatar" src="../assets/images/author/hugo-nascimento.jpg" alt="Hugo S. Nascimento" loading="lazy">
+        <h2 class="blog-row-title">
+          <a href="/blog/pt/post/context-engineering-engenharia-de-contexto-agentes/">Context Engineering: engenharia de contexto para agentes em produção</a>
+        </h2>
+      </div>
+      <p class="blog-row-meta">2026-11-13 &bull; Agentic AI &bull; Hugo S. Nascimento</p>
+      <p class="blog-row-description">Como context engineering em LangGraph aplica escrever, selecionar, comprimir e isolar contexto em ERPs brasileiros para cortar desperdício de tokens em USD e proteger dados sob LGPD.</p>
+      <a class="blog-row-cta" href="/blog/pt/post/context-engineering-engenharia-de-contexto-agentes/">Ler Post &rarr;</a>
+    </div>
+  </article>
+  <article class="blog-row blog-post-item">
+    <a class="blog-row-thumb" href="/blog/pt/post/o-que-sao-agentes-de-ia-producao/">
+      <img src="../assets/images/posts/what-are-ai-agents-enterprise-production/cover.webp" alt="O que são agentes de IA na prática corporativa além de chatbots" loading="lazy">
+    </a>
+    <div class="blog-row-body">
+      <div class="blog-row-byline">
+        <img class="blog-row-avatar" src="../assets/images/author/hugo-nascimento.jpg" alt="Hugo S. Nascimento" loading="lazy">
+        <h2 class="blog-row-title">
+          <a href="/blog/pt/post/o-que-sao-agentes-de-ia-producao/">O que são agentes de IA na prática corporativa além de chatbots</a>
+        </h2>
+      </div>
+      <p class="blog-row-meta">2026-11-12 &bull; Agentic AI &bull; Hugo S. Nascimento</p>
+      <p class="blog-row-description">Entenda o que são agentes de IA além de chatbots, os seis níveis de autonomia até máquinas de estado em LangGraph e a infraestrutura do LangSmith em produção.</p>
+      <a class="blog-row-cta" href="/blog/pt/post/o-que-sao-agentes-de-ia-producao/">Ler Post &rarr;</a>
+    </div>
+  </article>
+  <article class="blog-row blog-post-item">
+    <a class="blog-row-thumb" href="/blog/pt/post/langchain-vs-langgraph-vs-deep-agents/">
+      <img src="../assets/images/posts/langchain-vs-langgraph-vs-deep-agents/cover.webp" alt="LangChain vs LangGraph vs Deep Agents: quando usar cada um em produção" loading="lazy">
+    </a>
+    <div class="blog-row-body">
+      <div class="blog-row-byline">
+        <img class="blog-row-avatar" src="../assets/images/author/hugo-nascimento.jpg" alt="Hugo S. Nascimento" loading="lazy">
+        <h2 class="blog-row-title">
+          <a href="/blog/pt/post/langchain-vs-langgraph-vs-deep-agents/">LangChain vs LangGraph vs Deep Agents: quando usar cada um em produção</a>
+        </h2>
+      </div>
+      <p class="blog-row-meta">2026-11-11 &bull; Agentic AI &bull; Hugo S. Nascimento</p>
+      <p class="blog-row-description">Comparativo técnico de LangChain vs LangGraph e Deep Agents em produção: entenda quando usar runtime determinístico, middleware ou harness completo.</p>
+      <a class="blog-row-cta" href="/blog/pt/post/langchain-vs-langgraph-vs-deep-agents/">Ler Post &rarr;</a>
+    </div>
+  </article>
+  <article class="blog-row blog-post-item">
+    <a class="blog-row-thumb" href="/blog/pt/post/o-que-e-agent-harness-producao/">
+      <img src="../assets/images/posts/what-is-agent-harness-production/cover.webp" alt="O que é Agent Harness e por que agentes quebram sem ele" loading="lazy">
+    </a>
+    <div class="blog-row-body">
+      <div class="blog-row-byline">
+        <img class="blog-row-avatar" src="../assets/images/author/hugo-nascimento.jpg" alt="Hugo S. Nascimento" loading="lazy">
+        <h2 class="blog-row-title">
+          <a href="/blog/pt/post/o-que-e-agent-harness-producao/">O que é Agent Harness e por que agentes quebram sem ele</a>
+        </h2>
+      </div>
+      <p class="blog-row-meta">2026-11-10 &bull; Por Que Agentes Falham &bull; Hugo S. Nascimento</p>
+      <p class="blog-row-description">O que é agent harness, por que modelos isolados falham na produção corporativa e como Deep Agents e LangGraph resolvem context rot e loops longos.</p>
+      <a class="blog-row-cta" href="/blog/pt/post/o-que-e-agent-harness-producao/">Ler Post &rarr;</a>
+    </div>
+  </article>
+  <article class="blog-row blog-post-item">
     <a class="blog-row-thumb" href="/blog/pt/post/o-fenomeno-high-ic/">
       <img src="../assets/images/posts/the-high-ic-phenomenon/cover.webp" alt="O Fenômeno High IC: Produtividade e Equipes Enxutas" loading="lazy">
     </a>
