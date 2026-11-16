@@ -18,6 +18,18 @@ Arquiteturas entregues incluem **Deloitte**, **Santander**, **Softplan**, **Unip
 ---
 
 <div class="blog-list" id="component-blog-list" data-posts-per-page="10">
+  <article class="blog-row blog-post-item" data-page="1" data-category="Why Agents Fail" data-tags="why-agents-fail,case-studies,production,guardrails,ontology">
+    <a class="blog-row-card-link" href="/blog/pt/post/estudo-caso-lu-magalu-whatsapp-agentes-ia/">
+      <div class="blog-row-thumb">
+        <img src="../assets/images/posts/lu-magalu-whatsapp-ai-agent-case-study/cover.webp" alt="Lu do Magalu no WhatsApp: do desvio de escopo à trava de identidade em produção" loading="lazy">
+      </div>
+      <div class="blog-row-body">
+        <h2 class="blog-row-title">Lu do Magalu no WhatsApp: do desvio de escopo à trava de identidade em produção</h2>
+        <p class="blog-row-meta">2026-11-16 &bull; Por Que Agentes Falham</p>
+        <p class="blog-row-description">Estudo de caso sobre o incidente da Lu do Magalu no WhatsApp, a resposta rápida com trava de CPF na camada de identidade e os quatro pilares para sustentar agentes em escala.</p>
+      </div>
+    </a>
+  </article>
   <article class="blog-row blog-post-item" data-page="1" data-category="Why Agents Fail" data-tags="langsmith,evaluation,deep-agents,observability,production">
     <a class="blog-row-card-link" href="/blog/pt/post/langsmith-evals-producao-agentes/">
       <div class="blog-row-thumb">
@@ -126,7 +138,7 @@ Arquiteturas entregues incluem **Deloitte**, **Santander**, **Softplan**, **Unip
       </div>
     </a>
   </article>
-  <article class="blog-row blog-post-item" data-page="1" data-category="Agentic AI" data-tags="snowflake,langgraph,architecture,data-contracts,production">
+  <article class="blog-row blog-post-item" data-page="2" data-category="Agentic AI" data-tags="snowflake,langgraph,architecture,data-contracts,production" style="display: none;">
     <a class="blog-row-card-link" href="/blog/pt/post/arquitetura-agentes-snowflake-ai-data-cloud-langgraph/">
       <div class="blog-row-thumb">
         <img src="../assets/images/posts/snowflake-ai-data-cloud-langgraph-agent-architecture/cover.webp" alt="Snowflake AI Data Cloud e LangGraph: Conectando Máquinas de Estado aos Dados Corporativos" loading="lazy">
@@ -246,7 +258,7 @@ Arquiteturas entregues incluem **Deloitte**, **Santander**, **Softplan**, **Unip
       </div>
     </a>
   </article>
-  <article class="blog-row blog-post-item" data-page="2" data-category="Agentic AI" data-tags="python,mcp,pydantic" style="display: none;">
+  <article class="blog-row blog-post-item" data-page="3" data-category="Agentic AI" data-tags="python,mcp,pydantic" style="display: none;">
     <a class="blog-row-card-link" href="/blog/pt/post/como-construir-ontologia-operacional-python-mcp/">
       <div class="blog-row-thumb">
         <img src="../assets/images/posts/how-to-build-operational-ontology-python-mcp/cover.webp" alt="Como Construir uma Ontologia Operacional de Negócios em Python com Pydantic e MCP" loading="lazy">
@@ -366,7 +378,7 @@ Arquiteturas entregues incluem **Deloitte**, **Santander**, **Softplan**, **Unip
       </div>
     </a>
   </article>
-  <article class="blog-row blog-post-item" data-page="3" data-category="Future of Work" data-tags="erp,support,consulting" style="display: none;">
+  <article class="blog-row blog-post-item" data-page="4" data-category="Future of Work" data-tags="erp,support,consulting" style="display: none;">
     <a class="blog-row-card-link" href="/blog/pt/post/morte-suporte-nivel-1-erp/">
       <div class="blog-row-thumb">
         <img src="../assets/images/posts/death-of-tier-1-erp-helpdesk/cover.webp" alt="A Morte do Suporte Nível 1: Por Que Consultorias de ERP Não Sustentarão o Modelo de Horas Faturáveis" loading="lazy">
@@ -486,7 +498,7 @@ Arquiteturas entregues incluem **Deloitte**, **Santander**, **Softplan**, **Unip
       </div>
     </a>
   </article>
-  <article class="blog-row blog-post-item" data-page="4" data-category="Agentic AI" data-tags="architecture,guardrails,state-machines" style="display: none;">
+  <article class="blog-row blog-post-item" data-page="5" data-category="Agentic AI" data-tags="architecture,guardrails,state-machines" style="display: none;">
     <a class="blog-row-card-link" href="/blog/pt/post/chatbot-vs-agente/">
       <div class="blog-row-thumb">
         <img src="../assets/images/posts/chatbot-vs-agent/cover.webp" alt="Chatbot vs Agente: Por Que Substituir BPOs Exige Ontologias em Produção" loading="lazy">
@@ -524,7 +536,7 @@ Arquiteturas entregues incluem **Deloitte**, **Santander**, **Softplan**, **Unip
   </article>
   <div id="blog-pagination" class="blog-pagination" data-total-pages="5" data-page-size="10">
     <div class="pagination-info">
-      <span id="pagination-status">Mostrando 1–10 de 42 posts</span>
+      <span id="pagination-status">Mostrando 1–10 de 43 posts</span>
     </div>
     <nav class="pagination-controls" aria-label="Paginação do Blog">
       <button class="pagination-btn pagination-nav" id="pagination-prev" disabled aria-label="Página anterior">

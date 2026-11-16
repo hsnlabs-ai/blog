@@ -13,6 +13,15 @@
       <link>https://hsnlabs.ai/blog/pt/</link>
     </image>
     <item>
+      <title>Lu do Magalu no WhatsApp: do desvio de escopo à trava de identidade em produção</title>
+      <link>https://hsnlabs.ai/blog/pt/post/estudo-caso-lu-magalu-whatsapp-agentes-ia/</link>
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/pt/post/estudo-caso-lu-magalu-whatsapp-agentes-ia/</guid>
+      <pubDate>Mon, 16 Nov 2026 00:00:00 -0000</pubDate>
+      <description>Estudo de caso sobre o incidente da Lu do Magalu no WhatsApp, a resposta rápida com trava de CPF na camada de identidade e os quatro pilares para sustentar agentes em escala.</description>
+      <category>Why Agents Fail</category><category>why-agents-fail</category><category>case-studies</category><category>production</category><category>guardrails</category><category>ontology</category>
+      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/lu-magalu-whatsapp-ai-agent-case-study/cover.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
       <title>LangSmith e evals em produção: como medir agentes antes do erro</title>
       <link>https://hsnlabs.ai/blog/pt/post/langsmith-evals-producao-agentes/</link>
       <guid isPermaLink="true">https://hsnlabs.ai/blog/pt/post/langsmith-evals-producao-agentes/</guid>

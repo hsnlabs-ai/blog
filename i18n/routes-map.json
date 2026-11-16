@@ -566,6 +566,17 @@
       "target_keyword_pt": "langsmith",
       "en_path": "/blog/post/langsmith-evals-production-agents/",
       "pt_path": "/blog/pt/post/langsmith-evals-producao-agentes/"
+    },
+    {
+      "slug_en": "lu-magalu-whatsapp-ai-agent-case-study",
+      "slug_pt": "estudo-caso-lu-magalu-whatsapp-agentes-ia",
+      "title_en": "Lu do Magalu on WhatsApp: From Scope Drift to Identity Locks in Production",
+      "title_pt": "Lu do Magalu no WhatsApp: do desvio de escopo à trava de identidade em produção",
+      "category_en": "Why Agents Fail",
+      "category_pt": "Por Que Agentes Falham",
+      "target_keyword_pt": "lu do magalu whatsapp agentes ia",
+      "en_path": "/blog/post/lu-magalu-whatsapp-ai-agent-case-study/",
+      "pt_path": "/blog/pt/post/estudo-caso-lu-magalu-whatsapp-agentes-ia/"
     }
   ]
 }

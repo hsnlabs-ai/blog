@@ -47,6 +47,8 @@ Anchoring agentic workflows to validated state machines across legacy ERPs to re
 Technical posts, case studies, and post-mortems on enterprise agent architectures and runtime observability.
 - RSS Feed EN: https://hsnlabs.ai/blog/feed_rss_created.xml
 - JSON Feed EN: https://hsnlabs.ai/blog/feed_json_created.json
+- Lu do Magalu on WhatsApp: From Scope Drift to Identity Locks in Production: https://hsnlabs.ai/blog/post/lu-magalu-whatsapp-ai-agent-case-study/
+  Case study examining how Magalu turned a public WhatsApp AI agent scope leak into a fast identity-layer defense, and the four pillars for enterprise agent governance.
 - LangSmith and Production Evals: Measuring Agents Before Failures Hit Users: https://hsnlabs.ai/blog/post/langsmith-evals-production-agents/
   How LangSmith observability, targeted trajectory evals, and efficiency ratios catch Deep Agents failures before they hit enterprise users.
 - Loop Engineering: Controlling Production AI Agents Without Runaway Costs: https://hsnlabs.ai/blog/post/loop-engineering-controlling-agent-costs/
@@ -141,6 +143,8 @@ Technical posts, case studies, and post-mortems on enterprise agent architecture
 - Blog hsnlabs em Português: https://hsnlabs.ai/blog/pt/
 - Feed RSS em Português: https://hsnlabs.ai/blog/feed_rss_pt.xml
 - Feed JSON em Português: https://hsnlabs.ai/blog/feed_json_pt.json
+- Lu do Magalu no WhatsApp: do desvio de escopo à trava de identidade em produção: https://hsnlabs.ai/blog/pt/post/estudo-caso-lu-magalu-whatsapp-agentes-ia/
+  Estudo de caso sobre o incidente da Lu do Magalu no WhatsApp, a resposta rápida com trava de CPF na camada de identidade e os quatro pilares para sustentar agentes em escala.
 - LangSmith e evals em produção: como medir agentes antes do erro: https://hsnlabs.ai/blog/pt/post/langsmith-evals-producao-agentes/
   Como usar LangSmith, evals de trajetória e métricas de eficiência para medir agentes de IA antes que falhas cheguem ao usuário em produção.
 - Loop Engineering: como controlar agentes de IA sem estourar custos: https://hsnlabs.ai/blog/pt/post/loop-engineering-controle-custos-agentes/

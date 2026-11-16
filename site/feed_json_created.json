@@ -13,6 +13,28 @@
     "language": "en",
     "items": [
         {
+            "id": "https://hsnlabs.ai/blog/post/lu-magalu-whatsapp-ai-agent-case-study/",
+            "url": "https://hsnlabs.ai/blog/post/lu-magalu-whatsapp-ai-agent-case-study/",
+            "title": "Lu do Magalu on WhatsApp: From Scope Drift to Identity Locks in Production",
+            "content_html": "Case study examining how Magalu turned a public WhatsApp AI agent scope leak into a fast identity-layer defense, and the four pillars for enterprise agent governance.",
+            "image": "https://hsnlabs.ai/blog/assets/images/posts/lu-magalu-whatsapp-ai-agent-case-study/cover.webp",
+            "date_modified": "2026-11-16T00:00:00+00:00",
+            "date_published": "2026-11-16T00:00:00+00:00",
+            "authors": [
+                {
+                    "name": "Hugo S. Nascimento"
+                }
+            ],
+            "tags": [
+                "Why Agents Fail",
+                "case-studies",
+                "guardrails",
+                "ontology",
+                "production",
+                "why-agents-fail"
+            ]
+        },
+        {
             "id": "https://hsnlabs.ai/blog/post/langsmith-evals-production-agents/",
             "url": "https://hsnlabs.ai/blog/post/langsmith-evals-production-agents/",
             "title": "LangSmith and Production Evals: Measuring Agents Before Failures Hit Users",
@@ -423,26 +445,6 @@
                 "deterministic-ai",
                 "enterprise",
                 "ontology"
-            ]
-        },
-        {
-            "id": "https://hsnlabs.ai/blog/post/c-suite-margin-protection-playbook/",
-            "url": "https://hsnlabs.ai/blog/post/c-suite-margin-protection-playbook/",
-            "title": "The C-Suite Transition Playbook: Protecting Margins in the Agentic Economy",
-            "content_html": "Executive blueprint for boardrooms and CFOs defending operational margins against legacy IT cost structures in the agentic economy.",
-            "image": "https://hsnlabs.ai/blog/assets/images/posts/c-suite-margin-protection-playbook/cover.webp",
-            "date_modified": "2026-09-25T00:00:00+00:00",
-            "date_published": "2026-09-25T00:00:00+00:00",
-            "authors": [
-                {
-                    "name": "Hugo S. Nascimento"
-                }
-            ],
-            "tags": [
-                "Future of Work",
-                "c-suite",
-                "economics",
-                "margins"
             ]
         }
     ]
