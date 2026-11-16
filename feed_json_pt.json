@@ -7,6 +7,29 @@
   "icon": "https://hsnlabs.ai/blog/assets/brand/symbol/symbol-square-pure-cyan.png",
   "items": [
     {
+      "id": "https://hsnlabs.ai/blog/pt/post/estudo-caso-lu-magalu-whatsapp-agentes-ia/",
+      "url": "https://hsnlabs.ai/blog/pt/post/estudo-caso-lu-magalu-whatsapp-agentes-ia/",
+      "title": "Lu do Magalu no WhatsApp: do desvio de escopo à trava de identidade em produção",
+      "summary": "Estudo de caso sobre o incidente da Lu do Magalu no WhatsApp, a resposta rápida com trava de CPF na camada de identidade e os quatro pilares para sustentar agentes em escala.",
+      "image": "https://hsnlabs.ai/blog/assets/images/posts/lu-magalu-whatsapp-ai-agent-case-study/cover.webp",
+      "date_published": "2026-11-16T00:00:00+00:00",
+      "language": "pt-BR",
+      "tags": [
+        "Why Agents Fail",
+        "why-agents-fail",
+        "case-studies",
+        "production",
+        "guardrails",
+        "ontology"
+      ],
+      "authors": [
+        {
+          "name": "Hugo S. Nascimento",
+          "url": "https://hsnlabs.ai"
+        }
+      ]
+    },
+    {
       "id": "https://hsnlabs.ai/blog/pt/post/langsmith-evals-producao-agentes/",
       "url": "https://hsnlabs.ai/blog/pt/post/langsmith-evals-producao-agentes/",
       "title": "LangSmith e evals em produção: como medir agentes antes do erro",

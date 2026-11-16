@@ -1,0 +1,812 @@
+
+
+<!doctype html>
+<html lang="en" data-bs-theme="">
+
+<head>
+    <title>Lu do Magalu on WhatsApp: From Scope Drift to Identity Locks in Production - Hugo S. Nascimento</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="../../assets/brand/favicons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/brand/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/brand/favicons/favicon-16x16.png">
+    <meta name="theme-color" content="#52B4FD"><link rel="canonical" href="https://hsnlabs.ai/blog/post/lu-magalu-whatsapp-ai-agent-case-study/">
+    <meta name="title" content="Lu do Magalu on WhatsApp: From Scope Drift to Identity Locks in Production">
+    <meta name="description" content="Case study examining how Magalu turned a public WhatsApp AI agent scope leak into a fast identity-layer defense, and the four pillars for enterprise agent governance.">
+
+    <!-- OpenGraph Metadata -->
+    <meta property="og:site_name" content="hsnlabs">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="pt_BR">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Lu do Magalu on WhatsApp: From Scope Drift to Identity Locks in Production">
+    <meta property="og:description" content="Case study examining how Magalu turned a public WhatsApp AI agent scope leak into a fast identity-layer defense, and the four pillars for enterprise agent governance.">
+    <meta property="og:url" content="https://hsnlabs.ai/blog/post/lu-magalu-whatsapp-ai-agent-case-study/">
+    <meta property="og:image" content="https://hsnlabs.ai/blog/assets/images/posts/lu-magalu-whatsapp-ai-agent-case-study/cover.webp">
+    <meta property="og:image:secure_url" content="https://hsnlabs.ai/blog/assets/images/posts/lu-magalu-whatsapp-ai-agent-case-study/cover.webp">
+    <meta property="og:image:alt" content="Lu do Magalu on WhatsApp: From Scope Drift to Identity Locks in Production"><meta property="og:image:type" content="image/webp"><!-- Twitter Card Metadata -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@hsnlabs">
+    <meta name="twitter:creator" content="@hugo_nasc">
+    <meta name="twitter:title" content="Lu do Magalu on WhatsApp: From Scope Drift to Identity Locks in Production">
+    <meta name="twitter:description" content="Case study examining how Magalu turned a public WhatsApp AI agent scope leak into a fast identity-layer defense, and the four pillars for enterprise agent governance.">
+    <meta name="twitter:image" content="https://hsnlabs.ai/blog/assets/images/posts/lu-magalu-whatsapp-ai-agent-case-study/cover.webp"><meta name="author" content="Hugo S. Nascimento"><meta name="date" content="2026-11-16">
+      <meta property="article:published_time" content="2026-11-16"><meta property="article:section" content="Why Agents Fail">
+
+    <script>var base_url = '../..';</script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/css/root.min.css">
+    <link rel="stylesheet" href="../../assets/css/main.min.css">
+    <link rel="stylesheet" href="../../assets/css/media.min.css">
+    <link rel="stylesheet" href="../../assets/css/mkdocstrings.min.css">
+    <link href="../../stylesheets/extra.css" rel="stylesheet">
+    <link href="../../assets/css/pagination.css" rel="stylesheet">
+    
+
+
+<!-- Feeds and Crawlers -->
+
+<link rel="alternate" type="application/rss+xml" title="RSS Feed - Hugo S. Nascimento" href="../../feed_rss_created.xml">
+<link rel="alternate" type="application/json" title="JSON Feed - Hugo S. Nascimento" href="../../feed_json_created.json">
+
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+<!-- Search Engine Verification -->
+<meta name="msvalidate.01" content="fb6d944d28fc4484bd669f6d9c4d3292">
+<meta name="google-site-verification" content="G-GMK24ECXMF">
+
+<!-- GEO and Local SEO -->
+<meta name="geo.region" content="BR-SP">
+<meta name="geo.placename" content="São Paulo">
+<meta name="geo.position" content="-23.561684;-46.655981">
+<meta name="ICBM" content="-23.561684, -46.655981">
+
+<!-- Typography: Cormorant Garamond & Inter -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- Google Analytics (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GMK24ECXMF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-GMK24ECXMF');
+</script>
+
+<!-- Structured Data -->
+
+</head>
+
+<body>
+    <!-- FIXED / STICKY HEADER -->
+    <header class="header-nav" id="component-header">
+        <div class="container header-container">
+            <!-- block header -->
+<div class="blog-header-inner">
+  <div class="blog-header-brand-group">
+    
+    <a href="https://hsnlabs.ai/en/" class="blog-brand-link" title="hsnlabs Main Site">
+      <img src="../../assets/brand/lockups/hsnlabs-lockup-horizontal-light.png" alt="hsnlabs" class="blog-brand-logo">
+    </a>
+    <span class="blog-brand-sep" aria-hidden="true">/</span>
+    <a href="../.." class="blog-badge-link" title="hsnlabs Blog">
+      <span class="blog-badge-text">Blog</span>
+    </a>
+    
+  </div>
+
+  <nav class="blog-header-menu" aria-label="Main Navigation">
+    
+    <a href="../.." class="blog-nav-link ">All Posts</a>
+    <a href="https://hsnlabs.ai/en/bootcamp/" class="blog-nav-link">Agentic Bootcamp™</a>
+    <a href="https://hsnlabs.ai/en/advisory/" class="blog-nav-link">Advisory</a>
+    <a href="../../about/resume/" class="blog-nav-link ">About Hugo</a>
+    
+  </nav>
+
+  <div class="blog-header-actions">
+    <button class="blog-action-icon blog-search-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" title="Search posts" aria-label="Search posts">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="11" cy="11" r="8"></circle>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+      </svg>
+    </button>
+    
+    <a href="../../feed_rss_created.xml" class="blog-action-icon blog-rss-link" title="RSS Feed 2.0" target="_blank" rel="noopener" aria-label="RSS Feed">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M6.18 15.64a2.18 2.18 0 0 1 2.18 2.18C8.36 19 7.38 20 6.18 20C5 20 4 19 4 17.82a2.18 2.18 0 0 1 2.18-2.18M4 4.44A15.56 15.56 0 0 1 19.56 20h-2.83A12.73 12.73 0 0 0 4 7.27V4.44m0 5.66a9.9 9.9 0 0 1 9.9 9.9h-2.83A7.07 7.07 0 0 0 4 12.93v-2.83z"/>
+      </svg>
+    </a>
+
+    <a href="https://github.com/hsnlabs-ai" class="header-github-link" target="_blank" rel="noopener" title="View GitHub">
+      <svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.161 22 16.416 22 12c0-5.523-4.477-10-10-10z"/></svg>
+      <span>hsnlabs</span>
+    </a>
+
+    
+    <div class="lang-switch">
+      <span class="lang-item active">EN</span>
+      <span class="lang-sep">·</span>
+      <a href="../../pt/post/estudo-caso-lu-magalu-whatsapp-agentes-ia/" class="lang-item">PT</a>
+    </div>
+    <a href="https://hsnlabs.ai/en/bootcamp/" class="btn btn-primary blog-header-cta">Explore Agentic Bootcamp™</a>
+    
+  </div>
+</div>
+<!-- endblock -->
+        </div>
+    </header>
+
+    <div class="blog-body-wrapper">
+        <main class="blog-main-content">
+            <div class="container search-container-wrap"><!-- block search -->
+<div class="collapse" id="collapseExample">
+    <div role="search" class="search-box">
+        <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+            <input type="text" name="q" class="search-query"
+            placeholder="Search docs" title="Type search term here" />
+        </form>
+    </div>
+</div>
+<!-- endblock -->
+            </div>
+
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 d-none d-md-block" id="component-sidebar">
+                        <!-- block sidebar -->
+<div class="navbar-expand-md" role="complementary">
+    
+    
+</div>
+
+<!-- block blog_sidebar -->
+
+
+
+<div class="blog-sidebar" id="component-blog-sidebar">
+
+    <div class="blog-sidebar-widget" style="background: var(--surface-card); border: 1px solid var(--hairline); padding: 18px 16px; margin-bottom: 24px; position: relative; overflow: hidden; isolation: isolate; box-shadow: 0 1px 4px rgba(0,0,0,0.02);">
+        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
+            <div class="founder-callout-avatar" data-initial-index="0" style="width: 44px; height: 44px; border: 1px solid var(--hairline); flex-shrink: 0; overflow: hidden; background: #f0efed;">
+                <img src="https://hsnlabs.ai/assets/images/author/pool/hugo_01.jpg" alt="Hugo S. Nascimento" width="44" height="44" style="display: block; width: 100%; height: 100%; object-fit: cover;" />
+            </div>
+            <div>
+                <div style="font-size: 0.72rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted);">Technical Leadership</div>
+                <div style="font-size: 0.88rem; font-weight: 500; color: var(--ink); line-height: 1.2;">Share it with Hugo, CPTO</div>
+            </div>
+        </div>
+        <a href="https://hsnlabs.ai/en/#contact" style="display: block; text-align: center; background: #ffffff; color: var(--ink); border: 1px solid var(--hairline-strong); padding: 7px 12px; font-size: 0.8rem; font-weight: 500; text-decoration: none; transition: all 0.15s ease; white-space: nowrap;">
+            Start a Conversation
+        </a>
+    </div>
+
+    
+    <div class="blog-sidebar-widget">
+        <h3 class="blog-sidebar-widget-title">Recent Posts</h3>
+        <ul class="blog-sidebar-list">
+            
+            
+            <li>
+                <a href="./">Lu do Magalu on WhatsApp: From Scope Drift to Identity Locks in Production</a>
+                
+                <div class="blog-sidebar-post-meta">
+                    <span class="blog-sidebar-date" data-date="2026-11-16">posted today</span>
+                </div>
+                
+            </li>
+            
+            <li>
+                <a href="../langsmith-evals-production-agents/">LangSmith and Production Evals: Measuring Agents Before Failures Hit Users</a>
+                
+                <div class="blog-sidebar-post-meta">
+                    <span class="blog-sidebar-date" data-date="2026-11-15">1 day ago</span>
+                </div>
+                
+            </li>
+            
+            <li>
+                <a href="../loop-engineering-controlling-agent-costs/">Loop Engineering: Controlling Production AI Agents Without Runaway Costs</a>
+                
+                <div class="blog-sidebar-post-meta">
+                    <span class="blog-sidebar-date" data-date="2026-11-14">2 days ago</span>
+                </div>
+                
+            </li>
+            
+            <li>
+                <a href="../context-engineering-enterprise-agents/">Context Engineering for Production Enterprise AI Agents</a>
+                
+                <div class="blog-sidebar-post-meta">
+                    <span class="blog-sidebar-date" data-date="2026-11-13">3 days ago</span>
+                </div>
+                
+            </li>
+            
+            <li>
+                <a href="../what-are-ai-agents-enterprise-production/">What Are AI Agents in Enterprise Production Beyond Chatbots</a>
+                
+                <div class="blog-sidebar-post-meta">
+                    <span class="blog-sidebar-date" data-date="2026-11-12">4 days ago</span>
+                </div>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    
+    <div class="blog-sidebar-widget">
+        <h3 class="blog-sidebar-widget-title">Categories</h3>
+        <ul class="blog-sidebar-list">
+            
+                
+                <li><a href="../../category/why-agents-fail/">Why Agents Fail</a></li>
+                
+                <li><a href="../../category/agentic-ai/">Agentic AI</a></li>
+                
+                <li><a href="../../category/future-of-work/">Future of Work</a></li>
+                
+            
+        </ul>
+    </div>
+    
+
+    
+    <div class="blog-sidebar-widget">
+        <h3 class="blog-sidebar-widget-title">Tags</h3>
+        <div class="blog-sidebar-tags">
+            
+                
+                <a class="blog-sidebar-tag" href="../../tag/why-agents-fail/">why-agents-fail</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/case-studies/">case-studies</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/production/">production</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/guardrails/">guardrails</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/ontology/">ontology</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/langsmith/">langsmith</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/evaluation/">evaluation</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/deep-agents/">deep-agents</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/observability/">observability</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/loop-engineering/">loop-engineering</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/langgraph/">langgraph</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/context-engineering/">context-engineering</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/agent-memory/">agent-memory</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/rag/">rag</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/ai-agents/">ai-agents</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/langchain/">langchain</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/enterprise/">enterprise</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/architecture/">architecture</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/comparison/">comparison</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/agent-harness/">agent-harness</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/future-of-work/">future-of-work</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/economics/">economics</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/c-suite/">c-suite</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/databricks/">databricks</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/data-contracts/">data-contracts</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/snowflake/">snowflake</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/canvas/">canvas</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/enterprise-agents/">enterprise-agents</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/methodology/">methodology</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/crm/">crm</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/model-context-protocol/">model-context-protocol</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/saas/">saas</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/bpo/">bpo</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/roi/">roi</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/ebitda/">ebitda</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/mcp/">mcp</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/python/">python</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/database/">database</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/sql/">sql</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/vector-database/">vector-database</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/ai-failures/">ai-failures</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/knowledge-graph/">knowledge-graph</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/data-engineering/">data-engineering</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/operational-ontology/">operational-ontology</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/deterministic-ai/">deterministic-ai</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/margins/">margins</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/consulting/">consulting</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/sprint/">sprint</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/artificial-intelligence/">artificial-intelligence</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/philosophy/">philosophy</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/hr/">hr</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/collections/">collections</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/hr-tech/">hr-tech</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/insurance/">insurance</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/arbitrage/">arbitrage</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/erp-support/">erp-support</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/helpdesk/">helpdesk</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/rpa/">rpa</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/automation/">automation</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/poc/">poc</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/latam-airlines/">latam-airlines</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/llm-judge/">llm-judge</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/audit/">audit</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/api-loops/">api-loops</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/erp/">erp</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/legacy-core/">legacy-core</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/mainframe/">mainframe</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/schema-drift/">schema-drift</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/state-machines/">state-machines</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/legacy-it/">legacy-it</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/reliability/">reliability</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/hsnlabs/">hsnlabs</a>
+                
+                <a class="blog-sidebar-tag" href="../../tag/manifesto/">manifesto</a>
+                
+            
+        </div>
+    </div>
+    
+
+</div>
+
+<!-- endblock -->
+
+<!-- endblock -->
+                    </div>
+                    <div class="col-md-9 col-12" id="component-content">
+                        <!-- block content -->
+<section class="container post" id="component-content">
+    <article>
+        
+        <nav class="article-breadcrumb-nav" aria-label="Breadcrumb">
+            
+            <a href="../.." class="article-breadcrumb-back">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+                All Posts
+            </a>
+            
+            
+            <span class="article-breadcrumb-sep">/</span>
+            
+            <span class="article-breadcrumb-category">Why Agents Fail</span>
+            
+            
+        </nav>
+
+        <header>
+            
+                <h1 class=" title" id="component-title">Lu do Magalu on WhatsApp: From Scope Drift to Identity Locks in Production</h1>
+            
+        </header>
+        
+        
+        
+        <p class="page-dates">
+            
+                Created on 2026-11-16
+                 — updated on November 16, 2026
+            
+        </p>
+        
+        <hr class="page-dates-divider">
+        
+        
+        
+
+        
+        <figure class="article-hero-figure">
+            <img src="../../assets/images/posts/lu-magalu-whatsapp-ai-agent-case-study/cover.webp" alt="Lu do Magalu on WhatsApp: From Scope Drift to Identity Locks in Production" loading="eager" />
+        </figure>
+        
+
+        <div class="article-content-body">
+            <p><em>Reading time: 8 minutes. Author: Hugo S. Nascimento.</em></p>
+<!-- more -->
+
+<p><em>Editorial Note: An earlier version of this analysis appeared in the second edition of the <a href="https://www.linkedin.com/newsletters/agentes-x-gente-7397999984089935872/">[Agentes] x [a Gente]</a> LinkedIn newsletter by <a href="https://www.linkedin.com/in/hugosoaresnascimento/">Hugo S. Nascimento</a>. This expanded case study details the production edge routing, identity controls, and operational ontologies behind resilient enterprise deployments.</em></p>
+<h2 id="scale-and-background-of-the-deployment">Scale and Background of the Deployment</h2>
+<p>Magazine Luiza's virtual assistant on WhatsApp, Lu do Magalu, became the focal point of one of Brazil's most instructive discussions on enterprise AI agents in production. Operating at massive scale, the channel has processed more than 9 million official conversations according to <a href="https://valor.globo.com/publicacoes/especiais/gptw-melhores-empresas-para-trabalhar/noticia/2026/10/26/agentes-de-ia-comecam-a-transformar-as-rotinas-nas-grandes-companhias.ghtml">Valor Econômico</a>. Reporting from <a href="https://centraldovarejo.com.br/lu-do-magalu-vende-no-whatsapp-com-conversao-3-vezes-maior-e-plataformas-simplificam-a-criacao-de-times-de-agentes-de-ia/">Central do Varejo</a> citing Mobile Time data shows the channel has already surpassed R$ 100 million in sales, reaching 7.7 million users with a conversion rate three times higher than the retailer's traditional mobile app.</p>
+<p>As Magalu's Chief AI Officer Caio Kyle Gomes documented in <a href="https://www.linkedin.com/posts/caiokylegomes_um-ano-e-meio-de-trabalho-e-podemos-dizer-activity-7389639248624308225-h5Lv/?originalSubdomain=pt">the official launch announcement</a>, building the platform required eighteen months of Brazilian engineering alongside Google Cloud, Meta, and Bain to establish a multi-agent, multi-LLM architecture blending proprietary models on public cloud with open models running on Magalu Cloud. Recent public stress tests offered a clear case study on balancing go-to-market speed with the engineering rigor needed to sustain autonomous agents at scale.</p>
+<p><img src="../../assets/images/posts/lu-magalu-whatsapp-ai-agent-case-study/ceo-magalu-repost-codigo.webp" alt="Screenshot of Magalu CEO commenting on the assistant resolving code on WhatsApp" loading="lazy"></p>
+<p>In October 2026, a software developer asked the shopping assistant about token limits and submitted a snippet containing a classic syntax error. Instead of redirecting the request back to retail, the model parsed the technical prompt and returned corrected code in the same chat turn. CEO Frederico Trajano shared the screenshot on LinkedIn to highlight the model's versatility. For practitioners focused on software architecture and inference unit economics, however, the interaction raised immediate questions about domain boundaries at the edge.</p>
+<p>Testing the official WhatsApp channel directly with a simple question about programming assistance revealed how an emergency containment patch initially reacted:</p>
+<p><img src="../../assets/images/posts/lu-magalu-whatsapp-ai-agent-case-study/teste-programacao-bloqueio.webp" alt="WhatsApp interaction with Lu do Magalu triggering a rigid security block with scolding emojis" loading="lazy"></p>
+<p>The blunt refusal with accusing emojis and abrupt session termination demonstrated the friction created when static edge filters attempt to enforce scope without passing through a semantic customer-experience layer.</p>
+<h2 id="the-obviousness-trap-beyond-generic-guardrails">The Obviousness Trap Beyond Generic Guardrails</h2>
+<p>Dismissing production edge cases as a simplistic lack of guardrails overlooks the reality inside an engineering war room. Luizalabs operates with top-tier engineering talent and global strategic partners. What surfaced on WhatsApp reflects the deeper structural collision between fifty years of deterministic software heuristics and the stochastic behavior of large language models.</p>
+<p>While part of the market applauded turning public curiosity into promotional discount coupons, cybersecurity engineers emphasized that unguarded edges expose systems to unpredictable user inputs. Global Deloitte research cited by Central do Varejo captures this gap across the industry: although 85% of organizations plan to customize agents, only 15% have successfully scaled multi-agent orchestration, and 70% of executives point to governance and lack of trust as primary blockers.</p>
+<p>This tension aligns directly with the mandate outlined by Caio Gomes in an <a href="https://exame.com/inteligencia-artificial/o-quao-humana-sera-a-lu-do-magalu-diretor-de-ia-aposta-na-tecnologia-para-transformar-a-varejista/">Exame interview</a> when taking over AI leadership at Magalu: AI must be measured strictly by concrete business metrics such as revenue growth and cost reduction. Keeping the assistant bounded to the commerce journey protects that exact unit-economics mandate.</p>
+<p>WhatsApp Business pricing makes edge filtering non-negotiable. Public stress tests sending long, out-of-domain payloads such as full movie scripts demonstrated how unfiltered inputs burn both public-cloud LLM inference and Meta Cloud API messaging windows with zero revenue correlation. Similar boundary leaks have triggered global attention across retail, including viral screenshots of a McDonald's chatbot generating Python code.</p>
+<p><img src="../../assets/images/posts/lu-magalu-whatsapp-ai-agent-case-study/caso-mcdonalds-python.webp" alt="Screenshot of a McDonald's chatbot responding to Python programming prompts" loading="lazy"></p>
+<h2 id="headless-agents-versus-surface-agents">Headless Agents versus Surface Agents</h2>
+<p>In our engineering practice at hsnlabs, enterprise deployments split into two operational classes. Headless Agents operate invisibly behind the scenes across data pipelines, reconciliation jobs, and back-office integrations. Surface Agents interact directly with customers through text or voice. In surface deployments, tolerance for scope drift or tonal misalignment approaches zero because every misfire lands immediately in front of the customer.</p>
+<p>A simple analogy illustrates the boundary. In a restaurant, guests order from the menu and waiters bridge the dining room and kitchen. Guests do not walk into the kitchen asking the chef to debug software or repair a car engine, and the kitchen does not expose internal tooling. When a guest asks for something off-menu, the waiter smiles, explains the house specialty, and guides them back to relevant dishes without ever scolding the customer.</p>
+<p>As Caio Gomes has also argued publicly, generative AI does not replace classical discriminative machine learning. Generative models serve best as the conversational view layer, while discriminative classifiers and deterministic business rules handle routing, cost control, and predictability in the backend. Attempting to replace that separation with negative prompt instructions or keyword blocklists creates overprotection collapse, causing the agent to misclassify benign questions as hostile attacks.</p>
+<h2 id="fast-turnaround-at-the-identity-layer">Fast Turnaround at the Identity Layer</h2>
+<p>While much of social commentary remained anchored on the initial incident, the Luizalabs engineering team executed a pragmatic turnaround in the following days by addressing the problem at the right architectural layer: access control and identity.</p>
+<p>Rather than taking the channel offline or stacking brittle regex filters, the operation introduced deterministic account verification requiring a registered CPF tax ID or email linked to the customer's phone number right at entry before unlocking recommendations and broader workflows. Binding the session to a verified customer record cut off recreational stress tests and idle token burn on WhatsApp while keeping the shopping path intact for real buyers.</p>
+<p><img src="../../assets/images/posts/lu-magalu-whatsapp-ai-agent-case-study/trava-cpf-whatsapp.webp" alt="WhatsApp screenshot showing Lu do Magalu requiring registered CPF or email verification before displaying product recommendations" loading="lazy"></p>
+<blockquote>
+<p><strong>[Agentes] x [a Gente]</strong> — Beyond the hype: how Agentic AI multiplies and leverages human labor capacity. Bi-weekly field notes published in Hugo S. Nascimento's LinkedIn newsletter with over 1,600 subscribers. <a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7397999984089935872">Follow on LinkedIn ↗</a></p>
+</blockquote>
+<h2 id="domain-boundaries-and-the-commercial-pivot">Domain Boundaries and the Commercial Pivot</h2>
+<p>Additional boundary testing confirmed that without an explicit domain ontology defining entities, classes, and compliance constraints, commercial retail agents remain exposed around sensitive or regulated subjects. Out of engineering responsibility, sensitive edge observations are kept out of public write-ups and reserved for direct technical reporting to project owners.</p>
+<p>For benign out-of-scope queries, the production alternative to rigid censorship is the Commercial Pivot. Instead of shutting down a conversation when a user brings up programming or everyday domestic questions, the assistant acknowledges the intent warmly and redirects straight back into valid catalog items such as laptops, ergonomic keyboards, or kitchen appliances.</p>
+<p><img src="../../assets/images/posts/lu-magalu-whatsapp-ai-agent-case-study/simulacao-pivot-programacao.webp" alt="Simulation showing a welcoming pivot from programming questions to notebooks and desk setup offers" loading="lazy"></p>
+<p><img src="../../assets/images/posts/lu-magalu-whatsapp-ai-agent-case-study/simulacao-pivot-receita.webp" alt="Simulation showing a friendly pivot from recipe requests to kitchen appliances in the retail catalog" loading="lazy"></p>
+<p>Balancing conversational delight with regulatory compliance requires tight alignment across product, marketing, engineering, and legal teams, enforced deterministically in graph structure rather than wishful prompting.</p>
+<h2 id="four-pillars-of-enterprise-agent-architecture">Four Pillars of Enterprise Agent Architecture</h2>
+<p>Sustaining graceful pivots and tight unit economics at scale requires moving beyond naive prompt engineering into an <a href="https://hsnlabs.ai/architecture.html">Enterprise Agent Architecture</a> grounded in four deterministic layers:</p>
+<pre class="mermaid"><code>flowchart TD
+    A["WhatsApp Business Entry"] --&gt; B["Identity Layer: Registered CPF and Phone Check"]
+    B --&gt; C["Semantic Router: Lightweight Edge Classifier"]
+    C --&gt; D["Domain Ontology: Entities, Rules and Compliance"]
+    D --&gt; E["LangGraph StateGraph: Purchase Flow or Commercial Pivot"]</code></pre>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Fragile Prompt-Only Approach</th>
+<th>Enterprise Agent Architecture</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Identity and Edge</td>
+<td>Anonymous open session burning inference</td>
+<td>Deterministic gate binding CPF, phone, and active account</td>
+</tr>
+<tr>
+<td>Intent Routing</td>
+<td>Every turn routed straight to flagship LLM</td>
+<td>Lightweight classifier filters or pivots before heavy inference</td>
+</tr>
+<tr>
+<td>Business Rules</td>
+<td>Negative prompt instructions triggering false positives</td>
+<td>Dynamic ontology enforcing permitted classes and constraints</td>
+</tr>
+<tr>
+<td>State Lifecycle</td>
+<td>Concatenated string history without transition guards</td>
+<td>Finite state machine with persistent LangGraph checkpointer</td>
+</tr>
+</tbody>
+</table>
+<p>Delivering this reliability requires four coordinated decisions: typed explicit state management rather than open conversation strings, lightweight deterministic intent classification at the edge to prevent <a href="/blog/post/loop-engineering-controlling-agent-costs/">runaway inference costs</a>, <a href="/blog/post/ontology-vs-database-schema/">executable business ontologies over legacy systems</a> instead of negative prompting, and strict finite-state transitions backed by persistent LangGraph checkpointers.</p>
+<h2 id="designing-boundaries-with-the-agentic-canvastm">Designing Boundaries with The Agentic Canvas™</h2>
+<p>Defining scope boundaries, identity gates, and P&amp;L return before writing production code prevents costly post-launch surprises. At hsnlabs, we organize these pre-build decisions inside <a href="https://hsnlabs.ai/en/canvas/">The Agentic Canvas™</a>, publicly open for engineering and product teams, and apply them hands-on during our <a href="https://hsnlabs.ai/en/bootcamp/">Agentic Bootcamp™</a> and <a href="/blog/post/five-day-architecture-sprint/">five-day architecture sprint</a>.</p>
+<h2 id="related-architecture-resources">Related Architecture Resources</h2>
+<ul>
+<li><a href="/blog/post/ontology-vs-database-schema/">Enterprise Ontology versus Database Schema</a></li>
+<li><a href="/blog/post/loop-engineering-controlling-agent-costs/">Loop Engineering: Controlling Production AI Agents Without Runaway Costs</a></li>
+<li><a href="/blog/post/five-day-architecture-sprint/">Five-Day Agentic Architecture Sprint</a></li>
+<li><a href="https://hsnlabs.ai/en/canvas/">Explore The Agentic Canvas™ frameworks</a></li>
+</ul>
+<hr />
+<p><em>Article originally published on <a href="https://hsnlabs.ai/blog/post/lu-magalu-whatsapp-ai-agent-case-study/">hsnlabs</a>. Author: <a href="https://hsnlabs.ai">Hugo S. Nascimento</a>.</em></p>
+<link rel="alternate" hreflang="en" href="https://hsnlabs.ai/blog/post/lu-magalu-whatsapp-ai-agent-case-study/">
+<link rel="alternate" hreflang="pt-BR" href="https://hsnlabs.ai/blog/pt/post/estudo-caso-lu-magalu-whatsapp-agentes-ia/">
+<link rel="alternate" hreflang="x-default" href="https://hsnlabs.ai/blog/post/lu-magalu-whatsapp-ai-agent-case-study/">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "Lu do Magalu on WhatsApp: From Scope Drift to Identity Locks in Production",
+  "url": "https://hsnlabs.ai/blog/post/lu-magalu-whatsapp-ai-agent-case-study/",
+  "description": "Case study examining how Magalu turned a public WhatsApp AI agent scope leak into a fast identity-layer defense, and the four pillars for enterprise agent governance.",
+  "inLanguage": "en",
+  "image": [
+    "https://hsnlabs.ai/blog/assets/images/posts/lu-magalu-whatsapp-ai-agent-case-study/cover.webp"
+  ],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://hsnlabs.ai/blog/post/lu-magalu-whatsapp-ai-agent-case-study/"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Hugo S. Nascimento",
+    "url": "https://hsnlabs.ai",
+    "jobTitle": "Founder & CPTO"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "hsnlabs",
+    "url": "https://hsnlabs.ai",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://hsnlabs.ai/assets/brand/lockups/hsnlabs-lockup-horizontal-light.png"
+    }
+  },
+  "datePublished": "2026-11-16",
+  "dateModified": "2026-11-16",
+  "articleSection": "Why Agents Fail",
+  "keywords": "why-agents-fail, case-studies, production, guardrails, ontology"
+}
+</script>
+
+        </div>
+
+        
+        <!-- Founder Callout Component -->
+        <div class="founder-callout-card">
+            <div style="display: flex; align-items: center; gap: 14px; flex-shrink: 0;">
+                <div class="founder-callout-avatar" data-initial-index="0">
+                    <img src="https://hsnlabs.ai/assets/images/author/pool/hugo_01.jpg" alt="Hugo S. Nascimento" width="52" height="52" class="founder-avatar-img" />
+                </div>
+                <div>
+                    
+                    <div class="founder-callout-label">Have a project in mind?</div>
+                    <div class="founder-callout-name">Share it with Hugo, CPTO</div>
+                    
+                </div>
+            </div>
+
+            <div class="founder-cred-group">
+                
+                <a href="https://hsnlabs.ai/en/langchain/" class="founder-cred-item" title="LangChain & LangGraph Production">
+                    <img src="https://hsnlabs.ai/assets/brand/langchain/lc-lockup-black.svg" alt="LangChain" class="founder-cred-logo">
+                    <span class="founder-cred-sub">Production <span class="founder-cred-arrow">↗</span></span>
+                </a>
+                <a href="https://hsnlabs.ai/en/snowflake/" class="founder-cred-item" title="Snowflake AI Data Cloud Partner">
+                    <img src="https://hsnlabs.ai/assets/brand/snowflake/snowflake-lockup-blue.svg" alt="Snowflake" class="founder-cred-logo">
+                    <span class="founder-cred-sub">Partner <span class="founder-cred-arrow">↗</span></span>
+                </a>
+                <a href="https://hsnlabs.ai/en/databricks/" class="founder-cred-item" title="Databricks Lakehouse &amp; Mosaic AI Partner">
+                    <img src="https://hsnlabs.ai/assets/brand/databricks/databricks-lockup-color.svg" alt="Databricks" class="founder-cred-logo">
+                    <span class="founder-cred-sub">Partner <span class="founder-cred-arrow">↗</span></span>
+                </a>
+                
+            </div>
+
+            
+            <a href="https://hsnlabs.ai/en/#contact" class="founder-callout-btn" style="white-space: nowrap; flex-shrink: 0;">
+                Start a Conversation
+            </a>
+            
+        </div>
+
+        <div class="article-footer-nav">
+            
+            <a href="../.." class="btn btn-outline article-nav-return-btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+                Back to All Posts
+            </a>
+            <a href="https://hsnlabs.ai/en/bootcamp/" class="btn btn-primary article-nav-cta-btn">
+                Explore Agentic Bootcamp™ →
+            </a>
+            
+        </div>
+        
+    </article>
+
+    
+</section>
+<!-- endblock -->
+                    </div>
+                </div>
+            </div>
+            
+        </main>
+
+        
+        <!-- block preview -->
+<!-- endblock -->
+        
+
+        
+        <!-- block footer -->
+<footer class="site-footer" id="component-footer">
+  <div class="container footer-container">
+    
+    <!-- Editorial & SEO Sitemap Grid -->
+    <div class="footer-seo-grid">
+      
+      
+      <!-- Brand & Positioning Column (EN) -->
+      <div class="footer-seo-col brand-col">
+        <a href="https://hsnlabs.ai/en/" class="footer-brand-link" title="hsnlabs">
+          <img src="../../assets/brand/lockups/hsnlabs-lockup-horizontal-light.png" alt="hsnlabs" class="footer-brand-logo">
+        </a>
+        <p class="footer-brand-tagline">
+          hsnlabs is your enterprise AI transformation partner, operationalizing autonomous agents over legacy systems.
+        </p>
+        <p class="footer-brand-meta">
+          AI Architecture Boutique<br>
+          São Paulo, Brazil · Rua Pais Leme, 215, Pinheiros<br>
+          <a href="mailto:hugo@hsnlabs.ai" class="footer-link-subtle">hugo@hsnlabs.ai</a>
+        </p>
+        <div class="footer-badges-row">
+          <a href="../../feed_rss_created.xml" class="footer-rss-chip" target="_blank" rel="noopener">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" style="display:inline-block;vertical-align:-1px;margin-right:4px;"><path d="M6.18 15.64a2.18 2.18 0 0 1 2.18 2.18C8.36 19 7.38 20 6.18 20C5 20 4 19 4 17.82a2.18 2.18 0 0 1 2.18-2.18M4 4.44A15.56 15.56 0 0 1 19.56 20h-2.83A12.73 12.73 0 0 0 4 7.27V4.44m0 5.66a9.9 9.9 0 0 1 9.9 9.9h-2.83A7.07 7.07 0 0 0 4 12.93V10.1z"/></svg>RSS Feed 2.0
+          </a>
+          <a href="../../llms.txt" class="footer-llms-chip">llms.txt for LLMs &amp; Agents</a>
+        </div>
+      </div>
+
+      <!-- Pillar 1: Why Agents Fail (EN) -->
+      <div class="footer-seo-col">
+        <div class="footer-col-header">Why Agents Fail</div>
+        <ul class="footer-link-list">
+          <li><a href="../what-is-an-ontology-for-ai-agents/">What Is an Ontology for AI Agents</a></li>
+          <li><a href="../the-poc-graveyard/">The Enterprise PoC Graveyard</a></li>
+          <li><a href="../integration-drift/">Integration Drift in Production</a></li>
+          <li><a href="../why-rag-breaks-on-erp/">Why RAG Breaks on Financial ERPs</a></li>
+          <li><a href="../llm-as-judge-fallacy/">LLM-as-a-Judge Fallacy in Banking</a></li>
+        </ul>
+      </div>
+
+      <!-- Pillar 2: Agentic AI (EN) -->
+      <div class="footer-seo-col">
+        <div class="footer-col-header">Agentic AI</div>
+        <ul class="footer-link-list">
+          <li><a href="../how-to-build-an-enterprise-ontology-from-scratch/">Building Enterprise Ontologies from Scratch</a></li>
+          <li><a href="../perimeter-isolation-mcp-data-contracts/">Perimeter Isolation and MCP</a></li>
+          <li><a href="../legacy-core-backing-engine/">Legacy Core as Agentic Engine</a></li>
+          <li><a href="../latam-airlines-case-study/">LATAM Airlines: 3% Margin Engine</a></li>
+          <li><a href="../unconstrained-agents-finite-state-machines/">State Machines vs API Loops</a></li>
+          <li><a href="../databricks-lakehouse-unity-catalog-langgraph-agent-architecture/">Databricks Lakehouse &amp; LangGraph</a></li>
+          <li><a href="https://hsnlabs.ai/en/canvas/" target="_blank" rel="noopener">The Agentic Canvas™ ↗</a></li>
+        </ul>
+      </div>
+
+      <!-- Pillar 3: Future of Work (EN) -->
+      <div class="footer-seo-col">
+        <div class="footer-col-header">Future of Work</div>
+        <ul class="footer-link-list">
+          <li><a href="../bpo-replacement-matrix/">BPO Replacement Matrix</a></li>
+          <li><a href="../balance-sheet-guard-bpo-extinction/">Extinction of HR Outsourcing</a></li>
+          <li><a href="../collapse-of-legacy-rpa/">Collapse of Legacy RPA</a></li>
+          <li><a href="../c-suite-margin-protection-playbook/">C-Suite Margin Playbook</a></li>
+          <li><a href="../cost-legacy-it/">Cost of Unbounded AI in Legacy IT</a></li>
+          <li><a href="../manifesto/">Why I Built hsnlabs</a></li>
+          <li style="margin-top: 14px; padding-top: 10px; border-top: 1px solid var(--hairline);">
+            <div style="font-size: 11px; font-family: var(--font-mono); color: var(--cyan-text); text-transform: uppercase; margin-bottom: 6px;">Newsletter</div>
+            <div style="display: flex; gap: 10px; align-items: center; justify-content: space-between; flex-wrap: wrap;">
+              <div style="display: flex; gap: 10px; align-items: center; min-width: 145px; flex: 1 1 auto;">
+                <img src="../../assets/brand/newsletter/agentes-x-gente.png" alt="[Agentes] x [a Gente]" style="width: 36px; height: 36px; border: 1px solid var(--hairline-strong); flex-shrink: 0; display: block; border-radius: 0;">
+                <div style="min-width: 0;">
+                  <div style="font-weight: 600; font-size: 13px; color: var(--ink); line-height: 1.2;">[Agentes] x [a Gente]</div>
+                  <div style="font-size: 10.5px; color: var(--muted); margin-top: 2px;">1,600+ subscribers</div>
+                </div>
+              </div>
+              <a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7397999984089935872" target="_blank" rel="noopener" aria-label="Assinar [Agentes] x [a Gente] no LinkedIn" style="background: #ffffff; border: 1px solid var(--hairline-strong); color: var(--ink); padding: 5px 10px; font-size: 11px; font-weight: 500; border-radius: 0; text-decoration: none; display: inline-flex; align-items: center; gap: 5px; flex-shrink: 0; transition: all 0.15s ease; box-shadow: 0 1px 2px rgba(0,0,0,0.03);">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="#0A66C2" aria-hidden="true"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+                <span>LinkedIn</span>
+              </a>
+            </div>
+            <div style="font-size: 10.5px; color: var(--muted); margin-top: 6px; line-height: 1.35;">
+              Beyond the hype: how Agentic AI multiplies and leverages human labor capacity.
+            </div>
+          </li>
+        </ul>
+      </div>
+      
+
+    </div>
+
+    <!-- Minimalist Bottom Line -->
+    <div class="footer-bottom-bar">
+      <div class="footer-bottom-copy">
+        
+        2026 hsnlabs. Agentic AI Adoption.
+        
+      </div>
+      <div class="footer-bottom-nav">
+        <a href="https://github.com/hsnlabs-ai" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/company/hsnlabs" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://x.com/hsnlabs" target="_blank" rel="noopener">X</a>
+        <a href="../../feed_rss_created.xml">RSS Feed</a>
+        <a href="../../feed_json_created.json">JSON Feed</a>
+        <a href="../../sitemap.xml">Sitemap</a>
+        
+        <a href="https://hsnlabs.ai/en/canvas/">The Agentic Canvas™</a>
+        <a href="https://hsnlabs.ai/en/bootcamp/">Bootcamp</a>
+        <a href="https://hsnlabs.ai/en/advisory/">Advisory</a>
+        <a href="https://hsnlabs.ai/en/langchain/">LangChain</a>
+        <a href="https://hsnlabs.ai/en/snowflake/">Snowflake</a>
+        <a href="https://hsnlabs.ai/en/databricks/">Databricks</a>
+        <a href="https://hsnlabs.ai/en/braintrust/">Braintrust</a>
+        <a href="https://hsnlabs.ai/en/privacy-policy/">Privacy Policy</a>
+        <a href="https://hsnlabs.ai/en/modern-slavery-statement/">Compliance</a>
+        
+      </div>
+    </div>
+
+  </div>
+</footer>
+<!-- endblock -->
+        
+    </div>
+    <script src="../../assets/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/js/main.min.js"></script>
+    <script src="../../assets/js/pagination.js" defer></script>
+    <script src="../../assets/js/relative_dates.js" defer></script>
+    <script src="../../assets/js/mermaid_init.js" defer></script>
+    <script src="../../assets/js/founder-rotation.js" defer></script>
+    <script src="../../assets/js/canvas_cta_tracking.js" defer></script>
+    <script src="../../search/main.js" defer></script>
+
+</body>
+
+</html>

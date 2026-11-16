@@ -13,8 +13,8 @@
     <language>en</language>
 
     
-    <pubDate>Sun, 15 Nov 2026 19:21:16 -0000</pubDate>
-    <lastBuildDate>Sun, 15 Nov 2026 19:21:16 -0000</lastBuildDate>
+    <pubDate>Mon, 16 Nov 2026 16:44:12 -0000</pubDate>
+    <lastBuildDate>Mon, 16 Nov 2026 16:44:12 -0000</lastBuildDate>
     <ttl>1440</ttl>
 
     
@@ -30,6 +30,41 @@
     
 
     
+    
+    <item>
+      <title>Lu do Magalu on WhatsApp: From Scope Drift to Identity Locks in Production</title>
+      
+      
+        
+      <dc:creator>Hugo S. Nascimento</dc:creator>
+        
+      
+      
+      
+        
+      <category>Why Agents Fail</category>
+        
+      <category>case-studies</category>
+        
+      <category>guardrails</category>
+        
+      <category>ontology</category>
+        
+      <category>production</category>
+        
+      <category>why-agents-fail</category>
+        
+      
+      <description>Case study examining how Magalu turned a public WhatsApp AI agent scope leak into a fast identity-layer defense, and the four pillars for enterprise agent governance.</description>
+      <link>https://hsnlabs.ai/blog/post/lu-magalu-whatsapp-ai-agent-case-study/</link>
+      <pubDate>Mon, 16 Nov 2026 00:00:00 +0000</pubDate>
+      <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento · Enterprise Agent Architecture</source>
+      
+      <guid isPermaLink="true">https://hsnlabs.ai/blog/post/lu-magalu-whatsapp-ai-agent-case-study/</guid>
+      
+      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/lu-magalu-whatsapp-ai-agent-case-study/cover.webp" type="image/webp" length="0" />
+      
+    </item>
     
     <item>
       <title>LangSmith and Production Evals: Measuring Agents Before Failures Hit Users</title>
@@ -683,37 +718,6 @@
       <guid isPermaLink="true">https://hsnlabs.ai/blog/post/what-is-an-ontology-for-ai-agents/</guid>
       
       <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/what-is-an-ontology-for-ai-agents/cover.webp" type="image/webp" length="0" />
-      
-    </item>
-    
-    <item>
-      <title>The C-Suite Transition Playbook: Protecting Margins in the Agentic Economy</title>
-      
-      
-        
-      <dc:creator>Hugo S. Nascimento</dc:creator>
-        
-      
-      
-      
-        
-      <category>Future of Work</category>
-        
-      <category>c-suite</category>
-        
-      <category>economics</category>
-        
-      <category>margins</category>
-        
-      
-      <description>Executive blueprint for boardrooms and CFOs defending operational margins against legacy IT cost structures in the agentic economy.</description>
-      <link>https://hsnlabs.ai/blog/post/c-suite-margin-protection-playbook/</link>
-      <pubDate>Fri, 25 Sep 2026 00:00:00 +0000</pubDate>
-      <source url="https://hsnlabs.ai/blog/feed_rss_created.xml">Hugo Nascimento · Enterprise Agent Architecture</source>
-      
-      <guid isPermaLink="true">https://hsnlabs.ai/blog/post/c-suite-margin-protection-playbook/</guid>
-      
-      <enclosure url="https://hsnlabs.ai/blog/assets/images/posts/c-suite-margin-protection-playbook/cover.webp" type="image/webp" length="0" />
       
     </item>
     
